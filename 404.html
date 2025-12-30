@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | BEAM Academy</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="logo-star.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple-50: #faf5ff;
+            --purple-100: #f3e8ff;
+            --purple-600: #9333ea;
+            --purple-700: #7c3aed;
+            --purple-800: #6b21a8;
+            --gray-500: #71717a;
+            --gray-800: #27272a;
+            --gray-900: #18181b;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--purple-700);
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--gray-500);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--purple-700);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--purple-800);
+            transform: translateY(-2px);
+        }
+
+        .links {
+            margin-top: 32px;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--purple-700);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="logo-star.png" alt="">
+            BEAM Academy
+        </a>
+
+        <div class="error-code">404</div>
+        <h1>Page Not Found</h1>
+        <p>Oops! The page you're looking for doesn't exist or has been moved.</p>
+        
+        <a href="/" class="btn">← Back to Home</a>
+
+        <div class="links">
+            <a href="/#courses">View Courses</a>
+            <a href="/#contact">Book a Trial</a>
+            <a href="/#faq">FAQ</a>
+        </div>
+    </div>
+</body>
+</html>

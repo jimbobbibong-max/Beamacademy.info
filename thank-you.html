@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | BEAM Academy</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="logo-star.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple-50: #faf5ff;
+            --purple-100: #f3e8ff;
+            --purple-600: #9333ea;
+            --purple-700: #7c3aed;
+            --purple-800: #6b21a8;
+            --gray-500: #71717a;
+            --gray-800: #27272a;
+            --gray-900: #18181b;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --green-50: #f0fdf4;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
+            padding: 24px;
+            text-align: center;
+        }
+        
+        body.payment-success {
+            background: linear-gradient(180deg, var(--green-50) 0%, var(--white) 100%);
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--purple-700);
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            animation: scaleIn 0.5s ease;
+        }
+        
+        .success-icon.payment {
+            background: linear-gradient(135deg, var(--green-500), var(--green-600));
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-500);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .next-steps {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .next-steps h2 {
+            font-size: 1.1rem;
+            color: var(--gray-800);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .step {
+            display: flex;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--purple-100);
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--purple-100);
+            color: var(--purple-700);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .payment-success .step-number {
+            background: var(--green-50);
+            color: var(--green-600);
+        }
+
+        .step-content h3 {
+            font-size: 1rem;
+            color: var(--gray-800);
+            margin-bottom: 4px;
+        }
+
+        .step-content p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .sms-notice {
+            background: var(--purple-100);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .payment-notice {
+            background: var(--green-50);
+            border: 2px solid var(--green-500);
+        }
+
+        .sms-notice span {
+            font-size: 1.5rem;
+        }
+
+        .sms-notice p {
+            font-size: 0.95rem;
+            color: var(--purple-800);
+        }
+        
+        .payment-notice p {
+            color: var(--green-600);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--purple-700);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--purple-800);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin-top: 48px;
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .contact-info a {
+            color: var(--purple-700);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .discount-saved {
+            display: inline-block;
+            background: var(--green-500);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="logo-star.png" alt="">
+            BEAM Academy
+        </a>
+
+        <div class="success-icon" id="successIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+
+        <h1 id="mainHeading">You're All Set!</h1>
+        <p class="subtitle" id="mainSubtitle">Thank you for booking a free trial with BEAM Academy. We're excited to help you shine brighter.</p>
+
+        <div class="sms-notice" id="noticeBox">
+            <span id="noticeEmoji">📱</span>
+            <div>
+                <p id="noticeText"><strong>Check your phone!</strong> You'll receive an SMS confirmation shortly with your trial details.</p>
+            </div>
+        </div>
+
+        <div class="next-steps">
+            <h2>📋 What happens next?</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 id="step1Title">We'll call you within 24 hours</h3>
+                    <p id="step1Desc">A member of our team will reach out to discuss your goals and schedule your trial lesson.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 id="step2Title">Attend your first lesson</h3>
+                    <p id="step2Desc">Experience our teaching approach firsthand with no obligation. Bring any questions you have!</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Get a personalised learning plan</h3>
+                    <p>We'll assess where you're at and create a tailored plan to help you achieve your goals.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="/" class="btn">← Back to Home</a>
+
+        <div class="contact-info">
+            <p>Questions? Call us at <a href="tel:0491791447">0491 791 447</a> or email <a href="mailto:beam.epping@gmail.com">beam.epping@gmail.com</a></p>
+        </div>
+    </div>
+    
+    <script>
+        // Check for payment success
+        const urlParams = new URLSearchParams(window.location.search);
+        const isPaymentSuccess = urlParams.get('payment') === 'success';
+        
+        if (isPaymentSuccess) {
+            document.body.classList.add('payment-success');
+            document.getElementById('successIcon').classList.add('payment');
+            document.getElementById('mainHeading').textContent = 'Payment Confirmed!';
+            document.getElementById('mainSubtitle').textContent = 'Thank you for enrolling with BEAM Academy. Your spot is secured and we can\'t wait to help you shine brighter.';
+            
+            document.getElementById('noticeBox').classList.add('payment-notice');
+            document.getElementById('noticeEmoji').textContent = '✅';
+            document.getElementById('noticeText').innerHTML = '<strong>Payment successful!</strong> You\'ve saved 5% with our early bird discount. A receipt has been sent to your email.';
+            
+            document.getElementById('step1Title').textContent = 'We\'ll call you within 24 hours';
+            document.getElementById('step1Desc').textContent = 'A member of our team will reach out to confirm your schedule and answer any questions.';
+            document.getElementById('step2Title').textContent = 'Attend your first lesson';
+            document.getElementById('step2Desc').textContent = 'Come prepared to learn! We\'ll start working towards your goals right away.';
+        }
+    </script>
+</body>
+</html>
