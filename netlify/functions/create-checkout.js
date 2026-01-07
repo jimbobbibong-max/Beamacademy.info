@@ -21,7 +21,7 @@ exports.handler = async (event) => {
     console.log('Parsed data:', { tier, pkg, subjects, parentName, studentName, email, phone });
 
     // Price map (weekly prices in dollars, GST-exclusive)
-    const priceMap = {
+    const weeklyPriceMap = {
       'Junior-1 Subject': 80,
       'Junior-2 Subjects': 140,
       'Junior-3 Subjects': 200,
@@ -37,9 +37,12 @@ exports.handler = async (event) => {
       'Senior-All Access': 500
     };
 
+    const WEEKS_PER_TERM = 10;
+
     const key = tier + '-' + pkg;
     console.log('Looking up price for key:', key);
-    const basePrice = priceMap[key];
+    const weeklyPrice = weeklyPriceMap[key];
+    const basePrice = weeklyPrice * WEEKS_PER_TERM;
 
     if (!basePrice) {
       console.error('Invalid package key:', key);
@@ -64,7 +67,7 @@ exports.handler = async (event) => {
             currency: 'aud',
             product_data: {
               name: 'BEAM Academy - ' + tier + ' ' + pkg,
-              description: 'Weekly tuition for: ' + (subjects.length > 0 ? subjects.join(', ') : 'All subjects'),
+              description: 'Term tuition (10 weeks) for: ' + (subjects.length > 0 ? subjects.join(', ') : 'All subjects'),
             },
             unit_amount: Math.round(discountedPrice * 100),
           },
@@ -83,8 +86,8 @@ exports.handler = async (event) => {
         }
       ],
       mode: 'payment',
-      success_url: 'https://verdant-crostata-4b76d5.netlify.app/thank-you.html?payment=success&session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'https://verdant-crostata-4b76d5.netlify.app/#contact',
+      success_url: 'https://beamacademy.info/thank-you.html?payment=success&session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: 'https://beamacademy.info/#contact',
       customer_email: email,
       metadata: {
         parentName,

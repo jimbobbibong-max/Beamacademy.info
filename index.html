@@ -131,9 +131,24 @@
             --gray-800: #27272a;
             --gray-900: #18181b;
             --white: #ffffff;
+            /* Accent colors */
+            --accent-pink: #ec4899;
+            --accent-blue: #3b82f6;
+            --accent-teal: #14b8a6;
             --font-display: 'Outfit', sans-serif;
-            --font-body: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Outfit', sans-serif;
             --focus-ring: 0 0 0 3px rgba(124, 58, 237, 0.4);
+            /* Enhanced shadows */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+            --shadow-glow: 0 0 80px rgba(124, 58, 237, 0.25);
+            --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --shadow-card-hover: 0 25px 80px rgba(124, 58, 237, 0.18);
+            /* Glass effect */
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.3);
         }
 
         *, *::before, *::after {
@@ -221,7 +236,7 @@
             border: 0;
         }
 
-        /* Navigation */
+        /* Navigation - Clean Professional Design */
         .nav {
             position: fixed;
             top: 0;
@@ -229,14 +244,84 @@
             right: 0;
             z-index: 1000;
             padding: 20px 0;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .nav .logo {
+            color: var(--purple-700);
+        }
+
+        .nav .nav-link {
+            color: var(--gray-600);
+        }
+
+        .nav .nav-link:hover {
+            color: var(--purple-700);
+        }
+
+        .nav .nav-cta {
+            background: var(--purple-700);
+            border: none;
+        }
+
+        .nav .nav-cta:hover {
+            background: var(--purple-800);
+        }
+
+        .nav .nav-cta-secondary {
+            background: transparent !important;
+            border: 2px solid var(--purple-500) !important;
+            color: var(--purple-700) !important;
+            -webkit-text-fill-color: var(--purple-700) !important;
+        }
+
+        .nav .nav-cta-secondary:hover {
+            background: var(--purple-50) !important;
+            border-color: var(--purple-700) !important;
         }
 
         .nav.scrolled {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
-            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-            padding: 16px 0;
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .nav.scrolled .logo {
+            color: var(--purple-700);
+        }
+
+        .nav.scrolled .nav-link {
+            color: var(--gray-600);
+        }
+
+        .nav.scrolled .nav-link:hover {
+            color: var(--purple-700);
+        }
+
+        .nav.scrolled .nav-cta {
+            background: var(--purple-700);
+            border: none;
+        }
+
+        .nav.scrolled .nav-cta:hover {
+            background: var(--purple-800);
+        }
+
+        .nav.scrolled .nav-cta-secondary {
+            background: transparent !important;
+            border: 2px solid var(--purple-500) !important;
+            color: var(--purple-700) !important;
+            -webkit-text-fill-color: var(--purple-700) !important;
+        }
+
+        .nav.scrolled .nav-cta-secondary:hover {
+            background: var(--purple-50) !important;
         }
 
         .nav-inner {
@@ -254,6 +339,7 @@
             align-items: center;
             gap: 10px;
             border-radius: 8px;
+            transition: color 0.3s ease;
         }
 
         .logo-img {
@@ -282,6 +368,24 @@
             padding: 8px 4px;
             border-radius: 6px;
             transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--purple-600);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
         }
 
         .nav-link:hover { color: var(--purple-700); }
@@ -300,6 +404,19 @@
         .nav-cta:hover {
             background: var(--purple-800);
             transform: translateY(-1px);
+        }
+
+        .nav-cta-secondary {
+            background: transparent !important;
+            border: 2px solid var(--purple-500) !important;
+            color: var(--purple-700) !important;
+            -webkit-text-fill-color: var(--purple-700) !important;
+        }
+
+        .nav-cta-secondary:hover {
+            background: var(--purple-50) !important;
+            border-color: var(--purple-700) !important;
+            color: var(--purple-700) !important;
         }
 
         .mobile-toggle {
@@ -362,51 +479,65 @@
             font-size: 1rem;
             padding: 16px 32px;
             border-radius: 100px;
-            transition: all 0.2s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             border: none;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
         .btn-primary {
             background: var(--purple-700);
             color: white;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .btn-primary:hover {
             background: var(--purple-800);
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
         }
 
         .btn-secondary {
-            background: var(--white);
+            background: white;
             color: var(--gray-700);
             border: 1px solid var(--gray-200);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
         }
 
         .btn-secondary:hover {
             border-color: var(--purple-300);
             color: var(--purple-700);
+            background: var(--purple-50);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         }
 
         .btn-white {
             background: white;
             color: var(--purple-700);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
         }
 
         .btn-white:hover {
-            background: var(--gray-100);
-            transform: translateY(-2px);
+            background: var(--gray-50);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
         }
 
-        /* Hero */
+        /* Hero - Clean Professional Design */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 120px 0 80px;
-            background: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
+            background: linear-gradient(180deg, #ffffff 0%, #faf8ff 50%, #f5f0ff 100%);
             position: relative;
             overflow: hidden;
         }
@@ -414,13 +545,49 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 80%;
-            height: 150%;
-            background: radial-gradient(ellipse, var(--purple-100) 0%, transparent 60%);
-            opacity: 0.6;
+            top: -20%;
+            right: -10%;
+            width: 50%;
+            height: 70%;
+            background: radial-gradient(ellipse, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
             pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -5%;
+            width: 40%;
+            height: 50%;
+            background: radial-gradient(ellipse, rgba(168, 85, 247, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Hide orbs on light design */
+        .hero-orb {
+            display: none;
+        }
+
+        .hero-orb-1 {
+            display: none;
+        }
+
+        .hero-orb-2 {
+            display: none;
+        }
+
+        .hero-orb-3 {
+            display: none;
+            opacity: 0.25;
+            animation-delay: -14s;
+        }
+
+        @keyframes float-orb {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(30px, -30px) scale(1.1); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+            75% { transform: translate(20px, 10px) scale(1.05); }
         }
 
         .hero-content {
@@ -437,39 +604,43 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: linear-gradient(135deg, var(--purple-100), var(--purple-50));
+            background: var(--purple-100);
             color: var(--purple-700);
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 100px;
             font-family: var(--font-display);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
             border: 1px solid var(--purple-200);
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
+            transition: all 0.3s ease;
         }
 
-        .hero-badge::before { content: '📍'; }
+        .hero-badge:hover {
+            transform: translateY(-2px);
+            background: var(--purple-200);
+        }
+
+        .hero-badge::before { content: '✨'; margin-right: 4px; }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
             color: var(--gray-900);
             margin-bottom: 24px;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
         }
 
         .hero h1 span {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--purple-600);
         }
 
         .hero-description {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--gray-600);
             margin-bottom: 40px;
-            max-width: 500px;
+            max-width: 520px;
+            line-height: 1.7;
         }
 
         .hero-buttons {
@@ -478,16 +649,48 @@
             flex-wrap: wrap;
         }
 
+        .hero-returning {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .hero-returning a {
+            color: var(--purple-600);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .hero-returning a:hover {
+            color: var(--purple-700);
+            text-decoration: underline;
+        }
+
         .hero-visual {
             position: relative;
             animation: fadeIn 1s ease 0.3s both;
         }
 
         .hero-card {
-            background: var(--white);
+            background: white;
             border-radius: 24px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--gray-200);
+        }
+
+        .hero-image-card {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            min-height: 320px;
         }
 
         .hero-stats {
@@ -502,7 +705,7 @@
             font-family: var(--font-display);
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--purple-700);
+            color: var(--purple-600);
             margin-bottom: 4px;
         }
 
@@ -513,33 +716,40 @@
 
         .floating-card {
             position: absolute;
-            background: var(--white);
+            background: white;
             border-radius: 16px;
             padding: 16px 20px;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--gray-200);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .floating-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
         }
 
         .floating-card.card-1 { top: -20px; right: -30px; }
-        .floating-card.card-2 { bottom: 40px; left: -40px; animation-delay: 1s; }
+        .floating-card.card-2 { bottom: 40px; left: -40px; animation-delay: 1.5s; }
 
         .floating-card-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--purple-100);
-            border-radius: 10px;
+            width: 48px;
+            height: 48px;
+            background: var(--purple-600);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            margin-bottom: 8px;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
         }
 
         .floating-card-text {
             font-family: var(--font-display);
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--gray-700);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--gray-800);
         }
 
         /* Sections */
@@ -599,6 +809,17 @@
         }
 
         .about-image-main span { font-size: 6rem; opacity: 0.5; }
+
+        .about-photo {
+            padding: 0;
+            background: none;
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .about-badge {
             position: absolute;
@@ -673,6 +894,30 @@
         .courses-pricing .section-title { color: var(--white); }
         .courses-pricing .section-description { color: var(--gray-400); }
 
+        /* Enrollment Info Prompt */
+        .enrollment-info-prompt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 8px;
+            padding: 14px 24px;
+            margin: 0 auto 32px;
+            max-width: 560px;
+            font-size: 0.95rem;
+            color: var(--gray-300);
+        }
+
+        .enrollment-info-prompt strong {
+            color: var(--purple-300);
+        }
+
+        .enrollment-icon {
+            font-size: 1.2rem;
+        }
+
         /* Pricing Tiers */
 
         /* New Cleaner Pricing Design */
@@ -682,6 +927,19 @@
             gap: 24px;
             max-width: 1100px;
             margin: 0 auto 60px;
+        }
+
+        .pricing-tiers-new.highlight-pulse {
+            animation: pricingPulse 0.6s ease-in-out 2;
+        }
+
+        @keyframes pricingPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.01); }
+        }
+
+        .pricing-tiers-new.highlight-pulse .pricing-tier-new {
+            box-shadow: 0 0 0 3px var(--purple-400), 0 8px 32px rgba(124, 58, 237, 0.25);
         }
 
         .pricing-tier-new {
@@ -695,10 +953,10 @@
         }
 
         .pricing-tier-new.featured-tier {
-            background: linear-gradient(180deg, var(--gray-800), var(--gray-900));
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
             transform: scale(1.02);
-            box-shadow: 0 8px 40px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
         .featured-badge {
@@ -706,7 +964,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-500), var(--purple-700));
+            background: var(--purple-600);
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -784,6 +1042,8 @@
             border-bottom: none;
         }
         .pkg-badge {
+            flex-shrink: 0;
+            white-space: nowrap;
             background: var(--purple-600);
             color: white;
             padding: 2px 6px;
@@ -814,6 +1074,8 @@
 
 
         .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--gray-300);
             font-size: 0.95rem;
         }
@@ -843,12 +1105,14 @@
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            background: rgba(124, 58, 237, 0.15);
             margin: 8px -16px 0;
             padding: 14px 16px;
             border-radius: 8px;
@@ -856,6 +1120,8 @@
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
         }
@@ -918,7 +1184,7 @@
         }
 
         .pricing-tier {
-            background: linear-gradient(180deg, var(--gray-800), var(--gray-900));
+            background: var(--gray-800);
             border-radius: 24px;
             padding: 40px;
             border: 1px solid var(--gray-700);
@@ -933,8 +1199,8 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--purple-500), var(--purple-700));
+            height: 3px;
+            background: var(--purple-500);
         }
 
         .pricing-tier-name {
@@ -991,7 +1257,7 @@
         }
 
         .package-card.featured {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            background: var(--purple-600);
             border-color: var(--purple-500);
         }
 
@@ -1050,6 +1316,28 @@
         .package-card.featured .package-discount {
             background: rgba(255, 255, 255, 0.2);
             color: white;
+        }
+
+        /* Course Browser Divider */
+        .course-browser-divider {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-700);
+        }
+
+        .course-browser-heading {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin: 0 0 8px;
+        }
+
+        .course-browser-subtext {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+            margin: 0;
         }
 
         /* Year Tabs */
@@ -1221,53 +1509,111 @@
             margin-top: 48px;
         }
 
-        /* Why Us */
-        .why-us { background: var(--white); }
+        /* Why Us - Enhanced Design */
+        .why-us {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us::before {
+            display: none;
+        }
 
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 32px;
+            position: relative;
         }
 
         .feature-card {
-            background: var(--gray-50);
+            background: white;
             border-radius: 24px;
             padding: 40px 32px;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--gray-100);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--purple-500);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.02) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--purple-200);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card:hover::after {
+            opacity: 1;
         }
 
         .feature-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--purple-100), var(--purple-50));
+            width: 64px;
+            height: 64px;
+            background: var(--purple-600);
             border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 24px;
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.25);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.05);
+            box-shadow: 0 10px 28px rgba(124, 58, 237, 0.35);
         }
 
         .feature-card h3 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             color: var(--gray-900);
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+            position: relative;
+            z-index: 1;
         }
 
         .feature-card p {
             font-size: 1rem;
             color: var(--gray-500);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
         }
 
         /* Portal */
         .portal {
-            background: linear-gradient(135deg, var(--purple-700), var(--purple-800));
+            background: var(--purple-700);
             color: white;
             padding: 80px 0;
         }
@@ -1382,43 +1728,103 @@
             opacity: 0.8;
         }
 
-        /* Team */
-        .team { background: var(--gray-50); }
+        /* Team - Premium Design */
+        .team {
+            background: var(--gray-50);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team::before {
+            display: none;
+        }
 
         .team-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 32px;
+            position: relative;
         }
 
-        .team-card { text-align: center; }
+        .team-card {
+            text-align: center;
+            background: white;
+            border-radius: 24px;
+            padding: 28px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--gray-100);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(124, 58, 237, 0.02) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--purple-200);
+        }
+
+        .team-card:hover::before {
+            opacity: 1;
+        }
 
         .team-image {
             width: 100%;
             aspect-ratio: 1;
-            border-radius: 20px;
+            border-radius: 16px;
             overflow: hidden;
             margin-bottom: 20px;
             background: linear-gradient(135deg, var(--purple-100), var(--purple-200));
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover .team-image {
+            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.18);
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 5%;
+            transition: transform 0.4s ease;
+        }
+
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+
+        .team-image img.position-top {
+            object-position: center top;
         }
 
         .team-image-placeholder { font-size: 4rem; opacity: 0.5; }
 
         .team-card h3 {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: var(--gray-900);
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .team-role {
             font-family: var(--font-display);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--purple-600);
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 12px;
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--purple-50);
+            border-radius: 100px;
         }
 
         .team-credentials {
@@ -1439,9 +1845,29 @@
         }
 
         .testimonial-card {
-            background: var(--gray-50);
+            background: white;
             border-radius: 24px;
             padding: 32px;
+            border: 1px solid var(--gray-100);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            font-size: 4rem;
+            font-family: Georgia, serif;
+            color: var(--purple-100);
+            line-height: 1;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(124, 58, 237, 0.1);
+            border-color: var(--purple-100);
         }
 
         .testimonial-quote {
@@ -1449,6 +1875,9 @@
             color: var(--gray-700);
             margin-bottom: 24px;
             font-style: italic;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
         }
 
         .testimonial-author {
@@ -1460,14 +1889,15 @@
         .testimonial-avatar {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, var(--purple-200), var(--purple-300));
+            background: var(--purple-600);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--font-display);
             font-weight: 600;
-            color: var(--purple-700);
+            color: white;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .testimonial-name {
@@ -1611,23 +2041,16 @@
 
         /* CTA */
         .cta {
-            background: linear-gradient(135deg, var(--purple-700), var(--purple-900));
+            background: var(--purple-700);
             color: white;
             text-align: center;
-            padding: 100px 0;
+            padding: 80px 0;
             position: relative;
             overflow: hidden;
         }
 
         .cta::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
-            pointer-events: none;
+            display: none;
         }
 
         .cta h2 {
@@ -1758,6 +2181,66 @@
             50% { transform: translateY(-10px); }
         }
 
+        /* Scroll-triggered animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-on-scroll.delay-1 { transition-delay: 0.1s; }
+        .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
+        .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
+        .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+        .animate-on-scroll.delay-5 { transition-delay: 0.5s; }
+
+        /* Section dividers with gradient */
+        .section-divider {
+            height: 120px;
+            background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .section-divider.dark {
+            background: linear-gradient(180deg, var(--gray-900) 0%, var(--gray-50) 100%);
+        }
+
+        .section-divider.to-dark {
+            background: linear-gradient(180deg, var(--white) 0%, var(--gray-900) 100%);
+        }
+
+        /* Subtle accent lines */
+        .glow-line {
+            width: 60px;
+            height: 3px;
+            background: var(--purple-500);
+            border-radius: 3px;
+            margin: 0 auto 24px;
+            position: relative;
+        }
+
+        .glow-line::after {
+            display: none;
+        }
+
         /* Floating Contact Button */
         .floating-contact {
             position: fixed;
@@ -1827,70 +2310,90 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .faq-item {
             background: var(--white);
-            border-radius: 16px;
-            margin-bottom: 16px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--gray-200);
+            transition: all 0.2s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+            border-color: var(--purple-200);
+        }
+
+        .faq-item[open] {
+            border-color: var(--purple-300);
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.12);
         }
 
         .faq-question {
             width: 100%;
-            padding: 24px 28px;
+            padding: 20px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 16px;
             background: none;
             border: none;
             cursor: pointer;
             font-family: var(--font-display);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--gray-800);
             text-align: left;
             transition: color 0.2s ease;
+            list-style: none;
+        }
+
+        .faq-question::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-question::marker {
+            display: none;
+            content: "";
         }
 
         .faq-question:hover { color: var(--purple-700); }
 
-        .faq-icon {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: var(--purple-100);
-            color: var(--purple-700);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            font-weight: 400;
+        .faq-question::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--purple-500);
+            border-bottom: 2px solid var(--purple-500);
+            transform: rotate(-45deg);
+            transition: transform 0.3s ease;
             flex-shrink: 0;
-            transition: transform 0.3s ease, background 0.2s ease;
         }
 
-        .faq-item.active .faq-icon {
+        .faq-item[open] .faq-question::after {
             transform: rotate(45deg);
-            background: var(--purple-700);
-            color: white;
+        }
+
+        .faq-item[open] .faq-question {
+            color: var(--purple-700);
         }
 
         .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer-content {
-            padding: 0 28px 24px;
+            padding: 0 24px 20px;
             color: var(--gray-600);
             line-height: 1.7;
+            border-top: 1px solid var(--gray-100);
+            margin-top: -4px;
+            padding-top: 16px;
+        }
+
+        .faq-answer p {
+            margin: 0;
         }
 
         /* Google Maps */
@@ -1931,10 +2434,10 @@
         }
 
         .pricing-tier-new.featured-tier {
-            background: linear-gradient(180deg, var(--gray-800), var(--gray-900));
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
             transform: scale(1.02);
-            box-shadow: 0 8px 40px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
         .featured-badge {
@@ -1942,7 +2445,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-500), var(--purple-700));
+            background: var(--purple-600);
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -2020,6 +2523,8 @@
             border-bottom: none;
         }
         .pkg-badge {
+            flex-shrink: 0;
+            white-space: nowrap;
             background: var(--purple-600);
             color: white;
             padding: 2px 6px;
@@ -2050,6 +2555,8 @@
 
 
         .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--gray-300);
             font-size: 0.95rem;
         }
@@ -2079,12 +2586,14 @@
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            background: rgba(124, 58, 237, 0.15);
             margin: 8px -16px 0;
             padding: 14px 16px;
             border-radius: 8px;
@@ -2092,6 +2601,8 @@
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
         }
@@ -2184,10 +2695,10 @@
         }
 
         .pricing-tier-new.featured-tier {
-            background: linear-gradient(180deg, var(--gray-800), var(--gray-900));
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
             transform: scale(1.02);
-            box-shadow: 0 8px 40px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
         .featured-badge {
@@ -2195,7 +2706,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-500), var(--purple-700));
+            background: var(--purple-600);
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -2273,6 +2784,8 @@
             border-bottom: none;
         }
         .pkg-badge {
+            flex-shrink: 0;
+            white-space: nowrap;
             background: var(--purple-600);
             color: white;
             padding: 2px 6px;
@@ -2303,6 +2816,8 @@
 
 
         .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--gray-300);
             font-size: 0.95rem;
         }
@@ -2332,12 +2847,14 @@
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            background: rgba(124, 58, 237, 0.15);
             margin: 8px -16px 0;
             padding: 14px 16px;
             border-radius: 8px;
@@ -2345,6 +2862,8 @@
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
         }
@@ -2442,8 +2961,8 @@
             .floating-btn { width: 52px; height: 52px; }
             .floating-btn-tooltip { display: none; }
 
-            .faq-question { padding: 20px; font-size: 1rem; }
-            .faq-answer-content { padding: 0 20px 20px; }
+            .faq-question { padding: 18px 20px; font-size: 1rem; }
+            .faq-answer { padding: 0 20px 18px; padding-top: 14px; }
         }
 
         /* Professional Icon Styling */
@@ -3071,8 +3590,96 @@
             font-weight: 600;
         }
 
-    
-        
+        /* Policy Modal */
+        .policy-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .policy-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .policy-modal-content {
+            position: relative;
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            max-width: 640px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            transform: translateY(20px) scale(0.95);
+            transition: transform 0.3s ease;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+        }
+
+        .policy-modal.active .policy-modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .policy-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            margin: 0 0 24px;
+            padding-right: 40px;
+        }
+
+        .policy-content {
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+
+        .policy-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin: 24px 0 12px;
+        }
+
+        .policy-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content ul {
+            margin: 0 0 16px;
+            padding-left: 24px;
+        }
+
+        .policy-content li {
+            margin-bottom: 8px;
+        }
+
+        .policy-content strong {
+            color: var(--gray-900);
+        }
+
+        .policy-content p {
+            margin: 0 0 16px;
+        }
+
+        @media (max-width: 640px) {
+            .policy-modal-content {
+                padding: 32px 24px;
+                max-height: 90vh;
+            }
+
+            .policy-title {
+                font-size: 1.5rem;
+            }
+        }
+
         /* All Access Modal Tier Buttons */
         .all-access-tier-btn {
             background: var(--purple-700);
@@ -3253,34 +3860,38 @@
         .student-type-btn {
             flex: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 0.875rem 1rem;
+            gap: 0.35rem;
+            padding: 1rem 1rem;
             border: 2px solid #e2e8f0;
-            border-radius: 10px;
+            border-radius: 12px;
             background: white;
             cursor: pointer;
             font-family: inherit;
             font-size: 0.95rem;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--text-light);
             transition: all 0.2s ease;
         }
-        
+
         .student-type-btn:hover {
             border-color: var(--primary);
             color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
-        
+
         .student-type-btn.active {
             border-color: var(--primary);
             background: rgba(107, 70, 193, 0.08);
             color: var(--primary);
+            box-shadow: 0 2px 8px rgba(107, 70, 193, 0.15);
         }
-        
+
         .student-type-icon {
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
         
         .student-path {
@@ -3507,24 +4118,35 @@
         }
         
         .btn-pay {
-            background: linear-gradient(135deg, #48bb78, #38a169);
+            background: linear-gradient(135deg, #48bb78, #38a169) !important;
+            color: white !important;
             width: 100%;
             padding: 1rem 2rem;
             font-size: 1.1rem;
         }
-        
+
         .btn-pay:hover {
-            background: linear-gradient(135deg, #38a169, #2f855a);
+            background: linear-gradient(135deg, #38a169, #2f855a) !important;
             transform: translateY(-2px);
         }
-        
+
         .btn-trial {
-            background: var(--primary);
+            background: var(--purple-700) !important;
+            color: white !important;
             width: 100%;
             padding: 1rem 2rem;
             font-size: 1.1rem;
         }
-        
+
+        .btn-pay .btn-text,
+        .btn-trial .btn-text,
+        .btn-pay span,
+        .btn-trial span {
+            color: white !important;
+            -webkit-text-fill-color: white !important;
+            opacity: 1 !important;
+        }
+
         .form-submit-hidden {
             display: none;
         }
@@ -3580,6 +4202,7 @@
                     <li><a href="#team" class="nav-link">Team</a></li>
                     <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="https://beamffef.netlify.app/login" class="nav-link" target="_blank" rel="noopener">Student Portal</a></li>
+                    <li><a href="#contact" class="nav-cta nav-cta-secondary" data-action="pay">Pay Now</a></li>
                     <li><a href="#contact" class="nav-cta">Book Free Trial</a></li>
                 </ul>
                 <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -3600,6 +4223,7 @@
             <li><a href="#team">Team</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="https://beamffef.netlify.app/login" target="_blank" rel="noopener">Student Portal</a></li>
+            <li><a href="#contact" data-action="pay" class="mobile-pay-link">Pay Now</a></li>
             <li><a href="#contact">Book Free Trial</a></li>
         </ul>
     </div>
@@ -3620,27 +4244,11 @@
                             <a href="#contact" class="btn btn-primary">Start Free Trial →</a>
                             <a href="#courses" class="btn btn-secondary">View Courses</a>
                         </div>
+                        <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
                     </div>
                     <div class="hero-visual">
-                        <div class="hero-card">
-                            <div class="hero-stats">
-                                <div class="stat">
-                                    <div class="stat-number">95+</div>
-                                    <div class="stat-label">HSC Maths Scores</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-number">8</div>
-                                    <div class="stat-label">Max Class Size</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-number">95%</div>
-                                    <div class="stat-label">Retention Rate</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-number">24/7</div>
-                                    <div class="stat-label">Discord Support</div>
-                                </div>
-                            </div>
+                        <div class="hero-card hero-image-card">
+                            <img src="images/classroom-teaching.jpg" alt="BEAM Academy tutor teaching arithmetic sequences" loading="eager">
                         </div>
                         <div class="floating-card card-1" aria-hidden="true">
                             <div class="floating-card-icon">📚</div>
@@ -3660,8 +4268,8 @@
             <div class="container">
                 <div class="about-content">
                     <div class="about-image">
-                        <div class="about-image-main">
-                            <span aria-hidden="true">📖</span>
+                        <div class="about-image-main about-photo">
+                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" loading="lazy">
                         </div>
                         <div class="about-badge">
                             <div class="about-badge-number">BHHS</div>
@@ -3725,6 +4333,11 @@
 
                 <p style="text-align: center; color: var(--gray-400); margin-bottom: 32px; font-size: 0.95rem;">Or choose individual subjects below</p>
 
+                <div class="enrollment-info-prompt">
+                    <span class="enrollment-icon">💡</span>
+                    <span><strong>How it works:</strong> Select your package below, then choose to book a free trial or pay online.</span>
+                </div>
+
 <!-- Pricing Tiers -->
                 <div class="pricing-tiers-new">
                     <article class="pricing-tier-new">
@@ -3739,8 +4352,8 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Junior', '1 Subject')" data-tier="Junior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$80/wk</span></li>
-                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">Save 13%</span></li>
-                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">Save 17%</span></li>
+                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">25% off 2nd</span></li>
+                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">50% off 3rd</span></li>
                             
                         </ul>
                         <a href="#contact" class="tier-cta">Start Free Trial</a>
@@ -3758,9 +4371,9 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Intermediate', '1 Subject')" data-tier="Intermediate" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$100/wk</span></li>
-                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">Save 13%</span></li>
-                            <li onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">Save 17%</span></li>
-                            <li class="popular" onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">Save 25%</span></li>
+                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">25% off 2nd</span></li>
+                            <li onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">50% off 3rd</span></li>
+                            <li class="popular" onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th free</span></li>
                             <li class="all-access" onclick="selectPackage('Intermediate', 'All Access')" data-tier="Intermediate" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$400/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Start Free Trial</a>
@@ -3778,13 +4391,19 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Senior', '1 Subject')" data-tier="Senior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$120/wk</span></li>
-                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">Save 13%</span></li>
-                            <li onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">Save 17%</span></li>
-                            <li class="popular" onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">Save 25%</span></li>
+                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">25% off 2nd</span></li>
+                            <li onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">50% off 3rd</span></li>
+                            <li class="popular" onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th free</span></li>
                             <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-badge">Best Value</span><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Start Free Trial</a>
                     </article>
+                </div>
+
+                <!-- Course Browser Section -->
+                <div class="course-browser-divider">
+                    <h3 class="course-browser-heading">Browse Our Courses</h3>
+                    <p class="course-browser-subtext">Learn more about what each class covers</p>
                 </div>
 
                 <!-- Year Level Tabs -->
@@ -4300,7 +4919,7 @@
                 <div class="team-grid">
                     <article class="team-card">
                         <div class="team-image">
-                            <div class="team-image-placeholder" aria-hidden="true">👨‍🏫</div>
+                            <img src="images/chris.jpg" alt="Chris Kim - Head of Mathematics" loading="lazy">
                         </div>
                         <h3>Chris Kim</h3>
                         <p class="team-role">Head of Mathematics</p>
@@ -4313,7 +4932,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <div class="team-image-placeholder" aria-hidden="true">👨‍🏫</div>
+                            <img src="images/nathan.jpg" alt="Nathan You - Tutor" loading="lazy">
                         </div>
                         <h3>Nathan You</h3>
                         <p class="team-role">Tutor</p>
@@ -4326,7 +4945,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <div class="team-image-placeholder" aria-hidden="true">👨‍🏫</div>
+                            <img src="images/taehoon.jpg" alt="Taehoon Kim - Tutor & Head Admin" loading="lazy" class="position-top">
                         </div>
                         <h3>Taehoon Kim</h3>
                         <p class="team-role">Tutor & Head Admin</p>
@@ -4339,7 +4958,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <div class="team-image-placeholder" aria-hidden="true">👨‍🏫</div>
+                            <img src="images/john.jpg" alt="John Park - Tutor" loading="lazy">
                         </div>
                         <h3>John Park</h3>
                         <p class="team-role">Tutor</p>
@@ -4508,41 +5127,41 @@
                         
                         <!-- Payment Choice -->
                         <div id="paymentChoice" class="payment-choice">
-                            <p class="payment-choice-title">Are you new to BEAM Academy?</p>
+                            <p class="payment-choice-title">What would you like to do?</p>
                             <div class="student-type-toggle">
                                 <button type="button" class="student-type-btn active" id="btnNewStudent" onclick="selectStudentType('new')">
-                                    <span class="student-type-icon">👋</span>
-                                    <span>Yes, I'm New</span>
+                                    <span class="student-type-icon">🎓</span>
+                                    <span>Book Free Trial</span>
                                 </button>
                                 <button type="button" class="student-type-btn" id="btnExistingStudent" onclick="selectStudentType('existing')">
-                                    <span class="student-type-icon">✓</span>
-                                    <span>Existing Student</span>
+                                    <span class="student-type-icon">💳</span>
+                                    <span>Pay & Enrol</span>
                                 </button>
                             </div>
-                            
-                            <!-- New Student Path -->
+
+                            <!-- Free Trial Path -->
                             <div id="newStudentPath" class="student-path active">
                                 <div class="path-card trial-path">
-                                    <div class="path-icon">🎓</div>
-                                    <h4>Start with a Free Trial</h4>
-                                    <p>Try your first lesson free with no commitment. We'll contact you to schedule a time that works.</p>
-                                    <div class="path-note">No payment required today</div>
+                                    <div class="path-icon">✨</div>
+                                    <h4>Try Before You Commit</h4>
+                                    <p>Your first lesson is completely free. Fill in your details below and we'll be in touch to schedule.</p>
+                                    <div class="path-note">No payment required</div>
                                 </div>
                             </div>
-                            
-                            <!-- Existing Student Path -->
+
+                            <!-- Pay & Enrol Path -->
                             <div id="existingStudentPath" class="student-path">
                                 <div class="path-card pay-path">
-                                    <div class="path-icon">💳</div>
+                                    <div class="path-icon">🎉</div>
                                     <div class="path-header-row">
                                         <h4>Pay Online & Save 5%</h4>
-                                        <span class="path-badge">Recommended</span>
+                                        <span class="path-badge">Best Value</span>
                                     </div>
-                                    <p>Thanks for being part of BEAM! Pay online for an automatic 5% discount.</p>
+                                    <p>For students enrolling after their trial, or returning for a new term. Includes automatic 5% discount.</p>
                                     <div class="price-display">
                                         <span class="original-price" id="originalPrice">$200/wk</span>
                                         <span class="arrow-icon">→</span>
-                                        <span class="discounted-price" id="discountedPrice">$190/wk</span>
+                                        <span class="discounted-price" id="discountedPrice">$209/wk inc. GST</span>
                                     </div>
                                 </div>
                             </div>
@@ -4692,6 +5311,7 @@
                         <li><a href="#about" class="footer-link">About Us</a></li>
                         <li><a href="#courses" class="footer-link">Courses & Pricing</a></li>
                         <li><a href="#team" class="footer-link">Our Team</a></li>
+                        <li><a href="#contact" class="footer-link" data-action="pay">Pay Now</a></li>
                         <li><a href="https://beamffef.netlify.app/login" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
                     </ul>
                 </div>
@@ -4717,9 +5337,9 @@
             <div class="footer-bottom">
                 <p>© 2025 BEAM Academy. All rights reserved. ABN 19 693 809 013</p>
                 <div class="footer-legal">
-                    <a href='/privacy'>Privacy Policy</a>
-                    <a href='/terms'>Terms & Conditions</a>
-                    <a href='/refund'>Refund Policy</a>
+                    <a href="#" onclick="openPolicyModal('privacy'); return false;">Privacy Policy</a>
+                    <a href="#" onclick="openPolicyModal('terms'); return false;">Terms & Conditions</a>
+                    <a href="#" onclick="openPolicyModal('refund'); return false;">Refund Policy</a>
                 </div>
             </div>
         </div>
@@ -4756,11 +5376,52 @@
         </div>
     </div>
 
+    <!-- Policy Modal -->
+    <div id="policyModal" class="policy-modal" aria-hidden="true">
+        <div class="modal-overlay" onclick="closePolicyModal()"></div>
+        <div class="policy-modal-content">
+            <button class="modal-close" onclick="closePolicyModal()" aria-label="Close">&times;</button>
+            <h2 id="policyModalTitle" class="policy-title">Policy</h2>
+            <div id="policyModalContent" class="policy-content">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
     <script>
         // Navigation scroll effect
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -100px 0px',
+            threshold: 0.1
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Apply to elements after DOM loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add animation classes to key elements
+            document.querySelectorAll('.section-header, .feature-card, .team-card, .testimonial-card, .faq-item').forEach((el, index) => {
+                el.classList.add('animate-on-scroll');
+                // Add staggered delays for cards in grids
+                if (el.classList.contains('feature-card') || el.classList.contains('team-card') || el.classList.contains('testimonial-card')) {
+                    el.classList.add(`delay-${(index % 4) + 1}`);
+                }
+                scrollObserver.observe(el);
+            });
         });
 
         // Mobile menu toggle
@@ -4981,6 +5642,113 @@
             modal.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
         }
+
+        // Policy Modal Content
+        const policyContent = {
+            refund: {
+                title: 'Refund Policy',
+                html: `
+                    <h3>Missed Lessons</h3>
+                    <ul>
+                        <li>Students can miss up to <strong>2 lessons per term per subject</strong></li>
+                        <li>We prefer to arrange a <strong>makeup lesson</strong> where possible</li>
+                        <li>Alternatively, missed lessons can be applied as <strong>credit towards the next term</strong></li>
+                    </ul>
+
+                    <h3>Catchup Classes</h3>
+                    <ul>
+                        <li>Catchup lessons (e.g. holiday intensives) are invoiced <strong>separately</strong> from regular term fees</li>
+                        <li>Invoice sent once all catchup classes have finished</li>
+                    </ul>
+
+                    <h3>Discounts</h3>
+                    <ul>
+                        <li><strong>5% early bird discount</strong> still applies to students who have received catchup lessons</li>
+                        <li><strong>$20 off first term discount</strong> is honoured alongside other promotions</li>
+                    </ul>
+                `
+            },
+            terms: {
+                title: 'Terms & Conditions',
+                html: `
+                    <h3>Enrolment</h3>
+                    <ul>
+                        <li>First lesson is a free trial with no obligation</li>
+                        <li>Ongoing enrolment is on a term-by-term basis</li>
+                        <li>Fees are payable at the start of each term</li>
+                    </ul>
+
+                    <h3>Cancellation</h3>
+                    <ul>
+                        <li>We require <strong>2 weeks notice</strong> for cancellations</li>
+                        <li>Students may switch subjects at any time by notifying us</li>
+                    </ul>
+
+                    <h3>Conduct</h3>
+                    <ul>
+                        <li>Students are expected to arrive on time and prepared for class</li>
+                        <li>Respectful behaviour towards tutors and other students is required</li>
+                        <li>BEAM Academy reserves the right to discontinue lessons for inappropriate conduct</li>
+                    </ul>
+                `
+            },
+            privacy: {
+                title: 'Privacy Policy',
+                html: `
+                    <h3>Information We Collect</h3>
+                    <ul>
+                        <li>Student and parent contact details (name, email, phone)</li>
+                        <li>Student academic information for lesson planning</li>
+                        <li>Payment information (processed securely via Stripe)</li>
+                    </ul>
+
+                    <h3>How We Use Your Information</h3>
+                    <ul>
+                        <li>To provide tutoring services and communicate about lessons</li>
+                        <li>To process payments and send invoices</li>
+                        <li>To improve our services and curriculum</li>
+                    </ul>
+
+                    <h3>Data Protection</h3>
+                    <ul>
+                        <li>Your information is stored securely and never sold to third parties</li>
+                        <li>We use industry-standard encryption for all sensitive data</li>
+                        <li>You may request access to or deletion of your data at any time</li>
+                    </ul>
+
+                    <p>For questions about your data, contact us at <a href="mailto:admin@beamacademy.info">admin@beamacademy.info</a></p>
+                `
+            }
+        };
+
+        function openPolicyModal(type) {
+            const modal = document.getElementById('policyModal');
+            const title = document.getElementById('policyModalTitle');
+            const content = document.getElementById('policyModalContent');
+
+            if (policyContent[type]) {
+                title.textContent = policyContent[type].title;
+                content.innerHTML = policyContent[type].html;
+            }
+
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePolicyModal() {
+            const modal = document.getElementById('policyModal');
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        // Close policy modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closePolicyModal();
+            }
+        });
 
         function updateSubjectSelection() {
             const checkboxes = document.querySelectorAll('input[name="modalSubject"]');
@@ -5269,6 +6037,39 @@
                 console.log('Pay button event listener attached');
             }
         }
+
+        // Handle "Pay Now" navigation links
+        document.addEventListener('click', function(e) {
+            const payLink = e.target.closest('[data-action="pay"]');
+            if (payLink) {
+                e.preventDefault();
+                
+                // Close mobile nav if open
+                const mobileNav = document.getElementById('mobile-nav');
+                const mobileToggle = document.querySelector('.mobile-toggle');
+                if (mobileNav && mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                }
+                
+                // Scroll to pricing section
+                const pricingSection = document.getElementById('courses');
+                if (pricingSection) {
+                    pricingSection.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Add highlight effect to pricing cards
+                    setTimeout(() => {
+                        const pricingTiers = document.querySelector('.pricing-tiers-new');
+                        if (pricingTiers) {
+                            pricingTiers.classList.add('highlight-pulse');
+                            setTimeout(() => {
+                                pricingTiers.classList.remove('highlight-pulse');
+                            }, 2000);
+                        }
+                    }, 500);
+                }
+            }
+        });
 
     </script>
 

@@ -2,6 +2,6 @@
   "name": "beam-website",
   "version": "1.0.0",
   "dependencies": {
-    "stripe": "^14.10.0"
+    "stripe": "^14.25.0"
   }
 }
