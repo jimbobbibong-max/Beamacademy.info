@@ -10,6 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Ads gtag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17832807956"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17832807956');
+      // Fire conversion for free trial form submissions (not payment)
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('payment') !== 'success') {
+        gtag('event', 'conversion', { 'send_to': 'AW-17832807956/CONVERSION_LABEL' });
+      }
+    </script>
     <style>
         :root {
             --purple-50: #faf5ff;
