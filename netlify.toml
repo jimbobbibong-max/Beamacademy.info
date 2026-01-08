@@ -1,4 +1,6 @@
+# Static HTML site - no build command needed
 [build]
+  publish = "."
   functions = "netlify/functions"
 
 [functions]
