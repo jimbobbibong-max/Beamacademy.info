@@ -3,7 +3,7 @@ const Stripe = require('stripe');
 exports.handler = async (event) => {
   console.log('=== CREATE-CHECKOUT FUNCTION START ===');
   console.log('HTTP Method:', event.httpMethod);
-  
+
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) };
   }
@@ -49,14 +49,12 @@ exports.handler = async (event) => {
       return { statusCode: 400, body: JSON.stringify({ error: 'Invalid package: ' + key }) };
     }
 
-    // Apply 5% discount
-    const discountedPrice = Math.round(basePrice * 0.95);
     // Add 10% GST
-    const gstAmount = Math.round(discountedPrice * 0.10);
-    const totalPrice = discountedPrice + gstAmount;
+    const gstAmount = Math.round(basePrice * 0.10);
+    const totalPrice = basePrice + gstAmount;
     const amountInCents = totalPrice * 100;
-    
-    console.log('Pricing:', { basePrice, discountedPrice, gstAmount, totalPrice, amountInCents });
+
+    console.log('Pricing:', { basePrice, gstAmount, totalPrice, amountInCents });
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -69,7 +67,7 @@ exports.handler = async (event) => {
               name: 'BEAM Academy - ' + tier + ' ' + pkg,
               description: 'Term tuition (10 weeks) for: ' + (subjects.length > 0 ? subjects.join(', ') : 'All subjects'),
             },
-            unit_amount: Math.round(discountedPrice * 100),
+            unit_amount: Math.round(basePrice * 100),
           },
           quantity: 1,
         },
@@ -96,8 +94,7 @@ exports.handler = async (event) => {
         tier,
         package: pkg,
         subjects: subjects.join(', '),
-        originalPrice: basePrice.toString(),
-        discountedPrice: discountedPrice.toString(),
+        basePrice: basePrice.toString(),
         gstAmount: gstAmount.toString(),
         totalPrice: totalPrice.toString()
       }

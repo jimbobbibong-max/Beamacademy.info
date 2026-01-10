@@ -75,7 +75,7 @@ exports.handler = async (event) => {
         console.log('Created student in Notion:', studentData.id);
 
         // Create payment record
-        const paymentNotes = '5% discount applied. Original: $' + originalPrice + '/wk, Discounted: $' + discountedPrice + '/wk + $' + gstAmount + ' GST. Package: ' + tier + ' ' + pkg + '. Subjects: ' + subjects + '. Paid via website.';
+        const paymentNotes = '$' + gstAmount + ' GST. Package: ' + tier + ' ' + pkg + '. Subjects: ' + subjects + '. Paid via website.';
         
         const paymentResponse = await fetch('https://api.notion.com/v1/pages', {
           method: 'POST',
