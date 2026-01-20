@@ -36,9 +36,9 @@ Requirements for mobile conversion optimization. Each maps to roadmap phases.
 
 ### Performance
 
-- [ ] **PERF-01**: Images optimized for mobile (compressed, lazy loaded)
-- [ ] **PERF-02**: Above-fold content loads quickly (LCP target under 2.5s)
-- [ ] **PERF-03**: No render-blocking resources delay first paint
+- [x] **PERF-01**: Images optimized for mobile (compressed, lazy loaded)
+- [x] **PERF-02**: Above-fold content loads quickly (LCP target under 2.5s)
+- [x] **PERF-03**: No render-blocking resources delay first paint
 
 ## v2 Requirements
 
@@ -87,9 +87,9 @@ Deferred to future. Not in current roadmap.
 | CONT-02 | Phase 4 | Complete |
 | CONT-03 | Phase 4 | Complete |
 | CONT-04 | Phase 4 | Complete |
-| PERF-01 | Phase 5 | Pending |
-| PERF-02 | Phase 5 | Pending |
-| PERF-03 | Phase 5 | Pending |
+| PERF-01 | Phase 5 | Complete |
+| PERF-02 | Phase 5 | Complete |
+| PERF-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 18 total

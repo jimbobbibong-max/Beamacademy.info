@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: CTA Placement** - Get primary CTA visible above fold and always accessible
 - [x] **Phase 3: Form Optimization** - Minimize friction on contact form
 - [x] **Phase 4: Content Structure** - Reorder sections for mobile conversion flow
-- [ ] **Phase 5: Performance** - Fast loading, no layout shift
+- [x] **Phase 5: Performance** - Fast loading, no layout shift
 
 ## Phase Details
 
@@ -84,10 +84,13 @@ Plans:
   1. Images load lazily below the fold; above-fold images are optimized
   2. Largest Contentful Paint (LCP) is under 2.5 seconds on 4G
   3. Page does not flash or shift layout during load (CLS under 0.1)
-**Plans**: 1 plan
+**Plans**: 4 plans
 
 Plans:
-- [ ] 05-01-PLAN.md - Image dimension fixes and LCP optimization
+- [x] 05-01-PLAN.md - Image dimension fixes and LCP optimization
+- [x] 05-02-PLAN.md - Async Google Fonts loading
+- [x] 05-03-PLAN.md - JS syntax and accessibility fixes (gap closure)
+- [x] 05-04-PLAN.md - Logo image optimization (gap closure)
 
 ## Progress
 
@@ -100,7 +103,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. CTA Placement | 1/1 | Complete | 2026-01-20 |
 | 3. Form Optimization | 1/1 | Complete | 2026-01-20 |
 | 4. Content Structure | 2/2 | Complete | 2026-01-20 |
-| 5. Performance | 0/1 | Planned | - |
+| 5. Performance | 4/4 | Complete | 2026-01-20 |
 
 ---
 *Roadmap created: 2026-01-20*
