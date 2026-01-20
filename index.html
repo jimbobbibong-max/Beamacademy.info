@@ -4276,6 +4276,8 @@
         }
 
         .btn-trial {
+            min-height: 52px;
+            font-weight: 600;
             background: var(--purple-700) !important;
             color: white !important;
             width: 100%;
@@ -5357,7 +5359,7 @@
 
                         
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
-                            <span class="btn-text"><span id="submitBtnText">Book Free Trial</span> →</span>
+                            <span class="btn-text"><span id="submitBtnText">Book Your Free Trial</span> →</span>
                             <span class="btn-loading"><span class="spinner"></span> Processing...</span>
                         </button>
                         
@@ -5985,7 +5987,7 @@
             document.getElementById('defaultFormState').style.display = 'block';
             document.getElementById('manualSelectionRow').style.display = 'flex';
             document.querySelector('.contact-form-wrapper').classList.remove('package-selected');
-            document.getElementById('submitBtnText').textContent = 'Book Free Trial';
+            document.getElementById('submitBtnText').textContent = 'Book Your Free Trial';
             
             // Hide payment choice and reset to new student / trial
             document.getElementById('paymentChoice').classList.remove('visible');
