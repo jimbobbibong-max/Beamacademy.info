@@ -1,5 +1,5 @@
 ---
-status: complete
+status: diagnosed
 phase: 05-performance
 source: [05-01-SUMMARY.md]
 started: 2026-01-20T18:10:00Z
@@ -55,17 +55,23 @@ skipped: 0
   reason: "User reported: LCP is 3.1s, above 2.5s target. Google Fonts render-blocking (170ms). Hero image not fast enough despite preload."
   severity: major
   test: 3
-  root_cause: ""
-  artifacts: []
-  missing: []
-  debug_session: ""
+  root_cause: "Google Fonts loaded via render-blocking stylesheet at index.html:121. Browser must download/parse font CSS before painting LCP element."
+  artifacts:
+    - path: "index.html:121"
+      issue: "Standard rel=stylesheet is render-blocking"
+  missing:
+    - "Async font loading strategy (media=print trick or preload)"
+  debug_session: ".planning/debug/lcp-performance-issue.md"
 
 - truth: "Lighthouse reports 0 render-blocking resources"
   status: failed
   reason: "User reported: Google Fonts CSS is render-blocking (870ms, 0.9 KiB). Est savings 170ms."
   severity: minor
   test: 5
-  root_cause: ""
-  artifacts: []
-  missing: []
-  debug_session: ""
+  root_cause: "Same as above - Google Fonts stylesheet blocks rendering"
+  artifacts:
+    - path: "index.html:121"
+      issue: "Google Fonts CSS loaded synchronously"
+  missing:
+    - "Non-blocking font loading strategy"
+  debug_session: ".planning/debug/lcp-performance-issue.md"
