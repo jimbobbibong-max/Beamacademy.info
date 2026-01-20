@@ -16,9 +16,9 @@ Requirements for mobile conversion optimization. Each maps to roadmap phases.
 
 ### CTA Placement
 
-- [ ] **CTA-01**: Primary "Book Free Trial" CTA visible in hero without scrolling
-- [ ] **CTA-02**: Sticky floating CTA bar visible on mobile during scroll
-- [ ] **CTA-03**: Click-to-call button prominently placed and functional
+- [x] **CTA-01**: Primary "Book Free Trial" CTA visible in hero without scrolling
+- [x] **CTA-02**: Sticky floating CTA bar visible on mobile during scroll
+- [x] **CTA-03**: Click-to-call button prominently placed and functional
 
 ### Form Optimization
 
@@ -76,9 +76,9 @@ Deferred to future. Not in current roadmap.
 | VIEW-02 | Phase 1 | Complete |
 | VIEW-03 | Phase 1 | Complete |
 | VIEW-04 | Phase 1 | Complete |
-| CTA-01 | Phase 2 | Pending |
-| CTA-02 | Phase 2 | Pending |
-| CTA-03 | Phase 2 | Pending |
+| CTA-01 | Phase 2 | Complete |
+| CTA-02 | Phase 2 | Complete |
+| CTA-03 | Phase 2 | Complete |
 | FORM-01 | Phase 3 | Pending |
 | FORM-02 | Phase 3 | Pending |
 | FORM-03 | Phase 3 | Pending |
@@ -98,4 +98,4 @@ Deferred to future. Not in current roadmap.
 
 ---
 *Requirements defined: 2026-01-20*
-*Last updated: 2026-01-20 after Phase 1 completion*
+*Last updated: 2026-01-20 after Phase 2 completion*

@@ -13,7 +13,7 @@ Transform the BEAM Academy tutoring website from a broken mobile experience (24 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Emergency Viewport Fix** - Make page viewable on mobile without zoom/pan
-- [ ] **Phase 2: CTA Placement** - Get primary CTA visible above fold and always accessible
+- [x] **Phase 2: CTA Placement** - Get primary CTA visible above fold and always accessible
 - [ ] **Phase 3: Form Optimization** - Minimize friction on contact form
 - [ ] **Phase 4: Content Structure** - Reorder sections for mobile conversion flow
 - [ ] **Phase 5: Performance** - Fast loading, no layout shift
@@ -45,7 +45,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 02-01-PLAN.md - Hero CTA optimization and sticky bottom CTA bar
+- [x] 02-01-PLAN.md - Hero CTA optimization and sticky bottom CTA bar
 
 ### Phase 3: Form Optimization
 **Goal**: Contact form completion requires minimal effort
@@ -96,7 +96,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Emergency Viewport Fix | 1/1 | Complete | 2026-01-20 |
-| 2. CTA Placement | 0/1 | Planned | - |
+| 2. CTA Placement | 1/1 | Complete | 2026-01-20 |
 | 3. Form Optimization | 0/1 | Not started | - |
 | 4. Content Structure | 0/1 | Not started | - |
 | 5. Performance | 0/1 | Not started | - |
