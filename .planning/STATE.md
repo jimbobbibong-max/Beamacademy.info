@@ -11,7 +11,7 @@ See: .planning/PROJECT.md (updated 2026-01-20)
 
 Phase: 2 of 5 (CTA Placement)
 Plan: 1 of 1 in current phase (COMPLETE)
-Status: Phase 2 complete - ready for Phase 3
+Status: Phase 2 complete + UAT passed - ready for Phase 3
 Last activity: 2026-01-20 - Completed 02-01-PLAN.md
 
 Progress: [####------] 40%
@@ -52,8 +52,11 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-- User should verify mobile fixes on actual device or Chrome DevTools
-- User should test sticky CTA bar and click-to-call functionality
+**Structured todos:** 2 in `.planning/todos/pending/`
+- Fix skip to main content button styling (ui)
+- Improve form scroll anchor position (ui)
+
+*From UAT observations - non-blocking polish items*
 
 ### Blockers/Concerns
 
