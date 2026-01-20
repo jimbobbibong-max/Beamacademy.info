@@ -70,10 +70,11 @@ Plans:
   2. Pricing section displays without horizontal scroll on 320px screens
   3. At least one testimonial is visible near/before the form
   4. Mobile hamburger menu works smoothly (tap to open, tap to close)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: Section reordering and content optimization
+- [ ] 04-01-PLAN.md - Hero content update and inline testimonial
+- [ ] 04-02-PLAN.md - Hamburger menu animation and pricing responsive fixes
 
 ### Phase 5: Performance
 **Goal**: Page loads fast and displays stable layout on mobile
@@ -98,7 +99,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Emergency Viewport Fix | 1/1 | Complete | 2026-01-20 |
 | 2. CTA Placement | 1/1 | Complete | 2026-01-20 |
 | 3. Form Optimization | 1/1 | Complete | 2026-01-20 |
-| 4. Content Structure | 0/1 | Not started | - |
+| 4. Content Structure | 0/2 | Planned | - |
 | 5. Performance | 0/1 | Not started | - |
 
 ---
