@@ -735,6 +735,35 @@
             text-decoration: underline;
         }
 
+        .hero-testimonial {
+            margin-top: 24px;
+            padding: 12px 20px;
+            background: rgba(124, 58, 237, 0.08);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(124, 58, 237, 0.15);
+        }
+
+        .hero-testimonial .testimonial-star {
+            background: var(--purple-600);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-testimonial {
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+        }
+
         .hero-visual {
             position: relative;
             animation: fadeIn 1s ease 0.3s both;
@@ -4580,6 +4609,10 @@
                             <a href="#courses" class="btn btn-secondary">View Courses</a>
                         </div>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
+                        <div class="hero-testimonial">
+                            <span class="testimonial-star">5.0</span>
+                            <span>"The teachers explain everything so well." - Luke K, Year 8</span>
+                        </div>
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card hero-image-card">
