@@ -5320,7 +5320,7 @@
                         <input type="hidden" name="price" id="hiddenPrice" value="">
                         <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
                         
-                        <div class="form-section-label">Parent/Guardian Details</div>
+                        <div class="form-section-label">Your Details</div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="parentName" class="form-label">Name *</label>
@@ -5339,26 +5339,7 @@
                             <div class="form-group"></div>
                         </div>
                         
-                        <div class="form-section-label">Student Details</div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="studentName" class="form-label">Name *</label>
-                                <input type="text" id="studentName" name="studentName" class="form-input" required placeholder="Student's full name">
-                            </div>
-                            <div class="form-group">
-                                <label for="studentEmail" class="form-label">Email</label>
-                                <input type="email" id="studentEmail" name="studentEmail" class="form-input" placeholder="student@email.com">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="studentPhone" class="form-label">Phone</label>
-                                <input type="tel" id="studentPhone" name="studentPhone" class="form-input" placeholder="04XX XXX XXX">
-                            </div>
-                            <div class="form-group"></div>
-                        </div>
-                        
-                        <!-- Year/Subject dropdowns (shown only when no package selected) -->
+                        <!-- Year Level dropdown (shown only when no package selected) -->
                         <div class="form-row" id="manualSelectionRow">
                             <div class="form-group">
                                 <label for="yearLevel" class="form-label">Year Level *</label>
@@ -5372,29 +5353,8 @@
                                     <option value="Year 12">Year 12</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="subject" class="form-label">Subject of Interest *</label>
-                                <select id="subject" name="subject" class="form-select" required>
-                                    <option value="">Select subject</option>
-                                    <option value="Mathematics">Mathematics</option>
-                                    <option value="Maths Accelerated">Maths Accelerated (Yr 9-10)</option>
-                                    <option value="Advanced Mathematics">Advanced Mathematics (Yr 11-12)</option>
-                                    <option value="Maths Extension 1">Maths Extension 1</option>
-                                    <option value="Maths Extension 2">Maths Extension 2</option>
-                                    <option value="English">English</option>
-                                    <option value="English Advanced">English Advanced (Yr 11-12)</option>
-                                    <option value="English Extension">English Extension</option>
-                                    <option value="Physics">Physics</option>
-                                    <option value="Chemistry">Chemistry</option>
-                                    <option value="Multiple Subjects">Multiple Subjects</option>
-                                </select>
-                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="message" class="form-label">Anything else we should know? (optional)</label>
-                            <textarea id="message" name="message" class="form-textarea" rows="2" placeholder="Goals, preferred times, specific topics..."></textarea>
-                        </div>
                         
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
                             <span class="btn-text"><span id="submitBtnText">Book Free Trial</span> →</span>
@@ -6133,12 +6093,11 @@
             const parentName = document.getElementById('parentName').value;
             const email = document.getElementById('parentEmail').value;
             const phone = document.getElementById('parentPhone').value;
-            const studentName = document.getElementById('studentName').value;
             
-            console.log('Form values:', { parentName, email, phone, studentName });
+            console.log('Form values:', { parentName, email, phone });
             
-            if (!parentName || !email || !phone || !studentName) {
-                alert('Please fill in all required fields (Parent Name, Email, Phone, and Student Name).');
+            if (!parentName || !phone) {
+                alert('Please fill in all required fields (Name and Phone).');
                 return;
             }
             
@@ -6177,7 +6136,6 @@
                         package: pkgPart,
                         subjects: subjectsValue ? subjectsValue.split(', ') : [],
                         parentName: parentName,
-                        studentName: studentName,
                         email: email,
                         phone: phone
                     })
