@@ -5,70 +5,61 @@
 See: .planning/PROJECT.md (updated 2026-01-20)
 
 **Core value:** Convert Google Ads mobile traffic into free trial bookings
-**Current focus:** Phase 5 - Performance (COMPLETE)
+**Current focus:** v1 complete — planning next milestone
 
 ## Current Position
 
-Phase: 5 of 5 (Performance)
-Plan: 4 of 4 complete
-Status: **MILESTONE COMPLETE** ✓
-Last activity: 2026-01-20 - Phase 5 verified (LCP 0.9s, CLS 0.014)
+Phase: v1 complete (5 phases shipped)
+Plan: All 9 plans complete
+Status: **MILESTONE SHIPPED** ✓
+Last activity: 2026-01-20 — v1 milestone archived
 
-Progress: [##########] 100%
+Progress: [##########] 100% (v1)
 
-## Performance Metrics
+## Milestone History
 
-**Velocity:**
-- Total plans completed: 8
-- Average duration: ~4 minutes
-- Total execution time: ~32 minutes
+| Version | Name | Phases | Status | Date |
+|---------|------|--------|--------|------|
+| v1 | Mobile Conversion | 1-5 | Shipped | 2026-01-20 |
 
-**By Phase:**
+See: .planning/MILESTONES.md for full details
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01-emergency-viewport-fix | 1 | ~2 min | ~2 min |
-| 02-cta-placement | 1 | ~3 min | ~3 min |
-| 03-form-optimization | 1 | ~3 min | ~3 min |
-| 04-content-structure | 2 | ~12 min | ~6 min |
-| 05-performance | 4 | ~12 min | ~3 min |
+## Performance Metrics (v1)
 
-**Recent Trend:**
-- Last 5 plans: 05-01 (~5 min), 05-02 (~3 min), 05-03, 05-04 (~4 min)
-- Trend: Stable
+**Final Lighthouse (Mobile):**
+- Performance: 88/100
+- LCP: 0.9s (target <2.5s) ✓
+- CLS: 0.014 (target <0.1) ✓
+- Accessibility: 88/100
+- SEO: 100/100
 
-*Updated after each plan completion*
+**Execution Stats:**
+- 5 phases, 9 plans
+- ~32 minutes total execution time
+- 38 files modified
+- 6,288 lines added
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Mobile-first approach (pending confirmation)
-- Sticky CTA over form move (pending confirmation)
-- Keep single HTML file structure
-- CSS-001: Added text-size-adjust to existing html rule (cleaner than duplicate)
-- CSS-002: Generic selectors for touch targets (covers future additions)
-- CTA-JS-001: Use JS for floating button repositioning (CSS sibling selector won't work across main boundary)
-- FORM-JS-001: Remove studentName from payment JS validation (form no longer has student fields)
-- MENU-CSS-001: Use visibility + opacity + transform for animations (not display:none)
-- MENU-JS-001: Outside click and Escape key handlers for menu close
-- CONTENT-001: Used Luke K's quote over Kane's (more specific and relatable)
-- CONTENT-002: Location in description, not headline (keeps headline focused)
-- PERF-IMG-001: Use exact pixel dimensions from file inspection for image attributes
-- PERF-FONT-001: Use preload+onload pattern for async font loading
-- LOGO-LAZY-001: Use lazy loading for logo despite header visibility (decorative, not LCP element)
-- INERT-001: Use inert attribute instead of aria-hidden for sticky bar (proper accessibility pattern)
+All v1 decisions documented in PROJECT.md Key Decisions table with outcomes.
 
 ### Pending Todos
 
-**Structured todos:** 2 in \`.planning/todos/pending/\`
+**Structured todos:** 2 in `.planning/todos/pending/`
 - Fix skip to main content button styling (ui)
 - Improve form scroll anchor position (ui)
 
-*From UAT observations - non-blocking polish items*
+*Carried forward to v2 backlog*
+
+### Tech Debt (from v1)
+
+- Skip to main content button positioning
+- Form scroll anchor positioning
+- Some course-icons aria-hidden issues
+- Some contrast issues
+- Links without discernible names
 
 ### Blockers/Concerns
 
@@ -77,16 +68,13 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-20
-Stopped at: Completed 05-03-PLAN.md (JS syntax + accessibility gap closure)
+Stopped at: v1 milestone completed and archived
 Resume file: None
 
 ## Next Up
 
-**MILESTONE COMPLETE!** All 5 phases verified.
+**Start Next Milestone** — questioning → research → requirements → roadmap
 
-**Lighthouse Results:**
-- Performance: 88/100
-- LCP: 0.9s (target <2.5s) ✓
-- CLS: 0.014 (target <0.1) ✓
+`/gsd:new-milestone`
 
-Run \`/gsd:audit-milestone\` to verify cross-phase integration and E2E flows before archiving.
+<sub>`/clear` first → fresh context window</sub>

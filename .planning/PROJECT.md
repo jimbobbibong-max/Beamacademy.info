@@ -1,8 +1,20 @@
 # BEAM Academy Mobile Conversion Redesign
 
-## What I'm Building
+## What This Is
 
-A full mobile redesign of the BEAM Academy tutoring website to convert Google Ads traffic into free trial bookings. Currently getting 24 clicks with 0 conversions due to mobile viewport/scaling issues and excessive scroll distance to the booking form.
+A mobile-optimized landing page for BEAM Academy tutoring that converts Google Ads traffic into free trial bookings. Features viewport-friendly layout, always-visible CTAs, simplified 4-field form, and fast loading (0.9s LCP).
+
+## Current State
+
+**Version:** v1 (shipped 2026-01-20)
+**Status:** Live on beamacademy.info
+**Codebase:** 6,835 LOC (HTML/CSS/JS in single index.html)
+
+**Performance:**
+- LCP: 0.9s (target <2.5s)
+- CLS: 0.014 (target <0.1)
+- Lighthouse Performance: 88/100
+- Lighthouse SEO: 100/100
 
 ## The Jobs It Does
 
@@ -14,38 +26,48 @@ A full mobile redesign of the BEAM Academy tutoring website to convert Google Ad
 
 ## Why This Matters
 
-24 clicks with 0 conversions means ad spend is wasted. Fixing mobile conversion directly improves ROI. Every trial booking is a potential term-long student ($80-500/week).
+24 clicks with 0 conversions meant ad spend was wasted. v1 fixed mobile conversion to directly improve ROI. Every trial booking is a potential term-long student ($80-500/week).
 
 ## Requirements
 
-### Validated
+### Validated (v1)
 
-(None yet — ship to validate)
+- VIEW-01: Page renders correctly on mobile without zoom/pan — v1
+- VIEW-02: Form inputs have 16px minimum font-size (iOS zoom prevention) — v1
+- VIEW-03: No horizontal scroll on 320px-428px screens — v1
+- VIEW-04: 44x44px minimum touch targets — v1
+- CTA-01: Primary CTA visible in hero without scrolling — v1
+- CTA-02: Sticky floating CTA bar visible during scroll — v1
+- CTA-03: Click-to-call button functional — v1
+- FORM-01: Contact form reduced to 3-4 essential fields — v1
+- FORM-02: Form inputs use correct types for mobile keyboards — v1
+- FORM-03: Form submit button has large tap target and clear CTA — v1
+- FORM-04: Form reachable without excessive scrolling — v1
+- CONT-01: Hero communicates value proposition clearly — v1
+- CONT-02: Pricing displays cleanly on mobile — v1
+- CONT-03: Trust signals visible near form — v1
+- CONT-04: Mobile hamburger menu works smoothly — v1
+- PERF-01: Images optimized for mobile — v1
+- PERF-02: LCP under 2.5 seconds (achieved 0.9s) — v1
+- PERF-03: No render-blocking resources — v1
 
 ### Active
 
-- [ ] Fix mobile viewport issues — no zooming/panning required to view content
-- [ ] Hero section readable and compelling on mobile
-- [ ] Sticky/floating "Book Free Trial" CTA always visible on mobile
-- [ ] Simplified mobile form — reduce fields or break into steps
-- [ ] Pricing section displays cleanly on mobile (no horizontal scroll)
-- [ ] Navigation works smoothly on mobile
-- [ ] Form is easy to complete on mobile (proper input sizing, keyboard handling)
-- [ ] Fast page load on mobile (optimize images, reduce blocking resources)
+(None — run `/gsd:new-milestone` to define v2 requirements)
 
 ### Out of Scope
 
-- Desktop redesign — focus is mobile only, desktop remains as-is
-- New features (chat, scheduling widget) — fix existing flow first
-- Content changes — keep same copy, just improve mobile presentation
-- Backend changes — Netlify Forms works, just improve frontend
+- Desktop redesign — focus was mobile conversion; desktop works acceptably
+- New pages — optimize existing landing page first
+- Backend changes — Netlify Forms works; frontend was the blocker
+- Framework migration — keep vanilla HTML/CSS for simplicity
+- Content rewrite — same copy, better mobile presentation
 
 ## Context
 
 - **Site:** beamacademy.info (static site on Netlify)
 - **Stack:** Single HTML file (index.html) with inline CSS/JS
 - **Deployment:** Auto-deploy on push to main branch
-- **Current state:** 226KB index.html, responsive breakpoints exist but mobile experience is broken
 - **Ad source:** Google Ads targeting parents searching for tutoring in Epping/Sydney area
 - **Conversion goal:** Free trial form submission → thank-you.html
 
@@ -60,9 +82,32 @@ A full mobile redesign of the BEAM Academy tutoring website to convert Google Ad
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Mobile-first approach | 24 ad clicks likely all mobile | — Pending |
-| Sticky CTA over form move | Less disruptive than restructuring page | — Pending |
-| Keep single HTML file | Maintain simplicity, easier deployment | — Pending |
+| Mobile-first approach | 24 ad clicks likely all mobile | ✓ Good — all requirements met |
+| Sticky CTA over form move | Less disruptive than restructuring page | ✓ Good — both hero + sticky CTAs work |
+| Keep single HTML file | Maintain simplicity, easier deployment | ✓ Good — no build step needed |
+| 44px touch targets | Apple HIG recommendation | ✓ Good — passes accessibility |
+| IntersectionObserver for sticky | Modern API, performant | ✓ Good — smooth behavior |
+| Async fonts via preload+onload | Eliminates render-blocking | ✓ Good — 0 render-blocking resources |
+| inert attribute for sticky bar | Better than aria-hidden for focusable children | ✓ Good — no accessibility violations |
+
+## Tech Debt (from v1)
+
+- Skip to main content button positioning (cosmetic)
+- Form scroll anchor positioning (UX polish)
+- Some course-icons have aria-hidden with focusable children
+- Some contrast issues (Lighthouse accessibility)
+- Links without discernible names (Lighthouse accessibility)
+
+## v2 Ideas (for next milestone)
+
+- Multi-step form wizard
+- Personalized CTAs based on ad source
+- A/B testing framework
+- Exit-intent popup
+- Google Reviews widget
+- Video testimonial
+- Live chat widget
+- SMS opt-in
 
 ---
-*Last updated: 2026-01-20 after initialization*
+*Last updated: 2026-01-20 after v1 milestone*

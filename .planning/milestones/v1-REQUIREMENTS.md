@@ -1,3 +1,13 @@
+# Requirements Archive: v1 Mobile Conversion Redesign
+
+**Archived:** 2026-01-20
+**Status:** SHIPPED
+
+This is the archived requirements specification for v1.
+For current requirements, see `.planning/REQUIREMENTS.md` (created for next milestone).
+
+---
+
 # Requirements: BEAM Academy Mobile Conversion Redesign
 
 **Defined:** 2026-01-20
@@ -94,8 +104,40 @@ Deferred to future. Not in current roadmap.
 **Coverage:**
 - v1 requirements: 18 total
 - Mapped to phases: 18
-- Unmapped: 0 ✓
+- Completed: 18 (100%)
 
 ---
-*Requirements defined: 2026-01-20*
-*Last updated: 2026-01-20 after Phase 4 completion*
+
+## Milestone Summary
+
+**Shipped:** 18 of 18 v1 requirements
+
+**Requirement Outcomes:**
+
+| Requirement | Outcome | Notes |
+|-------------|---------|-------|
+| VIEW-01 | Validated | overflow-x: hidden prevents horizontal scroll |
+| VIEW-02 | Validated | 16px font-size prevents iOS zoom |
+| VIEW-03 | Validated | No horizontal scroll at 320px-428px |
+| VIEW-04 | Validated | 44x44px minimum touch targets |
+| CTA-01 | Validated | Hero CTA visible above fold |
+| CTA-02 | Validated | Sticky bar slides in on scroll |
+| CTA-03 | Validated | tel: link works for click-to-call |
+| FORM-01 | Validated | 4 fields: Name*, Phone*, Email, Year Level |
+| FORM-02 | Validated | inputmode="tel" and "email" work |
+| FORM-03 | Validated | 52px button with "Book Your Free Trial" |
+| FORM-04 | Validated | Sticky CTA provides instant access |
+| CONT-01 | Validated | "Expert Tutoring for Years 7-12" headline |
+| CONT-02 | Validated | 320px responsive styles applied |
+| CONT-03 | Validated | Hero testimonial + section testimonials |
+| CONT-04 | Validated | Hamburger with 250ms animation |
+| PERF-01 | Validated | Lazy loading below fold, eager for hero |
+| PERF-02 | Validated | LCP 0.9s (target was <2.5s) |
+| PERF-03 | Validated | Async fonts via preload+onload |
+
+**Adjusted:** None - all requirements implemented as specified
+
+**Dropped:** None - all v1 requirements shipped
+
+---
+*Archived: 2026-01-20 as part of v1 milestone completion*
