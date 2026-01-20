@@ -1,0 +1,7 @@
+{
+  "mode": "yolo",
+  "depth": "standard",
+  "parallelization": true,
+  "autoDeploy": true,
+  "deployBranch": "main"
+}
