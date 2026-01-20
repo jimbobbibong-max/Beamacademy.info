@@ -114,9 +114,12 @@
       gtag('js', new Date());
       gtag('config', 'AW-17832807956');
     </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/classroom-teaching.jpg">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"></noscript>
     <style>
         :root {
             --purple-50: #faf5ff;
@@ -4446,7 +4449,7 @@
         <div class="container">
             <div class="nav-inner">
                 <a href="#" class="logo" aria-label="BEAM Academy home">
-                    <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true">
+                    <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
                     BEAM Academy
                 </a>
                 <ul class="nav-links">
@@ -4506,7 +4509,7 @@
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card hero-image-card">
-                            <img src="images/classroom-teaching.jpg" alt="BEAM Academy tutor teaching arithmetic sequences" loading="eager">
+                            <img src="images/classroom-teaching.jpg" alt="BEAM Academy tutor teaching arithmetic sequences" width="800" height="533" loading="eager" fetchpriority="high">
                         </div>
                         <div class="floating-card card-1" aria-hidden="true">
                             <div class="floating-card-icon">📚</div>
@@ -4527,7 +4530,7 @@
                 <div class="about-content">
                     <div class="about-image">
                         <div class="about-image-main about-photo">
-                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" loading="lazy">
+                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" width="800" height="533" loading="lazy">
                         </div>
                         <div class="about-badge">
                             <div class="about-badge-number">BHHS</div>
@@ -5177,7 +5180,7 @@
                 <div class="team-grid">
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/chris.jpg" alt="Chris Kim - Head of Mathematics" loading="lazy">
+                            <img src="images/chris.jpg" alt="Chris Kim - Head of Mathematics" width="400" height="400" loading="lazy">
                         </div>
                         <h3>Chris Kim</h3>
                         <p class="team-role">Head of Mathematics</p>
@@ -5190,7 +5193,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/nathan.jpg" alt="Nathan You - Tutor" loading="lazy">
+                            <img src="images/nathan.jpg" alt="Nathan You - Tutor" width="400" height="400" loading="lazy">
                         </div>
                         <h3>Nathan You</h3>
                         <p class="team-role">Tutor</p>
@@ -5203,7 +5206,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/taehoon.jpg" alt="Taehoon Kim - Tutor & Head Admin" loading="lazy" class="position-top">
+                            <img src="images/taehoon.jpg" alt="Taehoon Kim - Tutor & Head Admin" width="400" height="400" loading="lazy" class="position-top">
                         </div>
                         <h3>Taehoon Kim</h3>
                         <p class="team-role">Tutor & Head Admin</p>
@@ -5216,7 +5219,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/john.jpg" alt="John Park - Tutor" loading="lazy">
+                            <img src="images/john.jpg" alt="John Park - Tutor" width="400" height="400" loading="lazy">
                         </div>
                         <h3>John Park</h3>
                         <p class="team-role">Tutor</p>
@@ -5500,7 +5503,7 @@
         </section>
 
     <!-- Sticky Mobile CTA Bar -->
-    <div class="sticky-cta-bar" id="sticky-cta-bar" aria-hidden="true">
+    <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
         <div class="sticky-cta-container">
             <a href="tel:+61491791447" class="sticky-cta-phone" aria-label="Call BEAM Academy">
                 <span aria-hidden="true">&#128222;</span>
@@ -5525,7 +5528,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo" aria-label="BEAM Academy home">
-                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true">
+                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
                         BEAM Academy
                     </a>
                     <p>Expert tutoring for Years 7-12 by Baulkham Hills High School graduates achieving 95%+ in HSC Mathematics.</p>
@@ -5788,7 +5791,7 @@
                 ([entry]) => {
                     const isVisible = !entry.isIntersecting;
                     stickyBar.classList.toggle('visible', isVisible);
-                    stickyBar.setAttribute('aria-hidden', !isVisible);
+                    stickyBar.inert = !isVisible;
                 },
                 {
                     threshold: 0,
