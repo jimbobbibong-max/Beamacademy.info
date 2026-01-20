@@ -5686,6 +5686,28 @@
             observer.observe(footer);
         }
 
+        // Sticky CTA bar visibility - show when hero scrolls out of view
+        (function() {
+            const hero = document.querySelector('.hero');
+            const stickyBar = document.getElementById('sticky-cta-bar');
+
+            if (!hero || !stickyBar) return;
+
+            const stickyObserver = new IntersectionObserver(
+                ([entry]) => {
+                    const isVisible = !entry.isIntersecting;
+                    stickyBar.classList.toggle('visible', isVisible);
+                    stickyBar.setAttribute('aria-hidden', !isVisible);
+                },
+                {
+                    threshold: 0,
+                    rootMargin: '-100px 0px 0px 0px'
+                }
+            );
+
+            stickyObserver.observe(hero);
+        })();
+
         // Package selection - scroll to form and pre-fill
         // Package selection modal
         let currentTier = '';
