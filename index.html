@@ -4415,6 +4415,10 @@
                             <a href="#courses" class="btn btn-secondary">View Courses</a>
                         </div>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
+                        <div class="hero-testimonial">
+                            <span class="testimonial-star">5.0</span>
+                            <span>"The teachers explain everything so well." - Luke K, Year 8</span>
+                        </div>
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card hero-image-card">
@@ -5581,6 +5585,24 @@
                 mobileNav.classList.remove('active');
                 mobileToggle.setAttribute('aria-expanded', 'false');
             });
+        });
+
+        // Close mobile menu on outside click
+        document.addEventListener('click', (e) => {
+            const isClickInside = mobileNav.contains(e.target) || mobileToggle.contains(e.target);
+            if (!isClickInside && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close mobile menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                mobileToggle.focus();
+            }
         });
 
         // Year tabs filtering
