@@ -105,9 +105,9 @@ const stickyObserver = new IntersectionObserver(
 
 | Hash | Message |
 |------|---------|
-| 1703c2e | feat(02-01): optimize hero CTA buttons for mobile viewport |
-| f8a4723 | feat(02-01): add sticky CTA bar HTML and CSS |
-| 13b5818 | feat(02-01): add IntersectionObserver for sticky bar visibility |
+| fd63437 | feat(02-01): optimize hero CTA buttons for mobile |
+| 425cd6f | feat(02-01): add sticky CTA bar HTML and CSS |
+| 9ec8937 | feat(02-01): add IntersectionObserver for sticky bar visibility |
 
 ## Verification Checklist
 
