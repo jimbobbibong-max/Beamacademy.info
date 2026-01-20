@@ -84,10 +84,10 @@ Plans:
   1. Images load lazily below the fold; above-fold images are optimized
   2. Largest Contentful Paint (LCP) is under 2.5 seconds on 4G
   3. Page does not flash or shift layout during load (CLS under 0.1)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: Image optimization and critical CSS
+- [ ] 05-01-PLAN.md - Image dimension fixes and LCP optimization
 
 ## Progress
 
@@ -100,7 +100,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. CTA Placement | 1/1 | Complete | 2026-01-20 |
 | 3. Form Optimization | 1/1 | Complete | 2026-01-20 |
 | 4. Content Structure | 2/2 | Complete | 2026-01-20 |
-| 5. Performance | 0/1 | Not started | - |
+| 5. Performance | 0/1 | Planned | - |
 
 ---
 *Roadmap created: 2026-01-20*
