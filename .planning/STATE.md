@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-01-20)
 
 ## Current Position
 
-Phase: 2 of 5 (CTA Placement)
+Phase: 3 of 5 (Form Optimization)
 Plan: 1 of 1 complete
-Status: Phase 2 complete, ready for Phase 3
-Last activity: 2026-01-20 — Completed 02-01-PLAN.md
+Status: Phase 3 complete, ready for Phase 4
+Last activity: 2026-01-20 — Completed 03-01-PLAN.md
 
-Progress: [####______] 40% (v1 re-execution)
+Progress: [######____] 60% (v1 re-execution)
 
 ## Corruption Incident (2026-01-20)
 
@@ -42,6 +42,11 @@ Progress: [####______] 40% (v1 re-execution)
 
 Previous v1 decisions still valid - documented in PROJECT.md and archived ROADMAP.
 
+**Phase 3 decisions:**
+- Email made optional - phone is primary contact for mobile users
+- Year Level made optional - derived from package or asked in follow-up
+- Removed studentName field - single contact (parent/guardian) simplifies form
+
 ### Pending Todos
 
 **Structured todos:** 2 in `.planning/todos/pending/`
@@ -58,13 +63,14 @@ Previous v1 decisions still valid - documented in PROJECT.md and archived ROADMA
 ## Session Continuity
 
 Last session: 2026-01-20
-Stopped at: Completed Phase 2 CTA Placement
+Stopped at: Completed Phase 3 Form Optimization
 Resume file: None
 
 ## Next Up
 
-**Phase 3: Social Proof** — Trust signals and testimonials
+**Phase 4: Social Proof** — Trust signals and testimonials
 
-`/gsd:plan-phase 3`
+`/gsd:verify-work - verify phase 3 (MANDATORY)
+`/gsd:plan-phase 4` - plan next phase`
 
 <sub>`/clear` first → fresh context window</sub>

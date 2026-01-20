@@ -1,103 +1,115 @@
 ---
 phase: 03-form-optimization
 plan: 01
-subsystem: contact-form
-tags: [form, mobile-ux, keyboard-optimization, conversion]
+subsystem: ui
+tags: [html-forms, mobile-ux, autocomplete, inputmode]
 
-dependency-graph:
-  requires: [02-cta-placement]
-  provides: [reduced-form, mobile-optimized-inputs]
-  affects: [04-trust-elements, 05-final-polish]
+# Dependency graph
+requires:
+  - phase: 02-cta-placement
+    provides: Sticky CTA for form reachability
+provides:
+  - Reduced 4-field form (Name, Phone, Email optional, Year Level optional)
+  - Mobile keyboard optimization (inputmode, autocomplete)
+  - Enhanced submit button styling
+affects: [verification, deployment]
 
+# Tech tracking
 tech-stack:
   added: []
-  patterns: [mobile-keyboard-attributes, optional-field-labels]
+  patterns:
+    - "Mobile input optimization using inputmode and autocomplete attributes"
+    - "Optional field labeling pattern with '(optional)' suffix"
 
 key-files:
   created: []
   modified: [index.html]
 
-decisions:
-  - id: FORM-JS-001
-    decision: Remove studentName from payment JS validation
-    rationale: Form no longer has student fields, JS would crash without this fix
+key-decisions:
+  - "Email made optional - phone is primary contact method for mobile users"
+  - "Year Level made optional - can be collected in follow-up or from package selection"
+  - "Removed studentName - simplified to single contact (parent/guardian)"
 
-metrics:
-  duration: ~3 minutes
-  completed: 2026-01-20
+patterns-established:
+  - "inputmode='tel' for phone fields triggers numeric keypad on mobile"
+  - "inputmode='email' for email fields shows @ keyboard on mobile"
+  - "autocomplete attributes enable browser autofill"
+
+# Metrics
+duration: 7min
+completed: 2026-01-20
 ---
 
 # Phase 3 Plan 1: Form Field Reduction and Input Optimization Summary
 
-**One-liner:** Reduced contact form from 10 to 4 fields with mobile keyboard optimization (autocomplete, inputmode)
+**Reduced contact form from 10 fields to 4 (Name, Phone, Email optional, Year Level optional) with mobile keyboard optimization attributes**
 
-## What Was Done
+## Performance
 
-### Task 1: Remove unnecessary form fields
-- Removed entire "Student Details" section (studentName, studentEmail, studentPhone)
-- Removed Subject dropdown from manualSelectionRow
-- Removed Message textarea
-- Changed section label from "Parent/Guardian Details" to "Your Details"
-- **[Rule 3 - Blocking]** Fixed payment JS that referenced removed studentName field
+- **Duration:** 7 min
+- **Started:** 2026-01-20T09:57:02Z
+- **Completed:** 2026-01-20T10:04:29Z
+- **Tasks:** 4
+- **Files modified:** 1
 
-### Task 2: Make Email and Year Level optional
-- Removed `required` attribute from parentEmail input
-- Removed `required` attribute from yearLevel select
-- Updated labels to show "(optional)" instead of "*"
+## Accomplishments
 
-### Task 3: Add mobile keyboard optimization attributes
-- parentName: `autocomplete="name"`, `autocorrect="off"`
-- parentEmail: `autocomplete="email"`, `inputmode="email"`, `autocapitalize="off"`, `autocorrect="off"`
-- parentPhone: `autocomplete="tel"`, `inputmode="tel"`
-- Updated placeholders to be more user-friendly ("Your full name", "your@email.com")
+- Removed entire Student Details section (name, email, phone)
+- Removed Subject dropdown and Message textarea
+- Made Email and Year Level optional with clear labeling
+- Added autocomplete and inputmode attributes for mobile keyboards
+- Enhanced submit button with min-height 52px and font-weight 600
 
-### Task 4: Update submit button text and enhance styling
-- Changed button text: "Book Free Trial" -> "Book Your Free Trial"
-- Added `min-height: 52px` for mobile prominence
-- Added `font-weight: 600` for better visibility
+## Task Commits
 
-## Commits
+Each task was committed atomically:
 
-| Hash | Type | Description |
-|------|------|-------------|
-| d55f80e | feat | Remove unnecessary form fields |
-| d5a5d0c | feat | Make Email and Year Level optional |
-| 6ba784a | feat | Add mobile keyboard optimization attributes |
-| 079f30d | feat | Update submit button text and enhance styling |
+1. **Task 1: Remove unnecessary form fields** - `d7e0ba2` (feat)
+2. **Task 2: Make Email and Year Level optional** - `a89359a` (feat)
+3. **Task 3: Add mobile keyboard optimization attributes** - `7ee432e` (feat)
+4. **Task 4: Update submit button text and enhance styling** - `1ed8076` (feat)
+
+## Files Created/Modified
+
+- `index.html` - Form fields reduced, input attributes added, CSS enhanced
+
+## Decisions Made
+
+- **Email optional:** Phone is primary contact for mobile users (faster to provide)
+- **Year Level optional:** Can be derived from package selection or asked in follow-up
+- **Removed studentName:** Simplified to single contact person (parent/guardian handles enrollment)
 
 ## Deviations from Plan
 
 ### Auto-fixed Issues
 
-**1. [Rule 3 - Blocking] Fixed JS references to removed studentName field**
-- **Found during:** Task 1
-- **Issue:** Payment button JS code referenced `studentName` field that was being removed
-- **Fix:** Removed studentName from validation logic and API payload
-- **Files modified:** index.html (lines ~6096-6145)
-- **Commit:** d55f80e
+**1. [Rule 3 - Blocking] JavaScript references to removed fields**
+- **Found during:** Task 1 (Remove form fields)
+- **Issue:** JavaScript contained references to studentName field that no longer exists
+- **Fix:** Removed studentName variable declaration, validation check, and API payload property
+- **Files modified:** index.html (JavaScript section)
+- **Verification:** No studentName references remain in file
+- **Committed in:** d7e0ba2 (part of Task 1 commit)
 
-## Verification Results
+---
 
-All verification criteria passed:
-- [x] Form shows exactly 4 fields (Name, Phone, Email, Year Level)
-- [x] Hidden fields preserved (form-name, bot-field)
-- [x] Both submit buttons preserved (trialSubmitBtn, paySubmitBtn)
-- [x] manualSelectionRow still exists for Year Level
-- [x] All removed fields absent from HTML
-- [x] Mobile keyboard attributes present (autocomplete, inputmode)
-- [x] Button text updated to "Book Your Free Trial"
-- [x] Button min-height is 52px
+**Total deviations:** 1 auto-fixed (1 blocking)
+**Impact on plan:** Essential fix to prevent JavaScript errors. No scope creep.
 
-## Success Criteria Met
+## Issues Encountered
 
-1. **FORM-01:** Form has 4 visible fields - Name (required), Phone (required), Email (optional), Year Level (optional)
-2. **FORM-02:** Inputs have correct `inputmode` attributes for mobile keyboards
-3. **FORM-03:** Submit button is 52px tall with "Book Your Free Trial" text
-4. **FORM-04:** Form reachability maintained via sticky CTA from Phase 2
-5. **Netlify Integration:** Hidden fields and honeypot preserved
+None - plan executed as written with one expected JavaScript cleanup.
+
+## User Setup Required
+
+None - no external service configuration required.
 
 ## Next Phase Readiness
 
-Phase 3 Plan 1 complete. Ready for:
-- **Phase 4: Trust Elements** - Add social proof and testimonials
-- Or continue with any additional Phase 3 plans if they exist
+- Form optimized for mobile conversion (4 fields, proper keyboards)
+- Ready for verification testing
+- Success criteria FORM-01 through FORM-04 addressed
+
+---
+*Phase: 03-form-optimization*
+*Completed: 2026-01-20*
