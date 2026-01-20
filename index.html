@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -114,12 +114,9 @@
       gtag('js', new Date());
       gtag('config', 'AW-17832807956');
     </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/classroom-teaching.jpg">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
     <style>
         :root {
             --purple-50: #faf5ff;
@@ -171,42 +168,6 @@
 
         html {
             scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-        }
-
-        /* Mobile viewport fixes */
-        html, body {
-            overflow-x: hidden;
-            max-width: 100%;
-        }
-
-        img, video, iframe {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Touch target accessibility - 44px minimum for tappable elements */
-        a, button, [role="button"],
-        input[type="submit"], input[type="button"], input[type="reset"],
-        .btn, .nav-link, .nav-cta, .mobile-toggle,
-        .year-tab, .package-card, .faq-question {
-            min-height: 44px;
-            min-width: 44px;
-        }
-
-        /* Ensure form inputs meet touch target and prevent iOS zoom */
-        input, textarea, select, button {
-            font-size: 16px; /* Explicit 16px prevents iOS auto-zoom on focus */
-            min-height: 44px;
-            touch-action: manipulation; /* Removes 300ms tap delay */
-        }
-
-        /* Improve tap feedback on mobile */
-        @media (hover: none) and (pointer: coarse) {
-            a, button, .btn {
-                -webkit-tap-highlight-color: rgba(124, 58, 237, 0.2);
-            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -481,28 +442,13 @@
         .mobile-toggle span {
             display: block;
             width: 24px;
-            height: 2.5px;
+            height: 2px;
             background: var(--gray-700);
-            border-radius: 2px;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-origin: center;
-        }
-
-        /* Hamburger to X transformation */
-        .mobile-toggle[aria-expanded="true"] span:nth-child(1) {
-            transform: translateY(7.5px) rotate(45deg);
-        }
-
-        .mobile-toggle[aria-expanded="true"] span:nth-child(2) {
-            opacity: 0;
-            transform: scaleX(0);
-        }
-
-        .mobile-toggle[aria-expanded="true"] span:nth-child(3) {
-            transform: translateY(-7.5px) rotate(-45deg);
+            transition: all 0.3s ease;
         }
 
         .mobile-nav {
+            display: none;
             position: fixed;
             top: 72px;
             left: 0;
@@ -511,17 +457,9 @@
             padding: 24px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             z-index: 999;
-            transform: translateY(-20px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .mobile-nav.active {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
+        .mobile-nav.active { display: block; }
 
         .mobile-nav-links {
             list-style: none;
@@ -692,7 +630,7 @@
             background: var(--purple-200);
         }
 
-        .hero-badge::before { content: '??; margin-right: 4px; }
+        .hero-badge::before { content: '✨'; margin-right: 4px; }
 
         .hero h1 {
             font-size: clamp(2.8rem, 6vw, 4.5rem);
@@ -736,35 +674,6 @@
         .hero-returning a:hover {
             color: var(--purple-700);
             text-decoration: underline;
-        }
-
-        .hero-testimonial {
-            margin-top: 24px;
-            padding: 12px 20px;
-            background: rgba(124, 58, 237, 0.08);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            color: var(--gray-600);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            border: 1px solid rgba(124, 58, 237, 0.15);
-        }
-
-        .hero-testimonial .testimonial-star {
-            background: var(--purple-600);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 100px;
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero-testimonial {
-                font-size: 0.9rem;
-                padding: 10px 16px;
-            }
         }
 
         .hero-visual {
@@ -970,7 +879,7 @@
         }
 
         .about-feature::before {
-            content: '??;
+            content: '✓';
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1272,62 +1181,6 @@
             }
         }
 
-        /* 320px small screen pricing fix */
-        @media (max-width: 400px) {
-            .pricing-tier-new {
-                padding: 24px 16px;
-                border-radius: 12px;
-            }
-
-            .tier-name {
-                font-size: 1.25rem;
-            }
-
-            .tier-price-main .price-amount {
-                font-size: 2rem;
-            }
-
-            .tier-price-main .price-from,
-            .tier-price-main .price-period {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages li {
-                font-size: 0.9rem;
-                padding: 10px 12px;
-            }
-
-            .tier-packages .pkg-name {
-                font-size: 0.9rem;
-            }
-
-            .tier-packages .pkg-price {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages .pkg-save {
-                font-size: 0.7rem;
-                padding: 2px 6px;
-            }
-
-            .tier-cta {
-                font-size: 0.9rem;
-                padding: 14px 20px;
-            }
-
-            /* All Access hero card */
-            .all-access-hero {
-                padding: 20px 16px;
-            }
-
-            .all-access-hero-title {
-                font-size: 1.25rem;
-            }
-
-            .all-access-price {
-                font-size: 1.5rem;
-            }
-        }
 
         .pricing-tiers {
             display: grid;
@@ -2459,88 +2312,6 @@
             visibility: visible;
         }
 
-        /* Sticky Mobile CTA Bar */
-        .sticky-cta-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 950;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-top: 1px solid var(--gray-200);
-            padding: 12px 16px;
-            padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-            transform: translateY(100%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            will-change: transform;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .sticky-cta-bar.visible {
-            transform: translateY(0);
-        }
-
-        .sticky-cta-container {
-            display: flex;
-            gap: 12px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .sticky-cta-button {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 48px;
-            padding: 14px 24px;
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
-            font-family: var(--font-display);
-            font-weight: 600;
-            font-size: 1rem;
-            border-radius: 100px;
-            text-decoration: none;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
-            transition: all 0.2s ease;
-        }
-
-        .sticky-cta-button:hover {
-            background: linear-gradient(135deg, var(--purple-700), var(--purple-800));
-            transform: translateY(-1px);
-        }
-
-        .sticky-cta-phone {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            min-width: 48px;
-            min-height: 48px;
-            padding: 14px 16px;
-            background: var(--gray-100);
-            color: var(--purple-700);
-            font-family: var(--font-display);
-            font-weight: 600;
-            font-size: 1rem;
-            border-radius: 100px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .sticky-cta-phone:hover {
-            background: var(--purple-100);
-        }
-
-        /* Hide sticky bar on desktop */
-        @media (min-width: 769px) {
-            .sticky-cta-bar {
-                display: none;
-            }
-        }
-
         /* FAQ Section */
         .faq { background: var(--gray-50); }
 
@@ -2891,62 +2662,6 @@
             }
         }
 
-        /* 320px small screen pricing fix */
-        @media (max-width: 400px) {
-            .pricing-tier-new {
-                padding: 24px 16px;
-                border-radius: 12px;
-            }
-
-            .tier-name {
-                font-size: 1.25rem;
-            }
-
-            .tier-price-main .price-amount {
-                font-size: 2rem;
-            }
-
-            .tier-price-main .price-from,
-            .tier-price-main .price-period {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages li {
-                font-size: 0.9rem;
-                padding: 10px 12px;
-            }
-
-            .tier-packages .pkg-name {
-                font-size: 0.9rem;
-            }
-
-            .tier-packages .pkg-price {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages .pkg-save {
-                font-size: 0.7rem;
-                padding: 2px 6px;
-            }
-
-            .tier-cta {
-                font-size: 0.9rem;
-                padding: 14px 20px;
-            }
-
-            /* All Access hero card */
-            .all-access-hero {
-                padding: 20px 16px;
-            }
-
-            .all-access-hero-title {
-                font-size: 1.25rem;
-            }
-
-            .all-access-price {
-                font-size: 1.5rem;
-            }
-        }
 
         .pricing-tiers {
                 grid-template-columns: 1fr 1fr;
@@ -3208,62 +2923,6 @@
             }
         }
 
-        /* 320px small screen pricing fix */
-        @media (max-width: 400px) {
-            .pricing-tier-new {
-                padding: 24px 16px;
-                border-radius: 12px;
-            }
-
-            .tier-name {
-                font-size: 1.25rem;
-            }
-
-            .tier-price-main .price-amount {
-                font-size: 2rem;
-            }
-
-            .tier-price-main .price-from,
-            .tier-price-main .price-period {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages li {
-                font-size: 0.9rem;
-                padding: 10px 12px;
-            }
-
-            .tier-packages .pkg-name {
-                font-size: 0.9rem;
-            }
-
-            .tier-packages .pkg-price {
-                font-size: 0.85rem;
-            }
-
-            .tier-packages .pkg-save {
-                font-size: 0.7rem;
-                padding: 2px 6px;
-            }
-
-            .tier-cta {
-                font-size: 0.9rem;
-                padding: 14px 20px;
-            }
-
-            /* All Access hero card */
-            .all-access-hero {
-                padding: 20px 16px;
-            }
-
-            .all-access-hero-title {
-                font-size: 1.25rem;
-            }
-
-            .all-access-price {
-                font-size: 1.5rem;
-            }
-        }
 
         .pricing-tiers {
                 grid-template-columns: 1fr;
@@ -3287,21 +2946,6 @@
 
             .hero { padding: 100px 0 60px; }
             .hero h1 { font-size: 2.25rem; }
-
-            .hero-buttons {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .hero-buttons .btn-primary {
-                padding: 16px 24px;
-                font-size: 1.1rem;
-            }
 
             section { padding: 60px 0; }
 
@@ -3595,7 +3239,7 @@
         }
 
         .subject-tag::before {
-            content: '??;
+            content: '✓';
             color: var(--purple-600);
             font-weight: bold;
             font-size: 0.75rem;
@@ -3847,7 +3491,7 @@
         }
 
         .subject-checkbox::after {
-            content: '??;
+            content: '✓';
             color: white;
             font-weight: bold;
             font-size: 14px;
@@ -4499,10 +4143,8 @@
             background: var(--purple-700) !important;
             color: white !important;
             width: 100%;
-            min-height: 52px;
             padding: 1rem 2rem;
             font-size: 1.1rem;
-            font-weight: 600;
         }
 
         .btn-pay .btn-text,
@@ -4559,7 +4201,7 @@
         <div class="container">
             <div class="nav-inner">
                 <a href="#" class="logo" aria-label="BEAM Academy home">
-                    <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+                    <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true">
                     BEAM Academy
                 </a>
                 <ul class="nav-links">
@@ -4602,31 +4244,27 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <div class="hero-badge">Epping, Sydney</div>
-                        <h1>Expert Tutoring for <span>Years 7-12</span></h1>
+                        <h1>Shine Brighter with <span>BEAM</span></h1>
                         <p class="hero-description">
-                            Small classes by BHHS graduates with 95%+ in HSC Mathematics.
-                            Personalised learning in Epping, Sydney.
+                            Expert tutoring by Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics. 
+                            Small classes, personalised learning, proven results.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Start Free Trial </a>
+                            <a href="#contact" class="btn btn-primary">Start Free Trial →</a>
                             <a href="#courses" class="btn btn-secondary">View Courses</a>
                         </div>
-                        <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here </a></p>
-                        <div class="hero-testimonial">
-                            <span class="testimonial-star">5.0</span>
-                            <span>"The teachers explain everything so well." - Luke K, Year 8</span>
-                        </div>
+                        <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card hero-image-card">
-                            <img src="images/classroom-teaching.jpg" alt="BEAM Academy tutor teaching arithmetic sequences" loading="eager" width="800" height="533" fetchpriority="high">
+                            <img src="images/classroom-teaching.jpg" alt="BEAM Academy tutor teaching arithmetic sequences" loading="eager">
                         </div>
                         <div class="floating-card card-1" aria-hidden="true">
-                            <div class="floating-card-icon">?뱴</div>
+                            <div class="floating-card-icon">📚</div>
                             <div class="floating-card-text">Medical Students</div>
                         </div>
                         <div class="floating-card card-2" aria-hidden="true">
-                            <div class="floating-card-icon"></div>
+                            <div class="floating-card-icon">✨</div>
                             <div class="floating-card-text">Personalised Plans</div>
                         </div>
                     </div>
@@ -4640,7 +4278,7 @@
                 <div class="about-content">
                     <div class="about-image">
                         <div class="about-image-main about-photo">
-                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" loading="lazy" width="800" height="533">
+                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" loading="lazy">
                         </div>
                         <div class="about-badge">
                             <div class="about-badge-number">BHHS</div>
@@ -4685,7 +4323,7 @@
                 <!-- All Access Hero Banner -->
                 <div class="all-access-hero" onclick="openAllAccessModal()">
                     <div class="all-access-hero-content">
-                        <span class="all-access-hero-badge">??Most Popular</span>
+                        <span class="all-access-hero-badge">★ Most Popular</span>
                         <h3 class="all-access-hero-title">All Access Pass</h3>
                         <p class="all-access-hero-desc">Unlimited subjects, unlimited potential. Get access to every class in your year level.</p>
                     </div>
@@ -4698,14 +4336,14 @@
                             <div class="all-access-price-label">Years 11-12</div>
                             <div class="all-access-price">$500<span>/wk</span></div>
                         </div>
-                        <span class="all-access-hero-cta">Get All Access </span>
+                        <span class="all-access-hero-cta">Get All Access →</span>
                     </div>
                 </div>
 
                 <p style="text-align: center; color: var(--gray-400); margin-bottom: 32px; font-size: 0.95rem;">Or choose individual subjects below</p>
 
                 <div class="enrollment-info-prompt">
-                    <span class="enrollment-icon">?뮕</span>
+                    <span class="enrollment-icon">💡</span>
                     <span><strong>How it works:</strong> Select your package below, then choose to book a free trial or pay online.</span>
                 </div>
 
@@ -4792,9 +4430,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 7-8</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱪</div>
+                        <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Junior Mathematics</h3>
                         <p>Build strong foundations in algebra, geometry, and problem-solving. Aligned with the NSW Stage 4 & 5 syllabus.</p>
                         <div class="course-card-footer">
@@ -4810,9 +4448,9 @@
                                 <span class="course-year-badge">Years 7-8</span>
                                 <span class="course-advanced-badge">Advanced</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?렞</div>
+                        <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Junior Advanced Maths</h3>
                         <p>Extension program for high-achieving students. Challenging problems, competition prep, and accelerated content.</p>
                         <div class="course-card-footer">
@@ -4827,9 +4465,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 7-8</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱷</div>
+                        <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>Junior English</h3>
                         <p>Develop analytical writing, comprehension, and textual analysis skills with focused support for essay writing.</p>
                         <div class="course-card-footer">
@@ -4844,9 +4482,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱪</div>
+                        <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Years 9-10 Mathematics</h3>
                         <p>Prepare for senior maths with advanced algebra, trigonometry, and statistics. Build skills for Year 11 success.</p>
                         <div class="course-card-footer">
@@ -4862,9 +4500,9 @@
                                 <span class="course-year-badge">Years 9-10</span>
                                 <span class="course-advanced-badge">Advanced</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?렞</div>
+                        <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Years 9-10 Advanced Maths</h3>
                         <p>Accelerated program covering Year 11 content early. Ideal for students targeting Extension courses in senior years.</p>
                         <div class="course-card-footer">
@@ -4879,9 +4517,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱷</div>
+                        <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>Years 9-10 English</h3>
                         <p>Advanced essay writing, textual analysis, and creative writing. Preparation for senior English courses.</p>
                         <div class="course-card-footer">
@@ -4896,9 +4534,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 6</span>
+                            <span class="course-class-size">👥 Max 6</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?랃툘</div>
+                        <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
                         <p>Deep textual analysis, critical theory, and sophisticated composition. For students aiming for top English results.</p>
                         <div class="course-card-footer">
@@ -4913,9 +4551,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true"></div>
+                        <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Years 9-10 Physics</h3>
                         <p>Build strong foundations in mechanics, waves, and energy. Early preparation for senior Physics success.</p>
                         <div class="course-card-footer">
@@ -4930,9 +4568,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?㎦</div>
+                        <div class="course-icon" aria-hidden="true">🧪</div>
                         <h3>Years 9-10 Chemistry</h3>
                         <p>Master atomic structure, chemical reactions, and lab techniques. Foundation for senior Chemistry.</p>
                         <div class="course-card-footer">
@@ -4947,9 +4585,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱪</div>
+                        <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Advanced Mathematics</h3>
                         <p>Comprehensive coverage of the Preliminary Advanced syllabus with focus on exam skills and deep understanding.</p>
                         <div class="course-card-footer">
@@ -4964,9 +4602,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?렞</div>
+                        <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Mathematics Extension 1</h3>
                         <p>Personalised approach with tailored materials and feedback to build confidence through challenging problems.</p>
                         <div class="course-card-footer">
@@ -4981,9 +4619,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱷</div>
+                        <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>English Advanced</h3>
                         <p>Tailored approach adjusting lesson plans, writing styles, and feedback to suit each student's school requirements.</p>
                         <div class="course-card-footer">
@@ -4998,9 +4636,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 6</span>
+                            <span class="course-class-size">👥 Max 6</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?랃툘</div>
+                        <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
                         <p>Advanced literary theory, independent research, and creative composition for Extension 1 and Extension 2.</p>
                         <div class="course-card-footer">
@@ -5015,9 +4653,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?쀯툘</div>
+                        <div class="course-icon" aria-hidden="true">⚗️</div>
                         <h3>Chemistry</h3>
                         <p>Focus on both theory and scientific principles behind calculations, fostering deep understanding.</p>
                         <div class="course-card-footer">
@@ -5032,9 +4670,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true"></div>
+                        <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Physics</h3>
                         <p>Strengthen analytical and scientific capability through rigorous in-depth syllabus coverage.</p>
                         <div class="course-card-footer">
@@ -5049,9 +4687,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱪</div>
+                        <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Advanced Mathematics</h3>
                         <p>Maximise your HSC marks with focused exam skills and deep understanding of applications.</p>
                         <div class="course-card-footer">
@@ -5066,9 +4704,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?렞</div>
+                        <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Mathematics Extension 1</h3>
                         <p>Personalised approach with tailored materials and feedback to ensure confidence through HSC exams.</p>
                         <div class="course-card-footer">
@@ -5083,9 +4721,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?룇</div>
+                        <div class="course-icon" aria-hidden="true">🏆</div>
                         <h3>Mathematics Extension 2</h3>
                         <p>Expert tutoring in the most challenging HSC maths course. Gain skills and confidence for top results.</p>
                         <div class="course-card-footer">
@@ -5100,9 +4738,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?뱷</div>
+                        <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>English Advanced</h3>
                         <p>Tailored HSC preparation adjusting to your school's texts and assessment requirements.</p>
                         <div class="course-card-footer">
@@ -5117,9 +4755,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 6</span>
+                            <span class="course-class-size">👥 Max 6</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?랃툘</div>
+                        <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
                         <p>HSC Extension preparation covering literary worlds, independent project development, and critical excellence.</p>
                         <div class="course-card-footer">
@@ -5134,9 +4772,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true">?쀯툘</div>
+                        <div class="course-icon" aria-hidden="true">⚗️</div>
                         <h3>Chemistry</h3>
                         <p>Structured lessons covering the full HSC Chemistry syllabus with emphasis on conceptual understanding and exam technique.</p>
                         <div class="course-card-footer">
@@ -5151,9 +4789,9 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">?뫁 Max 8</span>
+                            <span class="course-class-size">👥 Max 8</span>
                         </div>
-                        <div class="course-icon" aria-hidden="true"></div>
+                        <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Physics</h3>
                         <p>Clear explanations of complex concepts with practical problem-solving practice for HSC success.</p>
                         <div class="course-card-footer">
@@ -5179,32 +4817,32 @@
                 </header>
                 <div class="features-grid">
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?뮠</div>
+                        <div class="feature-icon" aria-hidden="true">💬</div>
                         <h3>24/7 Academic Support</h3>
                         <p>Access homework help and guidance at any time through our Discord community. No student needs to stay stuck on a problem.</p>
                     </article>
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?뱤</div>
+                        <div class="feature-icon" aria-hidden="true">📊</div>
                         <h3>Student Portal</h3>
                         <p>Track scores topic by topic, submit homework easily, and access all materials in one place. Parents and students can monitor progress anytime.</p>
                     </article>
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?뱥</div>
+                        <div class="feature-icon" aria-hidden="true">📋</div>
                         <h3>Custom Worksheets</h3>
                         <p>Receive worksheets tailored to your topics and learning needs, aligned with the NSW syllabus and HSC standards.</p>
                     </article>
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?렞</div>
+                        <div class="feature-icon" aria-hidden="true">🎯</div>
                         <h3>Diagnostic Assessments</h3>
                         <p>We identify strengths and areas for improvement to create a personalised learning plan for each student.</p>
                     </article>
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?뫁</div>
+                        <div class="feature-icon" aria-hidden="true">👥</div>
                         <h3>Small Class Sizes</h3>
                         <p>Maximum of 8 students per class ensures everyone gets the attention and support they need to succeed.</p>
                     </article>
                     <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">?룇</div>
+                        <div class="feature-icon" aria-hidden="true">🏆</div>
                         <h3>Proven Results</h3>
                         <p>Our tutors achieved 95%+ in HSC Mathematics and are current medical students passionate about student success.</p>
                     </article>
@@ -5224,24 +4862,25 @@
                         </p>
                         <div class="portal-features">
                             <div class="portal-feature">
-                                <span class="portal-feature-icon" aria-hidden="true">?뱢</span>
+                                <span class="portal-feature-icon" aria-hidden="true">📈</span>
                                 <span class="portal-feature-text">Topic-by-topic scores</span>
                             </div>
                             <div class="portal-feature">
-                                <span class="portal-feature-icon" aria-hidden="true">?뱷</span>
+                                <span class="portal-feature-icon" aria-hidden="true">📝</span>
                                 <span class="portal-feature-text">Easy homework submission</span>
                             </div>
                             <div class="portal-feature">
-                                <span class="portal-feature-icon" aria-hidden="true">?뱴</span>
+                                <span class="portal-feature-icon" aria-hidden="true">📚</span>
                                 <span class="portal-feature-text">Access all materials</span>
                             </div>
                             <div class="portal-feature">
-                                <span class="portal-feature-icon" aria-hidden="true">?뫅?랅윉⒱랅윉?/span>
+                                <span class="portal-feature-icon" aria-hidden="true">👨‍👩‍👧</span>
                                 <span class="portal-feature-text">Parent & student access</span>
                             </div>
                         </div>
                         <a href="https://beamffef.netlify.app/login" target="_blank" rel="noopener" class="btn btn-white">
-                            Access Portal ??                        </a>
+                            Access Portal →
+                        </a>
                     </div>
                     <div class="portal-preview">
                         <div class="portal-mockup">
@@ -5251,7 +4890,7 @@
                                 <span></span>
                             </div>
                             <div class="portal-mockup-content">
-                                <div class="portal-mockup-title">?뱤 Performance Dashboard</div>
+                                <div class="portal-mockup-title">📊 Performance Dashboard</div>
                                 <div class="portal-mockup-row">
                                     <span>Algebra</span>
                                     <span class="score-green">92%</span>
@@ -5289,7 +4928,7 @@
                 <div class="team-grid">
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/chris.jpg" alt="Chris Kim - Head of Mathematics" loading="lazy" width="400" height="400">
+                            <img src="images/chris.jpg" alt="Chris Kim - Head of Mathematics" loading="lazy">
                         </div>
                         <h3>Chris Kim</h3>
                         <p class="team-role">Head of Mathematics</p>
@@ -5302,7 +4941,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/nathan.jpg" alt="Nathan You - Tutor" loading="lazy" width="400" height="400">
+                            <img src="images/nathan.jpg" alt="Nathan You - Tutor" loading="lazy">
                         </div>
                         <h3>Nathan You</h3>
                         <p class="team-role">Tutor</p>
@@ -5315,7 +4954,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/taehoon.jpg" alt="Taehoon Kim - Tutor & Head Admin" loading="lazy" class="position-top" width="400" height="400">
+                            <img src="images/taehoon.jpg" alt="Taehoon Kim - Tutor & Head Admin" loading="lazy" class="position-top">
                         </div>
                         <h3>Taehoon Kim</h3>
                         <p class="team-role">Tutor & Head Admin</p>
@@ -5328,7 +4967,7 @@
                     </article>
                     <article class="team-card">
                         <div class="team-image">
-                            <img src="images/john.jpg" alt="John Park - Tutor" loading="lazy" width="400" height="400">
+                            <img src="images/john.jpg" alt="John Park - Tutor" loading="lazy">
                         </div>
                         <h3>John Park</h3>
                         <p class="team-role">Tutor</p>
@@ -5441,21 +5080,21 @@
                     <p>Experience the BEAM difference with a complimentary first lesson. No obligation, just quality tutoring.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-icon">?뱧</span>
+                            <span class="contact-icon">📍</span>
                             <div>
                                 <span class="contact-item-label">Location</span>
                                 <span class="contact-item-value">Suite 206, 2 Pembroke St, Epping NSW 2121</span>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">?뱸</span>
+                            <span class="contact-icon">📞</span>
                             <div>
                                 <span class="contact-item-label">Phone</span>
                                 <a href="tel:0491791447" class="contact-item-value">0491 791 447</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">?됵툘</span>
+                            <span class="contact-icon">✉️</span>
                             <div>
                                 <span class="contact-item-label">Email</span>
                                 <a href="mailto:admin@beamacademy.info" class="contact-item-value">admin@beamacademy.info</a>
@@ -5492,7 +5131,7 @@
                             </div>
                         </div>
                         <button type="button" class="change-selection-btn" onclick="changeSelection()">
-                            ??Change Selection
+                            ← Change Selection
                         </button>
                         
                         <!-- Payment Choice -->
@@ -5500,11 +5139,11 @@
                             <p class="payment-choice-title">What would you like to do?</p>
                             <div class="student-type-toggle">
                                 <button type="button" class="student-type-btn active" id="btnNewStudent" onclick="selectStudentType('new')">
-                                    <span class="student-type-icon">?럳</span>
+                                    <span class="student-type-icon">🎓</span>
                                     <span>Book Free Trial</span>
                                 </button>
                                 <button type="button" class="student-type-btn" id="btnExistingStudent" onclick="selectStudentType('existing')">
-                                    <span class="student-type-icon">?뮩</span>
+                                    <span class="student-type-icon">💳</span>
                                     <span>Pay & Enrol</span>
                                 </button>
                             </div>
@@ -5512,7 +5151,7 @@
                             <!-- Free Trial Path -->
                             <div id="newStudentPath" class="student-path active">
                                 <div class="path-card trial-path">
-                                    <div class="path-icon"></div>
+                                    <div class="path-icon">✨</div>
                                     <h4>Try Before You Commit</h4>
                                     <p>Your first lesson is completely free. Fill in your details below and we'll be in touch to schedule.</p>
                                     <div class="path-note">No payment required</div>
@@ -5522,7 +5161,7 @@
                             <!-- Pay & Enrol Path -->
                             <div id="existingStudentPath" class="student-path">
                                 <div class="path-card pay-path">
-                                    <div class="path-icon">?럦</div>
+                                    <div class="path-icon">🎉</div>
                                     <div class="path-header-row">
                                         <h4>Pay Online & Save 5%</h4>
                                         <span class="path-badge">Best Value</span>
@@ -5530,7 +5169,7 @@
                                     <p>For students enrolling after their trial, or returning for a new term. Includes automatic 5% discount.</p>
                                     <div class="price-display">
                                         <span class="original-price" id="originalPrice">$200/wk</span>
-                                        <span class="arrow-icon"></span>
+                                        <span class="arrow-icon">→</span>
                                         <span class="discounted-price" id="discountedPrice">$209/wk inc. GST</span>
                                     </div>
                                 </div>
@@ -5545,32 +5184,40 @@
                         <input type="hidden" name="price" id="hiddenPrice" value="">
                         <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
                         
-                        <div class="form-section-label">Your Details</div>
+                        <div class="form-section-label">Parent/Guardian Details</div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="parentName" class="form-label">Name *</label>
-                                <input type="text" id="parentName" name="parentName" class="form-input" required
-                                       placeholder="Your full name"
-                                       autocomplete="name"
-                                       autocorrect="off">
+                                <input type="text" id="parentName" name="parentName" class="form-input" required placeholder="Parent's full name">
                             </div>
                             <div class="form-group">
-                                <label for="parentEmail" class="form-label">Email (optional)</label>
-                                <input type="email" id="parentEmail" name="parentEmail" class="form-input"
-                                       placeholder="your@email.com"
-                                       autocomplete="email"
-                                       inputmode="email"
-                                       autocapitalize="off"
-                                       autocorrect="off">
+                                <label for="parentEmail" class="form-label">Email *</label>
+                                <input type="email" id="parentEmail" name="parentEmail" class="form-input" required placeholder="parent@email.com">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="parentPhone" class="form-label">Phone *</label>
-                                <input type="tel" id="parentPhone" name="parentPhone" class="form-input" required
-                                       placeholder="04XX XXX XXX"
-                                       autocomplete="tel"
-                                       inputmode="tel">
+                                <input type="tel" id="parentPhone" name="parentPhone" class="form-input" required placeholder="04XX XXX XXX">
+                            </div>
+                            <div class="form-group"></div>
+                        </div>
+                        
+                        <div class="form-section-label">Student Details</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName" class="form-label">Name *</label>
+                                <input type="text" id="studentName" name="studentName" class="form-input" required placeholder="Student's full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="studentEmail" class="form-label">Email</label>
+                                <input type="email" id="studentEmail" name="studentEmail" class="form-input" placeholder="student@email.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentPhone" class="form-label">Phone</label>
+                                <input type="tel" id="studentPhone" name="studentPhone" class="form-input" placeholder="04XX XXX XXX">
                             </div>
                             <div class="form-group"></div>
                         </div>
@@ -5578,8 +5225,8 @@
                         <!-- Year/Subject dropdowns (shown only when no package selected) -->
                         <div class="form-row" id="manualSelectionRow">
                             <div class="form-group">
-                                <label for="yearLevel" class="form-label">Year Level (optional)</label>
-                                <select id="yearLevel" name="yearLevel" class="form-select">
+                                <label for="yearLevel" class="form-label">Year Level *</label>
+                                <select id="yearLevel" name="yearLevel" class="form-select" required>
                                     <option value="">Select year level</option>
                                     <option value="Year 7">Year 7</option>
                                     <option value="Year 8">Year 8</option>
@@ -5589,16 +5236,37 @@
                                     <option value="Year 12">Year 12</option>
                                 </select>
                             </div>
-                            <div class="form-group"></div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject of Interest *</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Select subject</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="Maths Accelerated">Maths Accelerated (Yr 9-10)</option>
+                                    <option value="Advanced Mathematics">Advanced Mathematics (Yr 11-12)</option>
+                                    <option value="Maths Extension 1">Maths Extension 1</option>
+                                    <option value="Maths Extension 2">Maths Extension 2</option>
+                                    <option value="English">English</option>
+                                    <option value="English Advanced">English Advanced (Yr 11-12)</option>
+                                    <option value="English Extension">English Extension</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Chemistry">Chemistry</option>
+                                    <option value="Multiple Subjects">Multiple Subjects</option>
+                                </select>
+                            </div>
                         </div>
 
+                        <div class="form-group">
+                            <label for="message" class="form-label">Anything else we should know? (optional)</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="2" placeholder="Goals, preferred times, specific topics..."></textarea>
+                        </div>
+                        
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
-                            <span class="btn-text"><span id="submitBtnText">Book Your Free Trial</span> </span>
+                            <span class="btn-text"><span id="submitBtnText">Book Free Trial</span> →</span>
                             <span class="btn-loading"><span class="spinner"></span> Processing...</span>
                         </button>
                         
                         <button type="button" class="btn btn-primary form-submit btn-pay" id="paySubmitBtn" style="display: none;">
-                            <span class="btn-text">Pay Now & Save 5% </span>
+                            <span class="btn-text">Pay Now & Save 5% →</span>
                             <span class="btn-loading"><span class="spinner"></span> Redirecting to Checkout...</span>
                         </button>
                         
@@ -5618,26 +5286,15 @@
             <div class="container">
                 <h2 id="cta-title">Ready to Shine Brighter?</h2>
                 <p>Join BEAM Academy today and experience the difference expert tutoring can make.</p>
-                <a href="#contact" class="btn btn-primary">Start Your Free Trial </a>
+                <a href="#contact" class="btn btn-primary">Start Your Free Trial →</a>
             </div>
         </section>
-
-        <!-- Sticky Mobile CTA Bar -->
-        <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
-            <div class="sticky-cta-container">
-                <a href="tel:+61491791447" class="sticky-cta-phone" aria-label="Call BEAM Academy">
-                    <span aria-hidden="true">?뱸</span>
-                    <span class="sticky-cta-phone-text">Call</span>
-                </a>
-                <a href="#contact" class="sticky-cta-button">Book Free Trial</a>
-            </div>
-        </div>
     </main>
 
     <!-- Floating Contact Button -->
     <div class="floating-contact">
         <a href="tel:0491791447" class="floating-btn phone" aria-label="Call BEAM Academy">
-            <span aria-hidden="true">?뱸</span>
+            <span aria-hidden="true">📞</span>
             <span class="floating-btn-tooltip">Call us now</span>
         </a>
     </div>
@@ -5648,13 +5305,13 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo" aria-label="BEAM Academy home">
-                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true">
                         BEAM Academy
                     </a>
                     <p>Expert tutoring for Years 7-12 by Baulkham Hills High School graduates achieving 95%+ in HSC Mathematics.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/beamacademyhsc" class="social-link" target="_blank" rel="noopener" aria-label="Follow us on Instagram">?벜</a>
-                        <a href="https://discord.gg/Y4Y8uTun" class="social-link" target="_blank" rel="noopener" aria-label="Join our Discord">?뮠</a>
+                        <a href="https://www.instagram.com/beamacademyhsc" class="social-link" target="_blank" rel="noopener" aria-label="Follow us on Instagram">📷</a>
+                        <a href="https://discord.gg/Y4Y8uTun" class="social-link" target="_blank" rel="noopener" aria-label="Join our Discord">💬</a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -5687,7 +5344,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>짤 2025 BEAM Academy. All rights reserved. ABN 19 693 809 013</p>
+                <p>© 2025 BEAM Academy. All rights reserved. ABN 19 693 809 013</p>
                 <div class="footer-legal">
                     <a href="#" onclick="openPolicyModal('privacy'); return false;">Privacy Policy</a>
                     <a href="#" onclick="openPolicyModal('terms'); return false;">Terms & Conditions</a>
@@ -5794,24 +5451,6 @@
             });
         });
 
-        // Close mobile menu on outside click
-        document.addEventListener('click', (e) => {
-            const isClickInside = mobileNav.contains(e.target) || mobileToggle.contains(e.target);
-            if (!isClickInside && mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-
-        // Close mobile menu on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                mobileToggle.focus();
-            }
-        });
-
         // Year tabs filtering
         const yearTabs = document.querySelectorAll('.year-tab');
         const courseCards = document.querySelectorAll('.course-card');
@@ -5900,35 +5539,6 @@
             observer.observe(footer);
         }
 
-        // Sticky CTA bar visibility - show when hero scrolls out of view
-        (function() {
-            const hero = document.querySelector('.hero');
-            const stickyBar = document.getElementById('sticky-cta-bar');
-            const floatingContact = document.querySelector('.floating-contact');
-
-            if (!hero || !stickyBar) return;
-
-            const stickyObserver = new IntersectionObserver(
-                ([entry]) => {
-                    const isVisible = !entry.isIntersecting;
-                    stickyBar.classList.toggle('visible', isVisible);
-                    stickyBar.inert = !isVisible;
-
-                    // Reposition floating contact button when sticky bar is visible
-                    if (floatingContact) {
-                        floatingContact.style.bottom = isVisible ? '90px' : '';
-                        floatingContact.style.transition = 'bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-                    }
-                },
-                {
-                    threshold: 0,
-                    rootMargin: '-100px 0px 0px 0px'
-                }
-            );
-
-            stickyObserver.observe(hero);
-        })();
-
         // Package selection - scroll to form and pre-fill
         // Package selection modal
         let currentTier = '';
@@ -5955,27 +5565,27 @@
         // Subject definitions per tier
         const tierSubjects = {
             'Junior': [
-                { value: 'Mathematics', icon: '?뱪', name: 'Mathematics' },
-                { value: 'English', icon: '?뱷', name: 'English' },
-                { value: 'Physics', icon: '??', name: 'Physics' },
-                { value: 'Chemistry', icon: '?㎦', name: 'Chemistry' }
+                { value: 'Mathematics', icon: '📐', name: 'Mathematics' },
+                { value: 'English', icon: '📝', name: 'English' },
+                { value: 'Physics', icon: '⚡', name: 'Physics' },
+                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
             ],
             'Intermediate': [
-                { value: 'Mathematics', icon: '?뱪', name: 'Mathematics' },
-                { value: 'Maths Accelerated', icon: '??', name: 'Maths Accelerated' },
-                { value: 'English', icon: '?뱷', name: 'English' },
-                { value: 'English Extension', icon: '?랃툘', name: 'English Extension' },
-                { value: 'Physics', icon: '??', name: 'Physics' },
-                { value: 'Chemistry', icon: '?㎦', name: 'Chemistry' }
+                { value: 'Mathematics', icon: '📐', name: 'Mathematics' },
+                { value: 'Maths Accelerated', icon: '🚀', name: 'Maths Accelerated' },
+                { value: 'English', icon: '📝', name: 'English' },
+                { value: 'English Extension', icon: '✍️', name: 'English Extension' },
+                { value: 'Physics', icon: '⚡', name: 'Physics' },
+                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
             ],
             'Senior': [
-                { value: 'Advanced Mathematics', icon: '?뱪', name: 'Advanced Mathematics' },
-                { value: 'Maths Extension 1', icon: '?뱤', name: 'Maths Extension 1' },
-                { value: 'Maths Extension 2', icon: '?룇', name: 'Maths Extension 2' },
-                { value: 'English Advanced', icon: '?뱷', name: 'English Advanced' },
-                { value: 'English Extension', icon: '?랃툘', name: 'English Extension' },
-                { value: 'Physics', icon: '??', name: 'Physics' },
-                { value: 'Chemistry', icon: '?㎦', name: 'Chemistry' }
+                { value: 'Advanced Mathematics', icon: '📐', name: 'Advanced Mathematics' },
+                { value: 'Maths Extension 1', icon: '📊', name: 'Maths Extension 1' },
+                { value: 'Maths Extension 2', icon: '🏆', name: 'Maths Extension 2' },
+                { value: 'English Advanced', icon: '📝', name: 'English Advanced' },
+                { value: 'English Extension', icon: '✍️', name: 'English Extension' },
+                { value: 'Physics', icon: '⚡', name: 'Physics' },
+                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
             ]
         };
 
@@ -5990,7 +5600,7 @@
             const subjectsContainer = document.getElementById('modalSubjectsContainer');
             
             // Set tier badge
-            badge.textContent = tier + ' ??' + pkg;
+            badge.textContent = tier + ' • ' + pkg;
             
             // Set price
             price.textContent = priceMap[tier + '-' + pkg] || '$0';
@@ -6179,7 +5789,7 @@
                 countText.classList.remove('valid');
                 ctaBtn.disabled = true;
             } else if (checkedCount === maxSubjects) {
-                countText.textContent = checkedCount + ' of ' + maxSubjects + ' selected ??;
+                countText.textContent = checkedCount + ' of ' + maxSubjects + ' selected ✓';
                 countText.classList.add('valid');
                 ctaBtn.disabled = false;
             } else {
@@ -6354,11 +5964,12 @@
             const parentName = document.getElementById('parentName').value;
             const email = document.getElementById('parentEmail').value;
             const phone = document.getElementById('parentPhone').value;
-
-            console.log('Form values:', { parentName, phone });
-
-            if (!parentName || !phone) {
-                alert('Please fill in all required fields (Name and Phone).');
+            const studentName = document.getElementById('studentName').value;
+            
+            console.log('Form values:', { parentName, email, phone, studentName });
+            
+            if (!parentName || !email || !phone || !studentName) {
+                alert('Please fill in all required fields (Parent Name, Email, Phone, and Student Name).');
                 return;
             }
             
@@ -6397,6 +6008,7 @@
                         package: pkgPart,
                         subjects: subjectsValue ? subjectsValue.split(', ') : [],
                         parentName: parentName,
+                        studentName: studentName,
                         email: email,
                         phone: phone
                     })
@@ -6478,7 +6090,7 @@
         <div class="modal-content" style="max-width: 480px;">
             <button class="modal-close" onclick="closeAllAccessModal()" aria-label="Close">&times;</button>
             <div class="modal-header" style="text-align: center;">
-                <span class="modal-badge" style="background: linear-gradient(135deg, var(--purple-600), var(--purple-700)); color: white;">??All Access</span>
+                <span class="modal-badge" style="background: linear-gradient(135deg, var(--purple-600), var(--purple-700)); color: white;">★ All Access</span>
                 <h3 class="modal-title">Choose Your Year Level</h3>
                 <p class="modal-subtitle">Unlimited subjects for your tier</p>
             </div>
