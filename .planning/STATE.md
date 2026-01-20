@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-20)
 
 **Core value:** Convert Google Ads mobile traffic into free trial bookings
-**Current focus:** Phase 4 - Content Structure (IN PROGRESS)
+**Current focus:** Phase 4 - Content Structure (COMPLETE)
 
 ## Current Position
 
 Phase: 4 of 5 (Content Structure)
-Plan: 2 of 2 in current phase (04-02 COMPLETE, 04-01 pending)
-Status: Phase 4 partially complete - 04-02 done, 04-01 still needed
-Last activity: 2026-01-20 - Completed 04-02-PLAN.md
+Plan: 2 of 2 in current phase (COMPLETE)
+Status: Phase 4 complete - ready for Phase 5
+Last activity: 2026-01-20 - Completed 04-01-PLAN.md
 
 Progress: [########--] 80%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: ~3.75 minutes
-- Total execution time: ~15 minutes
+- Total plans completed: 5
+- Average duration: ~4 minutes
+- Total execution time: ~20 minutes
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [########--] 80%
 | 01-emergency-viewport-fix | 1 | ~2 min | ~2 min |
 | 02-cta-placement | 1 | ~3 min | ~3 min |
 | 03-form-optimization | 1 | ~3 min | ~3 min |
-| 04-content-structure | 1/2 | ~7 min | ~7 min |
+| 04-content-structure | 2 | ~12 min | ~6 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (~2 min), 02-01 (~3 min), 03-01 (~3 min), 04-02 (~7 min)
-- Trend: Stable (04-02 slightly longer due to file modification conflicts)
+- Last 5 plans: 02-01 (~3 min), 03-01 (~3 min), 04-02 (~7 min), 04-01 (~5 min)
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -54,6 +54,8 @@ Recent decisions affecting current work:
 - FORM-JS-001: Remove studentName from payment JS validation (form no longer has student fields)
 - MENU-CSS-001: Use visibility + opacity + transform for animations (not display:none)
 - MENU-JS-001: Outside click and Escape key handlers for menu close
+- CONTENT-001: Used Luke K's quote over Kane's (more specific and relatable)
+- CONTENT-002: Location in description, not headline (keeps headline focused)
 
 ### Pending Todos
 
