@@ -5683,6 +5683,35 @@
             observer.observe(footer);
         }
 
+        // Sticky CTA bar visibility - show when hero scrolls out of view
+        (function() {
+            const hero = document.querySelector('.hero');
+            const stickyBar = document.getElementById('sticky-cta-bar');
+            const floatingContact = document.querySelector('.floating-contact');
+
+            if (!hero || !stickyBar) return;
+
+            const stickyObserver = new IntersectionObserver(
+                ([entry]) => {
+                    const isVisible = !entry.isIntersecting;
+                    stickyBar.classList.toggle('visible', isVisible);
+                    stickyBar.setAttribute('aria-hidden', !isVisible);
+
+                    // Reposition floating contact button when sticky bar is visible
+                    if (floatingContact) {
+                        floatingContact.style.bottom = isVisible ? '90px' : '';
+                        floatingContact.style.transition = 'bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                    }
+                },
+                {
+                    threshold: 0,
+                    rootMargin: '-100px 0px 0px 0px'
+                }
+            );
+
+            stickyObserver.observe(hero);
+        })();
+
         // Package selection - scroll to form and pre-fill
         // Package selection modal
         let currentTier = '';
