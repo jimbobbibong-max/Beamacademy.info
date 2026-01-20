@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-01-20)
 ## Current Position
 
 Phase: 4 of 5 (Content Structure)
-Plan: 2 of 2 complete
-Status: Phase 4 complete, verified, ready for Phase 5
-Last activity: 2026-01-20 — Phase 4 verification passed
+Plan: 1 of 2 complete
+Status: Plan 04-01 complete, ready for 04-02
+Last activity: 2026-01-20 — Completed 04-01-PLAN.md (hero content update)
 
-Progress: [########__] 80% (v1 re-execution)
+Progress: [#######___] 70% (v1 re-execution)
 
 ## Corruption Incident (2026-01-20)
 
@@ -63,13 +63,13 @@ Previous v1 decisions still valid - documented in PROJECT.md and archived ROADMA
 ## Session Continuity
 
 Last session: 2026-01-20
-Stopped at: Completed Phase 3 Form Optimization
+Stopped at: Completed 04-01-PLAN.md (hero content update)
 Resume file: None
 
 ## Next Up
 
-**Phase 5: Performance** — Image optimization, async fonts, JS fixes, LCP improvements
+**Plan 04-02: Trust Elements** — About section, process steps, trust signals
 
-`/gsd:plan-phase 5` — plan next phase
+`/gsd:execute-phase 04-02` — execute next plan
 
-<sub>`/clear` first → fresh context window</sub>
+<sub>`/clear` first if context window is full</sub>
