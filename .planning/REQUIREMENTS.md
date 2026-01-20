@@ -22,10 +22,10 @@ Requirements for mobile conversion optimization. Each maps to roadmap phases.
 
 ### Form Optimization
 
-- [ ] **FORM-01**: Contact form reduced to 3-4 essential fields
-- [ ] **FORM-02**: Form inputs use correct types (tel, email) for mobile keyboards
-- [ ] **FORM-03**: Form submit button has large tap target and clear CTA text
-- [ ] **FORM-04**: Form is reachable without excessive scrolling
+- [x] **FORM-01**: Contact form reduced to 3-4 essential fields
+- [x] **FORM-02**: Form inputs use correct types (tel, email) for mobile keyboards
+- [x] **FORM-03**: Form submit button has large tap target and clear CTA text
+- [x] **FORM-04**: Form is reachable without excessive scrolling
 
 ### Content Structure
 
@@ -79,10 +79,10 @@ Deferred to future. Not in current roadmap.
 | CTA-01 | Phase 2 | Complete |
 | CTA-02 | Phase 2 | Complete |
 | CTA-03 | Phase 2 | Complete |
-| FORM-01 | Phase 3 | Pending |
-| FORM-02 | Phase 3 | Pending |
-| FORM-03 | Phase 3 | Pending |
-| FORM-04 | Phase 3 | Pending |
+| FORM-01 | Phase 3 | Complete |
+| FORM-02 | Phase 3 | Complete |
+| FORM-03 | Phase 3 | Complete |
+| FORM-04 | Phase 3 | Complete |
 | CONT-01 | Phase 4 | Pending |
 | CONT-02 | Phase 4 | Pending |
 | CONT-03 | Phase 4 | Pending |
@@ -98,4 +98,4 @@ Deferred to future. Not in current roadmap.
 
 ---
 *Requirements defined: 2026-01-20*
-*Last updated: 2026-01-20 after Phase 2 completion*
+*Last updated: 2026-01-20 after Phase 3 completion*
