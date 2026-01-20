@@ -5797,7 +5797,7 @@
         // Close mobile menu on outside click
         document.addEventListener('click', (e) => {
             const isClickInside = mobileNav.contains(e.target) || mobileToggle.contains(e.target);
-            if (\!isClickInside && mobileNav.classList.contains('active')) {
+            if (!isClickInside && mobileNav.classList.contains('active')) {
                 mobileNav.classList.remove('active');
                 mobileToggle.setAttribute('aria-expanded', 'false');
             }
