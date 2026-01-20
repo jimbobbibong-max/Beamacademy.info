@@ -29,10 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. User can tap form inputs without page auto-zooming (16px minimum font)
   3. Page has no horizontal scroll on any screen 320px-428px wide
   4. All buttons and links are easily tappable (44x44px minimum touch targets)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [x] 01-01: Viewport meta and base CSS reset
+- [x] 01-01-PLAN.md - Viewport meta and base CSS reset
 
 ### Phase 2: CTA Placement
 **Goal**: Primary conversion action is always visible and accessible on mobile
@@ -42,10 +42,10 @@ Plans:
   1. User sees "Book Free Trial" button immediately on page load (no scroll)
   2. User sees sticky CTA bar after scrolling past hero section
   3. User can tap phone number to call directly from any point on page
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 02-01: Hero CTA and sticky bar implementation
+- [ ] 02-01-PLAN.md - Hero CTA optimization and sticky bottom CTA bar
 
 ### Phase 3: Form Optimization
 **Goal**: Contact form completion requires minimal effort
@@ -95,8 +95,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Emergency Viewport Fix | 1/1 | Complete ✓ | 2026-01-20 |
-| 2. CTA Placement | 0/1 | Not started | - |
+| 1. Emergency Viewport Fix | 1/1 | Complete | 2026-01-20 |
+| 2. CTA Placement | 0/1 | Planned | - |
 | 3. Form Optimization | 0/1 | Not started | - |
 | 4. Content Structure | 0/1 | Not started | - |
 | 5. Performance | 0/1 | Not started | - |
