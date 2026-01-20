@@ -5,45 +5,42 @@
 See: .planning/PROJECT.md (updated 2026-01-20)
 
 **Core value:** Convert Google Ads mobile traffic into free trial bookings
-**Current focus:** v1 complete — planning next milestone
+**Current focus:** Re-executing v1 after corruption revert
 
 ## Current Position
 
-Phase: v1 complete (5 phases shipped)
-Plan: All 9 plans complete
-Status: **MILESTONE SHIPPED** ✓
-Last activity: 2026-01-20 — v1 milestone archived
+Phase: 2 of 5 (CTA Placement)
+Plan: Ready to plan
+Status: Phase 1 complete, ready for Phase 2
+Last activity: 2026-01-20 — Phase 1 verified
 
-Progress: [##########] 100% (v1)
+Progress: [##________] 20% (v1 re-execution)
+
+## Corruption Incident (2026-01-20)
+
+**What happened:** v1 execution completed but corrupted index.html on deploy. Edit/Write tool mangled UTF-8 encoding on Windows, turning emojis into `??` and breaking CSS syntax.
+
+**Root cause:** Commit `0b980b0` (Phase 5, Plan 4 - logo dimensions) corrupted all Unicode characters. An unclosed CSS string (`content: '??;`) broke the entire stylesheet.
+
+**Resolution:** Reverted to pre-v1 index.html. Now re-executing with safe edit practices.
+
+**Safe Edit Rules:**
+1. Use `sed` for simple replacements on Unicode-heavy files
+2. Verify after edits: `grep "??" index.html` should return nothing
+3. Test in browser before each commit
+4. Avoid editing emoji lines directly - use HTML entities if needed
 
 ## Milestone History
 
 | Version | Name | Phases | Status | Date |
 |---------|------|--------|--------|------|
-| v1 | Mobile Conversion | 1-5 | Shipped | 2026-01-20 |
-
-See: .planning/MILESTONES.md for full details
-
-## Performance Metrics (v1)
-
-**Final Lighthouse (Mobile):**
-- Performance: 88/100
-- LCP: 0.9s (target <2.5s) ✓
-- CLS: 0.014 (target <0.1) ✓
-- Accessibility: 88/100
-- SEO: 100/100
-
-**Execution Stats:**
-- 5 phases, 9 plans
-- ~32 minutes total execution time
-- 38 files modified
-- 6,288 lines added
+| v1 | Mobile Conversion | 1-5 | Reverted (corruption) | 2026-01-20 |
 
 ## Accumulated Context
 
 ### Decisions
 
-All v1 decisions documented in PROJECT.md Key Decisions table with outcomes.
+Previous v1 decisions still valid - documented in PROJECT.md and archived ROADMAP.
 
 ### Pending Todos
 
@@ -51,30 +48,23 @@ All v1 decisions documented in PROJECT.md Key Decisions table with outcomes.
 - Fix skip to main content button styling (ui)
 - Improve form scroll anchor position (ui)
 
-*Carried forward to v2 backlog*
-
-### Tech Debt (from v1)
-
-- Skip to main content button positioning
-- Form scroll anchor positioning
-- Some course-icons aria-hidden issues
-- Some contrast issues
-- Links without discernible names
+*Deferred until after successful v1 re-execution*
 
 ### Blockers/Concerns
 
-None.
+- **CRITICAL:** Follow safe edit practices to avoid corruption
+- Verify file integrity after each phase
 
 ## Session Continuity
 
 Last session: 2026-01-20
-Stopped at: v1 milestone completed and archived
+Stopped at: Reset to Phase 1 for re-execution
 Resume file: None
 
 ## Next Up
 
-**Start Next Milestone** — questioning → research → requirements → roadmap
+**Phase 2: CTA Placement** — Hero CTA optimization and sticky bottom CTA bar
 
-`/gsd:new-milestone`
+`/gsd:plan-phase 2`
 
 <sub>`/clear` first → fresh context window</sub>
