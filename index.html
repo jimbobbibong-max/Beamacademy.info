@@ -476,13 +476,28 @@
         .mobile-toggle span {
             display: block;
             width: 24px;
-            height: 2px;
+            height: 2.5px;
             background: var(--gray-700);
-            transition: all 0.3s ease;
+            border-radius: 2px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: center;
+        }
+
+        /* Hamburger to X transformation */
+        .mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: translateY(7.5px) rotate(45deg);
+        }
+
+        .mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: translateY(-7.5px) rotate(-45deg);
         }
 
         .mobile-nav {
-            display: none;
             position: fixed;
             top: 72px;
             left: 0;
@@ -491,9 +506,17 @@
             padding: 24px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             z-index: 999;
+            transform: translateY(-20px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .mobile-nav.active { display: block; }
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
 
         .mobile-nav-links {
             list-style: none;
@@ -4382,10 +4405,10 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <div class="hero-badge">Epping, Sydney</div>
-                        <h1>Shine Brighter with <span>BEAM</span></h1>
+                        <h1>Expert Tutoring for <span>Years 7-12</span></h1>
                         <p class="hero-description">
-                            Expert tutoring by Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics. 
-                            Small classes, personalised learning, proven results.
+                            Small classes by BHHS graduates with 95%+ in HSC Mathematics.
+                            Personalised learning in Epping, Sydney.
                         </p>
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary">Start Free Trial →</a>
