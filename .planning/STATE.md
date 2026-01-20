@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-01-20)
 
 Phase: 5 of 5 (Performance)
 Plan: 4 of 4 complete (including gap closure plans)
-Status: Phase 5 complete - awaiting verification
-Last activity: 2026-01-20 - Completed 05-04-PLAN.md (Logo image loading optimization)
+Status: Phase 5 complete - gap closure done
+Last activity: 2026-01-20 - Completed 05-03-PLAN.md (JS syntax + accessibility gap closure)
 
 Progress: [##########] 100%
 
@@ -60,6 +60,7 @@ Recent decisions affecting current work:
 - PERF-IMG-001: Use exact pixel dimensions from file inspection for image attributes
 - PERF-FONT-001: Use preload+onload pattern for async font loading
 - LOGO-LAZY-001: Use lazy loading for logo despite header visibility (decorative, not LCP element)
+- INERT-001: Use inert attribute instead of aria-hidden for sticky bar (proper accessibility pattern)
 
 ### Pending Todos
 
@@ -76,7 +77,7 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-20
-Stopped at: Completed 05-04-PLAN.md (Logo image loading optimization)
+Stopped at: Completed 05-03-PLAN.md (JS syntax + accessibility gap closure)
 Resume file: None
 
 ## Next Up
