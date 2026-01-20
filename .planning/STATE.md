@@ -68,7 +68,7 @@ Resume file: None
 
 ## Next Up
 
-**Phase 4: Social Proof** — Trust signals and testimonials
+**Phase 4: Content Structure** — Hero value prop, hamburger menu, pricing fixes
 
 `/gsd:verify-work - verify phase 3 (MANDATORY)
 `/gsd:plan-phase 4` - plan next phase`
