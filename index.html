@@ -5623,7 +5623,7 @@
         </section>
 
         <!-- Sticky Mobile CTA Bar -->
-        <div class="sticky-cta-bar" id="sticky-cta-bar" aria-hidden="true">
+        <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
             <div class="sticky-cta-container">
                 <a href="tel:+61491791447" class="sticky-cta-phone" aria-label="Call BEAM Academy">
                     <span aria-hidden="true">?뱸</span>
@@ -5912,7 +5912,7 @@
                 ([entry]) => {
                     const isVisible = !entry.isIntersecting;
                     stickyBar.classList.toggle('visible', isVisible);
-                    stickyBar.setAttribute('aria-hidden', !isVisible);
+                    stickyBar.inert = !isVisible;
 
                     // Reposition floating contact button when sticky bar is visible
                     if (floatingContact) {
