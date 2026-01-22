@@ -93,6 +93,11 @@ Plans:
 
 **Dependencies:** Phase 8 (comparison sets up "why trust this?" question)
 
+**Plans:** 1 plan
+
+Plans:
+- [x] 09-01-PLAN.md — Tutor profiles with trifecta badges + parent testimonial
+
 **Requirements:**
 - TRUST-01: Tutor profiles with real photos
 - TRUST-02: Credibility combo per tutor (Baulko + 95+ HSC + Med)
@@ -114,6 +119,11 @@ Plans:
 **Goal:** Differentiate BEAM with 24/7 Discord support between classes.
 
 **Dependencies:** Phase 9 (trust established, now show ongoing support)
+
+**Plans:** 1 plan
+
+Plans:
+- [ ] 10-01-PLAN.md — Discord mockup with 24/7 support callout and availability framing
 
 **Requirements:**
 - SUPP-01: Discord 24/7 support callout section
@@ -215,4 +225,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 9 planned (1 plan)*
+*Last updated: 2026-01-23 — Phase 10 planned (1 plan)*
