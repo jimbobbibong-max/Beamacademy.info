@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-22)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v2 Messaging Overhaul — Phase 8 (Comparison Section) COMPLETE
+**Current focus:** v2 Messaging Overhaul — Phase 9 (Trust Section) COMPLETE
 
 ## Current Position
 
-Phase: 8 - Comparison Section (COMPLETE)
-Plan: 01 of 01 complete (Comparison Table + Cards)
-Status: Phase 8 complete - all plans executed and verified
-Last activity: 2026-01-23 — Completed 08-01 comparison section
+Phase: 9 - Trust Section (COMPLETE)
+Plan: 01 of 01 complete (Tutor Profiles + Testimonial)
+Status: Phase 9 complete - all plans executed and verified
+Last activity: 2026-01-23 — Completed 09-01 trust section
 
-Progress: [#####-----] 50% (v2: Phase 8 complete, ready for Phase 9)
+Progress: [######----] 60% (v2: Phase 9 complete, ready for Phase 10)
 
 ## v2 Phase Overview
 
@@ -23,8 +23,8 @@ Progress: [#####-----] 50% (v2: Phase 8 complete, ready for Phase 9)
 | 6 | Hero Overhaul | HERO-01 to HERO-05 | COMPLETE |
 | 7 | Proof Section | PROOF-01 to PROOF-04 | COMPLETE |
 | 8 | Comparison Section | COMP-01 to COMP-02 | COMPLETE |
-| 9 | Trust Section | TRUST-01 to TRUST-05 | Ready |
-| 10 | Support Section | SUPP-01 to SUPP-03 | Blocked by 9 |
+| 9 | Trust Section | TRUST-01 to TRUST-05 | COMPLETE |
+| 10 | Support Section | SUPP-01 to SUPP-03 | Ready |
 | 11 | CTA & Mobile Polish | CTA-01/02, MOB-01/02/03 | Blocked by 10 |
 
 ## Milestone History
@@ -88,12 +88,15 @@ Resume file: None
 
 ## Next Up
 
-**Phase 9: Trust Section** - Ready to plan and execute
+**Phase 10: Support Section** - Ready to plan and execute
 
-**Phase 8 Requirements (ALL VERIFIED):**
-- COMP-01: Generic vs BEAM side-by-side comparison table ✓
-- COMP-02: Specific contrasts shown (5 distinct comparisons) ✓
+**Phase 9 Requirements (ALL VERIFIED):**
+- TRUST-01: Tutor profiles with real photos ✓
+- TRUST-02: Credibility combo per tutor (Baulko + 95+ HSC + Med) ✓
+- TRUST-03: Parent testimonials with specific outcomes ✓
+- TRUST-04: Small group size prominently visible ✓
+- TRUST-05: School-specific matching mentioned ✓
 
 ---
 
-*Last updated: 2026-01-23 — Completed Phase 8 Comparison Section*
+*Last updated: 2026-01-23 — Completed Phase 9 Trust Section*
