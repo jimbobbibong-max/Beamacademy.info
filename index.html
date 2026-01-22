@@ -1290,6 +1290,85 @@
             display: inline-block;
         }
 
+        /* Comparison Section */
+        .comparison-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        /* Table Wrapper */
+        .comparison-table-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .comparison-header {
+            padding: 20px 28px;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .comparison-header-generic {
+            background: #f5f5f5;
+            color: var(--gray-500);
+        }
+
+        .comparison-header-beam {
+            background: var(--purple-100);
+            color: var(--purple-700);
+            border-top: 3px solid var(--purple-600);
+        }
+
+        .comparison-row:nth-child(odd) .comparison-cell {
+            background: rgba(0, 0, 0, 0.01);
+        }
+
+        .comparison-cell {
+            padding: 20px 28px;
+            font-size: 1rem;
+            line-height: 1.5;
+            vertical-align: top;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .comparison-row:last-child .comparison-cell {
+            border-bottom: none;
+        }
+
+        .comparison-generic {
+            background: #fafafa;
+            color: var(--gray-500);
+            font-style: italic;
+        }
+
+        .comparison-beam {
+            background: #faf8ff;
+            color: var(--gray-800);
+        }
+
+        .comparison-beam strong {
+            color: var(--purple-700);
+            font-weight: 600;
+        }
+
+        /* Mobile Cards - Hidden on desktop */
+        .comparison-cards {
+            display: none;
+        }
+
         /* About */
         .about { background: var(--gray-50); }
 
@@ -3685,6 +3764,65 @@
             .proof-insight {
                 margin-top: 24px;
                 padding: 12px 16px;
+            }
+
+            /* Comparison Section Mobile */
+            .comparison-section {
+                padding: 60px 0;
+            }
+
+            .comparison-table-wrapper {
+                display: none;
+            }
+
+            .comparison-cards {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .comparison-card {
+                background: var(--white);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+                border: 1px solid var(--gray-100);
+            }
+
+            .comparison-card-label {
+                background: var(--purple-100);
+                color: var(--purple-700);
+                padding: 12px 20px;
+                font-family: var(--font-display);
+                font-size: 0.85rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .comparison-card-generic {
+                background: #fafafa;
+                color: var(--gray-500);
+                padding: 16px 20px;
+                font-style: italic;
+                font-size: 0.95rem;
+                line-height: 1.5;
+                border-bottom: 1px solid var(--gray-100);
+            }
+
+            .comparison-card-beam {
+                background: #faf8ff;
+                color: var(--gray-800);
+                padding: 16px 20px;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            .comparison-card-beam strong {
+                color: var(--purple-700);
+                font-weight: 600;
             }
         }
 
