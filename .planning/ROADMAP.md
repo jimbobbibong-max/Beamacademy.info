@@ -71,6 +71,11 @@ Plans:
 
 **Dependencies:** Phase 7 (proof provides context for comparison)
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 08-01-PLAN.md — Comparison table (desktop) and cards (mobile) with 5 specific contrasts
+
 **Requirements:**
 - COMP-01: Generic vs BEAM side-by-side comparison table
 - COMP-02: Specific contrasts shown
@@ -170,7 +175,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
-| 8 | v2 | Comparison Section | Pending | - |
+| 8 | v2 | Comparison Section | Planned | - |
 | 9 | v2 | Trust Section | Pending | - |
 | 10 | v2 | Support Section | Pending | - |
 | 11 | v2 | CTA & Mobile Polish | Pending | - |
@@ -210,4 +215,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 7 planned (1 plan)*
+*Last updated: 2026-01-23 — Phase 8 planned (1 plan)*
