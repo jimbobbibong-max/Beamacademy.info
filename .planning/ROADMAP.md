@@ -176,7 +176,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
 | 8 | v2 | Comparison Section | Complete | 2026-01-23 |
-| 9 | v2 | Trust Section | Pending | - |
+| 9 | v2 | Trust Section | Planned | - |
 | 10 | v2 | Support Section | Pending | - |
 | 11 | v2 | CTA & Mobile Polish | Pending | - |
 
@@ -215,4 +215,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 8 planned (1 plan)*
+*Last updated: 2026-01-23 — Phase 9 planned (1 plan)*
