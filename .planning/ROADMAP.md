@@ -49,7 +49,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 07-01-PLAN.md — Proof section with 4 document mockups, "Yours to Keep" messaging, topic gap insight
+- [x] 07-01-PLAN.md — Proof section with 4 document mockups, "Yours to Keep" messaging, topic gap insight
 
 **Requirements:**
 - PROOF-01: 4 documents from ONE trial visualized
@@ -169,7 +169,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 4 | v1 | Content Structure | Complete | 2026-01-20 |
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
-| 7 | v2 | Proof Section | Planned | - |
+| 7 | v2 | Proof Section | Complete | 2026-01-23 |
 | 8 | v2 | Comparison Section | Pending | - |
 | 9 | v2 | Trust Section | Pending | - |
 | 10 | v2 | Support Section | Pending | - |
@@ -186,10 +186,10 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | HERO-03 | Phase 6 | Complete |
 | HERO-04 | Phase 6 | Complete |
 | HERO-05 | Phase 6 | Complete |
-| PROOF-01 | Phase 7 | Planned |
-| PROOF-02 | Phase 7 | Planned |
-| PROOF-03 | Phase 7 | Planned |
-| PROOF-04 | Phase 7 | Planned |
+| PROOF-01 | Phase 7 | Complete |
+| PROOF-02 | Phase 7 | Complete |
+| PROOF-03 | Phase 7 | Complete |
+| PROOF-04 | Phase 7 | Complete |
 | COMP-01 | Phase 8 | Pending |
 | COMP-02 | Phase 8 | Pending |
 | TRUST-01 | Phase 9 | Pending |

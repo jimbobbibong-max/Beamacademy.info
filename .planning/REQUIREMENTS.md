@@ -15,10 +15,10 @@
 
 ### Proof Section
 
-- [ ] **PROOF-01**: 4 documents from ONE trial visualized (diagnostic, worksheets, practice paper, solutions)
-- [ ] **PROOF-02**: "Yours to keep even if you don't enrol" messaging prominently displayed
-- [ ] **PROOF-03**: Documents shown with visual previews (not just listed)
-- [ ] **PROOF-04**: MCQ vs Short Answer breakdown shown (exposes students strong at MCQ but weak at written)
+- [x] **PROOF-01**: 4 documents from ONE trial visualized (Progress Report, Diagnostic Worksheet, Answer Key, Worked Solutions)
+- [x] **PROOF-02**: "Yours to keep even if you don't enrol" messaging prominently displayed
+- [x] **PROOF-03**: Documents shown with visual previews (CSS mockups)
+- [x] **PROOF-04**: Topic gap insight shown (specific topics like "Calculus - Derivatives", not just overall score)
 
 ### Comparison Section
 
@@ -83,10 +83,10 @@
 | HERO-03 | Phase 6 | Complete |
 | HERO-04 | Phase 6 | Complete |
 | HERO-05 | Phase 6 | Complete |
-| PROOF-01 | Phase 7 | Pending |
-| PROOF-02 | Phase 7 | Pending |
-| PROOF-03 | Phase 7 | Pending |
-| PROOF-04 | Phase 7 | Pending |
+| PROOF-01 | Phase 7 | Complete |
+| PROOF-02 | Phase 7 | Complete |
+| PROOF-03 | Phase 7 | Complete |
+| PROOF-04 | Phase 7 | Complete |
 | COMP-01 | Phase 8 | Pending |
 | COMP-02 | Phase 8 | Pending |
 | TRUST-01 | Phase 9 | Pending |
