@@ -1,415 +1,460 @@
-# Mobile Responsive CSS Stack
+# Stack Research: Visual Communication Patterns
 
-**Project:** BEAM Academy Landing Page Mobile Optimization
-**Researched:** 2026-01-20
-**Confidence:** HIGH (MDN, W3C WCAG, and multiple authoritative sources)
+**Project:** BEAM Academy Landing Page v2.0 - Messaging Overhaul
+**Researched:** 2026-01-22
+**Confidence:** HIGH (multiple authoritative sources confirm patterns)
+
+---
 
 ## Executive Summary
 
-Your BEAM Academy site has 24 ad clicks with 0 conversions due to mobile viewport/scaling issues. This document provides the exact CSS techniques to fix mobile rendering. The core problem is likely a missing or misconfigured viewport meta tag combined with fixed-width elements causing horizontal scroll.
+The core problem: visitors can't tell BEAM is a tutoring company, let alone understand the data-driven personalization differentiator, without reading every word.
+
+**The 3-second rule is real.** Research shows users form opinions in 17 milliseconds and abandon pages that don't communicate value within 3 seconds. Your hero section must pass the "instant comprehension test" — a visitor should understand what you do and why it matters before conscious thought kicks in.
+
+**The solution:** Show, don't tell. Visual demonstration beats verbal explanation every time. Screenshots of the portal showing score tracking, before/after comparisons, and a clear visual hierarchy will communicate "custom materials for YOUR kid" faster than any headline alone.
 
 ---
 
-## 1. Viewport Meta Tag
+## Recommended Patterns
 
-### Recommended Configuration
+### Pattern 1: Show-Don't-Tell Hero (CRITICAL)
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+**What:** Lead with a visual demonstration of the product, not abstract claims.
+
+**Why:** 88% of prospects won't book a demo if they can't see a product screenshot or video. Visual comprehension is 60,000x faster than text.
+
+**For BEAM:** Hero section should feature a portal screenshot showing:
+- A student's score trend graph (going up)
+- Weak topics identified (highlighted in red/orange)
+- Custom materials generated (booklet preview)
+
+**Implementation:**
+```
++------------------------------------------+
+|  [Logo]                    [Book Trial]  |
++------------------------------------------+
+|                                          |
+|  "Custom Materials for YOUR Kid"         |
+|                                          |
+|  +----------------------------------+    |
+|  | [PORTAL SCREENSHOT]              |    |
+|  | Score: 78% -> 92%                |    |
+|  | Weak: Quadratics, Trig           |    |
+|  | Generated: Practice Set #47      |    |
+|  +----------------------------------+    |
+|                                          |
+|  We track scores, find weak spots,       |
+|  and generate materials just for them.   |
+|                                          |
+|        [Book Free Trial]                 |
++------------------------------------------+
 ```
 
-**Why this exact configuration:**
+**Source confidence:** HIGH - Multiple 2025 SaaS landing page studies confirm this pattern.
 
-| Attribute | Value | Rationale |
-|-----------|-------|-----------|
-| `width=device-width` | Required | Matches viewport to actual device width instead of defaulting to 980px virtual viewport |
-| `initial-scale=1.0` | Required | Sets 100% zoom on load, preventing auto-zoom behavior |
-| `viewport-fit=cover` | Recommended | Handles notched devices (iPhone X+) properly |
 
-### What NOT to Add
+### Pattern 2: Before/After Transformation
 
-```html
-<!-- DO NOT USE - Accessibility violations -->
-<meta name="viewport" content="user-scalable=no">
-<meta name="viewport" content="maximum-scale=1.0">
+**What:** Visually demonstrate the journey from problem to solution.
+
+**Why:** Before/after comparisons are cited as a top visual trend for 2025. They communicate transformation instantly. Landing page videos using this pattern boost conversions by 86%.
+
+**For BEAM:**
+```
+BEFORE                      AFTER
++-------------------+       +-------------------+
+| Generic tutoring  |  -->  | Personalized path |
+| Same worksheets   |       | Custom materials  |
+| Guessing weaknesses|      | Data-driven focus |
++-------------------+       +-------------------+
+
+"Generic tutoring"          "BEAM Academy"
+- Random practice           - Targeted practice
+- Hope it helps             - Know it helps
+- ? weak spots              - 3 weak spots found
 ```
 
-**Why:** Disabling zoom violates WCAG 1.4.4 (Resize Text). Users with low vision MUST be able to zoom to 200%. Google also penalizes sites that disable zoom in mobile rankings.
+**Mobile version:** Stack vertically with arrow pointing down.
 
-### Accessibility-Safe Alternative (if you need to limit extreme zoom)
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+### Pattern 3: The 3-Step Process Visual
+
+**What:** Break complex value propositions into 3 digestible steps with icons.
+
+**Why:** Complex ideas feel simple when chunked into 3 parts. Research shows this pattern increases comprehension speed dramatically.
+
+**For BEAM:**
+```
+HOW IT WORKS
+
+[Icon: Graph]        [Icon: Target]       [Icon: Book]
+  Track               Identify              Generate
+
+We track every      AI finds the          Custom materials
+test score in       topics holding        target exactly
+our portal          them back             what they need
+
+              "Your child's personal learning path"
 ```
 
-This allows zoom up to 5x while preventing extreme scaling issues.
+**Key:** Each step should be one line of text maximum. Icons do the heavy lifting.
 
-**Source:** [MDN Viewport Meta Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
 
----
+### Pattern 4: Social Proof Strip
 
-## 2. CSS Media Queries (Mobile-First)
+**What:** Horizontal band of trust signals immediately after hero.
 
-### Recommended Breakpoints
+**Why:** Parents specifically look for verified credentials, reviews, and transparency. 32% conversion lift from trust signals above the fold.
 
-Use mobile-first approach with `min-width` queries. Start with mobile styles as default, layer desktop styles on top.
-
-```css
-/* Mobile base styles (no media query needed - these are defaults) */
-.container {
-  padding: 16px;
-  font-size: 16px;
-}
-
-/* Tablet and up */
-@media (min-width: 768px) {
-  .container {
-    padding: 24px;
-    font-size: 16px;
-  }
-}
-
-/* Desktop and up */
-@media (min-width: 1024px) {
-  .container {
-    padding: 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-/* Large desktop */
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1400px;
-  }
-}
+**For BEAM:**
+```
++--------------------------------------------------+
+| "Helped 500+ Sydney students"  |  4.9/5 Google   |
+| [School logos if permitted]    |  "Our son..."   |
++--------------------------------------------------+
 ```
 
-### Why These Breakpoints
+**Key elements for tutoring:**
+- Number of students helped (specific > vague)
+- Parent testimonial snippet (2-3 words visible, expandable)
+- Star rating from Google/Facebook
+- Years in operation
+- Tutor credentials mention ("UNSW-trained tutors")
 
-| Breakpoint | Target | Rationale |
-|------------|--------|-----------|
-| 0-767px | Mobile (default) | Base styles, no query needed |
-| 768px+ | Tablet | iPad portrait and similar |
-| 1024px+ | Desktop | Most laptops, iPad landscape |
-| 1280px+ | Large desktop | Wide monitors |
 
-**Why mobile-first:**
-1. Smaller CSS payload for mobile users (most critical for your ad clicks)
-2. Forces you to prioritize essential content
-3. Progressive enhancement is more reliable than graceful degradation
+### Pattern 5: Feature Stacking (Not Feature Listing)
 
-**Source:** [BrowserStack Responsive Design Breakpoints](https://www.browserstack.com/guide/responsive-design-breakpoints)
+**What:** Present features as a visual stack showing how they build on each other.
 
----
+**Why:** This communicates that your offering is a system, not a checklist. It shows progression and interconnection.
 
-## 3. Touch-Friendly Sizing
-
-### WCAG 2.2 Requirements (Level AA)
-
-**Minimum touch target: 24x24 CSS pixels**
-**Recommended touch target: 44x44 CSS pixels** (Level AAA)
-
-```css
-/* Buttons - use 44px minimum for critical CTAs */
-.cta-button {
-  min-height: 44px;
-  min-width: 44px;
-  padding: 12px 24px;
-}
-
-/* All clickable elements */
-a, button, [role="button"], input[type="submit"] {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Form inputs */
-input, select, textarea {
-  min-height: 44px;
-  padding: 12px 16px;
-}
-
-/* Spacing between touch targets */
-.button-group button {
-  margin: 8px; /* Prevents accidental adjacent taps */
-}
+**For BEAM:**
 ```
+THE BEAM SYSTEM
 
-### Why 44px Not 24px
+       +------------------------+
+       |   CUSTOM MATERIALS     |  <-- What they get
+       +------------------------+
+              |
+       +------------------------+
+       |   WEAKNESS ANALYSIS    |  <-- How we know
+       +------------------------+
+              |
+       +------------------------+
+       |   SCORE TRACKING       |  <-- Foundation
+       +------------------------+
 
-While WCAG 2.5.8 (Level AA) requires only 24px, use 44px because:
-1. Apple Human Interface Guidelines recommend 44pt minimum
-2. Google Material Design recommends 48dp minimum
-3. Users with motor impairments or in unstable environments (bus, walking) need larger targets
-4. Your conversion problem may be users struggling to tap small CTAs
-
-**Source:** [W3C WCAG 2.5.8 Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum)
-
----
-
-## 4. Mobile Typography
-
-### Font Size Requirements
-
-```css
-/* Base font size - NEVER below 16px */
-html {
-  font-size: 16px; /* 1rem = 16px */
-}
-
-body {
-  font-size: 1rem; /* 16px */
-  line-height: 1.5;
-}
-
-/* Headings with fluid scaling */
-h1 {
-  font-size: clamp(1.75rem, 5vw, 2.5rem); /* 28px - 40px */
-}
-
-h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem); /* 24px - 32px */
-}
-
-h3 {
-  font-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px - 24px */
-}
-
-/* CRITICAL: Form inputs must be 16px+ to prevent iOS zoom */
-input, select, textarea {
-  font-size: 16px; /* Prevents iOS Safari auto-zoom on focus */
-}
-```
-
-### Why 16px Minimum is Critical
-
-**iOS Safari auto-zooms inputs under 16px.** When a user taps a form field with font-size below 16px, Safari zooms in. This:
-1. Disorients users
-2. Hides surrounding content
-3. Requires manual zoom-out
-4. Kills conversions
-
-**DO NOT use this workaround:**
-```html
-<!-- AVOID - Accessibility violation -->
-<meta name="viewport" content="maximum-scale=1.0">
-```
-
-Instead, just use `font-size: 16px` on inputs.
-
-### Fluid Typography with clamp()
-
-```css
-/* clamp(minimum, preferred, maximum) */
-.hero-title {
-  font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
-}
-```
-
-**Accessibility constraint:** Maximum must be <= 2.5x minimum to pass WCAG 1.4.4 zoom test.
-
-**Source:** [CSS-Tricks: 16px or Larger Text Prevents iOS Form Zoom](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/)
-
----
-
-## 5. Preventing Horizontal Scroll
-
-### Root Cause Fixes
-
-```css
-/* Global overflow protection */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Alternative: wrapper approach (more reliable in some browsers) */
-.page-wrapper {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* Responsive images - prevents overflow */
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive tables */
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Fix vw unit scrollbar issue */
-.full-width-section {
-  width: 100%; /* NOT 100vw - vw includes scrollbar width */
-}
-```
-
-### Common Overflow Culprits
-
-| Culprit | Fix |
-|---------|-----|
-| `width: 100vw` | Change to `width: 100%` |
-| Fixed pixel widths | Use `max-width` with percentage |
-| Negative margins | Ensure parent has `overflow-x: hidden` |
-| Absolute positioned elements | Add `overflow: hidden` to parent |
-| iframes/embeds | Wrap in container with `max-width: 100%` |
-| Tables | Wrap in scrollable container |
-
-### Debugging Technique
-
-```css
-/* Temporarily add to find overflow source */
-* {
-  outline: 1px solid red !important;
-}
-```
-
-This outlines every element so you can visually identify what extends beyond the viewport.
-
-**Source:** [LogRocket: How to Prevent Overflow Scrolling in CSS](https://blog.logrocket.com/how-to-prevent-overflow-scrolling-css/)
-
----
-
-## 6. Complete Mobile Reset Snippet
-
-Copy this entire block to the top of your CSS:
-
-```css
-/* ===========================================
-   MOBILE-FIRST RESPONSIVE FOUNDATION
-   =========================================== */
-
-/* Box-sizing reset */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* Root settings */
-html {
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/* Body reset */
-body {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-size: 1rem;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Responsive media */
-img, video, iframe, embed, object {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Touch-friendly defaults */
-a, button, input, select, textarea, [role="button"] {
-  min-height: 44px;
-  font-size: 16px; /* Prevents iOS zoom */
-}
-
-/* Button reset */
-button {
-  padding: 12px 24px;
-  cursor: pointer;
-  touch-action: manipulation; /* Removes 300ms tap delay */
-}
-
-/* Input reset */
-input, select, textarea {
-  padding: 12px 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-width: 100%;
-}
-
-/* Tap highlight removal (optional) */
-a, button {
-  -webkit-tap-highlight-color: transparent;
-}
+"Every feature feeds the next"
 ```
 
 ---
 
-## 7. Implementation Checklist
+## Typography & Scanability
 
-Apply these changes to your 226KB HTML file:
+### Font Size Hierarchy (Mobile-First)
 
-### Step 1: Viewport Meta Tag
-- [ ] Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">` in `<head>`
-- [ ] Remove any `user-scalable=no` or `maximum-scale=1.0` if present
+Based on 2025 research, limit to **4 font sizes maximum**. More creates cognitive overload.
 
-### Step 2: CSS Foundation
-- [ ] Add mobile reset CSS snippet at top of styles
-- [ ] Add `box-sizing: border-box` to all elements
-- [ ] Set `overflow-x: hidden` on `html, body`
+| Element | Mobile | Desktop | Weight |
+|---------|--------|---------|--------|
+| Hero headline | 32-36px | 48-56px | Bold (700) |
+| Section headlines | 24-28px | 32-36px | Semibold (600) |
+| Body/subheadlines | 18-20px | 18-20px | Regular (400) |
+| CTA button text | 18-20px | 18-20px | Semibold (600) |
+| Small text/labels | 14-16px | 14-16px | Regular (400) |
 
-### Step 3: Typography
-- [ ] Ensure body font-size is 16px minimum
-- [ ] Set ALL input/select/textarea to `font-size: 16px`
-- [ ] Use `clamp()` for headings if desired
+**Outfit font note:** Already a clean, modern sans-serif. Good choice. Use weight variations for hierarchy rather than mixing fonts.
 
-### Step 4: Touch Targets
-- [ ] Set CTA buttons to minimum 44x44px
-- [ ] Add 8px+ spacing between adjacent tap targets
-- [ ] Verify form inputs are at least 44px tall
 
-### Step 5: Media
-- [ ] Add `max-width: 100%` to all images
-- [ ] Wrap tables in scrollable containers
-- [ ] Check iframes/embeds for fixed widths
+### Line Length & Readability
 
-### Step 6: Test
-- [ ] Use browser DevTools mobile view (Chrome: F12 > toggle device toolbar)
-- [ ] Test on actual iPhone Safari (iOS zoom behavior)
-- [ ] Debug with `* { outline: 1px solid red; }` if horizontal scroll persists
+- **Maximum:** 50-75 characters per line (Baymard Institute consensus)
+- **Headlines:** 6-10 words maximum — readable at a glance
+- **Mobile:** Slightly larger than desktop due to arm's length viewing
+
+
+### Scanning Pattern Optimization
+
+Users scan in **F-pattern** (text-heavy) or **Z-pattern** (visual).
+
+For BEAM's landing page, optimize for **Z-pattern**:
+```
+1. Logo (top-left)     -->     2. CTA button (top-right)
+        \                           /
+         \                         /
+          \                       /
+           -->  3. Hero image  <--
+                      |
+                      v
+              4. Value proposition
+                      |
+                      v
+               5. Primary CTA
+```
+
+Place key elements at these Z-points for maximum visibility.
+
+
+### Whitespace Rules
+
+- **Section padding:** 60-80px vertical on desktop, 40-60px on mobile
+- **Element spacing:** Use consistent spacing scale (8, 16, 24, 32, 48px)
+- **Don't fear blank space:** Whitespace increases comprehension by reducing cognitive load
 
 ---
 
-## Quick Reference Card
+## Image Treatments
 
-| Property | Mobile Value | Why |
-|----------|--------------|-----|
-| Viewport | `width=device-width, initial-scale=1.0` | Enables responsive design |
-| Body font | 16px minimum | Readability, iOS zoom prevention |
-| Input font | 16px exactly | Prevents iOS Safari auto-zoom |
-| Touch targets | 44x44px minimum | Accessibility, usability |
-| Line height | 1.4-1.6x font size | Readability |
-| Button padding | 12px 24px | Touch-friendly |
-| Input padding | 12px 16px | Touch-friendly |
-| Images | `max-width: 100%` | Prevents overflow |
-| Overflow | `overflow-x: hidden` on body | Prevents horizontal scroll |
+### Portal Screenshots: Make Them Sing
+
+**Problem:** Raw screenshots look cluttered and technical.
+
+**Solution:** Use mockup treatment with these elements:
+
+1. **Device frame:** Place screenshot in browser/phone mockup
+2. **Selective blur:** Blur irrelevant parts, highlight key metrics
+3. **Callout annotations:** Arrow pointing to "Weak topic detected"
+4. **Drop shadow:** Subtle shadow lifts image off page
+5. **Background gradient:** Purple gradient behind mockup (brand consistency)
+
+**Tools:**
+- [BrandBird](https://www.brandbird.app/) - Designed for SaaS screenshots
+- [Shots.so](https://shots.so/) - Device mockups with animations
+- [Mockuuups Studio](https://mockuuups.studio/) - Free drag-and-drop
+
+**Example treatment:**
+```
++-- Browser frame ---------------------------+
+|  [x] [ ] [ ]   beamportal.netlify.app     |
+|-------------------------------------------|
+|                                           |
+|   Score History: ████████▒▒ 82%           |
+|                                           |
+|   [!] Weak Topics:        <-- CALLOUT     |
+|       - Quadratic equations               |
+|       - Trigonometry ratios               |
+|                                           |
+|   [Generated Materials]   <-- HIGHLIGHT   |
+|-------------------------------------------|
++-------------------------------------------+
+```
+
+
+### Booklet/Materials Photos
+
+**Do:**
+- Show materials with handwritten notes (proof of use)
+- Stack multiple booklets to show volume/variety
+- Include a hand holding the booklet (human element)
+- Natural lighting, slight angle (not flat product shot)
+
+**Don't:**
+- Perfectly pristine untouched materials
+- Stock photo aesthetic
+- Materials alone on white background
+
+
+### Tutor Photos
+
+**Do:**
+- Natural, candid teaching moments
+- Eye contact with camera OR engaged with student
+- Purple accent in clothing/background (brand consistency)
+- Diverse representation
+
+**Don't:**
+- Corporate headshots
+- Arms crossed "authority" poses
+- Stock photo smiles
+- Cluttered backgrounds
+
+**Placement:** Team section, not hero. Hero should focus on the product (portal/materials), not people.
+
+---
+
+## Mobile Considerations
+
+### Critical Stats
+
+- **83%** of landing page visits are mobile (2024 Benchmark Report)
+- **53%** abandon if load time > 3 seconds
+- Mobile converts at **half the rate** of desktop (2.9% vs 5%) — every optimization matters
+
+### Mobile-First Hierarchy
+
+1. **Hero must work without scrolling**
+   - Headline + one screenshot + CTA visible immediately
+   - No carousel or complex interactions
+
+2. **Thumb-friendly tap targets**
+   - Minimum 48x48px for buttons
+   - 8px spacing between interactive elements
+   - CTA buttons should be full-width on mobile
+
+3. **Vertical stacking**
+   - Desktop columns become vertical stack
+   - Icons above text, not beside
+   - Before/after becomes top/bottom
+
+4. **Image optimization**
+   - Compress with TinyPNG (20-40% load time reduction)
+   - Lazy load below-fold images
+   - Use WebP format where possible
+
+5. **Reduce to essentials**
+   - Mobile doesn't need every section
+   - Prioritize: Hero > 3-step process > Social proof > CTA
+   - Secondary content can be collapsible
+
+
+### Mobile CTA Strategy
+
+```
+STICKY FOOTER (recommended for tutoring):
++------------------------------------------+
+|      [Book Free Trial]   [Call Now]      |
++------------------------------------------+
+
+Always visible. Parents can act immediately.
+```
+
+---
+
+## Anti-Patterns to Avoid
+
+### 1. Competing CTAs
+**Bad:** "Book Trial" + "Learn More" + "Download Guide" + "Call Now"
+**Good:** One primary CTA above the fold. Secondary actions below.
+
+### 2. Generic Stock Photos
+**Why bad:** Feel inauthentic, reduce trust. Parents can spot stock "happy student" photos instantly.
+**Instead:** Real portal screenshots, real materials, real (or realistic) tutoring moments.
+
+### 3. Feature Walls
+**Bad:**
+```
+Features:
+- Score tracking
+- Custom materials
+- Qualified tutors
+- HSC focus
+- Small groups
+- ... (20 more)
+```
+**Good:** 3 key features with visual demonstration, then expandable "more features" section.
+
+### 4. Vague Headlines
+**Bad:** "Better Learning Outcomes" / "Excellence in Education"
+**Good:** "Custom Materials for YOUR Kid" / "We Track Scores. We Fix Weak Spots."
+
+### 5. Burying the Differentiator
+**Bad:** Mentioning data-driven personalization in paragraph 4 of "About Us"
+**Good:** It's the first visual and the headline. Unmissable.
+
+### 6. Wall of Text in Hero
+**Bad:** 3 paragraphs explaining the methodology
+**Good:** One headline + one supporting line + screenshot that shows it
+
+### 7. Slow-Loading Hero Images
+**Bad:** 2MB uncompressed photo as hero background
+**Good:** Compressed, appropriately sized, lazy-loaded below-fold content
+
+### 8. Navigation Overload
+**Bad:** Full nav with 8 menu items on landing page
+**Good:** Logo + single CTA button. Maybe "How it works" anchor link.
+
+---
+
+## Recommendations for BEAM
+
+### Immediate Wins (High Impact, Low Effort)
+
+1. **Replace hero with portal screenshot**
+   - Show the score tracking in action
+   - Add device mockup frame
+   - Callout annotation on "weak topics identified"
+
+2. **Simplify headline**
+   - Current: (unknown, but likely wordy)
+   - Proposed: "Custom Materials for YOUR Kid"
+   - Subline: "We track every score. We find weak spots. We generate what they need."
+
+3. **Add 3-step process section**
+   - Track → Identify → Generate
+   - Icons + one line each
+   - This IS your differentiator, visualized
+
+4. **Sticky mobile CTA**
+   - "Book Free Trial" always visible
+   - Phone number tap-to-call
+
+### Medium Effort (Worth Doing)
+
+5. **Before/after comparison**
+   - "Generic tutoring" vs "BEAM Academy"
+   - Visual side-by-side
+   - Can be interactive toggle on desktop
+
+6. **Portal screenshot mockups**
+   - Use BrandBird or Shots.so
+   - Show score graphs, weak topic alerts, generated materials
+   - Include on mobile with pinch-to-zoom
+
+7. **Parent testimonial with specifics**
+   - Not: "Great tutoring!"
+   - But: "Max went from 68% to 89% in 3 months. The weak topic reports showed us exactly what to focus on."
+
+### Future Consideration
+
+8. **Short demo video (30-60 seconds)**
+   - Show the portal in action
+   - "Here's how we track Sarah's scores..."
+   - Landing pages with video convert 86% higher
+
+9. **Interactive "See Your Child's Path" element**
+   - Quiz-like: "What subject?" → "What year?" → Show sample weak topic analysis
+   - High engagement, demonstrates product without commitment
 
 ---
 
 ## Sources
 
 ### Primary (HIGH Confidence)
-- [MDN: Viewport Meta Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
-- [W3C WCAG 2.2: Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum)
-- [MDN: CSS clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp)
+- [Shopify - High-Converting Landing Pages Best Practices 2025](https://www.shopify.com/blog/high-converting-landing-pages)
+- [Thrive Themes - 50+ Hero Section Examples Study](https://thrivethemes.com/hero-section-examples/)
+- [Fermat Commerce - Mobile Landing Page Optimization 2025](https://www.fermatcommerce.com/post/mobile-landing-page)
+- [Caffeine Marketing - Top 13 EdTech Landing Page Designs 2025](https://www.caffeinemarketing.com/blog/top-13-edtech-landing-page-designs)
+- [Webstacks - 10 Best Mobile Landing Page Designs 2025](https://www.webstacks.com/blog/mobile-landing-page)
 
-### Supporting (MEDIUM Confidence)
-- [CSS-Tricks: 16px Prevents iOS Form Zoom](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/)
-- [Smashing Magazine: Modern Fluid Typography](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/)
-- [BrowserStack: Responsive Design Breakpoints](https://www.browserstack.com/guide/responsive-design-breakpoints)
-- [LogRocket: Prevent Overflow Scrolling](https://blog.logrocket.com/how-to-prevent-overflow-scrolling-css/)
-- [LearnUI: Font Size Guidelines](https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html)
+### Secondary (MEDIUM Confidence)
+- [Zoho - 13 Common Landing Page Mistakes 2025](https://www.zoho.com/landingpage/landing-page-mistakes.html)
+- [Moosend - 10 Landing Page Mistakes to Avoid 2025](https://moosend.com/blog/landing-page-mistakes/)
+- [Elegant Themes - Typography for Web Design 2025](https://www.elegantthemes.com/blog/design/optimal-typography-for-web-design)
+- [SaaSFrame - 10 SaaS Landing Page Trends 2026](https://www.saasframe.io/blog/10-saas-landing-page-trends-for-2026-with-real-examples)
+- [Unbounce - 27 Best SaaS Landing Page Examples](https://unbounce.com/conversion-rate-optimization/the-state-of-saas-landing-pages/)
+
+### Tools Referenced
+- [BrandBird](https://www.brandbird.app/) - Screenshot beautification
+- [Shots.so](https://shots.so/) - Device mockups
+- [Mockuuups Studio](https://mockuuups.studio/) - Free mockup tool
+- [TinyPNG](https://tinypng.com/) - Image compression
+
+---
+
+## Summary for Roadmap
+
+**Core visual strategy:** Show the portal, not just talk about it. The differentiator (data-driven personalization) must be VISIBLE in the hero section.
+
+**Priority order:**
+1. Portal screenshot with mockup treatment (communicates product instantly)
+2. 3-step process icons (explains how it works)
+3. Before/after comparison (shows transformation)
+4. Social proof strip (builds trust)
+5. Sticky mobile CTA (captures intent)
+
+**Typography:** 4 sizes max, mobile-first sizing, Outfit font with weight variations.
+
+**Mobile:** Vertical stack everything, optimize images, sticky CTA footer.
+
+**Avoid:** Feature walls, stock photos, vague headlines, competing CTAs, slow load times.
