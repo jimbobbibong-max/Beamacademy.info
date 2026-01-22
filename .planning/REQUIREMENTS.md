@@ -78,36 +78,36 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HERO-01 | Phase 1 | Pending |
-| HERO-02 | Phase 1 | Pending |
-| HERO-03 | Phase 1 | Pending |
-| HERO-04 | Phase 1 | Pending |
-| HERO-05 | Phase 1 | Pending |
-| PROOF-01 | Phase 2 | Pending |
-| PROOF-02 | Phase 2 | Pending |
-| PROOF-03 | Phase 2 | Pending |
-| PROOF-04 | Phase 2 | Pending |
-| COMP-01 | Phase 3 | Pending |
-| COMP-02 | Phase 3 | Pending |
-| TRUST-01 | Phase 4 | Pending |
-| TRUST-02 | Phase 4 | Pending |
-| TRUST-03 | Phase 4 | Pending |
-| TRUST-04 | Phase 4 | Pending |
-| TRUST-05 | Phase 4 | Pending |
-| SUPP-01 | Phase 5 | Pending |
-| SUPP-02 | Phase 5 | Pending |
-| SUPP-03 | Phase 5 | Pending |
-| CTA-01 | Phase 6 | Pending |
-| CTA-02 | Phase 6 | Pending |
-| MOB-01 | Phase 6 | Pending |
-| MOB-02 | Phase 6 | Pending |
-| MOB-03 | Phase 6 | Pending |
+| HERO-01 | Phase 6 | Pending |
+| HERO-02 | Phase 6 | Pending |
+| HERO-03 | Phase 6 | Pending |
+| HERO-04 | Phase 6 | Pending |
+| HERO-05 | Phase 6 | Pending |
+| PROOF-01 | Phase 7 | Pending |
+| PROOF-02 | Phase 7 | Pending |
+| PROOF-03 | Phase 7 | Pending |
+| PROOF-04 | Phase 7 | Pending |
+| COMP-01 | Phase 8 | Pending |
+| COMP-02 | Phase 8 | Pending |
+| TRUST-01 | Phase 9 | Pending |
+| TRUST-02 | Phase 9 | Pending |
+| TRUST-03 | Phase 9 | Pending |
+| TRUST-04 | Phase 9 | Pending |
+| TRUST-05 | Phase 9 | Pending |
+| SUPP-01 | Phase 10 | Pending |
+| SUPP-02 | Phase 10 | Pending |
+| SUPP-03 | Phase 10 | Pending |
+| CTA-01 | Phase 11 | Pending |
+| CTA-02 | Phase 11 | Pending |
+| MOB-01 | Phase 11 | Pending |
+| MOB-02 | Phase 11 | Pending |
+| MOB-03 | Phase 11 | Pending |
 
 **Coverage:**
 - v2 requirements: 24 total
 - Mapped to phases: 24
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-22*
-*Last updated: 2026-01-22 after initial definition*
+*Last updated: 2026-01-22 — traceability updated with v2 phase numbers (6-11)*
