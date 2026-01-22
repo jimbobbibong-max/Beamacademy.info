@@ -1580,6 +1580,210 @@
             font-weight: 600;
         }
 
+
+        /* ========== Support Section ========== */
+        .support-section {
+            padding: var(--section-padding);
+            background: var(--gray-50);
+        }
+
+        /* Badge (adapt from trust-badge pattern) */
+        .support-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--purple-100);
+            color: var(--purple-700);
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .support-badge svg,
+        .support-badge-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Discord Mockup Container */
+        .discord-mockup {
+            background: #36393F;
+            border-radius: 16px;
+            overflow: hidden;
+            max-width: 550px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .discord-header {
+            background: #2F3136;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .discord-channel {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .discord-hash {
+            color: #8E9297;
+            font-size: 1.2rem;
+        }
+
+        .discord-messages {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .discord-message {
+            display: flex;
+            gap: 16px;
+        }
+
+        .discord-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .discord-avatar-student {
+            background: #5865F2;
+            color: white;
+        }
+
+        .discord-avatar-tutor {
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            overflow: hidden;
+        }
+
+        .discord-avatar-tutor img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .discord-message-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .discord-message-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+
+        .discord-username {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .discord-tutor {
+            color: var(--purple-400);
+        }
+
+        .discord-role {
+            background: rgba(124, 58, 237, 0.3);
+            color: var(--purple-300);
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .discord-timestamp {
+            color: #72767D;
+            font-size: 0.75rem;
+        }
+
+        .discord-message-text {
+            color: #DCDDDE;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* Support Features */
+        .support-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .support-feature {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .support-feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--purple-100);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--purple-700);
+            flex-shrink: 0;
+        }
+
+        .support-feature-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .support-feature-text {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--gray-700);
+            font-weight: 500;
+        }
+
+        /* Desktop: Side-by-side layout */
+        @media (min-width: 900px) {
+            .support-content {
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                align-items: flex-start;
+            }
+
+            .discord-mockup {
+                flex: 0 1 500px;
+                margin: 0;
+            }
+
+            .support-features {
+                flex: 0 1 320px;
+                margin-top: 0;
+            }
+        }
+
         /* About */
         .about { background: var(--gray-50); }
 
@@ -4096,6 +4300,49 @@
             .trust-testimonial::before {
                 font-size: 3rem;
                 left: 16px;
+            }
+        }
+
+        /* Support Section Mobile */
+        @media (max-width: 768px) {
+            .discord-mockup {
+                border-radius: 12px;
+            }
+
+            .discord-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 0.875rem;
+            }
+
+            .discord-message {
+                gap: 12px;
+            }
+
+            .discord-message-text {
+                font-size: 0.9rem;
+            }
+
+            .discord-timestamp {
+                font-size: 0.7rem;
+            }
+
+            .support-features {
+                gap: 16px;
+            }
+
+            .support-feature-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .support-feature-icon svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .support-feature-text {
+                font-size: 0.9rem;
             }
         }
 
