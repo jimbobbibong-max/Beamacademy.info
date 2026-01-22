@@ -22,8 +22,8 @@
 **Plans:** 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Hero text content (category label, headline, subheadline, single CTA)
-- [ ] 06-02-PLAN.md — Hero visual (portal mockup with score tracking)
+- [x] 06-01-PLAN.md — Hero text content (category label, headline, subheadline, single CTA)
+- [x] 06-02-PLAN.md — Hero visual (portal mockup with score tracking)
 
 **Requirements:**
 - HERO-01: Headline communicates category + differentiator
@@ -46,16 +46,21 @@ Plans:
 
 **Dependencies:** Phase 6 (hero establishes context)
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 07-01-PLAN.md — Proof section with 4 document mockups, "Yours to Keep" messaging, topic gap insight
+
 **Requirements:**
 - PROOF-01: 4 documents from ONE trial visualized
 - PROOF-02: "Yours to keep" messaging prominently displayed
 - PROOF-03: Documents shown with visual previews
-- PROOF-04: MCQ vs Short Answer breakdown shown
+- PROOF-04: Topic gap insight shown (specific topics, not just overall score)
 
 **Success Criteria:**
 1. Parent can see all 4 document types visually (not just listed)
 2. "Free even if you don't enrol" message is visible without searching
-3. MCQ vs Short Answer insight is communicated (exposes hidden weakness)
+3. Topic gap insight is communicated (exposes specific weaknesses like "Calculus - Derivatives")
 4. Section answers "what do I actually get?" with visuals, not text
 
 ---
@@ -164,7 +169,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 4 | v1 | Content Structure | Complete | 2026-01-20 |
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
-| 7 | v2 | Proof Section | Pending | - |
+| 7 | v2 | Proof Section | Planned | - |
 | 8 | v2 | Comparison Section | Pending | - |
 | 9 | v2 | Trust Section | Pending | - |
 | 10 | v2 | Support Section | Pending | - |
@@ -176,15 +181,15 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HERO-01 | Phase 6 | Planned |
-| HERO-02 | Phase 6 | Planned |
-| HERO-03 | Phase 6 | Planned |
-| HERO-04 | Phase 6 | Planned |
-| HERO-05 | Phase 6 | Planned |
-| PROOF-01 | Phase 7 | Pending |
-| PROOF-02 | Phase 7 | Pending |
-| PROOF-03 | Phase 7 | Pending |
-| PROOF-04 | Phase 7 | Pending |
+| HERO-01 | Phase 6 | Complete |
+| HERO-02 | Phase 6 | Complete |
+| HERO-03 | Phase 6 | Complete |
+| HERO-04 | Phase 6 | Complete |
+| HERO-05 | Phase 6 | Complete |
+| PROOF-01 | Phase 7 | Planned |
+| PROOF-02 | Phase 7 | Planned |
+| PROOF-03 | Phase 7 | Planned |
+| PROOF-04 | Phase 7 | Planned |
 | COMP-01 | Phase 8 | Pending |
 | COMP-02 | Phase 8 | Pending |
 | TRUST-01 | Phase 9 | Pending |
@@ -205,4 +210,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-22 — Phase 6 planned (2 plans)*
+*Last updated: 2026-01-23 — Phase 7 planned (1 plan)*
