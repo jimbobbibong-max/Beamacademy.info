@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-22)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v2 Messaging Overhaul — Phase 7 (Proof Section) COMPLETE
+**Current focus:** v2 Messaging Overhaul — Phase 8 (Comparison Section) COMPLETE
 
 ## Current Position
 
-Phase: 7 - Proof Section (COMPLETE)
-Plan: 01 of 01 complete (Document Grid)
-Status: Phase 7 complete - all plans executed and verified
-Last activity: 2026-01-23 — Completed 07-01 proof section with document grid
+Phase: 8 - Comparison Section (COMPLETE)
+Plan: 01 of 01 complete (Comparison Table + Cards)
+Status: Phase 8 complete - all plans executed and verified
+Last activity: 2026-01-23 — Completed 08-01 comparison section
 
-Progress: [####------] 40% (v2: Phase 7 complete, ready for Phase 8)
+Progress: [#####-----] 50% (v2: Phase 8 complete, ready for Phase 9)
 
 ## v2 Phase Overview
 
@@ -22,8 +22,8 @@ Progress: [####------] 40% (v2: Phase 7 complete, ready for Phase 8)
 |-------|------|--------------|--------|
 | 6 | Hero Overhaul | HERO-01 to HERO-05 | COMPLETE |
 | 7 | Proof Section | PROOF-01 to PROOF-04 | COMPLETE |
-| 8 | Comparison Section | COMP-01 to COMP-02 | Ready |
-| 9 | Trust Section | TRUST-01 to TRUST-05 | Blocked by 8 |
+| 8 | Comparison Section | COMP-01 to COMP-02 | COMPLETE |
+| 9 | Trust Section | TRUST-01 to TRUST-05 | Ready |
 | 10 | Support Section | SUPP-01 to SUPP-03 | Blocked by 9 |
 | 11 | CTA & Mobile Polish | CTA-01/02, MOB-01/02/03 | Blocked by 10 |
 
@@ -60,7 +60,10 @@ Progress: [####------] 40% (v2: Phase 7 complete, ready for Phase 8)
 | Realistic score data | 78% overall with mix of strong/weak topics shows tracking is meaningful |
 | Progress Report top-left | Most visual impact position in 2x2 grid |
 | CSS mockups for documents | Preserves LCP performance (no image loads) |
-| Topic gap via Focus Areas | Shows "Calculus - Derivatives" specificity, not just overall scores |
+| Topic gap via Focus Areas | Shows "Integration by Parts" specificity, not just overall scores |
+| MCQ/Short Answer split | Shows granular tracking (85% MCQ vs 68% SA) |
+| Harder math questions | Integration/differentiation questions show HSC-level rigor |
+| "Teachers miss" framing | More credible than "parents miss" for gap identification |
 
 ### Research Insights
 
@@ -80,19 +83,17 @@ Progress: [####------] 40% (v2: Phase 7 complete, ready for Phase 8)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: Completed 07-01-PLAN.md (Phase 7 complete)
+Stopped at: Completed 08-01-PLAN.md (Phase 8 complete)
 Resume file: None
 
 ## Next Up
 
-**Phase 8: Comparison Section** - Ready to plan and execute
+**Phase 9: Trust Section** - Ready to plan and execute
 
-**Phase 7 Requirements (ALL VERIFIED):**
-- PROOF-01: 4 documents from ONE trial visualized (4 distinct mockups in grid)
-- PROOF-02: "Yours to keep" messaging prominently displayed (badge above headline)
-- PROOF-03: Documents shown with visual previews (CSS-only mockups)
-- PROOF-04: Topic gap insight shown (Focus Areas section + callout)
+**Phase 8 Requirements (ALL VERIFIED):**
+- COMP-01: Generic vs BEAM side-by-side comparison table ✓
+- COMP-02: Specific contrasts shown (5 distinct comparisons) ✓
 
 ---
 
-*Last updated: 2026-01-23 — Completed Phase 7 Proof Section*
+*Last updated: 2026-01-23 — Completed Phase 8 Comparison Section*

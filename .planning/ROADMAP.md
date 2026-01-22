@@ -74,7 +74,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 08-01-PLAN.md — Comparison table (desktop) and cards (mobile) with 5 specific contrasts
+- [x] 08-01-PLAN.md — Comparison table (desktop) and cards (mobile) with 5 specific contrasts
 
 **Requirements:**
 - COMP-01: Generic vs BEAM side-by-side comparison table
@@ -175,7 +175,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
-| 8 | v2 | Comparison Section | Planned | - |
+| 8 | v2 | Comparison Section | Complete | 2026-01-23 |
 | 9 | v2 | Trust Section | Pending | - |
 | 10 | v2 | Support Section | Pending | - |
 | 11 | v2 | CTA & Mobile Polish | Pending | - |
@@ -195,8 +195,8 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | PROOF-02 | Phase 7 | Complete |
 | PROOF-03 | Phase 7 | Complete |
 | PROOF-04 | Phase 7 | Complete |
-| COMP-01 | Phase 8 | Pending |
-| COMP-02 | Phase 8 | Pending |
+| COMP-01 | Phase 8 | Complete |
+| COMP-02 | Phase 8 | Complete |
 | TRUST-01 | Phase 9 | Pending |
 | TRUST-02 | Phase 9 | Pending |
 | TRUST-03 | Phase 9 | Pending |
