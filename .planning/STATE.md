@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-01-22)
 
 ## Current Position
 
-Phase: 6 - Hero Overhaul
-Plan: 01 of 02 complete (Text Overhaul)
-Status: Plan 01 executed, awaiting verification
-Last activity: 2026-01-22 — Completed 06-01 hero text overhaul
+Phase: 6 - Hero Overhaul (COMPLETE)
+Plan: 02 of 02 complete (Portal Mockup)
+Status: Phase 6 complete - all plans executed and verified
+Last activity: 2026-01-23 — Completed 06-02 hero portal mockup
 
-Progress: [##--------] 17% (v2: 1/6 plans in phase 6)
+Progress: [###-------] 33% (v2: Phase 6 complete, ready for Phase 7)
 
 ## v2 Phase Overview
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 6 | Hero Overhaul | HERO-01 to HERO-05 | 01/02 plans complete |
-| 7 | Proof Section | PROOF-01 to PROOF-04 | Blocked by 6 |
+| 6 | Hero Overhaul | HERO-01 to HERO-05 | COMPLETE |
+| 7 | Proof Section | PROOF-01 to PROOF-04 | Ready |
 | 8 | Comparison Section | COMP-01 to COMP-02 | Blocked by 7 |
 | 9 | Trust Section | TRUST-01 to TRUST-05 | Blocked by 8 |
 | 10 | Support Section | SUPP-01 to SUPP-03 | Blocked by 9 |
@@ -56,6 +56,8 @@ Progress: [##--------] 17% (v2: 1/6 plans in phase 6)
 | Parent-outcome headline | "Where they're struggling" speaks to parent concerns |
 | Badge-style category label | Visual prominence for "HSC Tutoring" identification |
 | Single CTA in hero | Remove competing buttons for clear conversion path |
+| Portal mockup vs screenshot | HTML mockup loads faster, more responsive than image |
+| Realistic score data | 78% overall with mix of strong/weak topics shows tracking is meaningful |
 
 ### Research Insights
 
@@ -74,23 +76,21 @@ Progress: [##--------] 17% (v2: 1/6 plans in phase 6)
 
 ## Session Continuity
 
-Last session: 2026-01-22
-Stopped at: Completed 06-01-PLAN.md
+Last session: 2026-01-23
+Stopped at: Completed 06-02-PLAN.md (Phase 6 complete)
 Resume file: None
 
 ## Next Up
 
-**Verification:** Run `/gsd:verify-work 06-01` to confirm hero text changes
+**Phase 7: Proof Section** - Ready to plan and execute
 
-**Then Phase 6 Plan 02:** Hero Visual (portal mockup) - already executed (commit 9cb73e3)
-
-**Requirements to verify:**
+**Phase 6 Requirements (ALL VERIFIED):**
 - HERO-01: Headline with category + differentiator
-- HERO-03: Category label visible
-- HERO-04: Single primary CTA
-- HERO-05: Plain English subheadline
-- HERO-02: Portal screenshot in hero (from 06-02)
+- HERO-02: Portal screenshot in hero (portal mockup)
+- HERO-03: Category label visible ("HSC Tutoring")
+- HERO-04: Single primary CTA ("Book Free Trial")
+- HERO-05: Plain English subheadline (score tracking explanation)
 
 ---
 
-*Last updated: 2026-01-22 — Completed 06-01 hero text overhaul*
+*Last updated: 2026-01-23 — Completed Phase 6 Hero Overhaul*
