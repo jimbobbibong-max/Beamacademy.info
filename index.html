@@ -1098,6 +1098,198 @@
             font-style: italic;
         }
 
+        /* Progress Report Mockup (Dashboard style) */
+        .report-mockup {
+            background: var(--gray-900);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .report-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray-400);
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .report-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .report-dots .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot-red { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green { background: #28c840; }
+
+        .report-body {
+            padding: 12px 14px;
+            flex: 1;
+        }
+
+        .report-score {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .report-score-value {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .report-score-label {
+            font-size: 0.7rem;
+            color: var(--gray-400);
+            margin-top: 4px;
+        }
+
+        .report-topics {
+            margin-bottom: 10px;
+        }
+
+        .report-topic {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 0.75rem;
+            color: var(--gray-300);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .topic-score {
+            font-weight: 600;
+        }
+
+        .score-green { color: #28c840; }
+        .score-yellow { color: #febc2e; }
+        .score-red { color: #ff5f57; }
+
+        .report-focus {
+            background: rgba(255, 95, 87, 0.1);
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+
+        .focus-label {
+            font-size: 0.65rem;
+            color: var(--gray-400);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .focus-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .focus-tag {
+            background: rgba(255, 95, 87, 0.2);
+            color: #ff8a80;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 500;
+        }
+
+        /* Paper Document Mockups */
+        .paper-mockup {
+            background: white;
+            height: 100%;
+            padding: 14px 16px;
+            font-family: 'Times New Roman', Georgia, serif;
+            font-size: 0.7rem;
+            color: var(--gray-700);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .paper-mockup::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(to bottom, transparent, white);
+            pointer-events: none;
+        }
+
+        .paper-header {
+            text-align: center;
+            font-weight: bold;
+            color: var(--purple-700);
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+        }
+
+        .paper-title {
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: var(--gray-800);
+        }
+
+        .paper-question {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            padding-left: 4px;
+        }
+
+        /* Answer Key specific */
+        .answer-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .answer-num {
+            font-weight: bold;
+            min-width: 20px;
+        }
+
+        /* Worked Solutions specific */
+        .solution-q {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--gray-800);
+        }
+
+        .solution-step {
+            padding-left: 12px;
+            margin-bottom: 4px;
+            color: var(--gray-600);
+        }
+
+        .solution-answer {
+            font-weight: bold;
+            margin-top: 8px;
+            padding: 4px 8px;
+            background: var(--purple-50);
+            border-radius: 4px;
+            display: inline-block;
+        }
+
         /* About */
         .about { background: var(--gray-50); }
 
@@ -4841,7 +5033,43 @@
                     <!-- Progress Report - Top Left (most visual) -->
                     <div class="document-card document-dashboard">
                         <div class="document-preview" aria-hidden="true">
-                            <!-- Dashboard mockup placeholder -->
+                            <div class="report-mockup">
+                                <div class="report-header">
+                                    <span class="report-dots">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                    </span>
+                                    Progress Report
+                                </div>
+                                <div class="report-body">
+                                    <div class="report-score">
+                                        <div class="report-score-value">78%</div>
+                                        <div class="report-score-label">Overall Score</div>
+                                    </div>
+                                    <div class="report-topics">
+                                        <div class="report-topic">
+                                            <span class="topic-name">Algebra</span>
+                                            <span class="topic-score score-green">92%</span>
+                                        </div>
+                                        <div class="report-topic">
+                                            <span class="topic-name">Trigonometry</span>
+                                            <span class="topic-score score-yellow">71%</span>
+                                        </div>
+                                        <div class="report-topic">
+                                            <span class="topic-name">Calculus</span>
+                                            <span class="topic-score score-red">64%</span>
+                                        </div>
+                                    </div>
+                                    <div class="report-focus">
+                                        <div class="focus-label">Focus Areas</div>
+                                        <div class="focus-tags">
+                                            <span class="focus-tag">Derivatives</span>
+                                            <span class="focus-tag">Identities</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="document-info">
                             <h3 class="document-name">Progress Report</h3>
@@ -4852,7 +5080,16 @@
                     <!-- Diagnostic Worksheet - Top Right -->
                     <div class="document-card document-paper">
                         <div class="document-preview" aria-hidden="true">
-                            <!-- Paper mockup placeholder -->
+                            <div class="paper-mockup">
+                                <div class="paper-header">BEAM Academy</div>
+                                <div class="paper-title">Year 11 Maths - Diagnostic</div>
+                                <div class="paper-content">
+                                    <div class="paper-question">Q1. Differentiate y = 3x² + 2x - 5</div>
+                                    <div class="paper-question">Q2. Find sin(π/4) + cos(π/3)</div>
+                                    <div class="paper-question">Q3. Solve: 2x² - 5x + 3 = 0</div>
+                                    <div class="paper-question">Q4. Prove that tan²θ + 1 = sec²θ</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="document-info">
                             <h3 class="document-name">Diagnostic Worksheet</h3>
@@ -4863,7 +5100,16 @@
                     <!-- Answer Key - Bottom Left -->
                     <div class="document-card document-paper">
                         <div class="document-preview" aria-hidden="true">
-                            <!-- Paper mockup placeholder -->
+                            <div class="paper-mockup paper-answers">
+                                <div class="paper-header">BEAM Academy</div>
+                                <div class="paper-title">Answer Key</div>
+                                <div class="paper-content">
+                                    <div class="answer-row"><span class="answer-num">1.</span> 6x + 2</div>
+                                    <div class="answer-row"><span class="answer-num">2.</span> (√2 + 1)/2</div>
+                                    <div class="answer-row"><span class="answer-num">3.</span> x = 1.5, x = 1</div>
+                                    <div class="answer-row"><span class="answer-num">4.</span> See solutions</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="document-info">
                             <h3 class="document-name">Answer Key</h3>
@@ -4874,7 +5120,17 @@
                     <!-- Worked Solutions - Bottom Right -->
                     <div class="document-card document-paper">
                         <div class="document-preview" aria-hidden="true">
-                            <!-- Paper mockup placeholder -->
+                            <div class="paper-mockup paper-solutions">
+                                <div class="paper-header">BEAM Academy</div>
+                                <div class="paper-title">Worked Solutions</div>
+                                <div class="paper-content">
+                                    <div class="solution-q">Q1. Differentiate y = 3x² + 2x - 5</div>
+                                    <div class="solution-step">Step 1: Apply power rule</div>
+                                    <div class="solution-step">Step 2: d/dx(3x²) = 6x</div>
+                                    <div class="solution-step">Step 3: d/dx(2x) = 2</div>
+                                    <div class="solution-answer">Answer: dy/dx = 6x + 2</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="document-info">
                             <h3 class="document-name">Worked Solutions</h3>
