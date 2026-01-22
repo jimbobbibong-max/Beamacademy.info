@@ -22,22 +22,22 @@
 
 ### Comparison Section
 
-- [ ] **COMP-01**: Generic tutoring vs BEAM side-by-side comparison table
-- [ ] **COMP-02**: Specific contrasts shown (vague feedback vs precise data, same worksheets vs custom materials)
+- [x] **COMP-01**: Generic tutoring vs BEAM side-by-side comparison table
+- [x] **COMP-02**: Specific contrasts shown (vague feedback vs precise data, same worksheets vs custom materials)
 
 ### Trust Section
 
-- [ ] **TRUST-01**: Tutor profiles with real photos
-- [ ] **TRUST-02**: Credibility combo per tutor: Baulko graduate + 95+ HSC + Med student (the trifecta)
-- [ ] **TRUST-03**: Parent testimonials with specific outcomes (score improvements)
-- [ ] **TRUST-04**: Small group size (6-8 max) prominently visible
-- [ ] **TRUST-05**: School-specific matching mentioned (Baulko vs James Ruse vs Epping Boys format)
+- [x] **TRUST-01**: Tutor profiles with real photos
+- [x] **TRUST-02**: Credibility combo per tutor: Baulko graduate + 95+ HSC + Med student (the trifecta)
+- [x] **TRUST-03**: Parent testimonials with specific outcomes (score improvements)
+- [x] **TRUST-04**: Small group size (6-8 max) prominently visible
+- [x] **TRUST-05**: School-specific matching mentioned (Baulko vs James Ruse vs Epping Boys format)
 
 ### Support Section
 
-- [ ] **SUPP-01**: Discord 24/7 support callout section
-- [ ] **SUPP-02**: Framing: "Stuck at 9pm? Get help by 10am."
-- [ ] **SUPP-03**: Discord screenshot showing real exchange (anonymized)
+- [x] **SUPP-01**: Discord 24/7 support callout section
+- [x] **SUPP-02**: Framing: "Stuck at 9pm? Get help by 10am."
+- [x] **SUPP-03**: Discord screenshot showing real exchange (anonymized)
 
 ### CTA/Form
 
@@ -87,16 +87,16 @@
 | PROOF-02 | Phase 7 | Complete |
 | PROOF-03 | Phase 7 | Complete |
 | PROOF-04 | Phase 7 | Complete |
-| COMP-01 | Phase 8 | Pending |
-| COMP-02 | Phase 8 | Pending |
-| TRUST-01 | Phase 9 | Pending |
-| TRUST-02 | Phase 9 | Pending |
-| TRUST-03 | Phase 9 | Pending |
-| TRUST-04 | Phase 9 | Pending |
-| TRUST-05 | Phase 9 | Pending |
-| SUPP-01 | Phase 10 | Pending |
-| SUPP-02 | Phase 10 | Pending |
-| SUPP-03 | Phase 10 | Pending |
+| COMP-01 | Phase 8 | Complete |
+| COMP-02 | Phase 8 | Complete |
+| TRUST-01 | Phase 9 | Complete |
+| TRUST-02 | Phase 9 | Complete |
+| TRUST-03 | Phase 9 | Complete |
+| TRUST-04 | Phase 9 | Complete |
+| TRUST-05 | Phase 9 | Complete |
+| SUPP-01 | Phase 10 | Complete |
+| SUPP-02 | Phase 10 | Complete |
+| SUPP-03 | Phase 10 | Complete |
 | CTA-01 | Phase 11 | Pending |
 | CTA-02 | Phase 11 | Pending |
 | MOB-01 | Phase 11 | Pending |
@@ -110,4 +110,4 @@
 
 ---
 *Requirements defined: 2026-01-22*
-*Last updated: 2026-01-22 — traceability updated with v2 phase numbers (6-11)*
+*Last updated: 2026-01-23 — Phase 10 requirements (SUPP-01/02/03) marked Complete*

@@ -123,7 +123,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 10-01-PLAN.md — Discord mockup with 24/7 support callout and availability framing
+- [x] 10-01-PLAN.md — Discord mockup with 24/7 support callout and availability framing
 
 **Requirements:**
 - SUPP-01: Discord 24/7 support callout section
@@ -187,7 +187,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
 | 8 | v2 | Comparison Section | Complete | 2026-01-23 |
 | 9 | v2 | Trust Section | Complete | 2026-01-23 |
-| 10 | v2 | Support Section | Pending | - |
+| 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Pending | - |
 
 ---
@@ -225,4 +225,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 10 planned (1 plan)*
+*Last updated: 2026-01-23 — Phase 10 complete*
