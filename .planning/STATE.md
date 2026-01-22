@@ -2,79 +2,61 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-01-20)
+See: .planning/PROJECT.md (updated 2026-01-22)
 
 **Core value:** Convert Google Ads mobile traffic into free trial bookings
-**Current focus:** Re-executing v1 after corruption revert
+**Current focus:** v1 complete — ready for v2 planning
 
 ## Current Position
 
-Phase: 5 of 5 (Performance) - COMPLETE
-Plan: 4 of 4 complete
-Status: v1 MILESTONE COMPLETE - Deployed to production
-Last activity: 2026-01-20 - Re-executed Phase 5, pushed 22 commits to main
+Phase: v1 COMPLETE (5 phases, 9 plans shipped)
+Plan: N/A — milestone archived
+Status: Ready for next milestone
+Last activity: 2026-01-22 — v1 milestone archived and tagged
 
-Progress: [##########] 100% (v1 complete)
-
-## Corruption Incident (2026-01-20)
-
-**What happened:** v1 execution completed but corrupted index.html on deploy. Edit/Write tool mangled UTF-8 encoding on Windows, turning emojis into `??` and breaking CSS syntax.
-
-**Root cause:** Commit `0b980b0` (Phase 5, Plan 4 - logo dimensions) corrupted all Unicode characters. An unclosed CSS string (`content: '??;`) broke the entire stylesheet.
-
-**Resolution:** Reverted to pre-v1 index.html. Now re-executing with safe edit practices.
-
-**Safe Edit Rules:**
-1. Use `sed` for simple replacements on Unicode-heavy files
-2. Verify after edits: `grep "??" index.html` should return nothing
-3. Test in browser before each commit
-4. Avoid editing emoji lines directly - use HTML entities if needed
+Progress: [##########] 100% (v1 shipped)
 
 ## Milestone History
 
 | Version | Name | Phases | Status | Date |
 |---------|------|--------|--------|------|
-| v1 | Mobile Conversion | 1-5 | Re-execution in progress | 2026-01-20 |
+| v1 | Mobile Conversion | 1-5 | SHIPPED | 2026-01-20 |
 
-## Accumulated Context
+## Performance Achieved (v1)
 
-### Decisions
+| Metric | Target | Achieved |
+|--------|--------|----------|
+| LCP | < 2.5s | 0.9s |
+| CLS | < 0.1 | 0.014 |
+| Performance | - | 88/100 |
+| SEO | - | 100/100 |
 
-Previous v1 decisions still valid - documented in PROJECT.md and archived ROADMAP.
+## Tech Debt (tracked for v2)
 
-**Phase 3 decisions:**
-- Email made optional - phone is primary contact for mobile users
-- Year Level made optional - derived from package or asked in follow-up
-- Removed studentName field - single contact (parent/guardian) simplifies form
+See: .planning/milestones/v1-MILESTONE-AUDIT.md
 
-**Phase 4 decisions:**
-- Hamburger animation: 250ms cubic-bezier(0.4, 0, 0.2, 1) transitions
-- Menu close behavior: Outside click + Escape key with focus return
-- Small screen breakpoint: 400px for 320px device safety margin
-
-### Pending Todos
-
-**Structured todos:** 2 in `.planning/todos/pending/`
-- Fix skip to main content button styling (ui)
-- Improve form scroll anchor position (ui)
-
-*Deferred until after successful v1 re-execution*
-
-### Blockers/Concerns
-
-- **CRITICAL:** Follow safe edit practices to avoid corruption
-- Verify file integrity after each phase
-
-## Session Continuity
-
-Last session: 2026-01-20
-Stopped at: v1 complete, deployed to production
-Resume file: .planning/phases/05-performance/.continue-here.md
+- Accessibility items (contrast, aria-hidden, link names)
+- UI polish items (skip button, form anchor)
+- Deferred optimizations (WebP, CSS minification)
 
 ## Next Up
 
-**v1 Milestone Complete!** Options:
-- `/gsd:complete-milestone` - Archive v1
-- `/gsd:new-milestone` - Plan v2 features
-- `/gsd:check-todos` - Address polish items
-- Monitor conversion data first
+**Start v2 milestone:**
+```
+/gsd:new-milestone
+```
+
+This will:
+1. Gather context about v2 goals (Design Polish)
+2. Research design patterns
+3. Define v2 requirements
+4. Create v2 roadmap
+
+## Future Milestones (from PROJECT.md)
+
+- **v2: Design Polish** — Remove generic AI feel, more distinctive design
+- **v3: SEO + Content** — Deep research, content revamp (needs conversion data)
+
+---
+
+*Last updated: 2026-01-22 after v1 milestone archived*

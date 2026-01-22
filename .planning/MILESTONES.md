@@ -21,10 +21,13 @@
 - 5 phases, 9 plans, ~25 tasks
 - 1 day from start to ship (focused execution)
 
-**Git range:** `4faa27e` → `77aff5b`
+**Git range:** `efd202b` (first viewport fix) → `ee53ab6` (Phase 5 re-execute)
 
-**What's next:** Monitor conversion rates on Google Ads traffic. Consider v2 features (A/B testing, exit intent, video testimonials) based on data.
+**Tech debt tracked:** See `milestones/v1-MILESTONE-AUDIT.md` for accessibility items deferred to v2.
+
+**What's next:** v2 Design Polish — remove generic AI feel, more distinctive design while keeping purple brand.
 
 ---
 
 *Milestones log started: 2026-01-20*
+*v1 archived: 2026-01-22*

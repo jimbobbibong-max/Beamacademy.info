@@ -151,5 +151,5 @@ Plans:
 
 ---
 
-*For current project status, see .planning/ROADMAP.md*
-*Archived: 2026-01-20*
+*For current project status, see .planning/PROJECT.md*
+*Archived: 2026-01-22*

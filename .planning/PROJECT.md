@@ -98,8 +98,27 @@ A mobile-optimized landing page for BEAM Academy tutoring that converts Google A
 - Some contrast issues (Lighthouse accessibility)
 - Links without discernible names (Lighthouse accessibility)
 
-## v2 Ideas (for next milestone)
+## Future Milestones
 
+### v2: Design Polish
+Remove generic AI feel while keeping current purple brand colors.
+- Use skillhub frontend design skill (high-starred) for visual improvements
+- More distinctive, less template-looking
+- Can start before conversion data comes in
+
+### v3: SEO + Content Revamp
+Deep research on education/tutoring website SEO, then full content revamp.
+
+Research areas:
+- Tutoring industry SEO best practices
+- Local SEO for Sydney/Epping area
+- Parent search behavior and intent
+- Competitor content analysis
+- Keywords that convert vs just rank
+
+Needs conversion data + research before starting.
+
+### Feature Ideas (bundle into milestones as needed)
 - Multi-step form wizard
 - Personalized CTAs based on ad source
 - A/B testing framework
@@ -110,4 +129,4 @@ A mobile-optimized landing page for BEAM Academy tutoring that converts Google A
 - SMS opt-in
 
 ---
-*Last updated: 2026-01-20 after v1 milestone*
+*Last updated: 2026-01-22 — v1 milestone archived*
