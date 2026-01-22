@@ -19,6 +19,12 @@
 
 **Dependencies:** None (starting point)
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 06-01-PLAN.md — Hero text content (category label, headline, subheadline, single CTA)
+- [ ] 06-02-PLAN.md — Hero visual (portal mockup with score tracking)
+
 **Requirements:**
 - HERO-01: Headline communicates category + differentiator
 - HERO-02: Portal screenshot visible showing score tracking
@@ -157,7 +163,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 3 | v1 | Form Optimization | Complete | 2026-01-20 |
 | 4 | v1 | Content Structure | Complete | 2026-01-20 |
 | 5 | v1 | Performance | Complete | 2026-01-20 |
-| 6 | v2 | Hero Overhaul | Pending | - |
+| 6 | v2 | Hero Overhaul | Planned | - |
 | 7 | v2 | Proof Section | Pending | - |
 | 8 | v2 | Comparison Section | Pending | - |
 | 9 | v2 | Trust Section | Pending | - |
@@ -170,11 +176,11 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HERO-01 | Phase 6 | Pending |
-| HERO-02 | Phase 6 | Pending |
-| HERO-03 | Phase 6 | Pending |
-| HERO-04 | Phase 6 | Pending |
-| HERO-05 | Phase 6 | Pending |
+| HERO-01 | Phase 6 | Planned |
+| HERO-02 | Phase 6 | Planned |
+| HERO-03 | Phase 6 | Planned |
+| HERO-04 | Phase 6 | Planned |
+| HERO-05 | Phase 6 | Planned |
 | PROOF-01 | Phase 7 | Pending |
 | PROOF-02 | Phase 7 | Pending |
 | PROOF-03 | Phase 7 | Pending |
@@ -199,4 +205,4 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-22 — v2 roadmap created*
+*Last updated: 2026-01-22 — Phase 6 planned (2 plans)*
