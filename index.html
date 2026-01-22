@@ -784,6 +784,126 @@
             min-height: 320px;
         }
 
+        /* Hero Portal Mockup */
+        .hero-portal-mockup {
+            background: var(--gray-900);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .hero-mockup-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-mockup-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .hero-mockup-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .hero-mockup-dots span:nth-child(1) { background: #ff5f56; }
+        .hero-mockup-dots span:nth-child(2) { background: #ffbd2e; }
+        .hero-mockup-dots span:nth-child(3) { background: #27ca40; }
+
+        .hero-mockup-title {
+            color: var(--gray-400);
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .hero-mockup-content {
+            padding: 24px;
+        }
+
+        .hero-mockup-section {
+            margin-bottom: 24px;
+        }
+
+        .hero-mockup-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .hero-mockup-label {
+            color: var(--gray-500);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+
+        .hero-mockup-score {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .score-value {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .score-badge {
+            padding: 6px 12px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .score-badge.score-green { background: rgba(39, 202, 64, 0.2); color: #27ca40; }
+        .score-badge.score-yellow { background: rgba(255, 189, 46, 0.2); color: #ffbd2e; }
+        .score-badge.score-red { background: rgba(255, 95, 86, 0.2); color: #ff5f56; }
+
+        .hero-mockup-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray-300);
+            font-size: 0.95rem;
+        }
+
+        .hero-mockup-row:last-child {
+            border-bottom: none;
+        }
+
+        .score-red { color: #ff5f56; font-weight: 600; }
+
+        .hero-mockup-weak {
+            background: rgba(255, 95, 86, 0.1);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
+
+        .hero-mockup-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .weak-tag {
+            background: rgba(255, 95, 86, 0.2);
+            color: #ff5f56;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
         .hero-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -4491,15 +4611,14 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <div class="hero-badge">Epping, Sydney</div>
-                        <h1>Expert Tutoring for <span>Years 7-12</span></h1>
+                        <div class="hero-category">HSC Tutoring</div>
+                        <h1>We Show You Exactly Where <span>They're Struggling</span></h1>
                         <p class="hero-description">
-                            Small classes by BHHS graduates with 95%+ in HSC Mathematics.
-                            Personalised learning in Epping, Sydney.
+                            Our portal tracks your child's scores topic by topic, so we know exactly where they need help.
+                            Every week, they get custom worksheets targeting their weak spots - not generic homework.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Start Free Trial →</a>
-                            <a href="#courses" class="btn btn-secondary">View Courses</a>
+                            <a href="#contact" class="btn btn-primary">Book Free Trial</a>
                         </div>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
                         <div class="hero-testimonial">
