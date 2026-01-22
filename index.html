@@ -1367,6 +1367,216 @@
             display: none;
         }
 
+        /* Trust Section */
+        .trust-section {
+            background: var(--white);
+            position: relative;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--purple-100);
+            color: var(--purple-700);
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .trust-badge-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .trust-tutors {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            max-width: 1000px;
+            margin: 0 auto 48px;
+        }
+
+        .tutor-card {
+            text-align: center;
+            background: white;
+            border-radius: 24px;
+            padding: 28px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--gray-100);
+        }
+
+        .tutor-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--purple-200);
+        }
+
+        .tutor-image {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--purple-100), var(--purple-200));
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
+        }
+
+        .tutor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 5%;
+        }
+
+        .tutor-name {
+            font-size: 1.2rem;
+            color: var(--gray-900);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .tutor-role {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            color: var(--purple-600);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .tutor-trifecta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .trifecta-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .trifecta-school {
+            background: var(--purple-100);
+            color: var(--purple-700);
+        }
+
+        .trifecta-hsc {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .trifecta-uni {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .tutor-credentials {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        .tutor-credentials li {
+            margin-bottom: 4px;
+        }
+
+        .trust-promise {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            background: var(--purple-50);
+            border: 2px solid var(--purple-200);
+            border-radius: 20px;
+            padding: 32px 48px;
+            margin: 0 auto 24px;
+            max-width: 500px;
+        }
+
+        .promise-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--purple-700);
+            line-height: 1;
+        }
+
+        .promise-number span {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--purple-500);
+            margin-top: 4px;
+        }
+
+        .promise-content {
+            text-align: left;
+        }
+
+        .promise-content strong {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--gray-900);
+            margin-bottom: 4px;
+        }
+
+        .promise-content span {
+            font-size: 0.95rem;
+            color: var(--gray-500);
+        }
+
+        .trust-schools {
+            text-align: center;
+            color: var(--gray-500);
+            font-size: 0.95rem;
+            margin-bottom: 48px;
+        }
+
+        .trust-testimonial {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--gray-100);
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .trust-testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            font-size: 4rem;
+            font-family: Georgia, serif;
+            color: var(--purple-100);
+            line-height: 1;
+        }
+
+        .parent-quote {
+            font-size: 1.15rem;
+            color: var(--gray-700);
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            padding-left: 48px;
+        }
+
+        .parent-quote strong {
+            color: var(--purple-700);
+            font-weight: 600;
+        }
+
         /* About */
         .about { background: var(--gray-50); }
 
@@ -3821,6 +4031,48 @@
             .comparison-card-beam strong {
                 color: var(--purple-700);
                 font-weight: 600;
+            }
+        }
+
+            /* Trust Section Mobile */
+            .trust-section {
+                padding: 60px 0;
+            }
+
+            .trust-tutors {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .trust-promise {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            .promise-content {
+                text-align: center;
+            }
+
+            .trust-testimonial {
+                padding: 28px;
+            }
+
+            .parent-quote {
+                padding-left: 32px;
+                font-size: 1rem;
+            }
+
+            .trust-testimonial::before {
+                font-size: 3rem;
+                left: 16px;
+            }
+        }
+
+        /* Trust Section Tablet Breakpoint */
+        @media (max-width: 900px) and (min-width: 601px) {
+            .trust-tutors {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
