@@ -163,7 +163,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 3 | v1 | Form Optimization | Complete | 2026-01-20 |
 | 4 | v1 | Content Structure | Complete | 2026-01-20 |
 | 5 | v1 | Performance | Complete | 2026-01-20 |
-| 6 | v2 | Hero Overhaul | Planned | - |
+| 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Pending | - |
 | 8 | v2 | Comparison Section | Pending | - |
 | 9 | v2 | Trust Section | Pending | - |

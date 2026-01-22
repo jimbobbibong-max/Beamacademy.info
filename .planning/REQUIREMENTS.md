@@ -7,11 +7,11 @@
 
 ### Hero Section
 
-- [ ] **HERO-01**: Headline communicates both category ("HSC Tutoring") and differentiator ("Custom materials for YOUR kid")
-- [ ] **HERO-02**: Portal screenshot visible in hero showing score tracking and weak topics identified
-- [ ] **HERO-03**: Category label clearly visible without scrolling
-- [ ] **HERO-04**: Single primary CTA ("Book Free Trial" or "Get Your Free Diagnostic")
-- [ ] **HERO-05**: Subheadline explains the hook in plain English
+- [x] **HERO-01**: Headline communicates both category ("HSC Tutoring") and differentiator ("Custom materials for YOUR kid")
+- [x] **HERO-02**: Portal screenshot visible in hero showing score tracking and weak topics identified
+- [x] **HERO-03**: Category label clearly visible without scrolling
+- [x] **HERO-04**: Single primary CTA ("Book Free Trial" or "Get Your Free Diagnostic")
+- [x] **HERO-05**: Subheadline explains the hook in plain English
 
 ### Proof Section
 
@@ -78,11 +78,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HERO-01 | Phase 6 | Pending |
-| HERO-02 | Phase 6 | Pending |
-| HERO-03 | Phase 6 | Pending |
-| HERO-04 | Phase 6 | Pending |
-| HERO-05 | Phase 6 | Pending |
+| HERO-01 | Phase 6 | Complete |
+| HERO-02 | Phase 6 | Complete |
+| HERO-03 | Phase 6 | Complete |
+| HERO-04 | Phase 6 | Complete |
+| HERO-05 | Phase 6 | Complete |
 | PROOF-01 | Phase 7 | Pending |
 | PROOF-02 | Phase 7 | Pending |
 | PROOF-03 | Phase 7 | Pending |
