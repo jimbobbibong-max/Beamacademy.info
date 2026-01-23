@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 ## Current Position
 
 Phase: 14 of 14 (Courses Section Redesign)
-Plan: 01 of 01 (Pricing Tier v2 Styling)
-Status: Plan 01 COMPLETE - Awaiting verification
-Last activity: 2026-01-23 — Completed 14-01-PLAN.md
+Plan: 02 of 02 COMPLETE
+Status: Phase complete - awaiting verification
+Last activity: 2026-01-23 — Completed 14-02-PLAN.md
 
 Progress: [##########] 100% (v3: Phase 14 plan 01 complete)
 
@@ -29,6 +29,7 @@ Progress: [##########] 100% (v3: Phase 14 plan 01 complete)
 | Plan | Name | Tasks | Status | Commits |
 |------|------|-------|--------|---------|
 | 14-01 | Pricing Tier v2 Styling | 3/3 | COMPLETE | 8dd733b, 838411e, 02e7d80 |
+| 14-02 | Course Browser Styling | 3/3 | COMPLETE | 40345e3, 6588245, c8b46b2 |
 
 ### Plan Status (Phase 13)
 
@@ -65,6 +66,13 @@ Progress: [##########] 100% (v3: Phase 14 plan 01 complete)
 ## Accumulated Context
 
 ### v3 Accomplishments
+
+**Course Browser Styling (14-02):**
+- Year tabs updated to v2 pill styling (transparent bg, subtle border, purple active)
+- Course cards redesigned with 2-line clamp for scannability
+- Grid changed to auto-fit for smooth responsive behavior
+- CTA buttons changed to outline style
+- Year badges now solid purple for visual hierarchy
 
 **Pricing Tier v2 Styling (14-01):**
 - Pricing tier cards updated to v2 visual style (subtle glass effect, 24px radius, hover elevation)
@@ -103,6 +111,10 @@ Progress: [##########] 100% (v3: Phase 14 plan 01 complete)
 - User verified mobile and desktop rendering
 
 ### Key Decisions (Phase 14)
+- Used auto-fit instead of auto-fill for grid to prevent orphan cards
+- Solid purple badge for year pills (better scannability than translucent)
+- Outline style CTA buttons match v2 aesthetic
+- 2-line clamp for descriptions balances scannability with content preview
 
 - Used ::before pseudo-element for "Most Popular" badge instead of additional HTML
 - Applied translateX(4px) for package item hover to enhance interactivity
