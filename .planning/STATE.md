@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v4 Courses Section Redesign — Starting fresh
+**Current focus:** v4 Courses Section Redesign — Phase 16 next
 
 ## Current Position
 
 Milestone: v4 (Courses Section Redesign)
-Phase: Not started
-Status: Ready for /gsd:new-milestone
-Last activity: 2026-01-23 — v3 shipped, v4 initialized
+Phase: 16 — Courses Visual Polish
+Status: NOT STARTED (needs planning)
+Last activity: 2026-01-24 — phases 14-16 restored to correct location
 
-Progress: [----------] 0% (v4 starting)
+Progress: [████████████████████████░░░░░░] ~80% (14-15 complete, 16 pending)
 
 ## Milestone History
 
@@ -23,23 +23,23 @@ Progress: [----------] 0% (v4 starting)
 | v1 | Mobile Conversion | 1-5 | SHIPPED | 2026-01-20 |
 | v2 | Messaging Overhaul | 6-11 | SHIPPED | 2026-01-23 |
 | v3 | Content Cleanup | 12-13 | SHIPPED | 2026-01-23 |
-| v4 | Courses Section Redesign | TBD | Active | - |
+| v4 | Courses Section Redesign | 14-16 | Active | - |
 
-## v3 Summary (Just Shipped)
+## v4 Progress
 
-**Phase 12 — Content Consolidation:**
-- Merged Taehoon Kim as 4th tutor in Trust section
-- Added 3 testimonials (1 parent + 2 students) to Trust
-- Deleted Why Us, Portal, Team, Testimonials sections
-- Removed 381 lines orphaned CSS
+**Phase 14 — Courses Section Redesign:** ✓ COMPLETE
+- 14-01: About section v2 styling
+- 14-02: Courses section v2 styling
+- 14-03: Pricing tiers centering fix
 
-**Phase 13 — About Section Modernization:**
-- Added "ABOUT US" section-tag
-- v2 typography and pill-style badge
+**Phase 15 — Courses Conversion Optimization:** ✓ COMPLETE & VERIFIED
+- 15-01: Outcome-focused headline + risk reversal
+- 15-02: Unified CTAs to "Get Your Free Diagnostic"
+- 15-03: Dark theme decision documented
 
-**Phase 14 — Moved to v4:**
-- Incremental CSS patches caused conflicts
-- Fresh implementation with research needed
+**Phase 16 — Courses Visual Polish:** NOT STARTED
+- Research complete (16-RESEARCH.md)
+- Needs planning before execution
 
 ## Performance Baseline
 
@@ -59,21 +59,18 @@ Progress: [----------] 0% (v4 starting)
 - Some contrast issues
 - Links without discernible names
 
-**New from v3 learnings:**
-- Courses section CSS is messy/duplicated — needs clean rewrite (v4 scope)
-
 ## Session Continuity
 
-Last session: 2026-01-23
-Stopped at: Research phase starting
-Resume file: .planning/PAUSE.md
+Last session: 2026-01-24
+Stopped at: File structure fixed, ready for phase 16 planning
+Resume file: None
 
 ## Next Up
 
-**Continue v4 research** — Spawn 4 researchers, then requirements + roadmap
+**Plan Phase 16** — Create execution plans for visual polish
 
-`/gsd:resume-work`
+`/gsd:plan-phase 16`
 
 ---
 
-*Last updated: 2026-01-23 — v3 shipped, v4 initialized*
+*Last updated: 2026-01-24 — phases 14-16 restored to correct location*

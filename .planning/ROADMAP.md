@@ -5,7 +5,7 @@
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
 - **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
-- **v4 Courses Section Redesign** — (active)
+- **v4 Courses Section Redesign** — Phases 14-16 (active)
 
 ---
 
@@ -13,9 +13,11 @@
 
 **Goal:** Complete redesign of "Invest in Your Future" pricing section and "Browse Our Courses" course browser with fresh CSS architecture and research-backed best practices.
 
-**Why new milestone:** Phase 14 attempted incremental patches on legacy CSS which created conflicts. Fresh start with proper research and clean implementation.
+### Phases
 
-*Phases to be defined after research*
+- [x] Phase 14: Courses Section Redesign (3/3 plans) — 2026-01-23
+- [x] Phase 15: Courses Conversion Optimization (3/3 plans) — VERIFIED 2026-01-23
+- [ ] Phase 16: Courses Visual Polish — NOT STARTED (needs planning)
 
 ---
 
@@ -56,8 +58,6 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
 
-**Note:** Phase 14 (Courses Section Redesign) was moved to v4 due to CSS architecture issues requiring fresh implementation.
-
 </details>
 
 ---
@@ -73,13 +73,16 @@ See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
-| 8 | v2 | Proof Section | Complete | 2026-01-23 |
+| 8 | v2 | Comparison Section | Complete | 2026-01-23 |
 | 9 | v2 | Trust Section | Complete | 2026-01-23 |
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 | 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
 | 13 | v3 | About & Courses Overhaul | Complete | 2026-01-23 |
+| 14 | v4 | Courses Section Redesign | Complete | 2026-01-23 |
+| 15 | v4 | Courses Conversion Optimization | Complete | 2026-01-23 |
+| 16 | v4 | Courses Visual Polish | Not Started | - |
 
 ---
 
-*Last updated: 2026-01-23 — v3 shipped, v4 started*
+*Last updated: 2026-01-24 — phases 14-16 restored*
