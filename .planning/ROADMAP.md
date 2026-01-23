@@ -17,7 +17,11 @@
 
 - [x] Phase 14: Courses Section Redesign (3/3 plans) — 2026-01-23
 - [x] Phase 15: Courses Conversion Optimization (3/3 plans) — VERIFIED 2026-01-23
-- [ ] Phase 16: Courses Visual Polish — NOT STARTED (needs planning)
+- [ ] Phase 16: Courses Visual Polish (2/2 plans) — PLANNED
+
+Plans:
+- [ ] 16-01-PLAN.md — Core depth: Pricing tier + course card shadows
+- [ ] 16-02-PLAN.md — Supporting polish: Background, icons, tabs, buttons
 
 ---
 
@@ -81,8 +85,8 @@ See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
 | 13 | v3 | About & Courses Overhaul | Complete | 2026-01-23 |
 | 14 | v4 | Courses Section Redesign | Complete | 2026-01-23 |
 | 15 | v4 | Courses Conversion Optimization | Complete | 2026-01-23 |
-| 16 | v4 | Courses Visual Polish | Not Started | - |
+| 16 | v4 | Courses Visual Polish | Planned | - |
 
 ---
 
-*Last updated: 2026-01-24 — phases 14-16 restored*
+*Last updated: 2026-01-24 — phase 16 plans created*
