@@ -951,8 +951,7 @@
         }
 
         .floating-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
         }
 
@@ -984,6 +983,7 @@
 
         .section-header {
             text-align: center;
+            width: 100%;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -1008,11 +1008,8 @@
         }
 
         .section-description {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--gray-500);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         /* Proof Section */
@@ -1056,8 +1053,7 @@
         }
 
         .document-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
             border-color: var(--purple-200);
         }
@@ -1416,8 +1412,7 @@
         }
 
         .tutor-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
             box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
             border-color: var(--purple-200);
         }
@@ -1546,7 +1541,7 @@
             text-align: center;
             color: var(--gray-500);
             font-size: 0.95rem;
-            margin-bottom: 32px;
+            margin-bottom: 48px;
         }
 
         .trust-testimonials {
@@ -1924,6 +1919,25 @@
         .courses-pricing {
             background: var(--gray-900);
             color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .courses-pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 40%;
+            background: radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .courses-pricing .container {
+            position: relative;
+            z-index: 1;
         }
 
         .courses-pricing .section-tag { color: var(--purple-300); }
@@ -1937,10 +1951,10 @@
             justify-content: center;
             gap: 10px;
             background: rgba(124, 58, 237, 0.1);
-            border-left: 3px solid var(--purple-500);
-            border-radius: 0 8px 8px 0;
-            padding: 16px 20px;
-            margin: 0 auto 24px;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 8px;
+            padding: 14px 24px;
+            margin: 0 auto 32px;
             max-width: 560px;
             font-size: 0.95rem;
             color: var(--gray-300);
@@ -1979,46 +1993,33 @@
         }
 
         .pricing-tier-new {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 24px;
+            background: var(--gray-900);
+            border-radius: 16px;
             padding: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--gray-700);
             position: relative;
             display: flex;
             flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
 
         .pricing-tier-new:hover {
             transform: translateY(-4px);
-            border-color: rgba(124, 58, 237, 0.4);
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         .pricing-tier-new.featured-tier {
-            background: rgba(124, 58, 237, 0.1);
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(124, 58, 237, 0.15);
         }
 
         .pricing-tier-new.featured-tier:hover {
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.25);
-        }
-
-        .pricing-tier-new.featured-tier::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            white-space: nowrap;
+            transform: scale(1.02);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35), 0 0 25px rgba(124, 58, 237, 0.2);
         }
 
         .featured-badge {
@@ -2026,14 +2027,14 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            background: var(--purple-600);
             color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.5px;
         }
 
         .tier-header {
@@ -2058,15 +2059,15 @@
         .tier-price-main {
             text-align: center;
             padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid var(--gray-700);
+            border-bottom: 1px solid var(--gray-700);
             margin-bottom: 20px;
         }
 
         .price-from {
             display: block;
-            font-size: 0.9rem;
-            color: var(--gray-400);
+            font-size: 0.8rem;
+            color: var(--gray-500);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 4px;
@@ -2075,13 +2076,12 @@
         .price-amount {
             font-family: var(--font-display);
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 800;
             color: white;
-            line-height: 1;
         }
 
         .price-period {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: var(--gray-400);
         }
 
@@ -2096,44 +2096,45 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-800);
             gap: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            margin-bottom: 0;
+            border-bottom: none;
         }
-
-        .tier-packages li:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--purple-400);
-            transform: translateX(4px);
-        }
-
-        .tier-packages li.selected {
-            background: rgba(124, 58, 237, 0.15);
-            border-color: var(--purple-500);
-        }
-
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
+
+        .tier-packages li {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 6px;
+            margin: 0 -8px;
+            padding: 12px 8px;
+        }
+
+        .tier-packages li:hover {
+            background: rgba(124, 58, 237, 0.15);
+        }
+
+        .tier-packages li.popular:hover,
+        .tier-packages li.all-access:hover {
+            background: rgba(124, 58, 237, 0.25);
+        }
+
 
         .pkg-name {
             white-space: nowrap;
@@ -2151,47 +2152,41 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            border-color: rgba(124, 58, 237, 0.3);
-        }
-
-        .tier-packages li.popular:hover {
-            background: rgba(124, 58, 237, 0.2);
-            border-color: var(--purple-400);
+            margin: 0 -16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
-            border-color: rgba(124, 58, 237, 0.4);
-            margin-top: 8px;
-        }
-
-        .tier-packages li.all-access:hover {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
-            border-color: var(--purple-400);
+            background: rgba(124, 58, 237, 0.15);
+            margin: 8px -16px 0;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
-        }
-
-        .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
-            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
@@ -2225,37 +2220,18 @@
 
         .featured-tier .tier-cta:hover {
             background: var(--purple-500);
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         @media (max-width: 900px) {
             .pricing-tiers-new {
                 grid-template-columns: 1fr;
                 max-width: 400px;
-                gap: 20px;
             }
             
-            .pricing-tier-new {
-                padding: 24px;
-            }
-
             .pricing-tier-new.featured-tier {
                 transform: none;
                 order: -1;
-                box-shadow: 0 10px 40px rgba(124, 58, 237, 0.15);
-            }
-
-            .pricing-tier-new.featured-tier::before {
-                font-size: 0.75rem;
-                padding: 6px 16px;
-            }
-
-            .price-amount {
-                font-size: 2.5rem;
-            }
-
-            .tier-packages li {
-                min-height: 44px;
             }
         }
 
@@ -2271,10 +2247,10 @@
         }
 
         .pricing-tier {
-            background: transparent;
+            background: var(--gray-800);
             border-radius: 24px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--gray-700);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -2339,13 +2315,13 @@
         }
 
         .package-card:hover {
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
             transform: translateY(-2px);
         }
 
         .package-card.featured {
             background: var(--purple-600);
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         .package-badge {
@@ -2408,33 +2384,33 @@
         /* Course Browser Divider */
         .course-browser-divider {
             text-align: center;
-            margin-top: 64px;
-            margin-bottom: 40px;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            margin: 60px 0 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-700);
         }
 
         .course-browser-heading {
             font-family: var(--font-display);
-            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--white);
+            color: white;
             margin: 0 0 8px;
         }
 
         .course-browser-subtext {
             color: var(--gray-400);
-            font-size: 1rem;
-            text-align: center;
-            margin: 0 0 24px;
+            font-size: 0.95rem;
+            margin: 0;
         }
 
         /* Year Tabs */
         .year-tabs {
+            width: 100%;
             display: flex;
             justify-content: center;
             gap: 8px;
-            margin-bottom: 32px;
+            margin-bottom: 48px;
             flex-wrap: wrap;
         }
 
@@ -2444,53 +2420,53 @@
             font-family: var(--font-display);
             font-size: 0.95rem;
             font-weight: 500;
-            background: transparent;
+            background: var(--gray-800);
             color: var(--gray-400);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--gray-700);
             cursor: pointer;
             transition: all 0.2s ease;
         }
 
         .year-tab:hover {
-            border-color: var(--purple-400);
+            border-color: var(--purple-500);
             color: var(--white);
         }
 
         .year-tab.active {
-            background: var(--purple-600);
+            background: var(--purple-700);
             color: white;
-            border-color: var(--purple-600);
+            border-color: var(--purple-700);
         }
 
         /* Course Grid */
         .courses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
         }
 
         .course-card {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: var(--gray-800);
+            border-radius: 20px;
+            padding: 28px;
+            border: 1px solid var(--gray-700);
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            gap: 12px;
         }
 
         .course-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
-            border-color: rgba(124, 58, 237, 0.3);
+            transform: translateY(-4px);
+            border-color: var(--purple-500);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
         }
 
         .course-card-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
+            align-items: flex-start;
+            margin-bottom: 16px;
             gap: 8px;
         }
 
@@ -2504,9 +2480,9 @@
             font-family: var(--font-display);
             font-size: 0.75rem;
             font-weight: 600;
-            color: white;
-            background: var(--purple-600);
-            padding: 4px 12px;
+            color: var(--purple-300);
+            background: rgba(168, 85, 247, 0.2);
+            padding: 6px 12px;
             border-radius: 100px;
         }
 
@@ -2538,38 +2514,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            margin-bottom: 8px;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
         }
 
         .course-card h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.15rem;
             color: var(--white);
-            margin: 0;
+            margin-bottom: 12px;
         }
 
         .course-card p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--gray-400);
-            line-height: 1.5;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: 20px;
         }
 
         .course-card-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid var(--gray-700);
         }
 
         .course-price {
             font-family: var(--font-display);
-            font-size: 1.15rem;
-            font-weight: 700;
+            font-weight: 600;
             color: var(--white);
         }
 
@@ -2580,30 +2553,26 @@
         }
 
         .course-btn {
-            padding: 8px 16px;
+            padding: 10px 20px;
             border-radius: 100px;
             font-family: var(--font-display);
             font-size: 0.85rem;
             font-weight: 600;
-            background: transparent;
-            color: var(--purple-400);
-            border: 1px solid var(--purple-500);
+            background: var(--purple-600);
+            color: white;
+            border: none;
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
         }
 
-        .course-btn:hover {
-            background: var(--purple-600);
-            border-color: var(--purple-600);
-            color: white;
-        }
+        .course-btn:hover { background: var(--purple-700); }
 
         .pricing-note {
             text-align: center;
-            color: var(--gray-500);
-            font-size: 0.9rem;
-            margin-top: 32px;
+            color: var(--gray-400);
+            font-size: 0.95rem;
+            margin-top: 48px;
         }
 
         .testimonial-author {
@@ -2836,7 +2805,7 @@
         .social-link {
             width: 40px;
             height: 40px;
-            background: transparent;
+            background: var(--gray-800);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -3238,46 +3207,20 @@
         }
 
         .pricing-tier-new {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 24px;
+            background: var(--gray-900);
+            border-radius: 16px;
             padding: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--gray-700);
             position: relative;
             display: flex;
             flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .pricing-tier-new:hover {
-            transform: translateY(-4px);
-            border-color: rgba(124, 58, 237, 0.4);
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
         }
 
         .pricing-tier-new.featured-tier {
-            background: rgba(124, 58, 237, 0.1);
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
-        }
-
-        .pricing-tier-new.featured-tier:hover {
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.25);
-        }
-
-        .pricing-tier-new.featured-tier::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            white-space: nowrap;
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
         .featured-badge {
@@ -3285,14 +3228,14 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            background: var(--purple-600);
             color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.5px;
         }
 
         .tier-header {
@@ -3317,15 +3260,15 @@
         .tier-price-main {
             text-align: center;
             padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid var(--gray-700);
+            border-bottom: 1px solid var(--gray-700);
             margin-bottom: 20px;
         }
 
         .price-from {
             display: block;
-            font-size: 0.9rem;
-            color: var(--gray-400);
+            font-size: 0.8rem;
+            color: var(--gray-500);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 4px;
@@ -3334,13 +3277,12 @@
         .price-amount {
             font-family: var(--font-display);
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 800;
             color: white;
-            line-height: 1;
         }
 
         .price-period {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: var(--gray-400);
         }
 
@@ -3355,44 +3297,45 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-800);
             gap: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            margin-bottom: 0;
+            border-bottom: none;
         }
-
-        .tier-packages li:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--purple-400);
-            transform: translateX(4px);
-        }
-
-        .tier-packages li.selected {
-            background: rgba(124, 58, 237, 0.15);
-            border-color: var(--purple-500);
-        }
-
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
+
+        .tier-packages li {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 6px;
+            margin: 0 -8px;
+            padding: 12px 8px;
+        }
+
+        .tier-packages li:hover {
+            background: rgba(124, 58, 237, 0.15);
+        }
+
+        .tier-packages li.popular:hover,
+        .tier-packages li.all-access:hover {
+            background: rgba(124, 58, 237, 0.25);
+        }
+
 
         .pkg-name {
             white-space: nowrap;
@@ -3410,47 +3353,41 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            border-color: rgba(124, 58, 237, 0.3);
-        }
-
-        .tier-packages li.popular:hover {
-            background: rgba(124, 58, 237, 0.2);
-            border-color: var(--purple-400);
+            margin: 0 -16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
-            border-color: rgba(124, 58, 237, 0.4);
-            margin-top: 8px;
-        }
-
-        .tier-packages li.all-access:hover {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
-            border-color: var(--purple-400);
+            background: rgba(124, 58, 237, 0.15);
+            margin: 8px -16px 0;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
-        }
-
-        .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
-            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
@@ -3484,37 +3421,18 @@
 
         .featured-tier .tier-cta:hover {
             background: var(--purple-500);
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         @media (max-width: 900px) {
             .pricing-tiers-new {
                 grid-template-columns: 1fr;
                 max-width: 400px;
-                gap: 20px;
             }
             
-            .pricing-tier-new {
-                padding: 24px;
-            }
-
             .pricing-tier-new.featured-tier {
                 transform: none;
                 order: -1;
-                box-shadow: 0 10px 40px rgba(124, 58, 237, 0.15);
-            }
-
-            .pricing-tier-new.featured-tier::before {
-                font-size: 0.75rem;
-                padding: 6px 16px;
-            }
-
-            .price-amount {
-                font-size: 2.5rem;
-            }
-
-            .tier-packages li {
-                min-height: 44px;
             }
         }
 
@@ -3549,46 +3467,20 @@
         }
 
         .pricing-tier-new {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 24px;
+            background: var(--gray-900);
+            border-radius: 16px;
             padding: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--gray-700);
             position: relative;
             display: flex;
             flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .pricing-tier-new:hover {
-            transform: translateY(-4px);
-            border-color: rgba(124, 58, 237, 0.4);
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
         }
 
         .pricing-tier-new.featured-tier {
-            background: rgba(124, 58, 237, 0.1);
+            background: var(--gray-800);
             border: 2px solid var(--purple-500);
-        }
-
-        .pricing-tier-new.featured-tier:hover {
-            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.25);
-        }
-
-        .pricing-tier-new.featured-tier::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            white-space: nowrap;
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
         .featured-badge {
@@ -3596,14 +3488,14 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            background: var(--purple-600);
             color: white;
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.5px;
         }
 
         .tier-header {
@@ -3628,15 +3520,15 @@
         .tier-price-main {
             text-align: center;
             padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid var(--gray-700);
+            border-bottom: 1px solid var(--gray-700);
             margin-bottom: 20px;
         }
 
         .price-from {
             display: block;
-            font-size: 0.9rem;
-            color: var(--gray-400);
+            font-size: 0.8rem;
+            color: var(--gray-500);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 4px;
@@ -3645,13 +3537,12 @@
         .price-amount {
             font-family: var(--font-display);
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 800;
             color: white;
-            line-height: 1;
         }
 
         .price-period {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: var(--gray-400);
         }
 
@@ -3666,44 +3557,45 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-800);
             gap: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            margin-bottom: 0;
+            border-bottom: none;
         }
-
-        .tier-packages li:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--purple-400);
-            transform: translateX(4px);
-        }
-
-        .tier-packages li.selected {
-            background: rgba(124, 58, 237, 0.15);
-            border-color: var(--purple-500);
-        }
-
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
+
+        .tier-packages li {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 6px;
+            margin: 0 -8px;
+            padding: 12px 8px;
+        }
+
+        .tier-packages li:hover {
+            background: rgba(124, 58, 237, 0.15);
+        }
+
+        .tier-packages li.popular:hover,
+        .tier-packages li.all-access:hover {
+            background: rgba(124, 58, 237, 0.25);
+        }
+
 
         .pkg-name {
             white-space: nowrap;
@@ -3721,47 +3613,41 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 4px 8px;
-            border-radius: 100px;
-            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            border-color: rgba(124, 58, 237, 0.3);
-        }
-
-        .tier-packages li.popular:hover {
-            background: rgba(124, 58, 237, 0.2);
-            border-color: var(--purple-400);
+            margin: 0 -16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.popular .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
-            border-color: rgba(124, 58, 237, 0.4);
-            margin-top: 8px;
-        }
-
-        .tier-packages li.all-access:hover {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
-            border-color: var(--purple-400);
+            background: rgba(124, 58, 237, 0.15);
+            margin: 8px -16px 0;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border-bottom: none;
         }
 
         .tier-packages li.all-access .pkg-name {
+            white-space: nowrap;
+            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
-        }
-
-        .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
-            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
@@ -3795,7 +3681,7 @@
 
         .featured-tier .tier-cta:hover {
             background: var(--purple-500);
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         @media (max-width: 900px) {
@@ -3927,11 +3813,6 @@
 
             .year-tabs { gap: 4px; }
             .year-tab { padding: 10px 16px; font-size: 0.85rem; }
-            
-            .courses-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
 
             .floating-contact { bottom: 16px; right: 16px; }
             .floating-btn { width: 52px; height: 52px; }
@@ -4291,7 +4172,7 @@
         }
 
         .form-input:focus, .form-textarea:focus, .form-select:focus {
-            border-color: rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
             box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
         }
 
@@ -4854,8 +4735,10 @@
 
 /* All Access Hero Banner */
         .all-access-hero {
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.85), rgba(109, 40, 217, 0.9));
-            border-radius: 24px;
+            background: linear-gradient(135deg, var(--purple-700), var(--purple-600));
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 20px;
             padding: 32px 40px;
             margin-bottom: 40px;
             display: flex;
@@ -4864,13 +4747,12 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
         .all-access-hero:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35);
-            filter: brightness(1.05);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.4);
         }
         
         .all-access-hero::before {
@@ -4880,7 +4762,7 @@
             right: -50%;
             width: 100%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
             pointer-events: none;
         }
         
@@ -4891,11 +4773,11 @@
         
         .all-access-hero-badge {
             display: inline-block;
-            background: var(--purple-600);
+            background: rgba(255,255,255,0.2);
             color: white;
             font-size: 0.75rem;
             font-weight: 600;
-            padding: 6px 14px;
+            padding: 6px 12px;
             border-radius: 100px;
             margin-bottom: 12px;
             text-transform: uppercase;
@@ -4904,16 +4786,16 @@
         
         .all-access-hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-size: 1.75rem;
             font-weight: 700;
             color: white;
             margin-bottom: 8px;
         }
         
         .all-access-hero-desc {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255,255,255,0.9);
             font-size: 1rem;
-            max-width: 400px;
+            max-width: 500px;
         }
         
         .all-access-hero-pricing {
@@ -4927,9 +4809,6 @@
         
         .all-access-price-box {
             text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 16px 24px;
         }
         
         .all-access-price-label {
@@ -4959,12 +4838,11 @@
             font-weight: 600;
             text-decoration: none;
             white-space: nowrap;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease;
         }
         
         .all-access-hero-cta:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
         }
         
         @media (max-width: 900px) {
@@ -4984,7 +4862,6 @@
                 display: flex;
                 gap: 20px;
                 justify-content: center;
-                padding: 12px 20px;
             }
         }
 
@@ -5933,9 +5810,10 @@
             <div class="container">
                 <header class="section-header">
                     <div class="section-tag">Courses & Pricing</div>
-                    <h2 class="section-title" id="courses-title">Invest in Your Future</h2>
+                    <h2 class="section-title" id="courses-title">See Exactly Where Your Child Needs Help</h2>
                     <p class="section-description">
-                        Transparent pricing with multi-subject discounts. Maximum 8 students per class. Your first lesson is always free.
+                        Transparent pricing with multi-subject discounts. Maximum 8 students per class.<br>
+                        <strong>No payment required. No obligation.</strong> Your free diagnostic is yours to keep.
                     </p>
                 </header>
 
@@ -5985,10 +5863,10 @@
                             <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">50% off 3rd</span></li>
                             
                         </ul>
-                        <a href="#contact" class="tier-cta">Start Free</a>
+                        <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
                     </article>
 
-                    <article class="pricing-tier-new featured-tier">
+                    <article class="pricing-tier-new">
                         <div class="tier-header">
                             <h3 class="tier-name">Intermediate</h3>
                             <p class="tier-years">Years 9-10</p>
@@ -6005,7 +5883,7 @@
                             <li class="popular" onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th free</span></li>
                             <li class="all-access" onclick="selectPackage('Intermediate', 'All Access')" data-tier="Intermediate" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$400/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
-                        <a href="#contact" class="tier-cta">Start Free</a>
+                        <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
                     </article>
 
                     <article class="pricing-tier-new">
@@ -6025,7 +5903,7 @@
                             <li class="popular" onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th free</span></li>
                             <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-badge">Best Value</span><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
-                        <a href="#contact" class="tier-cta">Start Free</a>
+                        <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
                     </article>
                 </div>
 
@@ -6057,7 +5935,7 @@
                         <p>Build strong foundations in algebra, geometry, and problem-solving. Aligned with the NSW Stage 4 & 5 syllabus.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$80 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6075,7 +5953,7 @@
                         <p>Extension program for high-achieving students. Challenging problems, competition prep, and accelerated content.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$80 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6092,7 +5970,7 @@
                         <p>Develop analytical writing, comprehension, and textual analysis skills with focused support for essay writing.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$80 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6109,7 +5987,7 @@
                         <p>Prepare for senior maths with advanced algebra, trigonometry, and statistics. Build skills for Year 11 success.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6127,7 +6005,7 @@
                         <p>Accelerated program covering Year 11 content early. Ideal for students targeting Extension courses in senior years.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6144,7 +6022,7 @@
                         <p>Advanced essay writing, textual analysis, and creative writing. Preparation for senior English courses.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6161,7 +6039,7 @@
                         <p>Deep textual analysis, critical theory, and sophisticated composition. For students aiming for top English results.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6178,7 +6056,7 @@
                         <p>Build strong foundations in mechanics, waves, and energy. Early preparation for senior Physics success.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6195,7 +6073,7 @@
                         <p>Master atomic structure, chemical reactions, and lab techniques. Foundation for senior Chemistry.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$100 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6212,7 +6090,7 @@
                         <p>Comprehensive coverage of the Preliminary Advanced syllabus with focus on exam skills and deep understanding.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6229,7 +6107,7 @@
                         <p>Personalised approach with tailored materials and feedback to build confidence through challenging problems.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6246,7 +6124,7 @@
                         <p>Tailored approach adjusting lesson plans, writing styles, and feedback to suit each student's school requirements.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6263,7 +6141,7 @@
                         <p>Advanced literary theory, independent research, and creative composition for Extension 1 and Extension 2.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6280,7 +6158,7 @@
                         <p>Focus on both theory and scientific principles behind calculations, fostering deep understanding.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6297,7 +6175,7 @@
                         <p>Strengthen analytical and scientific capability through rigorous in-depth syllabus coverage.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6314,7 +6192,7 @@
                         <p>Maximise your HSC marks with focused exam skills and deep understanding of applications.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6331,7 +6209,7 @@
                         <p>Personalised approach with tailored materials and feedback to ensure confidence through HSC exams.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6348,7 +6226,7 @@
                         <p>Expert tutoring in the most challenging HSC maths course. Gain skills and confidence for top results.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6365,7 +6243,7 @@
                         <p>Tailored HSC preparation adjusting to your school's texts and assessment requirements.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6382,7 +6260,7 @@
                         <p>HSC Extension preparation covering literary worlds, independent project development, and critical excellence.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6399,7 +6277,7 @@
                         <p>Structured lessons covering the full HSC Chemistry syllabus with emphasis on conceptual understanding and exam technique.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
 
@@ -6416,7 +6294,7 @@
                         <p>Clear explanations of complex concepts with practical problem-solving practice for HSC success.</p>
                         <div class="course-card-footer">
                             <span class="course-price">$120 <span>/week</span></span>
-                            <a href="#contact" class="course-btn">Try Free</a>
+                            <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
                 </div>
