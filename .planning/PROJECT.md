@@ -2,36 +2,13 @@
 
 ## What This Is
 
-A conversion-optimized landing page for BEAM Academy tutoring that communicates the core differentiator — data-driven personalized materials — and converts Google Ads traffic into free trial bookings.
-
-## Current Milestone: v2.0 Messaging Overhaul
-
-**Goal:** Rewrite the landing page so visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds — without reading every word.
-
-**The hook:** "Custom materials for YOUR kid" (score tracking is the proof)
-
-**What visitors should instantly get:**
-- This isn't generic tutoring
-- They track scores and create personalized materials
-- You get concrete deliverables, not just "tutoring sessions"
-
-**Key content to showcase:**
-1. The 4 documents from ONE trial (diagnostic, custom worksheets, personalized paper, solutions)
-2. Portal dashboard screenshots (progress tracking, topic breakdown)
-3. Comparison table (Generic tutoring vs BEAM)
-4. Tutor credentials (BHHS grads, 95+ HSC, med students)
-5. Booklet quality (concept boxes, misconception boxes, exam tips)
-
-**Assets available:**
-- Portal screenshots (beamportal.netlify.app)
-- Booklet/materials photos
-- Tutor photos
+A conversion-optimized landing page for BEAM Academy tutoring that instantly communicates the core differentiator — data-driven personalized materials — through visual proof (portal mockups, document previews) and converts Google Ads traffic into free trial bookings.
 
 ## Current State
 
-**Version:** v1 (shipped 2026-01-20)
+**Version:** v2 (shipped 2026-01-23)
 **Status:** Live on beamacademy.info
-**Codebase:** 6,835 LOC (HTML/CSS/JS in single index.html)
+**Codebase:** 7,921 LOC (HTML/CSS/JS in single index.html)
 
 **Performance:**
 - LCP: 0.9s (target <2.5s)
@@ -49,34 +26,13 @@ A conversion-optimized landing page for BEAM Academy tutoring that communicates 
 
 ## Why This Matters
 
-BEAM's differentiator is data-driven personalization: track scores → identify weak spots → generate custom materials. No other tutoring company does this. But the current site fails to communicate this — visitors can't tell it's even a tutoring company without reading every word. Every trial booking is a potential term-long student ($80-500/week).
-
-## The BEAM Differentiator (Reference)
-
-### What a parent gets from ONE free trial:
-1. **Diagnostic Statistics PDF** — Topic-by-topic breakdown identifying specific weak sub-skills
-2. **Custom Worksheets PDF** — 15-20 questions targeting identified weak areas
-3. **Personalized Practice Paper PDF** — Matched to their school's assessment style
-4. **Full Worked Solutions PDF** — Step-by-step solutions for all above
-
-### The Student Portal (beamportal.netlify.app):
-- Dashboard with progress trend chart and score breakdown
-- Color-coded topic bars (green = strong, red = needs work)
-- Priority Focus Areas automatically flagged
-- Homework submission and materials download
-
-### Generic Tutoring vs BEAM:
-| Generic | BEAM |
-|---------|------|
-| "Work through some problems together" | Diagnostic first to identify gaps |
-| Same worksheets for everyone | Custom worksheets from diagnostic |
-| "They're doing well" (vague) | "78% overall, weak on trig word problems" |
-| Wait until next lesson for help | Discord support anytime |
+BEAM's differentiator is data-driven personalization: track scores → identify weak spots → generate custom materials. No other tutoring company does this. The v2 redesign makes this instantly visible through portal mockups and document previews — show, don't tell.
 
 ## Requirements
 
-### Validated (v1)
+### Validated (v1 + v2)
 
+**v1 Requirements:**
 - VIEW-01: Page renders correctly on mobile without zoom/pan — v1
 - VIEW-02: Form inputs have 16px minimum font-size (iOS zoom prevention) — v1
 - VIEW-03: No horizontal scroll on 320px-428px screens — v1
@@ -96,9 +52,35 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - PERF-02: LCP under 2.5 seconds (achieved 0.9s) — v1
 - PERF-03: No render-blocking resources — v1
 
+**v2 Requirements:**
+- HERO-01: Headline communicates category + differentiator — v2
+- HERO-02: Portal screenshot visible showing score tracking — v2
+- HERO-03: Category label clearly visible without scrolling — v2
+- HERO-04: Single primary CTA — v2
+- HERO-05: Subheadline explains hook in plain English — v2
+- PROOF-01: 4 documents from ONE trial visualized — v2
+- PROOF-02: "Yours to keep" messaging prominently displayed — v2
+- PROOF-03: Documents shown with visual previews — v2
+- PROOF-04: Topic gap insight shown — v2
+- COMP-01: Generic vs BEAM side-by-side comparison — v2
+- COMP-02: Specific contrasts shown — v2
+- TRUST-01: Tutor profiles with real photos — v2
+- TRUST-02: Credibility combo (Baulko + HSC + Med) — v2
+- TRUST-03: Parent testimonials with specific outcomes — v2
+- TRUST-04: Small group size (6-8 max) visible — v2
+- TRUST-05: School-specific matching mentioned — v2
+- SUPP-01: Discord 24/7 support callout — v2
+- SUPP-02: "Stuck at 9pm?" framing — v2
+- SUPP-03: Discord screenshot showing real exchange — v2
+- CTA-01: Outcome-focused CTA copy — v2
+- CTA-02: Form fields remain optimized — v2
+- MOB-01: All new sections render on mobile — v2
+- MOB-02: Images optimized for mobile loading — v2
+- MOB-03: Sticky CTA bar still functional — v2
+
 ### Active
 
-(To be defined in REQUIREMENTS.md)
+(To be defined in next milestone's REQUIREMENTS.md via `/gsd:new-milestone`)
 
 ### Out of Scope
 
@@ -106,6 +88,10 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - New pages — optimize landing page first
 - Backend changes — Netlify Forms works; frontend is the focus
 - Framework migration — keep vanilla HTML/CSS for simplicity
+- WWCC badge — basic/expected, not differentiating
+- Video testimonials — asset doesn't exist yet
+- Live chat widget — complexity vs value
+- SMS opt-in — deferred to future milestone
 
 ## Context
 
@@ -134,15 +120,24 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 | IntersectionObserver for sticky | Modern API, performant | ✓ Good — smooth behavior |
 | Async fonts via preload+onload | Eliminates render-blocking | ✓ Good — 0 render-blocking resources |
 | inert attribute for sticky bar | Better than aria-hidden for focusable children | ✓ Good — no accessibility violations |
-| "Custom materials" as hook | Score tracking is the HOW, personalization is the value | — Pending |
+| "Custom materials" as hook | Score tracking is the HOW, personalization is the value | ✓ Good — v2 delivered this |
+| Show don't tell | Visual comprehension 60,000x faster than text | ✓ Good — portal mockups work |
+| CSS mockups for documents | Preserves LCP performance (no image loads) | ✓ Good — 0.9s LCP maintained |
+| Pure CSS Discord mockup | Faster loads than screenshot, no privacy concerns | ✓ Good — 33-min proof works |
+| Nav CTA shortened | "Free Diagnostic" fits nav; full text on hero/sticky | ✓ Good — no overflow |
 
-## Tech Debt (from v1)
+## Tech Debt
 
+**v1 accessibility issues (still present):**
 - Skip to main content button positioning (cosmetic)
 - Form scroll anchor positioning (UX polish)
 - Some course-icons have aria-hidden with focusable children
 - Some contrast issues (Lighthouse accessibility)
 - Links without discernible names (Lighthouse accessibility)
+
+**v2 polish items (minor):**
+- Nav doesn't link to v2 sections (design decision - acceptable)
+- CTA section copy could be more outcome-focused
 
 ## Future Milestones
 
@@ -169,4 +164,4 @@ Needs conversion data + research before starting.
 - SMS opt-in
 
 ---
-*Last updated: 2026-01-22 — v2 milestone started*
+*Last updated: 2026-01-23 after v2 milestone*

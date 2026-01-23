@@ -1,3 +1,13 @@
+# Requirements Archive: v2 Messaging Overhaul
+
+**Archived:** 2026-01-23
+**Status:** SHIPPED
+
+This is the archived requirements specification for v2.
+For current requirements, see `.planning/REQUIREMENTS.md` (created for next milestone).
+
+---
+
 # Requirements: BEAM Academy v2.0 Messaging Overhaul
 
 **Defined:** 2026-01-22
@@ -109,5 +119,12 @@
 - Unmapped: 0
 
 ---
-*Requirements defined: 2026-01-22*
-*Last updated: 2026-01-23 — All v2 requirements complete*
+
+## Milestone Summary
+
+**Shipped:** 24 of 24 v2 requirements
+**Adjusted:** None
+**Dropped:** None
+
+---
+*Archived: 2026-01-23 as part of v2 milestone completion*
