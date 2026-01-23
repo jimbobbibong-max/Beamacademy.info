@@ -5,23 +5,29 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v3 Content Cleanup — Phase 13 (About & Courses Overhaul)
+**Current focus:** v3 Content Cleanup - Phase 13 (About & Courses Overhaul)
 
 ## Current Position
 
 Phase: 13 of 13 (About & Courses Overhaul)
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-01-23 — Phase 13 added to v3
+Plan: 01 complete
+Status: Plan 01 complete, ready for next plan or phase completion
+Last activity: 2026-01-23 - Completed 13-01 About Section Modernization
 
-Progress: [#########-] 92% (v3: Phase 12 complete, Phase 13 pending)
+Progress: [##########] 95% (v3: Phase 13 Plan 01 complete)
 
 ## v3 Phase Overview
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 12 | Content Consolidation | DEL-01 to DEL-04, MERGE-01 to MERGE-06, QUAL-01 to QUAL-04 | Complete |
-| 13 | About & Courses Overhaul | TBD | Planned |
+| 13 | About & Courses Overhaul | About modernization | In Progress |
+
+### Plan Status (Phase 13)
+
+| Plan | Name | Tasks | Status | Commits |
+|------|------|-------|--------|---------|
+| 13-01 | About Section Modernization | 3/3 | COMPLETE | 5be6bf8, 579e20c |
 
 ### Plan Status (Phase 12)
 
@@ -53,6 +59,12 @@ Progress: [#########-] 92% (v3: Phase 12 complete, Phase 13 pending)
 
 ### v3 Accomplishments
 
+**About Section Modernization (13-01):**
+- Added "ABOUT US" section-tag above About heading
+- Updated About h2 to clamp typography (2rem-2.75rem)
+- Modernized badge to v2 pill style (light purple bg, border)
+- Human verified on mobile and desktop
+
 **Content Merge (12-01):**
 - Added Taehoon Kim as 4th tutor in Trust section
 - Added 3 testimonials (1 parent + 2 students) to Trust section
@@ -78,7 +90,13 @@ Progress: [#########-] 92% (v3: Phase 12 complete, Phase 13 pending)
 
 ### Roadmap Evolution
 
-- Phase 13 added: About & Courses Overhaul — modernize remaining legacy sections
+- Phase 13 added: About & Courses Overhaul - modernize remaining legacy sections
+- 13-01 complete: About section now matches v2 visual quality
+
+### Key Decisions (Phase 13)
+
+- Used scoped .about-text h2 selector instead of .section-title class (cleaner for 2-column layout)
+- Applied v2 pill style to About badge (light bg, border) for consistency
 
 ### Tech Debt
 
@@ -92,15 +110,16 @@ Progress: [#########-] 92% (v3: Phase 12 complete, Phase 13 pending)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: Phase 13 added
+Stopped at: Completed 13-01-PLAN.md
 Resume file: None
 
 ## Next Up
 
-**Plan Phase 13** — create execution plan for About & Courses overhaul
-
-`/gsd:plan-phase 13`
+**Options:**
+1. /gsd:plan-phase 13 - Plan Courses section modernization (13-02)
+2. /gsd:verify-work 13 - Verify phase completion (if About was the only planned work)
+3. Mark v3 complete if About modernization completes the milestone
 
 ---
 
-*Last updated: 2026-01-23 — Phase 13 added to v3*
+*Last updated: 2026-01-23 - Completed 13-01 About Section Modernization*
