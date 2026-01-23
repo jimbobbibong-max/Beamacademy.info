@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 
 Milestone: v4 (Courses Section Redesign)
 Phase: 16 — Courses Visual Polish
-Plan: 01 of 03 COMPLETE
+Plan: 02 of 03 COMPLETE
 Status: In progress
-Last activity: 2026-01-24 — Completed 16-01 (shadow depth)
+Last activity: 2026-01-24 — Completed 16-02 (supporting visual polish)
 
-Progress: [██████████████████████████████] ~85% (14-15 complete, 16-01 complete)
+Progress: [██████████████████████████████] ~90% (14-15 complete, 16-01 + 16-02 complete)
 
 ## Milestone History
 
@@ -40,7 +40,7 @@ Progress: [███████████████████████
 
 **Phase 16 — Courses Visual Polish:** IN PROGRESS
 - 16-01: Shadow depth for pricing tiers and course cards COMPLETE
-- 16-02: Icon enhancements and year tabs PLANNED
+- 16-02: Background decoration, icon glow, button consistency COMPLETE
 - 16-03: Minor polish items PLANNED
 
 ## Decisions Made
@@ -50,6 +50,8 @@ Progress: [███████████████████████
 | Purple-tinted shadows (rgba 124,58,237) | Brand consistency on hover states | 16-01 |
 | Mobile hover transforms disabled | Touch devices don't have hover, saves rendering | 16-01 |
 | 0.25 opacity base shadows | Subtle depth without heaviness | 16-01 |
+| Background decoration 0.06 opacity | Subtle ambient lighting, not neon aesthetic | 16-02 |
+| Gradient buttons on hover | Match Hero section button quality | 16-02 |
 
 ## Performance Baseline
 
@@ -72,15 +74,17 @@ Progress: [███████████████████████
 ## Session Continuity
 
 Last session: 2026-01-24
-Stopped at: Completed 16-01-PLAN.md (shadow depth)
+Stopped at: Completed 16-02-PLAN.md (supporting visual polish)
 Resume file: None
 
 ## Next Up
 
-**Execute 16-02** — Icon enhancements and year tabs
+**Execute 16-03 -- Hover effects and micro-interactions
+
+`/gsd:execute-phase 16-03`
 
 \`/gsd:execute-phase 16-02\`
 
 ---
 
-*Last updated: 2026-01-24 — 16-01 shadow depth complete*
+*Last updated: 2026-01-24 — 16-02 supporting visual polish complete*
