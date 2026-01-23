@@ -2523,113 +2523,6 @@
             margin-top: 48px;
         }
 
-        /* Team - Premium Design */
-        .team {
-            background: var(--gray-50);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .team::before {
-            display: none;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px;
-            position: relative;
-        }
-
-        .team-card {
-            text-align: center;
-            background: white;
-            border-radius: 24px;
-            padding: 28px;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid var(--gray-100);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .team-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, transparent 60%, rgba(124, 58, 237, 0.02) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .team-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-            border-color: var(--purple-200);
-        }
-
-        .team-card:hover::before {
-            opacity: 1;
-        }
-
-        .team-image {
-            width: 100%;
-            aspect-ratio: 1;
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, var(--purple-100), var(--purple-200));
-            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .team-card:hover .team-image {
-            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.18);
-        }
-
-        .team-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 5%;
-            transition: transform 0.4s ease;
-        }
-
-        .team-card:hover .team-image img {
-            transform: scale(1.05);
-        }
-
-        .team-image img.position-top {
-            object-position: center top;
-        }
-
-        .team-image-placeholder { font-size: 4rem; opacity: 0.5; }
-
-        .team-card h3 {
-            font-size: 1.2rem;
-            color: var(--gray-900);
-            margin-bottom: 6px;
-        }
-
-        .team-role {
-            font-family: var(--font-display);
-            font-size: 0.9rem;
-            color: var(--purple-600);
-            font-weight: 600;
-            margin-bottom: 12px;
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--purple-50);
-            border-radius: 100px;
-        }
-
-        .team-credentials {
-            list-style: none;
-            font-size: 0.85rem;
-            color: var(--gray-500);
-        }
-
-        .team-credentials li { margin-bottom: 4px; }
-
         /* Testimonials */
         .testimonials { background: var(--white); }
 
@@ -3863,7 +3756,6 @@
                 max-width: none;
             }
 
-            .team-grid { grid-template-columns: repeat(2, 1fr); }
             .testimonials-grid { grid-template-columns: 1fr; }
             .footer-content { grid-template-columns: 1fr 1fr; }
 
@@ -3900,7 +3792,6 @@
 
             section { padding: 60px 0; }
 
-            .team-grid { grid-template-columns: 1fr; }
             .package-cards { grid-template-columns: repeat(2, 1fr); }
             .form-row { grid-template-columns: 1fr; }
             .footer-content { grid-template-columns: 1fr; gap: 40px; }
@@ -4277,17 +4168,6 @@
         .form-input:focus, .form-textarea:focus, .form-select:focus {
             border-color: var(--purple-500);
             box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
-        }
-
-        /* Better testimonial/team cards */
-        .team-card {
-            border: 1px solid var(--gray-100);
-            transition: all 0.3s ease;
-        }
-
-        .team-card:hover {
-            border-color: var(--purple-200);
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.1);
         }
 
         /* Floating elements subtle animation */
@@ -6782,12 +6662,8 @@
         // Apply to elements after DOM loaded
         document.addEventListener('DOMContentLoaded', () => {
             // Add animation classes to key elements
-            document.querySelectorAll('.section-header, .feature-card, .team-card, .testimonial-card, .faq-item').forEach((el, index) => {
+            document.querySelectorAll('.section-header, .faq-item').forEach((el, index) => {
                 el.classList.add('animate-on-scroll');
-                // Add staggered delays for cards in grids
-                if (el.classList.contains('feature-card') || el.classList.contains('team-card') || el.classList.contains('testimonial-card')) {
-                    el.classList.add(`delay-${(index % 4) + 1}`);
-                }
                 scrollObserver.observe(el);
             });
         });
