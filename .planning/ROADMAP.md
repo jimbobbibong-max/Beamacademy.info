@@ -70,7 +70,18 @@ Plans:
 
 **Dependencies:** Phase 13 (About section complete)
 
-**Plans:** TBD (requires discussion/research)
+**Plans:** 3 plans in 2 waves
+
+Plans:
+- [ ] 14-01-PLAN.md — Pricing tier cards v2 styling with featured tier highlight
+- [ ] 14-02-PLAN.md — Course browser redesign (tabs + cards + grid)
+- [ ] 14-03-PLAN.md — Final polish + human verification
+
+**Wave Structure:**
+| Wave | Plans | Description |
+|------|-------|--------------|
+| 1 | 14-01, 14-02 | Pricing tiers + course browser (parallel) |
+| 2 | 14-03 | Final polish + verification (after 01 & 02) |
 
 **Success Criteria:**
 1. Pricing section matches Hero/Trust visual quality
@@ -156,4 +167,4 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 14 added to v3*
+*Last updated: 2026-01-23 — Phase 14 plans created*
