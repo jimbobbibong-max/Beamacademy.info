@@ -4,91 +4,18 @@
 
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
-- **v3 Content Cleanup** — Phases 12-14 (active)
+- **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
+- **v4 Courses Section Redesign** — (active)
 
 ---
 
-## v3: Content Cleanup
+## v4: Courses Section Redesign
 
-**Goal:** Remove redundant legacy sections and consolidate overlapping content into v2 sections.
+**Goal:** Complete redesign of "Invest in Your Future" pricing section and "Browse Our Courses" course browser with fresh CSS architecture and research-backed best practices.
 
-### Phase 12: Content Consolidation
+**Why new milestone:** Phase 14 attempted incremental patches on legacy CSS which created conflicts. Fresh start with proper research and clean implementation.
 
-**Goal:** Delete redundant sections and merge overlapping content into Trust section.
-
-**Dependencies:** None (cleanup of existing content)
-
-**Plans:** 4 plans in 3 waves
-
-Plans:
-- [x] 12-01-PLAN.md — Merge Taehoon + student testimonials into Trust section
-- [x] 12-02-PLAN.md — Remove redundant HTML (Why Us, Portal, Team, Testimonials)
-- [x] 12-03-PLAN.md — Remove orphaned CSS (Why Us, Portal, Team)
-- [x] 12-04-PLAN.md — Clean Testimonials CSS, verify links, mobile verification
-
-**Wave Structure:**
-| Wave | Plans | Description |
-|------|-------|-------------|
-| 1 | 12-01 | Merge content into Trust (must complete first) |
-| 2 | 12-02, 12-03 | Delete HTML + CSS (parallel after merge) |
-| 3 | 12-04 | Final cleanup + verification |
-
-**Requirements:**
-- DEL-01 to DEL-04: Remove Why Us and Portal sections + CSS
-- MERGE-01 to MERGE-06: Consolidate Team and Testimonials into Trust
-- QUAL-01 to QUAL-04: Ensure quality after changes
-
-**Success Criteria:**
-1. "Why Us" section no longer exists
-2. "Portal" section no longer exists
-3. Trust section has 4 tutors (including Taehoon)
-4. Trust section has parent + student testimonials
-5. Team and Testimonials sections removed
-6. No orphaned CSS, no broken links
-7. Mobile renders correctly
-
-### Phase 13: About & Courses Overhaul
-
-**Goal:** Modernize About section ("Building Education and Mastery") and Courses section ("Invest in Your Future") to match v2 design quality.
-
-**Dependencies:** Phase 12 (content consolidation complete)
-
-**Plans:** 1 plan in 1 wave
-
-Plans:
-- [x] 13-01-PLAN.md — Add section-tag, v2 typography, modernize badge
-
-**Success Criteria:**
-1. About section matches v2 visual style
-2. Courses section matches v2 visual style
-3. Consistent typography, spacing, and components
-4. Mobile renders correctly
-
-### Phase 14: Courses Section Redesign
-
-**Goal:** Full overhaul of "Invest in Your Future" and "Browse Our Courses" sections — visual refresh, layout restructure, and content updates.
-
-**Dependencies:** Phase 13 (About section complete)
-
-**Plans:** 3 plans in 2 waves
-
-Plans:
-- [ ] 14-01-PLAN.md — Pricing tier cards v2 styling with featured tier highlight
-- [ ] 14-02-PLAN.md — Course browser redesign (tabs + cards + grid)
-- [ ] 14-03-PLAN.md — Final polish + human verification
-
-**Wave Structure:**
-| Wave | Plans | Description |
-|------|-------|--------------|
-| 1 | 14-01, 14-02 | Pricing tiers + course browser (parallel) |
-| 2 | 14-03 | Final polish + verification (after 01 & 02) |
-
-**Success Criteria:**
-1. Pricing section matches Hero/Trust visual quality
-2. Course browser modernized with improved UX
-3. Content updated and compelling
-4. Mobile responsive
-5. Consistent with site-wide v2 design language
+*Phases to be defined after research*
 
 ---
 
@@ -121,6 +48,18 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 </details>
 
+<details>
+<summary>v3 Content Cleanup (Phases 12-13) — SHIPPED 2026-01-23</summary>
+
+- [x] Phase 12: Content Consolidation (4/4 plans) — 2026-01-23
+- [x] Phase 13: About & Courses Overhaul (1/1 plan) — 2026-01-23
+
+See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
+
+**Note:** Phase 14 (Courses Section Redesign) was moved to v4 due to CSS architecture issues requiring fresh implementation.
+
+</details>
+
 ---
 
 ## Progress
@@ -134,37 +73,13 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 | 5 | v1 | Performance | Complete | 2026-01-20 |
 | 6 | v2 | Hero Overhaul | Complete | 2026-01-23 |
 | 7 | v2 | Proof Section | Complete | 2026-01-23 |
-| 8 | v2 | Comparison Section | Complete | 2026-01-23 |
+| 8 | v2 | Proof Section | Complete | 2026-01-23 |
 | 9 | v2 | Trust Section | Complete | 2026-01-23 |
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 | 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
 | 13 | v3 | About & Courses Overhaul | Complete | 2026-01-23 |
-| 14 | v3 | Courses Section Redesign | Planned | - |
 
 ---
 
-## Coverage
-
-| Requirement | Phase | Plan | Status |
-|-------------|-------|------|--------|
-| DEL-01 | Phase 12 | 12-02 | Complete |
-| DEL-02 | Phase 12 | 12-02 | Complete |
-| DEL-03 | Phase 12 | 12-03 | Complete |
-| DEL-04 | Phase 12 | 12-03 | Complete |
-| MERGE-01 | Phase 12 | 12-01 | Complete |
-| MERGE-02 | Phase 12 | 12-01 | Complete |
-| MERGE-03 | Phase 12 | 12-02 | Complete |
-| MERGE-04 | Phase 12 | 12-02 | Complete |
-| MERGE-05 | Phase 12 | 12-03 | Complete |
-| MERGE-06 | Phase 12 | 12-04 | Complete |
-| QUAL-01 | Phase 12 | 12-04 | Complete |
-| QUAL-02 | Phase 12 | 12-02 | Complete |
-| QUAL-03 | Phase 12 | 12-04 | Complete |
-| QUAL-04 | Phase 12 | 12-03, 12-04 | Complete |
-
-**v3 Requirements:** 14 total | **Complete:** 14 | **Pending:** 0
-
----
-
-*Last updated: 2026-01-23 — Phase 14 plans created*
+*Last updated: 2026-01-23 — v3 shipped, v4 started*
