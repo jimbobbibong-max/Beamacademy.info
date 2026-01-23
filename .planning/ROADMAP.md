@@ -4,7 +4,7 @@
 
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
-- **v3 Content Cleanup** — Phases 12-13 (active)
+- **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
 
 ---
 
@@ -56,7 +56,7 @@ Plans:
 **Plans:** 1 plan in 1 wave
 
 Plans:
-- [ ] 13-01-PLAN.md — Add section-tag, v2 typography, modernize badge
+- [x] 13-01-PLAN.md — Add section-tag, v2 typography, modernize badge
 
 **Success Criteria:**
 1. About section matches v2 visual style
@@ -113,7 +113,7 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 | 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
-| 13 | v3 | About & Courses Overhaul | Planned | - |
+| 13 | v3 | About & Courses Overhaul | Complete | 2026-01-23 |
 
 ---
 
@@ -140,4 +140,4 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 13 added to v3*
+*Last updated: 2026-01-23 — v3 milestone complete*
