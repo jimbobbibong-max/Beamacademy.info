@@ -62,11 +62,17 @@ Progress: [----------] 0% (v4 starting)
 **New from v3 learnings:**
 - Courses section CSS is messy/duplicated — needs clean rewrite (v4 scope)
 
+## Session Continuity
+
+Last session: 2026-01-23
+Stopped at: Research phase starting
+Resume file: .planning/PAUSE.md
+
 ## Next Up
 
-**Start v4 milestone** — Research-backed Courses section redesign
+**Continue v4 research** — Spawn 4 researchers, then requirements + roadmap
 
-`/gsd:new-milestone`
+`/gsd:resume-work`
 
 ---
 
