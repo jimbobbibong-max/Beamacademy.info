@@ -1,90 +1,114 @@
 ---
 phase: 12-content-consolidation
 plan: 01
-subsystem: ui
-tags: [css, grid, responsive, testimonials, html]
+subsystem: content
+tags: [trust-section, tutors, testimonials, css-grid]
 
-# Dependency graph
-requires:
-  - phase: 11
-    provides: Trust section structure with 3 tutors
-provides:
-  - Trust section with 4 tutors (Chris, Nathan, John, Taehoon)
-  - Mixed testimonials (1 parent + 2 students)
-  - Responsive grid layout for 4 tutors
-affects: [12-02, future content updates]
+dependency_graph:
+  requires: [v2-messaging-overhaul]
+  provides: [consolidated-trust-section, 4-tutor-layout, mixed-testimonials]
+  affects: [12-02-delete-redundant]
 
-# Tech tracking
-tech-stack:
+tech_stack:
   added: []
-  patterns: [grid-layout for tutor cards, testimonials container]
+  patterns: [css-grid-auto-fit, responsive-grid-breakpoints]
 
-key-files:
+files:
   created: []
-  modified: [index.html]
+  modified:
+    - index.html
 
-key-decisions:
-  - "Used CSS grid instead of flexbox for 4-tutor layout"
-  - "Created trust-testimonials container for multiple testimonials"
-  - "Set breakpoints: 1100px max, 2-col at 600px, 1-col at 400px"
+decisions:
+  - key: css-grid-for-tutors
+    choice: CSS Grid with auto-fit minmax(240px, 1fr)
+    rationale: Flexbox wrap awkward with 4 items; grid auto-fit provides cleaner 4-col desktop with automatic 2-col tablet
 
-patterns-established:
-  - "trust-testimonials: grid container for mixed testimonial types"
+  - key: inline-object-position
+    choice: Inline style for Taehoon image positioning
+    rationale: Trust section CSS may not have .position-top class; inline style ensures correct image cropping
 
-# Metrics
-duration: 12min
-completed: 2026-01-23
+  - key: testimonials-container
+    choice: Wrap testimonials in .trust-testimonials grid container
+    rationale: Needed wrapper for 3 testimonial cards with responsive grid layout
+
+metrics:
+  duration: 6m
+  completed: 2026-01-23
 ---
 
-# Phase 12 Plan 01: Content Merge (Team + Testimonials into Trust) Summary
+# Phase 12 Plan 01: Content Merge Summary
 
-**Trust section expanded to 4 tutors with responsive grid layout and mixed testimonials (1 parent + 2 students)**
+Consolidated Team and Testimonials content into the existing Trust section, creating a unified social proof area.
 
-## Performance
+**One-liner:** 4 tutors with CSS grid + 3 testimonials (1 parent, 2 students) in Trust section
 
-- **Duration:** 12 min
-- **Started:** 2026-01-23
-- **Completed:** 2026-01-23
-- **Tasks:** 3
-- **Files modified:** 1
+## Tasks Completed
 
-## Accomplishments
-- Added Taehoon Kim as 4th tutor with BHHS Graduate credentials
-- Created testimonials container with parent and student quotes
-- Updated CSS from flexbox to grid for better 4-card layout
-- Responsive breakpoints: 4-col desktop, 2-col tablet, 1-col mobile
+| Task | Name | Commit | Key Changes |
+|------|------|--------|-------------|
+| 1 | Add Taehoon Kim to Trust section tutors | 467bdb6 | Added 4th tutor card with BHHS/95 Maths Ext1/Optometry credentials |
+| 2 | Add student testimonials to Trust section | 53a37cb | Created testimonials grid with Kane W + Lena Y student quotes |
+| 3 | Update Trust section CSS for 4-tutor layout | 9915290 | Changed flexbox to CSS grid with responsive breakpoints |
 
-## Task Commits
+## Implementation Details
 
-Each task was committed atomically:
+### Task 1: Add Taehoon Kim
 
-1. **Task 1: Add Taehoon Kim to Trust section tutors** - `4eecc31` (feat)
-2. **Task 2: Add student testimonials to Trust section** - `d387c8d` (feat)
-3. **Task 3: Update Trust section CSS for 4-tutor layout** - `e65327b` (feat)
+Added Taehoon as the 4th tutor in Trust section after John Park:
+- Name: Taehoon Kim
+- Role: Tutor & Head Admin
+- Trifecta badges: BHHS Graduate, 95 Maths Ext1, Optometry @ UNSW
+- Credentials: 1540 SAT, 4 years tutoring
+- Used inline `object-position: center top` for image cropping
 
-## Files Created/Modified
-- `index.html` - Added Taehoon tutor card, testimonials container, updated CSS grid
+### Task 2: Add Student Testimonials
 
-## Decisions Made
-- Used CSS grid with auto-fit minmax(240px, 1fr) for flexible 4-tutor layout
-- Created separate trust-testimonials container to hold multiple testimonials
-- Added student-quote CSS class for student testimonials styling
-- Set 2-column layout at 600px and 1-column at 400px breakpoints
+Converted single parent testimonial to testimonials grid:
+- Kept existing parent testimonial (68% to 89% improvement)
+- Added Kane W (BHHS Class of 2028): "My only regret in life is not joining BEAM earlier..."
+- Added Lena Y (PHCS Class of 2028): "I really like the way BEAM teaches..."
+
+Added CSS:
+- `.trust-testimonials` grid container with auto-fit minmax(280px, 1fr)
+- `.student-quote` styling for italic student quotes
+- Mobile styles (1 column on 768px and below)
+
+### Task 3: Update Tutors CSS
+
+Changed `.trust-tutors` from flexbox to CSS grid:
+- Desktop: `grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))` - 4 columns
+- Tablet (768px): `repeat(2, 1fr)` - 2x2 grid
+- Mobile (400px): `1fr` - single column
+
+Updated `.tutor-card`:
+- Removed flex-basis and max-width constraints
+- Reduced padding from 36px to 28px for 4-card layout
+- Widened container max-width to 1100px
 
 ## Deviations from Plan
+
 None - plan executed exactly as written.
 
-## Issues Encountered
-- File encoding issue (non-UTF8 character at position 187838) - resolved by using Python with errors='ignore' for file reading
+## Verification Results
 
-## User Setup Required
-None - no external service configuration required.
+1. Trust section displays 4 tutor cards with correct data - PASS
+2. Parent testimonial still visible - PASS
+3. Student testimonials (Kane, Lena) visible below tutors - PASS
+4. Layout responsive: 4-col desktop, 2-col tablet, 1-col mobile - PASS (CSS verified)
+5. No visual breaks or overflow issues - CSS structure correct
+
+## Success Criteria Met
+
+- [x] Trust section has exactly 4 tutors: Chris Kim, Nathan You, John Park, Taehoon Kim
+- [x] Trust section has 3 testimonials: 1 parent, 2 students
+- [x] MERGE-01 complete (Taehoon added)
+- [x] MERGE-02 complete (student testimonials added)
+- [x] QUAL-01 progress (mobile layout prepared)
 
 ## Next Phase Readiness
-- Trust section complete with 4 tutors and 3 testimonials
-- Ready for 12-02: Delete redundant sections (Why Us, Portal, Team, Testimonials)
-- Mobile layout tested at breakpoints
 
----
-*Phase: 12-content-consolidation*
-*Completed: 2026-01-23*
+**12-02 Delete Redundant** can now proceed:
+- Team section content (Taehoon) is now duplicated in Trust - safe to delete
+- Testimonials section content (Kane W, Lena Y) is now duplicated in Trust - safe to delete
+- Why Us section can be deleted (redundant with Proof/Comparison)
+- Portal section can be deleted (hero has mockup)
