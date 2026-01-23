@@ -4,7 +4,7 @@
 
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
-- **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
+- **v3 Content Cleanup** — Phases 12-14 (active)
 
 ---
 
@@ -64,6 +64,21 @@ Plans:
 3. Consistent typography, spacing, and components
 4. Mobile renders correctly
 
+### Phase 14: Courses Section Redesign
+
+**Goal:** Full overhaul of "Invest in Your Future" and "Browse Our Courses" sections — visual refresh, layout restructure, and content updates.
+
+**Dependencies:** Phase 13 (About section complete)
+
+**Plans:** TBD (requires discussion/research)
+
+**Success Criteria:**
+1. Pricing section matches Hero/Trust visual quality
+2. Course browser modernized with improved UX
+3. Content updated and compelling
+4. Mobile responsive
+5. Consistent with site-wide v2 design language
+
 ---
 
 ## Completed
@@ -114,6 +129,7 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 | 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
 | 13 | v3 | About & Courses Overhaul | Complete | 2026-01-23 |
+| 14 | v3 | Courses Section Redesign | Planned | - |
 
 ---
 
@@ -140,4 +156,4 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — v3 milestone complete*
+*Last updated: 2026-01-23 — Phase 14 added to v3*

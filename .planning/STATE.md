@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v3 Content Cleanup — COMPLETE
+**Current focus:** v3 Content Cleanup — Phase 14 (Courses Section Redesign)
 
 ## Current Position
 
-Phase: 13 of 13 (About & Courses Overhaul)
-Plan: 01 complete
-Status: v3 milestone complete
-Last activity: 2026-01-23 — Phase 13 executed, verified, complete
+Phase: 14 of 14 (Courses Section Redesign)
+Plan: Not started
+Status: Ready to discuss/plan
+Last activity: 2026-01-23 — Phase 14 added to v3
 
-Progress: [##########] 100% (v3: All phases complete)
+Progress: [#########-] 93% (v3: Phase 14 pending)
 
 ## v3 Phase Overview
 
@@ -22,6 +22,7 @@ Progress: [##########] 100% (v3: All phases complete)
 |-------|------|--------------|--------|
 | 12 | Content Consolidation | DEL-01 to DEL-04, MERGE-01 to MERGE-06, QUAL-01 to QUAL-04 | Complete |
 | 13 | About & Courses Overhaul | Visual consistency | Complete |
+| 14 | Courses Section Redesign | TBD | Planned |
 
 ### Plan Status (Phase 13)
 
@@ -44,7 +45,7 @@ Progress: [##########] 100% (v3: All phases complete)
 |---------|------|--------|--------|------|
 | v1 | Mobile Conversion | 1-5 | SHIPPED | 2026-01-20 |
 | v2 | Messaging Overhaul | 6-11 | SHIPPED | 2026-01-23 |
-| v3 | Content Cleanup | 12-13 | SHIPPED | 2026-01-23 |
+| v3 | Content Cleanup | 12-14 | Active | - |
 
 ## Performance Baseline
 
@@ -112,10 +113,10 @@ Resume file: None
 
 ## Next Up
 
-**Audit v3 milestone** — verify requirements, cross-phase integration
+**Discuss Phase 14** — gather context for Courses section redesign
 
-`/gsd:audit-milestone`
+`/gsd:discuss-phase 14`
 
 ---
 
-*Last updated: 2026-01-23 — v3 milestone complete*
+*Last updated: 2026-01-23 — Phase 14 added to v3*
