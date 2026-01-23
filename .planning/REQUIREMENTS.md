@@ -41,14 +41,14 @@
 
 ### CTA/Form
 
-- [ ] **CTA-01**: Outcome-focused CTA copy ("Get Your Free Diagnostic")
-- [ ] **CTA-02**: Form fields remain optimized (3-4 fields from v1)
+- [x] **CTA-01**: Outcome-focused CTA copy ("Get Your Free Diagnostic")
+- [x] **CTA-02**: Form fields remain optimized (3-4 fields from v1)
 
 ### Mobile
 
-- [ ] **MOB-01**: All new sections render correctly on mobile (320px-428px)
-- [ ] **MOB-02**: Images optimized for mobile loading
-- [ ] **MOB-03**: Sticky CTA bar still functional
+- [x] **MOB-01**: All new sections render correctly on mobile (320px-428px)
+- [x] **MOB-02**: Images optimized for mobile loading
+- [x] **MOB-03**: Sticky CTA bar still functional
 
 ## v3 Requirements (Deferred)
 
@@ -97,11 +97,11 @@
 | SUPP-01 | Phase 10 | Complete |
 | SUPP-02 | Phase 10 | Complete |
 | SUPP-03 | Phase 10 | Complete |
-| CTA-01 | Phase 11 | Pending |
-| CTA-02 | Phase 11 | Pending |
-| MOB-01 | Phase 11 | Pending |
-| MOB-02 | Phase 11 | Pending |
-| MOB-03 | Phase 11 | Pending |
+| CTA-01 | Phase 11 | Complete |
+| CTA-02 | Phase 11 | Complete |
+| MOB-01 | Phase 11 | Complete |
+| MOB-02 | Phase 11 | Complete |
+| MOB-03 | Phase 11 | Complete |
 
 **Coverage:**
 - v2 requirements: 24 total
@@ -110,4 +110,4 @@
 
 ---
 *Requirements defined: 2026-01-22*
-*Last updated: 2026-01-23 — Phase 10 requirements (SUPP-01/02/03) marked Complete*
+*Last updated: 2026-01-23 — All v2 requirements complete*

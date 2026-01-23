@@ -188,7 +188,7 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | 8 | v2 | Comparison Section | Complete | 2026-01-23 |
 | 9 | v2 | Trust Section | Complete | 2026-01-23 |
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
-| 11 | v2 | CTA & Mobile Polish | Pending | - |
+| 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 
 ---
 
@@ -212,14 +212,14 @@ See: [milestones/v1-ROADMAP.md](milestones/v1-ROADMAP.md) for full details.
 | TRUST-03 | Phase 9 | Complete |
 | TRUST-04 | Phase 9 | Complete |
 | TRUST-05 | Phase 9 | Complete |
-| SUPP-01 | Phase 10 | Pending |
-| SUPP-02 | Phase 10 | Pending |
-| SUPP-03 | Phase 10 | Pending |
-| CTA-01 | Phase 11 | Pending |
-| CTA-02 | Phase 11 | Pending |
-| MOB-01 | Phase 11 | Pending |
-| MOB-02 | Phase 11 | Pending |
-| MOB-03 | Phase 11 | Pending |
+| SUPP-01 | Phase 10 | Complete |
+| SUPP-02 | Phase 10 | Complete |
+| SUPP-03 | Phase 10 | Complete |
+| CTA-01 | Phase 11 | Complete |
+| CTA-02 | Phase 11 | Complete |
+| MOB-01 | Phase 11 | Complete |
+| MOB-02 | Phase 11 | Complete |
+| MOB-03 | Phase 11 | Complete |
 
 **v2 Requirements:** 24 total | **Mapped:** 24 | **Unmapped:** 0
 
