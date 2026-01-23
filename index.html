@@ -2093,45 +2093,44 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--gray-800);
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
             gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
         }
+
+        .tier-packages li:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--purple-400);
+            transform: translateX(4px);
+        }
+
+        .tier-packages li.selected {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: var(--purple-500);
+        }
+
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.65rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
-
-        .tier-packages li {
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border-radius: 6px;
-            margin: 0 -8px;
-            padding: 12px 8px;
-        }
-
-        .tier-packages li:hover {
-            background: rgba(124, 58, 237, 0.15);
-        }
-
-        .tier-packages li.popular:hover,
-        .tier-packages li.all-access:hover {
-            background: rgba(124, 58, 237, 0.25);
-        }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -2149,41 +2148,47 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.8rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            margin: 0 -16px;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            border-color: rgba(124, 58, 237, 0.3);
+        }
+
+        .tier-packages li.popular:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.popular .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: rgba(124, 58, 237, 0.15);
-            margin: 8px -16px 0;
-            padding: 14px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
+            border-color: rgba(124, 58, 237, 0.4);
+            margin-top: 8px;
+        }
+
+        .tier-packages li.all-access:hover {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.all-access .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
+        }
+
+        .tier-packages li.all-access .pkg-save {
+            background: var(--purple-600);
+            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
@@ -2436,8 +2441,8 @@
         /* Course Grid */
         .courses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .course-card {
@@ -3326,45 +3331,44 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--gray-800);
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
             gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
         }
+
+        .tier-packages li:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--purple-400);
+            transform: translateX(4px);
+        }
+
+        .tier-packages li.selected {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: var(--purple-500);
+        }
+
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.65rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
-
-        .tier-packages li {
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border-radius: 6px;
-            margin: 0 -8px;
-            padding: 12px 8px;
-        }
-
-        .tier-packages li:hover {
-            background: rgba(124, 58, 237, 0.15);
-        }
-
-        .tier-packages li.popular:hover,
-        .tier-packages li.all-access:hover {
-            background: rgba(124, 58, 237, 0.25);
-        }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -3382,41 +3386,47 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.8rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            margin: 0 -16px;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            border-color: rgba(124, 58, 237, 0.3);
+        }
+
+        .tier-packages li.popular:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.popular .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: rgba(124, 58, 237, 0.15);
-            margin: 8px -16px 0;
-            padding: 14px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
+            border-color: rgba(124, 58, 237, 0.4);
+            margin-top: 8px;
+        }
+
+        .tier-packages li.all-access:hover {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.all-access .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
+        }
+
+        .tier-packages li.all-access .pkg-save {
+            background: var(--purple-600);
+            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
@@ -3613,45 +3623,44 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--gray-800);
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
             gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 8px;
         }
 
         .tier-packages li:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
         }
+
+        .tier-packages li:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--purple-400);
+            transform: translateX(4px);
+        }
+
+        .tier-packages li.selected {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: var(--purple-500);
+        }
+
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
             background: var(--purple-600);
             color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.65rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             margin-right: 8px;
         }
-
-        .tier-packages li {
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border-radius: 6px;
-            margin: 0 -8px;
-            padding: 12px 8px;
-        }
-
-        .tier-packages li:hover {
-            background: rgba(124, 58, 237, 0.15);
-        }
-
-        .tier-packages li.popular:hover,
-        .tier-packages li.all-access:hover {
-            background: rgba(124, 58, 237, 0.25);
-        }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -3669,41 +3678,47 @@
         .pkg-save {
             background: var(--purple-900);
             color: var(--purple-300);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 100px;
+            font-size: 0.8rem;
             font-weight: 600;
             white-space: nowrap;
         }
 
         .tier-packages li.popular {
             background: rgba(124, 58, 237, 0.1);
-            margin: 0 -16px;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            border-color: rgba(124, 58, 237, 0.3);
+        }
+
+        .tier-packages li.popular:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.popular .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: white;
             font-weight: 600;
         }
 
         .tier-packages li.all-access {
-            background: rgba(124, 58, 237, 0.15);
-            margin: 8px -16px 0;
-            padding: 14px 16px;
-            border-radius: 8px;
-            border-bottom: none;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.05));
+            border-color: rgba(124, 58, 237, 0.4);
+            margin-top: 8px;
+        }
+
+        .tier-packages li.all-access:hover {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.1));
+            border-color: var(--purple-400);
         }
 
         .tier-packages li.all-access .pkg-name {
-            white-space: nowrap;
-            flex-shrink: 0;
             color: var(--purple-300);
             font-weight: 700;
+        }
+
+        .tier-packages li.all-access .pkg-save {
+            background: var(--purple-600);
+            color: white;
         }
 
         .tier-packages li.all-access .pkg-save {
