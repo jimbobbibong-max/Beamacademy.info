@@ -1008,8 +1008,11 @@
         }
 
         .section-description {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: var(--gray-500);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* Proof Section */
@@ -1934,10 +1937,10 @@
             justify-content: center;
             gap: 10px;
             background: rgba(124, 58, 237, 0.1);
-            border: 1px solid rgba(124, 58, 237, 0.2);
-            border-radius: 8px;
-            padding: 14px 24px;
-            margin: 0 auto 32px;
+            border-left: 3px solid var(--purple-500);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 0 auto 24px;
             max-width: 560px;
             font-size: 0.95rem;
             color: var(--gray-300);
@@ -2405,23 +2408,25 @@
         /* Course Browser Divider */
         .course-browser-divider {
             text-align: center;
-            margin: 60px 0 40px;
-            padding-top: 40px;
-            border-top: 1px solid var(--gray-700);
+            margin-top: 64px;
+            margin-bottom: 40px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .course-browser-heading {
             font-family: var(--font-display);
-            font-size: 1.5rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
-            color: white;
+            color: var(--white);
             margin: 0 0 8px;
         }
 
         .course-browser-subtext {
             color: var(--gray-400);
-            font-size: 0.95rem;
-            margin: 0;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0 0 24px;
         }
 
         /* Year Tabs */
@@ -2596,9 +2601,9 @@
 
         .pricing-note {
             text-align: center;
-            color: var(--gray-400);
-            font-size: 0.95rem;
-            margin-top: 48px;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+            margin-top: 32px;
         }
 
         .testimonial-author {
