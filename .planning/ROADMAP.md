@@ -53,10 +53,10 @@ Plans:
 
 **Dependencies:** Phase 12 (content consolidation complete)
 
-**Plans:** 0 plans (run /gsd:plan-phase 13 to break down)
+**Plans:** 1 plan in 1 wave
 
 Plans:
-- [ ] TBD
+- [ ] 13-01-PLAN.md — Add section-tag, v2 typography, modernize badge
 
 **Success Criteria:**
 1. About section matches v2 visual style
