@@ -2523,108 +2523,6 @@
             margin-top: 48px;
         }
 
-        /* Why Us - Enhanced Design */
-        .why-us {
-            background: var(--white);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .why-us::before {
-            display: none;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-            position: relative;
-        }
-
-        .feature-card {
-            background: white;
-            border-radius: 24px;
-            padding: 40px 32px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid var(--gray-100);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--purple-500);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .feature-card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.02) 0%, transparent 50%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-            border-color: var(--purple-200);
-        }
-
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .feature-card:hover::after {
-            opacity: 1;
-        }
-
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: var(--purple-600);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.25);
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 1;
-        }
-
-        .feature-card:hover .feature-icon {
-            transform: scale(1.05);
-            box-shadow: 0 10px 28px rgba(124, 58, 237, 0.35);
-        }
-
-        .feature-card h3 {
-            font-size: 1.35rem;
-            color: var(--gray-900);
-            margin-bottom: 14px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .feature-card p {
-            font-size: 1rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-            position: relative;
-            z-index: 1;
-        }
-
         /* Portal */
         .portal {
             background: var(--purple-700);
@@ -4084,7 +3982,6 @@
             }
 
             .team-grid { grid-template-columns: repeat(2, 1fr); }
-            .features-grid,
             .testimonials-grid { grid-template-columns: 1fr; }
             .footer-content { grid-template-columns: 1fr 1fr; }
             .portal-features { grid-template-columns: 1fr; }
@@ -4383,26 +4280,13 @@
             box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
         }
 
-        .feature-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--purple-100), var(--purple-200));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 24px;
-            border: 1px solid var(--purple-200);
-        }
-
         /* Subtle animations */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .pricing-tier, .course-card, .feature-card, .team-card {
+        .pricing-tier, .course-card {
             opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
         }
@@ -4414,13 +4298,6 @@
         .course-card:nth-child(1) { animation-delay: 0.1s; }
         .course-card:nth-child(2) { animation-delay: 0.15s; }
         .course-card:nth-child(3) { animation-delay: 0.2s; }
-
-        .feature-card:nth-child(1) { animation-delay: 0.1s; }
-        .feature-card:nth-child(2) { animation-delay: 0.15s; }
-        .feature-card:nth-child(3) { animation-delay: 0.2s; }
-        .feature-card:nth-child(4) { animation-delay: 0.25s; }
-        .feature-card:nth-child(5) { animation-delay: 0.3s; }
-        .feature-card:nth-child(6) { animation-delay: 0.35s; }
 
         /* Better card shadows */
         .pricing-tier {
@@ -4545,21 +4422,6 @@
             position: relative;
         }
 
-        /* Subtle divider between sections */
-        .why-us::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, var(--purple-200), transparent);
-            border-radius: 2px;
-        }
-
-
-        
         /* Package Summary Card */
         .package-summary {
             margin-bottom: 24px;
