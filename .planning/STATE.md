@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 ## Current Position
 
 Phase: 12 of 12 (Content Consolidation)
-Plan: 02 of 04 complete
+Plan: 03 of 04 complete
 Status: In progress
-Last activity: 2026-01-23 - Completed 12-02-PLAN.md (Delete Redundant)
+Last activity: 2026-01-23 - Completed 12-03-PLAN.md (CSS Cleanup)
 
-Progress: [=====-----] 50% (v3: Plan 02 complete)
+Progress: [=======---] 75% (v3: Plan 03 complete)
 
 ## v3 Phase Overview
 
@@ -28,7 +28,7 @@ Progress: [=====-----] 50% (v3: Plan 02 complete)
 |------|------|-------|--------|---------|
 | 12-01 | Content Merge | 3/3 | COMPLETE | 467bdb6, 53a37cb, 9915290 |
 | 12-02 | Delete Redundant | 3/3 | COMPLETE | e088ea9, debbac3 |
-| 12-03 | CSS Cleanup | - | Pending | - |
+| 12-03 | CSS Cleanup | 3/3 | COMPLETE | f8f4da2, cd992ca, 81adc39 |
 | 12-04 | JS Cleanup | - | Pending | - |
 
 ## Milestone History
@@ -64,7 +64,14 @@ Progress: [=====-----] 50% (v3: Plan 02 complete)
 - Deleted Testimonials section (consolidated in Trust)
 - Removed 5 nav links to deleted sections
 
-### Decisions Made (12-01 + 12-02)
+**CSS Cleanup (12-03):**
+- Removed 139 lines Why Us CSS (.why-us, .feature-card, .features-grid, .feature-icon)
+- Removed 120 lines Portal CSS (.portal, .portal-content, .portal-mockup)
+- Removed 125 lines Team CSS (.team, .team-card, .team-grid)
+- Simplified JS observer (removed deleted class references)
+- Total: 381 lines removed, file now 7384 lines
+
+### Decisions Made (v3)
 
 | Decision | Rationale |
 |----------|-----------|
@@ -72,6 +79,8 @@ Progress: [=====-----] 50% (v3: Plan 02 complete)
 | trust-testimonials container | Needed wrapper for multiple testimonial cards |
 | 240px minmax | Balances 4-col desktop with 2-col tablet |
 | Python for file ops | File has non-UTF8 chars; Python errors='ignore' handles it |
+| Portal .score-green removed | Duplicate - hero already has definitions |
+| JS observer simplified | Removed card class references for deleted sections |
 
 ### Tech Debt
 
@@ -85,21 +94,22 @@ Progress: [=====-----] 50% (v3: Plan 02 complete)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: Completed 12-02-PLAN.md (Delete Redundant)
+Stopped at: Completed 12-03-PLAN.md (CSS Cleanup)
 Resume file: None
 
 ## Next Up
 
-**Plan 12-03: CSS Cleanup** - remove orphaned CSS for deleted sections
+**Plan 12-04: JS Cleanup** - remove any remaining orphaned JS
 
 Completed so far:
 - Phase 12-01: Content merged into Trust section (Taehoon + testimonials)
 - Phase 12-02: Deleted 4 redundant sections, cleaned nav links
+- Phase 12-03: Removed 381 lines of orphaned CSS
 
 **Options:**
-- Execute 12-03-PLAN.md to clean up orphaned CSS
-- Verify HTML structure after deletions
+- Execute 12-04-PLAN.md to clean up orphaned JS
+- Verify page renders correctly after all cleanup
 
 ---
 
-*Last updated: 2026-01-23 - 12-02 complete*
+*Last updated: 2026-01-23 - 12-03 complete*

@@ -1,95 +1,129 @@
 ---
 phase: 12-content-consolidation
 plan: 03
-subsystem: ui
-tags: [css, cleanup, orphaned-rules, refactor]
+subsystem: css
+tags: [css-cleanup, orphaned-css, code-cleanup]
 
-# Dependency graph
-requires:
-  - phase: 12-02
-    provides: HTML sections deleted (Why Us, Portal, Team)
-provides:
-  - Clean CSS without orphaned rules for deleted sections
-  - Leaner stylesheet (~387 lines removed)
-  - Updated JS observer without deleted class references
-affects: [performance, maintenance]
+dependency_graph:
+  requires: [12-01-content-merge, 12-02-delete-redundant]
+  provides: [clean-css, reduced-file-size]
+  affects: [12-04-js-cleanup]
 
-# Tech tracking
-tech-stack:
+tech_stack:
   added: []
-  patterns: []
+  patterns: [css-rule-removal, brace-balance-verification]
 
-key-files:
+files:
   created: []
-  modified: [index.html]
+  modified:
+    - index.html
 
-key-decisions:
-  - "Kept .testimonials and .testimonial-card CSS - still used by Student Stories section"
-  - "Removed duplicate .score-green/.score-yellow from Portal - hero already has its own"
-  - "Simplified JS observer by removing card delay animation logic"
+decisions:
+  - key: portal-score-colors-removed
+    choice: Remove Portal-specific .score-green/.score-yellow
+    rationale: Duplicate definitions exist in lines 880-881 and 1180-1181; Portal versions are redundant
 
-patterns-established:
-  - "CSS cleanup follows section deletion - always remove orphaned rules"
+  - key: js-observer-simplified
+    choice: Remove card class references from querySelectorAll
+    rationale: .feature-card, .team-card, .testimonial-card no longer exist in HTML after 12-02 deletions
 
-# Metrics
-duration: 13min
-completed: 2026-01-23
+  - key: preserve-trust-css
+    choice: Keep Trust section CSS intact
+    rationale: Trust section is active and uses .trust-tutors, .tutor-card, .trust-testimonials classes
+
+metrics:
+  duration: 8m
+  completed: 2026-01-23
+  lines_removed: 381
 ---
 
-# Phase 12 Plan 03: CSS Cleanup (Orphaned Rules) Summary
+# Phase 12 Plan 03: CSS Cleanup Summary
 
-**Removed ~387 lines of orphaned CSS for deleted Why Us, Portal, and Team sections plus cleaned up related JS observer**
+Removed all orphaned CSS rules for sections deleted in Plan 12-02 (Why Us, Portal, Team).
 
-## Performance
+**One-liner:** 381 lines of orphaned CSS removed for deleted Why Us, Portal, and Team sections
 
-- **Duration:** 13 min
-- **Started:** 2026-01-23T02:38:28Z
-- **Completed:** 2026-01-23T02:51:43Z
-- **Tasks:** 3
-- **Files modified:** 1
+## Tasks Completed
 
-## Accomplishments
-- Removed entire Why Us CSS block (~102 lines) including media queries and animation delays
-- Removed entire Portal CSS block (~116 lines) including media query and duplicate color classes
-- Removed entire Team CSS block (~127 lines) including media queries and additional styling
-- Updated JS scroll observer to remove references to deleted classes
-- Preserved Testimonials CSS used by Student Stories section
+| Task | Name | Commit | Key Changes |
+|------|------|--------|-------------|
+| 1 | Remove Why Us CSS | f8f4da2 | Removed 139 lines: .why-us, .feature-card, .features-grid, .feature-icon |
+| 2 | Remove Portal CSS | cd992ca | Removed 120 lines: .portal, .portal-content, .portal-mockup, .portal-features |
+| 3 | Remove Team CSS | 81adc39 | Removed 125 lines: .team, .team-card, .team-grid, .team-image, .team-role |
 
-## Task Commits
+## Implementation Details
 
-Each task was committed atomically:
+### Task 1: Remove Why Us CSS
 
-1. **Task 1: Remove Why Us CSS** - `5824c77` (refactor)
-2. **Task 2: Remove Portal CSS** - `bdf5e90` (refactor)
-3. **Task 3: Remove Team CSS** - `4cd6bae` (refactor)
+Removed entire Why Us CSS block:
+- Main `.why-us` section styles
+- `.features-grid` 3-column grid layout
+- `.feature-card` card styles with hover effects
+- `.feature-icon` icon container styles
+- Animation delays for feature cards
+- `.why-us::before` decorative divider
 
-## Files Created/Modified
-- `index.html` - Removed ~387 lines of orphaned CSS, updated JS observer
+Also cleaned:
+- `.features-grid` from responsive media query
+- `.feature-icon` redundant override
+- `.feature-card` from animation selectors
 
-## Decisions Made
-- Kept `.testimonials` and `.testimonial-card` CSS - Student Stories section still uses these classes
-- Removed duplicate `.score-green`/`.score-yellow` from Portal CSS - hero mockup has its own definition
-- Cleaned up JS observer card delay logic since those elements no longer exist
-- Removed `.portal-features` and `.team-grid` from media queries
+### Task 2: Remove Portal CSS
+
+Removed entire Portal CSS block:
+- Main `.portal` section styles (purple background)
+- `.portal-content` 2-column grid layout
+- `.portal-tag`, `.portal-description` typography
+- `.portal-features` feature list grid
+- `.portal-mockup` with dots and content styles
+- `.portal-mockup-caption` caption styles
+- Portal-specific `.score-green`/`.score-yellow` (duplicates)
+
+Also cleaned:
+- `.portal-content` from 1024px media query
+- `.portal-features` from responsive media query
+
+### Task 3: Remove Team CSS
+
+Removed entire Team CSS block:
+- Main `.team` section styles
+- `.team-grid` 4-column grid layout
+- `.team-card` card styles with hover effects
+- `.team-image` and image positioning
+- `.team-role` badge styles
+- `.team-credentials` list styles
+
+Also cleaned:
+- `.team-grid` from 1024px media query (repeat(2, 1fr))
+- `.team-grid` from 768px media query (1fr)
+- "Better testimonial/team cards" section
+- JS observer: removed `.feature-card`, `.team-card`, `.testimonial-card` from querySelectorAll
 
 ## Deviations from Plan
+
 None - plan executed exactly as written.
 
-## Issues Encountered
-None.
+## Verification Results
 
-## User Setup Required
-None - no external service configuration required.
+1. `grep "\.why-us" index.html` - No matches (PASS)
+2. `grep "\.portal" index.html` - No matches (PASS)
+3. `grep "\.team" index.html` - No matches (PASS)
+4. CSS brace balance: 806 open, 806 close (PASS)
+5. JS brace balance: 141 open, 141 close (PASS)
+6. Trust section CSS intact: .trust-tutors, .tutor-card, .trust-testimonials present (PASS)
+
+## Success Criteria Met
+
+- [x] DEL-03 complete (Why Us CSS removed)
+- [x] DEL-04 complete (Portal CSS removed)
+- [x] MERGE-05 complete (Team CSS removed)
+- [x] QUAL-04 progress (orphaned CSS cleaned)
+- [x] No CSS errors (brace balance verified)
+- [x] Trust section unaffected (CSS preserved)
 
 ## Next Phase Readiness
-- CSS cleanup complete for all deleted sections
-- DEL-03 (Why Us CSS) complete
-- DEL-04 (Portal CSS) complete
-- MERGE-05 (Team CSS) complete
-- QUAL-04 progress (orphaned CSS cleaned)
-- File size reduced by ~7KB
-- Ready for visual verification
 
----
-*Phase: 12-content-consolidation*
-*Completed: 2026-01-23*
+**12-04 JS Cleanup** can now proceed:
+- JS observer already simplified in this plan
+- Any remaining orphaned JS for deleted sections can be cleaned
+- Page structure verified stable
