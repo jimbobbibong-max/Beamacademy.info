@@ -5,24 +5,25 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v3 Content Cleanup — COMPLETE
+**Current focus:** v3 Content Cleanup — Phase 13 (About & Courses Overhaul)
 
 ## Current Position
 
-Phase: 12 of 12 (Content Consolidation)
-Plan: 04 of 04 complete
-Status: Phase verified, milestone complete
-Last activity: 2026-01-23 — Phase 12 executed and verified
+Phase: 13 of 13 (About & Courses Overhaul)
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-01-23 — Phase 13 added to v3
 
-Progress: [##########] 100% (v3: Complete)
+Progress: [#########-] 92% (v3: Phase 12 complete, Phase 13 pending)
 
 ## v3 Phase Overview
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 12 | Content Consolidation | DEL-01 to DEL-04, MERGE-01 to MERGE-06, QUAL-01 to QUAL-04 | Complete |
+| 13 | About & Courses Overhaul | TBD | Planned |
 
-### Plan Status
+### Plan Status (Phase 12)
 
 | Plan | Name | Tasks | Status | Commits |
 |------|------|-------|--------|---------|
@@ -37,7 +38,7 @@ Progress: [##########] 100% (v3: Complete)
 |---------|------|--------|--------|------|
 | v1 | Mobile Conversion | 1-5 | SHIPPED | 2026-01-20 |
 | v2 | Messaging Overhaul | 6-11 | SHIPPED | 2026-01-23 |
-| v3 | Content Cleanup | 12 | SHIPPED | 2026-01-23 |
+| v3 | Content Cleanup | 12-13 | Active | - |
 
 ## Performance Baseline
 
@@ -75,13 +76,9 @@ Progress: [##########] 100% (v3: Complete)
 - Verified all internal links
 - User verified mobile and desktop rendering
 
-### Decisions Made (v3)
+### Roadmap Evolution
 
-| Decision | Rationale |
-|----------|-----------|
-| CSS grid for 4 tutors | Flexbox wrap awkward with 4 items; grid auto-fit cleaner |
-| trust-testimonials container | Needed wrapper for multiple testimonial cards |
-| 240px minmax | Balances 4-col desktop with 2-col tablet |
+- Phase 13 added: About & Courses Overhaul — modernize remaining legacy sections
 
 ### Tech Debt
 
@@ -95,19 +92,15 @@ Progress: [##########] 100% (v3: Complete)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: v3 milestone complete
+Stopped at: Phase 13 added
 Resume file: None
 
 ## Next Up
 
-**Audit milestone** — verify all v3 requirements, cross-phase integration
+**Plan Phase 13** — create execution plan for About & Courses overhaul
 
-`/gsd:audit-milestone`
-
-Or archive directly:
-
-`/gsd:complete-milestone`
+`/gsd:plan-phase 13`
 
 ---
 
-*Last updated: 2026-01-23 — v3 milestone shipped*
+*Last updated: 2026-01-23 — Phase 13 added to v3*

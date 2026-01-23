@@ -4,7 +4,7 @@
 
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
-- **v3 Content Cleanup** — Phase 12 (shipped 2026-01-23)
+- **v3 Content Cleanup** — Phases 12-13 (active)
 
 ---
 
@@ -46,6 +46,23 @@ Plans:
 5. Team and Testimonials sections removed
 6. No orphaned CSS, no broken links
 7. Mobile renders correctly
+
+### Phase 13: About & Courses Overhaul
+
+**Goal:** Modernize About section ("Building Education and Mastery") and Courses section ("Invest in Your Future") to match v2 design quality.
+
+**Dependencies:** Phase 12 (content consolidation complete)
+
+**Plans:** 0 plans (run /gsd:plan-phase 13 to break down)
+
+Plans:
+- [ ] TBD
+
+**Success Criteria:**
+1. About section matches v2 visual style
+2. Courses section matches v2 visual style
+3. Consistent typography, spacing, and components
+4. Mobile renders correctly
 
 ---
 
@@ -96,6 +113,7 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
 | 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
+| 13 | v3 | About & Courses Overhaul | Planned | - |
 
 ---
 
@@ -122,4 +140,4 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-23 — Phase 12 complete, v3 milestone shipped*
+*Last updated: 2026-01-23 — Phase 13 added to v3*
