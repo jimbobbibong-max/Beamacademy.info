@@ -6,15 +6,27 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 
 ## Current State
 
-**Version:** v2 (shipped 2026-01-23)
+**Version:** v3 (shipped 2026-01-23)
 **Status:** Live on beamacademy.info
-**Codebase:** 7,921 LOC (HTML/CSS/JS in single index.html)
+**Codebase:** ~7,500 LOC (HTML/CSS/JS in single index.html)
 
 **Performance:**
 - LCP: 0.9s (target <2.5s)
 - CLS: 0.014 (target <0.1)
 - Lighthouse Performance: 88/100
 - Lighthouse SEO: 100/100
+
+## Current Milestone: v4.0 Courses Section Redesign
+
+**Goal:** Complete redesign of the Courses/Pricing section with fresh CSS architecture, research-backed UX patterns, and holistic integration with the rest of the site.
+
+**Why:** Phase 14 (v3) attempted incremental CSS patches which created conflicts. Fresh implementation needed with proper research on pricing page best practices.
+
+**Target:**
+- Clean, maintainable CSS (no duplicates, clear structure)
+- Research-backed pricing/course browser UX
+- Consistent with Hero/Trust/Proof section quality
+- Mobile-first, responsive
 
 ## The Jobs It Does
 
@@ -24,63 +36,40 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 
 3. **Convert to free trial** — Minimize friction between understanding and action. Sticky CTAs, simplified form, clear path to booking.
 
+4. **Help parents choose the right package** — (v4 focus) Clear pricing tiers, easy course browsing, obvious path from "interested" to "booking".
+
 ## Why This Matters
 
 BEAM's differentiator is data-driven personalization: track scores → identify weak spots → generate custom materials. No other tutoring company does this. The v2 redesign makes this instantly visible through portal mockups and document previews — show, don't tell.
 
 ## Requirements
 
-### Validated (v1 + v2)
+### Validated (v1 + v2 + v3)
 
-**v1 Requirements:**
-- VIEW-01: Page renders correctly on mobile without zoom/pan — v1
-- VIEW-02: Form inputs have 16px minimum font-size (iOS zoom prevention) — v1
-- VIEW-03: No horizontal scroll on 320px-428px screens — v1
-- VIEW-04: 44x44px minimum touch targets — v1
-- CTA-01: Primary CTA visible in hero without scrolling — v1
-- CTA-02: Sticky floating CTA bar visible during scroll — v1
-- CTA-03: Click-to-call button functional — v1
-- FORM-01: Contact form reduced to 3-4 essential fields — v1
-- FORM-02: Form inputs use correct types for mobile keyboards — v1
-- FORM-03: Form submit button has large tap target and clear CTA — v1
-- FORM-04: Form reachable without excessive scrolling — v1
-- CONT-01: Hero communicates value proposition clearly — v1
-- CONT-02: Pricing displays cleanly on mobile — v1
-- CONT-03: Trust signals visible near form — v1
-- CONT-04: Mobile hamburger menu works smoothly — v1
-- PERF-01: Images optimized for mobile — v1
-- PERF-02: LCP under 2.5 seconds (achieved 0.9s) — v1
-- PERF-03: No render-blocking resources — v1
+**v1 Requirements:** (18 requirements — mobile conversion)
+- VIEW-01 through VIEW-04: Mobile viewport and touch targets
+- CTA-01 through CTA-03: Hero and sticky CTAs
+- FORM-01 through FORM-04: Optimized contact form
+- CONT-01 through CONT-04: Content and trust signals
+- PERF-01 through PERF-03: Performance optimization
 
-**v2 Requirements:**
-- HERO-01: Headline communicates category + differentiator — v2
-- HERO-02: Portal screenshot visible showing score tracking — v2
-- HERO-03: Category label clearly visible without scrolling — v2
-- HERO-04: Single primary CTA — v2
-- HERO-05: Subheadline explains hook in plain English — v2
-- PROOF-01: 4 documents from ONE trial visualized — v2
-- PROOF-02: "Yours to keep" messaging prominently displayed — v2
-- PROOF-03: Documents shown with visual previews — v2
-- PROOF-04: Topic gap insight shown — v2
-- COMP-01: Generic vs BEAM side-by-side comparison — v2
-- COMP-02: Specific contrasts shown — v2
-- TRUST-01: Tutor profiles with real photos — v2
-- TRUST-02: Credibility combo (Baulko + HSC + Med) — v2
-- TRUST-03: Parent testimonials with specific outcomes — v2
-- TRUST-04: Small group size (6-8 max) visible — v2
-- TRUST-05: School-specific matching mentioned — v2
-- SUPP-01: Discord 24/7 support callout — v2
-- SUPP-02: "Stuck at 9pm?" framing — v2
-- SUPP-03: Discord screenshot showing real exchange — v2
-- CTA-01: Outcome-focused CTA copy — v2
-- CTA-02: Form fields remain optimized — v2
-- MOB-01: All new sections render on mobile — v2
-- MOB-02: Images optimized for mobile loading — v2
-- MOB-03: Sticky CTA bar still functional — v2
+**v2 Requirements:** (24 requirements — messaging overhaul)
+- HERO-01 through HERO-05: Hero section
+- PROOF-01 through PROOF-04: Proof section
+- COMP-01 through COMP-02: Comparison section
+- TRUST-01 through TRUST-05: Trust section
+- SUPP-01 through SUPP-03: Support section
+- CTA-01 through CTA-02: CTAs
+- MOB-01 through MOB-03: Mobile polish
+
+**v3 Requirements:** (14 requirements — content cleanup)
+- DEL-01 through DEL-04: Removed redundant sections
+- MERGE-01 through MERGE-06: Consolidated content
+- QUAL-01 through QUAL-04: Quality after changes
 
 ### Active
 
-(To be defined in next milestone's REQUIREMENTS.md via `/gsd:new-milestone`)
+(To be defined after v4 research — see `.planning/REQUIREMENTS.md`)
 
 ### Out of Scope
 
@@ -108,6 +97,7 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - **Deployment**: Auto-deploy to main, all changes pushed immediately
 - **No frameworks**: Keep vanilla HTML/CSS/JS, no React/Vue/etc
 - **Existing branding**: Keep purple color scheme, Outfit font
+- **v4 constraint**: Clean CSS architecture — no duplicate rules, clear organization
 
 ## Key Decisions
 
@@ -125,6 +115,7 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 | CSS mockups for documents | Preserves LCP performance (no image loads) | ✓ Good — 0.9s LCP maintained |
 | Pure CSS Discord mockup | Faster loads than screenshot, no privacy concerns | ✓ Good — 33-min proof works |
 | Nav CTA shortened | "Free Diagnostic" fits nav; full text on hero/sticky | ✓ Good — no overflow |
+| v4: Fresh CSS over patches | Incremental patches caused conflicts in v3 Phase 14 | — Pending |
 
 ## Tech Debt
 
@@ -135,33 +126,8 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - Some contrast issues (Lighthouse accessibility)
 - Links without discernible names (Lighthouse accessibility)
 
-**v2 polish items (minor):**
-- Nav doesn't link to v2 sections (design decision - acceptable)
-- CTA section copy could be more outcome-focused
-
-## Future Milestones
-
-### v3: SEO + Content Revamp
-Deep research on education/tutoring website SEO, then full content revamp.
-
-Research areas:
-- Tutoring industry SEO best practices
-- Local SEO for Sydney/Epping area
-- Parent search behavior and intent
-- Competitor content analysis
-- Keywords that convert vs just rank
-
-Needs conversion data + research before starting.
-
-### Feature Ideas (bundle into milestones as needed)
-- Multi-step form wizard
-- Personalized CTAs based on ad source
-- A/B testing framework
-- Exit-intent popup
-- Google Reviews widget
-- Video testimonial
-- Live chat widget
-- SMS opt-in
+**v3 learnings:**
+- Courses section CSS is messy/duplicated — v4 will rewrite cleanly
 
 ---
-*Last updated: 2026-01-23 after v2 milestone*
+*Last updated: 2026-01-23 after starting v4 milestone*
