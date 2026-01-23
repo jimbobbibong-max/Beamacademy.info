@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 ## Current Position
 
 Phase: 12 of 12 (Content Consolidation)
-Plan: 01 of 04 complete
+Plan: 02 of 04 complete
 Status: In progress
-Last activity: 2026-01-23 - Completed 12-01-PLAN.md (Content Merge)
+Last activity: 2026-01-23 - Completed 12-02-PLAN.md (Delete Redundant)
 
-Progress: [==--------] 25% (v3: Plan 01 complete)
+Progress: [=====-----] 50% (v3: Plan 02 complete)
 
 ## v3 Phase Overview
 
@@ -27,7 +27,7 @@ Progress: [==--------] 25% (v3: Plan 01 complete)
 | Plan | Name | Tasks | Status | Commits |
 |------|------|-------|--------|---------|
 | 12-01 | Content Merge | 3/3 | COMPLETE | 467bdb6, 53a37cb, 9915290 |
-| 12-02 | Delete Redundant | - | Pending | - |
+| 12-02 | Delete Redundant | 3/3 | COMPLETE | e088ea9, debbac3 |
 | 12-03 | CSS Cleanup | - | Pending | - |
 | 12-04 | JS Cleanup | - | Pending | - |
 
@@ -57,6 +57,13 @@ Progress: [==--------] 25% (v3: Plan 01 complete)
 - Added 3 testimonials (1 parent + 2 students) to Trust section
 - Updated CSS to grid layout for 4 tutors
 
+**Delete Redundant (12-02):**
+- Deleted Why Us section (6 feature cards)
+- Deleted Portal section (mockup)
+- Deleted Team section (consolidated in Trust)
+- Deleted Testimonials section (consolidated in Trust)
+- Removed 5 nav links to deleted sections
+
 ### Decisions Made (12-01 + 12-02)
 
 | Decision | Rationale |
@@ -78,20 +85,21 @@ Progress: [==--------] 25% (v3: Plan 01 complete)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: Completed 12-01-PLAN.md (Content Merge)
+Stopped at: Completed 12-02-PLAN.md (Delete Redundant)
 Resume file: None
 
 ## Next Up
 
-**Plan 12-02: Delete Redundant** - remove Why Us, Portal, Team, Testimonials sections
+**Plan 12-03: CSS Cleanup** - remove orphaned CSS for deleted sections
 
 Completed so far:
 - Phase 12-01: Content merged into Trust section (Taehoon + testimonials)
+- Phase 12-02: Deleted 4 redundant sections, cleaned nav links
 
 **Options:**
-- Execute 12-02-PLAN.md to delete redundant sections
-- Verify 12-01 content merge
+- Execute 12-03-PLAN.md to clean up orphaned CSS
+- Verify HTML structure after deletions
 
 ---
 
-*Last updated: 2026-01-23 - 12-01 complete*
+*Last updated: 2026-01-23 - 12-02 complete*
