@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-22)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v2 Messaging Overhaul — Phase 10 (Support Section) COMPLETE
+**Current focus:** v2 Messaging Overhaul - Phase 11 (CTA & Mobile Polish) IN PROGRESS
 
 ## Current Position
 
-Phase: 10 - Support Section (COMPLETE)
-Plan: 01 of 01 complete (Discord Support Callout)
-Status: Phase 10 complete - all plans executed and verified
-Last activity: 2026-01-23 — Completed 10-01 support section
+Phase: 11 - CTA & Mobile Polish (IN PROGRESS)
+Plan: 01 of 02 complete (CTA Outcome-Focused Copy)
+Status: Plan 11-01 complete - CTA copy updated, ready for 11-02 mobile polish
+Last activity: 2026-01-23 - Completed 11-01 CTA updates
 
-Progress: [#######---] 70% (v2: Phase 10 complete, ready for Phase 11)
+Progress: [########--] 80% (v2: Phase 11 plan 01 complete, plan 02 remaining)
 
 ## v2 Phase Overview
 
@@ -25,7 +25,7 @@ Progress: [#######---] 70% (v2: Phase 10 complete, ready for Phase 11)
 | 8 | Comparison Section | COMP-01 to COMP-02 | COMPLETE |
 | 9 | Trust Section | TRUST-01 to TRUST-05 | COMPLETE |
 | 10 | Support Section | SUPP-01 to SUPP-03 | COMPLETE |
-| 11 | CTA & Mobile Polish | CTA-01/02, MOB-01/02/03 | Ready |
+| 11 | CTA & Mobile Polish | CTA-01/02, MOB-01/02/03 | Plan 01 COMPLETE |
 
 ## Milestone History
 
@@ -66,7 +66,7 @@ Progress: [#######---] 70% (v2: Phase 10 complete, ready for Phase 11)
 | "Teachers miss" framing | More credible than "parents miss" for gap identification |
 | Pure CSS Discord mockup | Faster loads than screenshot, no privacy concerns |
 | 33-min response time proof | Specific timestamps (9:14 PM, 9:47 PM) beat vague claims |
-| Chris in Discord mockup | Tutor recognition continuity from Trust section |
+| Chris in Discord mockup | Tutor recognition continuity from Trust sectionn| "Get My" for form submit | Personal pronoun creates ownership at conversion point |
 
 ### Research Insights
 
@@ -86,18 +86,16 @@ Progress: [#######---] 70% (v2: Phase 10 complete, ready for Phase 11)
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: Completed 10-01-PLAN.md (Phase 10 complete)
+Stopped at: Completed 11-01-PLAN.md (CTA outcome-focused copy)
 Resume file: None
 
 ## Next Up
 
-**Phase 11: CTA & Mobile Polish** - Ready to plan and execute
+**Phase 11 Plan 02: Mobile Polish** - Ready to plan and execute
 
-**Phase 10 Requirements (ALL VERIFIED):**
-- SUPP-01: Discord 24/7 support callout section exists with badge and headline
-- SUPP-02: "Stuck at 9pm? Help by 10am." framing is the main headline
-- SUPP-03: Discord mockup shows realistic exchange with visible timestamps proving ~30 min response
+**Phase 11 Plan 01 Requirements (ALL VERIFIED):**
+- CTA-01: All primary CTAs say "Get Your Free Diagnostic" (7 instances)n- CTA-02: Form has 3-4 visible fields (verified: 4 fields - Name, Email, Phone, Year Level)
 
 ---
 
-*Last updated: 2026-01-23 — Completed Phase 10 Support Section*
+*Last updated: 2026-01-23 ??Completed Phase 10 Support Section*
