@@ -423,7 +423,7 @@
             left: 50%;
             width: 0;
             height: 2px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             transition: all 0.3s ease;
             transform: translateX(-50%);
             border-radius: 2px;
@@ -765,7 +765,7 @@
         }
 
         .hero-testimonial .testimonial-star {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 4px 10px;
             border-radius: 100px;
@@ -961,7 +961,7 @@
         .floating-card-icon {
             width: 48px;
             height: 48px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -2027,7 +2027,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -2107,7 +2107,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -2190,7 +2190,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -2205,21 +2205,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -2232,6 +2237,24 @@
             .pricing-tier-new.featured-tier {
                 transform: none;
                 order: -1;
+            }
+
+            .pricing-tier-new {
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .pricing-tier-new:hover {
+                transform: none;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .course-card {
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            .course-card:hover {
+                transform: none;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
             }
         }
 
@@ -2320,7 +2343,7 @@
         }
 
         .package-card.featured {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-500);
         }
 
@@ -2561,15 +2584,19 @@
             font-family: var(--font-display);
             font-size: 0.85rem;
             font-weight: 600;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             border: none;
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
         }
 
-        .course-btn:hover { background: var(--purple-700); }
+        .course-btn:hover {
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+        }
 
         .pricing-note {
             text-align: center;
@@ -2587,7 +2614,7 @@
         .testimonial-avatar {
             width: 48px;
             height: 48px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2818,7 +2845,7 @@
         }
 
         .social-link:hover {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             transform: translateY(-2px);
         }
 
@@ -3231,7 +3258,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -3311,7 +3338,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -3394,7 +3421,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -3409,21 +3436,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -3491,7 +3523,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -3571,7 +3603,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -3654,7 +3686,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -3669,21 +3701,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -4529,7 +4566,7 @@
         }
 
         .subject-option input:checked + .subject-checkbox {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
         }
 
@@ -4613,7 +4650,7 @@
         }
 
         .modal-subjects.all-access .subject-checkbox {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
         }
 
