@@ -4,7 +4,7 @@
 
 - **v1 Mobile Conversion** — Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md)
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
-- **v3 Content Cleanup** — Phase 12 (active)
+- **v3 Content Cleanup** — Phase 12 (shipped 2026-01-23)
 
 ---
 
@@ -21,10 +21,10 @@
 **Plans:** 4 plans in 3 waves
 
 Plans:
-- [ ] 12-01-PLAN.md — Merge Taehoon + student testimonials into Trust section
-- [ ] 12-02-PLAN.md — Remove redundant HTML (Why Us, Portal, Team, Testimonials)
-- [ ] 12-03-PLAN.md — Remove orphaned CSS (Why Us, Portal, Team)
-- [ ] 12-04-PLAN.md — Clean Testimonials CSS, verify links, mobile verification
+- [x] 12-01-PLAN.md — Merge Taehoon + student testimonials into Trust section
+- [x] 12-02-PLAN.md — Remove redundant HTML (Why Us, Portal, Team, Testimonials)
+- [x] 12-03-PLAN.md — Remove orphaned CSS (Why Us, Portal, Team)
+- [x] 12-04-PLAN.md — Clean Testimonials CSS, verify links, mobile verification
 
 **Wave Structure:**
 | Wave | Plans | Description |
@@ -95,7 +95,7 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 | 9 | v2 | Trust Section | Complete | 2026-01-23 |
 | 10 | v2 | Support Section | Complete | 2026-01-23 |
 | 11 | v2 | CTA & Mobile Polish | Complete | 2026-01-23 |
-| 12 | v3 | Content Consolidation | Planned | - |
+| 12 | v3 | Content Consolidation | Complete | 2026-01-23 |
 
 ---
 
@@ -103,23 +103,23 @@ See: [milestones/v2-ROADMAP.md](milestones/v2-ROADMAP.md) for full details.
 
 | Requirement | Phase | Plan | Status |
 |-------------|-------|------|--------|
-| DEL-01 | Phase 12 | 12-02 | Pending |
-| DEL-02 | Phase 12 | 12-02 | Pending |
-| DEL-03 | Phase 12 | 12-03 | Pending |
-| DEL-04 | Phase 12 | 12-03 | Pending |
-| MERGE-01 | Phase 12 | 12-01 | Pending |
-| MERGE-02 | Phase 12 | 12-01 | Pending |
-| MERGE-03 | Phase 12 | 12-02 | Pending |
-| MERGE-04 | Phase 12 | 12-02 | Pending |
-| MERGE-05 | Phase 12 | 12-03 | Pending |
-| MERGE-06 | Phase 12 | 12-04 | Pending |
-| QUAL-01 | Phase 12 | 12-04 | Pending |
-| QUAL-02 | Phase 12 | 12-02 | Pending |
-| QUAL-03 | Phase 12 | 12-04 | Pending |
-| QUAL-04 | Phase 12 | 12-03, 12-04 | Pending |
+| DEL-01 | Phase 12 | 12-02 | Complete |
+| DEL-02 | Phase 12 | 12-02 | Complete |
+| DEL-03 | Phase 12 | 12-03 | Complete |
+| DEL-04 | Phase 12 | 12-03 | Complete |
+| MERGE-01 | Phase 12 | 12-01 | Complete |
+| MERGE-02 | Phase 12 | 12-01 | Complete |
+| MERGE-03 | Phase 12 | 12-02 | Complete |
+| MERGE-04 | Phase 12 | 12-02 | Complete |
+| MERGE-05 | Phase 12 | 12-03 | Complete |
+| MERGE-06 | Phase 12 | 12-04 | Complete |
+| QUAL-01 | Phase 12 | 12-04 | Complete |
+| QUAL-02 | Phase 12 | 12-02 | Complete |
+| QUAL-03 | Phase 12 | 12-04 | Complete |
+| QUAL-04 | Phase 12 | 12-03, 12-04 | Complete |
 
-**v3 Requirements:** 14 total | **Mapped:** 14 | **Unmapped:** 0
+**v3 Requirements:** 14 total | **Complete:** 14 | **Pending:** 0
 
 ---
 
-*Last updated: 2026-01-23 — Phase 12 planned (4 plans, 3 waves)*
+*Last updated: 2026-01-23 — Phase 12 complete, v3 milestone shipped*

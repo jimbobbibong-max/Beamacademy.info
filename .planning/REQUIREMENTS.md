@@ -7,26 +7,26 @@
 
 ### Deletion
 
-- [ ] **DEL-01**: Remove "Why Us" section (6 feature cards) — all content covered by v2 sections
-- [ ] **DEL-02**: Remove "Portal" section — hero already has portal mockup
-- [ ] **DEL-03**: Remove "Why Us" CSS — clean up unused styles
-- [ ] **DEL-04**: Remove "Portal" CSS — clean up unused styles
+- [x] **DEL-01**: Remove "Why Us" section (6 feature cards) — all content covered by v2 sections
+- [x] **DEL-02**: Remove "Portal" section — hero already has portal mockup
+- [x] **DEL-03**: Remove "Why Us" CSS — clean up unused styles
+- [x] **DEL-04**: Remove "Portal" CSS — clean up unused styles
 
 ### Consolidation
 
-- [ ] **MERGE-01**: Add Taehoon Kim to Trust section tutor profiles (4th tutor)
-- [ ] **MERGE-02**: Add 1-2 student testimonials to Trust section (alongside parent quote)
-- [ ] **MERGE-03**: Remove standalone Team section after merge
-- [ ] **MERGE-04**: Remove standalone Testimonials section after merge
-- [ ] **MERGE-05**: Remove Team CSS — clean up unused styles
-- [ ] **MERGE-06**: Remove Testimonials CSS — clean up unused styles
+- [x] **MERGE-01**: Add Taehoon Kim to Trust section tutor profiles (4th tutor)
+- [x] **MERGE-02**: Add 1-2 student testimonials to Trust section (alongside parent quote)
+- [x] **MERGE-03**: Remove standalone Team section after merge
+- [x] **MERGE-04**: Remove standalone Testimonials section after merge
+- [x] **MERGE-05**: Remove Team CSS — clean up unused styles
+- [x] **MERGE-06**: Remove Testimonials CSS — clean up unused styles
 
 ### Quality
 
-- [ ] **QUAL-01**: Trust section renders correctly on mobile (320px-428px)
-- [ ] **QUAL-02**: Page section order makes sense after removals
-- [ ] **QUAL-03**: No broken internal links (nav, skip links)
-- [ ] **QUAL-04**: No orphaned CSS (all removed section styles cleaned)
+- [x] **QUAL-01**: Trust section renders correctly on mobile (320px-428px)
+- [x] **QUAL-02**: Page section order makes sense after removals
+- [x] **QUAL-03**: No broken internal links (nav, skip links)
+- [x] **QUAL-04**: No orphaned CSS (all removed section styles cleaned)
 
 ## Out of Scope
 
@@ -42,25 +42,25 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DEL-01 | Phase 12 | Pending |
-| DEL-02 | Phase 12 | Pending |
-| DEL-03 | Phase 12 | Pending |
-| DEL-04 | Phase 12 | Pending |
-| MERGE-01 | Phase 12 | Pending |
-| MERGE-02 | Phase 12 | Pending |
-| MERGE-03 | Phase 12 | Pending |
-| MERGE-04 | Phase 12 | Pending |
-| MERGE-05 | Phase 12 | Pending |
-| MERGE-06 | Phase 12 | Pending |
-| QUAL-01 | Phase 12 | Pending |
-| QUAL-02 | Phase 12 | Pending |
-| QUAL-03 | Phase 12 | Pending |
-| QUAL-04 | Phase 12 | Pending |
+| DEL-01 | Phase 12 | Complete |
+| DEL-02 | Phase 12 | Complete |
+| DEL-03 | Phase 12 | Complete |
+| DEL-04 | Phase 12 | Complete |
+| MERGE-01 | Phase 12 | Complete |
+| MERGE-02 | Phase 12 | Complete |
+| MERGE-03 | Phase 12 | Complete |
+| MERGE-04 | Phase 12 | Complete |
+| MERGE-05 | Phase 12 | Complete |
+| MERGE-06 | Phase 12 | Complete |
+| QUAL-01 | Phase 12 | Complete |
+| QUAL-02 | Phase 12 | Complete |
+| QUAL-03 | Phase 12 | Complete |
+| QUAL-04 | Phase 12 | Complete |
 
 **Coverage:**
 - v3 requirements: 14 total
-- Mapped to phases: 14
-- Unmapped: 0
+- Complete: 14
+- Pending: 0
 
 ---
-*Requirements defined: 2026-01-23*
+*Requirements completed: 2026-01-23*
