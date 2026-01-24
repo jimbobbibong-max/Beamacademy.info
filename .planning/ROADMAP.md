@@ -7,6 +7,7 @@
 - **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
 - **v4 Courses Section Redesign** — Phases 14-16 (shipped 2026-01-24) | [Archive](milestones/v4-ROADMAP.md)
 - **v5 Courses Section Overhaul** — Phases 17-19 (shipped 2026-01-24) | [Archive](milestones/v5-ROADMAP.md)
+- **v6 Anti-AI Polish** — Phase 20+ (planned) | Real screenshots after portal overhaul
 
 ---
 

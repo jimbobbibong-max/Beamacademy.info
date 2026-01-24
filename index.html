@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ivuD2wpOgRbh5b1R4syCAOSigaU0Wp0584VIWF4kjHA">
     <title>BEAM Academy | High School Tutoring in Epping, Sydney</title>
-    <meta name="description" content="BEAM Academy provides expert tutoring for Years 7-12 in Mathematics, English, Physics, and Chemistry. Small classes, personalised learning, proven results.">
+    <meta name="description" content="BEAM Academy provides expert tutoring for Years 7-12 in Mathematics, English, Physics, and Chemistry. Personalised diagnostics, targeted practice, proven results.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -16,14 +16,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beamacademy.info/">
     <meta property="og:title" content="BEAM Academy | High School Tutoring in Epping, Sydney">
-    <meta property="og:description" content="Expert tutoring for Years 7-12 by Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics. Small classes, personalised learning, proven results.">
+    <meta property="og:description" content="Expert tutoring for Years 7-12 by Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics. Personalised diagnostics, targeted practice, proven results.">
     <meta property="og:image" content="https://beamacademy.info/logo-banner.jpg">
     <meta property="og:locale" content="en_AU">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BEAM Academy | High School Tutoring in Epping, Sydney">
-    <meta name="twitter:description" content="Expert tutoring for Years 7-12 by Baulkham Hills High School graduates. Small classes, personalised learning, proven results.">
+    <meta name="twitter:description" content="Expert tutoring for Years 7-12 by Baulkham Hills High School graduates. Personalised diagnostics, targeted practice, proven results.">
     <meta name="twitter:image" content="https://beamacademy.info/logo-banner.jpg">
     
     <!-- Additional Meta -->
@@ -104,7 +104,6 @@
         }
     }
     </script>
-    
 
     <!-- Google Ads gtag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17832807956"></script>
@@ -423,7 +422,7 @@
             left: 50%;
             width: 0;
             height: 2px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             transition: all 0.3s ease;
             transform: translateX(-50%);
             border-radius: 2px;
@@ -733,6 +732,13 @@
             flex-wrap: wrap;
         }
 
+        .hero-risk-reversal {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
         .hero-returning {
             margin-top: 20px;
             font-size: 0.9rem;
@@ -765,7 +771,7 @@
         }
 
         .hero-testimonial .testimonial-star {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 4px 10px;
             border-radius: 100px;
@@ -780,7 +786,7 @@
 
         .hero-card {
             background: white;
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--gray-200);
@@ -961,7 +967,7 @@
         .floating-card-icon {
             width: 48px;
             height: 48px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -1038,6 +1044,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 900px;
             margin: 0 auto;
         }
@@ -1398,6 +1405,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 40px;
         }
@@ -1405,8 +1413,8 @@
         .tutor-card {
             text-align: center;
             background: white;
-            border-radius: 24px;
-            padding: 28px;
+            border-radius: 20px;
+            padding: 20px;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid var(--gray-100);
         }
@@ -1418,12 +1426,12 @@
         }
 
         .tutor-image {
-            width: 220px;
-            height: 220px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             overflow: hidden;
             margin: 0 auto 24px;
-            background: linear-gradient(135deg, var(--purple-100), var(--purple-200));
+            background: white;
             box-shadow: 0 6px 20px rgba(124, 58, 237, 0.15);
         }
 
@@ -1496,6 +1504,7 @@
             align-items: center;
             justify-content: center;
             gap: 24px;
+            justify-content: center;
             background: var(--purple-50);
             border: 2px solid var(--purple-200);
             border-radius: 20px;
@@ -1548,6 +1557,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
+            justify-content: center;
             max-width: 1000px;
             margin: 0 auto;
         }
@@ -1564,7 +1574,7 @@
 
         .trust-testimonial {
             background: white;
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 40px;
             border: 1px solid var(--gray-100);
             max-width: 700px;
@@ -1600,6 +1610,7 @@
         /* ========== Support Section ========== */
         .support-section {
             padding: var(--section-padding);
+            padding-bottom: 100px;
             background: var(--gray-50);
         }
 
@@ -1740,67 +1751,6 @@
             line-height: 1.4;
         }
 
-        /* Support Features */
-        .support-features {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 40px;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .support-feature {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .support-feature-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--purple-100);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--purple-700);
-            flex-shrink: 0;
-        }
-
-        .support-feature-icon svg {
-            width: 24px;
-            height: 24px;
-        }
-
-        .support-feature-text {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            color: var(--gray-700);
-            font-weight: 500;
-        }
-
-        /* Desktop: Side-by-side layout */
-        @media (min-width: 900px) {
-            .support-content {
-                display: flex;
-                justify-content: center;
-                gap: 60px;
-                align-items: flex-start;
-            }
-
-            .discord-mockup {
-                flex: 0 1 500px;
-                margin: 0;
-            }
-
-            .support-features {
-                flex: 0 1 320px;
-                margin-top: 0;
-            }
-        }
-
         /* About */
         .about { background: var(--gray-50); }
 
@@ -1814,7 +1764,7 @@
         .about-image { position: relative; }
 
         .about-image-main {
-            border-radius: 24px;
+            border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             background: linear-gradient(135deg, var(--purple-200), var(--purple-300));
@@ -1975,6 +1925,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -2027,7 +1978,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -2107,7 +2058,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -2134,7 +2085,6 @@
         .tier-packages li.all-access:hover {
             background: rgba(124, 58, 237, 0.25);
         }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -2190,7 +2140,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -2205,21 +2155,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -2253,11 +2208,11 @@
             }
         }
 
-
         .pricing-tiers {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
@@ -2266,7 +2221,7 @@
 
         .pricing-tier {
             background: var(--gray-800);
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 40px;
             border: 1px solid var(--gray-700);
             text-align: center;
@@ -2338,7 +2293,7 @@
         }
 
         .package-card.featured {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-500);
         }
 
@@ -2463,12 +2418,76 @@
             width: 100%;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 24px;
+            justify-content: center;
+        }
+
+        /* Collapsible Course Browser */
+        .course-browser-container {
+            width: 100%;
+        }
+
+        .course-browser-container[data-expanded="false"] .courses-grid {
+            max-height: 520px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .course-browser-container[data-expanded="false"] .courses-grid::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, transparent, var(--gray-900));
+            pointer-events: none;
+        }
+
+        .course-browser-container[data-expanded="true"] .courses-grid {
+            max-height: none;
+        }
+
+        .course-browser-container[data-expanded="true"] .courses-grid::after {
+            display: none;
+        }
+
+        .course-browser-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 28px auto 0;
+            padding: 14px 28px;
+            background: transparent;
+            border: 2px solid var(--purple-500);
+            color: var(--purple-300);
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .course-browser-toggle:hover {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: var(--purple-400);
+            color: var(--purple-200);
+        }
+
+        .course-browser-toggle .toggle-icon {
+            transition: transform 0.3s ease;
+            font-size: 0.85rem;
+        }
+
+        .course-browser-container[data-expanded="true"] .toggle-icon {
+            transform: rotate(180deg);
         }
 
         .course-card {
             background: var(--gray-800);
             border-radius: 20px;
-            padding: 28px;
+            padding: 20px;
             border: 1px solid var(--gray-700);
             transition: all 0.3s ease;
             display: flex;
@@ -2579,15 +2598,19 @@
             font-family: var(--font-display);
             font-size: 0.85rem;
             font-weight: 600;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             border: none;
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
         }
 
-        .course-btn:hover { background: var(--purple-700); }
+        .course-btn:hover {
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+        }
 
         .pricing-note {
             text-align: center;
@@ -2605,7 +2628,7 @@
         .testimonial-avatar {
             width: 48px;
             height: 48px;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2651,6 +2674,7 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
+            justify-content: center;
         }
 
         .contact-item {
@@ -2683,10 +2707,11 @@
             font-size: 1.1rem;
             color: var(--gray-900);
         }
+        /* Form trust signal */        .form-trust-signal {            display: flex;            align-items: center;            gap: 12px;            padding: 16px 20px;            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(124, 58, 237, 0.04) 100%);            border-radius: 12px;            margin-top: 24px;            border: 1px solid rgba(124, 58, 237, 0.15);        }        .form-trust-signal .trust-rating {            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));            color: white;            padding: 6px 12px;            border-radius: 100px;            font-weight: 600;            font-size: 0.9rem;            white-space: nowrap;        }        .form-trust-signal .trust-text {            font-size: 0.95rem;            color: var(--gray-700);            line-height: 1.4;        }        .form-trust-signal .trust-text strong {            color: var(--purple-700);        }        @media (max-width: 600px) {            .form-trust-signal {                flex-direction: column;                text-align: center;                gap: 8px;            }        }
 
         .contact-form-wrapper {
             background: var(--white);
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 40px;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
         }
@@ -2755,42 +2780,46 @@
             gap: 16px;
         }
 
-        /* CTA */
-        .cta {
-            background: var(--purple-700);
-            color: white;
+        /* Section CTA - subtle CTAs after value sections */
+        .section-cta {
             text-align: center;
-            padding: 80px 0;
-            position: relative;
-            overflow: hidden;
+            padding: 32px 24px;
+            margin-top: 40px;
         }
 
-        .cta::before {
-            display: none;
-        }
-
-        .cta h2 {
-            font-size: clamp(2rem, 4vw, 2.75rem);
-            margin-bottom: 16px;
-        }
-
-        .cta p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 32px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta .btn-primary {
-            background: var(--white);
+        .section-cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             color: var(--purple-700);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
         }
 
-        .cta .btn-primary:hover {
-            background: var(--gray-100);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        .section-cta-link:hover {
+            color: var(--purple-800);
+            transform: translateX(4px);
+        }
+
+        .section-cta-link svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .section-cta-link:hover svg {
+            transform: translateX(4px);
+        }
+
+        .section-cta-risk {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            font-weight: 400;
         }
 
         /* Footer */
@@ -2836,7 +2865,7 @@
         }
 
         .social-link:hover {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             transform: translateY(-2px);
         }
 
@@ -2877,6 +2906,7 @@
         .footer-legal {
             display: flex;
             gap: 24px;
+            justify-content: center;
         }
 
         .footer-legal a:hover { color: var(--purple-400); }
@@ -3101,6 +3131,61 @@
             }
         }
 
+        /* Pricing Section Sticky CTA (Courses section only) */
+        .pricing-sticky-cta {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-sticky-cta {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--gray-900);
+                padding: 14px 16px;
+                padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                z-index: 90;
+                border-top: 1px solid var(--gray-700);
+                transform: translateY(100%);
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .pricing-sticky-cta.visible {
+                transform: translateY(0);
+            }
+
+            .sticky-cta-btn {
+                background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+                color: white;
+                padding: 14px 32px;
+                border-radius: 100px;
+                font-family: var(--font-display);
+                font-weight: 600;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+                text-decoration: none;
+                box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+                transition: all 0.2s ease;
+            }
+
+            .sticky-cta-btn:hover {
+                background: linear-gradient(135deg, var(--purple-700), var(--purple-800));
+            }
+
+            .sticky-cta-note {
+                font-size: 0.75rem;
+                color: var(--gray-400);
+            }
+        }
+
         /* Reposition floating contact button when sticky bar is visible */
         .sticky-cta-bar.visible ~ .floating-contact {
             bottom: 90px;
@@ -3223,6 +3308,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -3249,7 +3335,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -3329,7 +3415,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -3356,7 +3442,6 @@
         .tier-packages li.all-access:hover {
             background: rgba(124, 58, 237, 0.25);
         }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -3412,7 +3497,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -3427,21 +3512,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -3456,7 +3546,6 @@
                 order: -1;
             }
         }
-
 
         .pricing-tiers {
                 grid-template-columns: 1fr 1fr;
@@ -3477,12 +3566,12 @@
                 gap: 60px;
             }
 
-    
         /* New Cleaner Pricing Design */
         .pricing-tiers-new {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -3509,7 +3598,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 6px 20px;
             border-radius: 20px;
@@ -3589,7 +3678,7 @@
         .pkg-badge {
             flex-shrink: 0;
             white-space: nowrap;
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
             padding: 2px 6px;
             border-radius: 4px;
@@ -3616,7 +3705,6 @@
         .tier-packages li.all-access:hover {
             background: rgba(124, 58, 237, 0.25);
         }
-
 
         .pkg-name {
             white-space: nowrap;
@@ -3672,7 +3760,7 @@
         }
 
         .tier-packages li.all-access .pkg-save {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             color: white;
         }
 
@@ -3687,21 +3775,26 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
         }
 
         .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            border-color: var(--purple-600);
             color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
 
         .featured-tier .tier-cta {
-            background: var(--purple-600);
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
             color: white;
         }
 
         .featured-tier .tier-cta:hover {
-            background: var(--purple-500);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
             border-color: var(--purple-500);
         }
 
@@ -3773,7 +3866,6 @@
                 font-size: 1.5rem;
             }
         }
-
 
         .pricing-tiers {
                 grid-template-columns: 1fr;
@@ -4008,7 +4100,7 @@
             }
 
             .trust-testimonial {
-                padding: 28px;
+                padding: 20px;
             }
 
             .parent-quote {
@@ -4044,24 +4136,6 @@
 
             .discord-timestamp {
                 font-size: 0.7rem;
-            }
-
-            .support-features {
-                gap: 16px;
-            }
-
-            .support-feature-icon {
-                width: 40px;
-                height: 40px;
-            }
-
-            .support-feature-icon svg {
-                width: 20px;
-                height: 20px;
-            }
-
-            .support-feature-text {
-                font-size: 0.9rem;
             }
         }
 
@@ -4328,7 +4402,6 @@
             text-decoration: underline;
         }
 
-        
         .form-section-label {
             font-size: 0.8rem;
             font-weight: 600;
@@ -4351,6 +4424,14 @@
             font-size: 0.85rem;
             margin-top: 12px;
             margin-bottom: 0;
+        }
+        .form-next-step {
+            text-align: center;
+            color: var(--gray-600);
+            font-size: 0.85rem;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-style: italic;
         }
 
         /* Hide manual selection when package is chosen */
@@ -4407,7 +4488,7 @@
         .modal-content {
             position: relative;
             background: white;
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 40px;
             max-width: 480px;
             width: 90%;
@@ -4547,7 +4628,7 @@
         }
 
         .subject-option input:checked + .subject-checkbox {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
         }
 
@@ -4631,7 +4712,7 @@
         }
 
         .modal-subjects.all-access .subject-checkbox {
-            background: var(--purple-600);
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
             border-color: var(--purple-600);
         }
 
@@ -4666,7 +4747,7 @@
         .policy-modal-content {
             position: relative;
             background: white;
-            border-radius: 24px;
+            border-radius: 20px;
             padding: 48px;
             max-width: 640px;
             width: 90%;
@@ -4755,13 +4836,13 @@
             transform: translateY(-2px);
         }
 
-/* All Access Hero Banner */
+/* All Access Hero Banner - Enhanced Anchor Pricing */
         .all-access-hero {
             background: linear-gradient(135deg, var(--purple-700), var(--purple-600));
             width: 100%;
             box-sizing: border-box;
             border-radius: 20px;
-            padding: 32px 40px;
+            padding: 36px 44px;
             margin-bottom: 40px;
             display: flex;
             justify-content: space-between;
@@ -4770,13 +4851,14 @@
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
         }
-        
+
         .all-access-hero:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.45), inset 0 1px 0 rgba(255,255,255,0.1);
         }
-        
+
         .all-access-hero::before {
             content: '';
             position: absolute;
@@ -4784,111 +4866,263 @@
             right: -50%;
             width: 100%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
             pointer-events: none;
         }
-        
+
         .all-access-hero-content {
             position: relative;
             z-index: 1;
         }
-        
+
         .all-access-hero-badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.25);
             color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 6px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 8px 16px;
             border-radius: 100px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
-        
+
         .all-access-hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.75rem;
+            font-size: 1.9rem;
             font-weight: 700;
             color: white;
             margin-bottom: 8px;
         }
-        
+
         .all-access-hero-desc {
             color: rgba(255,255,255,0.9);
             font-size: 1rem;
             max-width: 500px;
         }
-        
+
+        .all-access-hero-subtext {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
         .all-access-hero-pricing {
             position: relative;
             z-index: 1;
             text-align: right;
             display: flex;
-            gap: 24px;
+            gap: 28px;
             align-items: center;
         }
-        
+
         .all-access-price-box {
             text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.15);
         }
-        
+
         .all-access-price-label {
             font-size: 0.85rem;
-            color: rgba(255,255,255,0.8);
-            margin-bottom: 4px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 6px;
+            font-weight: 500;
         }
-        
+
         .all-access-price {
             font-family: 'Outfit', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.25rem;
+            font-weight: 800;
             color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.15);
         }
-        
+
         .all-access-price span {
             font-size: 1rem;
             font-weight: 400;
             opacity: 0.8;
         }
-        
+
         .all-access-hero-cta {
             background: white;
             color: var(--purple-700);
-            padding: 14px 28px;
+            padding: 16px 32px;
             border-radius: 100px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1rem;
             text-decoration: none;
             white-space: nowrap;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        
+
         .all-access-hero-cta:hover {
             transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         }
-        
+
         @media (max-width: 900px) {
             .all-access-hero {
                 flex-direction: column;
                 text-align: center;
                 padding: 28px 24px;
                 gap: 24px;
+            justify-content: center;
             }
             .all-access-hero-content { text-align: center; }
             .all-access-hero-desc { max-width: none; }
-            .all-access-hero-pricing { 
-                flex-direction: column; 
+            .all-access-hero-pricing {
+                flex-direction: column;
                 gap: 16px;
             }
             .all-access-price-box {
                 display: flex;
                 gap: 20px;
                 justify-content: center;
+                padding: 12px 16px;
             }
         }
 
+        /* Pricing Social Proof Stats Strip */
+        .pricing-social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            padding: 20px 24px;
+            margin: 0 auto 24px;
+            max-width: 700px;
+            background: var(--gray-50);
+            border-radius: 16px;
+            border: 1px solid var(--gray-100);
+        }
 
-        /* Payment Choice Styles */
+        .proof-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .proof-number {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--purple-600);
+            line-height: 1.2;
+        }
+
+        .proof-label {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-social-proof {
+                gap: 24px;
+            justify-content: center;
+                padding: 16px 20px;
+            }
+            .proof-number {
+                font-size: 1.4rem;
+            }
+            .proof-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Pricing Testimonial */
+        .pricing-testimonial {
+            max-width: 680px;
+            margin: 40px auto;
+            padding: 28px 32px;
+            background: linear-gradient(135deg, var(--purple-50), white);
+            border-left: 4px solid var(--purple-500);
+            border-radius: 0 16px 16px 0;
+            position: relative;
+        }
+
+        .pricing-testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 12px;
+            left: 16px;
+            font-size: 3rem;
+            font-family: Georgia, serif;
+            color: var(--purple-200);
+            line-height: 1;
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-700);
+            font-style: italic;
+            margin: 0 0 16px 0;
+            padding-left: 24px;
+        }
+
+        .testimonial-cite {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding-left: 24px;
+            font-style: normal;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--gray-800);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-school {
+            color: var(--gray-500);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-testimonial {
+                padding: 24px 20px;
+                margin: 32px 16px;
+            }
+            .pricing-testimonial::before {
+                font-size: 2.5rem;
+                top: 8px;
+                left: 10px;
+            }
+            .testimonial-quote {
+                font-size: 1rem;
+                padding-left: 20px;
+            }
+            .testimonial-cite {
+                padding-left: 20px;
+            }
+        }
+
+        /* Risk Reversal Badge */
+        .tier-risk-reversal {
+            display: block;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 10px;
+        }
+
+        .tier-risk-reversal svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: -2px;
+            margin-right: 4px;
+            stroke: var(--green-500);
+        }
+/* Payment Choice Styles */
         .payment-choice {
             display: none;
             margin-top: 1.5rem;
@@ -5252,10 +5486,8 @@
                     BEAM Academy
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#courses" class="nav-link">Courses & Pricing</a></li>
                                                             <li><a href="#faq" class="nav-link">FAQ</a></li>
-                    <li><a href="https://beamffef.netlify.app/login" class="nav-link" target="_blank" rel="noopener">Student Portal</a></li>
                     <li><a href="#contact" class="nav-cta nav-cta-secondary" data-action="pay">Pay Now</a></li>
                     <li><a href="#contact" class="nav-cta">Free Diagnostic</a></li>
                 </ul>
@@ -5271,10 +5503,8 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
         <ul class="mobile-nav-links">
-            <li><a href="#about">About</a></li>
             <li><a href="#courses">Courses & Pricing</a></li>
                                     <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://beamffef.netlify.app/login" target="_blank" rel="noopener">Student Portal</a></li>
             <li><a href="#contact" data-action="pay" class="mobile-pay-link">Pay Now</a></li>
             <li><a href="#contact">Get Your Free Diagnostic</a></li>
         </ul>
@@ -5287,17 +5517,18 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <div class="hero-category">HSC Tutoring</div>
-                        <h1>Tutoring That Adapts to <span>Their Weak Spots</span></h1>
+                        <h1>Watch Their Grades <span>Climb</span></h1>
                         <p class="hero-description">
                             We track scores topic by topic. Their worksheets target exactly what they need to improve.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Get Your Free Diagnostic</a>
+                            <a href="#contact" class="btn btn-primary">Get My Free Diagnostic</a>
                         </div>
+                        <p class="hero-risk-reversal">Free lesson. No payment required. Keep the diagnostic either way.</p>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
                         <div class="hero-testimonial">
                             <span class="testimonial-star">5.0</span>
-                            <span>"The teachers explain everything so well." - Luke K, Year 8</span>
+                            <span>"His Maths improved from 68% to 89%." - Parent, BHHS Year 11</span>
                         </div>
                     </div>
                     <div class="hero-visual">
@@ -5477,6 +5708,15 @@
                 <div class="proof-insight">
                     <span class="insight-text">The gap teachers miss: specific topics like "Integration by Parts", not just "needs improvement"</span>
                 </div>
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Get Your 4 Documents Free
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">Free lesson. Keep the documents either way.</span>
+                </div>
             </div>
         </section>
 
@@ -5520,7 +5760,7 @@
                             </tr>
                             <tr class="comparison-row">
                                 <td class="comparison-cell comparison-generic">"We keep our classes small"</td>
-                                <td class="comparison-cell comparison-beam"><strong>6-8 students max</strong> — that's our hard limit</td>
+                                <td class="comparison-cell comparison-beam"><strong>Focused sessions</strong> — tutors know every student</td>
                             </tr>
                         </tbody>
                     </table>
@@ -5554,14 +5794,22 @@
                         <div class="comparison-card-beam"><strong>4 personalized PDFs</strong> + portal access (yours to keep)</div>
                     </div>
                     <div class="comparison-card">
-                        <div class="comparison-card-label">Class Size</div>
+                        <div class="comparison-card-label">Learning Environment</div>
                         <div class="comparison-card-generic">"We keep our classes small"</div>
-                        <div class="comparison-card-beam"><strong>6-8 students max</strong> — that's our hard limit</div>
+                        <div class="comparison-card-beam"><strong>Focused sessions</strong> — tutors know every student</div>
                     </div>
+                </div>
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Experience the Difference
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">Try a free lesson. No strings attached.</span>
                 </div>
             </div>
         </section>
-
 
         <!-- Trust Section -->
         <section class="trust-section" id="trust" aria-labelledby="trust-title">
@@ -5582,10 +5830,10 @@
                     <!-- Chris Kim -->
                     <article class="tutor-card">
                         <div class="tutor-image">
-                            <img src="images/chris.jpg" alt="Chris Kim, Head of Mathematics at BEAM Academy" width="400" height="400" loading="lazy">
+                            <img src="images/chris.jpg" alt="Chris Kim, Head of Mathematics & Physics at BEAM Academy" width="400" height="400" loading="lazy">
                         </div>
                         <h3 class="tutor-name">Chris Kim</h3>
-                        <div class="tutor-role">Head of Mathematics</div>
+                        <div class="tutor-role">Head of Mathematics & Physics</div>
                         <div class="tutor-trifecta">
                             <span class="trifecta-badge trifecta-school">BHHS Graduate</span>
                             <span class="trifecta-badge trifecta-hsc">97 Maths Ext1</span>
@@ -5651,6 +5899,26 @@
                             <li>4 years tutoring experience</li>
                         </ul>
                     </article>
+
+                    <!-- Sowon Lee -->
+                    <article class="tutor-card">
+                        <div class="tutor-image">
+                            <img src="images/soiwon.jpg" alt="Sowon Lee, Head of English at BEAM Academy" width="400" height="400" loading="lazy" style="object-position: center 30%; transform: scale(0.85);">
+                        </div>
+                        <h3 class="tutor-name">Sowon Lee</h3>
+                        <div class="tutor-role">Head of English</div>
+                        <div class="tutor-trifecta">
+                            <span class="trifecta-badge trifecta-school">BHHS Graduate</span>
+                            <span class="trifecta-badge trifecta-hsc">96 English Adv</span>
+                            <span class="trifecta-badge trifecta-uni">Law @ UNSW</span>
+                        </div>
+                        <ul class="tutor-credentials">
+                            <li>3rd in Baulko English Adv</li>
+                            <li>Mentored 20+ Baulko HSC students</li>
+                            <li>Top student achieved 96</li>
+                            <li>2x 99.95 ATAR students</li>
+                        </ul>
+                    </article>
                 </div>
 
                 <p class="trust-schools">Tutors who know your school's assessment style - Baulko, James Ruse, Epping Boys</p>
@@ -5694,6 +5962,15 @@
                             </div>
                         </div>
                     </article>
+                </div>
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Meet Our Tutors in a Free Lesson
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">No payment required. No obligation.</span>
                 </div>
             </div>
         </section>
@@ -5754,79 +6031,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Supporting Features -->
-                    <div class="support-features">
-                        <div class="support-feature">
-                            <div class="support-feature-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 6 12 12 16 14"/>
-                                </svg>
-                            </div>
-                            <span class="support-feature-text">Responses within hours, not days</span>
-                        </div>
-                        <div class="support-feature">
-                            <div class="support-feature-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                                </svg>
-                            </div>
-                            <span class="support-feature-text">Private server - BEAM students only</span>
-                        </div>
-                        <div class="support-feature">
-                            <div class="support-feature-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                </svg>
-                            </div>
-                            <span class="support-feature-text">Same tutors who teach your classes</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- About Section -->
-        <section class="about" id="about" aria-labelledby="about-title">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <div class="about-image-main about-photo">
-                            <img src="images/classroom-students.jpg" alt="Students engaged in a BEAM Academy tutoring session" width="800" height="533" loading="lazy">
-                        </div>
-                        <div class="about-badge">
-                            <div class="about-badge-number">BHHS</div>
-                            <div class="about-badge-text">Graduates</div>
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <div class="about-section-tag">About Us</div>
-                        <h2 id="about-title">Building Education And Mastery</h2>
-                        <p>
-                            BEAM Academy provides high-quality tutoring for Years 7-12 students in mathematics, English, chemistry, and physics. 
-                            Our tutors are carefully selected graduates from Baulkham Hills High School who achieved 95%+ in HSC Mathematics and are currently studying medicine.
-                        </p>
-                        <p>
-                            We focus on small group classes with personalised learning approaches, comprehensive diagnostic assessments, 
-                            and targeted support to help students build confidence and achieve measurable results.
-                        </p>
-                        <div class="about-features">
-                            <div class="about-feature">Small group classes</div>
-                            <div class="about-feature">Diagnostic assessments</div>
-                            <div class="about-feature">Custom worksheets</div>
-                            <div class="about-feature">Progress tracking</div>
-                            <div class="about-feature">Discord community</div>
-                            <div class="about-feature">Syllabus aligned</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Courses & Pricing Combined Section -->
         <section class="courses-pricing" id="courses" aria-labelledby="courses-title">
             <div class="container">
@@ -5834,33 +6041,26 @@
                     <div class="section-tag">Courses & Pricing</div>
                     <h2 class="section-title" id="courses-title">See Exactly Where Your Child Needs Help</h2>
                     <p class="section-description">
-                        Transparent pricing with multi-subject discounts. Maximum 8 students per class.<br>
+                        Transparent pricing with multi-subject discounts. Expert Baulko tutors who scored 95%+ in HSC.<br>
                         <strong>No payment required. No obligation.</strong> Your free diagnostic is yours to keep.
                     </p>
                 </header>
 
-                
-                <!-- All Access Hero Banner -->
-                <div class="all-access-hero" onclick="openAllAccessModal()">
-                    <div class="all-access-hero-content">
-                        <span class="all-access-hero-badge">★ Most Popular</span>
-                        <h3 class="all-access-hero-title">All Access Pass</h3>
-                        <p class="all-access-hero-desc">Unlimited subjects, unlimited potential. Get access to every class in your year level.</p>
+                <!-- Social Proof Stats Strip -->
+                <div class="pricing-social-proof">
+                    <div class="proof-stat">
+                        <span class="proof-number">#1</span>
+                        <span class="proof-label">Baulko Ranks Teaching</span>
                     </div>
-                    <div class="all-access-hero-pricing">
-                        <div class="all-access-price-box">
-                            <div class="all-access-price-label">Years 9-10</div>
-                            <div class="all-access-price">$400<span>/wk</span></div>
-                        </div>
-                        <div class="all-access-price-box">
-                            <div class="all-access-price-label">Years 11-12</div>
-                            <div class="all-access-price">$500<span>/wk</span></div>
-                        </div>
-                        <span class="all-access-hero-cta">Get All Access →</span>
+                    <div class="proof-stat">
+                        <span class="proof-number">5.0</span>
+                        <span class="proof-label">Google Rating</span>
+                    </div>
+                    <div class="proof-stat">
+                        <span class="proof-number">95%</span>
+                        <span class="proof-label">Improve in First Term</span>
                     </div>
                 </div>
-
-                <p style="text-align: center; color: var(--gray-400); margin-bottom: 32px; font-size: 0.95rem;">Or choose individual subjects below</p>
 
                 <div class="enrollment-info-prompt">
                     <span class="enrollment-icon">💡</span>
@@ -5881,11 +6081,12 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Junior', '1 Subject')" data-tier="Junior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$80/wk</span></li>
-                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">50% off 3rd</span></li>
+                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">Save $20/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">Save $40/wk</span></li>
                             
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
 
                     <article class="pricing-tier-new">
@@ -5900,12 +6101,13 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Intermediate', '1 Subject')" data-tier="Intermediate" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$100/wk</span></li>
-                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">50% off 3rd</span></li>
-                            <li class="popular" onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th free</span></li>
+                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">Save $25/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">Save $50/wk</span></li>
+                            <li onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th FREE!</span></li>
                             <li class="all-access" onclick="selectPackage('Intermediate', 'All Access')" data-tier="Intermediate" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$400/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
 
                     <article class="pricing-tier-new">
@@ -5920,16 +6122,26 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Senior', '1 Subject')" data-tier="Senior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$120/wk</span></li>
-                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">50% off 3rd</span></li>
-                            <li class="popular" onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th free</span></li>
-                            <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-badge">Best Value</span><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
+                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">Save $30/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">Save $60/wk</span></li>
+                            <li onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th FREE!</span></li>
+                            <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
                 </div>
 
-                <!-- Course Browser Section -->
+                <!-- Pricing Testimonial -->
+                <blockquote class="pricing-testimonial">
+                    <p class="testimonial-quote">Finally found a tutor my son actually wants to go to. Third place we tried and the only one where he doesn't complain on lesson days.</p>
+                    <cite class="testimonial-cite">
+                        <span class="testimonial-name">Parent of Year 9 Student</span>
+                        <span class="testimonial-school">The Hills Grammar</span>
+                    </cite>
+                </blockquote>
+
+<!-- Course Browser Section -->
                 <div class="course-browser-divider">
                     <h3 class="course-browser-heading">Browse Our Courses</h3>
                     <p class="course-browser-subtext">Learn more about what each class covers</p>
@@ -5943,6 +6155,7 @@
                 </div>
 
                 <!-- Course Cards -->
+                <div class="course-browser-container" data-expanded="false">
                 <div class="courses-grid" role="tabpanel" aria-label="Available courses">
                     <!-- Junior Maths -->
                     <article class="course-card" data-years="7-8">
@@ -5950,7 +6163,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 7-8</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Junior Mathematics</h3>
@@ -5968,7 +6181,7 @@
                                 <span class="course-year-badge">Years 7-8</span>
                                 <span class="course-advanced-badge">Advanced</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Junior Advanced Maths</h3>
@@ -5985,7 +6198,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 7-8</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>Junior English</h3>
@@ -6002,7 +6215,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Years 9-10 Mathematics</h3>
@@ -6020,7 +6233,7 @@
                                 <span class="course-year-badge">Years 9-10</span>
                                 <span class="course-advanced-badge">Advanced</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Years 9-10 Advanced Maths</h3>
@@ -6037,7 +6250,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>Years 9-10 English</h3>
@@ -6054,7 +6267,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">👥 Max 6</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
@@ -6071,7 +6284,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Years 9-10 Physics</h3>
@@ -6088,7 +6301,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Years 9-10</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🧪</div>
                         <h3>Years 9-10 Chemistry</h3>
@@ -6105,7 +6318,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Advanced Mathematics</h3>
@@ -6122,7 +6335,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Mathematics Extension 1</h3>
@@ -6139,7 +6352,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>English Advanced</h3>
@@ -6156,7 +6369,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 6</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
@@ -6173,7 +6386,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">⚗️</div>
                         <h3>Chemistry</h3>
@@ -6190,7 +6403,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 11</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Physics</h3>
@@ -6207,7 +6420,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📐</div>
                         <h3>Advanced Mathematics</h3>
@@ -6224,7 +6437,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🎯</div>
                         <h3>Mathematics Extension 1</h3>
@@ -6241,7 +6454,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">🏆</div>
                         <h3>Mathematics Extension 2</h3>
@@ -6258,7 +6471,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">📝</div>
                         <h3>English Advanced</h3>
@@ -6275,7 +6488,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 6</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">✍️</div>
                         <h3>English Extension</h3>
@@ -6292,7 +6505,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">⚗️</div>
                         <h3>Chemistry</h3>
@@ -6309,7 +6522,7 @@
                             <div class="course-badges">
                                 <span class="course-year-badge">Year 12</span>
                             </div>
-                            <span class="course-class-size">👥 Max 8</span>
+                            
                         </div>
                         <div class="course-icon" aria-hidden="true">⚡</div>
                         <h3>Physics</h3>
@@ -6319,6 +6532,11 @@
                             <a href="#contact" class="course-btn">Get Your Free Diagnostic</a>
                         </div>
                     </article>
+                </div>
+                <button class="course-browser-toggle" onclick="toggleCourseBrowser()" aria-expanded="false" aria-controls="courses-grid">
+                    <span class="toggle-text">See All Courses</span>
+                    <span class="toggle-icon">&#8595;</span>
+                </button>
                 </div>
 
                 <p class="pricing-note">All prices are per week. Trial lessons are free with no obligation.</p>
@@ -6341,9 +6559,9 @@
                 </details>
 
                 <details class="faq-item">
-                    <summary class="faq-question">What are class sizes?</summary>
+                    <summary class="faq-question">How do classes work?</summary>
                     <div class="faq-answer">
-                        <p>Maximum 6-8 students per class. This ensures every student gets individual attention and can ask questions freely.</p>
+                        <p>Focused sessions where tutors know every student by name. Our diagnostic system tracks each student's progress so practice is always targeted to their weak spots.</p>
                     </div>
                 </details>
 
@@ -6371,14 +6589,13 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
                     <h2 id="contact-title">Get Your Free Diagnostic</h2>
-                    <p>Experience the BEAM difference with a complimentary first lesson. No obligation, just quality tutoring.</p>
+                    <p>Your first lesson is free. No payment, no obligation. See how we pinpoint exactly what your child needs.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
@@ -6401,6 +6618,11 @@
                                 <a href="mailto:admin@beamacademy.info" class="contact-item-value">admin@beamacademy.info</a>
                             </div>
                         </div>
+                    </div>
+                    <!-- Social proof near form -->
+                    <div class="form-trust-signal">
+                        <span class="trust-rating">5.0 ★</span>
+                        <span class="trust-text"><strong>95% of students improve</strong> in their first term. Join families from Baulko, James Ruse, and Epping Boys.</span>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
@@ -6520,7 +6742,6 @@
                             </div>
                         </div>
 
-                        
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
                             <span class="btn-text"><span id="submitBtnText">Get My Free Diagnostic</span> →</span>
                             <span class="btn-loading"><span class="spinner"></span> Processing...</span>
@@ -6532,6 +6753,7 @@
                         </button>
                         
                         <p class="form-note" id="trialNote" style="display: block;">Your first lesson is free. No payment required today.</p>
+                        <p class="form-next-step">Next: We'll call within 24 hours to find a time that works for you.</p>
                         <div class="stripe-badge" id="stripeBadge" style="display: none;">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                             Secure payment via Stripe
@@ -6541,15 +6763,6 @@
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
-        <section class="cta" aria-labelledby="cta-title">
-            <div class="container">
-                <h2 id="cta-title">Ready to Shine Brighter?</h2>
-                <p>Join BEAM Academy today and experience the difference expert tutoring can make.</p>
-                <a href="#contact" class="btn btn-primary">Get Your Free Diagnostic →</a>
-            </div>
-        </section>
 
     <!-- Sticky Mobile CTA Bar -->
     <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
@@ -6589,7 +6802,6 @@
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#about" class="footer-link">About Us</a></li>
                         <li><a href="#courses" class="footer-link">Courses & Pricing</a></li>
                                                 <li><a href="#contact" class="footer-link" data-action="pay">Pay Now</a></li>
                         <li><a href="https://beamffef.netlify.app/login" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
@@ -6736,6 +6948,26 @@
             }
         });
 
+        // Toggle Course Browser Expand/Collapse
+        function toggleCourseBrowser() {
+            const container = document.querySelector('.course-browser-container');
+            const button = document.querySelector('.course-browser-toggle');
+            if (\!container || \!button) return;
+
+            const isExpanded = container.dataset.expanded === 'true';
+            container.dataset.expanded = isExpanded ? 'false' : 'true';
+            button.setAttribute('aria-expanded', \!isExpanded);
+            button.querySelector('.toggle-text').textContent = isExpanded ? 'See All Courses' : 'Show Less';
+
+            // Smooth scroll to course browser if collapsing
+            if (isExpanded) {
+                const browserDivider = document.querySelector('.course-browser-divider');
+                if (browserDivider) {
+                    browserDivider.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+
         // Year tabs filtering
         const yearTabs = document.querySelectorAll('.year-tab');
         const courseCards = document.querySelectorAll('.course-card');
@@ -6844,6 +7076,38 @@
             );
 
             stickyObserver.observe(hero);
+        })();
+
+        // Pricing Sticky CTA visibility - show only when in Courses section (mobile)
+        (function() {
+            const coursesSection = document.getElementById('courses');
+            const pricingStickyCta = document.getElementById('pricingStickyCta');
+            if (!coursesSection || !pricingStickyCta) return;
+
+            function updatePricingStickyCta() {
+                const rect = coursesSection.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                
+                // Show when courses section is in view (top is above 50% of viewport, bottom is below 100px)
+                const isInSection = rect.top < viewportHeight * 0.5 && rect.bottom > 100;
+                
+                pricingStickyCta.classList.toggle('visible', isInSection);
+            }
+
+            // Throttled scroll listener
+            let pricingTicking = false;
+            window.addEventListener('scroll', function() {
+                if (!pricingTicking) {
+                    window.requestAnimationFrame(function() {
+                        updatePricingStickyCta();
+                        pricingTicking = false;
+                    });
+                    pricingTicking = true;
+                }
+            }, { passive: true });
+
+            // Initial check
+            updatePricingStickyCta();
         })();
 
         // Package selection - scroll to form and pre-fill
@@ -7386,8 +7650,6 @@
         });
 
     </script>
-
-    
 
     <!-- All Access Tier Selection Modal -->
     <div id="allAccessModal" class="package-modal" aria-hidden="true">
