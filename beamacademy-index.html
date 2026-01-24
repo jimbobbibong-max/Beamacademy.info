@@ -733,6 +733,13 @@
             flex-wrap: wrap;
         }
 
+        .hero-risk-reversal {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
         .hero-returning {
             margin-top: 20px;
             font-size: 0.9rem;
@@ -1038,6 +1045,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 900px;
             margin: 0 auto;
         }
@@ -1398,6 +1406,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 40px;
         }
@@ -1496,6 +1505,7 @@
             align-items: center;
             justify-content: center;
             gap: 24px;
+            justify-content: center;
             background: var(--purple-50);
             border: 2px solid var(--purple-200);
             border-radius: 20px;
@@ -1548,6 +1558,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
+            justify-content: center;
             max-width: 1000px;
             margin: 0 auto;
         }
@@ -1975,6 +1986,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -2263,6 +2275,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
@@ -2468,6 +2481,7 @@
             width: 100%;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 24px;
+            justify-content: center;
         }
 
         /* Collapsible Course Browser */
@@ -2723,6 +2737,7 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
+            justify-content: center;
         }
 
         .contact-item {
@@ -2949,6 +2964,7 @@
         .footer-legal {
             display: flex;
             gap: 24px;
+            justify-content: center;
         }
 
         .footer-legal a:hover { color: var(--purple-400); }
@@ -3350,6 +3366,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -3615,6 +3632,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
+            justify-content: center;
             max-width: 1100px;
             margin: 0 auto 60px;
         }
@@ -5028,6 +5046,7 @@
                 text-align: center;
                 padding: 28px 24px;
                 gap: 24px;
+            justify-content: center;
             }
             .all-access-hero-content { text-align: center; }
             .all-access-hero-desc { max-width: none; }
@@ -5084,6 +5103,7 @@
         @media (max-width: 600px) {
             .pricing-social-proof {
                 gap: 24px;
+            justify-content: center;
                 padding: 16px 20px;
             }
             .proof-number {
@@ -5578,17 +5598,18 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <div class="hero-category">HSC Tutoring</div>
-                        <h1>Tutoring That Adapts to <span>Their Weak Spots</span></h1>
+                        <h1>Watch Their Grades <span>Climb</span></h1>
                         <p class="hero-description">
                             We track scores topic by topic. Their worksheets target exactly what they need to improve.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Get Your Free Diagnostic</a>
+                            <a href="#contact" class="btn btn-primary">Get My Free Diagnostic</a>
                         </div>
+                        <p class="hero-risk-reversal">Free lesson. No payment required. Keep the diagnostic either way.</p>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
                         <div class="hero-testimonial">
                             <span class="testimonial-star">5.0</span>
-                            <span>"The teachers explain everything so well." - Luke K, Year 8</span>
+                            <span>"His Maths improved from 68% to 89%." - Parent, BHHS Year 11</span>
                         </div>
                     </div>
                     <div class="hero-visual">
@@ -6098,12 +6119,11 @@
                         <div class="about-section-tag">About Us</div>
                         <h2 id="about-title">Building Education And Mastery</h2>
                         <p>
-                            BEAM Academy provides high-quality tutoring for Years 7-12 students in mathematics, English, chemistry, and physics. 
-                            Our tutors are carefully selected graduates from Baulkham Hills High School who achieved 95%+ in HSC Mathematics and are currently studying medicine.
+                            We tutor Years 7-12 in maths, English, chemistry, and physics.
+                            Our tutors are Baulko grads who scored 95%+ in HSC Maths. Most study medicine.
                         </p>
                         <p>
-                            We focus on small group classes with personalised learning approaches, comprehensive diagnostic assessments, 
-                            and targeted support to help students build confidence and achieve measurable results.
+                            Small classes. Diagnostic tests that find weak spots. Worksheets that fix them.
                         </p>
                         <div class="about-features">
                             <div class="about-feature">Small group classes</div>
@@ -6135,11 +6155,11 @@
                 <!-- Social Proof Stats Strip -->
                 <div class="pricing-social-proof">
                     <div class="proof-stat">
-                        <span class="proof-number">500+</span>
-                        <span class="proof-label">Students Enrolled</span>
+                        <span class="proof-number">#1</span>
+                        <span class="proof-label">Baulko Ranks Teaching</span>
                     </div>
                     <div class="proof-stat">
-                        <span class="proof-number">4.9</span>
+                        <span class="proof-number">5.0</span>
                         <span class="proof-label">Google Rating</span>
                     </div>
                     <div class="proof-stat">
@@ -6244,10 +6264,10 @@
                 
                 <!-- Pricing Testimonial -->
                 <blockquote class="pricing-testimonial">
-                    <p class="testimonial-quote">The diagnostic showed exactly where my son was struggling. Within two terms, his maths mark went from 65% to 89%.</p>
+                    <p class="testimonial-quote">Finally found a tutor my son actually wants to go to. Third place we tried and the only one where he doesn't complain on lesson days.</p>
                     <cite class="testimonial-cite">
-                        <span class="testimonial-name">Parent of Year 10 Student</span>
-                        <span class="testimonial-school">Carlingford High School</span>
+                        <span class="testimonial-name">Parent of Year 9 Student</span>
+                        <span class="testimonial-school">The Hills Grammar</span>
                     </cite>
                 </blockquote>
 
@@ -6706,7 +6726,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h2 id="contact-title">Get Your Free Diagnostic</h2>
-                    <p>Experience the BEAM difference with a complimentary first lesson. No obligation, just quality tutoring.</p>
+                    <p>Your first lesson is free. No payment, no obligation. See how we pinpoint exactly what your child needs.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
@@ -6879,11 +6899,6 @@
             </div>
         </section>
 
-    <!-- Pricing Section Sticky CTA (Courses section only, mobile) -->
-    <div class="pricing-sticky-cta" id="pricingStickyCta">
-        <a href="#contact" class="sticky-cta-btn">Get Your Free Diagnostic</a>
-        <span class="sticky-cta-note">No payment required</span>
-    </div>
 
     <!-- Sticky Mobile CTA Bar -->
     <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
