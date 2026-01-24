@@ -25,7 +25,7 @@ Progress: [##############################] 100% (3/3 plans complete)
 | v2 | Messaging Overhaul | 6-11 | SHIPPED | 2026-01-23 |
 | v3 | Content Cleanup | 12-13 | SHIPPED | 2026-01-23 |
 | v4 | Courses Section Redesign | 14-16 | SHIPPED | 2026-01-24 |
-| v5 | Courses Section Overhaul | 17-18 | COMPLETE | 2026-01-24 |
+| v5 | Courses Section Overhaul | 17-18 | SHIPPED | 2026-01-24 |
 
 ## Phase 18 Summary
 

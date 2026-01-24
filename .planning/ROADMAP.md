@@ -6,7 +6,7 @@
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
 - **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
 - **v4 Courses Section Redesign** — Phases 14-16 (shipped 2026-01-24) | [Archive](milestones/v4-ROADMAP.md)
-- **v5 Courses Section Overhaul** — Phases 17-18 (active)
+- **v5 Courses Section Overhaul** — Phases 17-18 (shipped 2026-01-24) | [Archive](milestones/v5-ROADMAP.md)
 
 ---
 
@@ -31,14 +31,14 @@
 - [x] 17-02-PLAN.md — Social proof integration at decision points
 - [x] 17-03-PLAN.md — Mobile optimization and collapsible course browser
 
-- [ ] Phase 18: Free Trial Conversion Audit — **3 plans** (0/3 complete)
+- [x] Phase 18: Free Trial Conversion Audit — **3 plans** (3/3 complete) — VERIFIED 2026-01-24
 
 **Goal:** Holistic website audit focused on free trial clickability. Audit CTA visibility/placement across all sections, analyze conversion path friction, ensure every section serves the free trial goal, identify and fix any barriers to form submission.
 
 **Plans:**
-- [ ] 18-01-PLAN.md — Comprehensive conversion audit against research benchmarks
-- [ ] 18-02-PLAN.md — CTA placement and conversion path optimization
-- [ ] 18-03-PLAN.md — Content simplification, social proof repositioning, form optimization
+- [x] 18-01-PLAN.md — Comprehensive conversion audit against research benchmarks
+- [x] 18-02-PLAN.md — CTA placement and conversion path optimization
+- [x] 18-03-PLAN.md — Content simplification, social proof repositioning, form optimization
 
 ---
 
@@ -115,8 +115,8 @@ See: [milestones/v4-ROADMAP.md](milestones/v4-ROADMAP.md) for full details.
 | 15 | v4 | Courses Conversion Optimization | Complete | 2026-01-23 |
 | 16 | v4 | Courses Visual Polish | Complete | 2026-01-24 |
 | 17 | v5 | Courses Section Overhaul | Complete | 2026-01-24 |
-| 18 | v5 | Free Trial Conversion Audit | Planned | - |
+| 18 | v5 | Free Trial Conversion Audit | Complete | 2026-01-24 |
 
 ---
 
-*Last updated: 2026-01-24 — Phase 18 plans created*
+*Last updated: 2026-01-24 — v5 milestone shipped*
