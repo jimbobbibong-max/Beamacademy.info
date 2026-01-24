@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v5 Free Trial Conversion Audit — PHASE 18 COMPLETE
+**Current focus:** v6 Final Pass - Content Reduction & Polish
 
 ## Current Position
 
-Milestone: v5 (Courses Section Overhaul + Conversion Audit)
-Phase: 18 — Free Trial Conversion Audit (COMPLETE)
-Plan: 03 of 3 — Content Optimization COMPLETE
-Status: Phase Complete
-Last activity: 2026-01-24 — Completed 18-03 content optimization
+Milestone: v6 (Content Reduction & Pre-Launch QA)
+Phase: 19 - Final Pass - Content Reduction & Polish
+Plan: 01 of 2 - Content Reduction COMPLETE
+Status: In Progress
+Last activity: 2026-01-24 - Completed 19-01 content reduction
 
-Progress: [##############################] 100% (3/3 plans complete)
+Progress: [###############---------------] 50% (1/2 plans complete)
 
 ## Milestone History
 
@@ -27,25 +27,20 @@ Progress: [##############################] 100% (3/3 plans complete)
 | v4 | Courses Section Redesign | 14-16 | SHIPPED | 2026-01-24 |
 | v5 | Courses Section Overhaul | 17-18 | SHIPPED | 2026-01-24 |
 
-## Phase 18 Summary
+## Phase 19 Summary
 
-**Plan 01 - Comprehensive Audit (COMPLETE):**
-- 465-line audit document analyzing full conversion funnel
-- 12 findings prioritized by impact/effort
-- 3 implementation groups identified
-- Research-backed recommendations with citations
+**Plan 01 - Content Reduction (COMPLETE):**
+- Applied 5-question test to all sections
+- Removed Final CTA section (redundant with sticky bar)
+- Removed Features strip from Proof section (generic claims, visual clutter)
+- Removed Support feature bullets (already stated in comparison table)
+- Net reduction of 85 lines of HTML
 
-**Plan 02 - Quick CTA Wins (COMPLETE):**
-- Added CTAs after Proof and Comparison sections
-- Added risk reversal text in hero
-- Moved Student Portal link to footer
-
-**Plan 03 - Content Optimization (COMPLETE):**
-- Simplified copy for 5th-7th grade reading level
-- Added social proof trust signal near form
-- Added "what happens next" messaging after submit
-
-**Estimated conversion lift:** 15-25% based on research foundations
+**Plan 02 - Pre-Launch QA (PENDING):**
+- Technical validation
+- Cross-browser testing
+- Accessibility checks
+- Final polish items
 
 ## Decisions Log
 
@@ -57,6 +52,9 @@ Progress: [##############################] 100% (3/3 plans complete)
 | D18-4 | Use "Baulko grads" abbreviation | Shorter, local audience knows it, casual tone | 18-03 |
 | D18-5 | Trust signal with school names | Local social proof stronger than generic | 18-03 |
 | D18-6 | "Call within 24 hours" phrasing | Specific timeframe more reassuring | 18-03 |
+| D19-1 | Remove Final CTA section | Sticky bar provides persistent conversion path | 19-01 |
+| D19-2 | Remove Features strip | Generic claims don't differentiate; document cards do | 19-01 |
+| D19-3 | Keep Discord mockup, remove bullets | Visual proof > text claims; comparison table covers it | 19-01 |
 
 ## Performance Baseline
 
@@ -75,6 +73,7 @@ Progress: [##############################] 100% (3/3 plans complete)
 - Some aria-hidden with focusable children
 - Some contrast issues
 - Links without discernible names
+- Orphaned CSS for removed elements (.support-features, .proof-features)
 
 ## Pending Todos
 
@@ -83,18 +82,18 @@ Progress: [##############################] 100% (3/3 plans complete)
 ## Session Continuity
 
 Last session: 2026-01-24
-Stopped at: Completed 18-03-PLAN.md (Phase 18 Complete)
+Stopped at: Completed 19-01-PLAN.md
 Resume file: None
 
 ## Next Up
 
-**Milestone v5 Complete.** All conversion audit improvements shipped.
+**Phase 19 Plan 02: Pre-Launch QA** ready for execution.
 
 Options:
-1. **User verification** — Test all changes in browser
-2. **New milestone planning** — Plan v6 features
-3. **A/B testing setup** — Track conversion lift if analytics available
+1. `/gsd:execute-phase 19-02` - Run pre-launch QA checks
+2. `/gsd:verify-work` - User verification of content reduction
+3. Manual browser testing of changes
 
 ---
 
-*Last updated: 2026-01-24 — Phase 18 complete, v5 milestone shipped*
+*Last updated: 2026-01-24 - 19-01 content reduction complete*
