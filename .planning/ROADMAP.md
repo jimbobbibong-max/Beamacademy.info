@@ -31,9 +31,14 @@
 - [x] 17-02-PLAN.md — Social proof integration at decision points
 - [x] 17-03-PLAN.md — Mobile optimization and collapsible course browser
 
-- [ ] Phase 18: Free Trial Conversion Audit — **0 plans** (not yet planned)
+- [ ] Phase 18: Free Trial Conversion Audit — **3 plans** (0/3 complete)
 
 **Goal:** Holistic website audit focused on free trial clickability. Audit CTA visibility/placement across all sections, analyze conversion path friction, ensure every section serves the free trial goal, identify and fix any barriers to form submission.
+
+**Plans:**
+- [ ] 18-01-PLAN.md — Comprehensive conversion audit against research benchmarks
+- [ ] 18-02-PLAN.md — CTA placement and conversion path optimization
+- [ ] 18-03-PLAN.md — Content simplification, social proof repositioning, form optimization
 
 ---
 
@@ -114,4 +119,4 @@ See: [milestones/v4-ROADMAP.md](milestones/v4-ROADMAP.md) for full details.
 
 ---
 
-*Last updated: 2026-01-24 — Phase 18 added*
+*Last updated: 2026-01-24 — Phase 18 plans created*
