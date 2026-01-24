@@ -5,17 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** v5 Courses Section Overhaul — Phase 17 plan 02 complete
+**Current focus:** v5 Courses Section Overhaul — Phase 17 COMPLETE
 
 ## Current Position
 
 Milestone: v5 (Courses Section Overhaul)
-Phase: 17 — Courses Section Overhaul
-Plan: 02 of 3 complete
-Status: IN PROGRESS
-Last activity: 2026-01-24 — Completed 17-02 (social proof positioning)
+Phase: 17 — Courses Section Overhaul (COMPLETE)
+Status: VERIFIED
+Last activity: 2026-01-24 — Phase 17 verified and complete
 
-Progress: [████████████████████░░░░░░░░░░] 67% (2/3 plans complete)
+Progress: [██████████████████████████████] 100% (3/3 plans complete)
 
 ## Milestone History
 
@@ -27,19 +26,19 @@ Progress: [████████████████████░░░
 | v4 | Courses Section Redesign | 14-16 | SHIPPED | 2026-01-24 |
 | v5 | Courses Section Overhaul | 17-18 | Active | - |
 
-## v5 Research Scope
+## Phase 17 Complete
 
-**Goal:** Structural overhaul based on industry best practices (not just CSS polish)
+**Delivered:**
+- Value ladder pricing with All Access anchor
+- Dollar savings display (Save $X/wk instead of percentages)
+- Best Value badges on 3 Subject options (Goldilocks effect)
+- Social proof stats strip (#1 Baulko Ranks Teaching, 5.0 Google Rating, 95% Improve)
+- Pricing testimonial (unique, humanized)
+- Risk reversal messaging on all CTAs
+- Collapsible course browser (reduces overwhelm)
+- Courses grid centering fix
 
-**Research areas:**
-- SaaS pricing page conversion patterns
-- Course platform pricing psychology
-- Value ladder presentation
-- Feature comparison tables
-- Social proof placement on pricing
-- Checkout flow optimization
-
-**Comparison:** Similar to Hero Overhaul (v2 Phase 6) — research-driven structural changes
+**Removed:** Pricing sticky CTA (redundant with floating contact button)
 
 ## Performance Baseline
 
@@ -59,35 +58,14 @@ Progress: [████████████████████░░░
 - Some contrast issues
 - Links without discernible names
 
-## Phase 17 Progress
+## Pending Todos
 
-| Plan | Name | Status |
-|------|------|--------|
-| 17-01 | Pricing Architecture Value Ladder | COMPLETE |
-| 17-02 | Social Proof Positioning | COMPLETE |
-| 17-03 | CTA & Checkout Optimization | Pending |
-
-## Recent Decisions
-
-| ID | Decision | Rationale |
-|----|----------|-----------|
-| 17-01-badges | Best Value badges on 3 Subject options | Goldilocks effect - 60-70% choose labeled middle |
-| 17-01-savings | Dollar amounts instead of percentages | Concrete savings more compelling |
-| 17-01-anchor | Enhanced All Access banner | Anchor pricing psychology |
-| 17-02-stats | Stats strip after section header | Social proof at entry builds initial trust |
-| 17-02-testimonial | Testimonial between tiers and courses | Validates decision before course browsing |
-| 17-02-risk | Risk reversal below each CTA | Reduces friction at exact decision point |
-
-## Session Continuity
-
-Last session: 2026-01-24 00:51 UTC
-Stopped at: Completed 17-02-PLAN.md
-Resume file: None
+3 todos in `.planning/todos/pending/`
 
 ## Next Up
 
-**17-03: CTA & Checkout Optimization** — Optimize CTAs and checkout flow for conversions
+**Phase 18: Free Trial Conversion Audit** — Holistic website audit focused on free trial clickability
 
 ---
 
-*Last updated: 2026-01-24 — Phase 17 plan 02 complete*
+*Last updated: 2026-01-24 — Phase 17 verified and complete*
