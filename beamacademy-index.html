@@ -2470,6 +2470,69 @@
             gap: 24px;
         }
 
+        /* Collapsible Course Browser */
+        .course-browser-container {
+            width: 100%;
+        }
+
+        .course-browser-container[data-expanded="false"] .courses-grid {
+            max-height: 520px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .course-browser-container[data-expanded="false"] .courses-grid::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, transparent, var(--gray-900));
+            pointer-events: none;
+        }
+
+        .course-browser-container[data-expanded="true"] .courses-grid {
+            max-height: none;
+        }
+
+        .course-browser-container[data-expanded="true"] .courses-grid::after {
+            display: none;
+        }
+
+        .course-browser-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 28px auto 0;
+            padding: 14px 28px;
+            background: transparent;
+            border: 2px solid var(--purple-500);
+            color: var(--purple-300);
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .course-browser-toggle:hover {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: var(--purple-400);
+            color: var(--purple-200);
+        }
+
+        .course-browser-toggle .toggle-icon {
+            transition: transform 0.3s ease;
+            font-size: 0.85rem;
+        }
+
+        .course-browser-container[data-expanded="true"] .toggle-icon {
+            transform: rotate(180deg);
+        }
+
         .course-card {
             background: var(--gray-800);
             border-radius: 20px;
@@ -3107,6 +3170,61 @@
         @media (min-width: 769px) {
             .sticky-cta-bar {
                 display: none;
+            }
+        }
+
+        /* Pricing Section Sticky CTA (Courses section only) */
+        .pricing-sticky-cta {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-sticky-cta {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--gray-900);
+                padding: 14px 16px;
+                padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                z-index: 90;
+                border-top: 1px solid var(--gray-700);
+                transform: translateY(100%);
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .pricing-sticky-cta.visible {
+                transform: translateY(0);
+            }
+
+            .sticky-cta-btn {
+                background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+                color: white;
+                padding: 14px 32px;
+                border-radius: 100px;
+                font-family: var(--font-display);
+                font-weight: 600;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+                text-decoration: none;
+                box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+                transition: all 0.2s ease;
+            }
+
+            .sticky-cta-btn:hover {
+                background: linear-gradient(135deg, var(--purple-700), var(--purple-800));
+            }
+
+            .sticky-cta-note {
+                font-size: 0.75rem;
+                color: var(--gray-400);
             }
         }
 
@@ -4774,13 +4892,13 @@
             transform: translateY(-2px);
         }
 
-/* All Access Hero Banner */
+/* All Access Hero Banner - Enhanced Anchor Pricing */
         .all-access-hero {
             background: linear-gradient(135deg, var(--purple-700), var(--purple-600));
             width: 100%;
             box-sizing: border-box;
             border-radius: 20px;
-            padding: 32px 40px;
+            padding: 36px 44px;
             margin-bottom: 40px;
             display: flex;
             justify-content: space-between;
@@ -4789,13 +4907,14 @@
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
         }
-        
+
         .all-access-hero:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.45), inset 0 1px 0 rgba(255,255,255,0.1);
         }
-        
+
         .all-access-hero::before {
             content: '';
             position: absolute;
@@ -4803,89 +4922,106 @@
             right: -50%;
             width: 100%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
             pointer-events: none;
         }
-        
+
         .all-access-hero-content {
             position: relative;
             z-index: 1;
         }
-        
+
         .all-access-hero-badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.25);
             color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 6px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 8px 16px;
             border-radius: 100px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
-        
+
         .all-access-hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.75rem;
+            font-size: 1.9rem;
             font-weight: 700;
             color: white;
             margin-bottom: 8px;
         }
-        
+
         .all-access-hero-desc {
             color: rgba(255,255,255,0.9);
             font-size: 1rem;
             max-width: 500px;
         }
-        
+
+        .all-access-hero-subtext {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
         .all-access-hero-pricing {
             position: relative;
             z-index: 1;
             text-align: right;
             display: flex;
-            gap: 24px;
+            gap: 28px;
             align-items: center;
         }
-        
+
         .all-access-price-box {
             text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.15);
         }
-        
+
         .all-access-price-label {
             font-size: 0.85rem;
-            color: rgba(255,255,255,0.8);
-            margin-bottom: 4px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 6px;
+            font-weight: 500;
         }
-        
+
         .all-access-price {
             font-family: 'Outfit', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.25rem;
+            font-weight: 800;
             color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.15);
         }
-        
+
         .all-access-price span {
             font-size: 1rem;
             font-weight: 400;
             opacity: 0.8;
         }
-        
+
         .all-access-hero-cta {
             background: white;
             color: var(--purple-700);
-            padding: 14px 28px;
+            padding: 16px 32px;
             border-radius: 100px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1rem;
             text-decoration: none;
             white-space: nowrap;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        
+
         .all-access-hero-cta:hover {
             transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         }
-        
+
         @media (max-width: 900px) {
             .all-access-hero {
                 flex-direction: column;
@@ -4895,19 +5031,155 @@
             }
             .all-access-hero-content { text-align: center; }
             .all-access-hero-desc { max-width: none; }
-            .all-access-hero-pricing { 
-                flex-direction: column; 
+            .all-access-hero-pricing {
+                flex-direction: column;
                 gap: 16px;
             }
             .all-access-price-box {
                 display: flex;
                 gap: 20px;
                 justify-content: center;
+                padding: 12px 16px;
             }
         }
 
 
-        /* Payment Choice Styles */
+        
+
+        /* Pricing Social Proof Stats Strip */
+        .pricing-social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            padding: 20px 24px;
+            margin: 0 auto 24px;
+            max-width: 700px;
+            background: var(--gray-50);
+            border-radius: 16px;
+            border: 1px solid var(--gray-100);
+        }
+
+        .proof-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .proof-number {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--purple-600);
+            line-height: 1.2;
+        }
+
+        .proof-label {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-social-proof {
+                gap: 24px;
+                padding: 16px 20px;
+            }
+            .proof-number {
+                font-size: 1.4rem;
+            }
+            .proof-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Pricing Testimonial */
+        .pricing-testimonial {
+            max-width: 680px;
+            margin: 40px auto;
+            padding: 28px 32px;
+            background: linear-gradient(135deg, var(--purple-50), white);
+            border-left: 4px solid var(--purple-500);
+            border-radius: 0 16px 16px 0;
+            position: relative;
+        }
+
+        .pricing-testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 12px;
+            left: 16px;
+            font-size: 3rem;
+            font-family: Georgia, serif;
+            color: var(--purple-200);
+            line-height: 1;
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-700);
+            font-style: italic;
+            margin: 0 0 16px 0;
+            padding-left: 24px;
+        }
+
+        .testimonial-cite {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding-left: 24px;
+            font-style: normal;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--gray-800);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-school {
+            color: var(--gray-500);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-testimonial {
+                padding: 24px 20px;
+                margin: 32px 16px;
+            }
+            .pricing-testimonial::before {
+                font-size: 2.5rem;
+                top: 8px;
+                left: 10px;
+            }
+            .testimonial-quote {
+                font-size: 1rem;
+                padding-left: 20px;
+            }
+            .testimonial-cite {
+                padding-left: 20px;
+            }
+        }
+
+        /* Risk Reversal Badge */
+        .tier-risk-reversal {
+            display: block;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 10px;
+        }
+
+        .tier-risk-reversal svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: -2px;
+            margin-right: 4px;
+            stroke: var(--green-500);
+        }
+/* Payment Choice Styles */
         .payment-choice {
             display: none;
             margin-top: 1.5rem;
@@ -5859,12 +6131,30 @@
                 </header>
 
                 
-                <!-- All Access Hero Banner -->
+                
+                <!-- Social Proof Stats Strip -->
+                <div class="pricing-social-proof">
+                    <div class="proof-stat">
+                        <span class="proof-number">500+</span>
+                        <span class="proof-label">Students Enrolled</span>
+                    </div>
+                    <div class="proof-stat">
+                        <span class="proof-number">4.9</span>
+                        <span class="proof-label">Google Rating</span>
+                    </div>
+                    <div class="proof-stat">
+                        <span class="proof-number">95%</span>
+                        <span class="proof-label">Improve in First Term</span>
+                    </div>
+                </div>
+
+<!-- All Access Hero Banner -->
                 <div class="all-access-hero" onclick="openAllAccessModal()">
                     <div class="all-access-hero-content">
                         <span class="all-access-hero-badge">★ Most Popular</span>
                         <h3 class="all-access-hero-title">All Access Pass</h3>
                         <p class="all-access-hero-desc">Unlimited subjects, unlimited potential. Get access to every class in your year level.</p>
+                        <p class="all-access-hero-subtext">Best for students taking 4+ subjects</p>
                     </div>
                     <div class="all-access-hero-pricing">
                         <div class="all-access-price-box">
@@ -5900,11 +6190,12 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Junior', '1 Subject')" data-tier="Junior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$80/wk</span></li>
-                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">50% off 3rd</span></li>
+                            <li onclick="selectPackage('Junior', '2 Subjects')" data-tier="Junior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$140/wk</span><span class="pkg-save">Save $20/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Junior', '3 Subjects')" data-tier="Junior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$200/wk</span><span class="pkg-save">Save $40/wk</span></li>
                             
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
 
                     <article class="pricing-tier-new">
@@ -5919,12 +6210,13 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Intermediate', '1 Subject')" data-tier="Intermediate" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$100/wk</span></li>
-                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">50% off 3rd</span></li>
-                            <li class="popular" onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th free</span></li>
+                            <li onclick="selectPackage('Intermediate', '2 Subjects')" data-tier="Intermediate" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$175/wk</span><span class="pkg-save">Save $25/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Intermediate', '3 Subjects')" data-tier="Intermediate" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$250/wk</span><span class="pkg-save">Save $50/wk</span></li>
+                            <li onclick="selectPackage('Intermediate', '4 Subjects')" data-tier="Intermediate" data-pkg="4"><span class="pkg-name">4 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">4th FREE!</span></li>
                             <li class="all-access" onclick="selectPackage('Intermediate', 'All Access')" data-tier="Intermediate" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$400/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
 
                     <article class="pricing-tier-new">
@@ -5939,16 +6231,27 @@
                         </div>
                         <ul class="tier-packages">
                             <li onclick="selectPackage('Senior', '1 Subject')" data-tier="Senior" data-pkg="1"><span class="pkg-name">1 Subject</span><span class="pkg-price">$120/wk</span></li>
-                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">25% off 2nd</span></li>
-                            <li onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">50% off 3rd</span></li>
-                            <li class="popular" onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-badge">Popular</span><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th free</span></li>
-                            <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-badge">Best Value</span><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
+                            <li onclick="selectPackage('Senior', '2 Subjects')" data-tier="Senior" data-pkg="2"><span class="pkg-name">2 Subjects</span><span class="pkg-price">$210/wk</span><span class="pkg-save">Save $30/wk</span></li>
+                            <li class="popular" onclick="selectPackage('Senior', '3 Subjects')" data-tier="Senior" data-pkg="3"><span class="pkg-badge">Best Value</span><span class="pkg-name">3 Subjects</span><span class="pkg-price">$300/wk</span><span class="pkg-save">Save $60/wk</span></li>
+                            <li onclick="selectPackage('Senior', '4 Subjects')" data-tier="Senior" data-pkg="4"><span class="pkg-name">4 Subjects</span><span class="pkg-price">$360/wk</span><span class="pkg-save">4th FREE!</span></li>
+                            <li class="all-access" onclick="selectPackage('Senior', 'All Access')" data-tier="Senior" data-pkg="all"><span class="pkg-name">All Access</span><span class="pkg-price">$500/wk</span><span class="pkg-save">Unlimited</span></li>
                         </ul>
                         <a href="#contact" class="tier-cta">Get Your Free Diagnostic</a>
+                        <span class="tier-risk-reversal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>No payment required</span>
                     </article>
                 </div>
 
-                <!-- Course Browser Section -->
+                
+                <!-- Pricing Testimonial -->
+                <blockquote class="pricing-testimonial">
+                    <p class="testimonial-quote">The diagnostic showed exactly where my son was struggling. Within two terms, his maths mark went from 65% to 89%.</p>
+                    <cite class="testimonial-cite">
+                        <span class="testimonial-name">Parent of Year 10 Student</span>
+                        <span class="testimonial-school">Carlingford High School</span>
+                    </cite>
+                </blockquote>
+
+<!-- Course Browser Section -->
                 <div class="course-browser-divider">
                     <h3 class="course-browser-heading">Browse Our Courses</h3>
                     <p class="course-browser-subtext">Learn more about what each class covers</p>
@@ -5962,6 +6265,7 @@
                 </div>
 
                 <!-- Course Cards -->
+                <div class="course-browser-container" data-expanded="false">
                 <div class="courses-grid" role="tabpanel" aria-label="Available courses">
                     <!-- Junior Maths -->
                     <article class="course-card" data-years="7-8">
@@ -6339,6 +6643,11 @@
                         </div>
                     </article>
                 </div>
+                <button class="course-browser-toggle" onclick="toggleCourseBrowser()" aria-expanded="false" aria-controls="courses-grid">
+                    <span class="toggle-text">See All Courses</span>
+                    <span class="toggle-icon">&#8595;</span>
+                </button>
+                </div>
 
                 <p class="pricing-note">All prices are per week. Trial lessons are free with no obligation.</p>
             </div>
@@ -6570,6 +6879,12 @@
             </div>
         </section>
 
+    <!-- Pricing Section Sticky CTA (Courses section only, mobile) -->
+    <div class="pricing-sticky-cta" id="pricingStickyCta">
+        <a href="#contact" class="sticky-cta-btn">Get Your Free Diagnostic</a>
+        <span class="sticky-cta-note">No payment required</span>
+    </div>
+
     <!-- Sticky Mobile CTA Bar -->
     <div class="sticky-cta-bar" id="sticky-cta-bar" inert>
         <div class="sticky-cta-container">
@@ -6755,6 +7070,26 @@
             }
         });
 
+        // Toggle Course Browser Expand/Collapse
+        function toggleCourseBrowser() {
+            const container = document.querySelector('.course-browser-container');
+            const button = document.querySelector('.course-browser-toggle');
+            if (\!container || \!button) return;
+
+            const isExpanded = container.dataset.expanded === 'true';
+            container.dataset.expanded = isExpanded ? 'false' : 'true';
+            button.setAttribute('aria-expanded', \!isExpanded);
+            button.querySelector('.toggle-text').textContent = isExpanded ? 'See All Courses' : 'Show Less';
+
+            // Smooth scroll to course browser if collapsing
+            if (isExpanded) {
+                const browserDivider = document.querySelector('.course-browser-divider');
+                if (browserDivider) {
+                    browserDivider.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+
         // Year tabs filtering
         const yearTabs = document.querySelectorAll('.year-tab');
         const courseCards = document.querySelectorAll('.course-card');
@@ -6863,6 +7198,38 @@
             );
 
             stickyObserver.observe(hero);
+        })();
+
+        // Pricing Sticky CTA visibility - show only when in Courses section (mobile)
+        (function() {
+            const coursesSection = document.getElementById('courses');
+            const pricingStickyCta = document.getElementById('pricingStickyCta');
+            if (!coursesSection || !pricingStickyCta) return;
+
+            function updatePricingStickyCta() {
+                const rect = coursesSection.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                
+                // Show when courses section is in view (top is above 50% of viewport, bottom is below 100px)
+                const isInSection = rect.top < viewportHeight * 0.5 && rect.bottom > 100;
+                
+                pricingStickyCta.classList.toggle('visible', isInSection);
+            }
+
+            // Throttled scroll listener
+            let pricingTicking = false;
+            window.addEventListener('scroll', function() {
+                if (!pricingTicking) {
+                    window.requestAnimationFrame(function() {
+                        updatePricingStickyCta();
+                        pricingTicking = false;
+                    });
+                    pricingTicking = true;
+                }
+            }, { passive: true });
+
+            // Initial check
+            updatePricingStickyCta();
         })();
 
         // Package selection - scroll to form and pre-fill
