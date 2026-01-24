@@ -6,22 +6,30 @@
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
 - **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
 - **v4 Courses Section Redesign** — Phases 14-16 (shipped 2026-01-24) | [Archive](milestones/v4-ROADMAP.md)
+- **v5 Courses Section Overhaul** — Phase 17+ (active)
 
 ---
 
-## v4: Courses Section Redesign
+## v5: Courses Section Overhaul
 
-**Goal:** Complete redesign of "Invest in Your Future" pricing section and "Browse Our Courses" course browser with fresh CSS architecture and research-backed best practices.
+**Goal:** Complete structural overhaul of Courses/Pricing section based on industry best practices for SaaS pricing pages, course platform conversion, and educational service sales. Similar scope to Hero Overhaul (v2 Phase 6).
+
+### Research Areas
+- SaaS pricing page conversion patterns
+- Course platform pricing psychology
+- Value ladder presentation
+- Feature comparison tables
+- Social proof placement on pricing
+- Checkout flow optimization
 
 ### Phases
 
-- [x] Phase 14: Courses Section Redesign (3/3 plans) — 2026-01-23
-- [x] Phase 15: Courses Conversion Optimization (3/3 plans) — VERIFIED 2026-01-23
-- [x] Phase 16: Courses Visual Polish (2/2 plans) — VERIFIED 2026-01-24
+- [ ] Phase 17: Courses Section Overhaul — **3 plans** (in 3 waves)
 
-Plans:
-- [ ] 16-01-PLAN.md — Core depth: Pricing tier + course card shadows
-- [ ] 16-02-PLAN.md — Supporting polish: Background, icons, tabs, buttons
+**Plans:**
+- [ ] 17-01-PLAN.md — Value ladder pricing with anchor and dollar savings
+- [ ] 17-02-PLAN.md — Social proof integration at decision points
+- [ ] 17-03-PLAN.md — Mobile optimization and collapsible course browser
 
 ---
 
@@ -64,6 +72,17 @@ See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
 
 </details>
 
+<details>
+<summary>v4 Courses Section Redesign (Phases 14-16) — SHIPPED 2026-01-24</summary>
+
+- [x] Phase 14: Courses Section Redesign (3/3 plans) — 2026-01-23
+- [x] Phase 15: Courses Conversion Optimization (3/3 plans) — VERIFIED 2026-01-23
+- [x] Phase 16: Courses Visual Polish (2/2 plans) — VERIFIED 2026-01-24
+
+See: [milestones/v4-ROADMAP.md](milestones/v4-ROADMAP.md) for full details.
+
+</details>
+
 ---
 
 ## Progress
@@ -86,7 +105,8 @@ See: [milestones/v3-ROADMAP.md](milestones/v3-ROADMAP.md) for full details.
 | 14 | v4 | Courses Section Redesign | Complete | 2026-01-23 |
 | 15 | v4 | Courses Conversion Optimization | Complete | 2026-01-23 |
 | 16 | v4 | Courses Visual Polish | Complete | 2026-01-24 |
+| 17 | v5 | Courses Section Overhaul | Planned | - |
 
 ---
 
-*Last updated: 2026-01-24 — v4 milestone complete
+*Last updated: 2026-01-24 — Phase 17 plans created*
