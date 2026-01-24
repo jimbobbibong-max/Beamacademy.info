@@ -6,7 +6,7 @@
 - **v2 Messaging Overhaul** — Phases 6-11 (shipped 2026-01-23) | [Archive](milestones/v2-ROADMAP.md)
 - **v3 Content Cleanup** — Phases 12-13 (shipped 2026-01-23) | [Archive](milestones/v3-ROADMAP.md)
 - **v4 Courses Section Redesign** — Phases 14-16 (shipped 2026-01-24) | [Archive](milestones/v4-ROADMAP.md)
-- **v5 Courses Section Overhaul** — Phases 17-19 (active) | [Archive](milestones/v5-ROADMAP.md)
+- **v5 Courses Section Overhaul** — Phases 17-19 (shipped 2026-01-24) | [Archive](milestones/v5-ROADMAP.md)
 
 ---
 
@@ -39,6 +39,14 @@
 - [x] 18-01-PLAN.md — Comprehensive conversion audit against research benchmarks
 - [x] 18-02-PLAN.md — CTA placement and conversion path optimization
 - [x] 18-03-PLAN.md — Content simplification, social proof repositioning, form optimization
+
+- [x] Phase 19: Final Pass — Content Reduction & Polish — **2 plans** (2/2 complete) — VERIFIED 2026-01-24
+
+**Goal:** Final pre-launch cleanup. Research-driven content reduction (what to REMOVE, not add). Holistic assessment of page flow, redundancy elimination, section consolidation, dead CSS cleanup, and launch readiness verification. The inverse of Phase 18 — subtract, dont add.
+
+**Plans:**
+- [x] 19-01-PLAN.md — Content reduction via 5-question test (remove CTA section, features strip, support bullets)
+- [x] 19-02-PLAN.md — Technical cleanup and pre-launch QA (dead CSS, links, form, accessibility)
 
 ---
 
@@ -116,6 +124,7 @@ See: [milestones/v4-ROADMAP.md](milestones/v4-ROADMAP.md) for full details.
 | 16 | v4 | Courses Visual Polish | Complete | 2026-01-24 |
 | 17 | v5 | Courses Section Overhaul | Complete | 2026-01-24 |
 | 18 | v5 | Free Trial Conversion Audit | Complete | 2026-01-24 |
+| 19 | v5 | Final Pass — Content Reduction | Complete | 2026-01-24 |
 
 ---
 
