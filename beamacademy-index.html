@@ -2770,6 +2770,7 @@
             font-size: 1.1rem;
             color: var(--gray-900);
         }
+        /* Form trust signal */        .form-trust-signal {            display: flex;            align-items: center;            gap: 12px;            padding: 16px 20px;            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(124, 58, 237, 0.04) 100%);            border-radius: 12px;            margin-top: 24px;            border: 1px solid rgba(124, 58, 237, 0.15);        }        .form-trust-signal .trust-rating {            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));            color: white;            padding: 6px 12px;            border-radius: 100px;            font-weight: 600;            font-size: 0.9rem;            white-space: nowrap;        }        .form-trust-signal .trust-text {            font-size: 0.95rem;            color: var(--gray-700);            line-height: 1.4;        }        .form-trust-signal .trust-text strong {            color: var(--purple-700);        }        @media (max-width: 600px) {            .form-trust-signal {                flex-direction: column;                text-align: center;                gap: 8px;            }        }
 
         .contact-form-wrapper {
             background: var(--white);
@@ -2840,6 +2841,48 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
+        }
+
+        /* Section CTA - subtle CTAs after value sections */
+        .section-cta {
+            text-align: center;
+            padding: 32px 24px;
+            margin-top: 40px;
+        }
+
+        .section-cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--purple-700);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .section-cta-link:hover {
+            color: var(--purple-800);
+            transform: translateX(4px);
+        }
+
+        .section-cta-link svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .section-cta-link:hover svg {
+            transform: translateX(4px);
+        }
+
+        .section-cta-risk {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            font-weight: 400;
         }
 
         /* CTA */
@@ -4507,6 +4550,14 @@
             margin-top: 12px;
             margin-bottom: 0;
         }
+        .form-next-step {
+            text-align: center;
+            color: var(--gray-600);
+            font-size: 0.85rem;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-style: italic;
+        }
 
         /* Hide manual selection when package is chosen */
         .package-selected #manualSelectionRow {
@@ -5789,6 +5840,15 @@
                 <div class="proof-insight">
                     <span class="insight-text">The gap teachers miss: specific topics like "Integration by Parts", not just "needs improvement"</span>
                 </div>
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Get Your 4 Documents Free
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">Free lesson. Keep the documents either way.</span>
+                </div>
             </div>
         </section>
 
@@ -5870,6 +5930,16 @@
                         <div class="comparison-card-generic">"We keep our classes small"</div>
                         <div class="comparison-card-beam"><strong>6-8 students max</strong> — that's our hard limit</div>
                     </div>
+                </div>
+            
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Experience the Difference
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">Try a free lesson. No strings attached.</span>
                 </div>
             </div>
         </section>
@@ -6006,6 +6076,16 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            
+
+                <!-- Section CTA -->
+                <div class="section-cta">
+                    <a href="#contact" class="section-cta-link">
+                        Meet Our Tutors in a Free Lesson
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <span class="section-cta-risk">No payment required. No obligation.</span>
                 </div>
             </div>
         </section>
@@ -6750,6 +6830,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Social proof near form -->
+                    <div class="form-trust-signal">
+                        <span class="trust-rating">5.0 ★</span>
+                        <span class="trust-text"><strong>95% of students improve</strong> in their first term. Join families from Baulko, James Ruse, and Epping Boys.</span>
+                    </div>
                 </div>
                 <div class="contact-form-wrapper">
                     <!-- Default state: no package selected -->
@@ -6880,6 +6965,7 @@
                         </button>
                         
                         <p class="form-note" id="trialNote" style="display: block;">Your first lesson is free. No payment required today.</p>
+                        <p class="form-next-step">Next: We'll call within 24 hours to find a time that works for you.</p>
                         <div class="stripe-badge" id="stripeBadge" style="display: none;">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                             Secure payment via Stripe
