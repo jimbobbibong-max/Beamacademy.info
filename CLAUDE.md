@@ -19,6 +19,25 @@ This prevents the "File has been unexpectedly modified" bug in Claude Code.
 
 ---
 
+## Codebase Navigation: Codemap
+
+**Use `/codemap:codemap` for efficient codebase exploration.**
+
+Codemap creates structural indexes that reduce token consumption by 60-80%. Use it when:
+- Finding symbol definitions (classes, functions, sections)
+- Exploring file structure
+- Locating code by name
+
+```
+/codemap:codemap "find pricing section"
+/codemap:codemap "where is the hero component"
+/codemap:codemap "list all CSS classes"
+```
+
+Prefer codemap over manual Grep/Glob chains for exploration tasks.
+
+---
+
 ## Project Structure
 
 - **Main file**: `C:\Users\bskim\Downloads\beamacademy-index.html` (user previews from Downloads)
