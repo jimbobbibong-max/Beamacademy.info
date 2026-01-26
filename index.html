@@ -7649,6 +7649,34 @@
             }
         });
 
+        // Webhook integration for lead tracking (beam-portal Pipeline)
+        (function() {
+            const form = document.querySelector('form[name="trial"]');
+            if (!form) return;
+
+            form.addEventListener('submit', function(e) {
+                // Collect form data
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+
+                // Fire and forget - don't block form submission
+                fetch('https://beamffef.netlify.app/.netlify/functions/lead-webhook', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                }).catch(() => {
+                    // Silent fail - webhook errors shouldn't affect form UX
+                });
+
+                // Form continues to submit normally (Netlify Forms handles it)
+            });
+        })();
+
     </script>
 
     <!-- All Access Tier Selection Modal -->
