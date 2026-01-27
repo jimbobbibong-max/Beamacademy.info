@@ -1,3 +1,14 @@
+# ⚠️ WINDOWS PATH RULE (MANDATORY - EVERY FILE OPERATION)
+
+**Use complete absolute Windows paths with drive letters and backslashes for ALL file operations.**
+
+✅ `C:\Users\bskim\beamacademy-site\index.html`
+❌ `./index.html` | `index.html` | `/index.html`
+
+Applies to: Read, Write, Edit, MultiEdit, Create, Delete, Move, Copy
+
+---
+
 # BEAM Academy Site - Development Guide for AI Assistants
 
 ## CRITICAL: Windows Path Format for File Operations
