@@ -1,5 +1,99 @@
 # Project Milestones: BEAM Academy Landing Page
 
+## v6 Content Reduction & Pre-Launch QA (Shipped: 2026-01-29)
+
+**Delivered:** Final pre-launch cleanup — removed 85 lines redundant HTML, 78 lines dead CSS, verified all links/forms/accessibility. Page is launch-ready.
+
+**Phases completed:** 19 (2 plans total)
+
+**Key accomplishments:**
+
+- Applied 5-question test to remove redundant content (Final CTA, Features strip, Support bullets)
+- Removed 78 lines of orphaned CSS after content deletion
+- Verified all 8 navigation links point to valid sections
+- Verified form has correct attributes for Netlify submission
+- Validated HTML structure and accessibility fundamentals
+
+**Stats:**
+
+- 1 phase, 2 plans
+- Net removal: 163 lines (85 HTML + 78 CSS)
+- Final file: 7,739 lines
+- 1 day to ship
+
+**Git range:** `d30b034` → `ce74e25`
+
+**What's next:** v7 Comprehensive Frontend Redesign — research-backed visual overhaul keeping BEAM purple/white brand.
+
+---
+
+## v5 Courses Section Overhaul (Shipped: 2026-01-24)
+
+**Delivered:** Complete structural overhaul of Courses/Pricing section with value ladder pricing, social proof integration, and free trial conversion optimization.
+
+**Phases completed:** 17-18 (6 plans total)
+
+**Key accomplishments:**
+
+- Value ladder pricing with anchor and dollar savings
+- Social proof integration at decision points
+- Mobile-optimized collapsible course browser
+- Comprehensive conversion audit against research benchmarks
+- CTA placement optimization ("Get Your Free Diagnostic" unified messaging)
+- Content simplification and form optimization
+
+**Stats:**
+
+- 2 phases, 6 plans
+- Multiple requirements satisfied
+- All verified with UAT
+
+**What's next:** v6 Content Reduction & Pre-Launch QA
+
+---
+
+## v4 Courses Section Redesign (Shipped: 2026-01-24)
+
+**Delivered:** Redesigned Courses/Pricing section with fresh CSS architecture, research-backed UX patterns, and visual polish.
+
+**Phases completed:** 14-16 (8 plans total)
+
+**Key accomplishments:**
+
+- Clean CSS architecture (no duplicates, clear structure)
+- Research-backed pricing/course browser UX
+- Consistent with Hero/Trust/Proof section quality
+- Mobile-first responsive design
+- Pricing tier shadows and hover effects
+- CTA button hover lift transforms
+
+**What's next:** v5 Courses Section Overhaul
+
+---
+
+## v3 Content Cleanup (Shipped: 2026-01-23)
+
+**Delivered:** Removed redundant legacy content and consolidated overlapping sections.
+
+**Phases completed:** 12-13 (5 plans total)
+
+**Key accomplishments:**
+
+- Removed "Why Us" section (content covered by v2 sections)
+- Removed "Portal" section (hero already has portal mockup)
+- Consolidated Team into Trust section (4th tutor added)
+- Added student testimonials to Trust section
+- Cleaned up all orphaned CSS
+
+**Stats:**
+
+- 14 requirements completed
+- All Quality requirements verified
+
+**What's next:** v4 Courses Section Redesign
+
+---
+
 ## v2 Messaging Overhaul (Shipped: 2026-01-23)
 
 **Delivered:** Rewrote landing page so visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds — show, don't tell approach with portal mockups and document previews.
@@ -25,8 +119,6 @@
 **Git range:** `feat(06-01)` → `docs(v2)`
 
 **Tech debt tracked:** See `milestones/v2-MILESTONE-AUDIT.md` for minor polish items.
-
-**What's next:** v3 SEO + Content Revamp — deep research on tutoring industry SEO, local keywords, parent search behavior.
 
 ---
 
@@ -55,9 +147,7 @@
 
 **Tech debt tracked:** See `milestones/v1-MILESTONE-AUDIT.md` for accessibility items deferred to v2.
 
-**What's next:** v2 Design Polish — remove generic AI feel, more distinctive design while keeping purple brand.
-
 ---
 
 *Milestones log started: 2026-01-20*
-*v1 archived: 2026-01-22*
+*v6 archived: 2026-01-29*

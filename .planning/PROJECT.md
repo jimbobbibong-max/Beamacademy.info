@@ -6,27 +6,15 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 
 ## Current State
 
-**Version:** v3 (shipped 2026-01-23)
-**Status:** Live on beamacademy.info
-**Codebase:** ~7,500 LOC (HTML/CSS/JS in single index.html)
+**Version:** v6 (shipped 2026-01-29)
+**Status:** Launch-ready, live on beamacademy.info
+**Codebase:** ~7,700 LOC (HTML/CSS/JS in single index.html)
 
 **Performance:**
 - LCP: 0.9s (target <2.5s)
 - CLS: 0.014 (target <0.1)
 - Lighthouse Performance: 88/100
 - Lighthouse SEO: 100/100
-
-## Current Milestone: v4.0 Courses Section Redesign
-
-**Goal:** Complete redesign of the Courses/Pricing section with fresh CSS architecture, research-backed UX patterns, and holistic integration with the rest of the site.
-
-**Why:** Phase 14 (v3) attempted incremental CSS patches which created conflicts. Fresh implementation needed with proper research on pricing page best practices.
-
-**Target:**
-- Clean, maintainable CSS (no duplicates, clear structure)
-- Research-backed pricing/course browser UX
-- Consistent with Hero/Trust/Proof section quality
-- Mobile-first, responsive
 
 ## The Jobs It Does
 
@@ -36,40 +24,63 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 
 3. **Convert to free trial** — Minimize friction between understanding and action. Sticky CTAs, simplified form, clear path to booking.
 
-4. **Help parents choose the right package** — (v4 focus) Clear pricing tiers, easy course browsing, obvious path from "interested" to "booking".
+4. **Help parents choose the right package** — Clear pricing tiers, easy course browsing, obvious path from "interested" to "booking".
 
 ## Why This Matters
 
-BEAM's differentiator is data-driven personalization: track scores → identify weak spots → generate custom materials. No other tutoring company does this. The v2 redesign makes this instantly visible through portal mockups and document previews — show, don't tell.
+BEAM's differentiator is data-driven personalization: track scores → identify weak spots → generate custom materials. No other tutoring company does this. The landing page makes this instantly visible through portal mockups and document previews — show, don't tell.
 
 ## Requirements
 
-### Validated (v1 + v2 + v3)
+### Validated
 
-**v1 Requirements:** (18 requirements — mobile conversion)
-- VIEW-01 through VIEW-04: Mobile viewport and touch targets
-- CTA-01 through CTA-03: Hero and sticky CTAs
-- FORM-01 through FORM-04: Optimized contact form
-- CONT-01 through CONT-04: Content and trust signals
-- PERF-01 through PERF-03: Performance optimization
+**v1 Mobile Conversion (shipped 2026-01-20):**
+- ✓ Mobile viewport works (320px-428px) — v1
+- ✓ Touch targets ≥44px — v1
+- ✓ Hero CTA visible without scroll — v1
+- ✓ Sticky CTA bar with click-to-call — v1
+- ✓ Form reduced to 4 fields — v1
+- ✓ LCP <2.5s (achieved 0.9s) — v1
+- ✓ CLS <0.1 (achieved 0.014) — v1
 
-**v2 Requirements:** (24 requirements — messaging overhaul)
-- HERO-01 through HERO-05: Hero section
-- PROOF-01 through PROOF-04: Proof section
-- COMP-01 through COMP-02: Comparison section
-- TRUST-01 through TRUST-05: Trust section
-- SUPP-01 through SUPP-03: Support section
-- CTA-01 through CTA-02: CTAs
-- MOB-01 through MOB-03: Mobile polish
+**v2 Messaging Overhaul (shipped 2026-01-23):**
+- ✓ Hero shows differentiator in 3 seconds — v2
+- ✓ Portal mockup demonstrates score tracking — v2
+- ✓ Proof section shows 4 trial deliverables — v2
+- ✓ Comparison table: Generic vs BEAM — v2
+- ✓ Trust section with tutor credentials — v2
+- ✓ Support section with Discord response time proof — v2
+- ✓ All CTAs say "Get Your Free Diagnostic" — v2
 
-**v3 Requirements:** (14 requirements — content cleanup)
-- DEL-01 through DEL-04: Removed redundant sections
-- MERGE-01 through MERGE-06: Consolidated content
-- QUAL-01 through QUAL-04: Quality after changes
+**v3 Content Cleanup (shipped 2026-01-23):**
+- ✓ Removed redundant "Why Us" section — v3
+- ✓ Removed redundant "Portal" section — v3
+- ✓ Consolidated Team into Trust section — v3
+- ✓ All orphaned CSS cleaned — v3
+
+**v4 Courses Section Redesign (shipped 2026-01-24):**
+- ✓ Clean CSS architecture — v4
+- ✓ Mobile-first responsive design — v4
+- ✓ Pricing tier hover effects — v4
+- ✓ CTA button hover transforms — v4
+
+**v5 Courses Section Overhaul (shipped 2026-01-24):**
+- ✓ Value ladder pricing — v5
+- ✓ Social proof at decision points — v5
+- ✓ Collapsible course browser — v5
+- ✓ Free trial conversion audit passed — v5
+
+**v6 Content Reduction & QA (shipped 2026-01-29):**
+- ✓ 5-question test applied to all sections — v6
+- ✓ Redundant content removed (85 lines) — v6
+- ✓ Dead CSS removed (78 lines) — v6
+- ✓ All navigation links verified — v6
+- ✓ Form attributes verified — v6
+- ✓ Pre-launch QA passed — v6
 
 ### Active
 
-(To be defined after v4 research — see `.planning/REQUIREMENTS.md`)
+(None — ready for v7 milestone definition)
 
 ### Out of Scope
 
@@ -97,7 +108,15 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - **Deployment**: Auto-deploy to main, all changes pushed immediately
 - **No frameworks**: Keep vanilla HTML/CSS/JS, no React/Vue/etc
 - **Existing branding**: Keep purple color scheme, Outfit font
-- **v4 constraint**: Clean CSS architecture — no duplicate rules, clear organization
+
+## Tech Debt
+
+**Carried forward (minor):**
+- Skip button positioning (cosmetic)
+- Form scroll anchor positioning (UX)
+- Some aria-hidden with focusable children
+- Some contrast issues
+- Links without discernible names
 
 ## Key Decisions
 
@@ -115,19 +134,8 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 | CSS mockups for documents | Preserves LCP performance (no image loads) | ✓ Good — 0.9s LCP maintained |
 | Pure CSS Discord mockup | Faster loads than screenshot, no privacy concerns | ✓ Good — 33-min proof works |
 | Nav CTA shortened | "Free Diagnostic" fits nav; full text on hero/sticky | ✓ Good — no overflow |
-| v4: Fresh CSS over patches | Incremental patches caused conflicts in v3 Phase 14 | — Pending |
-
-## Tech Debt
-
-**v1 accessibility issues (still present):**
-- Skip to main content button positioning (cosmetic)
-- Form scroll anchor positioning (UX polish)
-- Some course-icons have aria-hidden with focusable children
-- Some contrast issues (Lighthouse accessibility)
-- Links without discernible names (Lighthouse accessibility)
-
-**v3 learnings:**
-- Courses section CSS is messy/duplicated — v4 will rewrite cleanly
+| Remove Final CTA section | Sticky bar provides persistent conversion path | ✓ Good — reduced cognitive load |
+| Remove Features strip | Generic claims don't differentiate; document cards do | ✓ Good — cleaner Proof section |
 
 ---
-*Last updated: 2026-01-23 after starting v4 milestone*
+*Last updated: 2026-01-29 after v6 milestone complete*
