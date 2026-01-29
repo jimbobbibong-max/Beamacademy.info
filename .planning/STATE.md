@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v7 (Comprehensive Frontend Redesign)
 Phase: 20 of 24 — Payment Fix
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-01-29 - v7 milestone initialized
+Plan: 01 complete, ready for 02
+Status: In progress
+Last activity: 2026-01-29 - Completed 20-01-PLAN.md (Stripe verification)
 
-Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/5 phases complete)
+Progress: [██████░░░░░░░░░░░░░░░░░░░░░░░░] 20% (1/5 plans complete in phase 20)
 
 ## Milestone History
 
@@ -40,7 +40,7 @@ Three layers combined:
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 20 | Payment Fix | PAY-01 to PAY-04 | Pending |
+| 20 | Payment Fix | PAY-01 to PAY-04 | In Progress (01/04 complete) |
 | 21 | Design System & Typography | TYP, DES, VIS | Pending |
 | 22 | Layout, Mobile & Conversion | VIS-04, MOB, CONV | Pending |
 | 23 | Motion & Micro-interactions | MOT-01 to MOT-04 | Pending |
@@ -48,24 +48,31 @@ Three layers combined:
 
 ## Key Research Findings
 
-- **Stripe Checkout already exists** in `netlify/functions/create-checkout.js` — just debug, don't rebuild
+- **Stripe Checkout already exists** in `netlify/functions/create-checkout.js` — VERIFIED WORKING
 - **Avoid generic fonts** (Arial, Inter, Roboto) — pick distinctive typeface
 - **Purple is fine** if used as solid dominant color with sharp accents (not gradient)
 - **One well-orchestrated page load** > scattered micro-interactions
 - **Protect 0.9s LCP** — test every change against performance baseline
 
+## Accumulated Decisions
+
+| Date | Decision | Rationale |
+|------|----------|-----------|
+| 2026-01-29 | Stripe function verified, no changes needed | Existing implementation correct |
+| 2026-01-29 | STRIPE_SECRET_KEY confirmed in Netlify | User verified via dashboard |
+
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: v7 initialized, ready for Phase 20 planning
+Stopped at: Completed 20-01-PLAN.md (Stripe verification)
 Resume file: None
 
 ## Next Up
 
-**Phase 20: Payment Fix** — Debug existing Stripe Checkout
+**Plan 20-02: Frontend Integration** — Connect pricing buttons to checkout function
 
-`/gsd:plan-phase 20`
+`/gsd:plan-phase 20-02` — Create plan for frontend integration
 
 ---
 
-*Last updated: 2026-01-29 - v7 milestone initialized*
+*Last updated: 2026-01-29 - Plan 20-01 complete*
