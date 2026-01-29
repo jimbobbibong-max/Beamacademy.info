@@ -32,10 +32,11 @@
 
 **Goal:** Fix "Pay Now" button — Stripe already exists in codebase, just needs debugging
 **Requirements:** PAY-01, PAY-02, PAY-03, PAY-04
+**Plans:** 2 plans
 
-**Plans:**
-- 20-01: Verify Netlify env vars and test Stripe function endpoint
-- 20-02: Connect frontend Pay Now button to checkout flow
+Plans:
+- [ ] 20-01-PLAN.md — Verify Netlify env vars and test Stripe function endpoint
+- [ ] 20-02-PLAN.md — Connect frontend Pay Now button to checkout flow
 
 ---
 
@@ -97,7 +98,7 @@
 | 14-16 | v4 | Courses Redesign | Complete | 2026-01-24 |
 | 17-18 | v5 | Courses Overhaul | Complete | 2026-01-24 |
 | 19 | v6 | Content Reduction & QA | Complete | 2026-01-29 |
-| 20 | v7 | Payment Fix | Pending | - |
+| 20 | v7 | Payment Fix | Planned | - |
 | 21 | v7 | Design System & Typography | Pending | - |
 | 22 | v7 | Layout, Mobile & Conversion | Pending | - |
 | 23 | v7 | Motion & Micro-interactions | Pending | - |
@@ -105,4 +106,4 @@
 
 ---
 
-*Last updated: 2026-01-29 — v7 milestone created*
+*Last updated: 2026-01-29 — Phase 20 plans created*
