@@ -4,15 +4,18 @@
 
 See: .planning/PROJECT.md (updated 2026-01-29)
 
-**Core value:** Visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds
-**Current focus:** Ready for v7 milestone
+**Core value:** Visitors understand BEAM's differentiator within 3 seconds
+**Current focus:** v7 Comprehensive Frontend Redesign
 
 ## Current Position
 
-Milestone: v6 COMPLETE — Ready for v7
-Phase: None active (between milestones)
-Status: Ready to plan next milestone
-Last activity: 2026-01-29 - v6 milestone archived
+Milestone: v7 (Comprehensive Frontend Redesign)
+Phase: 20 of 24 — Payment Fix
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-01-29 - v7 milestone initialized
+
+Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/5 phases complete)
 
 ## Milestone History
 
@@ -24,39 +27,45 @@ Last activity: 2026-01-29 - v6 milestone archived
 | v4 | Courses Section Redesign | 14-16 | SHIPPED | 2026-01-24 |
 | v5 | Courses Section Overhaul | 17-18 | SHIPPED | 2026-01-24 |
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
+| v7 | Frontend Redesign | 20-24 | IN PROGRESS | - |
 
-## Performance Baseline
+## v7 Synthesis Approach
 
-| Metric | Target | Current |
-|--------|--------|---------|
-| LCP | < 2.5s | 0.9s |
-| CLS | < 0.1 | 0.014 |
-| Performance | - | 88/100 |
-| SEO | - | 100/100 |
+Three layers combined:
+1. **Anthropic Frontend Design Skill** — Bold aesthetic, distinctive typography, intentional motion
+2. **BEAM Brand Principles** — Solid purple (#7c3aed), pastel accents, hard colors
+3. **Best Practices Research** — Performance, conversion, accessibility, mobile-first
 
-## Tech Debt
+## v7 Phases
 
-**Carried forward:**
-- Skip button positioning (cosmetic)
-- Form scroll anchor positioning (UX)
-- Some aria-hidden with focusable children
-- Some contrast issues
-- Links without discernible names
+| Phase | Name | Requirements | Status |
+|-------|------|--------------|--------|
+| 20 | Payment Fix | PAY-01 to PAY-04 | Pending |
+| 21 | Design System & Typography | TYP, DES, VIS | Pending |
+| 22 | Layout, Mobile & Conversion | VIS-04, MOB, CONV | Pending |
+| 23 | Motion & Micro-interactions | MOT-01 to MOT-04 | Pending |
+| 24 | Performance & Final QA | PERF-01 to PERF-04 | Pending |
+
+## Key Research Findings
+
+- **Stripe Checkout already exists** in `netlify/functions/create-checkout.js` — just debug, don't rebuild
+- **Avoid generic fonts** (Arial, Inter, Roboto) — pick distinctive typeface
+- **Purple is fine** if used as solid dominant color with sharp accents (not gradient)
+- **One well-orchestrated page load** > scattered micro-interactions
+- **Protect 0.9s LCP** — test every change against performance baseline
 
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: v6 milestone complete, ready for v7
+Stopped at: v7 initialized, ready for Phase 20 planning
 Resume file: None
 
 ## Next Up
 
-**Ready for v7 Milestone**
+**Phase 20: Payment Fix** — Debug existing Stripe Checkout
 
-User requested: Comprehensive frontend redesign with research-backed best practices, keeping BEAM purple/white brand colors.
-
-Run `/gsd:new-milestone` to start v7 planning.
+`/gsd:plan-phase 20`
 
 ---
 
-*Last updated: 2026-01-29 - v6 milestone archived*
+*Last updated: 2026-01-29 - v7 milestone initialized*
