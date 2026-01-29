@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v7 (Comprehensive Frontend Redesign)
 Phase: 21.1 of 24 — Alternative Design System (Frontend Design Skill)
-Plan: 01 of TBD — Design Tokens Foundation COMPLETE
-Status: Ready for Plan 02 (Typography)
-Last activity: 2026-01-29 - Completed 21.1-01-PLAN.md (Design tokens foundation)
+Plan: 02 of 3 — Typography Application COMPLETE
+Status: Ready for Plan 03 (Hero Transformation)
+Last activity: 2026-01-29 - Completed 21.1-02-PLAN.md (Typography system)
 
-Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 25% (Phase 20 complete + 21.1-01 in progress)
+Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 27% (Phase 20 + 21.1-01 + 21.1-02 complete)
 
 ## Milestone History
 
@@ -52,7 +52,7 @@ Three layers combined:
 | Plan | Name | Status |
 |------|------|--------|
 | 01 | Design Tokens Foundation | COMPLETE |
-| 02 | Typography Application | Pending |
+| 02 | Typography Application | COMPLETE |
 | 03 | Hero Transformation | Pending |
 
 ## Key Research Findings
@@ -83,19 +83,21 @@ Three layers combined:
 | 2026-01-29 | End-to-end payment flow verified | User completed test purchase successfully |
 | 2026-01-29 | Electric lime (#bfff00) for accent | Highest visibility color, sharp purple contrast |
 | 2026-01-29 | Outfit fallback for Bricolage Grotesque | Page works until new fonts load |
+| 2026-01-29 | Fraunces for display, Bricolage for body | Editorial pairing for distinctive look |
+| 2026-01-29 | Fluid type scale with clamp() | Smooth scaling without media query jumps |
 
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: Completed 21.1-01-PLAN.md (Design tokens foundation)
-Resume file: .planning/phases/21.1-alt-design-system-skill/21.1-02-PLAN.md
+Stopped at: Completed 21.1-02-PLAN.md (Typography application)
+Resume file: .planning/phases/21.1-alt-design-system-skill/21.1-03-PLAN.md
 
 ## Next Up
 
-**Phase 21.1 Plan 02: Typography Application** — Load Fraunces + Bricolage fonts, apply fluid type scale
+**Phase 21.1 Plan 03: Hero Transformation** — Apply typography and lime accent to hero section
 
-`/gsd:execute-phase 21.1-02`
+`/gsd:execute-phase 21.1-03`
 
 ---
 
-*Last updated: 2026-01-29 - Plan 21.1-01 complete (design tokens foundation)*
+*Last updated: 2026-01-29 - Plan 21.1-02 complete (typography system)*
