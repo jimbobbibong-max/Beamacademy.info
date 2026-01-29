@@ -10,12 +10,12 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Milestone: v7 (Comprehensive Frontend Redesign)
-Phase: 20 of 24 — Payment Fix ✓ COMPLETE
-Plan: All plans complete
-Status: Ready for Phase 21
-Last activity: 2026-01-29 - Phase 20 verified complete
+Phase: 21.1 of 24 — Alternative Design System (Frontend Design Skill)
+Plan: 01 of TBD — Design Tokens Foundation COMPLETE
+Status: Ready for Plan 02 (Typography)
+Last activity: 2026-01-29 - Completed 21.1-01-PLAN.md (Design tokens foundation)
 
-Progress: [██████░░░░░░░░░░░░░░░░░░░░░░░░] 20% (1/5 phases complete in v7)
+Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 25% (Phase 20 complete + 21.1-01 in progress)
 
 ## Milestone History
 
@@ -40,11 +40,20 @@ Three layers combined:
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
-| 20 | Payment Fix | PAY-01 to PAY-04 | Complete ✓ |
+| 20 | Payment Fix | PAY-01 to PAY-04 | Complete |
 | 21 | Design System & Typography | TYP, DES, VIS | Pending |
+| 21.1 | Alt Design System (Skill) | Bold editorial aesthetic | In Progress |
 | 22 | Layout, Mobile & Conversion | VIS-04, MOB, CONV | Pending |
 | 23 | Motion & Micro-interactions | MOT-01 to MOT-04 | Pending |
 | 24 | Performance & Final QA | PERF-01 to PERF-04 | Pending |
+
+## Phase 21.1 Progress
+
+| Plan | Name | Status |
+|------|------|--------|
+| 01 | Design Tokens Foundation | COMPLETE |
+| 02 | Typography Application | Pending |
+| 03 | Hero Transformation | Pending |
 
 ## Key Research Findings
 
@@ -53,6 +62,16 @@ Three layers combined:
 - **Purple is fine** if used as solid dominant color with sharp accents (not gradient)
 - **One well-orchestrated page load** > scattered micro-interactions
 - **Protect 0.9s LCP** — test every change against performance baseline
+- **Fraunces + Bricolage Grotesque** chosen for Phase 21.1 typography
+- **Chartreuse/lime accent** (#bfff00) for sharp contrast with purple
+
+## Accumulated Context
+
+### Roadmap Evolution
+
+- Phase 21.1 inserted after Phase 21: Alternative Design System using Anthropic Frontend Design Skill (A/B COMPARISON)
+  - Purpose: Compare "safe premium" (Phase 21) vs "bold distinctive" (Phase 21.1) approaches
+  - Frontend Design Skill installed at: `~/.claude/skills/frontend-design/SKILL.md`
 
 ## Accumulated Decisions
 
@@ -62,19 +81,21 @@ Three layers combined:
 | 2026-01-29 | STRIPE_SECRET_KEY confirmed in Netlify | User verified via dashboard |
 | 2026-01-29 | Removed emoji/unicode from JavaScript | Special characters caused syntax errors blocking payment flow |
 | 2026-01-29 | End-to-end payment flow verified | User completed test purchase successfully |
+| 2026-01-29 | Electric lime (#bfff00) for accent | Highest visibility color, sharp purple contrast |
+| 2026-01-29 | Outfit fallback for Bricolage Grotesque | Page works until new fonts load |
 
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: Completed 20-02-PLAN.md (Frontend integration verified)
-Resume file: None
+Stopped at: Completed 21.1-01-PLAN.md (Design tokens foundation)
+Resume file: .planning/phases/21.1-alt-design-system-skill/21.1-02-PLAN.md
 
 ## Next Up
 
-**Phase 21: Design System & Typography Foundation** — Establish distinctive visual foundation
+**Phase 21.1 Plan 02: Typography Application** — Load Fraunces + Bricolage fonts, apply fluid type scale
 
-`/gsd:plan-phase 21`
+`/gsd:execute-phase 21.1-02`
 
 ---
 
-*Last updated: 2026-01-29 - Phase 20 complete (payment flow verified working)*
+*Last updated: 2026-01-29 - Plan 21.1-01 complete (design tokens foundation)*
