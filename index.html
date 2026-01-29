@@ -683,6 +683,39 @@
             box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
         }
 
+        /* Lime Accent Button - Primary CTA (Phase 21.1) */
+        .btn-lime {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-4) var(--space-6);
+            background: var(--color-lime-500);
+            color: var(--purple-900);
+            font-family: var(--font-body);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-lime);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .btn-lime:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(191, 255, 0, 0.5);
+        }
+
+        .btn-lime:active {
+            transform: translateY(0);
+        }
+
+        .btn-lime:focus-visible {
+            outline: 2px solid var(--purple-700);
+            outline-offset: 2px;
+        }
+
         .btn-secondary {
             background: white;
             color: var(--gray-700);
@@ -4059,6 +4092,12 @@
                 font-size: 1.1rem;
             }
 
+            /* Lime button full-width on mobile */
+            .btn-lime {
+                width: 100%;
+                text-align: center;
+            }
+
             .hero-testimonial {
                 font-size: 0.9rem;
                 padding: 10px 16px;
@@ -5676,7 +5715,7 @@
                             We track scores topic by topic. Their worksheets target exactly what they need to improve.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Get My Free Diagnostic</a>
+                            <a href="#contact" class="btn btn-lime">Get My Free Diagnostic</a>
                         </div>
                         <p class="hero-risk-reversal">Free lesson. No payment required. Keep the diagnostic either way.</p>
                         <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
