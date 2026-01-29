@@ -16,6 +16,26 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 - Lighthouse Performance: 88/100
 - Lighthouse SEO: 100/100
 
+## Current Milestone: v7 Comprehensive Frontend Redesign
+
+**Goal:** Use Anthropic's Frontend Design skill to comprehensively redesign the site with research-backed best practices. Keep BEAM purple/white brand colors.
+
+### Priority Order
+
+1. **🔥 PRIORITY #1: Use Frontend Design Skill** — Leverage Anthropic's frontend design capabilities for a comprehensive, research-backed visual redesign. This is THE main goal of v7.
+
+2. **Pay Now Button** — Research and implement proper payment/booking flow (Stripe, redirect, etc.). Currently leads nowhere.
+
+3. **Research-Driven Approach** — If current design is "blatantly unoptimized" → full overhaul. Otherwise → same content, better presentation.
+
+### Target Outcomes
+- Professional, modern visual design using frontend design best practices
+- Typography, spacing, layout optimization
+- Modern UI/UX patterns for education/tutoring sites
+- Conversion optimization based on industry research
+- Pay Now button with functional payment/booking flow
+- Keep BEAM brand: purple (#7c3aed) and white
+
 ## The Jobs It Does
 
 1. **Communicate the differentiator instantly** — Visitors understand within 3 seconds that BEAM provides custom materials based on their child's tracked scores, not generic tutoring.
@@ -25,6 +45,8 @@ A conversion-optimized landing page for BEAM Academy tutoring that instantly com
 3. **Convert to free trial** — Minimize friction between understanding and action. Sticky CTAs, simplified form, clear path to booking.
 
 4. **Help parents choose the right package** — Clear pricing tiers, easy course browsing, obvious path from "interested" to "booking".
+
+5. **Enable direct purchase** (v7) — Pay Now button leads to functional payment/booking flow.
 
 ## Why This Matters
 
@@ -80,7 +102,7 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 
 ### Active
 
-(None — ready for v7 milestone definition)
+(To be defined after v7 research — see `.planning/REQUIREMENTS.md`)
 
 ### Out of Scope
 
@@ -101,13 +123,14 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 - **Ad source:** Google Ads targeting parents searching for tutoring in Epping/Sydney area
 - **Conversion goal:** Free trial form submission → thank-you.html
 - **Portal:** beamportal.netlify.app (student dashboard for screenshots)
+- **Payment:** No payment architecture exists yet — v7 research will determine approach
 
 ## Constraints
 
 - **Tech stack**: Single HTML file with inline styles — maintain this structure
 - **Deployment**: Auto-deploy to main, all changes pushed immediately
 - **No frameworks**: Keep vanilla HTML/CSS/JS, no React/Vue/etc
-- **Existing branding**: Keep purple color scheme, Outfit font
+- **Existing branding**: Keep purple color scheme (#7c3aed), Outfit font
 
 ## Tech Debt
 
@@ -136,6 +159,7 @@ BEAM's differentiator is data-driven personalization: track scores → identify 
 | Nav CTA shortened | "Free Diagnostic" fits nav; full text on hero/sticky | ✓ Good — no overflow |
 | Remove Final CTA section | Sticky bar provides persistent conversion path | ✓ Good — reduced cognitive load |
 | Remove Features strip | Generic claims don't differentiate; document cards do | ✓ Good — cleaner Proof section |
+| v7: Frontend Design Skill first | Anthropic's design capabilities are the main tool for v7 | — Pending |
 
 ---
-*Last updated: 2026-01-29 after v6 milestone complete*
+*Last updated: 2026-01-29 after starting v7 milestone*
