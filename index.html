@@ -683,14 +683,14 @@
             box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
         }
 
-        /* Lime Accent Button - Primary CTA (Phase 21.1) */
+        /* Primary CTA with Glow - Phase 21.1 */
         .btn-lime {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: var(--space-4) var(--space-6);
-            background: var(--color-lime-500);
-            color: var(--purple-900);
+            background: var(--purple-700);
+            color: white;
             font-family: var(--font-body);
             font-size: var(--text-lg);
             font-weight: 600;
@@ -698,13 +698,14 @@
             border-radius: var(--radius-full);
             text-decoration: none;
             cursor: pointer;
-            box-shadow: var(--shadow-lime);
-            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            box-shadow: var(--shadow-purple);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
         }
 
         .btn-lime:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(191, 255, 0, 0.5);
+            background: var(--purple-600);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35);
         }
 
         .btn-lime:active {
@@ -4098,7 +4099,7 @@
                 font-size: 1.1rem;
             }
 
-            /* Lime button full-width on mobile */
+            /* Primary CTA full-width on mobile */
             .btn-lime {
                 width: 100%;
                 text-align: center;
