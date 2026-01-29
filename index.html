@@ -2154,15 +2154,16 @@
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
         }
 
         .tier-cta:hover {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            border-color: var(--purple-600);
+            background: var(--purple-500);
+            border-color: var(--purple-500);
             color: white;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+            transform: translateY(-2px);
         }
 
         .featured-tier .tier-cta {
@@ -2174,8 +2175,9 @@
 
         .featured-tier .tier-cta:hover {
             background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.5);
             border-color: var(--purple-500);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 900px) {
@@ -2598,18 +2600,19 @@
             font-family: var(--font-display);
             font-size: 0.85rem;
             font-weight: 600;
+            color: var(--white);
             background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
             border: none;
             cursor: pointer;
-            transition: all 0.2s ease;
             text-decoration: none;
             box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            transition: all 0.3s ease;
         }
 
         .course-btn:hover {
             background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
             box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            transform: translateY(-2px);
         }
 
         .pricing-note {
@@ -3302,7 +3305,7 @@
 
         /* Responsive */
         @media (max-width: 1200px) {
-    
+
         /* New Cleaner Pricing Design */
         .pricing-tiers-new {
             display: grid;
@@ -3321,13 +3324,26 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .pricing-tier-new:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         .pricing-tier-new.featured-tier {
             background: var(--gray-800);
             border: 2px solid var(--purple-500);
             transform: scale(1.02);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(124, 58, 237, 0.15);
+        }
+
+        .pricing-tier-new.featured-tier:hover {
+            transform: scale(1.02) translateY(-4px);
+            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.4);
         }
 
         .featured-badge {
@@ -3511,15 +3527,16 @@
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
         }
 
         .tier-cta:hover {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            border-color: var(--purple-600);
+            background: var(--purple-500);
+            border-color: var(--purple-500);
             color: white;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+            transform: translateY(-2px);
         }
 
         .featured-tier .tier-cta {
@@ -3531,8 +3548,9 @@
 
         .featured-tier .tier-cta:hover {
             background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.5);
             border-color: var(--purple-500);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 900px) {
@@ -3584,13 +3602,26 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .pricing-tier-new:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.3);
+            border-color: var(--purple-500);
         }
 
         .pricing-tier-new.featured-tier {
             background: var(--gray-800);
             border: 2px solid var(--purple-500);
             transform: scale(1.02);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(124, 58, 237, 0.15);
+        }
+
+        .pricing-tier-new.featured-tier:hover {
+            transform: scale(1.02) translateY(-4px);
+            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.4);
         }
 
         .featured-badge {
@@ -3774,15 +3805,16 @@
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
         }
 
         .tier-cta:hover {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            border-color: var(--purple-600);
+            background: var(--purple-500);
+            border-color: var(--purple-500);
             color: white;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+            transform: translateY(-2px);
         }
 
         .featured-tier .tier-cta {
@@ -3794,8 +3826,9 @@
 
         .featured-tier .tier-cta:hover {
             background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.5);
             border-color: var(--purple-500);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 900px) {
@@ -5459,7 +5492,7 @@
         
         .btn-loading {
             display: none;
-            align-items: centre;
+            align-items: center;
             gap: 0.5rem;
         }
         
@@ -6952,11 +6985,11 @@
         function toggleCourseBrowser() {
             const container = document.querySelector('.course-browser-container');
             const button = document.querySelector('.course-browser-toggle');
-            if (\!container || \!button) return;
+            if (!container || !button) return;
 
             const isExpanded = container.dataset.expanded === 'true';
             container.dataset.expanded = isExpanded ? 'false' : 'true';
-            button.setAttribute('aria-expanded', \!isExpanded);
+            button.setAttribute('aria-expanded', !isExpanded);
             button.querySelector('.toggle-text').textContent = isExpanded ? 'See All Courses' : 'Show Less';
 
             // Smooth scroll to course browser if collapsing
@@ -7136,27 +7169,27 @@
         // Subject definitions per tier
         const tierSubjects = {
             'Junior': [
-                { value: 'Mathematics', icon: '📐', name: 'Mathematics' },
-                { value: 'English', icon: '📝', name: 'English' },
-                { value: 'Physics', icon: '⚡', name: 'Physics' },
-                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
+                { value: 'Mathematics', icon: '', name: 'Mathematics' },
+                { value: 'English', icon: '', name: 'English' },
+                { value: 'Physics', icon: '', name: 'Physics' },
+                { value: 'Chemistry', icon: '', name: 'Chemistry' }
             ],
             'Intermediate': [
-                { value: 'Mathematics', icon: '📐', name: 'Mathematics' },
-                { value: 'Maths Accelerated', icon: '🚀', name: 'Maths Accelerated' },
-                { value: 'English', icon: '📝', name: 'English' },
-                { value: 'English Extension', icon: '✍️', name: 'English Extension' },
-                { value: 'Physics', icon: '⚡', name: 'Physics' },
-                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
+                { value: 'Mathematics', icon: '', name: 'Mathematics' },
+                { value: 'Maths Accelerated', icon: '', name: 'Maths Accelerated' },
+                { value: 'English', icon: '', name: 'English' },
+                { value: 'English Extension', icon: '', name: 'English Extension' },
+                { value: 'Physics', icon: '', name: 'Physics' },
+                { value: 'Chemistry', icon: '', name: 'Chemistry' }
             ],
             'Senior': [
-                { value: 'Advanced Mathematics', icon: '📐', name: 'Advanced Mathematics' },
-                { value: 'Maths Extension 1', icon: '📊', name: 'Maths Extension 1' },
-                { value: 'Maths Extension 2', icon: '🏆', name: 'Maths Extension 2' },
-                { value: 'English Advanced', icon: '📝', name: 'English Advanced' },
-                { value: 'English Extension', icon: '✍️', name: 'English Extension' },
-                { value: 'Physics', icon: '⚡', name: 'Physics' },
-                { value: 'Chemistry', icon: '🧪', name: 'Chemistry' }
+                { value: 'Advanced Mathematics', icon: '', name: 'Advanced Mathematics' },
+                { value: 'Maths Extension 1', icon: '', name: 'Maths Extension 1' },
+                { value: 'Maths Extension 2', icon: '', name: 'Maths Extension 2' },
+                { value: 'English Advanced', icon: '', name: 'English Advanced' },
+                { value: 'English Extension', icon: '', name: 'English Extension' },
+                { value: 'Physics', icon: '', name: 'Physics' },
+                { value: 'Chemistry', icon: '', name: 'Chemistry' }
             ]
         };
 
@@ -7171,7 +7204,7 @@
             const subjectsContainer = document.getElementById('modalSubjectsContainer');
             
             // Set tier badge
-            badge.textContent = tier + ' • ' + pkg;
+            badge.textContent = tier + ' - ' + pkg;
             
             // Set price
             price.textContent = priceMap[tier + '-' + pkg] || '$0';
@@ -7360,7 +7393,7 @@
                 countText.classList.remove('valid');
                 ctaBtn.disabled = true;
             } else if (checkedCount === maxSubjects) {
-                countText.textContent = checkedCount + ' of ' + maxSubjects + ' selected ✓';
+                countText.textContent = checkedCount + ' of ' + maxSubjects + ' selected';
                 countText.classList.add('valid');
                 ctaBtn.disabled = false;
             } else {
