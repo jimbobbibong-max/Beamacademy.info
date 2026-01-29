@@ -743,13 +743,13 @@
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
         }
 
-        /* Hero - Clean Professional Design */
+        /* Hero Section - Editorial Style (Phase 21.1) */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 120px 0 80px;
-            background: linear-gradient(180deg, #ffffff 0%, #faf8ff 50%, #f5f0ff 100%);
+            padding: var(--space-16) 0 var(--space-12);
+            background: var(--purple-50);
             position: relative;
             overflow: hidden;
         }
@@ -835,18 +835,19 @@
 
         .hero-badge::before { content: '✨'; margin-right: 4px; }
 
+        /* Hero label/eyebrow text */
         .hero-category {
             display: inline-block;
-            background: var(--purple-100);
-            color: var(--purple-700);
-            padding: 8px 16px;
-            border-radius: 100px;
-            font-family: var(--font-display);
-            font-size: 0.85rem;
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 20px;
+            letter-spacing: var(--tracking-wide);
+            color: var(--purple-600);
+            background: var(--purple-100);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-4);
             border: 1px solid var(--purple-200);
         }
 
@@ -868,18 +869,22 @@
             color: var(--purple-600);
         }
 
+        /* Hero subtitle/subhead */
         .hero-description {
-            font-size: 1.25rem;
+            font-family: var(--font-body);
+            font-size: var(--text-xl);
+            line-height: var(--leading-normal);
             color: var(--gray-600);
-            margin-bottom: 40px;
-            max-width: 520px;
-            line-height: 1.7;
+            max-width: 50ch;
+            margin-bottom: var(--space-8);
         }
 
+        /* Hero CTA container */
         .hero-buttons {
             display: flex;
-            gap: 16px;
             flex-wrap: wrap;
+            gap: var(--space-4);
+            margin-top: var(--space-8);
         }
 
         .hero-risk-reversal {
@@ -4070,7 +4075,8 @@
             .nav-links { display: none; }
             .mobile-toggle { display: flex; }
 
-            .hero { padding: 100px 0 60px; }
+            /* Hero mobile adjustments */
+            .hero { padding: var(--space-10) 0 var(--space-8); }
             /* Remove tilt on mobile - prevents overflow/cropping */
             .hero h1 {
                 font-size: clamp(2rem, 4vw, 2.75rem);
@@ -4079,7 +4085,7 @@
             }
             .hero-buttons {
                 flex-direction: column;
-                gap: 12px;
+                gap: var(--space-3);
             }
 
             .hero-buttons .btn {
