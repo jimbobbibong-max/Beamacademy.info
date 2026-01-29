@@ -35,8 +35,8 @@
 **Plans:** 2 plans (complete)
 
 Plans:
-- [x] 21-01-PLAN.md — Verify Netlify env vars and test Stripe function endpoint
-- [x] 21-02-PLAN.md — Connect frontend Pay Now button to checkout flow
+- [x] 20-01-PLAN.md — Verify Netlify env vars and test Stripe function endpoint
+- [x] 20-02-PLAN.md — Connect frontend Pay Now button to checkout flow
 
 ---
 
@@ -50,6 +50,25 @@ Plans:
 - [ ] 21-01-PLAN.md — Design tokens foundation (spacing, colors, shadows, radius, transitions)
 - [ ] 21-02-PLAN.md — Typography system (Geist font, fluid type scale, base element styles)
 - [ ] 21-03-PLAN.md — Visual differentiator (diagonal/angled section elements)
+
+---
+
+- [ ] **Phase 21.1: Alternative Design System (Frontend Design Skill)** (INSERTED)
+
+**Goal:** Bold editorial design system with Fraunces + Bricolage Grotesque typography, chartreuse accent, and tilted hero headline differentiator. Parallel A/B comparison to Phase 21's "safe premium" approach.
+**Approach:** Design Thinking first (editorial magazine aesthetic), then implementation
+**Depends on:** None (parallel track to Phase 21)
+**Plans:** 4 plans in 3 waves
+
+Plans:
+- [ ] 21.1-01-PLAN.md — CSS design tokens foundation (colors, spacing, shadows, borders, transitions)
+- [ ] 21.1-02-PLAN.md — Typography system (Fraunces + Bricolage, fluid scale, base styles)
+- [ ] 21.1-03-PLAN.md — Hero transformation (tilted headline, lime CTA, editorial layout)
+- [ ] 21.1-04-PLAN.md — Section updates (apply design system consistently throughout)
+
+**Key difference from Phase 21:**
+- Phase 21: "Safe premium SaaS" approach (Geist font, subtle diagonals, best practices)
+- Phase 21.1: "Bold distinctive" approach (Fraunces WONK, tilted headlines, chartreuse accent)
 
 ---
 
@@ -100,10 +119,11 @@ Plans:
 | 19 | v6 | Content Reduction & QA | Complete | 2026-01-29 |
 | 20 | v7 | Payment Fix | Complete | 2026-01-29 |
 | 21 | v7 | Design System & Typography | Planned | - |
+| 21.1 | v7 | Alt Design System (Skill-Driven) | **Planned** | - |
 | 22 | v7 | Layout, Mobile & Conversion | Pending | - |
 | 23 | v7 | Motion & Micro-interactions | Pending | - |
 | 24 | v7 | Performance & Final QA | Pending | - |
 
 ---
 
-*Last updated: 2026-01-29 — Phase 21 planned (3 plans in 2 waves)*
+*Last updated: 2026-01-29 — Phase 21.1 planned (4 plans in 3 waves)*
