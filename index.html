@@ -4324,7 +4324,6 @@
 
         .summary-header {
             margin-bottom: 16px;
-            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2);
         }
 
         .summary-step {
@@ -7495,10 +7494,13 @@
         function updatePaymentPrices(price) {
             console.log('Updating payment prices with:', price);
             const numericPrice = parseInt(price.replace('$', ''));
+            // Calculate original price with GST (no discount)
+            const originalWithGst = Math.round(numericPrice * 1.10);
+            // Calculate discounted price: 5% off, then add GST
             const discountedPrice = Math.round(numericPrice * 0.95);
-            const gstAmount = Math.round(discountedPrice * 0.10);
-            const totalWithGst = discountedPrice + gstAmount;
-            document.getElementById('originalPrice').textContent = '$' + numericPrice + '/wk';
+            const totalWithGst = Math.round(discountedPrice * 1.10);
+            // Show both prices GST-inclusive so comparison is fair
+            document.getElementById('originalPrice').textContent = '$' + originalWithGst + '/wk';
             document.getElementById('discountedPrice').textContent = '$' + totalWithGst + '/wk inc. GST';
         }
         
