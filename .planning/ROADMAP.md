@@ -35,8 +35,8 @@
 **Plans:** 2 plans (complete)
 
 Plans:
-- [x] 20-01-PLAN.md — Verify Netlify env vars and test Stripe function endpoint
-- [x] 20-02-PLAN.md — Connect frontend Pay Now button to checkout flow
+- [x] 21-01-PLAN.md — Verify Netlify env vars and test Stripe function endpoint
+- [x] 21-02-PLAN.md — Connect frontend Pay Now button to checkout flow
 
 ---
 
@@ -44,12 +44,12 @@ Plans:
 
 **Goal:** Apply Frontend Design Skill typography principles + create CSS design tokens
 **Requirements:** TYP-01, TYP-02, TYP-03, TYP-04, DES-01, DES-02, DES-03, DES-04, VIS-01, VIS-02, VIS-03
+**Plans:** 3 plans
 
-**Plans:**
-- 21-01: Research and select distinctive font pairing (not Inter/Roboto/Arial)
-- 21-02: Implement CSS custom properties for spacing, colors, shadows, typography
-- 21-03: Apply new typography across all sections
-- 21-04: Define and implement ONE memorable visual differentiator
+Plans:
+- [ ] 21-01-PLAN.md — Design tokens foundation (spacing, colors, shadows, radius, transitions)
+- [ ] 21-02-PLAN.md — Typography system (Geist font, fluid type scale, base element styles)
+- [ ] 21-03-PLAN.md — Visual differentiator (diagonal/angled section elements)
 
 ---
 
@@ -99,11 +99,11 @@ Plans:
 | 17-18 | v5 | Courses Overhaul | Complete | 2026-01-24 |
 | 19 | v6 | Content Reduction & QA | Complete | 2026-01-29 |
 | 20 | v7 | Payment Fix | Complete | 2026-01-29 |
-| 21 | v7 | Design System & Typography | Pending | - |
+| 21 | v7 | Design System & Typography | Planned | - |
 | 22 | v7 | Layout, Mobile & Conversion | Pending | - |
 | 23 | v7 | Motion & Micro-interactions | Pending | - |
 | 24 | v7 | Performance & Final QA | Pending | - |
 
 ---
 
-*Last updated: 2026-01-29 — Phase 20 complete*
+*Last updated: 2026-01-29 — Phase 21 planned (3 plans in 2 waves)*
