@@ -147,12 +147,17 @@
             --purple-700: #7c3aed;
             --purple-800: #6b21a8;
             --purple-900: #581c87;
+            /* Gray scale - WCAG AA Contrast Verification (on white #fff):
+               - gray-400 (#a1a1aa): 3.0:1 - FAILS for body text, OK on dark bg only
+               - gray-500 (#71717a): 4.6:1 - PASS for body text
+               - gray-600+: Higher contrast, all pass
+               Use gray-500 minimum for text on light backgrounds */
             --gray-50: #fafafa;
             --gray-100: #f4f4f5;
             --gray-200: #e4e4e7;
             --gray-300: #d4d4d8;
-            --gray-400: #a1a1aa;
-            --gray-500: #71717a;
+            --gray-400: #a1a1aa;  /* Use only on dark (gray-800+) backgrounds */
+            --gray-500: #71717a;  /* Minimum for light background text */
             --gray-600: #52525b;
             --gray-700: #3f3f46;
             --gray-800: #27272a;
@@ -871,7 +876,7 @@
             line-height: var(--leading-tight);
             letter-spacing: var(--tracking-tight);
             color: var(--gray-900);
-            transform: rotate(-2deg);
+            transform: rotate(-4deg);
             transform-origin: left center;
             margin-bottom: var(--space-6);
         }
