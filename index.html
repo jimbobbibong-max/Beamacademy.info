@@ -1891,6 +1891,14 @@
             max-width: 700px;
             margin: 0 auto;
             position: relative;
+            transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        }
+
+        /* Trust testimonial hover lift - Phase 23-04 */
+        .trust-testimonial:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--purple-200);
         }
 
         .trust-testimonial::before {
@@ -2479,6 +2487,12 @@
             transform: translateY(-2px);
         }
 
+        /* Active state for pressed feedback - Phase 23-04 */
+        .tier-cta:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 1px 4px rgba(124, 58, 237, 0.2);
+        }
+
         .featured-tier .tier-cta {
             box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
             background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
@@ -2932,6 +2946,12 @@
             transform: translateY(-2px);
         }
 
+        /* Active state for pressed feedback - Phase 23-04 */
+        .course-btn:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 1px 4px rgba(124, 58, 237, 0.3);
+        }
+
         .pricing-note {
             text-align: center;
             color: var(--gray-400);
@@ -3209,9 +3229,27 @@
         .footer-link {
             color: var(--gray-400);
             transition: color 0.2s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Animated underline for footer links - Phase 23-04 */
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--purple-400);
+            transition: width 200ms ease;
         }
 
         .footer-link:hover { color: var(--purple-400); }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
 
         .footer-bottom {
             padding-top: 30px;
@@ -4384,6 +4422,14 @@
                 overflow: hidden;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
                 border: 1px solid var(--gray-100);
+                transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+            }
+
+            /* Comparison card hover lift - Phase 23-04 */
+            .comparison-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+                border-color: var(--purple-200);
             }
 
             .comparison-card-label {
@@ -5888,11 +5934,48 @@
         .hero-animate.stagger-5 { transition-delay: 320ms; }
         .hero-animate.stagger-6 { transition-delay: 400ms; }
 
-        /* Reduced motion support */
+        /* Reduced motion support for hero animation */
         @media (prefers-reduced-motion: reduce) {
             .hero-animate {
                 transition-duration: 0.01ms !important;
                 transition-delay: 0ms !important;
+            }
+        }
+
+        /* =====================================================
+           SCROLL REVEAL ANIMATION - Below-Fold Sections
+           ===================================================== */
+
+        /* Scroll reveal animation */
+        .reveal-on-scroll {
+            opacity: 0.01;
+            transform: translateY(30px);
+            transition:
+                opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+                transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-on-scroll.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered children within revealed container */
+        .reveal-on-scroll > .reveal-child:nth-child(1) { transition-delay: 0ms; }
+        .reveal-on-scroll > .reveal-child:nth-child(2) { transition-delay: 80ms; }
+        .reveal-on-scroll > .reveal-child:nth-child(3) { transition-delay: 160ms; }
+        .reveal-on-scroll > .reveal-child:nth-child(4) { transition-delay: 240ms; }
+
+        /* Reduced motion support for scroll reveals */
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-on-scroll {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            .reveal-on-scroll.revealed {
+                opacity: 1;
+                transform: none;
             }
         }
 
@@ -6012,7 +6095,7 @@
         </section>
 
         <!-- Proof Section -->
-        <section class="proof-section" id="proof" aria-labelledby="proof-title">
+        <section class="proof-section reveal-on-scroll" id="proof" aria-labelledby="proof-title">
             <div class="container">
                 <header class="section-header">
                     <div class="proof-badge">From ONE Free Trial - Yours to Keep</div>
@@ -6147,7 +6230,7 @@
         </section>
 
         <!-- Comparison Section -->
-        <section class="comparison-section" id="comparison" aria-labelledby="comparison-title">
+        <section class="comparison-section reveal-on-scroll" id="comparison" aria-labelledby="comparison-title">
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title" id="comparison-title">Not All Tutoring is the Same</h2>
@@ -6238,7 +6321,7 @@
         </section>
 
         <!-- Trust Section -->
-        <section class="trust-section" id="trust" aria-labelledby="trust-title">
+        <section class="trust-section reveal-on-scroll" id="trust" aria-labelledby="trust-title">
             <div class="container">
                 <header class="section-header">
                     <div class="trust-badge">
@@ -6400,7 +6483,7 @@
                 </div>
             </div>
         </section>
-        <section class="support-section" id="support" aria-labelledby="support-title">
+        <section class="support-section reveal-on-scroll" id="support" aria-labelledby="support-title">
             <div class="container">
                 <header class="section-header">
                     <div class="support-badge">
@@ -6461,7 +6544,7 @@
             </div>
         </section>
         <!-- Courses & Pricing Combined Section -->
-        <section class="courses-pricing" id="courses" aria-labelledby="courses-title">
+        <section class="courses-pricing reveal-on-scroll" id="courses" aria-labelledby="courses-title">
             <div class="container">
                 <header class="section-header">
                     <div class="section-tag">Courses & Pricing</div>
@@ -6970,7 +7053,7 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq" id="faq" aria-labelledby="faq-title">
+        <section class="faq reveal-on-scroll" id="faq" aria-labelledby="faq-title">
             <div class="container">
                 <header class="section-header">
                     <div class="section-tag">Common Questions</div>
@@ -7016,7 +7099,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
+    <section class="contact reveal-on-scroll" id="contact" aria-labelledby="contact-title">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
@@ -8131,6 +8214,40 @@
 
                 // Form continues to submit normally (Netlify Forms handles it)
             });
+        })();
+
+        // Scroll reveal animation
+        (function() {
+            // Respect reduced motion preference
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                    el.classList.add('revealed');
+                });
+                return;
+            }
+
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                    observer.observe(el);
+                });
+            } else {
+                // Fallback: show everything immediately
+                document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                    el.classList.add('revealed');
+                });
+            }
         })();
 
     </script>
