@@ -1,3 +1,38 @@
+# Voice Mode
+
+**Listen to voice input, respond with text.** When the user asks to use voice or says "talk to me":
+
+```
+mcp__voicemode__converse(
+  message: "listening",
+  wait_for_response: true,
+  listen_duration_max: 15,
+  skip_tts: true
+)
+```
+
+- `skip_tts: true` = Don't speak, just type responses (faster)
+- WSL services must be running (Whisper on 2022, Kokoro on 8880)
+- If services are down, tell user to run in WSL: `voicemode service start whisper && voicemode service start kokoro`
+
+---
+
+# GSD Agent Model Configuration
+
+**ALL GSD agents MUST use Opus.** When spawning Task tools for GSD workflows, always specify `model: "opus"`.
+
+| Agent | Model |
+|-------|-------|
+| gsd-executor | opus |
+| gsd-planner | opus |
+| gsd-verifier | opus |
+| gsd-debugger | opus |
+| gsd-codebase-mapper | opus |
+| gsd-phase-researcher | opus |
+| gsd-roadmapper | opus |
+
+---
+
 # ⚠️ MANDATORY: RELATIVE PATHS ONLY ⚠️
 
 **Claude MUST use RELATIVE paths for ALL Read and Edit operations. Absolute paths cause "file unexpectedly modified" errors.**
