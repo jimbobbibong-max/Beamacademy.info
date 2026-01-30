@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC Physics Tutoring | BEAM Academy Epping</title>
+    <meta name="description" content="Expert HSC Physics tutoring at BEAM Academy Epping. Years 11-12 Physics including Advanced Mechanics, Electromagnetism, Nature of Light, and Nuclear Physics.">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-star.png">
+    <link rel="apple-touch-icon" href="logo-star.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beamacademy.info/physics">
+    <meta property="og:title" content="HSC Physics Tutoring | BEAM Academy Epping">
+    <meta property="og:description" content="Expert HSC Physics tutoring for Years 11-12. Master Advanced Mechanics, Electromagnetism, and more.">
+    <meta property="og:image" content="https://beamacademy.info/logo-banner.jpg">
+
+    <meta name="theme-color" content="#7c3aed">
+    <link rel="canonical" href="https://beamacademy.info/physics">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17832807956"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17832807956');
+      gtag('config', 'AW-17832807956/CONVERSION_LABEL', {
+          'phone_conversion_number': '0491 791 447',
+          'phone_conversion_css_class': 'phone-number'
+      });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,500..700,0..1&family=Bricolage+Grotesque:opsz,wght@12..96,400..600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,500..700,0..1&family=Bricolage+Grotesque:opsz,wght@12..96,400..600&display=swap"></noscript>
+
+    <style>
+        :root {
+            --purple-50: #faf5ff; --purple-100: #f3e8ff; --purple-200: #e9d5ff; --purple-300: #d8b4fe;
+            --purple-400: #c084fc; --purple-500: #a855f7; --purple-600: #9333ea; --purple-700: #7c3aed;
+            --purple-800: #6b21a8; --purple-900: #581c87;
+            --gray-50: #fafafa; --gray-100: #f4f4f5; --gray-200: #e4e4e7; --gray-300: #d4d4d8;
+            --gray-400: #a1a1aa; --gray-500: #71717a; --gray-600: #52525b; --gray-700: #3f3f46;
+            --gray-800: #27272a; --gray-900: #18181b; --white: #ffffff;
+            --accent-warm: #f59e0b;
+            --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.5rem;
+            --space-6: 2rem; --space-8: 3rem; --space-10: 4rem; --space-12: 6rem;
+            --radius-md: 8px; --radius-lg: 16px; --radius-full: 9999px;
+            --transition-fast: 150ms ease; --transition-base: 250ms ease;
+            --text-sm: clamp(0.938rem, 0.88rem + 0.29vw, 1.1rem);
+            --text-base: clamp(1.063rem, 0.98rem + 0.41vw, 1.313rem);
+            --text-lg: clamp(1.2rem, 1.09rem + 0.55vw, 1.5rem);
+            --text-xl: clamp(1.35rem, 1.2rem + 0.75vw, 1.75rem);
+            --text-2xl: clamp(1.52rem, 1.32rem + 1vw, 2.1rem);
+            --text-4xl: clamp(1.93rem, 1.56rem + 1.85vw, 3.25rem);
+            --text-hero: clamp(2.75rem, 2rem + 3.75vw, 5rem);
+            --leading-tight: 1.1; --leading-normal: 1.5; --tracking-tight: -0.025em;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Bricolage Grotesque', system-ui, sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-normal); color: var(--gray-800); background: var(--white); -webkit-font-smoothing: antialiased; }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        .utility-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 1001; background: var(--gray-900); color: var(--white); padding: var(--space-2) 0; font-size: var(--text-sm); }
+        .utility-bar .container { display: flex; justify-content: flex-end; align-items: center; }
+        .phone-link { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--white); font-weight: 500; padding: var(--space-2) var(--space-3); border-radius: var(--radius-full); transition: background var(--transition-fast); min-height: 44px; }
+        .phone-link:hover { background: rgba(255, 255, 255, 0.1); }
+        @media (max-width: 768px) { .utility-bar .container { justify-content: center; } .phone-link { flex: 1; justify-content: center; max-width: 280px; } }
+
+        .nav { position: fixed; top: 44px; left: 0; right: 0; z-index: 1000; padding: 20px 0; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav.scrolled { background: rgba(255, 255, 255, 0.98); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); padding: 14px 0; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--purple-700); display: flex; align-items: center; gap: 10px; }
+        .logo-img { width: 36px; height: 36px; object-fit: contain; }
+        .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+        .nav-link { font-family: var(--font-display); font-size: 0.95rem; font-weight: 500; color: var(--gray-600); padding: 8px 4px; transition: color 0.2s ease; }
+        .nav-link:hover { color: var(--purple-700); }
+        .nav-cta { background: var(--purple-700); color: white; padding: 12px 24px; border-radius: 100px; font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease; }
+        .nav-cta:hover { background: var(--purple-800); transform: translateY(-1px); }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+        .mobile-toggle span { display: block; width: 24px; height: 2.5px; background: var(--gray-700); border-radius: 2px; }
+        @media (max-width: 768px) { .nav-links { display: none; } .mobile-toggle { display: flex; } }
+
+        .hero { min-height: 100vh; display: flex; align-items: center; padding: var(--space-12) 0; padding-top: calc(var(--space-12) + 120px); background: var(--purple-50); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: 50%; height: 70%; background: radial-gradient(ellipse, rgba(124, 58, 237, 0.05) 0%, transparent 70%); }
+        .hero-grain { position: absolute; inset: 0; background: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%25" height="100%25" filter="url(%23n)"/></svg>'); opacity: 0.04; pointer-events: none; mix-blend-mode: multiply; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 2; }
+        .hero h1 { font-family: var(--font-display); font-size: var(--text-hero); font-weight: 700; line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); color: var(--gray-900); transform: rotate(-4deg); transform-origin: left center; margin-bottom: var(--space-6); }
+        .hero h1 span { color: var(--purple-600); }
+        .hero-description { font-size: var(--text-xl); line-height: var(--leading-normal); color: var(--gray-600); max-width: 50ch; margin-bottom: var(--space-8); }
+        .hero-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+        .btn-lime { display: inline-flex; align-items: center; justify-content: center; padding: var(--space-4) var(--space-6); background: var(--purple-700); color: white; font-family: var(--font-body); font-size: var(--text-lg); font-weight: 600; border: 3px solid var(--gray-900); border-radius: var(--radius-full); box-shadow: 4px 4px 0 var(--gray-900); transition: transform 150ms ease, box-shadow 150ms ease; }
+        .btn-lime:hover { background: var(--purple-600); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--gray-900); }
+        .hero-testimonial { margin-top: 24px; padding: 12px 20px; background: rgba(124, 58, 237, 0.08); border-radius: 8px; font-size: 0.95rem; color: var(--gray-600); display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(124, 58, 237, 0.15); }
+        .hero-testimonial .testimonial-star { background: var(--accent-warm); color: var(--gray-900); padding: 4px 10px; border-radius: 100px; font-weight: 600; font-size: 0.85rem; }
+        .hero-visual { position: relative; }
+        .hero-card { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08); border: 1px solid var(--gray-200); }
+        @media (max-width: 1024px) { .hero-content { grid-template-columns: 1fr; gap: 40px; } .hero h1 { transform: none; } }
+        @media (max-width: 768px) { .hero { padding-top: calc(var(--space-10) + 120px); } .hero h1 { font-size: clamp(2rem, 4vw, 2.75rem); } .hero-buttons { flex-direction: column; } .btn-lime { width: 100%; text-align: center; } }
+
+        section { padding: 100px 0; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+        .section-tag { display: inline-block; font-family: var(--font-display); font-size: 0.85rem; font-weight: 600; color: var(--purple-600); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+        .section-title { font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 600; line-height: var(--leading-tight); color: var(--gray-900); margin-bottom: var(--space-6); }
+        .section-title span { color: var(--purple-700); }
+        .section-description { font-size: var(--text-lg); color: var(--gray-500); }
+
+        .topics-section { background: var(--white); }
+        .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .topic-card { background: var(--gray-50); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--gray-200); transition: all 0.3s ease; }
+        .topic-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08); border-color: var(--purple-200); }
+        .topic-card h3 { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--gray-900); margin-bottom: 12px; }
+        .topic-card p { color: var(--gray-600); font-size: var(--text-base); }
+        .topic-badge { display: inline-block; background: var(--purple-100); color: var(--purple-700); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 600; margin-bottom: 16px; }
+        @media (max-width: 768px) { .topics-grid { grid-template-columns: 1fr; } }
+
+        .approach-section { background: var(--gray-50); }
+        .approach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .approach-card { background: var(--white); border-radius: var(--radius-lg); padding: 32px; text-align: center; border: 1px solid var(--gray-200); }
+        .approach-icon { width: 64px; height: 64px; background: var(--purple-100); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 20px; }
+        .approach-card h3 { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; color: var(--gray-900); margin-bottom: 12px; }
+        .approach-card p { color: var(--gray-600); }
+        @media (max-width: 768px) { .approach-grid { grid-template-columns: 1fr; } }
+
+        .cta-section { background: var(--gray-900); color: var(--white); text-align: center; }
+        .cta-section .section-title { color: var(--white); }
+        .cta-section .section-description { color: var(--gray-400); }
+        .cta-buttons { display: flex; justify-content: center; gap: var(--space-4); margin-top: var(--space-8); }
+        .cta-buttons .btn-lime { background: var(--purple-600); border-color: var(--purple-400); }
+        @media (max-width: 768px) { .cta-buttons { flex-direction: column; align-items: center; } }
+
+        .contact { background: var(--gray-50); }
+        .contact-content { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+        .contact-info h2 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.75rem); color: var(--gray-900); margin-bottom: 24px; }
+        .contact-info > p { color: var(--gray-600); margin-bottom: 40px; }
+        .contact-details { display: flex; flex-direction: column; gap: 24px; }
+        .contact-item { display: flex; align-items: flex-start; gap: 16px; }
+        .contact-icon { width: 48px; height: 48px; background: var(--purple-100); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0; }
+        .contact-item-label { font-family: var(--font-display); font-size: 0.85rem; color: var(--gray-500); font-weight: 500; margin-bottom: 4px; }
+        .contact-item-value { font-size: 1.1rem; color: var(--gray-900); }
+        .contact-form-wrapper { background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); }
+        .contact-form-title { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--gray-900); margin-bottom: 8px; }
+        .contact-form-subtitle { color: var(--gray-500); margin-bottom: 24px; }
+        .contact-form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-label { font-family: var(--font-display); font-size: 0.9rem; font-weight: 500; color: var(--gray-700); }
+        .form-input, .form-select { padding: 14px 18px; border: 2px solid var(--gray-200); border-radius: 12px; font-family: var(--font-body); font-size: 1rem; color: var(--gray-800); transition: all 0.2s ease; min-height: 44px; }
+        .form-input:focus, .form-select:focus { outline: none; border-color: var(--purple-500); box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .btn-primary { background: var(--purple-700); color: white; padding: 16px 32px; border: 3px solid var(--gray-900); border-radius: var(--radius-full); font-family: var(--font-display); font-weight: 600; font-size: 1rem; cursor: pointer; box-shadow: 4px 4px 0 var(--gray-900); transition: all 150ms ease; }
+        .btn-primary:hover { background: var(--purple-600); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--gray-900); }
+        .form-note { text-align: center; color: var(--gray-500); font-size: 0.85rem; margin-top: 12px; }
+        @media (max-width: 1024px) { .contact-content { grid-template-columns: 1fr; gap: 40px; } }
+        @media (max-width: 768px) { .form-row { grid-template-columns: 1fr; } }
+
+        .footer { background: var(--gray-900); color: var(--gray-300); padding: 60px 0 30px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+        .footer-brand .logo { color: var(--white); margin-bottom: 20px; }
+        .footer-brand p { color: var(--gray-400); max-width: 300px; margin-bottom: 24px; }
+        .social-links { display: flex; gap: 12px; }
+        .social-link { width: 40px; height: 40px; background: var(--gray-800); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.2s ease; }
+        .social-link:hover { background: linear-gradient(135deg, var(--purple-600), var(--purple-700)); transform: translateY(-2px); }
+        .footer-column h4 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 600; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+        .footer-link { color: var(--gray-400); transition: color 0.2s ease; }
+        .footer-link:hover { color: var(--purple-400); }
+        .footer-bottom { padding-top: 30px; border-top: 1px solid var(--gray-800); display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--gray-500); }
+        @media (max-width: 1024px) { .footer-content { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) { .footer-content { grid-template-columns: 1fr; gap: 40px; } .footer-bottom { flex-direction: column; gap: 16px; text-align: center; } }
+    </style>
+</head>
+<body>
+    <div class="utility-bar">
+        <div class="container">
+            <a href="tel:+61491791447" class="phone-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span class="phone-number">0491 791 447</span>
+            </a>
+        </div>
+    </div>
+
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="logo">
+                    <img src="logo-star.png" alt="" class="logo-img" width="36" height="36">
+                    BEAM Academy
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="index.html#courses" class="nav-link">Courses & Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html#contact" class="nav-cta">Free Diagnostic</a></li>
+                </ul>
+                <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-grain"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Make Physics <span>Click</span></h1>
+                    <p class="hero-description">From confusion to clarity. We break down complex concepts into intuitive understanding that sticks.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-lime">Get My Free Diagnostic</a>
+                    </div>
+                    <div class="hero-testimonial">
+                        <span class="testimonial-star">5.0</span>
+                        "The way they explained wave motion finally made sense. Went from 65% to 88%." - Year 12 Student
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--gray-900); margin-bottom: 20px;">HSC Physics Modules</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--purple-50); border-radius: 8px;"><span style="background: var(--purple-600); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">Mod 5</span> Advanced Mechanics</li>
+                            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--purple-50); border-radius: 8px;"><span style="background: var(--purple-600); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">Mod 6</span> Electromagnetism</li>
+                            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--purple-50); border-radius: 8px;"><span style="background: var(--purple-600); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">Mod 7</span> Nature of Light</li>
+                            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--purple-50); border-radius: 8px;"><span style="background: var(--purple-600); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">Mod 8</span> From the Universe to the Atom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topics-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Years 11-12 HSC Physics</span>
+                <h2 class="section-title">What We <span>Cover</span></h2>
+                <p class="section-description">Comprehensive coverage of the NSW HSC Physics syllabus with focus on conceptual understanding and exam technique.</p>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card"><span class="topic-badge">Year 11</span><h3>Preliminary Physics</h3><p>Kinematics, Dynamics, Waves & Thermodynamics, Electricity & Magnetism. Build strong foundations for HSC success.</p></div>
+                <div class="topic-card"><span class="topic-badge">Module 5</span><h3>Advanced Mechanics</h3><p>Projectile motion, circular motion, and gravitation. Master the mathematical models that describe motion.</p></div>
+                <div class="topic-card"><span class="topic-badge">Module 6</span><h3>Electromagnetism</h3><p>Motors, generators, and transformers. Understand the physics powering modern technology.</p></div>
+                <div class="topic-card"><span class="topic-badge">Module 7</span><h3>The Nature of Light</h3><p>Wave-particle duality and special relativity. Explore the revolutionary ideas that changed physics.</p></div>
+                <div class="topic-card"><span class="topic-badge">Module 8</span><h3>From the Universe to the Atom</h3><p>Nuclear physics and quantum mechanics. From the Big Bang to subatomic particles.</p></div>
+                <div class="topic-card"><span class="topic-badge">Skills</span><h3>Practical & Exam Skills</h3><p>Depth studies, practical investigations, and HSC exam technique with past paper practice.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="approach-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Method</span>
+                <h2 class="section-title">See the Physics Behind <span>Everything</span></h2>
+                <p class="section-description">We emphasise mathematical application and real-world connections to make physics intuitive.</p>
+            </div>
+            <div class="approach-grid">
+                <div class="approach-card"><div class="approach-icon">&#127919;</div><h3>Visual Explanations</h3><p>Diagrams, animations, and real-world examples that make abstract concepts concrete.</p></div>
+                <div class="approach-card"><div class="approach-icon">&#128208;</div><h3>Problem-Solving Strategies</h3><p>Systematic approaches to tackle any HSC physics question with confidence.</p></div>
+                <div class="approach-card"><div class="approach-icon">&#128221;</div><h3>Past HSC Practice</h3><p>Extensive practice with past HSC questions and marking criteria for exam success.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 0;">
+                <span class="section-tag" style="color: var(--purple-300);">Ready to Start?</span>
+                <h2 class="section-title">Master HSC Physics</h2>
+                <p class="section-description">Book your free diagnostic lesson and discover your path to physics success.</p>
+            </div>
+            <div class="cta-buttons"><a href="#contact" class="btn-lime">Get My Free Diagnostic</a></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Start Your Physics Journey</h2>
+                    <p>Book a free diagnostic lesson. We'll assess your current level and create a personalised plan for HSC success.</p>
+                    <div class="contact-details">
+                        <div class="contact-item"><div class="contact-icon">&#128222;</div><div><div class="contact-item-label">Phone</div><div class="contact-item-value"><a href="tel:0491791447" class="phone-number">0491 791 447</a></div></div></div>
+                        <div class="contact-item"><div class="contact-icon">&#128231;</div><div><div class="contact-item-label">Email</div><div class="contact-item-value"><a href="mailto:admin@beamacademy.info">admin@beamacademy.info</a></div></div></div>
+                        <div class="contact-item"><div class="contact-icon">&#128205;</div><div><div class="contact-item-label">Location</div><div class="contact-item-value">Suite 206, 2 Pembroke St, Epping NSW 2121</div></div></div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3 class="contact-form-title">Book Free Diagnostic</h3>
+                    <p class="contact-form-subtitle">No payment required. See how we can help.</p>
+                    <form class="contact-form" name="physics-trial" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="physics-trial">
+                        <input type="hidden" name="subject" value="Physics">
+                        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+                        <div class="form-row">
+                            <div class="form-group"><label for="parentName" class="form-label">Name *</label><input type="text" id="parentName" name="parentName" class="form-input" required placeholder="Your full name"></div>
+                            <div class="form-group"><label for="parentPhone" class="form-label">Phone *</label><input type="tel" id="parentPhone" name="parentPhone" class="form-input" required placeholder="04XX XXX XXX"></div>
+                        </div>
+                        <div class="form-group"><label for="parentEmail" class="form-label">Email (optional)</label><input type="email" id="parentEmail" name="parentEmail" class="form-input" placeholder="your@email.com"></div>
+                        <div class="form-group"><label for="yearLevel" class="form-label">Year Level</label><select id="yearLevel" name="yearLevel" class="form-select"><option value="">Select year level</option><option value="Year 11">Year 11</option><option value="Year 12">Year 12</option></select></div>
+                        <button type="submit" class="btn-primary">Get My Free Diagnostic</button>
+                        <p class="form-note">Your first lesson is free. No payment required today.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="logo-star.png" alt="" class="logo-img" width="36" height="36"> BEAM Academy</a>
+                    <p>Expert tutoring for Years 7-12 by Baulkham Hills High School graduates achieving 95%+ in HSC Mathematics.</p>
+                    <div class="social-links"><a href="https://www.instagram.com/beamacademyhsc" class="social-link" target="_blank" rel="noopener">&#128247;</a><a href="https://discord.gg/Y4Y8uTun" class="social-link" target="_blank" rel="noopener">&#128172;</a></div>
+                </div>
+                <div class="footer-column"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="results.html" class="footer-link">Results</a></li><li><a href="contact.html" class="footer-link">Contact</a></li><li><a href="index.html#courses" class="footer-link">Courses & Pricing</a></li></ul></div>
+                <div class="footer-column"><h4>Subjects</h4><ul class="footer-links"><li><a href="mathematics.html" class="footer-link">Mathematics</a></li><li><a href="english.html" class="footer-link">English</a></li><li><a href="chemistry.html" class="footer-link">Chemistry</a></li><li><a href="physics.html" class="footer-link">Physics</a></li></ul></div>
+                <div class="footer-column"><h4>Contact</h4><ul class="footer-links"><li><a href="tel:0491791447" class="footer-link">0491 791 447</a></li><li><a href="mailto:admin@beamacademy.info" class="footer-link">admin@beamacademy.info</a></li><li><span class="footer-link">Epping NSW 2121</span></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 BEAM Academy. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
+        });
+    </script>
+</body>
+</html>
