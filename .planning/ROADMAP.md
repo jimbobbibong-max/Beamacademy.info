@@ -9,7 +9,8 @@
 - **v5 Courses Section Overhaul** — Phases 17-18 (shipped 2026-01-24) | [Archive](milestones/v5-ROADMAP.md)
 - **v6 Content Reduction & QA** — Phase 19 (shipped 2026-01-29) | [Archive](milestones/v6-ROADMAP.md)
 - **v7 Comprehensive Frontend Redesign** — Phases 20-24 (shipped 2026-01-31)
-- **v8 Google Ads Optimization** — Phase 25 (in progress)
+- **v8 Google Ads Optimization** — Phase 25 (shipped 2026-01-31)
+- **v9 Additional Pages** — Phase 26 (in progress)
 
 ---
 
@@ -117,29 +118,51 @@ Plans:
 
 ---
 
-## v8: Google Ads Optimization
+## v8: Google Ads Optimization (SHIPPED)
 
 **Goal:** Implement Google Ads specialist (POP) recommendations for improved conversion tracking and landing page structure.
 
 ---
 
-- [ ] **Phase 25: Google Ads Website Optimization** — Implement POP recommendations
+- [x] **Phase 25: Google Ads Website Optimization** — Implement POP recommendations
 
 **Goal:** Apply Google Ads specialist recommendations to improve conversion tracking and landing page structure
 **Source:** Google POP call (2026-01-30) with Rustie Villarisco
-**Plans:** 4 plans in 3 waves
+**Plans:** 4 plans in 3 waves (complete)
 
-Website Changes:
-1. **Phone number at top of homepage** — Sticky utility bar with click-to-call
-2. **"Calls from Website" conversion action** — Google Ads call tracking script
+Website Changes Delivered:
+1. **Click-to-call phone number** — Bottom sticky CTA with tracking (utility bar removed - too cluttered)
+2. **"Calls from Website" conversion action** — Google Ads call tracking script configured
 3. **Subject landing pages** — Mathematics, English, Physics, Chemistry for Sitelink Assets
-4. **Polish pass** — Cross-linking, social proof placement, consistency
+4. **Cross-linking** — All pages linked via footer Subjects section
 
 Plans:
-- [ ] 25-01-PLAN.md — Utility bar and call tracking setup [Wave 1]
-- [ ] 25-02-PLAN.md — Mathematics and English landing pages [Wave 2]
-- [ ] 25-03-PLAN.md — Physics and Chemistry landing pages [Wave 2]
-- [ ] 25-04-PLAN.md — Polish, cross-linking, and verification [Wave 3]
+- [x] 25-01-PLAN.md — Call tracking setup [Wave 1]
+- [x] 25-02-PLAN.md — Mathematics and English landing pages [Wave 2]
+- [x] 25-03-PLAN.md — Physics and Chemistry landing pages [Wave 2]
+- [x] 25-04-PLAN.md — Polish, cross-linking, and verification [Wave 3]
+
+**Deviation:** Utility bar at top removed after user feedback (cluttered with existing bottom sticky CTA). Call tracking moved to bottom bar.
+
+---
+
+## v9: Additional Pages
+
+**Goal:** Audit site for additional pages needed, create with Anthropic Frontend Design Skill aesthetic while maintaining BEAM brand (purples, pastel purples).
+
+---
+
+- [ ] **Phase 26: Pages Audit & Creation** — Identify and build additional pages
+
+**Goal:** Full audit of what additional pages the site needs, then create them using Frontend Design Skill with BEAM brand colors
+**Approach:** Frontend Design Skill (bold, distinctive, editorial) + BEAM purples/pastels
+**Plans:** TBD (requires discussion/planning)
+
+Potential Pages:
+- Team/About Us — Tutor profiles, credentials, trust-building
+- Results/Testimonials — Dedicated success stories
+- Location/Contact — Map, directions, parking
+- Others TBD from audit
 
 ---
 
@@ -159,8 +182,9 @@ Plans:
 | 22 | v7 | Layout, Mobile & Conversion | Complete | 2026-01-30 |
 | 23 | v7 | Motion & Micro-interactions | Complete | 2026-01-30 |
 | 24 | v7 | Performance & Final QA | Complete | 2026-01-31 |
-| 25 | v8 | Google Ads Optimization | **Planned** | - |
+| 25 | v8 | Google Ads Optimization | Complete | 2026-01-31 |
+| 26 | v9 | Additional Pages | **In Progress** | - |
 
 ---
 
-*Last updated: 2026-01-31 — Phase 25 planned (4 plans in 3 waves)*
+*Last updated: 2026-01-31 — v8 shipped, Phase 26 started*
