@@ -81,14 +81,24 @@ Plans:
 
 ---
 
-- [ ] **Phase 23: Motion & Micro-interactions** — High-impact animation moments
+- [ ] **Phase 23: Visual Polish & Motion** — Frontend Design Skill enhancements
 
-**Goal:** Implement one well-orchestrated page load + hover states
-**Requirements:** MOT-01, MOT-02, MOT-03, MOT-04
+**Goal:** Apply Frontend Design Skill critique: bolder differentiators, visual texture, grid-breaking elements, motion
+**Requirements:** MOT-01, MOT-02, MOT-03, MOT-04 + SKILL-CRITIQUE
+
+**Frontend Design Skill Recommendations (from critique):**
+1. **Bolder tilt** — Increase hero "Climb" rotation to -6deg (currently -2deg is timid)
+2. **Break purple monotony** — Add warm accent (gold #f59e0b or coral #f97316) or dark section
+3. **Add texture** — Subtle grain/noise to backgrounds for depth
+4. **Break the grid** — Let hero mockup overflow container, asymmetric elements
+5. **Dramatic CTA** — White button with brutalist offset shadow instead of purple-on-purple
+6. **Motion** — Page load animation, scroll reveals, staggered entrances
 
 **Plans:**
-- 23-01: Design and implement page load animation with staggered reveals
-- 23-02: Add hover states and micro-interactions to interactive elements
+- 23-01: Visual differentiators (bolder tilt, grid-breaking, texture)
+- 23-02: CTA and accent color refinement
+- 23-03: Page load animation with staggered reveals
+- 23-04: Hover states and micro-interactions
 
 ---
 
