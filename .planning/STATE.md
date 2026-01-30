@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v7 (Comprehensive Frontend Redesign)
 Phase: 22 of 24 — Layout, Mobile & Conversion (IN PROGRESS)
-Plan: 1 of 3 complete
+Plan: 2 of 3 complete
 Status: In progress
-Last activity: 2026-01-30 - Completed 22-01-PLAN.md (Asymmetric Tutor Grid)
+Last activity: 2026-01-30 - Completed 22-02-PLAN.md (Mobile Optimization)
 
-Progress: [████████████░░░░░░░░░░░░░░░░░░] 42% (plan 22-01 of v7 complete)
+Progress: [████████████░░░░░░░░░░░░░░░░░░] 44% (plan 22-02 of v7 complete)
 
 ## Milestone History
 
@@ -33,10 +33,10 @@ Progress: [████████████░░░░░░░░░░░
 
 | Phase | Name | Status |
 |-------|------|--------|
-| 20 | Payment Fix | Complete ✓ |
+| 20 | Payment Fix | Complete |
 | 21 | Design System & Typography (Geist) | Skipped (21.1 chosen instead) |
-| 21.1 | Alt Design System (Fraunces/Bricolage) | Complete ✓ |
-| 22 | Layout, Mobile & Conversion | In Progress (1/3 plans) |
+| 21.1 | Alt Design System (Fraunces/Bricolage) | Complete |
+| 22 | Layout, Mobile & Conversion | In Progress (2/3 plans) |
 | 23 | Motion & Micro-interactions | Pending |
 | 24 | Performance & Final QA | Pending |
 
@@ -44,8 +44,8 @@ Progress: [████████████░░░░░░░░░░░
 
 | Plan | Name | Status |
 |------|------|--------|
-| 22-01 | Asymmetric Tutor Grid Layout | Complete ✓ |
-| 22-02 | Mobile Optimization Pass | Pending |
+| 22-01 | Asymmetric Tutor Grid Layout | Complete |
+| 22-02 | Mobile Optimization Pass | Complete |
 | 22-03 | Conversion Element Enhancement | Pending |
 
 ## Accumulated Decisions
@@ -60,19 +60,21 @@ Progress: [████████████░░░░░░░░░░░
 | 2026-01-30 | Phase 21.1 chosen over Phase 21 | Bold editorial approach preferred |
 | 2026-01-30 | Fixed 5-column grid for trust-tutors | Required for nth-child offsets to work |
 | 2026-01-30 | Cards 2,4 offset pattern | Creates wave rhythm without chaos |
+| 2026-01-30 | Contact observer threshold: 0.3 | Hide sticky bar when 30% of contact visible |
+| 2026-01-30 | gray-500 minimum for light bg text | gray-400 (3.0:1) fails WCAG AA; gray-500 (4.6:1) passes |
 
 ## Session Continuity
 
 Last session: 2026-01-30
-Stopped at: Completed 22-01-PLAN.md
+Stopped at: Completed 22-02-PLAN.md
 Resume file: None
 
 ## Next Up
 
-**Plan 22-02: Mobile Optimization Pass** — Tap targets, sticky CTA, contrast improvements
+**Plan 22-03: Conversion Element Enhancement** — Trust signals, CTA variations, enrollment cues
 
-`/gsd:execute-phase 22-02`
+`/gsd:execute-phase 22-03`
 
 ---
 
-*Last updated: 2026-01-30 - Plan 22-01 complete (asymmetric tutor grid)*
+*Last updated: 2026-01-30 - Plan 22-02 complete (mobile optimization)*
