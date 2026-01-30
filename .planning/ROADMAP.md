@@ -86,6 +86,7 @@ Plans:
 
 **Goal:** Apply Frontend Design Skill critique: bolder differentiators, visual texture, grid-breaking elements, motion
 **Requirements:** MOT-01, MOT-02, MOT-03, MOT-04 + SKILL-CRITIQUE
+**Plans:** 4 plans in 2 waves
 
 **Frontend Design Skill Recommendations (from critique):**
 1. **Bolder tilt** — Increase hero "Climb" rotation to -6deg (currently -2deg is timid)
@@ -95,11 +96,11 @@ Plans:
 5. **Dramatic CTA** — White button with brutalist offset shadow instead of purple-on-purple
 6. **Motion** — Page load animation, scroll reveals, staggered entrances
 
-**Plans:**
-- 23-01: Visual differentiators (bolder tilt, grid-breaking, texture)
-- 23-02: CTA and accent color refinement
-- 23-03: Page load animation with staggered reveals
-- 23-04: Hover states and micro-interactions
+Plans:
+- [ ] 23-01-PLAN.md — Visual differentiators (bolder tilt, grid-breaking, texture) [Wave 1]
+- [ ] 23-02-PLAN.md — CTA and accent color refinement [Wave 1]
+- [ ] 23-03-PLAN.md — Page load animation with staggered reveals [Wave 2]
+- [ ] 23-04-PLAN.md — Hover states and micro-interactions [Wave 2]
 
 ---
 
@@ -129,9 +130,9 @@ Plans:
 | 21 | v7 | Design System & Typography | Planned | - |
 | 21.1 | v7 | Alt Design System (Skill-Driven) | Complete | 2026-01-30 |
 | 22 | v7 | Layout, Mobile & Conversion | Complete | 2026-01-30 |
-| 23 | v7 | Motion & Micro-interactions | Pending | - |
+| 23 | v7 | Motion & Micro-interactions | Planned | - |
 | 24 | v7 | Performance & Final QA | Pending | - |
 
 ---
 
-*Last updated: 2026-01-30 — Phase 22 complete (layout, mobile, conversion)*
+*Last updated: 2026-01-30 — Phase 23 planned (4 plans in 2 waves)*
