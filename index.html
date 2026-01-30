@@ -991,6 +991,7 @@
         .hero-visual {
             position: relative;
             animation: fadeIn 1s ease 0.3s both;
+            margin-right: -40px; /* Break out of container on right (Phase 23-01) */
         }
 
         .hero-card {
@@ -4263,6 +4264,11 @@
             .hero-testimonial {
                 font-size: 0.9rem;
                 padding: 10px 16px;
+            }
+
+            /* Remove grid breakout on mobile (Phase 23-01) */
+            .hero-visual {
+                margin-right: 0;
             }
 
             section { padding: 60px 0; }
