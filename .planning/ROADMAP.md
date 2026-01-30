@@ -156,13 +156,23 @@ Plans:
 
 **Goal:** Full audit of what additional pages the site needs, then create them using Frontend Design Skill with BEAM brand colors
 **Approach:** Frontend Design Skill (bold, distinctive, editorial) + BEAM purples/pastels
-**Plans:** TBD (requires discussion/planning)
+**Plans:** 4 plans in 2 waves
 
-Potential Pages:
-- Team/About Us — Tutor profiles, credentials, trust-building
-- Results/Testimonials — Dedicated success stories
-- Location/Contact — Map, directions, parking
-- Others TBD from audit
+Pages to Build (from research):
+1. **About/Our Tutors** — Tutor profiles with photo cards, company story, credentials
+2. **Results/Testimonials** — Score-based testimonials, aggregate metrics, social proof
+3. **Contact** — Map, phone, email, simple contact form, operating hours
+
+Design Guidelines:
+- Purple as ACCENT (30%), white dominant (60%), gold trust signals (10%)
+- Summary card patterns (not long-form text)
+- Each page ends with consistent CTA
+
+Plans:
+- [ ] 26-01-PLAN.md — About/Our Tutors page (tutor cards, company story) [Wave 1]
+- [ ] 26-02-PLAN.md — Results/Testimonials page (score cards, metrics) [Wave 1]
+- [ ] 26-03-PLAN.md — Contact page (map, form, contact info) [Wave 1]
+- [ ] 26-04-PLAN.md — Navigation and cross-linking update (all pages) [Wave 2]
 
 ---
 
@@ -187,4 +197,4 @@ Potential Pages:
 
 ---
 
-*Last updated: 2026-01-31 — v8 shipped, Phase 26 started*
+*Last updated: 2026-01-31 — Phase 26 planned (4 plans in 2 waves)*
