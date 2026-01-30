@@ -681,24 +681,38 @@
             overflow: hidden;
         }
 
+        /* =====================
+           BRUTALIST CTA BUTTONS (Phase 23-02)
+           Hard offset shadow, tactile hover/active states
+           ===================== */
         .btn-primary {
             background: var(--purple-700);
             color: white;
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2);
+            border: 3px solid var(--gray-900);
+            /* Brutalist offset shadow - NO blur */
+            box-shadow: 4px 4px 0 var(--gray-900);
+            transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
         }
 
         .btn-primary:hover {
-            background: var(--purple-800);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+            background: var(--purple-600);
+            /* Lift up and increase shadow */
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--gray-900);
         }
 
         .btn-primary:active {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
+            /* Push down when pressed */
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--gray-900);
         }
 
-        /* Primary CTA with Glow - Phase 21.1 */
+        .btn-primary:focus-visible {
+            outline: none;
+            box-shadow: 6px 6px 0 var(--gray-900), 0 0 0 3px var(--purple-300);
+        }
+
+        /* Primary CTA with Glow + Brutalist shadow - Phase 23-02 */
         .btn-lime {
             display: inline-flex;
             align-items: center;
@@ -709,27 +723,31 @@
             font-family: var(--font-body);
             font-size: var(--text-lg);
             font-weight: 600;
-            border: none;
+            border: 3px solid var(--gray-900);
             border-radius: var(--radius-full);
             text-decoration: none;
             cursor: pointer;
-            box-shadow: var(--shadow-purple);
-            transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+            /* Brutalist offset shadow - NO blur */
+            box-shadow: 4px 4px 0 var(--gray-900);
+            transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
         }
 
         .btn-lime:hover {
-            transform: translateY(-2px);
             background: var(--purple-600);
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35);
+            /* Lift up and increase shadow */
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--gray-900);
         }
 
         .btn-lime:active {
-            transform: translateY(0);
+            /* Push down when pressed */
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--gray-900);
         }
 
         .btn-lime:focus-visible {
-            outline: 2px solid var(--purple-700);
-            outline-offset: 2px;
+            outline: none;
+            box-shadow: 6px 6px 0 var(--gray-900), 0 0 0 3px var(--purple-300);
         }
 
         .btn-secondary {
@@ -4512,20 +4530,33 @@
             background-clip: text;
         }
 
-        /* Better buttons */
+        /* Brutalist buttons - Phase 23-02 */
         .btn-primary {
             background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+            border: 3px solid var(--gray-900);
+            box-shadow: 4px 4px 0 var(--gray-900);
         }
 
         .btn-primary:hover {
-            background: linear-gradient(135deg, var(--purple-700), var(--purple-800));
-            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--gray-900);
+        }
+
+        .btn-primary:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--gray-900);
         }
 
         .nav-cta {
             background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+            border: 2px solid var(--gray-900);
+            box-shadow: 3px 3px 0 var(--gray-900);
+        }
+
+        .nav-cta:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0 var(--gray-900);
         }
 
         /* Subtle background pattern for sections */
