@@ -5,15 +5,15 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v9 Additional Pages — Plan 03 complete, 3/3 done
+**Current focus:** v9 Additional Pages — Plan 04 complete, 4/4 done
 
 ## Current Position
 
 Milestone: v9 (Additional Pages)
 Phase: 26 of 26 — Pages Audit & Creation
-Plan: 3 of 3 complete
+Plan: 4 of 4 complete
 Status: **Phase complete**
-Last activity: 2026-01-31 - Completed 26-03-PLAN.md (Contact page)
+Last activity: 2026-01-31 - Completed 26-04-PLAN.md (Navigation cross-linking)
 
 Progress: [██████████████████████████████] 100%
 
@@ -29,7 +29,7 @@ Progress: [███████████████████████
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
 | v7 | Frontend Redesign | 20-24 | SHIPPED | 2026-01-31 |
 | v8 | Google Ads Optimization | 25 | SHIPPED | 2026-01-31 |
-| v9 | Additional Pages | 26 | **IN PROGRESS** | - |
+| v9 | Additional Pages | 26 | **COMPLETE** | 2026-01-31 |
 
 ## v9 Key Achievements (Complete)
 
@@ -48,6 +48,11 @@ Progress: [███████████████████████
   - Netlify Forms contact form
   - Operating hours and response time note
 
+- **Plan 04:** Navigation cross-linking
+  - Site-wide consistent navigation (8 pages updated)
+  - Cross-links between About, Results, Contact pages
+  - Subject pages updated with new navigation
+
 ## Phase 26 Plans
 
 | Plan | Name | Status | Commit |
@@ -55,6 +60,7 @@ Progress: [███████████████████████
 | 26-01 | About/Tutors Page | COMPLETE | 34bf9e8 |
 | 26-02 | Results/Testimonials | COMPLETE | (see summary) |
 | 26-03 | Contact Page | COMPLETE | 223df82 |
+| 26-04 | Navigation Cross-Linking | COMPLETE | 2f31402 |
 
 ## Decisions Made
 
@@ -65,14 +71,16 @@ Progress: [███████████████████████
 | color-execution | Purple 30% accent, white 60%, gold 10% | Purple works best as accent not dominant |
 | contact-hero | Simple centered design | Contact page is functional, not marketing-heavy |
 | netlify-forms | Use Netlify for form handling | Site already on Netlify, no backend needed |
+| nav-order | About, Results, Courses, Contact, CTA | Logical flow: who we are → proof → services → contact |
+| cross-links | Contextual cross-links on each page | Improves internal linking and user journey |
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 26-03-PLAN.md (Phase 26 complete)
+Stopped at: Completed 26-04-PLAN.md (Phase 26 fully complete)
 Resume file: None
 Next action: /gsd:verify-work 26 or v9 milestone review
 
 ---
 
-*Last updated: 2026-01-31 - Phase 26 complete (3/3 plans)*
+*Last updated: 2026-01-31 - Phase 26 complete (4/4 plans)*
