@@ -398,11 +398,160 @@
             </div>
         </section>
 
-        <!-- Form placeholder - Task 3 will fill this -->
+        <!-- Contact Form Section -->
+        <section class="form-section animate-on-scroll" id="enquiry">
+            <div class="container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <!-- Honeypot field for spam protection -->
+                        <p class="sr-only">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <!-- Name and Email Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <!-- Phone and Year Level Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g. 0412 345 678">
+                            </div>
+                            <div class="form-group">
+                                <label for="year-level" class="form-label">Student Year Level</label>
+                                <select id="year-level" name="year-level" class="form-select">
+                                    <option value="">Select year level</option>
+                                    <option value="Year 7">Year 7</option>
+                                    <option value="Year 8">Year 8</option>
+                                    <option value="Year 9">Year 9</option>
+                                    <option value="Year 10">Year 10</option>
+                                    <option value="Year 11">Year 11</option>
+                                    <option value="Year 12">Year 12</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Subject Interest Checkboxes -->
+                        <div class="form-group checkbox-group">
+                            <label class="form-label">Subjects of Interest</label>
+                            <div class="checkbox-row">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="subjects" value="Mathematics">
+                                    <span>Mathematics</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="subjects" value="English">
+                                    <span>English</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="subjects" value="Physics">
+                                    <span>Physics</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="subjects" value="Chemistry">
+                                    <span>Chemistry</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your child's needs, goals, or any questions you have..." required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+                        <p class="form-note">Your first lesson is always free, no obligation.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="bottom-cta animate-on-scroll">
+            <div class="container">
+                <div class="bottom-cta-content">
+                    <h2>Prefer to Call?</h2>
+                    <div class="phone-big">
+                        <a href="tel:+61491791447" class="phone-number">0491 791 447</a>
+                    </div>
+                    <p>We're here to answer your questions and help your child succeed.</p>
+                    <a href="index.html#contact" class="btn btn-lime">Book Your Free Diagnostic</a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Footer placeholder - Task 3 will fill this -->
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="BEAM Academy home">
+                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+                        BEAM Academy
+                    </a>
+                    <p>Expert tutoring for Years 7-12 by Baulkham Hills High School graduates achieving 95%+ in HSC Mathematics.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/beamacademyhsc" class="social-link" target="_blank" rel="noopener" aria-label="Follow us on Instagram">&#128247;</a>
+                        <a href="https://discord.gg/Y4Y8uTun" class="social-link" target="_blank" rel="noopener" aria-label="Join our Discord">&#128172;</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#courses" class="footer-link">Courses & Pricing</a></li>
+                        <li><a href="index.html#contact" class="footer-link">Pay Now</a></li>
+                        <li><a href="https://beamffef.netlify.app/login" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Subjects</h4>
+                    <ul class="footer-links">
+                        <li><a href="mathematics.html" class="footer-link">Mathematics</a></li>
+                        <li><a href="english.html" class="footer-link">English</a></li>
+                        <li><a href="chemistry.html" class="footer-link">Chemistry</a></li>
+                        <li><a href="physics.html" class="footer-link">Physics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+61491791447" class="footer-link phone-number">0491 791 447</a></li>
+                        <li><a href="mailto:admin@beamacademy.info" class="footer-link">admin@beamacademy.info</a></li>
+                        <li><span class="footer-link">Suite 206, 2 Pembroke St</span></li>
+                        <li><span class="footer-link">Epping NSW 2121</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BEAM Academy. All rights reserved. ABN 19 693 809 013</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Navigation scroll effect
