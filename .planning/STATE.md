@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v8 (Google Ads Optimization)
 Phase: 25 of 25 — Google Ads Website Optimization
-Plan: 1 of 4 complete
+Plan: 2 of 4 complete
 Status: **In progress**
-Last activity: 2026-01-31 - Completed 25-01-PLAN.md (utility bar + call tracking)
+Last activity: 2026-01-31 - Completed 25-03-PLAN.md (Physics + Chemistry pages)
 
-Progress: [████████░░░░░░░░░░░░░░░░░░░░░░] 25% (1/4 plans complete)
+Progress: [████████████████░░░░░░░░░░░░░░] 50% (2/4 plans complete)
 
 ## Milestone History
 
@@ -36,7 +36,7 @@ Progress: [████████░░░░░░░░░░░░░░░
 |------|------|-------------|--------|
 | 25-01 | 1 | Utility bar + call tracking | **COMPLETE** |
 | 25-02 | 2 | Mathematics + English pages | Planned |
-| 25-03 | 2 | Physics + Chemistry pages | Planned |
+| 25-03 | 2 | Physics + Chemistry pages | **COMPLETE** |
 | 25-04 | 3 | Polish + verification | Planned |
 
 ## Wave Structure
@@ -61,13 +61,21 @@ Progress: [████████░░░░░░░░░░░░░░░
 - **Call tracking:** Google Ads gtag config with phone_conversion settings
 - **User action needed:** Create conversion action in Google Ads, get label
 
+## 25-03 Key Achievements
+
+- **Physics landing page:** "Make Physics Click" hero, HSC Module 5-8 breakdown
+- **Chemistry landing page:** "Master the Science of Matter" hero, Module 5-8 breakdown
+- **Years 11-12 only:** No junior year content (science subjects are senior only)
+- **Subject-specific forms:** Separate Netlify forms for lead tracking
+- **Design system:** Same fonts, colors, brutalist CTAs as main site
+
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 25-01-PLAN.md
+Stopped at: Completed 25-03-PLAN.md
 Resume file: None
-Next action: Execute 25-02 and 25-03 (Wave 2, can run in parallel)
+Next action: Execute 25-02 (Mathematics + English) or 25-04 (Polish)
 
 ---
 
-*Last updated: 2026-01-31 - Completed 25-01*
+*Last updated: 2026-01-31 - Completed 25-03*
