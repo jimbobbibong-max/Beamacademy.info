@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v9 Additional Pages — Phase 26 needs discussion/planning
+**Current focus:** v9 Additional Pages — Plan 01 complete, continuing
 
 ## Current Position
 
 Milestone: v9 (Additional Pages)
 Phase: 26 of 26 — Pages Audit & Creation
-Plan: 0 of ? (needs planning)
-Status: **Needs discussion**
-Last activity: 2026-01-31 - v8 shipped, Phase 26 created
+Plan: 1 of 3 complete
+Status: **In progress**
+Last activity: 2026-01-31 - Completed 26-01-PLAN.md (About page)
 
-Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 33%
 
 ## Milestone History
 
@@ -31,35 +31,38 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 | v8 | Google Ads Optimization | 25 | SHIPPED | 2026-01-31 |
 | v9 | Additional Pages | 26 | **IN PROGRESS** | - |
 
-## v8 Key Achievements (Just Shipped)
+## v9 Key Achievements (In Progress)
 
-- **Call tracking:** Google Ads gtag with phone_conversion on bottom sticky CTA
-- **Subject landing pages:** Mathematics, English, Physics, Chemistry
-- **Cross-linking:** All pages connected via footer Subjects section
-- **Deviation:** Utility bar removed (cluttered), tracking moved to bottom bar
+- **Plan 01 Complete:** About/Tutors page created (about.html, 513 lines)
+  - Tutor cards with placeholder data (user to replace)
+  - Company story section
+  - Teaching approach pillars
+  - BEAM brand: purple accent, white dominant, gold highlights
+  - Mobile responsive with all breakpoints
 
-## Phase 26 Scope
+## Phase 26 Plans
 
-**Goal:** Audit what additional pages the site needs, create with Frontend Design Skill + BEAM brand
+| Plan | Name | Status | Commit |
+|------|------|--------|--------|
+| 26-01 | About/Tutors Page | COMPLETE | 34bf9e8 |
+| 26-02 | Results/Testimonials | Planned | - |
+| 26-03 | Contact Page | Planned | - |
 
-**Design Approach:**
-- Primary: Anthropic Frontend Design Skill (bold, distinctive, editorial)
-- Brand: BEAM purples and pastel purples (no gradients, hard colors)
-- Typography: Fraunces (display) + Bricolage Grotesque (body)
+## Decisions Made
 
-**Potential Pages:**
-- Team/About Us — Tutor profiles, credentials
-- Results/Testimonials — Dedicated success stories
-- Location/Contact — Map, directions
-- Others TBD from audit
+| ID | Decision | Rationale |
+|----|----------|-----------|
+| page-structure | Single-page sections for About | Keeps trust content together, less friction |
+| tutor-display | Summary cards not long bios | Research showed cards more effective |
+| color-execution | Purple 30% accent, white 60%, gold 10% | Purple works best as accent not dominant |
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Phase 26 created, needs discussion
+Stopped at: Completed 26-01-PLAN.md
 Resume file: None
-Next action: /gsd:discuss-phase 26
+Next action: /gsd:execute-phase 26 plan 02 or /gsd:verify-work 26-01
 
 ---
 
-*Last updated: 2026-01-31 - v8 shipped, Phase 26 created*
+*Last updated: 2026-01-31 - Plan 26-01 complete*
