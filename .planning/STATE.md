@@ -5,15 +5,15 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v9 Additional Pages — Plan 04 complete, 4/4 done
+**Current focus:** v10 About Tutor Data — Plan 01 complete, 1/1 done
 
 ## Current Position
 
-Milestone: v9 (Additional Pages)
-Phase: 26 of 26 — Pages Audit & Creation
-Plan: 4 of 4 complete
+Milestone: v10 (About Tutor Data)
+Phase: 27 of 27 — About Tutor Data
+Plan: 1 of 1 complete
 Status: **Phase complete**
-Last activity: 2026-01-31 - Completed 26-04-PLAN.md (Navigation cross-linking)
+Last activity: 2026-01-31 - Completed 27-01-PLAN.md (Real tutor data)
 
 Progress: [██████████████████████████████] 100%
 
@@ -29,38 +29,24 @@ Progress: [███████████████████████
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
 | v7 | Frontend Redesign | 20-24 | SHIPPED | 2026-01-31 |
 | v8 | Google Ads Optimization | 25 | SHIPPED | 2026-01-31 |
-| v9 | Additional Pages | 26 | **COMPLETE** | 2026-01-31 |
+| v9 | Additional Pages | 26 | SHIPPED | 2026-01-31 |
+| v10 | About Tutor Data | 27 | **COMPLETE** | 2026-01-31 |
 
-## v9 Key Achievements (Complete)
+## v10 Key Achievements (Complete)
 
-- **Plan 01:** About/Tutors page (about.html, 513 lines)
-  - Tutor cards with placeholder data
-  - Company story section
-  - Teaching approach pillars
+- **Plan 01:** Real tutor data on about.html
+  - Replaced 6 placeholder tutors with 5 real tutors
+  - Chris Kim (Head of Maths & Physics)
+  - Nathan You, John Park (Tutors)
+  - Taehoon Kim (Tutor & Head Admin)
+  - Sowon Lee (Head of English)
+  - Updated hero badge for accuracy
 
-- **Plan 02:** Results/Testimonials page (results.html)
-  - Student success stories with before/after scores
-  - Results metrics and statistics
-
-- **Plan 03:** Contact page (contact.html, 614 lines)
-  - Contact info with phone, email, address
-  - Google Map embed
-  - Netlify Forms contact form
-  - Operating hours and response time note
-
-- **Plan 04:** Navigation cross-linking
-  - Site-wide consistent navigation (8 pages updated)
-  - Cross-links between About, Results, Contact pages
-  - Subject pages updated with new navigation
-
-## Phase 26 Plans
+## Phase 27 Plans
 
 | Plan | Name | Status | Commit |
 |------|------|--------|--------|
-| 26-01 | About/Tutors Page | COMPLETE | 34bf9e8 |
-| 26-02 | Results/Testimonials | COMPLETE | (see summary) |
-| 26-03 | Contact Page | COMPLETE | 223df82 |
-| 26-04 | Navigation Cross-Linking | COMPLETE | 2f31402 |
+| 27-01 | Update About with Real Tutor Data | COMPLETE | aea6507 |
 
 ## Decisions Made
 
@@ -73,14 +59,15 @@ Progress: [███████████████████████
 | netlify-forms | Use Netlify for form handling | Site already on Netlify, no backend needed |
 | nav-order | About, Results, Courses, Contact, CTA | Logical flow: who we are → proof → services → contact |
 | cross-links | Contextual cross-links on each page | Improves internal linking and user journey |
+| real-tutor-data | Use homepage tutor data | Consistency across site, real credentials |
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 26-04-PLAN.md (Phase 26 fully complete)
+Stopped at: Completed 27-01-PLAN.md (Phase 27 fully complete)
 Resume file: None
-Next action: /gsd:verify-work 26 or v9 milestone review
+Next action: /gsd:verify-work 27
 
 ---
 
-*Last updated: 2026-01-31 - Phase 26 complete (4/4 plans)*
+*Last updated: 2026-01-31 - Phase 27 complete (1/1 plans)*
