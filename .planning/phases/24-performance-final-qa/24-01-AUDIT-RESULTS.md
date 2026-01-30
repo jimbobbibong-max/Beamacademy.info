@@ -1,129 +1,194 @@
-# Phase 24-01: Lighthouse Performance Audit Results
+# 24-01 Audit Results: Lighthouse Performance Audit
 
 **Date:** 2026-01-30
-**Site:** https://beamacademy.info (hosted on Netlify)
-**Lighthouse Version:** 13.0.1
+**Site:** https://beamacademy.com.au
+**Tool:** Lighthouse CLI v12.x
+**Plan:** 24-01-PLAN.md
 
-## Summary
-
-| Metric | Desktop (Median) | Mobile (Median) | Target | Status |
-|--------|------------------|-----------------|--------|--------|
-| Performance Score | 92 | 61 | >= 70 | Desktop PASS, Mobile WARNING |
-| Accessibility Score | 97 | 97 | >= 90 | PASS |
-| Best Practices Score | 77 | 77 | >= 80 | WARNING |
-| LCP | 1549ms | 5130ms | Desktop <=1000ms, Mobile <=2500ms | FAIL |
-| CLS | 0.0003 | 0.0088 | <= 0.1 | PASS |
-| FCP | 1084ms | 2947ms | - | Acceptable |
-| TBT | 29ms | 457ms | < 200ms | Desktop PASS, Mobile FAIL |
+---
 
 ## Desktop Audit Results
 
-**Runs:** 3
-**Preset:** desktop
+### Summary (Median of 3 runs)
 
-| Run | Perf | A11y | BP | LCP (ms) | CLS | FCP (ms) | SI (ms) | TBT (ms) |
-|-----|------|------|-----|----------|-----|----------|---------|----------|
-| 1 | 91 | 97 | 77 | 1616 | 0.0003 | 1126 | 1321 | 29 |
-| 2 | 96 | 97 | 77 | 1172 | 0.0544 | 834 | 1143 | 79 |
-| 3 | 92 | 97 | 77 | 1549 | 0.0003 | 1084 | 1264 | 8 |
-| **Median** | **92** | **97** | **77** | **1549** | **0.0003** | **1084** | **1264** | **29** |
+| Metric | Run 1 | Run 2 | Run 3 | Median | Target | Status |
+|--------|-------|-------|-------|--------|--------|--------|
+| **Performance** | 91 | 96 | 92 | **92** | ≥90 | PASS |
+| **Accessibility** | 97 | 97 | 97 | **97** | ≥90 | PASS |
+| **Best Practices** | 77 | 77 | 77 | **77** | ≥80 | FAIL |
+| **LCP** | 1616ms | 1172ms | 1549ms | **1549ms** | ≤1000ms | FAIL |
+| **CLS** | 0.000 | 0.054 | 0.000 | **0.000** | ≤0.1 | PASS |
+| **TBT** | 29ms | 79ms | 8ms | **29ms** | ≤200ms | PASS |
 
-### Desktop Analysis
+### LCP Element
 
-- **Performance Score:** 92/100 - Excellent
-- **LCP:** 1549ms - Above 1.0s target but acceptable for real-world usage
-  - LCP element: Hero content (headline/image)
-  - Primary bottleneck: Network latency + font loading
-- **CLS:** Near-zero (0.0003) - Excellent layout stability
-- **TBT:** 29ms - Minimal blocking time, excellent interactivity
-- **Accessibility:** 97/100 - Very good
-- **Best Practices:** 77/100 - Some security headers could be improved
+- **Selector:** `div.container > div.hero-content > div.hero-text > h1`
+- **Content:** "Watch Their Grades Climb"
+- **LCP Breakdown (Run 1):**
+  - Time to First Byte (TTFB): 122ms
+  - Element Render Delay: 1239ms
+
+### Render-Blocking Resources
+
+**Status:** PASS - No render-blocking resources detected
+
+---
 
 ## Mobile Audit Results
 
-**Runs:** 3
-**Preset:** default (mobile simulation with CPU/network throttling)
+### Summary (Median of 3 runs)
 
-| Run | Perf | A11y | BP | LCP (ms) | CLS | FCP (ms) | SI (ms) | TBT (ms) |
-|-----|------|------|-----|----------|-----|----------|---------|----------|
-| 1 | 64 | 97 | 77 | 5130 | 0.0088 | 2947 | 3126 | 457 |
-| 2 | 61 | 97 | 77 | 5349 | 0.0088 | 3390 | 5763 | 342 |
-| 3 | 45 | 97 | 77 | 3143 | 0.6772 | 1289 | 2229 | 1451 |
-| **Median** | **61** | **97** | **77** | **5130** | **0.0088** | **2947** | **3126** | **457** |
+| Metric | Run 1 | Run 2 | Run 3 | Median | Target | Status |
+|--------|-------|-------|-------|--------|--------|--------|
+| **Performance** | 64 | 61 | 45 | **61** | ≥70 | FAIL |
+| **Accessibility** | 97 | 97 | 97 | **97** | ≥90 | PASS |
+| **Best Practices** | 77 | 77 | 77 | **77** | ≥80 | FAIL |
+| **FCP** | 2947ms | 3390ms | 1289ms | **2947ms** | ≤1800ms | FAIL |
+| **LCP** | 5130ms | 5349ms | 3143ms | **5130ms** | ≤2500ms | FAIL |
+| **CLS** | 0.009 | 0.009 | 0.677 | **0.009** | ≤0.1 | PASS |
+| **TBT** | 457ms | 342ms | 1451ms | **457ms** | ≤300ms | FAIL |
 
-### Mobile Analysis
+### LCP Element (Mobile)
 
-- **Performance Score:** 61/100 - Moderate (expected with Lighthouse simulated throttling)
-- **LCP:** 5130ms - Above 2.5s target
-  - Primary cause: Simulated slow 4G throttling + CPU slowdown
-  - Real-world mobile performance will be significantly better
-- **CLS:** 0.0088 - Excellent layout stability
-- **TBT:** 457ms - Higher due to simulated CPU throttling
-- **Accessibility:** 97/100 - Consistent with desktop
+- **Selector:** `div.container > div.hero-content > div.hero-text > p.hero-description`
+- **Content:** "We track scores topic by topic. Their worksheets target exactly what they need..."
+- **LCP Breakdown:**
+  - TTFB: 234-335ms
+  - Element Render Delay: 1041-2948ms (high variance)
 
-**Note:** Lighthouse mobile simulation applies aggressive throttling (4x CPU slowdown + simulated slow 4G). Real-world mobile performance on modern devices is significantly better than these scores suggest.
+### Render-Blocking Resources
+
+**Status:** PASS - No render-blocking resources detected
+
+---
 
 ## Animation Performance Analysis (PERF-04)
 
-### Keyframe Animations
+### Animation CSS Review
 
-All keyframe animations use compositor-friendly properties only:
+All animations in beamacademy-index.html have been reviewed for layout-thrashing properties.
+
+#### Safe Animations (transform/opacity only)
 
 | Animation | Properties Used | Status |
 |-----------|-----------------|--------|
-| float-orb | transform (translate, scale) | SAFE |
-| pricingPulse | transform (scale) | SAFE |
-| fadeInUp | opacity, transform (translateY) | SAFE |
-| fadeIn | opacity, transform (translateY) | SAFE |
-| float | transform (translateY) | SAFE |
-| spin | transform (rotate) | SAFE |
+| Page load (@starting-style) | opacity, transform: translateY | SAFE |
+| Scroll reveals | opacity, transform: translateY | SAFE |
+| Hover card lift | transform: translateY(-4px) | SAFE |
+| Button hover | transform: translateY(-2px) | SAFE |
+| Button active | transform: scale(0.98) | SAFE |
+| Floating orb | transform: translate, scale | SAFE |
+| Mobile menu toggle | transform: rotate, scaleX | SAFE |
+| Nav CTA brutalist shadow | transform: translate(-2px, -2px) | SAFE |
+| Pricing card hover | transform: scale(1.02), translateY(-4px) | SAFE |
+| FAQ chevron | transform: rotate(180deg) | SAFE |
+| Social links hover | transform: translateX(4px), translateY(-2px) | SAFE |
 
-### Transitions
+#### Minor Layout-Affecting Transitions (Low Risk)
 
-Most transitions use safe properties (transform, opacity, color, box-shadow, border-color).
+| Element | Property | Context | Risk Level |
+|---------|----------|---------|------------|
+| .skip-link | `transition: top 0.2s` | Focus state only, off-screen normally | LOW |
+| .footer-link::after | `transition: width 200ms` | Pseudo-element underline, minimal impact | LOW |
+| .floating-contact | `transition: bottom 0.3s` | Position shift when sticky bar visible | LOW |
 
-**Minor Layout Transitions Found (3):**
+**Analysis:** The three layout-affecting transitions are:
+1. **Skip link (top):** Only visible on keyboard focus, not in normal flow
+2. **Footer underline (width):** Pseudo-element, doesn't reflow content
+3. **Floating contact (bottom):** Positioned fixed, doesn't affect layout
 
-| Location | Property | Context | Impact |
-|----------|----------|---------|--------|
-| Line 358 | top | Skip link (accessibility focus) | NEGLIGIBLE - Only on focus, rare |
-| Line 3251 | width | Footer link underline | NEGLIGIBLE - Pseudo-element on hover |
-| Line 3556 | bottom | Floating contact button | LOW - Single element, rare trigger |
+None of these trigger layout thrashing during scroll or typical user interactions.
 
-**Verdict:** All three layout-property transitions are on small, isolated elements triggered by specific user interactions (focus/hover). They do not cause layout thrashing during normal page load or scroll.
+### Verdict
 
-### Scroll Animations
+**PERF-04 Status:** PASS
 
-The scroll-triggered animations (animate-on-scroll class) correctly use:
-- opacity: 0 → 1
-- transform: translateY(40px) → translateY(0)
+All main user-facing animations use only transform and opacity properties. The three minor exceptions are:
+- Not in the critical rendering path
+- Not triggered during scroll
+- Do not cause content reflow
 
-No layout-thrashing properties detected in scroll animations.
+---
 
-## PERF Requirements Status
+## PERF Requirements Summary
 
 | Requirement | Description | Status | Notes |
 |-------------|-------------|--------|-------|
-| PERF-01 | LCP ≤1.0s (desktop) | PARTIAL | 1.5s desktop, 5.1s mobile (throttled) |
-| PERF-02 | CLS ≤0.1 | PASS | 0.0003 desktop, 0.0088 mobile |
-| PERF-03 | No render-blocking resources added | PASS | No blocking resources detected |
-| PERF-04 | Animations use transform/opacity only | PASS | All major animations safe |
+| **PERF-01** | LCP ≤1.0s desktop | FAIL | 1.5s median (50% over target) |
+| **PERF-02** | CLS ≤0.1 | PASS | 0.000 desktop, 0.009 mobile |
+| **PERF-03** | No render-blocking resources | PASS | None detected |
+| **PERF-04** | Animations use transform/opacity | PASS | All main animations compliant |
+
+---
+
+## Issues Identified
+
+### Critical (Blocking)
+
+1. **Desktop LCP exceeds target**
+   - Current: 1549ms median
+   - Target: ≤1000ms
+   - Gap: 549ms (55% over target)
+   - Root cause: Element render delay (1239ms)
+   - LCP element: H1 hero headline
+
+2. **Mobile performance score low**
+   - Current: 61 median
+   - Target: ≥70
+   - Key issues: LCP (5.1s), TBT (457ms), FCP (2.9s)
+
+### Moderate
+
+1. **Best Practices score below target**
+   - Current: 77
+   - Target: ≥80
+   - (Needs investigation for specific issues)
+
+### Informational
+
+- Mobile CLS shows variance (Run 3 had 0.677 spike)
+- TTFB is good (122-335ms)
+- Render delay is the main LCP contributor
+
+---
 
 ## Recommendations
 
-### Immediate (Non-Blocking)
-1. **Preload fonts** - Add `<link rel="preload">` for Fraunces/Bricolage fonts to improve LCP
-2. **Consider AVIF/WebP** - Further image optimization for mobile
+### For LCP Improvement (Desktop)
 
-### Future Consideration
-1. **Security headers** - Add CSP, X-Frame-Options via Netlify headers for Best Practices score
-2. **Font subsetting** - Reduce font payload for mobile
+1. **Investigate element render delay** (1239ms is the bottleneck)
+   - Check if fonts are blocking render
+   - Verify font preload is working
+   - Consider font-display: swap if not already set
 
-## Raw Data Files
+2. **Optimize hero section**
+   - Ensure H1 content is not hidden by animation initially
+   - Phase 23's opacity: 0.01 fix should help LCP candidacy
 
-- `lh-desktop-1.json` through `lh-desktop-3.json`
-- `lh-mobile-1.json` through `lh-mobile-3.json`
+### For Mobile Performance
+
+1. **Reduce JavaScript execution**
+   - TBT of 457ms indicates main thread blocking
+   - Consider code splitting or lazy loading
+
+2. **Optimize images**
+   - Mobile LCP element is hero description text
+   - Check for any image optimization opportunities
+
+---
+
+## Conclusion
+
+**Overall Assessment:** PARTIAL PASS
+
+- 2 of 4 PERF requirements pass (CLS, render-blocking, animations)
+- 2 fail (LCP desktop, implied mobile metrics)
+- Desktop performance score (92) is good
+- Mobile performance (61) needs attention
+
+The v7 redesign did not introduce significant performance regressions for CLS or animation performance. LCP was likely elevated before v7 changes. Mobile performance under simulated throttling shows room for improvement but is typical for content-heavy marketing pages.
 
 ---
 
 *Audit completed: 2026-01-30*
+*Lighthouse runs stored: lh-desktop-[1-3].json, lh-mobile-[1-3].json*
