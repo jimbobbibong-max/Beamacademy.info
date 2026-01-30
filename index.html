@@ -1614,6 +1614,7 @@
         .trust-section {
             background: var(--white);
             position: relative;
+            overflow-x: hidden; /* Prevent horizontal overflow from asymmetric layout */
         }
 
         .trust-badge {
@@ -3442,7 +3443,7 @@
 
             .sticky-cta-note {
                 font-size: 0.75rem;
-                color: var(--gray-400);
+                color: var(--gray-500); /* WCAG AA: gray-500 = 4.6:1 on white (pass) */
             }
         }
 
