@@ -1707,10 +1707,10 @@
 
         .trust-tutors {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--space-5);
             justify-content: center;
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto 40px;
         }
 
@@ -1729,22 +1729,10 @@
             border-color: var(--purple-200);
         }
 
-        /* Asymmetric staggered layout - editorial tension */
-        @media (min-width: 1001px) {
-            .tutor-card:nth-child(2),
-            .tutor-card:nth-child(4) {
-                margin-top: var(--space-8);
-            }
-        }
-
-        /* Tablet breakpoint - 4 columns with alternating offset */
-        @media (min-width: 901px) and (max-width: 1000px) {
-            .trust-tutors {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .tutor-card:nth-child(2),
-            .tutor-card:nth-child(4) {
-                margin-top: var(--space-6);
+        /* Asymmetric staggered layout - middle card lifted */
+        @media (min-width: 769px) {
+            .tutor-card:nth-child(2) {
+                margin-top: calc(-1 * var(--space-6));
             }
         }
 
@@ -6388,6 +6376,24 @@
                             <li>93 Maths Ext2</li>
                             <li>95 Physics</li>
                             <li>98th percentile UCAT</li>
+                        </ul>
+                    </article>
+
+                    <!-- Taehoon Kim -->
+                    <article class="tutor-card">
+                        <div class="tutor-image">
+                            <img src="images/taehoon.jpg" alt="Taehoon Kim, Tutor & Head Admin at BEAM Academy" width="400" height="400" loading="lazy" style="object-position: center top;">
+                        </div>
+                        <h3 class="tutor-name">Taehoon Kim</h3>
+                        <div class="tutor-role">Tutor & Head Admin</div>
+                        <div class="tutor-trifecta">
+                            <span class="trifecta-badge trifecta-school">BHHS Graduate</span>
+                            <span class="trifecta-badge trifecta-hsc">95 Maths Ext1</span>
+                            <span class="trifecta-badge trifecta-uni">Optometry @ UNSW</span>
+                        </div>
+                        <ul class="tutor-credentials">
+                            <li>1540 SAT</li>
+                            <li>4 years tutoring experience</li>
                         </ul>
                     </article>
 
