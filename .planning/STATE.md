@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v8 (Google Ads Optimization)
 Phase: 25 of 25 — Google Ads Website Optimization
-Plan: 2 of 4 complete
+Plan: 3 of 4 complete
 Status: **In progress**
-Last activity: 2026-01-31 - Completed 25-03-PLAN.md (Physics + Chemistry pages)
+Last activity: 2026-01-31 - Completed 25-02-PLAN.md (Mathematics + English pages)
 
-Progress: [████████████████░░░░░░░░░░░░░░] 50% (2/4 plans complete)
+Progress: [██████████████████████████░░░░] 75% (3/4 plans complete)
 
 ## Milestone History
 
@@ -35,7 +35,7 @@ Progress: [████████████████░░░░░░░
 | Plan | Wave | Description | Status |
 |------|------|-------------|--------|
 | 25-01 | 1 | Utility bar + call tracking | **COMPLETE** |
-| 25-02 | 2 | Mathematics + English pages | Planned |
+| 25-02 | 2 | Mathematics + English pages | **COMPLETE** |
 | 25-03 | 2 | Physics + Chemistry pages | **COMPLETE** |
 | 25-04 | 3 | Polish + verification | Planned |
 
@@ -61,6 +61,15 @@ Progress: [████████████████░░░░░░░
 - **Call tracking:** Google Ads gtag config with phone_conversion settings
 - **User action needed:** Create conversion action in Google Ads, get label
 
+## 25-02 Key Achievements
+
+- **Mathematics landing page:** "Watch Their Maths Grades Climb" hero
+- **English landing page:** "Unlock Their Voice. Master Their Craft." hero
+- **Full curriculum:** Years 7-10 foundations + Years 11-12 HSC courses
+- **Subject-specific testimonials:** Maths (68% to 89%), English (generic to Band 6)
+- **Design system:** Same fonts, colors, brutalist CTAs as main site
+- **Files:** mathematics.html and english.html in Downloads folder
+
 ## 25-03 Key Achievements
 
 - **Physics landing page:** "Make Physics Click" hero, HSC Module 5-8 breakdown
@@ -72,10 +81,10 @@ Progress: [████████████████░░░░░░░
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 25-03-PLAN.md
+Stopped at: Completed 25-02-PLAN.md
 Resume file: None
-Next action: Execute 25-02 (Mathematics + English) or 25-04 (Polish)
+Next action: Execute 25-04 (Polish + verification)
 
 ---
 
-*Last updated: 2026-01-31 - Completed 25-03*
+*Last updated: 2026-01-31 - Completed 25-02*
