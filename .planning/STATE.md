@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v8 (Google Ads Optimization)
 Phase: 25 of 25 — Google Ads Website Optimization
-Plan: 0 of 4 complete (planning done, ready for execution)
-Status: **Planned - ready for execution**
-Last activity: 2026-01-31 - Phase 25 planning complete
+Plan: 1 of 4 complete
+Status: **In progress**
+Last activity: 2026-01-31 - Completed 25-01-PLAN.md (utility bar + call tracking)
 
-Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 plans complete)
+Progress: [████████░░░░░░░░░░░░░░░░░░░░░░] 25% (1/4 plans complete)
 
 ## Milestone History
 
@@ -34,7 +34,7 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 
 | Plan | Wave | Description | Status |
 |------|------|-------------|--------|
-| 25-01 | 1 | Utility bar + call tracking | Planned |
+| 25-01 | 1 | Utility bar + call tracking | **COMPLETE** |
 | 25-02 | 2 | Mathematics + English pages | Planned |
 | 25-03 | 2 | Physics + Chemistry pages | Planned |
 | 25-04 | 3 | Polish + verification | Planned |
@@ -54,13 +54,20 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 - **Motion:** Page load animation, scroll reveals, hover states
 - **Performance:** LCP 1.5s (Good), CLS 0.000, Accessibility 97
 
+## 25-01 Key Achievements
+
+- **Utility bar:** Fixed dark bar above nav with phone icon + number
+- **Click-to-call:** tel: link works on mobile (0491 791 447)
+- **Call tracking:** Google Ads gtag config with phone_conversion settings
+- **User action needed:** Create conversion action in Google Ads, get label
+
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Phase 25 planning complete
-Resume file: None - ready for execution
-Next action: /gsd:execute-phase 25
+Stopped at: Completed 25-01-PLAN.md
+Resume file: None
+Next action: Execute 25-02 and 25-03 (Wave 2, can run in parallel)
 
 ---
 
-*Last updated: 2026-01-31 - Phase 25 planned*
+*Last updated: 2026-01-31 - Completed 25-01*
