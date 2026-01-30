@@ -168,7 +168,14 @@
             --accent-blue: #3b82f6;
             --accent-teal: #14b8a6;
             /* =====================
-               ACCENT: Electric Lime (Phase 21.1)
+               WARM ACCENT (Phase 23-02)
+               Gold for trust elements, breaks purple monotony
+               60-30-10 rule: Purple dominant, neutrals secondary, warm accent 10%
+               ===================== */
+            --accent-warm: #f59e0b;         /* Amber/Gold - trustworthy, friendly */
+            --accent-warm-light: #fbbf24;   /* Lighter for hover states */
+            /* =====================
+               ACCENT: Electric Lime (Phase 21.1) - deprecated
                ===================== */
             --color-lime-400: #d9ff00;
             --color-lime-500: #bfff00;     /* Primary accent */
@@ -836,12 +843,24 @@
             75% { transform: translate(20px, 10px) scale(1.05); }
         }
 
+        /* Grain texture overlay for visual depth (Phase 23-01) */
+        .hero-grain {
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%25" height="100%25" filter="url(%23n)"/></svg>');
+            opacity: 0.04;
+            pointer-events: none;
+            mix-blend-mode: multiply;
+            z-index: 1;
+        }
+
         .hero-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: center;
             position: relative;
+            z-index: 2; /* Above grain overlay */
         }
 
         .hero-text { animation: fadeInUp 0.8s ease; }
@@ -960,8 +979,9 @@
         }
 
         .hero-testimonial .testimonial-star {
-            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
-            color: white;
+            /* Warm accent for rating star - Phase 23-02 */
+            background: var(--accent-warm);
+            color: var(--gray-900);
             padding: 4px 10px;
             border-radius: 100px;
             font-weight: 600;
@@ -1657,6 +1677,8 @@
         .trust-badge-icon {
             width: 20px;
             height: 20px;
+            /* Warm accent for trust icon - Phase 23-02 */
+            color: var(--accent-warm);
         }
 
         .trust-tutors {
@@ -1866,7 +1888,9 @@
             left: 24px;
             font-size: 4rem;
             font-family: Georgia, serif;
-            color: var(--purple-100);
+            /* Warm accent for trust element - Phase 23-02 */
+            color: var(--accent-warm);
+            opacity: 0.6;
             line-height: 1;
         }
 
@@ -5857,6 +5881,8 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="hero" id="home">
+            <!-- Grain texture overlay for visual depth -->
+            <div class="hero-grain" aria-hidden="true"></div>
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
