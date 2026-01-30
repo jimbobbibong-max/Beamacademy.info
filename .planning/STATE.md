@@ -10,12 +10,12 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Milestone: v7 (Comprehensive Frontend Redesign)
-Phase: 21.1 of 24 — Alternative Design System ✓ COMPLETE
-Plan: All 4 plans complete
-Status: Ready for Phase 22
-Last activity: 2026-01-30 - Phase 21.1 verified complete
+Phase: 22 of 24 — Layout, Mobile & Conversion (IN PROGRESS)
+Plan: 1 of 3 complete
+Status: In progress
+Last activity: 2026-01-30 - Completed 22-01-PLAN.md (Asymmetric Tutor Grid)
 
-Progress: [████████████░░░░░░░░░░░░░░░░░░] 40% (2/5 v7 phases complete)
+Progress: [████████████░░░░░░░░░░░░░░░░░░] 42% (plan 22-01 of v7 complete)
 
 ## Milestone History
 
@@ -36,18 +36,17 @@ Progress: [████████████░░░░░░░░░░░
 | 20 | Payment Fix | Complete ✓ |
 | 21 | Design System & Typography (Geist) | Skipped (21.1 chosen instead) |
 | 21.1 | Alt Design System (Fraunces/Bricolage) | Complete ✓ |
-| 22 | Layout, Mobile & Conversion | Pending |
+| 22 | Layout, Mobile & Conversion | In Progress (1/3 plans) |
 | 23 | Motion & Micro-interactions | Pending |
 | 24 | Performance & Final QA | Pending |
 
-## Phase 21.1 Summary
+## Phase 22 Progress
 
-Bold editorial design system with:
-- **Fraunces** display font (headlines) with WONK axis
-- **Bricolage Grotesque** body font
-- **Tilted hero headline** (-2deg rotation on desktop)
-- **Purple glow CTAs** (lime accent rejected by user)
-- **80+ design tokens** (colors, spacing, shadows, transitions, type scale)
+| Plan | Name | Status |
+|------|------|--------|
+| 22-01 | Asymmetric Tutor Grid Layout | Complete ✓ |
+| 22-02 | Mobile Optimization Pass | Pending |
+| 22-03 | Conversion Element Enhancement | Pending |
 
 ## Accumulated Decisions
 
@@ -59,19 +58,21 @@ Bold editorial design system with:
 | 2026-01-29 | Fluid type scale with clamp() | Smooth scaling without media query jumps |
 | 2026-01-30 | **Lime accent rejected** | User preferred purple with glow |
 | 2026-01-30 | Phase 21.1 chosen over Phase 21 | Bold editorial approach preferred |
+| 2026-01-30 | Fixed 5-column grid for trust-tutors | Required for nth-child offsets to work |
+| 2026-01-30 | Cards 2,4 offset pattern | Creates wave rhythm without chaos |
 
 ## Session Continuity
 
 Last session: 2026-01-30
-Stopped at: Phase 21.1 verified complete
+Stopped at: Completed 22-01-PLAN.md
 Resume file: None
 
 ## Next Up
 
-**Phase 22: Layout, Mobile & Conversion** — Intentional layouts, mobile optimization, conversion elements
+**Plan 22-02: Mobile Optimization Pass** — Tap targets, sticky CTA, contrast improvements
 
-`/gsd:plan-phase 22`
+`/gsd:execute-phase 22-02`
 
 ---
 
-*Last updated: 2026-01-30 - Phase 21.1 complete (editorial design system)*
+*Last updated: 2026-01-30 - Plan 22-01 complete (asymmetric tutor grid)*
