@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v7 Comprehensive Frontend Redesign — SHIPPED
+**Current focus:** v8 Google Ads Optimization — Phase 25 planned
 
 ## Current Position
 
-Milestone: v7 (Comprehensive Frontend Redesign)
-Phase: 24 of 24 — Performance & Final QA ✓ COMPLETE
-Plan: 3 of 3 complete
-Status: **v7 SHIPPED**
-Last activity: 2026-01-31 - Phase 24 complete, v7 shipped
+Milestone: v8 (Google Ads Optimization)
+Phase: 25 of 25 — Google Ads Website Optimization
+Plan: 0 of 4 complete (planning done, ready for execution)
+Status: **Planned - ready for execution**
+Last activity: 2026-01-31 - Phase 25 planning complete
 
-Progress: [██████████████████████████████] 100% (5/5 v7 phases complete)
+Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 plans complete)
 
 ## Milestone History
 
@@ -27,19 +27,25 @@ Progress: [███████████████████████
 | v4 | Courses Section Redesign | 14-16 | SHIPPED | 2026-01-24 |
 | v5 | Courses Section Overhaul | 17-18 | SHIPPED | 2026-01-24 |
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
-| v7 | Frontend Redesign | 20-24 | **SHIPPED** | 2026-01-31 |
+| v7 | Frontend Redesign | 20-24 | SHIPPED | 2026-01-31 |
+| v8 | Google Ads Optimization | 25 | **IN PROGRESS** | - |
 
-## v7 Phases (ALL COMPLETE)
+## Phase 25 Plans
 
-| Phase | Name | Status |
-|-------|------|--------|
-| 20 | Payment Fix | Complete ✓ |
-| 21.1 | Alt Design System (Fraunces/Bricolage) | Complete ✓ |
-| 22 | Layout, Mobile & Conversion | Complete ✓ |
-| 23 | Motion & Micro-interactions | Complete ✓ |
-| 24 | Performance & Final QA | Complete ✓ |
+| Plan | Wave | Description | Status |
+|------|------|-------------|--------|
+| 25-01 | 1 | Utility bar + call tracking | Planned |
+| 25-02 | 2 | Mathematics + English pages | Planned |
+| 25-03 | 2 | Physics + Chemistry pages | Planned |
+| 25-04 | 3 | Polish + verification | Planned |
 
-## v7 Key Achievements
+## Wave Structure
+
+- **Wave 1:** Foundation (25-01) - utility bar and tracking must exist first
+- **Wave 2:** Subject pages (25-02, 25-03) - can run in parallel
+- **Wave 3:** Polish (25-04) - final pass after all pages exist
+
+## v7 Key Achievements (Prior Milestone)
 
 - **Typography:** Fraunces (display) + Bricolage Grotesque (body)
 - **Visual Differentiators:** Tilted hero (-4deg), grain texture, grid-breaking layout
@@ -48,21 +54,13 @@ Progress: [███████████████████████
 - **Motion:** Page load animation, scroll reveals, hover states
 - **Performance:** LCP 1.5s (Good), CLS 0.000, Accessibility 97
 
-## Next Milestone
-
-**Phase 25: Google Ads Website Optimization** (after Feb 13, 2026)
-- Phone number at top of homepage
-- Calls from Website conversion tracking
-- Subject-specific landing pages for Sitelink Assets
-
-Source: Google POP call with Rustie Villarisco (2026-01-30)
-
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: v7 milestone shipped
-Resume file: None
+Stopped at: Phase 25 planning complete
+Resume file: None - ready for execution
+Next action: /gsd:execute-phase 25
 
 ---
 
-*Last updated: 2026-01-31 - v7 SHIPPED*
+*Last updated: 2026-01-31 - Phase 25 planned*

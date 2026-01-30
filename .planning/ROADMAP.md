@@ -8,11 +8,12 @@
 - **v4 Courses Section Redesign** — Phases 14-16 (shipped 2026-01-24) | [Archive](milestones/v4-ROADMAP.md)
 - **v5 Courses Section Overhaul** — Phases 17-18 (shipped 2026-01-24) | [Archive](milestones/v5-ROADMAP.md)
 - **v6 Content Reduction & QA** — Phase 19 (shipped 2026-01-29) | [Archive](milestones/v6-ROADMAP.md)
-- **v7 Comprehensive Frontend Redesign** — Phases 20-24 (in progress)
+- **v7 Comprehensive Frontend Redesign** — Phases 20-24 (shipped 2026-01-31)
+- **v8 Google Ads Optimization** — Phase 25 (in progress)
 
 ---
 
-## v7: Comprehensive Frontend Redesign
+## v7: Comprehensive Frontend Redesign (SHIPPED)
 
 **Goal:** Apply Anthropic Frontend Design Skill + BEAM brand principles + best practices research to create a distinctive, non-generic landing page that converts.
 
@@ -116,6 +117,32 @@ Plans:
 
 ---
 
+## v8: Google Ads Optimization
+
+**Goal:** Implement Google Ads specialist (POP) recommendations for improved conversion tracking and landing page structure.
+
+---
+
+- [ ] **Phase 25: Google Ads Website Optimization** — Implement POP recommendations
+
+**Goal:** Apply Google Ads specialist recommendations to improve conversion tracking and landing page structure
+**Source:** Google POP call (2026-01-30) with Rustie Villarisco
+**Plans:** 4 plans in 3 waves
+
+Website Changes:
+1. **Phone number at top of homepage** — Sticky utility bar with click-to-call
+2. **"Calls from Website" conversion action** — Google Ads call tracking script
+3. **Subject landing pages** — Mathematics, English, Physics, Chemistry for Sitelink Assets
+4. **Polish pass** — Cross-linking, social proof placement, consistency
+
+Plans:
+- [ ] 25-01-PLAN.md — Utility bar and call tracking setup [Wave 1]
+- [ ] 25-02-PLAN.md — Mathematics and English landing pages [Wave 2]
+- [ ] 25-03-PLAN.md — Physics and Chemistry landing pages [Wave 2]
+- [ ] 25-04-PLAN.md — Polish, cross-linking, and verification [Wave 3]
+
+---
+
 ## Progress
 
 | Phase | Milestone | Goal | Status | Completed |
@@ -127,27 +154,13 @@ Plans:
 | 17-18 | v5 | Courses Overhaul | Complete | 2026-01-24 |
 | 19 | v6 | Content Reduction & QA | Complete | 2026-01-29 |
 | 20 | v7 | Payment Fix | Complete | 2026-01-29 |
-| 21 | v7 | Design System & Typography | Planned | - |
+| 21 | v7 | Design System & Typography | Skipped (21.1 used) | - |
 | 21.1 | v7 | Alt Design System (Skill-Driven) | Complete | 2026-01-30 |
 | 22 | v7 | Layout, Mobile & Conversion | Complete | 2026-01-30 |
 | 23 | v7 | Motion & Micro-interactions | Complete | 2026-01-30 |
-| 24 | v7 | Performance & Final QA | Complete | 2026-01-31 | - |
+| 24 | v7 | Performance & Final QA | Complete | 2026-01-31 |
+| 25 | v8 | Google Ads Optimization | **Planned** | - |
 
 ---
 
-*Last updated: 2026-01-30 — Phase 24 planned (3 plans in 2 waves)*
-
-- [ ] **Phase 25: Google Ads Website Optimization** — Implement POP recommendations
-
-**Goal:** Apply Google Ads specialist recommendations to improve conversion tracking and landing page structure
-**Source:** Google POP call (2026-01-30) with Rustie Villarisco
-**Wait until:** After Feb 13, 2026 (14-day optimization window)
-
-Website Changes Required:
-1. **Phone number at top of homepage** — Prominently display contact number for click-to-call
-2. **"Calls from Website" conversion action** — Add call tracking script for Google Ads attribution
-3. **Additional landing pages** — Create subject-specific pages to serve as Sitelink Assets
-
-Plans: TBD (plan after Feb 13 performance review)
-
----
+*Last updated: 2026-01-31 — Phase 25 planned (4 plans in 3 waves)*
