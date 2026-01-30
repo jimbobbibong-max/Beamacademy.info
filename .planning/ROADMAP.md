@@ -136,3 +136,18 @@ Plans:
 ---
 
 *Last updated: 2026-01-30 — Phase 24 planned (3 plans in 2 waves)*
+
+- [ ] **Phase 25: Google Ads Website Optimization** — Implement POP recommendations
+
+**Goal:** Apply Google Ads specialist recommendations to improve conversion tracking and landing page structure
+**Source:** Google POP call (2026-01-30) with Rustie Villarisco
+**Wait until:** After Feb 13, 2026 (14-day optimization window)
+
+Website Changes Required:
+1. **Phone number at top of homepage** — Prominently display contact number for click-to-call
+2. **"Calls from Website" conversion action** — Add call tracking script for Google Ads attribution
+3. **Additional landing pages** — Create subject-specific pages to serve as Sitelink Assets
+
+Plans: TBD (plan after Feb 13 performance review)
+
+---
