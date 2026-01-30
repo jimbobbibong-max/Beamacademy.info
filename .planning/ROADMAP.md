@@ -28,7 +28,7 @@
 
 ### Phases
 
-- [x] **Phase 20: Payment Fix** — Debug existing Stripe Checkout integration ✓
+- [x] **Phase 20: Payment Fix** — Debug existing Stripe Checkout integration
 
 **Goal:** Fix "Pay Now" button — Stripe already exists in codebase, just needs debugging
 **Requirements:** PAY-01, PAY-02, PAY-03, PAY-04
@@ -53,7 +53,7 @@ Plans:
 
 ---
 
-- [x] **Phase 21.1: Alternative Design System (Frontend Design Skill)** ✓
+- [x] **Phase 21.1: Alternative Design System (Frontend Design Skill)**
 
 **Goal:** Bold editorial design system with Fraunces + Bricolage Grotesque typography, tilted hero headline differentiator, purple glow CTAs.
 **Approach:** Design Thinking first (editorial magazine aesthetic), then implementation
@@ -73,11 +73,12 @@ Plans:
 
 **Goal:** Apply asymmetric/bold layouts where appropriate, ensure mobile excellence, optimize conversion elements
 **Requirements:** VIS-04, MOB-01, MOB-02, MOB-03, MOB-04, CONV-01, CONV-02, CONV-03, CONV-04
+**Plans:** 3 plans in 2 waves
 
-**Plans:**
-- 22-01: Audit and refine section layouts for intentional composition
-- 22-02: Mobile optimization pass (tap targets, sticky CTA, forms)
-- 22-03: Trust signal and conversion element enhancement
+Plans:
+- [ ] 22-01-PLAN.md — Asymmetric Trust section layout (staggered tutor cards)
+- [ ] 22-02-PLAN.md — Mobile optimization pass (tap targets, sticky CTA, contrast)
+- [ ] 22-03-PLAN.md — Conversion element enhancement (CTAs, trust signals, hierarchy)
 
 ---
 
@@ -127,10 +128,10 @@ Plans:
 | 20 | v7 | Payment Fix | Complete | 2026-01-29 |
 | 21 | v7 | Design System & Typography | Planned | - |
 | 21.1 | v7 | Alt Design System (Skill-Driven) | Complete | 2026-01-30 |
-| 22 | v7 | Layout, Mobile & Conversion | Pending | - |
+| 22 | v7 | Layout, Mobile & Conversion | Planned | - |
 | 23 | v7 | Motion & Micro-interactions | Pending | - |
 | 24 | v7 | Performance & Final QA | Pending | - |
 
 ---
 
-*Last updated: 2026-01-30 — Phase 21.1 complete (bold editorial design system)*
+*Last updated: 2026-01-30 — Phase 22 planned (3 plans in 2 waves)*
