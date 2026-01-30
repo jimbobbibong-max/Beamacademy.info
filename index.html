@@ -112,6 +112,18 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-17832807956');
+
+      // Phone call conversion tracking (Phase 25)
+      // To enable call tracking:
+      // 1. Go to Google Ads > Tools & Settings > Conversions
+      // 2. Create new conversion: Phone calls > Calls to phone number on website
+      // 3. Enter phone number: 0491 791 447
+      // 4. Set minimum call duration: 60 seconds
+      // 5. Replace CONVERSION_LABEL below with the label from Google Ads
+      gtag('config', 'AW-17832807956/CONVERSION_LABEL', {
+          'phone_conversion_number': '0491 791 447',
+          'phone_conversion_css_class': 'phone-number'
+      });
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
