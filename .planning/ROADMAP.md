@@ -91,10 +91,9 @@ Plans:
 **Frontend Design Skill Recommendations (from critique) — All Implemented:**
 1. **Bolder tilt** — Hero rotation increased to -4deg (middle ground)
 2. **Break purple monotony** — Gold #f59e0b accent on trust elements
-3. **Add texture** — SVG grain overlay at 0.04 opacity
-4. **Break the grid** — Hero visual overflows container by -40px
-5. **Dramatic CTA** — Brutalist offset shadow (4px 4px 0, no blur)
-6. **Motion** — Page load animation, scroll reveals, hover states
+3. **Break the grid** — Hero visual overflows container by -40px
+4. **Dramatic CTA** — Brutalist offset shadow (4px 4px 0, no blur)
+5. **Motion** — Page load animation, scroll reveals, hover states
 
 Plans:
 - [x] 23-01-PLAN.md — Visual differentiators (bolder tilt, grid-breaking, texture) [Wave 1]
@@ -108,11 +107,12 @@ Plans:
 
 **Goal:** Verify LCP, CLS, accessibility, and overall quality
 **Requirements:** PERF-01, PERF-02, PERF-03, PERF-04
+**Plans:** 3 plans in 2 waves
 
-**Plans:**
-- 24-01: Lighthouse audit and performance verification
-- 24-02: Cross-browser and device testing
-- 24-03: Final accessibility and QA pass
+Plans:
+- [ ] 24-01-PLAN.md — Lighthouse audit and performance verification [Wave 1]
+- [ ] 24-02-PLAN.md — Cross-browser and device testing [Wave 1]
+- [ ] 24-03-PLAN.md — Final accessibility and QA pass [Wave 2]
 
 ---
 
@@ -131,8 +131,8 @@ Plans:
 | 21.1 | v7 | Alt Design System (Skill-Driven) | Complete | 2026-01-30 |
 | 22 | v7 | Layout, Mobile & Conversion | Complete | 2026-01-30 |
 | 23 | v7 | Motion & Micro-interactions | Complete | 2026-01-30 |
-| 24 | v7 | Performance & Final QA | Pending | - |
+| 24 | v7 | Performance & Final QA | Planned | - |
 
 ---
 
-*Last updated: 2026-01-30 — Phase 23 complete (4 plans executed)*
+*Last updated: 2026-01-30 — Phase 24 planned (3 plans in 2 waves)*
