@@ -784,6 +784,17 @@
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
         }
 
+        /* Secondary button active states - Phase 23-04 */
+        .btn-secondary:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-white:active {
+            transform: translateY(-1px) scale(0.98);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
         /* Hero Section - Editorial Style (Phase 21.1) */
         .hero {
             min-height: 100vh;
@@ -5846,7 +5857,46 @@
             animation: spin 0.8s linear infinite;
         }
         
-@keyframes spin {            to { transform: rotate(360deg); }        }        /* Ultra-narrow mobile (iPhone SE and similar) */        @media (max-width: 375px) {            /* Proof section - prevent text from being too small */            .paper-mockup {                font-size: 0.65rem;            }            .proof-badge {                font-size: 0.7rem;                padding: 0.4rem 0.8rem;            }            /* Hero mockup - ensure weak tags dont overflow */            .weak-tag {                font-size: 0.65rem;                padding: 0.2rem 0.4rem;            }            /* Trust section - smaller badges */            .trifecta-badges span {                font-size: 0.6rem;            }            /* Ensure sticky bar buttons remain tappable */            .sticky-cta-button {                min-height: 44px;                font-size: 0.9rem;            }        }    </style>
+@keyframes spin {            to { transform: rotate(360deg); }        }        /* Ultra-narrow mobile (iPhone SE and similar) */        @media (max-width: 375px) {            /* Proof section - prevent text from being too small */            .paper-mockup {                font-size: 0.65rem;            }            .proof-badge {                font-size: 0.7rem;                padding: 0.4rem 0.8rem;            }            /* Hero mockup - ensure weak tags dont overflow */            .weak-tag {                font-size: 0.65rem;                padding: 0.2rem 0.4rem;            }            /* Trust section - smaller badges */            .trifecta-badges span {                font-size: 0.6rem;            }            /* Ensure sticky bar buttons remain tappable */            .sticky-cta-button {                min-height: 44px;                font-size: 0.9rem;            }        }
+
+        /* =====================================================
+           PAGE LOAD ANIMATION - Hero Staggered Reveals
+           ===================================================== */
+
+        /* Page load animation for hero content */
+        .hero-animate {
+            opacity: 1;
+            transform: translateY(0);
+            transition:
+                opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* @starting-style MUST come after normal declarations (Chrome 130+ requirement) */
+        .hero-animate {
+            @starting-style {
+                opacity: 0.01; /* Not 0 - preserves LCP candidacy */
+                transform: translateY(20px);
+            }
+        }
+
+        /* Staggered delays for hero children */
+        .hero-animate.stagger-1 { transition-delay: 0ms; }
+        .hero-animate.stagger-2 { transition-delay: 80ms; }
+        .hero-animate.stagger-3 { transition-delay: 160ms; }
+        .hero-animate.stagger-4 { transition-delay: 240ms; }
+        .hero-animate.stagger-5 { transition-delay: 320ms; }
+        .hero-animate.stagger-6 { transition-delay: 400ms; }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .hero-animate {
+                transition-duration: 0.01ms !important;
+                transition-delay: 0ms !important;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -5892,22 +5942,22 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <div class="hero-category">HSC Tutoring</div>
-                        <h1>Watch Their Grades <span>Climb</span></h1>
-                        <p class="hero-description">
+                        <div class="hero-category hero-animate stagger-1">HSC Tutoring</div>
+                        <h1 class="hero-animate stagger-2">Watch Their Grades <span>Climb</span></h1>
+                        <p class="hero-description hero-animate stagger-3">
                             We track scores topic by topic. Their worksheets target exactly what they need to improve.
                         </p>
-                        <div class="hero-buttons">
+                        <div class="hero-buttons hero-animate stagger-4">
                             <a href="#contact" class="btn btn-lime">Get My Free Diagnostic</a>
                         </div>
-                        <p class="hero-risk-reversal">Free lesson. No payment required. Keep the diagnostic either way.</p>
-                        <p class="hero-returning"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
-                        <div class="hero-testimonial">
+                        <p class="hero-risk-reversal hero-animate stagger-5">Free lesson. No payment required. Keep the diagnostic either way.</p>
+                        <p class="hero-returning hero-animate stagger-5"><a href="#contact" data-action="pay">Already enrolled? Pay for your term here →</a></p>
+                        <div class="hero-testimonial hero-animate stagger-6">
                             <span class="testimonial-star">5.0</span>
                             <span>"His Maths improved from 68% to 89%." - Parent, BHHS Year 11</span>
                         </div>
                     </div>
-                    <div class="hero-visual">
+                    <div class="hero-visual hero-animate stagger-5">
                         <div class="hero-card hero-portal-mockup">
                             <div class="hero-mockup-header">
                                 <div class="hero-mockup-dots" aria-hidden="true">
