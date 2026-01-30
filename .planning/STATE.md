@@ -44,7 +44,7 @@ Progress: [██████████████████████░
 
 | Plan | Name | Status |
 |------|------|--------|
-| 23-01 | Scroll-triggered Animations | Complete |
+| 23-01 | Bold Visual Differentiators | Complete |
 | 23-02 | CTA Styling & Warm Accent | Complete |
 | 23-03 | Focus States & Final Polish | Pending |
 
@@ -67,6 +67,9 @@ Progress: [██████████████████████░
 | 2026-01-30 | Gold #f59e0b for warm accent | Warmer than coral, works well with purple |
 | 2026-01-30 | Brutalist shadow: 4px 4px 0 | Hard offset, no blur for dramatic CTA effect |
 | 2026-01-30 | Trust elements get warm accent | Following 60-30-10 rule (10% accent) |
+| 2026-01-30 | Hero rotation: -4deg | Middle ground between timid (-2deg) and aggressive (-6deg) |
+| 2026-01-30 | Grain texture opacity: 0.04 | Visible depth without interfering with readability |
+| 2026-01-30 | Grid breakout: -40px margin | Noticeable asymmetry without losing content |
 
 ## Session Continuity
 
