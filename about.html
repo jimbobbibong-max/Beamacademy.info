@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us and Our Tutors | BEAM Academy</title>
+    <meta name="description" content="Meet the BEAM Academy tutors - Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics. Learn about our data-driven tutoring approach.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://beamacademy.info/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us and Our Tutors | BEAM Academy">
+    <meta property="og:description" content="Meet the BEAM Academy tutors - Baulkham Hills High School graduates who achieved 95%+ in HSC Mathematics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beamacademy.info/about.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1;1,9..144,400..700,0..100,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-star.png">
+    
+    <style>
+        :root {
+            --purple-50: #faf5ff;
+            --purple-100: #f3e8ff;
+            --purple-200: #e9d5ff;
+            --purple-300: #d8b4fe;
+            --purple-400: #c084fc;
+            --purple-500: #a855f7;
+            --purple-600: #9333ea;
+            --purple-700: #7c3aed;
+            --purple-800: #6b21a8;
+            --purple-900: #581c87;
+            --gray-50: #fafafa;
+            --gray-100: #f4f4f5;
+            --gray-200: #e4e4e7;
+            --gray-300: #d4d4d8;
+            --gray-400: #a1a1aa;
+            --gray-500: #71717a;
+            --gray-600: #52525b;
+            --gray-700: #3f3f46;
+            --gray-800: #27272a;
+            --gray-900: #18181b;
+            --white: #ffffff;
+            --accent-warm: #f59e0b;
+            --accent-warm-light: #fbbf24;
+            --color-primary: var(--purple-700);
+            --color-text: var(--gray-800);
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.5rem;
+            --space-6: 2rem;
+            --space-8: 3rem;
+            --space-10: 4rem;
+            --space-12: 6rem;
+            --space-16: 8rem;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --text-xs: clamp(0.833rem, 0.79rem + 0.21vw, 0.96rem);
+            --text-sm: clamp(0.938rem, 0.88rem + 0.29vw, 1.1rem);
+            --text-base: clamp(1.063rem, 0.98rem + 0.41vw, 1.313rem);
+            --text-lg: clamp(1.2rem, 1.09rem + 0.55vw, 1.5rem);
+            --text-xl: clamp(1.35rem, 1.2rem + 0.75vw, 1.75rem);
+            --text-2xl: clamp(1.52rem, 1.32rem + 1vw, 2.1rem);
+            --text-3xl: clamp(1.71rem, 1.44rem + 1.35vw, 2.5rem);
+            --text-4xl: clamp(1.93rem, 1.56rem + 1.85vw, 3.25rem);
+            --leading-tight: 1.1;
+            --leading-snug: 1.25;
+            --leading-normal: 1.5;
+            --leading-relaxed: 1.65;
+            --tracking-tight: -0.025em;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Bricolage Grotesque', 'Outfit', system-ui, sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        img { max-width: 100%; height: auto; }
+        a, button, .btn, .nav-link, .nav-cta, .mobile-toggle { min-height: 44px; min-width: 44px; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+        body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-normal); color: var(--gray-800); background: var(--white); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        @media (max-width: 768px) { .container { padding: 0 16px; } }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .nav .logo { color: var(--purple-700); }
+        .nav .nav-link { color: var(--gray-600); }
+        .nav .nav-link:hover, .nav .nav-link.active { color: var(--purple-700); }
+        .nav .nav-link.active::after { width: 100%; }
+        .nav .nav-cta { background: var(--purple-700); border: none; }
+        .nav .nav-cta:hover { background: var(--purple-800); }
+        .nav.scrolled { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05); padding: 14px 0; border-bottom: 1px solid var(--gray-100); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--purple-700); display: flex; align-items: center; gap: 10px; }
+        .logo-img { width: 36px; height: 36px; }
+        .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+        .nav-link { font-family: var(--font-display); font-size: 0.95rem; font-weight: 500; color: var(--gray-600); padding: 8px 4px; border-radius: 6px; transition: color 0.2s ease; position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: linear-gradient(135deg, var(--purple-600), var(--purple-700)); transition: all 0.3s ease; transform: translateX(-50%); border-radius: 2px; }
+        .nav-link:hover::after { width: 100%; }
+        .nav-cta { font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; color: white; background: var(--purple-700); padding: 12px 24px; border-radius: 100px; transition: all 0.2s ease; }
+        .nav-cta:hover { background: var(--purple-800); transform: translateY(-1px); }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 8px; }
+        .mobile-toggle span { display: block; width: 24px; height: 2.5px; background: var(--gray-700); border-radius: 2px; transition: all 0.25s ease; }
+        @media (max-width: 900px) { .nav-links { display: none; } .mobile-toggle { display: flex; } }
+        .mobile-nav { position: fixed; top: 72px; left: 0; right: 0; background: white; padding: 24px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); z-index: 999; transform: translateY(-20px); opacity: 0; visibility: hidden; transition: all 0.25s ease; }
+        .mobile-nav.active { transform: translateY(0); opacity: 1; visibility: visible; }
+        .mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+        .mobile-nav-links a { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--gray-700); display: block; padding: 8px 0; }
+        .mobile-nav-links a.active { color: var(--purple-700); }
+        .hero { padding: calc(var(--space-16) + 72px) 0 var(--space-10); background: var(--white); }
+        .hero-content { max-width: 800px; margin: 0 auto; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--purple-50); color: var(--purple-700); font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; padding: 8px 16px; border-radius: var(--radius-full); border: 1px solid var(--purple-100); margin-bottom: var(--space-5); }
+        .hero h1 { font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 700; line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); color: var(--gray-900); margin-bottom: var(--space-5); }
+        .hero h1 span { color: var(--purple-700); }
+        .hero-tagline { font-size: var(--text-lg); color: var(--gray-600); line-height: var(--leading-relaxed); max-width: 600px; margin: 0 auto var(--space-4); }
+        .hero-credential { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-warm); font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; }
+        .hero-credential svg { width: 18px; height: 18px; fill: currentColor; }
+        @media (max-width: 768px) { .hero { padding: calc(var(--space-12) + 72px) 0 var(--space-8); } .hero h1 { font-size: var(--text-3xl); } }
+        .section { padding: var(--space-12) 0; }
+        .section--gray { background: var(--gray-50); }
+        .section--purple-light { background: var(--purple-50); }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto var(--space-10); }
+        .section-title { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--gray-900); margin-bottom: var(--space-4); }
+        .section-subtitle { font-size: var(--text-lg); color: var(--gray-600); line-height: var(--leading-relaxed); }
+        .story-content { max-width: 700px; margin: 0 auto; }
+        .story-content p { font-size: var(--text-lg); color: var(--gray-700); line-height: var(--leading-relaxed); margin-bottom: var(--space-5); }
+        .story-content p:last-child { margin-bottom: 0; }
+        .story-highlight { border-left: 4px solid var(--purple-500); padding-left: var(--space-5); margin: var(--space-6) 0; font-style: italic; color: var(--gray-600); }
+        .tutor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+        @media (max-width: 900px) { .tutor-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .tutor-grid { grid-template-columns: 1fr; } }
+        .tutor-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center; transition: transform var(--transition-base), box-shadow var(--transition-base); }
+        .tutor-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(124, 58, 237, 0.1); }
+        .tutor-photo { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--purple-100); margin: 0 auto var(--space-4); object-fit: cover; background: var(--gray-100); }
+        .tutor-name { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--gray-900); margin-bottom: var(--space-2); }
+        .tutor-credentials { font-size: var(--text-sm); color: var(--gray-600); margin-bottom: var(--space-3); line-height: var(--leading-relaxed); }
+        .tutor-credential-highlight { color: var(--accent-warm); font-weight: 600; }
+        .tutor-subjects { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); }
+        .subject-tag { background: var(--purple-50); color: var(--purple-700); font-size: var(--text-xs); font-weight: 500; padding: 4px 12px; border-radius: var(--radius-full); }
+        .approach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+        @media (max-width: 768px) { .approach-grid { grid-template-columns: 1fr; } }
+        .approach-card { text-align: center; padding: var(--space-6); }
+        .approach-icon { width: 64px; height: 64px; background: var(--purple-100); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); font-size: 1.75rem; }
+        .approach-title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; color: var(--gray-900); margin-bottom: var(--space-2); }
+        .approach-text { font-size: var(--text-base); color: var(--gray-600); line-height: var(--leading-relaxed); }
+        .cta-section { padding: var(--space-12) 0; background: var(--white); border-top: 1px solid var(--gray-100); }
+        .cta-content { max-width: 600px; margin: 0 auto; text-align: center; }
+        .cta-title { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--gray-900); margin-bottom: var(--space-4); }
+        .cta-text { font-size: var(--text-lg); color: var(--gray-600); margin-bottom: var(--space-6); }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font-display); font-weight: 600; font-size: 1rem; padding: 16px 32px; border-radius: 100px; transition: all 0.3s ease; cursor: pointer; border: none; text-align: center; }
+        .btn-primary { background: var(--purple-700); color: white; border: 3px solid var(--gray-900); box-shadow: 4px 4px 0 var(--gray-900); transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease; }
+        .btn-primary:hover { background: var(--purple-600); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--gray-900); }
+        .btn-primary:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--gray-900); }
+        .cta-note { font-size: var(--text-sm); color: var(--gray-500); margin-top: var(--space-4); }
+        .footer { background: var(--gray-900); color: var(--gray-300); padding: 60px 0 30px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+        .footer-brand .logo { color: var(--white); margin-bottom: 20px; }
+        .footer-brand p { color: var(--gray-400); margin-bottom: 24px; max-width: 300px; }
+        .social-links { display: flex; gap: 12px; }
+        .social-link { width: 40px; height: 40px; background: var(--gray-800); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.2s ease; }
+        .social-link:hover { background: linear-gradient(135deg, var(--purple-600), var(--purple-700)); transform: translateY(-2px); }
+        .footer-column h4 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 600; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+        .footer-link { color: var(--gray-400); transition: color 0.2s ease; position: relative; display: inline-block; }
+        .footer-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--purple-400); transition: width 200ms ease; }
+        .footer-link:hover { color: var(--purple-400); }
+        .footer-link:hover::after { width: 100%; }
+        .footer-bottom { padding-top: 30px; border-top: 1px solid var(--gray-800); display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--gray-500); }
+        .footer-legal { display: flex; gap: 24px; }
+        .footer-legal a { color: var(--gray-500); transition: color 0.2s ease; }
+        .footer-legal a:hover { color: var(--purple-400); }
+        @media (max-width: 900px) { .footer-content { grid-template-columns: 1fr 1fr; gap: 40px; } }
+        @media (max-width: 600px) { .footer-content { grid-template-columns: 1fr; gap: 32px; } .footer-bottom { flex-direction: column; gap: 16px; text-align: center; } .footer-legal { flex-wrap: wrap; justify-content: center; } }
+        .animate-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .animate-on-scroll.animate-in { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="logo" aria-label="BEAM Academy home">
+                    <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+                    BEAM Academy
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="index.html#courses" class="nav-link">Courses & Pricing</a></li>
+                    <li><a href="index.html#contact" class="nav-cta">Free Diagnostic</a></li>
+                </ul>
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="index.html#courses">Courses & Pricing</a></li>
+            <li><a href="index.html#contact">Get Your Free Diagnostic</a></li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>👋</span>
+                        Meet Your Tutors
+                    </div>
+                    <h1>The People Behind <span>Your Success</span></h1>
+                    <p class="hero-tagline">We're Baulkham Hills High School graduates who know exactly what it takes to achieve top HSC results — because we've done it ourselves.</p>
+                    <div class="hero-credential">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 14.27l-4.77 2.45.91-5.33-3.87-3.77 5.34-.78L10 2z"/></svg>
+                        All tutors achieved 95%+ in HSC Mathematics
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Why BEAM Exists</h2>
+                </div>
+                <div class="story-content animate-on-scroll">
+                    <p>BEAM Academy was founded by Baulkham Hills High School graduates who experienced firsthand the gap between what most tutoring centres offer and what students actually need to succeed in the HSC.</p>
+                    
+                    <div class="story-highlight">
+                        "We built the tutoring experience we wish we had — one that tracks progress topic-by-topic, identifies exactly where each student struggles, and provides targeted practice that actually moves the needle."
+                    </div>
+                    
+                    <p>Our approach is data-driven: we track every concept, every skill, every question. When a student walks in, we know exactly what they need to work on. No guessing, no wasted time on topics they've already mastered. Just focused practice on the areas that will improve their marks the most.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Tutors Section - PLACEHOLDER: Replace tutor data with real information -->
+        <section class="section section--gray">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Meet Your Tutors</h2>
+                    <p class="section-subtitle">Expert educators who combine academic excellence with a genuine passion for helping students succeed.</p>
+                </div>
+                <div class="tutor-grid">
+                    <!-- Tutor 1 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Brian+Kim&background=7c3aed&color=fff&size=240" alt="Brian Kim" class="tutor-photo">
+                        <h3 class="tutor-name">Brian Kim</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">99.75 ATAR</span> | BHHS Graduate<br>
+                            UNSW Computer Science<br>
+                            5+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">Extension 2 Maths</span>
+                            <span class="subject-tag">Extension 1 Maths</span>
+                            <span class="subject-tag">Physics</span>
+                        </div>
+                    </div>
+
+                    <!-- Tutor 2 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=7c3aed&color=fff&size=240" alt="Sarah Chen" class="tutor-photo">
+                        <h3 class="tutor-name">Sarah Chen</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">99.50 ATAR</span> | BHHS Graduate<br>
+                            USYD Pharmacy<br>
+                            4+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">Chemistry</span>
+                            <span class="subject-tag">Extension 1 Maths</span>
+                            <span class="subject-tag">Biology</span>
+                        </div>
+                    </div>
+
+                    <!-- Tutor 3 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Michael+Lee&background=7c3aed&color=fff&size=240" alt="Michael Lee" class="tutor-photo">
+                        <h3 class="tutor-name">Michael Lee</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">98.90 ATAR</span> | BHHS Graduate<br>
+                            UNSW Engineering<br>
+                            3+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">Physics</span>
+                            <span class="subject-tag">Extension 1 Maths</span>
+                            <span class="subject-tag">Advanced Maths</span>
+                        </div>
+                    </div>
+
+                    <!-- Tutor 4 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Emily+Wang&background=7c3aed&color=fff&size=240" alt="Emily Wang" class="tutor-photo">
+                        <h3 class="tutor-name">Emily Wang</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">99.25 ATAR</span> | BHHS Graduate<br>
+                            USYD Law / Arts<br>
+                            4+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">English Advanced</span>
+                            <span class="subject-tag">English Extension 1</span>
+                        </div>
+                    </div>
+
+                    <!-- Tutor 5 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=David+Patel&background=7c3aed&color=fff&size=240" alt="David Patel" class="tutor-photo">
+                        <h3 class="tutor-name">David Patel</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">99.60 ATAR</span> | BHHS Graduate<br>
+                            USYD Medicine<br>
+                            5+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">Chemistry</span>
+                            <span class="subject-tag">Physics</span>
+                            <span class="subject-tag">Extension 2 Maths</span>
+                        </div>
+                    </div>
+
+                    <!-- Tutor 6 - PLACEHOLDER -->
+                    <div class="tutor-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Jessica+Nguyen&background=7c3aed&color=fff&size=240" alt="Jessica Nguyen" class="tutor-photo">
+                        <h3 class="tutor-name">Jessica Nguyen</h3>
+                        <p class="tutor-credentials">
+                            <span class="tutor-credential-highlight">98.85 ATAR</span> | BHHS Graduate<br>
+                            UNSW Commerce<br>
+                            3+ years tutoring experience
+                        </p>
+                        <div class="tutor-subjects">
+                            <span class="subject-tag">Advanced Maths</span>
+                            <span class="subject-tag">Standard Maths</span>
+                            <span class="subject-tag">Economics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Approach Section -->
+        <section class="section section--purple-light">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Our Approach</h2>
+                    <p class="section-subtitle">Three pillars that make BEAM tutoring different.</p>
+                </div>
+                <div class="approach-grid">
+                    <div class="approach-card animate-on-scroll">
+                        <div class="approach-icon">📊</div>
+                        <h3 class="approach-title">Data-Driven Tracking</h3>
+                        <p class="approach-text">We track progress topic-by-topic, identifying exactly where each student needs help. No guessing — just focused improvement.</p>
+                    </div>
+                    <div class="approach-card animate-on-scroll">
+                        <div class="approach-icon">🎯</div>
+                        <h3 class="approach-title">Targeted Practice</h3>
+                        <p class="approach-text">Custom worksheets generated based on each student's weak areas. Every minute of practice time moves the needle.</p>
+                    </div>
+                    <div class="approach-card animate-on-scroll">
+                        <div class="approach-icon">🏆</div>
+                        <h3 class="approach-title">Expert Tutors</h3>
+                        <p class="approach-text">All tutors are BHHS graduates who achieved 95%+ in HSC Maths. They've been through it and know what works.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2 class="cta-title">See the Difference</h2>
+                    <p class="cta-text">Book a free diagnostic lesson and experience our data-driven approach firsthand.</p>
+                    <a href="index.html#contact" class="btn btn-primary">Get Your Free Diagnostic</a>
+                    <p class="cta-note">Free lesson. No payment required. Keep the diagnostic report either way.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="BEAM Academy home">
+                        <img src="logo-star.png" alt="" class="logo-img" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+                        BEAM Academy
+                    </a>
+                    <p>Expert tutoring for Years 7-12 by Baulkham Hills High School graduates achieving 95%+ in HSC Mathematics.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/beamacademyhsc" class="social-link" target="_blank" rel="noopener" aria-label="Follow us on Instagram">📷</a>
+                        <a href="https://discord.gg/Y4Y8uTun" class="social-link" target="_blank" rel="noopener" aria-label="Join our Discord">💬</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Courses & Pricing</a></li>
+                        <li><a href="https://beamffef.netlify.app/login" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Subjects</h4>
+                    <ul class="footer-links">
+                        <li><a href="mathematics.html" class="footer-link">Mathematics</a></li>
+                        <li><a href="english.html" class="footer-link">English</a></li>
+                        <li><a href="chemistry.html" class="footer-link">Chemistry</a></li>
+                        <li><a href="physics.html" class="footer-link">Physics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:0491791447" class="footer-link">0491 791 447</a></li>
+                        <li><a href="mailto:admin@beamacademy.info" class="footer-link">admin@beamacademy.info</a></li>
+                        <li><span class="footer-link">Suite 206, 2 Pembroke St</span></li>
+                        <li><span class="footer-link">Epping NSW 2121</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BEAM Academy. All rights reserved. ABN 19 693 809 013</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Navigation scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -100px 0px',
+            threshold: 0.1
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Apply to elements after DOM loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                scrollObserver.observe(el);
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        mobileToggle.addEventListener('click', () => {
+            const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+            mobileToggle.setAttribute('aria-expanded', !isExpanded);
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close mobile menu on outside click
+        document.addEventListener('click', (e) => {
+            const isClickInside = mobileNav.contains(e.target) || mobileToggle.contains(e.target);
+            if (!isClickInside && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
