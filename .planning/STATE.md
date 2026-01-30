@@ -10,12 +10,12 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Milestone: v7 (Comprehensive Frontend Redesign)
-Phase: 21.1 of 24 — Alternative Design System (Frontend Design Skill)
-Plan: 02 of 3 — Typography Application COMPLETE
-Status: Ready for Plan 03 (Hero Transformation)
-Last activity: 2026-01-29 - Completed 21.1-02-PLAN.md (Typography system)
+Phase: 21.1 of 24 — Alternative Design System ✓ COMPLETE
+Plan: All 4 plans complete
+Status: Ready for Phase 22
+Last activity: 2026-01-30 - Phase 21.1 verified complete
 
-Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 27% (Phase 20 + 21.1-01 + 21.1-02 complete)
+Progress: [████████████░░░░░░░░░░░░░░░░░░] 40% (2/5 v7 phases complete)
 
 ## Milestone History
 
@@ -29,75 +29,49 @@ Progress: [██████████░░░░░░░░░░░░░
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
 | v7 | Frontend Redesign | 20-24 | IN PROGRESS | - |
 
-## v7 Synthesis Approach
-
-Three layers combined:
-1. **Anthropic Frontend Design Skill** — Bold aesthetic, distinctive typography, intentional motion
-2. **BEAM Brand Principles** — Solid purple (#7c3aed), pastel accents, hard colors
-3. **Best Practices Research** — Performance, conversion, accessibility, mobile-first
-
 ## v7 Phases
 
-| Phase | Name | Requirements | Status |
-|-------|------|--------------|--------|
-| 20 | Payment Fix | PAY-01 to PAY-04 | Complete |
-| 21 | Design System & Typography | TYP, DES, VIS | Pending |
-| 21.1 | Alt Design System (Skill) | Bold editorial aesthetic | In Progress |
-| 22 | Layout, Mobile & Conversion | VIS-04, MOB, CONV | Pending |
-| 23 | Motion & Micro-interactions | MOT-01 to MOT-04 | Pending |
-| 24 | Performance & Final QA | PERF-01 to PERF-04 | Pending |
+| Phase | Name | Status |
+|-------|------|--------|
+| 20 | Payment Fix | Complete ✓ |
+| 21 | Design System & Typography (Geist) | Skipped (21.1 chosen instead) |
+| 21.1 | Alt Design System (Fraunces/Bricolage) | Complete ✓ |
+| 22 | Layout, Mobile & Conversion | Pending |
+| 23 | Motion & Micro-interactions | Pending |
+| 24 | Performance & Final QA | Pending |
 
-## Phase 21.1 Progress
+## Phase 21.1 Summary
 
-| Plan | Name | Status |
-|------|------|--------|
-| 01 | Design Tokens Foundation | COMPLETE |
-| 02 | Typography Application | COMPLETE |
-| 03 | Hero Transformation | Pending |
-
-## Key Research Findings
-
-- **Stripe Checkout already exists** in `netlify/functions/create-checkout.js` — VERIFIED WORKING
-- **Avoid generic fonts** (Arial, Inter, Roboto) — pick distinctive typeface
-- **Purple is fine** if used as solid dominant color with sharp accents (not gradient)
-- **One well-orchestrated page load** > scattered micro-interactions
-- **Protect 0.9s LCP** — test every change against performance baseline
-- **Fraunces + Bricolage Grotesque** chosen for Phase 21.1 typography
-- **Chartreuse/lime accent** (#bfff00) for sharp contrast with purple
-
-## Accumulated Context
-
-### Roadmap Evolution
-
-- Phase 21.1 inserted after Phase 21: Alternative Design System using Anthropic Frontend Design Skill (A/B COMPARISON)
-  - Purpose: Compare "safe premium" (Phase 21) vs "bold distinctive" (Phase 21.1) approaches
-  - Frontend Design Skill installed at: `~/.claude/skills/frontend-design/SKILL.md`
+Bold editorial design system with:
+- **Fraunces** display font (headlines) with WONK axis
+- **Bricolage Grotesque** body font
+- **Tilted hero headline** (-2deg rotation on desktop)
+- **Purple glow CTAs** (lime accent rejected by user)
+- **80+ design tokens** (colors, spacing, shadows, transitions, type scale)
 
 ## Accumulated Decisions
 
 | Date | Decision | Rationale |
 |------|----------|-----------|
-| 2026-01-29 | Stripe function verified, no changes needed | Existing implementation correct |
-| 2026-01-29 | STRIPE_SECRET_KEY confirmed in Netlify | User verified via dashboard |
-| 2026-01-29 | Removed emoji/unicode from JavaScript | Special characters caused syntax errors blocking payment flow |
-| 2026-01-29 | End-to-end payment flow verified | User completed test purchase successfully |
-| 2026-01-29 | Electric lime (#bfff00) for accent | Highest visibility color, sharp purple contrast |
-| 2026-01-29 | Outfit fallback for Bricolage Grotesque | Page works until new fonts load |
-| 2026-01-29 | Fraunces for display, Bricolage for body | Editorial pairing for distinctive look |
+| 2026-01-29 | Stripe function verified | Existing implementation correct |
+| 2026-01-29 | End-to-end payment flow verified | User completed test purchase |
+| 2026-01-29 | Fraunces + Bricolage Grotesque | Editorial typography pairing |
 | 2026-01-29 | Fluid type scale with clamp() | Smooth scaling without media query jumps |
+| 2026-01-30 | **Lime accent rejected** | User preferred purple with glow |
+| 2026-01-30 | Phase 21.1 chosen over Phase 21 | Bold editorial approach preferred |
 
 ## Session Continuity
 
-Last session: 2026-01-29
-Stopped at: Completed 21.1-02-PLAN.md (Typography application)
-Resume file: .planning/phases/21.1-alt-design-system-skill/21.1-03-PLAN.md
+Last session: 2026-01-30
+Stopped at: Phase 21.1 verified complete
+Resume file: None
 
 ## Next Up
 
-**Phase 21.1 Plan 03: Hero Transformation** — Apply typography and lime accent to hero section
+**Phase 22: Layout, Mobile & Conversion** — Intentional layouts, mobile optimization, conversion elements
 
-`/gsd:execute-phase 21.1-03`
+`/gsd:plan-phase 22`
 
 ---
 
-*Last updated: 2026-01-29 - Plan 21.1-02 complete (typography system)*
+*Last updated: 2026-01-30 - Phase 21.1 complete (editorial design system)*
