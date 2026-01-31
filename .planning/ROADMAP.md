@@ -10,7 +10,7 @@
 - **v6 Content Reduction & QA** — Phase 19 (shipped 2026-01-29) | [Archive](milestones/v6-ROADMAP.md)
 - **v7 Comprehensive Frontend Redesign** — Phases 20-24 (shipped 2026-01-31)
 - **v8 Google Ads Optimization** — Phase 25 (shipped 2026-01-31)
-- **v9 Additional Pages** — Phase 26 (in progress)
+- **v9 Additional Pages** — Phases 26-28 (in progress)
 
 ---
 
@@ -195,7 +195,7 @@ Plans:
 - [ ] **Phase 28: Full Site Audit** — Comprehensive QA of all pages
 
 **Goal:** Full audit of the website after all v9 changes - verify links, mobile, forms, performance, content
-**Plans:** TBD (needs planning)
+**Plans:** 3 plans in 2 waves
 
 Audit Areas:
 1. **Links** — All nav/footer links work across all 8 pages
@@ -204,6 +204,11 @@ Audit Areas:
 4. **Images** — All tutor photos load, correct paths
 5. **Performance** — Lighthouse scores on new pages (About, Contact)
 6. **Content** — No placeholder text, consistent messaging, accurate info
+
+Plans:
+- [ ] 28-01-PLAN.md — Automated file and content verification [Wave 1]
+- [ ] 28-02-PLAN.md — Link inventory and content consistency [Wave 1]
+- [ ] 28-03-PLAN.md — Manual verification checklist [Wave 2]
 
 ---
 
@@ -226,8 +231,8 @@ Audit Areas:
 | 25 | v8 | Google Ads Optimization | Complete | 2026-01-31 |
 | 26 | v9 | Additional Pages | Complete | 2026-01-31 |
 | 27 | v9 | About Page Real Tutor Data | Complete | 2026-01-31 |
-| 28 | v9 | Full Site Audit | **Needs Planning** | - |
+| 28 | v9 | Full Site Audit | **Ready for Execution** | - |
 
 ---
 
-*Last updated: 2026-01-31 — Phase 28 created, needs planning*
+*Last updated: 2026-01-31 — Phase 28 planned (3 plans in 2 waves)*
