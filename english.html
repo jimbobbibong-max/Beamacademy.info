@@ -69,8 +69,6 @@
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
         body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-normal); color: var(--gray-800); background: var(--white); -webkit-font-smoothing: antialiased; }
         p { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-normal); }
-        .skip-link { position: absolute; top: -50px; left: 50%; transform: translateX(-50%); background: var(--purple-700); color: white; padding: 12px 24px; border-radius: 0 0 8px 8px; font-family: var(--font-display); font-weight: 600; z-index: 9999; transition: top 0.2s ease; }
-        .skip-link:focus { top: 0; outline: none; }
         a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: none; box-shadow: var(--focus-ring); }
         h1, h2, h3 { font-family: var(--font-display); line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); color: var(--gray-900); }
         h1 { font-size: var(--text-5xl); font-weight: 700; }
@@ -256,7 +254,6 @@
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Utility Bar -->
     <div class="utility-bar">

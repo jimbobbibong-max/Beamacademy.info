@@ -355,26 +355,6 @@
             line-height: var(--leading-normal);
         }
 
-        .skip-link {
-            position: absolute;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--purple-700);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 0 0 8px 8px;
-            font-family: var(--font-display);
-            font-weight: 600;
-            z-index: 9999;
-            transition: top 0.2s ease;
-        }
-
-        .skip-link:focus {
-            top: 0;
-            outline: none;
-        }
-
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -4304,8 +4284,8 @@
             .nav-links { display: none; }
             .mobile-toggle { display: flex; }
 
-            /* Hero mobile adjustments */
-            .hero { padding: var(--space-10) 0 var(--space-8); }
+            /* Hero mobile adjustments - extra top padding to clear fixed nav */
+            .hero { padding: 100px 0 var(--space-8); }
             /* Remove tilt on mobile - prevents overflow/cropping */
             .hero h1 {
                 font-size: clamp(2rem, 4vw, 2.75rem);
@@ -6005,8 +5985,6 @@
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Navigation -->
     <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <div class="container">

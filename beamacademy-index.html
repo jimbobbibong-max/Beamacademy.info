@@ -222,26 +222,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .skip-link {
-            position: absolute;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--purple-700);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 0 0 8px 8px;
-            font-family: var(--font-display);
-            font-weight: 600;
-            z-index: 9999;
-            transition: top 0.2s ease;
-        }
-
-        .skip-link:focus {
-            top: 0;
-            outline: none;
-        }
-
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -5603,7 +5583,6 @@
 @keyframes spin {            to { transform: rotate(360deg); }        }        /* Ultra-narrow mobile (iPhone SE and similar) */        @media (max-width: 375px) {            /* Proof section - prevent text from being too small */            .paper-mockup {                font-size: 0.65rem;            }            .proof-badge {                font-size: 0.7rem;                padding: 0.4rem 0.8rem;            }            /* Hero mockup - ensure weak tags dont overflow */            .weak-tag {                font-size: 0.65rem;                padding: 0.2rem 0.4rem;            }            /* Trust section - smaller badges */            .trifecta-badges span {                font-size: 0.6rem;            }            /* Ensure sticky bar buttons remain tappable */            .sticky-cta-button {                min-height: 44px;                font-size: 0.9rem;            }        }    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Navigation -->
     <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
