@@ -11,11 +11,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 
 Milestone: v9 (Additional Pages)
 Phase: 28 of 28 — Full Site Audit
-Plan: 1 of 3 complete
+Plan: 2 of 3 complete
 Status: **In progress**
-Last activity: 2026-01-31 - Plan 28-01 complete (automated verification)
+Last activity: 2026-01-31 - Plan 28-02 complete (link/content consistency)
 
-Progress: [██████████░░░░░░░░░░░░░░░░░░░░] 33%
+Progress: [████████████████████░░░░░░░░░░] 67%
 
 ## Milestone History
 
@@ -45,18 +45,18 @@ Progress: [██████████░░░░░░░░░░░░░
 
 **Phase 28 — Full Site Audit (in progress)**
 - Plan 01: COMPLETE - 31/31 automated checks pass
-- Plan 02: Link inventory and content consistency [Wave 1]
+- Plan 02: COMPLETE - Link/contact/tutor consistency verified
 - Plan 03: Manual verification checklist [Wave 2]
 
 ## Recent Commits
 
 | Hash | Description |
 |------|-------------|
+| 7190bad | docs(28-02): verify tutor credentials accuracy |
+| 4aabecf | docs(28-02): verify contact information consistency |
+| a141a09 | docs(28-02): complete internal link inventory |
 | 5fcd2d8 | audit(28-01): verify file existence and content |
 | eafbe11 | 3-tutor preview on homepage |
-| d9639ed | Slim tutors section |
-| 50ac95a | Remove Results from navigation |
-| a0b8207 | Phase 27 complete (real tutor data) |
 
 ## Decisions Made
 
@@ -71,14 +71,15 @@ Progress: [██████████░░░░░░░░░░░░░
 | cross-links | Contextual cross-links on each page | Improves internal linking and user journey |
 | real-tutor-data | Use homepage tutor data | Consistency across site, real credentials |
 | comprehensive-file-check | Check all 8 HTML + 5 images + 2 supporting files | Foundational verification before manual testing |
+| tel-format-variations | Accept both tel:0491791447 and tel:+61491791447 | Both are valid tel: URI formats and functional |
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Plan 28-01 complete
+Stopped at: Plan 28-02 complete
 Resume file: None
-Next action: /gsd:execute-phase 28 (plan 02)
+Next action: /gsd:execute-phase 28 (plan 03)
 
 ---
 
-*Last updated: 2026-01-31 - Plan 28-01 complete (automated verification)*
+*Last updated: 2026-01-31 - Plan 28-02 complete (link/content consistency)*
