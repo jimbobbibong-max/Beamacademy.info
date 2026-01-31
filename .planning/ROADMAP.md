@@ -10,7 +10,7 @@
 - **v6 Content Reduction & QA** — Phase 19 (shipped 2026-01-29) | [Archive](milestones/v6-ROADMAP.md)
 - **v7 Comprehensive Frontend Redesign** — Phases 20-24 (shipped 2026-01-31)
 - **v8 Google Ads Optimization** — Phase 25 (shipped 2026-01-31)
-- **v9 Additional Pages** — Phases 26-28 (in progress)
+- **v9 Additional Pages** — Phases 26-28 (shipped 2026-01-31)
 
 ---
 
@@ -192,23 +192,23 @@ Plans:
 
 ---
 
-- [ ] **Phase 28: Full Site Audit** — Comprehensive QA of all pages
+- [x] **Phase 28: Full Site Audit** — Comprehensive QA of all pages
 
 **Goal:** Full audit of the website after all v9 changes - verify links, mobile, forms, performance, content
-**Plans:** 3 plans in 2 waves
+**Plans:** 3 plans in 2 waves (complete)
 
-Audit Areas:
-1. **Links** — All nav/footer links work across all 8 pages
-2. **Mobile** — All pages responsive, touch targets, sticky CTA
-3. **Forms** — Contact form submits correctly (Netlify)
-4. **Images** — All tutor photos load, correct paths
-5. **Performance** — Lighthouse scores on new pages (About, Contact)
-6. **Content** — No placeholder text, consistent messaging, accurate info
+Audit Results:
+- **Links** — All nav/footer links verified working across 8 pages
+- **Mobile** — All pages responsive, fixed hero overlap issue
+- **Forms** — Contact form submits to Netlify correctly
+- **Images** — All 5 tutor photos load, correct paths
+- **Performance** — Lighthouse: 96/94/96/100 (Performance/A11y/BP/SEO)
+- **Content** — No placeholder text, consistent messaging verified
 
 Plans:
-- [ ] 28-01-PLAN.md — Automated file and content verification [Wave 1]
-- [ ] 28-02-PLAN.md — Link inventory and content consistency [Wave 1]
-- [ ] 28-03-PLAN.md — Manual verification checklist [Wave 2]
+- [x] 28-01-PLAN.md — Automated file and content verification [Wave 1]
+- [x] 28-02-PLAN.md — Link inventory and content consistency [Wave 1]
+- [x] 28-03-PLAN.md — Manual verification checklist [Wave 2]
 
 ---
 
@@ -231,8 +231,8 @@ Plans:
 | 25 | v8 | Google Ads Optimization | Complete | 2026-01-31 |
 | 26 | v9 | Additional Pages | Complete | 2026-01-31 |
 | 27 | v9 | About Page Real Tutor Data | Complete | 2026-01-31 |
-| 28 | v9 | Full Site Audit | **Ready for Execution** | - |
+| 28 | v9 | Full Site Audit | Complete | 2026-01-31 |
 
 ---
 
-*Last updated: 2026-01-31 — Phase 28 planned (3 plans in 2 waves)*
+*Last updated: 2026-01-31 — v9 Additional Pages milestone complete*

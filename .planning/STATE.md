@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v9 Additional Pages — Phase 28 in progress
+**Current focus:** v9 Additional Pages — COMPLETE
 
 ## Current Position
 
-Milestone: v9 (Additional Pages)
-Phase: 28 of 28 — Full Site Audit
-Plan: 2 of 3 complete
-Status: **In progress**
-Last activity: 2026-01-31 - Plan 28-02 complete (link/content consistency)
+Milestone: v9 (Additional Pages) — **COMPLETE**
+Phase: 28 of 28 — Full Site Audit ✓
+Plan: 3 of 3 (all complete)
+Status: **Milestone shipped**
+Last activity: 2026-01-31 - Phase 28 executed, all audits passed
 
-Progress: [████████████████████░░░░░░░░░░] 67%
+Progress: [██████████████████████████████] 100%
 
 ## Milestone History
 
@@ -29,9 +29,9 @@ Progress: [████████████████████░░░
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
 | v7 | Frontend Redesign | 20-24 | SHIPPED | 2026-01-31 |
 | v8 | Google Ads Optimization | 25 | SHIPPED | 2026-01-31 |
-| v9 | Additional Pages | 26-28 | **IN PROGRESS** | - |
+| v9 | Additional Pages | 26-28 | **SHIPPED** | 2026-01-31 |
 
-## v9 Key Achievements (So Far)
+## v9 Achievements
 
 **Phase 26 — Pages Created:**
 - about.html — Tutor profiles, company story, teaching approach
@@ -43,20 +43,22 @@ Progress: [████████████████████░░░
 - Homepage slimmed to 3-tutor preview (Chris, Tae, Sowon)
 - Results removed from navigation
 
-**Phase 28 — Full Site Audit (in progress)**
-- Plan 01: COMPLETE - 31/31 automated checks pass
-- Plan 02: COMPLETE - Link/contact/tutor consistency verified
-- Plan 03: Manual verification checklist [Wave 2]
+**Phase 28 — Full Site Audit:**
+- 31 automated checks passed (files, viewport, placeholders)
+- Link inventory verified across all 8 pages
+- Contact info consistency confirmed
+- Tutor credentials verified against Phase 27 data
+- Lighthouse scores: 96/94/96/100
+- Fixed: skip-link removed, mobile hero overlap fixed
 
 ## Recent Commits
 
 | Hash | Description |
 |------|-------------|
-| 7190bad | docs(28-02): verify tutor credentials accuracy |
-| 4aabecf | docs(28-02): verify contact information consistency |
-| a141a09 | docs(28-02): complete internal link inventory |
-| 5fcd2d8 | audit(28-01): verify file existence and content |
-| eafbe11 | 3-tutor preview on homepage |
+| 511dd27 | Complete manual verification plan |
+| 8996008 | Remove skip-link, fix mobile hero overlap |
+| b9bc5b5 | Complete link inventory plan |
+| 13c8c2c | Complete automated verification plan |
 
 ## Decisions Made
 
@@ -70,16 +72,15 @@ Progress: [████████████████████░░░
 | nav-order | About, Results, Courses, Contact, CTA | Logical flow: who we are → proof → services → contact |
 | cross-links | Contextual cross-links on each page | Improves internal linking and user journey |
 | real-tutor-data | Use homepage tutor data | Consistency across site, real credentials |
-| comprehensive-file-check | Check all 8 HTML + 5 images + 2 supporting files | Foundational verification before manual testing |
-| tel-format-variations | Accept both tel:0491791447 and tel:+61491791447 | Both are valid tel: URI formats and functional |
+| skip-link-removed | Remove skip to content link | Poor UX on mobile, covered content |
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Plan 28-02 complete
+Stopped at: v9 milestone complete
 Resume file: None
-Next action: /gsd:execute-phase 28 (plan 03)
+Next action: /gsd:complete-milestone or /gsd:new-milestone
 
 ---
 
-*Last updated: 2026-01-31 - Plan 28-02 complete (link/content consistency)*
+*Last updated: 2026-01-31 - v9 Additional Pages milestone shipped*
