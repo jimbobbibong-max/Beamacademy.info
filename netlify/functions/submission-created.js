@@ -22,19 +22,20 @@ exports.handler = async (event) => {
     console.log(`Processing form: ${form_name}, submission ID: ${id}`);
 
     // Process contact and trial forms
-    const validForms = ['contact', 'chemistry-trial', 'physics-trial', 'maths-trial', 'english-trial', 'free-trial'];
+    const validForms = ['contact', 'trial', 'chemistry-trial', 'physics-trial', 'maths-trial', 'english-trial', 'free-trial'];
     if (!validForms.includes(form_name) && !form_name.includes('trial')) {
       console.log(`Skipping form: ${form_name}`);
       return { statusCode: 200, body: 'Skipped - not a trial form' };
     }
 
     // Prepare the data for the admin portal
+    // Handle different field naming conventions from different forms
     const webhookData = {
       form_name: form_name,
-      name: data.name || '',
-      email: data.email || '',
-      phone: data.phone || '',
-      'year-level': data['year-level'] || '',
+      name: data.parentName || data.name || data['parent-name'] || '',
+      email: data.parentEmail || data.email || '',
+      phone: data.parentPhone || data.phone || '',
+      'year-level': data.yearLevel || data['year-level'] || data.year_level || '',
       subjects: data.subjects || [],
       message: data.message || '',
       submission_id: id
