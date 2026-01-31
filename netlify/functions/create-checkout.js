@@ -17,8 +17,8 @@ exports.handler = async (event) => {
 
   try {
     console.log('Request body:', event.body);
-    const { tier, package: pkg, subjects, parentName, studentName, email, phone } = JSON.parse(event.body);
-    console.log('Parsed data:', { tier, pkg, subjects, parentName, studentName, email, phone });
+    const { tier, package: pkg, subjects, studentName, parentName, email, phone } = JSON.parse(event.body);
+    console.log('Parsed data:', { tier, pkg, subjects, studentName, parentName, email, phone });
 
     // Price map (weekly prices in dollars, GST-exclusive)
     const weeklyPriceMap = {
