@@ -152,27 +152,58 @@ Plans:
 
 ---
 
-- [ ] **Phase 26: Pages Audit & Creation** — Identify and build additional pages
+- [x] **Phase 26: Pages Audit & Creation** — Identify and build additional pages
 
 **Goal:** Full audit of what additional pages the site needs, then create them using Frontend Design Skill with BEAM brand colors
 **Approach:** Frontend Design Skill (bold, distinctive, editorial) + BEAM purples/pastels
-**Plans:** 4 plans in 2 waves
+**Plans:** 4 plans in 2 waves (complete)
 
-Pages to Build (from research):
+Pages Built:
 1. **About/Our Tutors** — Tutor profiles with photo cards, company story, credentials
 2. **Results/Testimonials** — Score-based testimonials, aggregate metrics, social proof
 3. **Contact** — Map, phone, email, simple contact form, operating hours
 
-Design Guidelines:
-- Purple as ACCENT (30%), white dominant (60%), gold trust signals (10%)
-- Summary card patterns (not long-form text)
-- Each page ends with consistent CTA
+Plans:
+- [x] 26-01-PLAN.md — About/Our Tutors page (tutor cards, company story) [Wave 1]
+- [x] 26-02-PLAN.md — Results/Testimonials page (score cards, metrics) [Wave 1]
+- [x] 26-03-PLAN.md — Contact page (map, form, contact info) [Wave 1]
+- [x] 26-04-PLAN.md — Navigation and cross-linking update (all pages) [Wave 2]
+
+---
+
+- [x] **Phase 27: About Page Real Tutor Data** — Replace placeholder with real tutor info
+
+**Goal:** Update About page with real tutor data from homepage "Tutors Who've Been There" section
+**Plans:** 1 plan (complete)
+
+Tutors added:
+1. Chris Kim — Head of Maths & Physics, 97 Maths Ext1, Medicine @ Newcastle
+2. Nathan You — Tutor, 95 Maths Ext1, Medicine @ Newcastle
+3. John Park — Tutor, 95 English Adv, Medicine @ UNSW
+4. Taehoon Kim — Tutor & Head Admin, 95 Maths Ext1, Optometry @ UNSW
+5. Sowon Lee — Head of English, 96 English Adv, Law @ UNSW
+
+Also done:
+- Homepage tutors slimmed to 3-tutor preview (Chris, Tae, Sowon)
+- Results page removed from navigation (data not verified)
 
 Plans:
-- [ ] 26-01-PLAN.md — About/Our Tutors page (tutor cards, company story) [Wave 1]
-- [ ] 26-02-PLAN.md — Results/Testimonials page (score cards, metrics) [Wave 1]
-- [ ] 26-03-PLAN.md — Contact page (map, form, contact info) [Wave 1]
-- [ ] 26-04-PLAN.md — Navigation and cross-linking update (all pages) [Wave 2]
+- [x] 27-01-PLAN.md — Replace placeholder tutor cards with real data [Wave 1]
+
+---
+
+- [ ] **Phase 28: Full Site Audit** — Comprehensive QA of all pages
+
+**Goal:** Full audit of the website after all v9 changes - verify links, mobile, forms, performance, content
+**Plans:** TBD (needs planning)
+
+Audit Areas:
+1. **Links** — All nav/footer links work across all 8 pages
+2. **Mobile** — All pages responsive, touch targets, sticky CTA
+3. **Forms** — Contact form submits correctly (Netlify)
+4. **Images** — All tutor photos load, correct paths
+5. **Performance** — Lighthouse scores on new pages (About, Contact)
+6. **Content** — No placeholder text, consistent messaging, accurate info
 
 ---
 
@@ -193,8 +224,10 @@ Plans:
 | 23 | v7 | Motion & Micro-interactions | Complete | 2026-01-30 |
 | 24 | v7 | Performance & Final QA | Complete | 2026-01-31 |
 | 25 | v8 | Google Ads Optimization | Complete | 2026-01-31 |
-| 26 | v9 | Additional Pages | **In Progress** | - |
+| 26 | v9 | Additional Pages | Complete | 2026-01-31 |
+| 27 | v9 | About Page Real Tutor Data | Complete | 2026-01-31 |
+| 28 | v9 | Full Site Audit | **Needs Planning** | - |
 
 ---
 
-*Last updated: 2026-01-31 — Phase 26 planned (4 plans in 2 waves)*
+*Last updated: 2026-01-31 — Phase 28 created, needs planning*

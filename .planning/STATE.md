@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Visitors understand BEAM's differentiator within 3 seconds
-**Current focus:** v10 About Tutor Data — Plan 01 complete, 1/1 done
+**Current focus:** v9 Additional Pages — Phase 28 needs planning
 
 ## Current Position
 
-Milestone: v10 (About Tutor Data)
-Phase: 27 of 27 — About Tutor Data
-Plan: 1 of 1 complete
-Status: **Phase complete**
-Last activity: 2026-01-31 - Completed 27-01-PLAN.md (Real tutor data)
+Milestone: v9 (Additional Pages)
+Phase: 28 of 28 — Full Site Audit
+Plan: 0 of ? (needs planning)
+Status: **Needs planning**
+Last activity: 2026-01-31 - Phase 27 complete, Phase 28 created
 
-Progress: [██████████████████████████████] 100%
+Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
 
 ## Milestone History
 
@@ -29,24 +29,30 @@ Progress: [███████████████████████
 | v6 | Content Reduction & QA | 19 | SHIPPED | 2026-01-29 |
 | v7 | Frontend Redesign | 20-24 | SHIPPED | 2026-01-31 |
 | v8 | Google Ads Optimization | 25 | SHIPPED | 2026-01-31 |
-| v9 | Additional Pages | 26 | SHIPPED | 2026-01-31 |
-| v10 | About Tutor Data | 27 | **COMPLETE** | 2026-01-31 |
+| v9 | Additional Pages | 26-28 | **IN PROGRESS** | - |
 
-## v10 Key Achievements (Complete)
+## v9 Key Achievements (So Far)
 
-- **Plan 01:** Real tutor data on about.html
-  - Replaced 6 placeholder tutors with 5 real tutors
-  - Chris Kim (Head of Maths & Physics)
-  - Nathan You, John Park (Tutors)
-  - Taehoon Kim (Tutor & Head Admin)
-  - Sowon Lee (Head of English)
-  - Updated hero badge for accuracy
+**Phase 26 — Pages Created:**
+- about.html — Tutor profiles, company story, teaching approach
+- results.html — Created but unlisted (data not verified)
+- contact.html — Map, form, operating hours
 
-## Phase 27 Plans
+**Phase 27 — Tutor Data:**
+- About page updated with 5 real tutors
+- Homepage slimmed to 3-tutor preview (Chris, Tae, Sowon)
+- Results removed from navigation
 
-| Plan | Name | Status | Commit |
-|------|------|--------|--------|
-| 27-01 | Update About with Real Tutor Data | COMPLETE | aea6507 |
+**Phase 28 — Full Site Audit (needs planning)**
+
+## Recent Commits
+
+| Hash | Description |
+|------|-------------|
+| eafbe11 | 3-tutor preview on homepage |
+| d9639ed | Slim tutors section |
+| 50ac95a | Remove Results from navigation |
+| a0b8207 | Phase 27 complete (real tutor data) |
 
 ## Decisions Made
 
@@ -64,10 +70,10 @@ Progress: [███████████████████████
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 27-01-PLAN.md (Phase 27 fully complete)
+Stopped at: Phase 28 created, needs planning
 Resume file: None
-Next action: /gsd:verify-work 27
+Next action: /gsd:plan-phase 28
 
 ---
 
-*Last updated: 2026-01-31 - Phase 27 complete (1/1 plans)*
+*Last updated: 2026-01-31 - Phase 28 created for Full Site Audit*
