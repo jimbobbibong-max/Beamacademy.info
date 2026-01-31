@@ -21,10 +21,11 @@ exports.handler = async (event) => {
 
     console.log(`Processing form: ${form_name}, submission ID: ${id}`);
 
-    // Only process the contact form
-    if (form_name !== 'contact') {
-      console.log(`Skipping non-contact form: ${form_name}`);
-      return { statusCode: 200, body: 'Skipped - not a contact form' };
+    // Process contact and trial forms
+    const validForms = ['contact', 'chemistry-trial', 'physics-trial', 'maths-trial', 'english-trial', 'free-trial'];
+    if (!validForms.includes(form_name) && !form_name.includes('trial')) {
+      console.log(`Skipping form: ${form_name}`);
+      return { statusCode: 200, body: 'Skipped - not a trial form' };
     }
 
     // Prepare the data for the admin portal
