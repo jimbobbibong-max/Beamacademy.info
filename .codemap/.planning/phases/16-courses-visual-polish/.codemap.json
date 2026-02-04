@@ -1,0 +1,682 @@
+{
+  "directory": ".planning\\phases\\16-courses-visual-polish",
+  "files": {
+    "16-01-PLAN.md": {
+      "hash": "af50db5785fc",
+      "indexed_at": "2026-01-24T22:37:10.488509+00:00",
+      "language": "markdown",
+      "lines": 185,
+      "symbols": []
+    },
+    "16-01-SUMMARY.md": {
+      "hash": "35e802398ec7",
+      "indexed_at": "2026-01-24T22:37:10.506300+00:00",
+      "language": "markdown",
+      "lines": 103,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 6 min - **Started:** 2026-01-24T10:34:14+11:00 - **Completed:** 2026-01-24T10:40:31+11:00 - **Tasks:** 3 - **Files modified:** 1",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Pricing tiers have visible base shadow (0 4px 20px) creating depth - Hover on pricing tiers lifts card (-4px) and adds purple glow - Featured tier h",
+          "lines": [
+            55,
+            63
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            64,
+            71
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `Downloads/beamacademy-index.html` - Enhanced shadow CSS for pricing tiers and course cards",
+          "lines": [
+            72,
+            75
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Base shadow opacity:** Used 0.25 for pricing tiers, 0.2 for course cards - subtle but visible - **Purple glow values:** 0.3 opacity on hover (visi",
+          "lines": [
+            76,
+            82
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            83,
+            86
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Edit tool file modification detection:** The Edit tool kept detecting \"unexpected modifications\" on the HTML file. Resolved by using Python script",
+          "lines": [
+            87,
+            90
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            91,
+            94
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Shadow depth complete for pricing and course sections - Ready for 16-02 (icon enhancements) or 16-03 (minor polish) - Desktop and mobile both tested",
+          "lines": [
+            95,
+            104
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "16-02-PLAN.md": {
+      "hash": "a2c70d129ecf",
+      "indexed_at": "2026-01-24T22:37:10.523347+00:00",
+      "language": "markdown",
+      "lines": 212,
+      "symbols": []
+    },
+    "16-02-SUMMARY.md": {
+      "hash": "9ebca806c733",
+      "indexed_at": "2026-01-24T22:37:10.541354+00:00",
+      "language": "markdown",
+      "lines": 95,
+      "symbols": [
+        {
+          "docstring": "| # | Task | Commit | Key Changes | |---|------|--------|-------------| | 1 | Background decoration | 52b00fc | Added ::before pseudo-element with rad",
+          "lines": [
+            37,
+            44
+          ],
+          "name": "Completed Tasks",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Added `position: relative` and `overflow: hidden` to `.courses-pricing` - Created `::before` pseudo-element with purple radial-gradient at top-right",
+              "lines": [
+                47,
+                52
+              ],
+              "name": "Task 1: Background Decoration",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Added `box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2)` to `.course-icon` - Added `box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3)` to `.year-tab.acti",
+              "lines": [
+                53,
+                57
+              ],
+              "name": "Task 2: Icon and Tab Enhancements",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- `.tier-cta`: Added base shadow (0.2 opacity) - `.tier-cta:hover`: Updated to gradient + stronger shadow (0.4 opacity) - `.featured-tier .tier-cta`:",
+              "lines": [
+                58,
+                65
+              ],
+              "name": "Task 3: Button Consistency",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            45,
+            65
+          ],
+          "name": "Changes Made",
+          "type": "section"
+        },
+        {
+          "docstring": "- All 3 duplicate CSS blocks (for different breakpoints) were updated for tier-cta - Background decoration uses `pointer-events: none` to not interfer",
+          "lines": [
+            66,
+            71
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            72,
+            75
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] Courses section has ::before decoration with radial-gradient - [x] Decoration opacity is 0.06 (subtle, not neon) - [x] Course icons have box-sha",
+          "lines": [
+            76,
+            86
+          ],
+          "name": "Verification Status",
+          "type": "section"
+        },
+        {
+          "docstring": "| File | Lines Changed | Purpose | |------|---------------|---------| | beamacademy-index.html | +72 -29 | Background decoration, icon glow, button en",
+          "lines": [
+            87,
+            92
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "Plan 16-03 (Micro-interactions) can proceed - all visual foundation is in place.",
+          "lines": [
+            93,
+            96
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "16-RESEARCH.md": {
+      "hash": "a5a7ee5d3bbe",
+      "indexed_at": "2026-01-24T22:37:10.560653+00:00",
+      "language": "markdown",
+      "lines": 474,
+      "symbols": [
+        {
+          "docstring": "Analyzed the BEAM Academy landing page to identify visual gaps between the Courses section (dark theme) and other v2 sections (Hero, About, FAQ). The",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The Courses section consists of: 1. **Section Header** - Title, tag, description 2. **All Access Hero Banner** - Premium gradient banner (well-styled",
+              "lines": [
+                17,
+                27
+              ],
+              "name": "Courses Section Structure (Lines 5777-6272)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Element | Current Style | Notes | |---------|--------------|-------| | Background | `var(--gray-900)` solid | No decorative elements or gradients |",
+              "lines": [
+                28,
+                39
+              ],
+              "name": "Current Courses Section Styling",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            39
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Hero Section:**",
+              "lines": [
+                42,
+                62
+              ],
+              "name": "Gap 1: Background Treatment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Cards:**",
+              "lines": [
+                63,
+                95
+              ],
+              "name": "Gap 2: Shadow Quality",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Badge:**",
+              "lines": [
+                96,
+                123
+              ],
+              "name": "Gap 3: Interactive Feedback",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Section Has:** - Floating cards with icons (line 943-978) - Testimonial star badge (line 767-774) - Portal mockup with colored dots (line 817-8",
+              "lines": [
+                124,
+                140
+              ],
+              "name": "Gap 4: Decorative Elements",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero:**",
+              "lines": [
+                141,
+                174
+              ],
+              "name": "Gap 5: Typography Refinement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Primary Button:**",
+              "lines": [
+                175,
+                197
+              ],
+              "name": "Gap 6: Button/CTA Styling",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            40,
+            197
+          ],
+          "name": "Visual Gap Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What:** Add subtle base shadows and improved hover shadows to pricing tiers.",
+              "lines": [
+                200,
+                217
+              ],
+              "name": "Priority 1: Add Depth to Pricing Tiers (HIGH IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Add subtle glow/shadow to course cards even at rest.",
+              "lines": [
+                218,
+                232
+              ],
+              "name": "Priority 2: Enhance Course Card Base State (HIGH IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Add subtle decorative gradient or pattern to courses section.",
+              "lines": [
+                233,
+                250
+              ],
+              "name": "Priority 3: Add Background Decoration (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Add subtle glow to course icons for visual interest.",
+              "lines": [
+                251,
+                261
+              ],
+              "name": "Priority 4: Improve Course Icon Styling (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Add shadow to active year tab for better emphasis.",
+              "lines": [
+                262,
+                272
+              ],
+              "name": "Priority 5: Enhance Year Tab Active State (LOW IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Add gradient and shadow to tier CTAs and course buttons.",
+              "lines": [
+                273,
+                294
+              ],
+              "name": "Priority 6: Button Gradient Consistency (MEDIUM IMPACT)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            198,
+            294
+          ],
+          "name": "Improvement Opportunities",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "For dark backgrounds, shadows need different treatment: - Use `rgba(0, 0, 0, 0.x)` for depth shadows - Use `rgba(124, 58, 237, 0.x)` for purple accent",
+              "lines": [
+                297,
+                310
+              ],
+              "name": "Pattern: Dark Theme Shadow Colors",
+              "type": "subsection"
+            },
+            {
+              "docstring": "For dark sections, use very low opacity gradients: - `rgba(124, 58, 237, 0.05)` to `0.08` for subtle purple tints - Position in corners to avoid overw",
+              "lines": [
+                311,
+                317
+              ],
+              "name": "Pattern: Subtle Background Decorations",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Use consistent easing across all interactive elements:",
+              "lines": [
+                318,
+                325
+              ],
+              "name": "Pattern: Consistent Transitions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Problem | Use This | |---------|----------| | Shadow values | Copy from Hero/About sections | | Purple color variants | Use existing CSS variables |",
+              "lines": [
+                326,
+                333
+              ],
+              "name": "Don't Hand-Roll",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            295,
+            333
+          ],
+          "name": "Technical Approach",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                336,
+                350
+              ],
+              "name": "Pricing Tier Enhancement",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                351,
+                364
+              ],
+              "name": "Course Card Enhancement",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                365,
+                383
+              ],
+              "name": "Section Background Decoration",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            334,
+            383
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Adding too many glowing elements makes the section look cheap **How to avoid:** Keep decorative opacity below 0.1, use sparingly",
+              "lines": [
+                386,
+                390
+              ],
+              "name": "Pitfall 1: Over-Saturating Dark Backgrounds",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Some elements move 2px, others 8px on hover **How to avoid:** Standardize: cards = -4px, buttons = -2px **Warning signs:** Hover",
+              "lines": [
+                391,
+                395
+              ],
+              "name": "Pitfall 2: Inconsistent Hover Distances",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** New shadows/decorations break on mobile **How to avoid:** Test all changes at mobile breakpoints, reduce effects on mobile **Warn",
+              "lines": [
+                396,
+                400
+              ],
+              "name": "Pitfall 3: Breaking Mobile Responsiveness",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            384,
+            400
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "docstring": "The Courses section already has responsive breakpoints at: - `@media (max-width: 1200px)` - Line 3166 - `@media (max-width: 900px)` - Lines 2194, 4816",
+          "lines": [
+            401,
+            411
+          ],
+          "name": "Mobile Considerations",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Performance impact:** Should decorative ::before gradients be disabled on mobile for performance? - Recommendation: Test first, disable if jank o",
+          "lines": [
+            412,
+            420
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Direct analysis of `beamacademy-index.html` (current production file) - Hero section CSS: lines 604-978 - About section CSS: lines 1805-1916 - Cours",
+              "lines": [
+                423,
+                430
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- CSS shadow best practices from existing codebase patterns - Transition timing patterns from codebase",
+              "lines": [
+                431,
+                434
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            421,
+            434
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Current state analysis: HIGH - direct file inspection - Visual gaps: HIGH - side-by-side CSS comparison - Improvement patt",
+          "lines": [
+            435,
+            446
+          ],
+          "name": "Metadata",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Pricing tiers lack shadows** - Hero cards have 20px+ shadows; pricing tiers have none 2. **Course cards only glow on hover** - Should have subtle",
+              "lines": [
+                452,
+                459
+              ],
+              "name": "Key Findings",
+              "type": "subsection"
+            },
+            {
+              "docstring": "`.planning/phases/16-courses-visual-polish/16-RESEARCH.md`",
+              "lines": [
+                460,
+                463
+              ],
+              "name": "File Created",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Area | Level | Reason | |------|-------|--------| | Visual Gap Analysis | HIGH | Direct CSS comparison | | Improvement Patterns | HIGH | Derived fro",
+              "lines": [
+                464,
+                471
+              ],
+              "name": "Confidence Assessment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Research complete. Planner can now create PLAN.md files with specific CSS modifications for each improvement area.",
+              "lines": [
+                472,
+                475
+              ],
+              "name": "Ready for Planning",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "**Phase:** 16 - Courses Section Visual Polish **Confidence:** HIGH",
+          "lines": [
+            447,
+            475
+          ],
+          "name": "RESEARCH COMPLETE",
+          "type": "section"
+        }
+      ]
+    },
+    "16-VERIFICATION.md": {
+      "hash": "1e3972018105",
+      "indexed_at": "2026-01-24T22:37:10.578088+00:00",
+      "language": "markdown",
+      "lines": 99,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Pricing tiers have visible depth/shadow at rest | VERIFIED | Line 2003: `box",
+              "lines": [
+                17,
+                31
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `C:/Users/bskim/Downloads/beamacademy-index.html` | Enhanced s",
+              "lines": [
+                32,
+                41
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|----|--------|---------| | `.pricing-tier-new` | hover state | transition property | WIRED | Line",
+              "lines": [
+                42,
+                50
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None | - | - | - | No anti-patterns detected |",
+              "lines": [
+                51,
+                58
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Check | Status | Evidence | |-------|--------|----------| | Mobile shadow reduction | VERIFIED | Lines 2242-2258: `.pricing-tier-new` and `.course-c",
+              "lines": [
+                59,
+                65
+              ],
+              "name": "Mobile Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| # | Test | Expected | Why Human | |---|------|----------|-----------| | 1 | Visual appearance of pricing tiers | Visible depth shadow at rest, purpl",
+              "lines": [
+                66,
+                74
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            74
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "**All 8 must-haves from both plans are VERIFIED in the codebase:**",
+          "lines": [
+            75,
+            100
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:22.002539+00:00",
+  "version": "1.0"
+}

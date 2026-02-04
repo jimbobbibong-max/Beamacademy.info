@@ -1,0 +1,727 @@
+{
+  "directory": ".planning\\phases\\02-cta-placement",
+  "files": {
+    "02-01-PLAN.md": {
+      "hash": "c647168e6396",
+      "indexed_at": "2026-01-24T22:37:08.258464+00:00",
+      "language": "markdown",
+      "lines": 323,
+      "symbols": []
+    },
+    "02-01-SUMMARY.md": {
+      "hash": "cefef06fe0a4",
+      "indexed_at": "2026-01-24T22:37:08.291416+00:00",
+      "language": "markdown",
+      "lines": 132,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "Added mobile-specific CSS rules in the `@media (max-width: 768px)` block: - `.hero-buttons` flex-direction: column with 12px gap - `.hero-buttons .btn",
+              "lines": [
+                37,
+                42
+              ],
+              "name": "Task 1: Hero CTA Mobile Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Added sticky mobile CTA bar with: - **HTML:** `<div class=\"sticky-cta-bar\">` with phone link and \"Book Free Trial\" button - **CSS:** Fixed positioning",
+              "lines": [
+                43,
+                49
+              ],
+              "name": "Task 2: Sticky CTA Bar HTML and CSS",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Added JavaScript that: - Observes the `.hero` section - Shows sticky bar when hero exits viewport (with -100px rootMargin for smooth UX) - Repositions",
+              "lines": [
+                50,
+                56
+              ],
+              "name": "Task 3: IntersectionObserver for Visibility",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            35,
+            56
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "**Sticky bar CSS:**",
+          "lines": [
+            57,
+            83
+          ],
+          "name": "Key Implementation Details",
+          "type": "section"
+        },
+        {
+          "docstring": "| ID | Decision | Rationale | |----|----------|-----------| | CTA-JS-001 | Use JS for floating button repositioning | CSS sibling selector (`~`) won't",
+          "lines": [
+            84,
+            89
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "**1. [Rule 2 - Missing Critical] Floating button repositioning moved to JavaScript** - **Found during:** Task 2 - **Issue:** Plan specified CSS siblin",
+          "lines": [
+            90,
+            97
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- [CTA-01] Primary \"Book Free Trial\" CTA visible in hero without scrolling on mobile - [CTA-02] Sticky floating CTA bar visible on mobile during scrol",
+          "lines": [
+            98,
+            103
+          ],
+          "name": "Requirements Satisfied",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Message | |------|---------| | fd63437 | feat(02-01): optimize hero CTA buttons for mobile | | 425cd6f | feat(02-01): add sticky CTA bar HTML",
+          "lines": [
+            104,
+            111
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] Hero CTA visible above fold on 375px viewport - [x] Buttons stack vertically on mobile - [x] Sticky bar HTML has correct structure and aria attr",
+          "lines": [
+            112,
+            122
+          ],
+          "name": "Verification Checklist",
+          "type": "section"
+        },
+        {
+          "docstring": "**Ready for:** Phase 03 (Social Proof) or further Phase 02 plans",
+          "lines": [
+            123,
+            133
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "02-CONTEXT.md": {
+      "hash": "c80b3d233dd3",
+      "indexed_at": "2026-01-24T22:37:08.313959+00:00",
+      "language": "markdown",
+      "lines": 50,
+      "symbols": [
+        {
+          "docstring": "Get the primary conversion action (Book Free Trial) visible above the fold and always accessible via a sticky CTA bar. Include click-to-call phone acc",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "User delegated all design decisions to Claude. Research and plan based on mobile conversion best practices:",
+              "lines": [
+                16,
+                33
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            33
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "No specific requirements \u2014 open to standard mobile conversion approaches based on best practices research.",
+          "lines": [
+            34,
+            40
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            41,
+            51
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "02-RESEARCH.md": {
+      "hash": "e79567eb8c1b",
+      "indexed_at": "2026-01-24T22:37:08.357179+00:00",
+      "language": "markdown",
+      "lines": 393,
+      "symbols": [
+        {
+          "docstring": "This phase focuses on making the primary conversion action (\"Book Free Trial\") immediately visible on mobile and always accessible via a sticky CTA ba",
+          "lines": [
+            7,
+            18
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Technology | Version | Purpose | Why Standard | |------------|---------|---------|--------------| | Vanilla CSS | Modern | Styling sticky bar, CTA b",
+              "lines": [
+                23,
+                29
+              ],
+              "name": "Core Technologies",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Pattern | Purpose | When to Use | |---------|---------|-------------| | IntersectionObserver | Detect when hero leaves viewport | Show/hide sticky b",
+              "lines": [
+                30,
+                36
+              ],
+              "name": "Supporting Patterns",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Instead of | Could Use | Tradeoff | |------------|-----------|----------| | IntersectionObserver | scroll event listener | Poor performance, causes",
+              "lines": [
+                37,
+                43
+              ],
+              "name": "Alternatives Considered",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "No additional libraries needed. The implementation uses vanilla HTML, CSS, and JavaScript.",
+          "lines": [
+            19,
+            43
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                46,
+                58
+              ],
+              "name": "Recommended Implementation Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Use an invisible sentinel element at the bottom of the hero section. When it leaves viewport, show the sticky bar. **When to use:** When you",
+              "lines": [
+                59,
+                75
+              ],
+              "name": "Pattern 1: Sentinel-Based Sticky Bar Visibility",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** A bar fixed to the bottom of the viewport with CTA button(s). **When to use:** Mobile-first CTA placement where thumb accessibility matters.",
+              "lines": [
+                76,
+                96
+              ],
+              "name": "Pattern 2: Fixed Bottom CTA Bar",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Phone link using tel: protocol with international format. **When to use:** Any phone number display on mobile. **Example:**",
+              "lines": [
+                97,
+                107
+              ],
+              "name": "Pattern 3: Click-to-Call Button",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Scroll event listeners for show/hide:** Causes jank on mobile, use IntersectionObserver instead - **Sticky bar covering too much content:** Keep b",
+              "lines": [
+                108,
+                114
+              ],
+              "name": "Anti-Patterns to Avoid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            44,
+            114
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "docstring": "Problems that look simple but have existing solutions:",
+          "lines": [
+            115,
+            127
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Both elements positioned at bottom-right, overlapping on mobile. **Why it happens:** Existing `.floating-contact` is at bottom: 1",
+              "lines": [
+                130,
+                135
+              ],
+              "name": "Pitfall 1: Sticky Bar Conflicts with Floating Phone Button",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** \"Start Free Trial\" button scrolls below fold on short viewports. **Why it happens:** Hero has min-height: 100vh but hero-content",
+              "lines": [
+                136,
+                141
+              ],
+              "name": "Pitfall 2: Hero CTA Hidden on Small Phones",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Sticky bar hidden behind Safari's navigation bar. **Why it happens:** iOS Safari has dynamic viewport height changes. **How to av",
+              "lines": [
+                142,
+                147
+              ],
+              "name": "Pitfall 3: iOS Safari Bottom Bar Interference",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Sticky bar appears behind modals or navigation. **Why it happens:** Inconsistent z-index management. **How to avoid:** Use existi",
+              "lines": [
+                148,
+                153
+              ],
+              "name": "Pitfall 4: Z-Index Stacking Issues",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Janky animation when bar appears/disappears. **Why it happens:** Repainting on transform without GPU acceleration. **How to avoid",
+              "lines": [
+                154,
+                159
+              ],
+              "name": "Pitfall 5: Performance on Low-End Android",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            128,
+            159
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                164,
+                177
+              ],
+              "name": "Sticky CTA Bar HTML Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                178,
+                267
+              ],
+              "name": "Sticky CTA Bar CSS",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                268,
+                292
+              ],
+              "name": "JavaScript IntersectionObserver",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                293,
+                314
+              ],
+              "name": "Hero CTA Enhancements (ensure visibility)",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Verified patterns based on existing codebase style:",
+          "lines": [
+            160,
+            314
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "| Old Approach | Current Approach | When Changed | Impact | |--------------|------------------|--------------|--------| | scroll event listeners | Int",
+          "lines": [
+            315,
+            327
+          ],
+          "name": "State of the Art",
+          "type": "section"
+        },
+        {
+          "docstring": "Things that couldn't be fully resolved:",
+          "lines": [
+            328,
+            341
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **Primary CTA:** \"Start Free Trial\" button with class `btn btn-primary` - **Secondary CTA:** \"View Courses\" button with class `btn btn-secondary` -",
+              "lines": [
+                344,
+                348
+              ],
+              "name": "Current Hero Section (lines 4277-4309)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Implementation:** `position: fixed`, bottom: 24px, right: 24px - **Phone number:** Already uses `tel:0491791447` (local format) - **Mobile adjustm",
+              "lines": [
+                349,
+                353
+              ],
+              "name": "Existing Floating Button (lines 2289-2349)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Brand colors: `--purple-600`, `--purple-700`, `--purple-800` - Shadows: `--shadow-lg`, custom button shadows - Font: `--font-display` for buttons",
+              "lines": [
+                354,
+                358
+              ],
+              "name": "CSS Variable System",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **CSS:** After `.floating-btn-tooltip` styles (~line 2350) 2. **HTML:** Before closing `</main>` tag (after CTA section, before footer) 3. **JavaSc",
+              "lines": [
+                359,
+                363
+              ],
+              "name": "Where to Add New Code",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Full format: `+61491791447` (international) - Display format: `0491 791 447` (Australian local) - Both already used in codebase (schema.org uses +61",
+              "lines": [
+                364,
+                368
+              ],
+              "name": "Phone Number",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            342,
+            368
+          ],
+          "name": "Codebase Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [MDN Web Docs - position](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position) - fixed vs sticky behavior - [W3C WCAG 2.2",
+              "lines": [
+                371,
+                375
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Instapage - CTA Above or Below Fold](https://instapage.com/blog/call-to-action-above-or-below-fold) - 304% performance difference - [Smashing Magaz",
+              "lines": [
+                376,
+                381
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [WiserNotify - CTA Statistics 2025](https://wisernotify.com/blog/call-to-action-stats/) - conversion statistics",
+              "lines": [
+                382,
+                384
+              ],
+              "name": "Tertiary (LOW confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            369,
+            384
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Standard stack: HIGH - vanilla HTML/CSS/JS, matches existing codebase - Architecture: HIGH - IntersectionObserver pattern",
+          "lines": [
+            385,
+            394
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "02-UAT.md": {
+      "hash": "9dfa0c4e89e5",
+      "indexed_at": "2026-01-24T22:37:08.382367+00:00",
+      "language": "markdown",
+      "lines": 49,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: On mobile viewport (375px), the \"Start Free Trial\" button is visible immediately on page load without scrolling. result: pass",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. Hero CTA Above Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: When scrolling down past the hero section, a sticky CTA bar slides up from the bottom with a phone icon and \"Book Free Trial\" button. result",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Sticky Bar Appears on Scroll",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the phone icon in the sticky bar opens the phone dialer with +61491791447. result: pass",
+              "lines": [
+                23,
+                26
+              ],
+              "name": "3. Click-to-Call",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping \"Book Free Trial\" in the sticky bar scrolls the page to the contact form section. result: pass",
+              "lines": [
+                27,
+                30
+              ],
+              "name": "4. Book Free Trial Navigation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: At viewport width 800px+, the sticky bar does not appear (desktop users see normal navigation). result: pass",
+              "lines": [
+                31,
+                34
+              ],
+              "name": "5. Desktop Behavior",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            34
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 5 passed: 5 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            35,
+            42
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "[none]",
+          "lines": [
+            43,
+            46
+          ],
+          "name": "Gaps",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Scroll anchor position:** When tapping \"Book Free Trial\" in sticky bar, scrolls to contact section but business info appears first before the form",
+          "lines": [
+            47,
+            50
+          ],
+          "name": "Observations (Non-Blocking)",
+          "type": "section"
+        }
+      ]
+    },
+    "02-VERIFICATION.md": {
+      "hash": "390e66055120",
+      "indexed_at": "2026-01-24T22:37:08.405647+00:00",
+      "language": "markdown",
+      "lines": 100,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | User sees \"Book Free Trial\" button immediately on page load (no scroll) | VE",
+              "lines": [
+                17,
+                26
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` (sticky HTML) | Sticky CTA bar HTML structure | V",
+              "lines": [
+                27,
+                35
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | IntersectionObserver JS | .sticky-cta-bar element | classList.toggle(",
+              "lines": [
+                36,
+                44
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Supporting Evidence | |-------------|--------|---------------------| | CTA-01: Primary CTA visible in hero without scrolling",
+              "lines": [
+                45,
+                52
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | - | - | None found | - | - |",
+              "lines": [
+                53,
+                60
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "The following tests require human verification (visual/interaction testing):",
+              "lines": [
+                61,
+                64
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Open page in Chrome DevTools at 375px width, check if \"Start Free Trial\" button is visible without scrolling **Expected:** Button visible im",
+              "lines": [
+                65,
+                69
+              ],
+              "name": "1. Mobile Viewport Above-Fold Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** On mobile viewport, scroll down past hero section **Expected:** Sticky CTA bar slides in from bottom with smooth animation **Why human:** In",
+              "lines": [
+                70,
+                74
+              ],
+              "name": "2. Sticky Bar Scroll Behavior Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Tap phone icon in sticky bar on actual mobile device **Expected:** Device phone dialer opens with +61491791447 **Why human:** tel: protocol",
+              "lines": [
+                75,
+                79
+              ],
+              "name": "3. Click-to-Call Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Tap \"Book Free Trial\" button in sticky bar **Expected:** Page smoothly scrolls to contact form section **Why human:** Smooth scroll behavior",
+              "lines": [
+                80,
+                84
+              ],
+              "name": "4. Anchor Link Test",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            84
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "All automated checks pass:",
+          "lines": [
+            85,
+            101
+          ],
+          "name": "Verification Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.947245+00:00",
+  "version": "1.0"
+}

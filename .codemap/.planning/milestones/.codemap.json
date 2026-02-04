@@ -1,0 +1,870 @@
+{
+  "directory": ".planning\\milestones",
+  "files": {
+    "v1-MILESTONE-AUDIT.md": {
+      "hash": "4510f46d9177",
+      "indexed_at": "2026-01-24T22:37:07.741293+00:00",
+      "language": "markdown",
+      "lines": 262,
+      "symbols": [
+        {
+          "docstring": "| Category | Score | Status | |----------|-------|--------| | Requirements | 17/17 | SATISFIED | | Phases | 5/5 | COMPLETE | | Integration | 15/15 | W",
+          "lines": [
+            34,
+            46
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| ID | Requirement | Phase | Status | Evidence | |----|-------------|-------|--------|----------| | VIEW-01 | Page renders correctly on mobile without",
+              "lines": [
+                49,
+                57
+              ],
+              "name": "VIEW Requirements (Viewport/Mobile Display)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| ID | Requirement | Phase | Status | Evidence | |----|-------------|-------|--------|----------| | CTA-01 | Primary CTA visible in hero without scrol",
+              "lines": [
+                58,
+                65
+              ],
+              "name": "CTA Requirements (Calls-to-Action)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| ID | Requirement | Phase | Status | Evidence | |----|-------------|-------|--------|----------| | FORM-01 | Maximum 4 visible fields | Phase 3 | SAT",
+              "lines": [
+                66,
+                74
+              ],
+              "name": "FORM Requirements (Contact Form)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| ID | Requirement | Phase | Status | Evidence | |----|-------------|-------|--------|----------| | CONT-01 | Hero communicates value prop clearly | P",
+              "lines": [
+                75,
+                83
+              ],
+              "name": "CONT Requirements (Content Structure)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| ID | Requirement | Phase | Status | Evidence | |----|-------------|-------|--------|----------| | PERF-01 | Images optimized for mobile | Phase 5 |",
+              "lines": [
+                84,
+                93
+              ],
+              "name": "PERF Requirements (Performance)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            47,
+            93
+          ],
+          "name": "Requirements Coverage",
+          "type": "section"
+        },
+        {
+          "docstring": "| Phase | Name | Plans | Status | Score | |-------|------|-------|--------|-------| | 1 | Emergency Viewport Fix | 1 | PASSED | 4/4 | | 2 | CTA Placem",
+          "lines": [
+            94,
+            107
+          ],
+          "name": "Phase Verification Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Phase | Depends On | Status | |-------|------------|--------| | Phase 1 | None | Foundation | | Phase 2 | Phase 1 | SATISFIED - uses viewport CSS |",
+              "lines": [
+                110,
+                119
+              ],
+              "name": "Phase Dependencies",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Phase 1 --> Phase 2:** - overflow-x: hidden prevents horizontal scroll during sticky bar animation - 44px touch targets apply to sticky bar buttons",
+              "lines": [
+                120,
+                145
+              ],
+              "name": "Cross-Phase Wiring (15 verified connections)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            108,
+            145
+          ],
+          "name": "Integration Verification",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Step | Element | Status | |------|---------|--------| | 1 | Mobile viewport renders | CONNECTED | | 2 | Hero CTA visible above fold | CONNECTED | |",
+              "lines": [
+                148,
+                160
+              ],
+              "name": "Flow 1: Mobile Landing --> Form Submit",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Step | Element | Status | |------|---------|--------| | 1 | Scroll past hero | CONNECTED | | 2 | Sticky bar appears | CONNECTED | | 3 | Phone icon w",
+              "lines": [
+                161,
+                171
+              ],
+              "name": "Flow 2: Mobile Call Flow",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Step | Element | Status | |------|---------|--------| | 1 | Hamburger button tap | CONNECTED | | 2 | Menu slides open | CONNECTED | | 3 | Outside cl",
+              "lines": [
+                172,
+                184
+              ],
+              "name": "Flow 3: Navigation Flow",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            146,
+            184
+          ],
+          "name": "E2E Flow Verification",
+          "type": "section"
+        },
+        {
+          "docstring": "From Lighthouse mobile audit (2026-01-20):",
+          "lines": [
+            185,
+            198
+          ],
+          "name": "Performance Results",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "These are non-blocking items identified during verification:",
+              "lines": [
+                201,
+                227
+              ],
+              "name": "Phase 5 (Performance)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Skip to main content button positioning** - Cosmetic positioning issue - Non-blocking",
+              "lines": [
+                228,
+                237
+              ],
+              "name": "UI Polish (Pending Todos)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **create-checkout.js expects studentName** - Field removed in Phase 3 - Function handles undefined gracefully - Impact: None (metadata shows undefi",
+              "lines": [
+                238,
+                246
+              ],
+              "name": "Minor Issues",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            199,
+            246
+          ],
+          "name": "Tech Debt",
+          "type": "section"
+        },
+        {
+          "docstring": "**Status: TECH_DEBT**",
+          "lines": [
+            247,
+            263
+          ],
+          "name": "Audit Conclusion",
+          "type": "section"
+        }
+      ]
+    },
+    "v1-REQUIREMENTS.md": {
+      "hash": "3bbf4bee0cf4",
+      "indexed_at": "2026-01-24T22:37:07.765786+00:00",
+      "language": "markdown",
+      "lines": 143,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- [x] **VIEW-01**: Page renders correctly on mobile without requiring zoom or pan - [x] **VIEW-02**: Form inputs have minimum 16px font size (prevents",
+              "lines": [
+                20,
+                26
+              ],
+              "name": "Viewport & Rendering",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **CTA-01**: Primary \"Book Free Trial\" CTA visible in hero without scrolling - [x] **CTA-02**: Sticky floating CTA bar visible on mobile during s",
+              "lines": [
+                27,
+                32
+              ],
+              "name": "CTA Placement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **FORM-01**: Contact form reduced to 3-4 essential fields - [x] **FORM-02**: Form inputs use correct types (tel, email) for mobile keyboards - [",
+              "lines": [
+                33,
+                39
+              ],
+              "name": "Form Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **CONT-01**: Hero section communicates value proposition clearly on mobile - [x] **CONT-02**: Pricing section displays cleanly on mobile without",
+              "lines": [
+                40,
+                46
+              ],
+              "name": "Content Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **PERF-01**: Images optimized for mobile (compressed, lazy loaded) - [x] **PERF-02**: Above-fold content loads quickly (LCP target under 2.5s) -",
+              "lines": [
+                47,
+                52
+              ],
+              "name": "Performance",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Requirements for mobile conversion optimization. Each maps to roadmap phases.",
+          "lines": [
+            16,
+            52
+          ],
+          "name": "v1 Requirements",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **ADV-01**: Multi-step form wizard for additional data collection - **ADV-02**: Personalized CTAs based on ad source/campaign - **ADV-03**: A/B test",
+              "lines": [
+                57,
+                63
+              ],
+              "name": "Advanced Conversion",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **ENH-01**: Google Reviews widget integration - **ENH-02**: Video testimonial on landing page - **ENH-03**: Live chat widget for instant questions -",
+              "lines": [
+                64,
+                70
+              ],
+              "name": "Enhancements",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Deferred to future. Not in current roadmap.",
+          "lines": [
+            53,
+            70
+          ],
+          "name": "v2 Requirements",
+          "type": "section"
+        },
+        {
+          "docstring": "| Feature | Reason | |---------|--------| | Desktop redesign | Focus is mobile conversion; desktop works acceptably | | New pages | Optimize existing",
+          "lines": [
+            71,
+            80
+          ],
+          "name": "Out of Scope",
+          "type": "section"
+        },
+        {
+          "docstring": "| Requirement | Phase | Status | |-------------|-------|--------| | VIEW-01 | Phase 1 | Complete | | VIEW-02 | Phase 1 | Complete | | VIEW-03 | Phase",
+          "lines": [
+            81,
+            110
+          ],
+          "name": "Traceability",
+          "type": "section"
+        },
+        {
+          "docstring": "**Shipped:** 18 of 18 v1 requirements",
+          "lines": [
+            111,
+            144
+          ],
+          "name": "Milestone Summary",
+          "type": "section"
+        }
+      ]
+    },
+    "v1-ROADMAP.md": {
+      "hash": "6e9e64d41a7c",
+      "indexed_at": "2026-01-24T22:37:07.793385+00:00",
+      "language": "markdown",
+      "lines": 155,
+      "symbols": [
+        {
+          "docstring": "Transform the BEAM Academy tutoring website from a broken mobile experience (24 clicks, 0 conversions) into a conversion-optimized landing page. Start",
+          "lines": [
+            7,
+            10
+          ],
+          "name": "Overview",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Goal**: Mobile users can view and interact with the page without zooming or panning **Depends on**: Nothing (first phase) **Requirements**: VIEW-01,",
+              "lines": [
+                13,
+                29
+              ],
+              "name": "Phase 1: Emergency Viewport Fix",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal**: Primary conversion action is always visible and accessible on mobile **Depends on**: Phase 1 **Requirements**: CTA-01, CTA-02, CTA-03 **Succ",
+              "lines": [
+                30,
+                45
+              ],
+              "name": "Phase 2: CTA Placement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal**: Contact form completion requires minimal effort **Depends on**: Phase 2 **Requirements**: FORM-01, FORM-02, FORM-03, FORM-04 **Success Crite",
+              "lines": [
+                46,
+                62
+              ],
+              "name": "Phase 3: Form Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal**: Page sections flow in optimal order for mobile conversion **Depends on**: Phase 3 **Requirements**: CONT-01, CONT-02, CONT-03, CONT-04 **Suc",
+              "lines": [
+                63,
+                80
+              ],
+              "name": "Phase 4: Content Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal**: Page loads fast and displays stable layout on mobile **Depends on**: Phase 4 **Requirements**: PERF-01, PERF-02, PERF-03 **Success Criteria*",
+              "lines": [
+                81,
+                101
+              ],
+              "name": "Phase 5: Performance",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            11,
+            101
+          ],
+          "name": "Phases",
+          "type": "section"
+        },
+        {
+          "docstring": "**Key Decisions:**",
+          "lines": [
+            102,
+            156
+          ],
+          "name": "Milestone Summary",
+          "type": "section"
+        }
+      ]
+    },
+    "v2-MILESTONE-AUDIT.md": {
+      "hash": "65b8f576b179",
+      "indexed_at": "2026-01-24T22:37:07.818454+00:00",
+      "language": "markdown",
+      "lines": 165,
+      "symbols": [
+        {
+          "docstring": "All 24 v2 requirements satisfied. All 6 phases verified. All cross-phase integration checks passed. All 5 E2E user flows complete without breaks.",
+          "lines": [
+            32,
+            37
+          ],
+          "name": "Executive Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "| Requirement | Phase | Status | |-------------|-------|--------| | HERO-01: Headline communicates category + differentiator | Phase 6 | Complete | |",
+          "lines": [
+            38,
+            68
+          ],
+          "name": "Requirements Coverage",
+          "type": "section"
+        },
+        {
+          "docstring": "| Phase | Name | Score | Status | |-------|------|-------|--------| | 6 | Hero Overhaul | 5/5 | PASSED | | 7 | Proof Section | 4/4 | PASSED | | 8 | Co",
+          "lines": [
+            69,
+            81
+          ],
+          "name": "Phase Verification Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "| Check | Status | |-------|--------| | Section order flow | CONNECTED - Hero -> Proof -> Comparison -> Trust -> Support -> About -> Contact | | Visua",
+          "lines": [
+            82,
+            94
+          ],
+          "name": "Cross-Phase Integration",
+          "type": "section"
+        },
+        {
+          "docstring": "| Flow | Steps | Status | |------|-------|--------| | First Impression | Load -> See category + differentiator in 3 seconds | COMPLETE | | Proof Disco",
+          "lines": [
+            95,
+            106
+          ],
+          "name": "E2E Flow Verification",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Nav doesn't link to v2 sections** - Navigation links to `#about`, `#courses`, `#why-us`, `#team`, `#faq` - Does NOT link to `#proof`, `#compariso",
+              "lines": [
+                109,
+                122
+              ],
+              "name": "Phase 11: CTA & Mobile Polish",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            107,
+            122
+          ],
+          "name": "Tech Debt (Non-Blocking)",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- User requested: Replace Q4 in diagnostic worksheet with different question - Impact: Cosmetic - current question is valid - Status: Logged for futur",
+              "lines": [
+                125,
+                130
+              ],
+              "name": "Phase 8: Comparison Section",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            123,
+            130
+          ],
+          "name": "Observations (Deferred)",
+          "type": "section"
+        },
+        {
+          "docstring": "From STATE.md accumulated context: - Skip button positioning (cosmetic) - Form scroll anchor positioning (UX) - Some aria-hidden with focusable childr",
+          "lines": [
+            131,
+            141
+          ],
+          "name": "Tech Debt from v1 (Still Present)",
+          "type": "section"
+        },
+        {
+          "docstring": "Key decisions made during v2 implementation:",
+          "lines": [
+            142,
+            154
+          ],
+          "name": "Decision Log",
+          "type": "section"
+        },
+        {
+          "docstring": "**v2 Messaging Overhaul is COMPLETE.**",
+          "lines": [
+            155,
+            166
+          ],
+          "name": "Conclusion",
+          "type": "section"
+        }
+      ]
+    },
+    "v2-REQUIREMENTS.md": {
+      "hash": "56fef8a48e49",
+      "indexed_at": "2026-01-24T22:37:07.838743+00:00",
+      "language": "markdown",
+      "lines": 130,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- [x] **HERO-01**: Headline communicates both category (\"HSC Tutoring\") and differentiator (\"Custom materials for YOUR kid\") - [x] **HERO-02**: Portal",
+              "lines": [
+                18,
+                25
+              ],
+              "name": "Hero Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **PROOF-01**: 4 documents from ONE trial visualized (Progress Report, Diagnostic Worksheet, Answer Key, Worked Solutions) - [x] **PROOF-02**: \"Y",
+              "lines": [
+                26,
+                32
+              ],
+              "name": "Proof Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **COMP-01**: Generic tutoring vs BEAM side-by-side comparison table - [x] **COMP-02**: Specific contrasts shown (vague feedback vs precise data,",
+              "lines": [
+                33,
+                37
+              ],
+              "name": "Comparison Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **TRUST-01**: Tutor profiles with real photos - [x] **TRUST-02**: Credibility combo per tutor: Baulko graduate + 95+ HSC + Med student (the trif",
+              "lines": [
+                38,
+                45
+              ],
+              "name": "Trust Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **SUPP-01**: Discord 24/7 support callout section - [x] **SUPP-02**: Framing: \"Stuck at 9pm? Get help by 10am.\" - [x] **SUPP-03**: Discord scree",
+              "lines": [
+                46,
+                51
+              ],
+              "name": "Support Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **CTA-01**: Outcome-focused CTA copy (\"Get Your Free Diagnostic\") - [x] **CTA-02**: Form fields remain optimized (3-4 fields from v1)",
+              "lines": [
+                52,
+                56
+              ],
+              "name": "CTA/Form",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **MOB-01**: All new sections render correctly on mobile (320px-428px) - [x] **MOB-02**: Images optimized for mobile loading - [x] **MOB-03**: St",
+              "lines": [
+                57,
+                62
+              ],
+              "name": "Mobile",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            62
+          ],
+          "name": "v2 Requirements",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **SEO-01**: Local SEO optimization for Sydney/Epping - **SEO-02**: Keyword-optimized content based on search intent research - **SEO-03**: Parent se",
+              "lines": [
+                65,
+                69
+              ],
+              "name": "SEO & Content",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **ADV-01**: Multi-step form wizard - **ADV-02**: A/B testing framework - **ADV-03**: Exit-intent popup - **ADV-04**: Google Reviews widget integrati",
+              "lines": [
+                70,
+                75
+              ],
+              "name": "Advanced Features",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            63,
+            75
+          ],
+          "name": "v3 Requirements (Deferred)",
+          "type": "section"
+        },
+        {
+          "docstring": "| Feature | Reason | |---------|--------| | WWCC badge | User indicated basic/expected, not differentiating | | Video testimonials | Asset doesn't exi",
+          "lines": [
+            76,
+            86
+          ],
+          "name": "Out of Scope",
+          "type": "section"
+        },
+        {
+          "docstring": "| Requirement | Phase | Status | |-------------|-------|--------| | HERO-01 | Phase 6 | Complete | | HERO-02 | Phase 6 | Complete | | HERO-03 | Phase",
+          "lines": [
+            87,
+            122
+          ],
+          "name": "Traceability",
+          "type": "section"
+        },
+        {
+          "docstring": "**Shipped:** 24 of 24 v2 requirements **Adjusted:** None **Dropped:** None",
+          "lines": [
+            123,
+            131
+          ],
+          "name": "Milestone Summary",
+          "type": "section"
+        }
+      ]
+    },
+    "v2-ROADMAP.md": {
+      "hash": "90ce26b9d024",
+      "indexed_at": "2026-01-24T22:37:07.862052+00:00",
+      "language": "markdown",
+      "lines": 167,
+      "symbols": [
+        {
+          "docstring": "Rewrite the landing page so visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds \u2014 without reading ev",
+          "lines": [
+            7,
+            12
+          ],
+          "name": "Overview",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Goal:** Visitors immediately understand what BEAM is (HSC tutoring) and why it's different (custom materials based on tracking).",
+              "lines": [
+                15,
+                35
+              ],
+              "name": "Phase 6: Hero Overhaul",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Parents see concrete evidence of what they get from ONE free trial.",
+              "lines": [
+                36,
+                54
+              ],
+              "name": "Phase 7: Proof Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Crystallize the difference between generic tutoring and BEAM.",
+              "lines": [
+                55,
+                71
+              ],
+              "name": "Phase 8: Comparison Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Build credibility through tutor profiles and social proof.",
+              "lines": [
+                72,
+                91
+              ],
+              "name": "Phase 9: Trust Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Differentiate BEAM with 24/7 Discord support between classes.",
+              "lines": [
+                92,
+                109
+              ],
+              "name": "Phase 10: Support Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Optimize final conversion path and ensure all new content works on mobile.",
+              "lines": [
+                110,
+                131
+              ],
+              "name": "Phase 11: CTA & Mobile Polish",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            131
+          ],
+          "name": "Phases",
+          "type": "section"
+        },
+        {
+          "docstring": "**Key Decisions:**",
+          "lines": [
+            132,
+            168
+          ],
+          "name": "Milestone Summary",
+          "type": "section"
+        }
+      ]
+    },
+    "v3-ROADMAP.md": {
+      "hash": "cc9a35843e47",
+      "indexed_at": "2026-01-24T22:37:07.884182+00:00",
+      "language": "markdown",
+      "lines": 45,
+      "symbols": [
+        {
+          "docstring": "Remove redundant legacy sections and consolidate overlapping content into v2 sections.",
+          "lines": [
+            3,
+            5
+          ],
+          "name": "Goal",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Goal:** Delete redundant sections and merge overlapping content into Trust section.",
+              "lines": [
+                8,
+                22
+              ],
+              "name": "Phase 12: Content Consolidation \u2014 Complete",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Goal:** Modernize About section to match v2 design quality.",
+              "lines": [
+                23,
+                36
+              ],
+              "name": "Phase 13: About & Courses Overhaul \u2014 Complete",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            6,
+            36
+          ],
+          "name": "Phases",
+          "type": "section"
+        },
+        {
+          "docstring": "**Phase 14 (Courses Section Redesign) was moved to v4.**",
+          "lines": [
+            37,
+            46
+          ],
+          "name": "Notes",
+          "type": "section"
+        }
+      ]
+    },
+    "v4-ROADMAP.md": {
+      "hash": "50d8625e0174",
+      "indexed_at": "2026-01-24T22:37:07.906188+00:00",
+      "language": "markdown",
+      "lines": 56,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- 14-01: About section v2 styling - 14-02: Courses section v2 styling - 14-03: Pricing tiers centering fix",
+              "lines": [
+                11,
+                16
+              ],
+              "name": "Phase 14: Courses Section Redesign (3/3 plans) \u2014 2026-01-23",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- 15-01: Outcome-focused headline + risk reversal - 15-02: Unified CTAs to \"Get Your Free Diagnostic\" - 15-03: Dark theme decision documented",
+              "lines": [
+                17,
+                22
+              ],
+              "name": "Phase 15: Courses Conversion Optimization (3/3 plans) \u2014 VERIFIED 2026-01-23",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- 16-01: Shadow depth for pricing tiers and course cards - 16-02: Background decoration, icon glow, button consistency",
+              "lines": [
+                23,
+                29
+              ],
+              "name": "Phase 16: Courses Visual Polish (2/2 plans) \u2014 VERIFIED 2026-01-24",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            9,
+            29
+          ],
+          "name": "Phases",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | Phase | |----------|-----------|-------| | v2 CSS architecture | Clean separation from legacy styles | 14 | | Outcome-focused",
+          "lines": [
+            30,
+            45
+          ],
+          "name": "Key Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "- Completely redesigned Pricing section with modern card styling - Courses browser with year tabs and subject filtering - Conversion-optimized copy an",
+          "lines": [
+            46,
+            57
+          ],
+          "name": "Deliverables",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.930635+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,142 @@
+{
+  "directory": ".planning\\phases",
+  "files": {
+    "01-02-UAT.md": {
+      "hash": "dcad1b7d40ff",
+      "indexed_at": "2026-01-24T22:37:07.929042+00:00",
+      "language": "markdown",
+      "lines": 71,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: At 375px width, no horizontal scrollbar appears. All content fits within viewport. result: pass",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. No Horizontal Scroll",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the Name or Email field in the contact form does NOT cause iOS auto-zoom. Page stays at same zoom level. result: pass",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Form Input No Auto-Zoom",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: All buttons (Start Free Trial, Send Message, nav links) have comfortable tap targets - no accidental mis-taps. result: pass",
+              "lines": [
+                23,
+                26
+              ],
+              "name": "3. Buttons Easily Tappable",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: All text on page is readable at default zoom. No need to pinch-zoom to read anything. result: pass",
+              "lines": [
+                27,
+                30
+              ],
+              "name": "4. Text Readable Without Zoom",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: \"Start Free Trial\" button in hero section is visible immediately on page load without any scrolling. result: pass",
+              "lines": [
+                31,
+                34
+              ],
+              "name": "5. Hero CTA Above Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: After scrolling past the hero section, a sticky bar slides up from the bottom with \"Call\" and \"Book Free Trial\" buttons. result: pass",
+              "lines": [
+                35,
+                38
+              ],
+              "name": "6. Sticky Bar Appears on Scroll",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the phone/Call button in sticky bar opens phone dialer with +61491791447. result: pass",
+              "lines": [
+                39,
+                42
+              ],
+              "name": "7. Click-to-Call Works",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping \"Book Free Trial\" in sticky bar smoothly scrolls to the contact form section. result: pass note: User noted form scroll position cou",
+              "lines": [
+                43,
+                47
+              ],
+              "name": "8. Book Free Trial Scrolls to Form",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: When sticky bar is visible, the floating phone button (bottom-right) moves up so it doesn't overlap the sticky bar. result: pass",
+              "lines": [
+                48,
+                51
+              ],
+              "name": "9. Floating Button Repositions",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            51
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 9 passed: 9 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            52,
+            59
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "User noted two polish items during testing (not test failures):",
+          "lines": [
+            60,
+            68
+          ],
+          "name": "Observations (Non-Blocking)",
+          "type": "section"
+        },
+        {
+          "docstring": "[none - all tests passed]",
+          "lines": [
+            69,
+            72
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.934768+00:00",
+  "version": "1.0"
+}

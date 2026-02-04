@@ -1,0 +1,769 @@
+{
+  "directory": ".planning\\phases\\09-trust-section",
+  "files": {
+    "09-01-PLAN.md": {
+      "hash": "e85662ee88a7",
+      "indexed_at": "2026-01-24T22:37:09.386604+00:00",
+      "language": "markdown",
+      "lines": 486,
+      "symbols": []
+    },
+    "09-01-SUMMARY.md": {
+      "hash": "8216bc8620f0",
+      "indexed_at": "2026-01-24T22:37:09.404551+00:00",
+      "language": "markdown",
+      "lines": 53,
+      "symbols": [
+        {
+          "docstring": "Complete Trust section with tutor profiles, credentials, and parent testimonial.",
+          "lines": [
+            3,
+            6
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Component | Description | |-----------|-------------| | Trust Section HTML | New section after Comparison, before About | | 3 Tutor Profiles | Chris",
+          "lines": [
+            7,
+            18
+          ],
+          "name": "Deliverables",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Description | |------|-------------| | d2ed51d | Create Trust Section HTML | | 9c3ad70 | Add Trust Section CSS | | 0c1d447 | Adjust tutor car",
+          "lines": [
+            19,
+            26
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | |----------|-----------| | Circular headshots (220px) | More personal, fits inline layout | | Cards 400px wide | Keeps 3 tuto",
+          "lines": [
+            27,
+            35
+          ],
+          "name": "Design Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "| Planned | Actual | Reason | |---------|--------|--------| | Square headshots in grid | Circular headshots inline | User feedback - original too larg",
+          "lines": [
+            36,
+            42
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- TRUST-01: Tutor profiles with real photos \u2713 - TRUST-02: Credibility combo (Baulko + 95+ + Med) \u2713 (trifecta badges) - TRUST-03: Parent testimonials w",
+          "lines": [
+            43,
+            50
+          ],
+          "name": "Requirements Coverage",
+          "type": "section"
+        },
+        {
+          "docstring": "None.",
+          "lines": [
+            51,
+            54
+          ],
+          "name": "Issues",
+          "type": "section"
+        }
+      ]
+    },
+    "09-CONTEXT.md": {
+      "hash": "871e77f0a3d6",
+      "indexed_at": "2026-01-24T22:37:09.425277+00:00",
+      "language": "markdown",
+      "lines": 69,
+      "symbols": [
+        {
+          "docstring": "Build credibility through tutor profiles and social proof. Section must drive visitors toward free trial conversion. Includes: tutor profiles with pho",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Show 2-3 tutors (focused showcase, less scrolling) - Real headshots available (professional quality) - All tutors are Baulko graduates \u2014 emphasize t",
+              "lines": [
+                16,
+                21
+              ],
+              "name": "Tutor presentation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Chris Kim**: 97 Maths Ext1, 93 Maths Ext2, 95 Physics, 98th percentile UCAT, Medicine @ Newcastle - **Nathan You**: 95 Maths Ext1, 95 Maths Ext2,",
+              "lines": [
+                22,
+                28
+              ],
+              "name": "Credentials to display",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Parent testimonials with specific score improvements are available (2+) - Research should determine: best format for testimonial display (quote styl",
+              "lines": [
+                29,
+                33
+              ],
+              "name": "Testimonials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- \"Max 6-8 students\" group size must be prominently visible - School-specific matching mentioned (Baulko vs James Ruse formats) - All tutors from Baul",
+              "lines": [
+                34,
+                38
+              ],
+              "name": "Trust signals",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Layout and visual hierarchy (profiles first vs testimonials first) - Card design and styling - How to present UCAT scores (percentile format, promin",
+              "lines": [
+                39,
+                48
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            48
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "- Highest priority is driving free trial form submissions - Comprehensive research needed on trust section best practices for conversion - The \"Baulko",
+          "lines": [
+            49,
+            59
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            60,
+            70
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "09-RESEARCH.md": {
+      "hash": "e097dca2ef4c",
+      "indexed_at": "2026-01-24T22:37:09.452846+00:00",
+      "language": "markdown",
+      "lines": 547,
+      "symbols": [
+        {
+          "docstring": "Phase 9 builds credibility through tutor profiles and social proof, positioned after the Comparison section (Phase 8) which naturally raises the \"why",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                17,
+                34
+              ],
+              "name": "Existing Section Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                35,
+                58
+              ],
+              "name": "Existing Team Section (lines 6009-6073)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                59,
+                79
+              ],
+              "name": "Existing Testimonials Section (lines 6076-6115)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                80,
+                90
+              ],
+              "name": "Available Tutor Images",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            90
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Class | Purpose | Source Lines | |-------|---------|--------------| | `.team-grid` | Grid layout for profile cards | 2324-2329 | | `.team-card` | Pr",
+              "lines": [
+                95,
+                106
+              ],
+              "name": "Core CSS Classes to Reuse",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                107,
+                118
+              ],
+              "name": "Design System Variables",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "No external libraries needed. This phase uses existing CSS patterns.",
+          "lines": [
+            91,
+            118
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                121,
+                162
+              ],
+              "name": "Recommended Section Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                163,
+                186
+              ],
+              "name": "Tutor Card Pattern (Enhanced from existing)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                187,
+                201
+              ],
+              "name": "Group Size Promise Pattern",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                202,
+                219
+              ],
+              "name": "Parent Testimonial Pattern",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                220,
+                235
+              ],
+              "name": "Mobile Responsive Pattern (from existing breakpoints)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            119,
+            235
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Profile grid | Custom flex layout | Existing `.team-grid",
+          "lines": [
+            236,
+            245
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Displaying all 4 tutors creates decision paralysis and dilutes the \"expert\" impression **Why it happens:** Wanting to show everyo",
+              "lines": [
+                248,
+                253
+              ],
+              "name": "Pitfall 1: Too Many Tutors",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** List of scores doesn't communicate the PATTERN (Baulko + 95%+ + Medicine) **Why it happens:** Treating credentials as data, not a",
+              "lines": [
+                254,
+                259
+              ],
+              "name": "Pitfall 2: Generic Credential Lists",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Students say \"tutoring is fun\" but parents want \"my child's grades improved\" **Why it happens:** Easier to get student quotes tha",
+              "lines": [
+                260,
+                265
+              ],
+              "name": "Pitfall 3: Student Testimonials Instead of Parent",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** \"Max 6-8 students\" hidden in paragraph text instead of prominent callout **Why it happens:** Treating it as one of many features",
+              "lines": [
+                266,
+                271
+              ],
+              "name": "Pitfall 4: Burying Group Size",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Not mentioning that tutors match student's school assessment style **Why it happens:** Assuming it's implied **How to avoid:** Ex",
+              "lines": [
+                272,
+                277
+              ],
+              "name": "Pitfall 5: Missing School-Specific Matching",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            246,
+            277
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                280,
+                302
+              ],
+              "name": "Trust Badge (adapted from proof-badge)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                303,
+                336
+              ],
+              "name": "Trifecta Badges",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                337,
+                377
+              ],
+              "name": "Group Size Promise",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                378,
+                416
+              ],
+              "name": "Parent Testimonial (enhanced from existing)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                417,
+                439
+              ],
+              "name": "Tutor Grid (2-3 cards)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            278,
+            439
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "Based on CONTEXT.md credentials, recommended 3 tutors to showcase:",
+          "lines": [
+            440,
+            453
+          ],
+          "name": "Tutor Selection Recommendation",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Option | Rationale | |--------|-----------| | \"Tutors Who've Been There\" | Emphasizes shared experience (Baulko grads) | | \"Your Child's Future Tuto",
+              "lines": [
+                456,
+                464
+              ],
+              "name": "Section Headline Options",
+              "type": "subsection"
+            },
+            {
+              "docstring": "CONTEXT.md confirms parent testimonials with specific score improvements are available. Ideal format:",
+              "lines": [
+                465,
+                475
+              ],
+              "name": "Parent Testimonial Content",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                476,
+                486
+              ],
+              "name": "School-Specific Matching Copy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            454,
+            486
+          ],
+          "name": "Content Recommendations",
+          "type": "section"
+        },
+        {
+          "docstring": "**Claude's Discretion item from CONTEXT.md:** Layout and visual hierarchy (profiles first vs testimonials first)",
+          "lines": [
+            487,
+            499
+          ],
+          "name": "Section Order Recommendation",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Parent testimonial specifics** - What we know: CONTEXT.md says parent testimonials with specific outcomes exist - What's unclear: Exact wording,",
+          "lines": [
+            500,
+            516
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- `C:\\Users\\bskim\\beamacademy-site\\index.html` - Direct file analysis (team CSS lines 2313-2494, section patterns, tutor data lines 6019-6070) - `C:\\U",
+              "lines": [
+                519,
+                524
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [KlientBoost Landing Page Testimonials](https://www.klientboost.com/landing-pages/landing-page-testimonials/) - Testimonial placement best practices",
+              "lines": [
+                525,
+                530
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ScienceDirect Class Size Research](https://www.sciencedirect.com/science/article/abs/pii/S0883035518314095) - Academic support for small group effe",
+              "lines": [
+                531,
+                533
+              ],
+              "name": "Tertiary (LOW confidence - general patterns)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            517,
+            533
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Current state analysis: HIGH - Direct file inspection - CSS patterns: HIGH - Existing code analyzed - Tutor credentials: H",
+          "lines": [
+            534,
+            548
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "09-UAT.md": {
+      "hash": "b774d5ca143a",
+      "indexed_at": "2026-01-24T22:37:09.474726+00:00",
+      "language": "markdown",
+      "lines": 57,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: Trust section appears on the page after the Comparison section and before About/Contact sections. result: pass",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. Trust Section Visible",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Three tutor cards visible (Chris Kim, Nathan You, John Park), each with a circular headshot photo (~220px), name, and role. Cards are approx",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Tutor Profile Cards",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Each tutor has three colored badges - purple \"BHHS Graduate\", green with HSC score (97+), and blue \"Medicine\" badge. Colors are distinct and",
+              "lines": [
+                23,
+                26
+              ],
+              "name": "3. Trifecta Badges",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Each tutor card shows additional credentials/achievements below the badges (e.g., university info, teaching experience). result: pass",
+              "lines": [
+                27,
+                30
+              ],
+              "name": "4. Tutor Credentials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: A testimonial from a parent is visible, mentioning specific score improvement \"68% to 89%\" with attribution. result: pass",
+              "lines": [
+                31,
+                34
+              ],
+              "name": "5. Parent Testimonial",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Specific school names (Baulko, James Ruse, Epping Boys) are mentioned somewhere in the Trust section to show school-specific expertise. resu",
+              "lines": [
+                35,
+                38
+              ],
+              "name": "6. School Names Mentioned",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: The Comparison table includes a row showing \"6-8 students max\" as BEAM's offering versus a larger number for typical tutoring. result: pass",
+              "lines": [
+                39,
+                42
+              ],
+              "name": "7. Comparison Table - Group Size",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: On mobile viewport, tutor cards stack vertically (one per row) and remain readable. No horizontal overflow. result: pass",
+              "lines": [
+                43,
+                46
+              ],
+              "name": "8. Mobile Responsive",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            46
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 8 passed: 8 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "[none yet]",
+          "lines": [
+            55,
+            58
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    },
+    "09-VERIFICATION.md": {
+      "hash": "ba121ea0756a",
+      "indexed_at": "2026-01-24T22:37:09.495724+00:00",
+      "language": "markdown",
+      "lines": 109,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Parent can see 3 tutor profiles with real photos | VERIFIED | Lines 5667-571",
+              "lines": [
+                18,
+                29
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` Trust section HTML | Section with tutor profiles,",
+              "lines": [
+                30,
+                39
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | Trust section | Comparison section | Page flow | WIRED | Lines 5568 (c",
+              "lines": [
+                40,
+                47
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Notes | |-------------|--------|-------| | TRUST-01: Tutor profiles with real photos | SATISFIED | 3 tutors with distinct rea",
+              "lines": [
+                48,
+                57
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None found | - | - | - | - |",
+              "lines": [
+                58,
+                65
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "The following items require human visual verification:",
+              "lines": [
+                66,
+                69
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Open index.html in browser, scroll to Trust section, inspect tutor photos **Expected:** Real photos of Chris, Nathan, John - professional qu",
+              "lines": [
+                70,
+                74
+              ],
+              "name": "1. Tutor Photo Quality",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** View the 3 colored badges per tutor card **Expected:** Purple (BHHS), Green (HSC score), Blue (Medicine) badges clearly readable and visuall",
+              "lines": [
+                75,
+                79
+              ],
+              "name": "2. Trifecta Badge Visual Design",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Check the parent testimonial at bottom of Trust section **Expected:** \"68% to 89%\" should stand out visually (bold, colored) **Why human:**",
+              "lines": [
+                80,
+                84
+              ],
+              "name": "3. Testimonial Visual Prominence",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Resize browser window from desktop to mobile (320px) **Expected:** - Desktop: 3 tutor cards in row (or wrapped if 900px constraint) - Mobile",
+              "lines": [
+                85,
+                93
+              ],
+              "name": "4. Responsive Layout",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            93
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "Phase 9 goal achieved. All 5 requirements (TRUST-01 through TRUST-05) are satisfied:",
+          "lines": [
+            94,
+            110
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.979095+00:00",
+  "version": "1.0"
+}

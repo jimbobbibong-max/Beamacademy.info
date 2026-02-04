@@ -1,0 +1,727 @@
+{
+  "directory": ".planning\\phases\\03-form-optimization",
+  "files": {
+    "03-01-PLAN.md": {
+      "hash": "c2cd738922dc",
+      "indexed_at": "2026-01-24T22:37:08.431952+00:00",
+      "language": "markdown",
+      "lines": 239,
+      "symbols": [
+        {
+          "docstring": "@.planning/phases/03-form-optimization/03-RESEARCH.md @.planning/ROADMAP.md",
+          "lines": [
+            42,
+            54
+          ],
+          "name": "Context",
+          "type": "section"
+        },
+        {
+          "docstring": "<task id=\"1\"> <name>Remove unnecessary form fields</name> <action> In index.html, remove the following elements:",
+          "lines": [
+            55,
+            217
+          ],
+          "name": "Tasks",
+          "type": "section"
+        },
+        {
+          "docstring": "After all tasks complete, verify:",
+          "lines": [
+            218,
+            228
+          ],
+          "name": "Verification",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **FORM-01:** Form has maximum 4 visible fields (Name required, Phone required, Email optional, Year Level optional) 2. **FORM-02:** Inputs have cor",
+          "lines": [
+            229,
+            236
+          ],
+          "name": "Success Criteria",
+          "type": "section"
+        },
+        {
+          "docstring": "After completion, create `.planning/phases/03-form-optimization/03-01-SUMMARY.md`",
+          "lines": [
+            237,
+            240
+          ],
+          "name": "Output",
+          "type": "section"
+        }
+      ]
+    },
+    "03-01-SUMMARY.md": {
+      "hash": "21a361a49314",
+      "indexed_at": "2026-01-24T22:37:08.455084+00:00",
+      "language": "markdown",
+      "lines": 115,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 7 min - **Started:** 2026-01-20T09:57:02Z - **Completed:** 2026-01-20T10:04:29Z - **Tasks:** 4 - **Files modified:** 1",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Removed entire Student Details section (name, email, phone) - Removed Subject dropdown and Message textarea - Made Email and Year Level optional wit",
+          "lines": [
+            55,
+            62
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            63,
+            71
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Form fields reduced, input attributes added, CSS enhanced",
+          "lines": [
+            72,
+            75
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Email optional:** Phone is primary contact for mobile users (faster to provide) - **Year Level optional:** Can be derived from package selection o",
+          "lines": [
+            76,
+            81
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**1. [Rule 3 - Blocking] JavaScript references to removed fields** - **Found during:** Task 1 (Remove form fields) - **Issue:** JavaScript contained r",
+              "lines": [
+                84,
+                98
+              ],
+              "name": "Auto-fixed Issues",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            82,
+            98
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed as written with one expected JavaScript cleanup.",
+          "lines": [
+            99,
+            102
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            103,
+            106
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Form optimized for mobile conversion (4 fields, proper keyboards) - Ready for verification testing - Success criteria FORM-01 through FORM-04 addres",
+          "lines": [
+            107,
+            116
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "03-RESEARCH.md": {
+      "hash": "ab670c359039",
+      "indexed_at": "2026-01-24T22:37:08.482833+00:00",
+      "language": "markdown",
+      "lines": 379,
+      "symbols": [
+        {
+          "docstring": "The current contact form in `index.html` has **10 visible fields** (plus 4 hidden fields and 1 honeypot), far exceeding the target of 3-4 fields. The",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Field | Line | Type | Required | Keep/Remove | |-------|------|------|----------|-------------| | **Hidden: form-name** | 5314 | hidden | - | KEEP (",
+              "lines": [
+                17,
+                41
+              ],
+              "name": "Current Form Fields (index.html:5313-5411)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Field | Current Type | Current Autocomplete | Status | |-------|-------------|---------------------|--------| | parentName | `type=\"text\"` | none |",
+              "lines": [
+                42,
+                56
+              ],
+              "name": "Current Input Types Status (index.html)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                57,
+                73
+              ],
+              "name": "Current Submit Button (index.html:5396-5399)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Sections before form (line numbers):** 1. Hero (4375) - viewport height 2. About (4409) - ~60px padding 3. Courses/Pricing (4445) - substantial cont",
+              "lines": [
+                74,
+                93
+              ],
+              "name": "Form Position Analysis",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            93
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Attribute | Purpose | Why Standard | |-----------|---------|--------------| | `type=\"tel\"` | Numeric phone keyboard | Native HTML5, universal suppor",
+              "lines": [
+                96,
+                107
+              ],
+              "name": "Core (HTML5 Input Attributes)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Attribute | Purpose | When to Use | |-----------|---------|-------------| | `autocapitalize=\"off\"` | Prevent auto-caps | Email fields (iOS especiall",
+              "lines": [
+                108,
+                115
+              ],
+              "name": "Supporting",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Instead of | Could Use | Tradeoff | |------------|-----------|----------| | Removing student fields | Multi-step wizard | Complexity vs simplicity;",
+              "lines": [
+                116,
+                123
+              ],
+              "name": "Alternatives Considered",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            94,
+            123
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                126,
+                185
+              ],
+              "name": "Recommended Form Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Requiring student details upfront:** Collect during follow-up call; reduces friction - **Multiple phone/email fields:** One contact method is suff",
+              "lines": [
+                186,
+                192
+              ],
+              "name": "Anti-Patterns to Avoid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            124,
+            192
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Phone keyboard | Custom JS keyboard detection | `type=\"t",
+          "lines": [
+            193,
+            201
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Removing/renaming fields breaks Netlify form submission **Why it happens:** Netlify Forms requires specific attributes and field",
+              "lines": [
+                204,
+                214
+              ],
+              "name": "Pitfall 1: Breaking Netlify Forms Integration",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** iOS zooms page when focusing inputs with font-size < 16px **Why it happens:** iOS accessibility feature to ensure readable input",
+              "lines": [
+                215,
+                221
+              ],
+              "name": "Pitfall 2: iOS Auto-Zoom on Input Focus",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Package selection flow breaks **Why it happens:** Hidden fields (`package`, `subjects`, `price`) are populated by JS when user se",
+              "lines": [
+                222,
+                228
+              ],
+              "name": "Pitfall 3: Removing Business-Critical Hidden Fields",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** The form has two submit buttons - trial and pay **Why it happens:** Complex JS handles switching between \"Book Free Trial\" and \"P",
+              "lines": [
+                229,
+                238
+              ],
+              "name": "Pitfall 4: Breaking Dual-Mode Form (Trial vs Pay)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            202,
+            238
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                241,
+                253
+              ],
+              "name": "Optimized Phone Input",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                254,
+                267
+              ],
+              "name": "Optimized Email Input",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                268,
+                280
+              ],
+              "name": "Optimized Name Input",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                281,
+                292
+              ],
+              "name": "Mobile-Optimized Submit Button CSS",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            239,
+            292
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "| Old Approach | Current Approach | When Changed | Impact | |--------------|------------------|--------------|--------| | Just `type=\"tel\"` | `type=\"t",
+          "lines": [
+            293,
+            305
+          ],
+          "name": "State of the Art",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [ ] Remove Student Name field (line 5340-5344) - [ ] Remove Student Email field (line 5345-5348) - [ ] Remove Student Phone field (line 5350-5356) -",
+              "lines": [
+                310,
+                319
+              ],
+              "name": "FORM-01: Reduce to 3-4 Fields",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Add `autocomplete=\"name\" autocorrect=\"off\"` to parentName (line 5324) - [ ] Add `autocomplete=\"email\" inputmode=\"email\" autocapitalize=\"off\" aut",
+              "lines": [
+                320,
+                324
+              ],
+              "name": "FORM-02: Add Mobile Keyboard Attributes",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Update button text from \"Book Free Trial\" to \"Book Your Free Trial\" (line 5397) - [ ] Verify min-height is at least 44px (currently satisfied) -",
+              "lines": [
+                325,
+                329
+              ],
+              "name": "FORM-03: Submit Button Enhancement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Verified: Sticky CTA bar (Phase 2) provides 1-tap access - [ ] No additional changes needed",
+              "lines": [
+                330,
+                333
+              ],
+              "name": "FORM-04: Form Reachability",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Keep all hidden fields (form-name, package, subjects, price) - [ ] Keep honeypot field (bot-field) - [ ] Keep both submit buttons (trial + pay)",
+              "lines": [
+                334,
+                340
+              ],
+              "name": "Preservation Requirements",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Based on research, these changes are needed for Phase 3:",
+          "lines": [
+            306,
+            340
+          ],
+          "name": "Implementation Checklist",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Subject dropdown for no-package flow:** - Current: Required when user visits form directly (no package selected) - Question: Remove entirely or k",
+          "lines": [
+            341,
+            352
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- index.html analysis (lines 5313-5411) - Current form structure - index.html analysis (lines 5314-5318) - Hidden fields and spam protection - index.h",
+              "lines": [
+                355,
+                359
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Baymard Institute Touch Keyboard Types](https://baymard.com/labs/touch-keyboard-types) - Input attribute recommendations - [MDN input type=\"tel\"](h",
+              "lines": [
+                360,
+                364
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Multiple CRO studies (Marketo, Baymard) - Field reduction impact - [Mobile Form Best Practices](https://ivyforms.com/blog/mobile-form-best-practices",
+              "lines": [
+                365,
+                369
+              ],
+              "name": "Tertiary (MEDIUM confidence - multiple sources agree)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            353,
+            369
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Current state analysis: HIGH - direct code inspection - Input attributes: HIGH - W3C/MDN documentation - Field reduction r",
+          "lines": [
+            370,
+            380
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "03-UAT.md": {
+      "hash": "8fdf4f099478",
+      "indexed_at": "2026-01-24T22:37:08.501462+00:00",
+      "language": "markdown",
+      "lines": 56,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: Contact form shows exactly 4 fields - Name (required), Phone (required), Email (optional), Year Level (optional). No studentName, Subject, o",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. Form has only 4 fields",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Email and Year Level fields are clearly labeled with \"(optional)\" text so users know they can skip them. result: pass",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Optional field labeling",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the Phone field on a mobile device brings up the numeric keypad (0-9), not the full keyboard. result: pass note: Verified inputmode=",
+              "lines": [
+                23,
+                27
+              ],
+              "name": "3. Phone field shows numeric keypad on mobile",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the Email field on mobile shows a keyboard with the @ symbol easily accessible. result: pass note: Verified inputmode=\"email\" presen",
+              "lines": [
+                28,
+                32
+              ],
+              "name": "4. Email field shows email keyboard on mobile",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: When clicking into form fields, browser offers to autofill from saved information (name, phone, email). Fields auto-populate if you select a",
+              "lines": [
+                33,
+                36
+              ],
+              "name": "5. Browser autofill works",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Submit button has minimum height of 52px, appears bold/prominent, and clearly shows \"Enquire Now\" or similar action text. result: pass obser",
+              "lines": [
+                37,
+                41
+              ],
+              "name": "6. Submit button enhanced",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            41
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 6 passed: 6 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            42,
+            49
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "[none]",
+          "lines": [
+            50,
+            53
+          ],
+          "name": "Gaps",
+          "type": "section"
+        },
+        {
+          "docstring": "- Submit button could be larger for better mobile tap target",
+          "lines": [
+            54,
+            57
+          ],
+          "name": "Observations (Non-Blocking)",
+          "type": "section"
+        }
+      ]
+    },
+    "03-VERIFICATION.md": {
+      "hash": "ade217247b66",
+      "indexed_at": "2026-01-24T22:37:08.525883+00:00",
+      "language": "markdown",
+      "lines": 115,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Form has maximum 4 fields (Name, Phone, Email optional, Year Level optional)",
+              "lines": [
+                28,
+                39
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` form section | 4 visible fields only | VERIFIED |",
+              "lines": [
+                40,
+                49
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | form[name='trial'] | Netlify Forms | hidden input form-name=trial | WI",
+              "lines": [
+                50,
+                57
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Notes | |-------------|--------|-------| | FORM-01: Maximum 4 visible fields | SATISFIED | Name (required), Phone (required),",
+              "lines": [
+                58,
+                66
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | index.html | 1853 | `.team-image-placeholder` CSS class",
+              "lines": [
+                67,
+                75
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "The following items need device testing to fully confirm keyboard behavior:",
+              "lines": [
+                76,
+                79
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** On iPhone or Android device, tap the phone input field **Expected:** Numeric phone keypad appears (not full QWERTY keyboard) **Why human:**",
+              "lines": [
+                80,
+                84
+              ],
+              "name": "1. Phone Keyboard Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** On iPhone or Android device, tap the email input field **Expected:** Email keyboard appears with @ symbol easily accessible **Why human:** `",
+              "lines": [
+                85,
+                89
+              ],
+              "name": "2. Email Keyboard Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** On mobile device (375px width), load page and scroll to contact form **Expected:** Form is reachable within 2-3 scroll gestures from page lo",
+              "lines": [
+                90,
+                94
+              ],
+              "name": "3. Form Scroll Reachability Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Fill in Name and Phone, submit form **Expected:** Redirects to /thank-you, form data captured in Netlify dashboard **Why human:** Requires N",
+              "lines": [
+                95,
+                99
+              ],
+              "name": "4. Form Submission Test",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            26,
+            99
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "All automated verification checks **PASSED**. The form optimization has been correctly implemented:",
+          "lines": [
+            100,
+            116
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.951930+00:00",
+  "version": "1.0"
+}

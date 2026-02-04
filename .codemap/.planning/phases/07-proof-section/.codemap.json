@@ -1,0 +1,676 @@
+{
+  "directory": ".planning\\phases\\07-proof-section",
+  "files": {
+    "07-01-PLAN.md": {
+      "hash": "197905031a6a",
+      "indexed_at": "2026-01-24T22:37:09.194293+00:00",
+      "language": "markdown",
+      "lines": 640,
+      "symbols": []
+    },
+    "07-01-SUMMARY.md": {
+      "hash": "467e3ae9ecf8",
+      "indexed_at": "2026-01-24T22:37:09.213008+00:00",
+      "language": "markdown",
+      "lines": 125,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** ~15 min - **Started:** 2026-01-23 - **Completed:** 2026-01-23 - **Tasks:** 4 (3 auto + 1 checkpoint) - **Files modified:** 1",
+          "lines": [
+            51,
+            58
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- New Proof Section positioned after hero, before about (optimal scroll placement) - 4 document cards in responsive 2x2 grid showing trial deliverable",
+          "lines": [
+            59,
+            68
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            69,
+            79
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Added proof section HTML structure, CSS styles, and document mockups",
+          "lines": [
+            80,
+            83
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Progress Report position:** Top-left for maximum visual impact (per CONTEXT.md) - **CSS mockups:** No images used to preserve LCP performance (0.9",
+          "lines": [
+            84,
+            91
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            92,
+            95
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "None - all CSS patterns followed existing site conventions.",
+          "lines": [
+            96,
+            99
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            100,
+            103
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Proof section complete with all 4 document types visualized - Ready for Phase 8: Comparison Section - Performance baseline maintained (CSS-only, no",
+          "lines": [
+            104,
+            110
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        },
+        {
+          "docstring": "All automated checks passed: - PROOF-01: 4 documents visualized in grid - PROOF-02: \"Yours to Keep\" messaging prominent - PROOF-03: Visual previews vi",
+          "lines": [
+            111,
+            126
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        }
+      ]
+    },
+    "07-CONTEXT.md": {
+      "hash": "f5eda2a621a1",
+      "indexed_at": "2026-01-24T22:37:09.231529+00:00",
+      "language": "markdown",
+      "lines": 77,
+      "symbols": [
+        {
+          "docstring": "Show parents concrete evidence of what they get from ONE free trial \u2014 4 documents visualized with previews, \"yours to keep\" messaging, and topic gap a",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The free trial produces these 4 documents: 1. **Diagnostic Worksheet** \u2014 the actual questions/problems to solve 2. **Answer Key** \u2014 quick answers for",
+              "lines": [
+                16,
+                22
+              ],
+              "name": "The 4 Documents",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Layout:** Hybrid 2x2 grid with expandable detail - All 4 documents visible at once (reinforces \"4 from ONE trial\" message) - Tap/click to expand f",
+              "lines": [
+                23,
+                31
+              ],
+              "name": "Document Presentation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Primary focus:** Documents grid is the visual centerpiece \u2014 \"look at all this\" - **Headline style:** Outcome-focused \u2014 \"See exactly where they're",
+              "lines": [
+                32,
+                36
+              ],
+              "name": "Visual Hierarchy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Key insight is TOPIC gaps, not MCQ vs Written** \u2014 where specifically are they weak? - **Visualization:** Part of the Progress Report mockup itself",
+              "lines": [
+                37,
+                45
+              ],
+              "name": "Topic Gap Insight",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Language:** Explicit \"free trial\" \u2014 \"From ONE free trial\" or similar - **CTA:** Sticky CTA only \u2014 no separate section button (cleaner, less salesy",
+              "lines": [
+                46,
+                49
+              ],
+              "name": "\"Yours to Keep\" Messaging",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Expand behavior (modal/lightbox vs inline expand) \u2014 pick based on mobile UX - Element order within section (headline \u2192 documents \u2192 reassurance, or o",
+              "lines": [
+                50,
+                58
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            58
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "- Progress Report mockup should use the existing `style4_infographic_returning_v4.pdf` template as reference \u2014 purple header, skill growth table, perf",
+          "lines": [
+            59,
+            67
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            68,
+            78
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "07-RESEARCH.md": {
+      "hash": "603da175e2d0",
+      "indexed_at": "2026-01-24T22:37:09.254503+00:00",
+      "language": "markdown",
+      "lines": 627,
+      "symbols": [
+        {
+          "docstring": "This phase creates a new \"Proof Section\" immediately after the hero, showing parents the 4 documents they receive from ONE free trial. The existing co",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                17,
+                30
+              ],
+              "name": "Page Structure (Section Order)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Colors (CSS Variables):**",
+              "lines": [
+                31,
+                104
+              ],
+              "name": "Design System Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            104
+          ],
+          "name": "Current Implementation",
+          "type": "section"
+        },
+        {
+          "docstring": "The actual Progress Report is generated via LaTeX in `beam-portal/netlify/functions/view-maths-stats-pdf.js`. Key visual elements to replicate in mock",
+          "lines": [
+            105,
+            128
+          ],
+          "name": "Progress Report Template Reference",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                131,
+                162
+              ],
+              "name": "Recommended Section Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Two visual styles needed:**",
+              "lines": [
+                163,
+                202
+              ],
+              "name": "Document Card Pattern",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                203,
+                220
+              ],
+              "name": "Grid Layout",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Recommendation: Inline expand** for mobile UX reasons.",
+              "lines": [
+                221,
+                245
+              ],
+              "name": "Expand Behavior (Claude's Discretion)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            129,
+            245
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Visual style:** White paper with math problems **Content to show:** - BEAM Academy header - \"Year 11 Advanced Mathematics - Diagnostic\" - Question l",
+              "lines": [
+                248,
+                264
+              ],
+              "name": "1. Diagnostic Worksheet",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Visual style:** Simple list format **Content to show:** - \"Answer Key\" - Q1-Q20 format with short answers - Clean, scannable layout",
+              "lines": [
+                265,
+                280
+              ],
+              "name": "2. Answer Key",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Visual style:** Paper with detailed working **Content to show:** - \"Worked Solutions\" - One question expanded with step-by-step - Mathematical notat",
+              "lines": [
+                281,
+                300
+              ],
+              "name": "3. Worked Solutions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Visual style:** Dashboard/infographic (adapt hero mockup pattern) **Content to show:** - Purple header with \"Progress Report\" - Large score: 87% (or",
+              "lines": [
+                301,
+                316
+              ],
+              "name": "4. Progress Report",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            246,
+            316
+          ],
+          "name": "The 4 Document Mockups",
+          "type": "section"
+        },
+        {
+          "docstring": "**Placement options (Claude's discretion):**",
+          "lines": [
+            317,
+            350
+          ],
+          "name": "\"Yours to Keep\" Messaging",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Document preview thumbnails | Custom canvas/SVG renderin",
+          "lines": [
+            351,
+            360
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Spending time making mockups pixel-perfect to real documents **Why it happens:** Perfectionism, wanting authenticity **How to avo",
+              "lines": [
+                363,
+                368
+              ],
+              "name": "Pitfall 1: Overly detailed mockups",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** 2x2 grid squishes on mobile instead of stacking **Why it happens:** Desktop-first testing **How to avoid:** Add `grid-template-co",
+              "lines": [
+                369,
+                374
+              ],
+              "name": "Pitfall 2: Forgetting mobile grid collapse",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Screen readers announce mockup placeholder text **Why it happens:** Not using aria-hidden on decorative elements **How to avoid:*",
+              "lines": [
+                375,
+                380
+              ],
+              "name": "Pitfall 3: Inaccessible decorative content",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Using actual images/screenshots for document previews **Why it happens:** Seems easier than CSS mockups **How to avoid:** CSS-onl",
+              "lines": [
+                381,
+                386
+              ],
+              "name": "Pitfall 4: Heavy images for mockups",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** \"Yours to keep\" buried below fold or hard to find **Why it happens:** Focusing on documents over messaging **How to avoid:** Badg",
+              "lines": [
+                387,
+                392
+              ],
+              "name": "Pitfall 5: Lost messaging hierarchy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            361,
+            392
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                395,
+                419
+              ],
+              "name": "Section Container (from existing patterns)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                420,
+                463
+              ],
+              "name": "Document Card Base Style",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                464,
+                507
+              ],
+              "name": "Progress Report Mockup (adapt from hero)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                508,
+                549
+              ],
+              "name": "Paper Document Mockup",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                550,
+                571
+              ],
+              "name": "Responsive Grid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            393,
+            571
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "Based on [WCAG 2.2 guidelines](https://developer.mozilla.org/en-US/docs/Web/Accessibility) and [modern accessibility patterns](https://medium.com/desi",
+          "lines": [
+            572,
+            581
+          ],
+          "name": "Accessibility Considerations",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Expand interaction on desktop** - What we know: Mobile should use inline expand - What's unclear: Should desktop have expand at all, or is thumbn",
+          "lines": [
+            582,
+            598
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- `C:\\Users\\bskim\\beamacademy-site\\index.html` - Direct file analysis (hero mockup, section patterns, CSS variables) - `C:\\Users\\bskim\\beamacademy-sit",
+              "lines": [
+                601,
+                605
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- `C:\\Users\\bskim\\beam-portal\\netlify\\functions\\view-maths-stats-pdf.js` - Progress Report LaTeX template structure",
+              "lines": [
+                606,
+                608
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Frontend Design Patterns 2026](https://www.netguru.com/blog/frontend-design-patterns) - Component patterns - [Modern Frontend Accessibility Guide](",
+              "lines": [
+                609,
+                613
+              ],
+              "name": "Tertiary (LOW confidence - general patterns)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            599,
+            613
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Design system: HIGH - Direct analysis of existing CSS - Section structure: HIGH - Existing patterns documented - Document",
+          "lines": [
+            614,
+            628
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "07-VERIFICATION.md": {
+      "hash": "458fb025833c",
+      "indexed_at": "2026-01-24T22:37:09.272374+00:00",
+      "language": "markdown",
+      "lines": 114,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Parent sees 4 distinct document types at a glance | VERIFIED | Lines 5034-51",
+              "lines": [
+                17,
+                27
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` | Proof section with document grid | EXISTS + SUB",
+              "lines": [
+                28,
+                33
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | proof-section HTML | CSS variables | var(--purple-*), var(--gray-*) |",
+              "lines": [
+                34,
+                40
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Evidence | |-------------|--------|----------| | PROOF-01: 4 documents from ONE trial visualized | SATISFIED | 4 document-car",
+              "lines": [
+                41,
+                49
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None found | - | - | - | - |",
+              "lines": [
+                50,
+                57
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Criterion | Status | Evidence | |-----------|--------|----------| | 1. Parent can see all 4 document types visually | PASS | 4 distinct cards with C",
+              "lines": [
+                58,
+                66
+              ],
+              "name": "Success Criteria Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Breakpoint | CSS Present | Behavior | |------------|-------------|----------| | 768px | VERIFIED (lines 3667-3688) | Grid stacks to 1 column, reduce",
+              "lines": [
+                67,
+                72
+              ],
+              "name": "Mobile Responsiveness",
+              "type": "subsection"
+            },
+            {
+              "docstring": "These items need human visual confirmation:",
+              "lines": [
+                73,
+                76
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Open http://localhost:8080, scroll past hero **Expected:** Proof section visible immediately after hero with 2x2 document grid **Why human:*",
+              "lines": [
+                77,
+                81
+              ],
+              "name": "1. Visual Appearance",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Check all 4 document mockups are visually distinguishable **Expected:** Progress Report (dark dashboard), Worksheet/Key/Solutions (white pap",
+              "lines": [
+                82,
+                86
+              ],
+              "name": "2. Mockup Readability",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Resize to <768px width **Expected:** Grid stacks to single column, badge still readable **Why human:** Layout stacking behavior requires vis",
+              "lines": [
+                87,
+                91
+              ],
+              "name": "3. Mobile Layout",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Desktop hover over document cards **Expected:** Cards lift with shadow transition **Why human:** Animation smoothness is subjective",
+              "lines": [
+                92,
+                96
+              ],
+              "name": "4. Hover Effects",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            96
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "All automated verification checks passed. The proof section:",
+          "lines": [
+            97,
+            115
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.970888+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,770 @@
+{
+  "directory": ".planning\\phases\\10-support-section",
+  "files": {
+    "10-01-PLAN.md": {
+      "hash": "b6ee72943152",
+      "indexed_at": "2026-01-24T22:37:09.518710+00:00",
+      "language": "markdown",
+      "lines": 426,
+      "symbols": [
+        {
+          "docstring": "- [ ] Support section HTML exists (grep for \"support-section\") - [ ] CSS classes defined (grep for \".discord-mockup\") - [ ] Timestamps visible in mock",
+          "lines": [
+            404,
+            409
+          ],
+          "name": "Automated Checks",
+          "type": "section"
+        },
+        {
+          "docstring": "- [ ] Discord mockup looks authentic (dark theme, proper colors) - [ ] \"Stuck at 9pm? Help by 10am.\" headline is prominent - [ ] Student and tutor mes",
+          "lines": [
+            410,
+            427
+          ],
+          "name": "Visual Verification (human)",
+          "type": "section"
+        }
+      ]
+    },
+    "10-01-SUMMARY.md": {
+      "hash": "4576e323d9d2",
+      "indexed_at": "2026-01-24T22:37:09.538841+00:00",
+      "language": "markdown",
+      "lines": 67,
+      "symbols": [
+        {
+          "docstring": "Discord 24/7 support section with CSS mockup showing 33-min tutor response time.",
+          "lines": [
+            3,
+            6
+          ],
+          "name": "One-liner",
+          "type": "section"
+        },
+        {
+          "docstring": "Complete Support section featuring Discord chat mockup with visible timestamps proving fast tutor response times, placed after Trust section to comple",
+          "lines": [
+            7,
+            10
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Component | Description | |-----------|-------------| | Support Section HTML | New section with Discord mockup and feature list | | Discord Mockup |",
+          "lines": [
+            11,
+            21
+          ],
+          "name": "Deliverables",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Type | Description | |------|------|-------------| | b79e4a9 | feat | Support Section HTML structure | | d5423e9 | style | Support Section CS",
+          "lines": [
+            22,
+            28
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | |----------|-----------| | Pure CSS mockup (no screenshot) | Faster loads, consistent quality, no privacy concerns | | Chris",
+          "lines": [
+            29,
+            39
+          ],
+          "name": "Design Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            40,
+            43
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- SUPP-01: Discord 24/7 support callout section exists with badge and headline - SUPP-02: \"Stuck at 9pm? Help by 10am.\" framing is the main headline -",
+          "lines": [
+            44,
+            49
+          ],
+          "name": "Requirements Coverage",
+          "type": "section"
+        },
+        {
+          "docstring": "- Discord colors: #36393F (chat bg), #2F3136 (header), #5865F2 (blurple) - Section uses `var(--gray-50)` background to create visual break - Desktop b",
+          "lines": [
+            50,
+            56
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html`: +342 lines (95 HTML, 247 CSS)",
+          "lines": [
+            57,
+            60
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "~10 minutes",
+          "lines": [
+            61,
+            64
+          ],
+          "name": "Duration",
+          "type": "section"
+        },
+        {
+          "docstring": "None.",
+          "lines": [
+            65,
+            68
+          ],
+          "name": "Issues",
+          "type": "section"
+        }
+      ]
+    },
+    "10-CONTEXT.md": {
+      "hash": "c406c1f1501b",
+      "indexed_at": "2026-01-24T22:37:09.555399+00:00",
+      "language": "markdown",
+      "lines": 64,
+      "symbols": [
+        {
+          "docstring": "Differentiate BEAM with 24/7 Discord support between classes. This section communicates ongoing support availability as a key differentiator. The sect",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "User has delegated all implementation decisions to research and planning phases:",
+              "lines": [
+                16,
+                42
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            42
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "No specific requirements \u2014 open to standard approaches.",
+          "lines": [
+            43,
+            54
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope.",
+          "lines": [
+            55,
+            65
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "10-RESEARCH.md": {
+      "hash": "0090d4640d39",
+      "indexed_at": "2026-01-24T22:37:09.581477+00:00",
+      "language": "markdown",
+      "lines": 639,
+      "symbols": [
+        {
+          "docstring": "Phase 10 creates a dedicated Support Section that differentiates BEAM through 24/7 Discord availability. The existing codebase already mentions Discor",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                17,
+                30
+              ],
+              "name": "Page Structure (Section Order)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Location | Current Copy | Line | |----------|--------------|------| | Comparison Table | \"Discord support - stuck at 9pm, **help by 10am**\" | 5599 |",
+              "lines": [
+                31,
+                39
+              ],
+              "name": "Existing Discord Mentions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Portal Mockup (lines 801-919, 5388-5435):** - Dark background: `var(--gray-900)` (#18181b) - macOS-style header with dots - Rows with labels an",
+              "lines": [
+                40,
+                53
+              ],
+              "name": "Existing Mockup Patterns to Reuse",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            53
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Class | Purpose | Source | |-------|---------|--------| | `.section-header` | Standard section header | Various | | `.section-title` | Heading typog",
+              "lines": [
+                58,
+                67
+              ],
+              "name": "Core CSS Classes to Reuse",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                68,
+                85
+              ],
+              "name": "Design System Variables",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "No external libraries needed. This phase uses existing CSS patterns and creates new Discord-specific styling.",
+          "lines": [
+            54,
+            85
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                88,
+                167
+              ],
+              "name": "Recommended Section Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Based on research from [wc-discord-message](https://github.com/Danktuary/wc-discord-message) and [CodePen Discord Mockup](https://codepen.io/odensc/pe",
+              "lines": [
+                168,
+                307
+              ],
+              "name": "Discord Mockup CSS Pattern",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Based on [Flowbite Device Mockups](https://flowbite.com/docs/components/device-mockups/), if a phone frame is desired:",
+              "lines": [
+                308,
+                350
+              ],
+              "name": "Phone Frame Option (Alternative)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Following the existing pattern: - Proof Section: `var(--purple-50)` (light purple) - Comparison Section: `var(--white)` - Trust Section: `var(--white)",
+              "lines": [
+                351,
+                366
+              ],
+              "name": "Section Background Strategy",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                367,
+                416
+              ],
+              "name": "Supporting Features Grid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            86,
+            416
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Discord styling | Real Discord screenshot | Pure CSS moc",
+          "lines": [
+            417,
+            428
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** CSS mockup uses wrong colors, spacing, or fonts that feel \"off\" **Why it happens:** Guessing Discord's styling instead of researc",
+              "lines": [
+                431,
+                436
+              ],
+              "name": "Pitfall 1: Making the Discord Screenshot Look Fake",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** \"We have Discord support\" instead of \"Stuck at 9pm? Help by 10am.\" **Why it happens:** Describing feature instead of benefit **Ho",
+              "lines": [
+                437,
+                442
+              ],
+              "name": "Pitfall 2: Generic Support Messaging",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Mockup shows conversation but no timestamps **Why it happens:** Focusing on content over proof **How to avoid:** Include visible",
+              "lines": [
+                443,
+                448
+              ],
+              "name": "Pitfall 3: Missing Response Time Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Showing 5+ messages to prove activity **Why it happens:** Wanting to show depth of support **How to avoid:** Two messages is enou",
+              "lines": [
+                449,
+                454
+              ],
+              "name": "Pitfall 4: Overly Long Conversation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Tutor avatar is generic/placeholder **Why it happens:** Not connecting to Trust section **How to avoid:** Use actual tutor photo",
+              "lines": [
+                455,
+                460
+              ],
+              "name": "Pitfall 5: Anonymous Tutor Response",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Support section after Courses/Pricing **Why it happens:** Treating it as supplementary feature **How to avoid:** Place after Trus",
+              "lines": [
+                461,
+                466
+              ],
+              "name": "Pitfall 6: Section Placement Too Late",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            429,
+            466
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                469,
+                491
+              ],
+              "name": "Support Badge (adapt from trust-badge)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                492,
+                499
+              ],
+              "name": "Discord Icon SVG",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Based on CONTEXT.md guidance to show math help:",
+              "lines": [
+                500,
+                519
+              ],
+              "name": "Message Exchange Content Recommendation",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                520,
+                546
+              ],
+              "name": "Responsive Grid Layout",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            467,
+            546
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Option | Rationale | |--------|-----------| | \"Stuck at 9pm? Help by 10am.\" | Parent concern + concrete promise (per CONTEXT.md) | | \"Never Let Your",
+              "lines": [
+                549,
+                557
+              ],
+              "name": "Headline Options",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                558,
+                570
+              ],
+              "name": "Supporting Copy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Responses within hours, not days** - differentiates from email support 2. **Private server - BEAM students only** - security, exclusivity 3. **Sa",
+              "lines": [
+                571,
+                575
+              ],
+              "name": "Feature Points",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            547,
+            575
+          ],
+          "name": "Messaging Recommendations",
+          "type": "section"
+        },
+        {
+          "docstring": "**Position: After Trust Section, Before About**",
+          "lines": [
+            576,
+            590
+          ],
+          "name": "Section Placement Rationale",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Real vs. Representative Exchange** - What we know: Need to show realistic help exchange - What's unclear: Should we use a real conversation from",
+          "lines": [
+            591,
+            607
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- `C:\\Users\\bskim\\beamacademy-site\\index.html` - Direct file analysis (existing mockup patterns lines 801-919, section structure, Discord mentions) -",
+              "lines": [
+                610,
+                615
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [wc-discord-message GitHub](https://github.com/Danktuary/wc-discord-message) - Discord message component structure and styling patterns - [CodePen D",
+              "lines": [
+                616,
+                622
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Instapage Tutoring Landing Pages](https://instapage.com/en/functionality/create-your-landing-page-for-tutoring-centers) - Tutoring page section rec",
+              "lines": [
+                623,
+                626
+              ],
+              "name": "Tertiary (LOW confidence - general patterns)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            608,
+            626
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - CSS patterns: HIGH - Existing codebase patterns analyzed, Discord colors verified - Section structure: HIGH - Follows esta",
+          "lines": [
+            627,
+            640
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "10-UAT.md": {
+      "hash": "51c714ef030a",
+      "indexed_at": "2026-01-24T22:37:09.600570+00:00",
+      "language": "markdown",
+      "lines": 57,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: Support section appears after Trust section with headline \"Stuck at 9pm? Help by 10am.\" result: pass",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. Support Section Visibility",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Purple pill badge shows \"24/7 Discord Community\" with Discord icon result: pass",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Discord Badge",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Dark-themed Discord chat mockup with #maths-help channel header, looks authentic result: pass",
+              "lines": [
+                23,
+                26
+              ],
+              "name": "3. Discord Mockup Appearance",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Student \"Sarah - Class of 2026\" message visible at 9:14 PM asking about integration by parts result: pass",
+              "lines": [
+                27,
+                30
+              ],
+              "name": "4. Student Message",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tutor \"Chris\" response visible at 9:47 PM with real photo (same as Trust section), Tutor badge result: pass",
+              "lines": [
+                31,
+                34
+              ],
+              "name": "5. Tutor Response",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: 33-minute gap between student question (9:14 PM) and tutor answer (9:47 PM) clearly visible result: pass",
+              "lines": [
+                35,
+                38
+              ],
+              "name": "6. Response Time Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Three feature points visible: fast responses, private server, same tutors result: pass",
+              "lines": [
+                39,
+                42
+              ],
+              "name": "7. Support Features",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: On mobile (375px), section stacks vertically - mockup above features, all readable result: pass",
+              "lines": [
+                43,
+                46
+              ],
+              "name": "8. Mobile Layout",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            46
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 8 passed: 8 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "[none]",
+          "lines": [
+            55,
+            58
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    },
+    "10-VERIFICATION.md": {
+      "hash": "055c44894dd9",
+      "indexed_at": "2026-01-24T22:37:09.625674+00:00",
+      "language": "markdown",
+      "lines": 89,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Parent sees a Discord support section with visible headline | VERIFIED | Sec",
+              "lines": [
+                18,
+                28
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` | Support section HTML and CSS | VERIFIED | +342",
+              "lines": [
+                29,
+                37
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | Support section | Trust section | chris.jpg tutor photo | VERIFIED |",
+              "lines": [
+                38,
+                44
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Evidence | |-------------|--------|----------| | SUPP-01: Discord 24/7 support callout section | SATISFIED | Section with bad",
+              "lines": [
+                45,
+                52
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | (none) | - | - | - | No blocking anti-patterns found in",
+              "lines": [
+                53,
+                58
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "**Test:** View the Discord mockup on desktop and mobile **Expected:** Dark theme looks authentic, messages are readable, tutor avatar shows Chris's ph",
+                  "lines": [
+                    61,
+                    65
+                  ],
+                  "name": "1. Visual Authenticity Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Scroll through page from Trust to Support to About **Expected:** Natural progression from \"who teaches\" to \"how they help between classes\" *",
+                  "lines": [
+                    66,
+                    70
+                  ],
+                  "name": "2. Section Flow Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** View section on 375px width device **Expected:** Mockup and features stack vertically, text remains readable **Why human:** Responsive layou",
+                  "lines": [
+                    71,
+                    75
+                  ],
+                  "name": "3. Mobile Layout Test",
+                  "type": "subsubsection"
+                }
+              ],
+              "lines": [
+                59,
+                75
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "All automated checks passed. The Support section is fully implemented with:",
+              "lines": [
+                76,
+                90
+              ],
+              "name": "Verification Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            90
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.982919+00:00",
+  "version": "1.0"
+}

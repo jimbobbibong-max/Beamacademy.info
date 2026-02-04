@@ -1,0 +1,1607 @@
+{
+  "directory": ".planning\\phases\\05-performance",
+  "files": {
+    ".continue-here.md": {
+      "hash": "299f92010f5f",
+      "indexed_at": "2026-01-24T22:37:08.727222+00:00",
+      "language": "markdown",
+      "lines": 84,
+      "symbols": [
+        {
+          "docstring": "- Diagnosed state mismatch: planning docs said Phase 5 done, but code was reverted - Re-executed all 4 Phase 5 plans using safe sed commands: - 05-01:",
+          "lines": [
+            16,
+            27
+          ],
+          "name": "This Session",
+          "type": "section"
+        },
+        {
+          "docstring": "- Phase 1: Emergency Viewport Fix \u2713 - Phase 2: CTA Placement \u2713 - Phase 3: Form Optimization \u2713 - Phase 4: Content Structure \u2713 - Phase 5: Performance \u2713",
+          "lines": [
+            28,
+            36
+          ],
+          "name": "Full v1 Milestone",
+          "type": "section"
+        },
+        {
+          "lines": [
+            37,
+            38
+          ],
+          "name": "v1 Complete - No remaining work for this milestone",
+          "type": "section"
+        },
+        {
+          "docstring": "2 todos in `.planning/todos/pending/`: - Fix skip to main content button styling - Improve form scroll anchor position",
+          "lines": [
+            39,
+            43
+          ],
+          "name": "Pending Polish (deferred)",
+          "type": "section"
+        },
+        {
+          "docstring": "- Multi-step form wizard - A/B testing framework - Exit-intent popup - Google Reviews widget - Video testimonial </remaining_work>",
+          "lines": [
+            44,
+            85
+          ],
+          "name": "v2 Ideas (from PROJECT.md)",
+          "type": "section"
+        }
+      ]
+    },
+    "05-01-PLAN.md": {
+      "hash": "905b15a2f4f7",
+      "indexed_at": "2026-01-24T22:37:08.754045+00:00",
+      "language": "markdown",
+      "lines": 135,
+      "symbols": [
+        {
+          "docstring": "Add explicit dimensions to all images to prevent CLS, and optimize the hero image (LCP element) with preload and fetchpriority to achieve LCP under 2.",
+          "lines": [
+            30,
+            33
+          ],
+          "name": "Goal",
+          "type": "section"
+        },
+        {
+          "docstring": "@.planning/phases/05-performance/05-RESEARCH.md",
+          "lines": [
+            34,
+            54
+          ],
+          "name": "Context",
+          "type": "section"
+        },
+        {
+          "docstring": "<task id=\"1\"> <description> Get exact dimensions for all images using file inspection, then add width and height attributes to every img element in in",
+          "lines": [
+            55,
+            104
+          ],
+          "name": "Tasks",
+          "type": "section"
+        },
+        {
+          "docstring": "After implementation, run these checks:",
+          "lines": [
+            105,
+            116
+          ],
+          "name": "Verification",
+          "type": "section"
+        },
+        {
+          "docstring": "- [ ] All 8 img elements have explicit width and height attributes - [ ] Hero image has `fetchpriority=\"high\"` attribute - [ ] Preload hint exists for",
+          "lines": [
+            117,
+            126
+          ],
+          "name": "Success Criteria",
+          "type": "section"
+        },
+        {
+          "docstring": "Derived from phase goal \"Page loads fast and displays stable layout on mobile\":",
+          "lines": [
+            127,
+            136
+          ],
+          "name": "must_haves",
+          "type": "section"
+        }
+      ]
+    },
+    "05-01-SUMMARY.md": {
+      "hash": "026dec6c5613",
+      "indexed_at": "2026-01-24T22:37:08.778142+00:00",
+      "language": "markdown",
+      "lines": 102,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "Added explicit width and height attributes to all 8 images in index.html:",
+              "lines": [
+                38,
+                52
+              ],
+              "name": "Task 1: Image Dimensions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Added `<link rel=\"preload\" as=\"image\" href=\"images/classroom-teaching.jpg\">` in head - Added `fetchpriority=\"high\"` to hero img tag",
+              "lines": [
+                53,
+                58
+              ],
+              "name": "Task 2: Hero Image Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Added `<link rel=\"preconnect\" href=\"https://www.googletagmanager.com\">` - Placed before font preconnects for priority",
+              "lines": [
+                59,
+                64
+              ],
+              "name": "Task 3: Google Tag Manager Preconnect",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            36,
+            64
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] All 8 img elements have explicit width and height attributes - [x] Hero image has `fetchpriority=\"high\"` attribute - [x] Preload hint exists for",
+          "lines": [
+            65,
+            74
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            75,
+            78
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **logo-star.png is actually WebP**: The file header shows it's a WebP image with .png extension. Dimensions: 854x788 (from RIFF header).",
+          "lines": [
+            79,
+            86
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Description | |------|-------------| | 96a4c55 | perf(05-01): add width/height attributes to all images | | a876f19 | perf(05-01): add preloa",
+          "lines": [
+            87,
+            94
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "**Blockers:** None",
+          "lines": [
+            95,
+            103
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "05-02-PLAN.md": {
+      "hash": "62c640e4c5c6",
+      "indexed_at": "2026-01-24T22:37:08.816928+00:00",
+      "language": "markdown",
+      "lines": 125,
+      "symbols": []
+    },
+    "05-02-SUMMARY.md": {
+      "hash": "06c5db25c002",
+      "indexed_at": "2026-01-24T22:37:08.847635+00:00",
+      "language": "markdown",
+      "lines": 101,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Before (line 121):**",
+              "lines": [
+                39,
+                51
+              ],
+              "name": "Implementation Details",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. `rel=\"preload\" as=\"style\"` - Browser fetches CSS without blocking render 2. `onload=\"this.onload=null;this.rel='stylesheet'\"` - Activates styleshee",
+              "lines": [
+                52,
+                58
+              ],
+              "name": "How It Works",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Existing preconnect hints at lines 118-119 (connection warmup) - `display=swap` in URL (ensures text visible during font load)",
+              "lines": [
+                59,
+                63
+              ],
+              "name": "Preserved",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Eliminated render-blocking Google Fonts CSS by implementing async loading pattern:",
+          "lines": [
+            35,
+            63
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Check | Result | |-------|--------| | Blocking font stylesheet outside noscript | None found (PASS) | | Async preload pattern present | Line 121 (PA",
+          "lines": [
+            64,
+            72
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "| File | Change | |------|--------| | index.html | Replaced blocking font stylesheet with async pattern |",
+          "lines": [
+            73,
+            78
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Message | |------|---------| | f3ea6a3 | perf(05-02): convert Google Fonts to async loading |",
+          "lines": [
+            79,
+            84
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            85,
+            88
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- **LCP improvement:** Font CSS no longer blocks render, allowing paint earlier - **Lighthouse:** \"Eliminate render-blocking resources\" should show 0",
+          "lines": [
+            89,
+            95
+          ],
+          "name": "Expected Impact",
+          "type": "section"
+        },
+        {
+          "docstring": "Run Lighthouse audit to confirm: 1. LCP under 2.5s target 2. No render-blocking resources warning 3. Font loading works correctly (brief FOUT acceptab",
+          "lines": [
+            96,
+            102
+          ],
+          "name": "Next Steps",
+          "type": "section"
+        }
+      ]
+    },
+    "05-03-PLAN.md": {
+      "hash": "7a6d04ee7cb2",
+      "indexed_at": "2026-01-24T22:37:08.867142+00:00",
+      "language": "markdown",
+      "lines": 134,
+      "symbols": []
+    },
+    "05-03-SUMMARY.md": {
+      "hash": "34b441927bdc",
+      "indexed_at": "2026-01-24T22:37:08.885669+00:00",
+      "language": "markdown",
+      "lines": 96,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 3 min - **Started:** 2026-01-20 - **Completed:** 2026-01-20 - **Tasks:** 2/2 - **Files modified:** 1",
+          "lines": [
+            42,
+            49
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Fixed JavaScript syntax error that caused console error on page load - Replaced aria-hidden with inert attribute for proper accessibility - Sticky C",
+          "lines": [
+            50,
+            55
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            56,
+            62
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Fixed JS syntax error (line 5800) and replaced aria-hidden with inert attribute (lines 5626, 5915)",
+          "lines": [
+            63,
+            66
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- **INERT-001:** Used `inert` attribute instead of `aria-hidden` for sticky CTA bar. The `inert` attribute is the correct semantic way to hide interac",
+          "lines": [
+            67,
+            73
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            74,
+            77
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- File locking issue required using sed via bash instead of direct file edit - PowerShell command failed due to file being locked by another process -",
+          "lines": [
+            78,
+            83
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            84,
+            87
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- All Phase 5 performance gaps now closed - Ready for final verification with Lighthouse audits - No blockers for project completion",
+          "lines": [
+            88,
+            97
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "05-04-PLAN.md": {
+      "hash": "cee9c80f0bfe",
+      "indexed_at": "2026-01-24T22:37:08.903792+00:00",
+      "language": "markdown",
+      "lines": 138,
+      "symbols": []
+    },
+    "05-04-SUMMARY.md": {
+      "hash": "99b61ee17160",
+      "indexed_at": "2026-01-24T22:37:08.924732+00:00",
+      "language": "markdown",
+      "lines": 92,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 4 min - **Started:** 2026-01-20T08:00:49Z - **Completed:** 2026-01-20T08:04:34Z - **Tasks:** 2 - **Files modified:** 1",
+          "lines": [
+            45,
+            52
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Added `loading=\"lazy\"` to defer logo image download - Added `decoding=\"async\"` for non-blocking decode on separate thread - Updated width/height att",
+          "lines": [
+            53,
+            58
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            59,
+            65
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Added lazy loading and updated dimensions for both header and footer logo images",
+          "lines": [
+            66,
+            68
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- **LOGO-LAZY-001:** Used lazy loading for logo despite being visible in header. Rationale: The logo is decorative (aria-hidden=\"true\"), small (36x36",
+          "lines": [
+            69,
+            71
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            72,
+            75
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Edit tool kept failing with \"file unexpectedly modified\" error - resolved by using sed via bash command instead",
+          "lines": [
+            76,
+            78
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            79,
+            82
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Logo images now load lazily, reducing interference with LCP hero image - Remaining LCP improvements (beyond 2.5s target) require: - WebP image conve",
+          "lines": [
+            83,
+            93
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "05-CONTEXT.md": {
+      "hash": "fcfe3b1c7706",
+      "indexed_at": "2026-01-24T22:37:08.946153+00:00",
+      "language": "markdown",
+      "lines": 70,
+      "symbols": [
+        {
+          "docstring": "Optimize page load speed and visual stability on mobile. This phase covers image optimization, critical CSS, lazy loading, and layout shift prevention",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "User requested comprehensive research and best-practice implementation for all technical areas:",
+              "lines": [
+                16,
+                48
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            48
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "No specific requirements \u2014 open to standard best-practice approaches.",
+          "lines": [
+            49,
+            60
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            61,
+            71
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "05-RESEARCH.md": {
+      "hash": "b8fe2e47fc37",
+      "indexed_at": "2026-01-24T22:37:08.977468+00:00",
+      "language": "markdown",
+      "lines": 697,
+      "symbols": [
+        {
+          "docstring": "This research covers web performance optimization for a single-page marketing site targeting mobile Google Ads traffic. The primary goals are achievin",
+          "lines": [
+            7,
+            18
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Metric | Good | Needs Improvement | Poor | |--------|------|-------------------|------| | LCP | <= 2.5s | 2.5s - 4.0s | > 4.0s | | CLS | <= 0.1 | 0.",
+              "lines": [
+                21,
+                30
+              ],
+              "name": "Core Web Vitals Thresholds",
+              "type": "subsection"
+            },
+            {
+              "docstring": "LCP consists of four components: - **Time to First Byte (TTFB):** ~40% - Server response time - **Resource Load Delay:** <10% - Time before LCP resour",
+              "lines": [
+                31,
+                40
+              ],
+              "name": "LCP Breakdown (per web.dev)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **INP replaced FID** - Interaction to Next Paint is now the responsiveness metric 2. **fetchpriority widely supported** - All modern browsers suppo",
+              "lines": [
+                41,
+                50
+              ],
+              "name": "Key Industry Changes for 2025",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            19,
+            50
+          ],
+          "name": "1. Current Best Practices (2025-2026)",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Aspect | Current State | Assessment | |--------|---------------|------------| | HTML size | ~230KB | Large but acceptable for single-file architectu",
+              "lines": [
+                53,
+                63
+              ],
+              "name": "Current Site Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Image | Size | Location | Current Loading | |-------|------|----------|-----------------| | classroom-teaching.jpg | 48KB | Hero (LCP candidate) | `",
+              "lines": [
+                64,
+                76
+              ],
+              "name": "Images in Current Site",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Keep inline CSS** - Already optimal for critical path 2. **Add image dimensions** - Prevents CLS, browsers calculate aspect ratio 3. **Optimize L",
+              "lines": [
+                77,
+                86
+              ],
+              "name": "Recommended Approach",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            51,
+            86
+          ],
+          "name": "2. Technical Approach for This Project",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Format | Use Case | Browser Support | File Size vs JPEG | |--------|----------|-----------------|-------------------| | AVIF | Photos (hero, classro",
+              "lines": [
+                89,
+                98
+              ],
+              "name": "Format Recommendations",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                99,
+                121
+              ],
+              "name": "Implementation Pattern",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Native browser behavior (Chrome/Chromium):** - 4G connections: Load when 1,250px from viewport - 3G and slower: Load when 2,500px from viewport",
+              "lines": [
+                122,
+                134
+              ],
+              "name": "Lazy Loading Strategy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Section | Images | Treatment | |---------|--------|-----------| | Hero | classroom-teaching.jpg | `loading=\"eager\"`, `fetchpriority=\"high\"`, preload",
+              "lines": [
+                135,
+                143
+              ],
+              "name": "Above-Fold vs Below-Fold Treatment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "For this site, **no placeholders needed** because: 1. Images are reasonably small (13-66KB) 2. Explicit dimensions prevent layout shift 3. Site target",
+              "lines": [
+                144,
+                153
+              ],
+              "name": "Placeholder Strategy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            87,
+            153
+          ],
+          "name": "3. Image Optimization Strategy",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The site uses **inline CSS in the `<head>`** - this is already the critical CSS pattern. No external CSS files block rendering.",
+              "lines": [
+                156,
+                164
+              ],
+              "name": "Current State: Already Optimal",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Aspect | Status | Action | |--------|--------|--------| | CSS location | Inline in `<head>` | No change needed | | CSS size | ~4KB (estimated) | Acc",
+              "lines": [
+                165,
+                173
+              ],
+              "name": "Considerations",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**No changes to CSS loading strategy.** The current inline approach is optimal for a single-page site. Extracting \"critical\" CSS from already-inline C",
+              "lines": [
+                174,
+                179
+              ],
+              "name": "Recommendation",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            154,
+            179
+          ],
+          "name": "4. Critical CSS Implementation",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                182,
+                189
+              ],
+              "name": "Current Implementation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Aspect | Current | Assessment | |--------|---------|------------| | Preconnect | Present for both domains | Correct | | Font display | `display=swap",
+              "lines": [
+                190,
+                197
+              ],
+              "name": "Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Option A: Use `font-display: optional` (Recommended for performance)**",
+              "lines": [
+                198,
+                218
+              ],
+              "name": "Recommended Improvements",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Current fonts load many weights. Consider reducing:",
+              "lines": [
+                219,
+                234
+              ],
+              "name": "Font Weight Optimization",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            180,
+            234
+          ],
+          "name": "5. Font Loading Strategy",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Images without dimensions** - Main issue on this site 2. **Font loading** - Minimal with current preconnect 3. **Dynamic content injection** - No",
+              "lines": [
+                237,
+                243
+              ],
+              "name": "Primary CLS Causes",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**The fix:** Add `width` and `height` attributes to all `<img>` elements.",
+              "lines": [
+                244,
+                274
+              ],
+              "name": "Solution: Explicit Image Dimensions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Image | Dimensions (WxH) | Aspect Ratio | |-------|------------------|--------------| | classroom-teaching.jpg | Get from file | ~3:2 | | classroom-",
+              "lines": [
+                275,
+                288
+              ],
+              "name": "Image Dimensions to Add",
+              "type": "subsection"
+            },
+            {
+              "docstring": "For more complex responsive scenarios:",
+              "lines": [
+                289,
+                303
+              ],
+              "name": "CSS aspect-ratio Alternative",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            235,
+            303
+          ],
+          "name": "6. Layout Stability Techniques",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                306,
+                312
+              ],
+              "name": "Current Resource Hints",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                313,
+                329
+              ],
+              "name": "Recommended Additions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Optimal loading sequence for this site:",
+              "lines": [
+                330,
+                341
+              ],
+              "name": "Resource Priority Order",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Resource | Priority | Attribute | |----------|----------|-----------| | LCP image | High | `fetchpriority=\"high\"` | | Above-fold content | Default |",
+              "lines": [
+                342,
+                354
+              ],
+              "name": "fetchpriority Usage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Current scripts: - Google Ads gtag: `async` (correct) - Inline JavaScript: At end of `<body>` (correct)",
+              "lines": [
+                355,
+                364
+              ],
+              "name": "Script Loading Strategy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            304,
+            364
+          ],
+          "name": "7. Resource Hints and Loading Order",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Tool | Type | Use For | |------|------|---------| | Lighthouse (DevTools) | Lab | Development testing, before/after comparisons | | PageSpeed Insigh",
+              "lines": [
+                367,
+                376
+              ],
+              "name": "Testing Tools",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Before optimization:** - Run Lighthouse on mobile emulation (4G throttling) - Record baseline LCP, CLS, Performance score - Screenshot the Lighth",
+              "lines": [
+                377,
+                393
+              ],
+              "name": "Testing Protocol",
+              "type": "subsection"
+            },
+            {
+              "docstring": "For consistent testing: - Device: Mobile - Throttling: Simulated Slow 4G, 4x CPU Slowdown - Screen: 412x823 (Moto G Power)",
+              "lines": [
+                394,
+                400
+              ],
+              "name": "Lighthouse Mobile Settings",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Metric | Target | Current (estimate) | |--------|--------|-------------------| | LCP | < 2.5s | Unknown - measure baseline | | CLS | < 0.1 | Likely",
+              "lines": [
+                401,
+                409
+              ],
+              "name": "Key Metrics to Track",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Starting Lighthouse 12.7 (June 2025), multiple CLS-related audits combine into \"CLS culprits insight.\" The tool will identify specific elements causin",
+              "lines": [
+                410,
+                415
+              ],
+              "name": "2025 Lighthouse Updates",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            365,
+            415
+          ],
+          "name": "8. Measurement and Verification",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Risk:** Incorrect width/height values cause stretched/distorted images",
+              "lines": [
+                418,
+                426
+              ],
+              "name": "Risk 1: Image Dimension Accuracy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Risk:** WebP versions look different from originals",
+              "lines": [
+                427,
+                435
+              ],
+              "name": "Risk 2: WebP Generation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Risk:** `font-display: optional` may cause system font to show on slow connections",
+              "lines": [
+                436,
+                444
+              ],
+              "name": "Risk 3: Font Loading Tradeoffs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Risk:** Preloading too many resources wastes bandwidth",
+              "lines": [
+                445,
+                453
+              ],
+              "name": "Risk 4: Preload Overuse",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Risk:** Lighthouse scores vary between runs",
+              "lines": [
+                454,
+                462
+              ],
+              "name": "Risk 5: Measurement Variability",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Image dimensions break existing CSS layout** - Test responsive behavior 2. **WebP images don't generate correctly** - Have fallback plan (keep JP",
+              "lines": [
+                463,
+                471
+              ],
+              "name": "Things That Could Go Wrong",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            416,
+            471
+          ],
+          "name": "9. Risks and Considerations",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "This project can achieve all performance goals with **native browser features**:",
+              "lines": [
+                474,
+                484
+              ],
+              "name": "No Additional Libraries Needed",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Tool | Purpose | When to Use | |------|---------|-------------| | squoosh.app | WebP conversion | Manual, one-time | | sharp (Node.js) | Automated W",
+              "lines": [
+                485,
+                494
+              ],
+              "name": "Tools for Image Optimization (Build Time)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            472,
+            494
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Lazy loading | IntersectionObserver script | `loading=\"l",
+          "lines": [
+            495,
+            503
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Hero image loads late, LCP score tanks **Why it happens:** Developers apply `loading=\"lazy\"` to all images **How to avoid:** Expl",
+              "lines": [
+                506,
+                512
+              ],
+              "name": "Pitfall 1: Lazy Loading the LCP Image",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Page jumps during load, CLS score fails **Why it happens:** Images load without reserved space **How to avoid:** Always add `widt",
+              "lines": [
+                513,
+                519
+              ],
+              "name": "Pitfall 2: Missing Image Dimensions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Critical resources delayed, overall slower **Why it happens:** Too many preload hints compete for bandwidth **How to avoid:** Onl",
+              "lines": [
+                520,
+                526
+              ],
+              "name": "Pitfall 3: Preloading Non-Critical Resources",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Good desktop scores, poor mobile **Why it happens:** Testing only on fast desktop connections **How to avoid:** Always test with",
+              "lines": [
+                527,
+                533
+              ],
+              "name": "Pitfall 4: Ignoring Mobile Viewport",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Text visibly resizes when fonts load **Why it happens:** Fallback font has different metrics than custom font **How to avoid:** U",
+              "lines": [
+                534,
+                540
+              ],
+              "name": "Pitfall 5: Font Loading Layout Shifts",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            504,
+            540
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                543,
+                562
+              ],
+              "name": "Complete LCP Image Implementation",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                563,
+                572
+              ],
+              "name": "Lazy-Loaded Image with Dimensions",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                573,
+                583
+              ],
+              "name": "Optimized Google Fonts Loading",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                584,
+                593
+              ],
+              "name": "Resource Hint Block (Complete)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            541,
+            593
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "| Old Approach | Current Approach | When Changed | Impact | |--------------|------------------|--------------|--------| | Custom lazy loading JS | Nat",
+          "lines": [
+            594,
+            608
+          ],
+          "name": "State of the Art",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What we know:** Images exist, approximate sizes listed **What's unclear:** Exact pixel dimensions for each image **Recommendation:** Run `identify`",
+              "lines": [
+                611,
+                616
+              ],
+              "name": "1. Exact Image Dimensions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What we know:** Site structure and content **What's unclear:** Baseline performance metrics **Recommendation:** Run Lighthouse before starting to es",
+              "lines": [
+                617,
+                622
+              ],
+              "name": "2. Current Lighthouse Score",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What we know:** WebP typically 30% smaller at similar quality **What's unclear:** Optimal quality setting for these specific images **Recommendation",
+              "lines": [
+                623,
+                628
+              ],
+              "name": "3. WebP Conversion Quality",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            609,
+            628
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [web.dev - Optimize LCP](https://web.dev/articles/optimize-lcp) - LCP breakdown and optimization strategies - [web.dev - Optimize CLS](https://web.d",
+              "lines": [
+                631,
+                638
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [NitroPack - Core Web Vitals Strategy](https://nitropack.io/blog/core-web-vitals-strategy/) - 2025 optimization overview - [DebugBear - Resource Hin",
+              "lines": [
+                639,
+                644
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Various search results on specific implementation details - Used for context only",
+              "lines": [
+                645,
+                647
+              ],
+              "name": "Tertiary (LOW confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            629,
+            647
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Standard stack: HIGH - Native browser features, well-documented - Architecture patterns: HIGH - Based on official web.dev",
+          "lines": [
+            648,
+            661
+          ],
+          "name": "Metadata",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **The site's inline CSS is already optimal** for critical rendering path - no CSS loading changes needed 2. **Missing image dimensions is the prima",
+              "lines": [
+                667,
+                674
+              ],
+              "name": "Key Findings",
+              "type": "subsection"
+            },
+            {
+              "docstring": "`C:/Users/bskim/beamacademy-site/.planning/phases/05-performance/05-RESEARCH.md`",
+              "lines": [
+                675,
+                678
+              ],
+              "name": "File Created",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Area | Level | Reason | |------|-------|--------| | Standard Stack | HIGH | Native browser features, no libraries needed | | Architecture | HIGH | B",
+              "lines": [
+                679,
+                688
+              ],
+              "name": "Confidence Assessment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. Exact image dimensions (get during implementation) 2. Baseline Lighthouse score (measure before starting) 3. Optimal WebP quality setting (test dur",
+              "lines": [
+                689,
+                694
+              ],
+              "name": "Open Questions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Research complete. Planner can now create PLAN.md files.",
+              "lines": [
+                695,
+                698
+              ],
+              "name": "Ready for Planning",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "**Phase:** 5 - Performance **Confidence:** HIGH",
+          "lines": [
+            662,
+            698
+          ],
+          "name": "RESEARCH COMPLETE",
+          "type": "section"
+        }
+      ]
+    },
+    "05-UAT.md": {
+      "hash": "ca561c395c69",
+      "indexed_at": "2026-01-24T22:37:09.000768+00:00",
+      "language": "markdown",
+      "lines": 94,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: Hard refresh on mobile. Images load without causing content jumps \u2014 text/buttons below images don't shift position. result: pass",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. No Layout Shift During Image Load",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: On hard refresh, the hero image (classroom photo) appears promptly \u2014 not last or noticeably delayed compared to text. result: pass",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Hero Image Loads Quickly",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Run Lighthouse mobile audit (Chrome DevTools > Lighthouse > Mobile). LCP metric shows green (under 2.5 seconds). result: pass (re-tested) no",
+              "lines": [
+                23,
+                27
+              ],
+              "name": "3. Lighthouse LCP Under 2.5s",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: In same Lighthouse audit, CLS (Cumulative Layout Shift) metric shows green (under 0.1). result: pass notes: \"CLS is 0.014 - excellent\"",
+              "lines": [
+                28,
+                32
+              ],
+              "name": "4. Lighthouse CLS Under 0.1",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: In Lighthouse audit \"Opportunities\" section, no \"Eliminate render-blocking resources\" warning appears (or shows 0 items). result: pass notes",
+              "lines": [
+                33,
+                37
+              ],
+              "name": "5. No Render-Blocking Resources",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Browser console shows no JavaScript errors. result: pass (re-tested) notes: \"Fixed escaped backslash in mobile menu JS + Physics icon missin",
+              "lines": [
+                38,
+                42
+              ],
+              "name": "6. No Console Errors",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Elements with aria-hidden=true should not contain focusable elements. result: pass (re-tested) notes: \"Changed from aria-hidden to inert att",
+              "lines": [
+                43,
+                47
+              ],
+              "name": "7. Accessibility - No focusable children in aria-hidden",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            47
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 7 passed: 7 issues: 0 (all resolved) pending: 0 skipped: 0",
+          "lines": [
+            48,
+            55
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Issues found: 3 (LCP 3.2s, JS error, aria-hidden violation) - Gap closure plans created: 05-03, 05-04",
+              "lines": [
+                58,
+                61
+              ],
+              "name": "First Test (2026-01-20 18:30)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- LCP: 0.9s (was 3.2s) \u2713 - CLS: 0.014 \u2713 - Performance Score: 88/100 - JS errors: None (fixed escaped backslash + Physics icon quote) - Accessibility:",
+              "lines": [
+                62,
+                70
+              ],
+              "name": "Re-Test After Gap Closure (2026-01-20 20:15)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            56,
+            70
+          ],
+          "name": "Re-Test History",
+          "type": "section"
+        },
+        {
+          "docstring": "**From latest Lighthouse (88 Performance):** - Accessibility score: 88/100 - Some contrast issues - Some course-icons have aria-hidden with focusable",
+          "lines": [
+            71,
+            85
+          ],
+          "name": "Observations (Non-Blocking)",
+          "type": "section"
+        },
+        {
+          "docstring": "[All gaps closed by plans 05-03 and 05-04]",
+          "lines": [
+            86,
+            95
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    },
+    "05-VERIFICATION.md": {
+      "hash": "3e422cfa804e",
+      "indexed_at": "2026-01-24T22:37:09.019493+00:00",
+      "language": "markdown",
+      "lines": 177,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Criterion | Status | Evidence | |---|-----------|--------|----------| | 1 | Images load lazily below the fold; above-fold images optimized | VER",
+              "lines": [
+                32,
+                39
+              ],
+              "name": "Success Criteria from ROADMAP.md",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | All images have explicit width and height attributes | VERIFIED | 8/8 img ta",
+              "lines": [
+                40,
+                53
+              ],
+              "name": "Observable Truths (Must-Haves)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            30,
+            53
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | index.html | Image dimensions | VERIFIED | All 8 img tags have",
+          "lines": [
+            54,
+            64
+          ],
+          "name": "Required Artifacts",
+          "type": "section"
+        },
+        {
+          "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | head | images/classroom-teaching.jpg | preload link | VERIFIED | Line",
+          "lines": [
+            65,
+            76
+          ],
+          "name": "Key Link Verification",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                79,
+                91
+              ],
+              "name": "Image Implementation (All 8 Images)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                92,
+                102
+              ],
+              "name": "Resource Hints (Head Section)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "HTML (Line 5626):",
+              "lines": [
+                103,
+                114
+              ],
+              "name": "Sticky CTA Bar (Accessibility Fix)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Line 5800:",
+              "lines": [
+                115,
+                121
+              ],
+              "name": "JavaScript Fix (Mobile Menu)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            77,
+            121
+          ],
+          "name": "Verification Evidence",
+          "type": "section"
+        },
+        {
+          "docstring": "None detected. All implementations are complete and properly wired.",
+          "lines": [
+            122,
+            125
+          ],
+          "name": "Anti-Patterns Found",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Test:** Open Chrome DevTools > Lighthouse > Run audit with Mobile device and Performance category **Expected:** LCP (Largest Contentful Paint) under",
+              "lines": [
+                128,
+                133
+              ],
+              "name": "1. Lighthouse Mobile LCP Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** In Lighthouse report, check Opportunities section **Expected:** Eliminate render-blocking resources shows 0 items or does not appear **Why h",
+              "lines": [
+                134,
+                139
+              ],
+              "name": "2. Render-Blocking Resources Check",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Open browser DevTools Console (F12), hard refresh page (Ctrl+Shift+R) **Expected:** No JavaScript errors **Why human:** Console requires bro",
+              "lines": [
+                140,
+                145
+              ],
+              "name": "3. Console Error Check",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Test:** Hard refresh on mobile viewport, observe page load **Expected:** No layout shifts; images load into reserved space; may see brief font flash",
+              "lines": [
+                146,
+                151
+              ],
+              "name": "4. Visual Layout Stability Test",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            126,
+            151
+          ],
+          "name": "Human Verification Required",
+          "type": "section"
+        },
+        {
+          "docstring": "All 4 plans for Phase 5 have been executed:",
+          "lines": [
+            152,
+            162
+          ],
+          "name": "Plans Executed",
+          "type": "section"
+        },
+        {
+          "docstring": "The following cannot be addressed within the static HTML, no build system constraint:",
+          "lines": [
+            163,
+            178
+          ],
+          "name": "Remaining Limitations",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.960571+00:00",
+  "version": "1.0"
+}

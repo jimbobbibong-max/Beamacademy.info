@@ -1,0 +1,2046 @@
+{
+  "directory": "",
+  "files": {
+    "404.html": {
+      "hash": "cc28cf6e2d05",
+      "indexed_at": "2026-01-24T22:36:41.606451+00:00",
+      "language": "html",
+      "lines": 146,
+      "symbols": []
+    },
+    "beamacademy-index.html": {
+      "hash": "f688a9ffa70d",
+      "indexed_at": "2026-01-24T22:36:42.412540+00:00",
+      "language": "html",
+      "lines": 7901,
+      "symbols": [
+        {
+          "lines": [
+            5609,
+            5630
+          ],
+          "name": "#nav",
+          "signature": "<nav id=\"nav\" class=\"nav\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            5633,
+            5641
+          ],
+          "name": "#mobile-nav",
+          "signature": "<div id=\"mobile-nav\" class=\"mobile-nav\">",
+          "type": "id"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                5645,
+                5716
+              ],
+              "name": "#home",
+              "signature": "<section id=\"home\" class=\"hero\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5723,
+                        5723
+                      ],
+                      "name": "#proof-title",
+                      "signature": "<h2 id=\"proof-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5721,
+                    5725
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5719,
+                5851
+              ],
+              "name": "#proof",
+              "signature": "<section id=\"proof\" class=\"proof-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5857,
+                        5857
+                      ],
+                      "name": "#comparison-title",
+                      "signature": "<h2 id=\"comparison-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5856,
+                    5859
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5854,
+                5943
+              ],
+              "name": "#comparison",
+              "signature": "<section id=\"comparison\" class=\"comparison-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5957,
+                        5957
+                      ],
+                      "name": "#trust-title",
+                      "signature": "<h2 id=\"trust-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5949,
+                    5959
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5963,
+                    5979
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5982,
+                    5997
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6000,
+                    6015
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6018,
+                    6033
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6039,
+                    6050
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6052,
+                    6063
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial student-testimonial\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6065,
+                    6076
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial student-testimonial\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5947,
+                6089
+              ],
+              "name": "#trust",
+              "signature": "<section id=\"trust\" class=\"trust-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6099,
+                        6099
+                      ],
+                      "name": "#support-title",
+                      "signature": "<h2 id=\"support-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6092,
+                    6104
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6090,
+                6182
+              ],
+              "name": "#support",
+              "signature": "<section id=\"support\" class=\"support-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "lines": [
+                    6198,
+                    6198
+                  ],
+                  "name": "#about-title",
+                  "signature": "<h2 id=\"about-title\">",
+                  "type": "id"
+                }
+              ],
+              "lines": [
+                6184,
+                6217
+              ],
+              "name": "#about",
+              "signature": "<section id=\"about\" class=\"about\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6224,
+                        6224
+                      ],
+                      "name": "#courses-title",
+                      "signature": "<h2 id=\"courses-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6222,
+                    6229
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6279,
+                    6297
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6299,
+                    6318
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6320,
+                    6339
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6369,
+                    6383
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6386,
+                    6401
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6404,
+                    6418
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6421,
+                    6435
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6438,
+                    6453
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6456,
+                    6470
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6473,
+                    6487
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6490,
+                    6504
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6507,
+                    6521
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6524,
+                    6538
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6541,
+                    6555
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6558,
+                    6572
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6575,
+                    6589
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6592,
+                    6606
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6609,
+                    6623
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6626,
+                    6640
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6643,
+                    6657
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6660,
+                    6674
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6677,
+                    6691
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6694,
+                    6708
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6711,
+                    6725
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6728,
+                    6742
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6220,
+                6752
+              ],
+              "name": "#courses",
+              "signature": "<section id=\"courses\" class=\"courses-pricing\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6759,
+                        6759
+                      ],
+                      "name": "#faq-title",
+                      "signature": "<h2 id=\"faq-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6757,
+                    6760
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6755,
+                6798
+              ],
+              "name": "#faq",
+              "signature": "<section id=\"faq\" class=\"faq\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "lines": [
+                    6806,
+                    6806
+                  ],
+                  "name": "#contact-title",
+                  "signature": "<h2 id=\"contact-title\">",
+                  "type": "id"
+                },
+                {
+                  "lines": [
+                    6839,
+                    6842
+                  ],
+                  "name": "#defaultFormState",
+                  "signature": "<div id=\"defaultFormState\">",
+                  "type": "id"
+                },
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6852,
+                        6852
+                      ],
+                      "name": "#summaryTier",
+                      "signature": "<div id=\"summaryTier\" class=\"summary-tier\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6853,
+                        6853
+                      ],
+                      "name": "#summaryPackage",
+                      "signature": "<div id=\"summaryPackage\" class=\"summary-package\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6854,
+                        6858
+                      ],
+                      "name": "#summarySubjects",
+                      "signature": "<div id=\"summarySubjects\" class=\"summary-subjects\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6861,
+                        6861
+                      ],
+                      "name": "#summaryPrice",
+                      "signature": "<span id=\"summaryPrice\" class=\"summary-price\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6873,
+                            6876
+                          ],
+                          "name": "#btnNewStudent",
+                          "signature": "<button id=\"btnNewStudent\" class=\"student-type-btn active\" type=\"button\">",
+                          "type": "id"
+                        },
+                        {
+                          "lines": [
+                            6877,
+                            6880
+                          ],
+                          "name": "#btnExistingStudent",
+                          "signature": "<button id=\"btnExistingStudent\" class=\"student-type-btn\" type=\"button\">",
+                          "type": "id"
+                        },
+                        {
+                          "lines": [
+                            6884,
+                            6891
+                          ],
+                          "name": "#newStudentPath",
+                          "signature": "<div id=\"newStudentPath\" class=\"student-path active\">",
+                          "type": "id"
+                        },
+                        {
+                          "children": [
+                            {
+                              "lines": [
+                                6903,
+                                6903
+                              ],
+                              "name": "#originalPrice",
+                              "signature": "<span id=\"originalPrice\" class=\"original-price\">",
+                              "type": "id"
+                            },
+                            {
+                              "lines": [
+                                6905,
+                                6905
+                              ],
+                              "name": "#discountedPrice",
+                              "signature": "<span id=\"discountedPrice\" class=\"discounted-price\">",
+                              "type": "id"
+                            }
+                          ],
+                          "lines": [
+                            6894,
+                            6908
+                          ],
+                          "name": "#existingStudentPath",
+                          "signature": "<div id=\"existingStudentPath\" class=\"student-path\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6870,
+                        6909
+                      ],
+                      "name": "#paymentChoice",
+                      "signature": "<div id=\"paymentChoice\" class=\"payment-choice\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6845,
+                    6910
+                  ],
+                  "name": "#packageSummary",
+                  "signature": "<div id=\"packageSummary\" class=\"package-summary\">",
+                  "type": "id"
+                },
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6914,
+                        6915
+                      ],
+                      "name": "#hiddenPackage",
+                      "signature": "<input id=\"hiddenPackage\" name=\"package\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6915,
+                        6916
+                      ],
+                      "name": "#hiddenSubjects",
+                      "signature": "<input id=\"hiddenSubjects\" name=\"subjects\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6916,
+                        6917
+                      ],
+                      "name": "#hiddenPrice",
+                      "signature": "<input id=\"hiddenPrice\" name=\"price\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6923,
+                        6924
+                      ],
+                      "name": "#parentName",
+                      "signature": "<input id=\"parentName\" class=\"form-input\" name=\"parentName\" type=\"text\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6927,
+                        6928
+                      ],
+                      "name": "#parentEmail",
+                      "signature": "<input id=\"parentEmail\" class=\"form-input\" name=\"parentEmail\" type=\"email\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6933,
+                        6934
+                      ],
+                      "name": "#parentPhone",
+                      "signature": "<input id=\"parentPhone\" class=\"form-input\" name=\"parentPhone\" type=\"tel\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6942,
+                            6950
+                          ],
+                          "name": "#yearLevel",
+                          "signature": "<select id=\"yearLevel\" class=\"form-select\" name=\"yearLevel\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6939,
+                        6952
+                      ],
+                      "name": "#manualSelectionRow",
+                      "signature": "<div id=\"manualSelectionRow\" class=\"form-row\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6956,
+                            6956
+                          ],
+                          "name": "#submitBtnText",
+                          "signature": "<span id=\"submitBtnText\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6955,
+                        6958
+                      ],
+                      "name": "#trialSubmitBtn",
+                      "signature": "<button id=\"trialSubmitBtn\" class=\"btn btn-primary form-submit btn-trial\" type=\"submit\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6960,
+                        6963
+                      ],
+                      "name": "#paySubmitBtn",
+                      "signature": "<button id=\"paySubmitBtn\" class=\"btn btn-primary form-submit btn-pay\" type=\"button\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6965,
+                        6965
+                      ],
+                      "name": "#trialNote",
+                      "signature": "<p id=\"trialNote\" class=\"form-note\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6967,
+                        6970
+                      ],
+                      "name": "#stripeBadge",
+                      "signature": "<div id=\"stripeBadge\" class=\"stripe-badge\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6912,
+                    6971
+                  ],
+                  "name": "<form.contact-form>",
+                  "signature": "<form class=\"contact-form\" name=\"trial\" action=\"/thank-you\" method=\"POST\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6802,
+                6975
+              ],
+              "name": "#contact",
+              "signature": "<section id=\"contact\" class=\"contact\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "lines": [
+                    6980,
+                    6980
+                  ],
+                  "name": "#cta-title",
+                  "signature": "<h2 id=\"cta-title\">",
+                  "type": "id"
+                }
+              ],
+              "lines": [
+                6978,
+                6984
+              ],
+              "name": "<section.cta>",
+              "signature": "<section class=\"cta\">",
+              "type": "element"
+            },
+            {
+              "lines": [
+                6988,
+                6996
+              ],
+              "name": "#sticky-cta-bar",
+              "signature": "<div id=\"sticky-cta-bar\" class=\"sticky-cta-bar\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            5643,
+            6997
+          ],
+          "name": "#main-content",
+          "signature": "<main id=\"main-content\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            7008,
+            7059
+          ],
+          "name": "<footer.footer>",
+          "signature": "<footer class=\"footer\">",
+          "type": "element"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                7068,
+                7068
+              ],
+              "name": "#modalTierBadge",
+              "signature": "<span id=\"modalTierBadge\" class=\"modal-badge\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7070,
+                7070
+              ],
+              "name": "#modalSubtitle",
+              "signature": "<p id=\"modalSubtitle\" class=\"modal-subtitle\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7074,
+                7074
+              ],
+              "name": "#modalPrice",
+              "signature": "<span id=\"modalPrice\" class=\"modal-price\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7078,
+                7080
+              ],
+              "name": "#modalSubjectsContainer",
+              "signature": "<div id=\"modalSubjectsContainer\" class=\"modal-subjects\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7082,
+                7082
+              ],
+              "name": "#selectionCount",
+              "signature": "<p id=\"selectionCount\" class=\"modal-selection-count\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7084,
+                7086
+              ],
+              "name": "#modalCta",
+              "signature": "<button id=\"modalCta\" class=\"modal-cta\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            7062,
+            7090
+          ],
+          "name": "#packageModal",
+          "signature": "<div id=\"packageModal\" class=\"package-modal\">",
+          "type": "id"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                7097,
+                7097
+              ],
+              "name": "#policyModalTitle",
+              "signature": "<h2 id=\"policyModalTitle\" class=\"policy-title\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                7098,
+                7100
+              ],
+              "name": "#policyModalContent",
+              "signature": "<div id=\"policyModalContent\" class=\"policy-content\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            7093,
+            7102
+          ],
+          "name": "#policyModal",
+          "signature": "<div id=\"policyModal\" class=\"policy-modal\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            7878,
+            7898
+          ],
+          "name": "#allAccessModal",
+          "signature": "<div id=\"allAccessModal\" class=\"package-modal\">",
+          "type": "id"
+        }
+      ]
+    },
+    "index.html": {
+      "hash": "8de18a66bf33",
+      "indexed_at": "2026-01-24T22:36:43.159086+00:00",
+      "language": "html",
+      "lines": 7678,
+      "symbols": [
+        {
+          "lines": [
+            5481,
+            5501
+          ],
+          "name": "#nav",
+          "signature": "<nav id=\"nav\" class=\"nav\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            5504,
+            5511
+          ],
+          "name": "#mobile-nav",
+          "signature": "<div id=\"mobile-nav\" class=\"mobile-nav\">",
+          "type": "id"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                5515,
+                5586
+              ],
+              "name": "#home",
+              "signature": "<section id=\"home\" class=\"hero\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5593,
+                        5593
+                      ],
+                      "name": "#proof-title",
+                      "signature": "<h2 id=\"proof-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5591,
+                    5595
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5589,
+                5721
+              ],
+              "name": "#proof",
+              "signature": "<section id=\"proof\" class=\"proof-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5727,
+                        5727
+                      ],
+                      "name": "#comparison-title",
+                      "signature": "<h2 id=\"comparison-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5726,
+                    5729
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5724,
+                5812
+              ],
+              "name": "#comparison",
+              "signature": "<section id=\"comparison\" class=\"comparison-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5825,
+                        5825
+                      ],
+                      "name": "#trust-title",
+                      "signature": "<h2 id=\"trust-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5817,
+                    5827
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5831,
+                    5847
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5850,
+                    5865
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5868,
+                    5883
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5886,
+                    5901
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5904,
+                    5921
+                  ],
+                  "name": "<article.tutor-card>",
+                  "signature": "<article class=\"tutor-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5927,
+                    5938
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5940,
+                    5951
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial student-testimonial\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    5953,
+                    5964
+                  ],
+                  "name": "<article.trust-testimonial>",
+                  "signature": "<article class=\"trust-testimonial student-testimonial\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5815,
+                5976
+              ],
+              "name": "#trust",
+              "signature": "<section id=\"trust\" class=\"trust-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        5986,
+                        5986
+                      ],
+                      "name": "#support-title",
+                      "signature": "<h2 id=\"support-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    5979,
+                    5991
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                5977,
+                6036
+              ],
+              "name": "#support",
+              "signature": "<section id=\"support\" class=\"support-section\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6042,
+                        6042
+                      ],
+                      "name": "#courses-title",
+                      "signature": "<h2 id=\"courses-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6040,
+                    6047
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6072,
+                    6090
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6092,
+                    6111
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6113,
+                    6132
+                  ],
+                  "name": "<article.pricing-tier-new>",
+                  "signature": "<article class=\"pricing-tier-new\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6161,
+                    6175
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6178,
+                    6193
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6196,
+                    6210
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6213,
+                    6227
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6230,
+                    6245
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6248,
+                    6262
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6265,
+                    6279
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6282,
+                    6296
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6299,
+                    6313
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6316,
+                    6330
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6333,
+                    6347
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6350,
+                    6364
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6367,
+                    6381
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6384,
+                    6398
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6401,
+                    6415
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6418,
+                    6432
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6435,
+                    6449
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6452,
+                    6466
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6469,
+                    6483
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6486,
+                    6500
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6503,
+                    6517
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                },
+                {
+                  "lines": [
+                    6520,
+                    6534
+                  ],
+                  "name": "<article.course-card>",
+                  "signature": "<article class=\"course-card\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6038,
+                6544
+              ],
+              "name": "#courses",
+              "signature": "<section id=\"courses\" class=\"courses-pricing\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6551,
+                        6551
+                      ],
+                      "name": "#faq-title",
+                      "signature": "<h2 id=\"faq-title\" class=\"section-title\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6549,
+                    6552
+                  ],
+                  "name": "<header.section-header>",
+                  "signature": "<header class=\"section-header\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6547,
+                6590
+              ],
+              "name": "#faq",
+              "signature": "<section id=\"faq\" class=\"faq\">",
+              "type": "id"
+            },
+            {
+              "children": [
+                {
+                  "lines": [
+                    6597,
+                    6597
+                  ],
+                  "name": "#contact-title",
+                  "signature": "<h2 id=\"contact-title\">",
+                  "type": "id"
+                },
+                {
+                  "lines": [
+                    6630,
+                    6633
+                  ],
+                  "name": "#defaultFormState",
+                  "signature": "<div id=\"defaultFormState\">",
+                  "type": "id"
+                },
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6643,
+                        6643
+                      ],
+                      "name": "#summaryTier",
+                      "signature": "<div id=\"summaryTier\" class=\"summary-tier\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6644,
+                        6644
+                      ],
+                      "name": "#summaryPackage",
+                      "signature": "<div id=\"summaryPackage\" class=\"summary-package\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6645,
+                        6649
+                      ],
+                      "name": "#summarySubjects",
+                      "signature": "<div id=\"summarySubjects\" class=\"summary-subjects\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6652,
+                        6652
+                      ],
+                      "name": "#summaryPrice",
+                      "signature": "<span id=\"summaryPrice\" class=\"summary-price\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6664,
+                            6667
+                          ],
+                          "name": "#btnNewStudent",
+                          "signature": "<button id=\"btnNewStudent\" class=\"student-type-btn active\" type=\"button\">",
+                          "type": "id"
+                        },
+                        {
+                          "lines": [
+                            6668,
+                            6671
+                          ],
+                          "name": "#btnExistingStudent",
+                          "signature": "<button id=\"btnExistingStudent\" class=\"student-type-btn\" type=\"button\">",
+                          "type": "id"
+                        },
+                        {
+                          "lines": [
+                            6675,
+                            6682
+                          ],
+                          "name": "#newStudentPath",
+                          "signature": "<div id=\"newStudentPath\" class=\"student-path active\">",
+                          "type": "id"
+                        },
+                        {
+                          "children": [
+                            {
+                              "lines": [
+                                6694,
+                                6694
+                              ],
+                              "name": "#originalPrice",
+                              "signature": "<span id=\"originalPrice\" class=\"original-price\">",
+                              "type": "id"
+                            },
+                            {
+                              "lines": [
+                                6696,
+                                6696
+                              ],
+                              "name": "#discountedPrice",
+                              "signature": "<span id=\"discountedPrice\" class=\"discounted-price\">",
+                              "type": "id"
+                            }
+                          ],
+                          "lines": [
+                            6685,
+                            6699
+                          ],
+                          "name": "#existingStudentPath",
+                          "signature": "<div id=\"existingStudentPath\" class=\"student-path\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6661,
+                        6700
+                      ],
+                      "name": "#paymentChoice",
+                      "signature": "<div id=\"paymentChoice\" class=\"payment-choice\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6636,
+                    6701
+                  ],
+                  "name": "#packageSummary",
+                  "signature": "<div id=\"packageSummary\" class=\"package-summary\">",
+                  "type": "id"
+                },
+                {
+                  "children": [
+                    {
+                      "lines": [
+                        6705,
+                        6706
+                      ],
+                      "name": "#hiddenPackage",
+                      "signature": "<input id=\"hiddenPackage\" name=\"package\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6706,
+                        6707
+                      ],
+                      "name": "#hiddenSubjects",
+                      "signature": "<input id=\"hiddenSubjects\" name=\"subjects\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6707,
+                        6708
+                      ],
+                      "name": "#hiddenPrice",
+                      "signature": "<input id=\"hiddenPrice\" name=\"price\" type=\"hidden\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6714,
+                        6715
+                      ],
+                      "name": "#parentName",
+                      "signature": "<input id=\"parentName\" class=\"form-input\" name=\"parentName\" type=\"text\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6718,
+                        6719
+                      ],
+                      "name": "#parentEmail",
+                      "signature": "<input id=\"parentEmail\" class=\"form-input\" name=\"parentEmail\" type=\"email\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6724,
+                        6725
+                      ],
+                      "name": "#parentPhone",
+                      "signature": "<input id=\"parentPhone\" class=\"form-input\" name=\"parentPhone\" type=\"tel\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6733,
+                            6741
+                          ],
+                          "name": "#yearLevel",
+                          "signature": "<select id=\"yearLevel\" class=\"form-select\" name=\"yearLevel\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6730,
+                        6743
+                      ],
+                      "name": "#manualSelectionRow",
+                      "signature": "<div id=\"manualSelectionRow\" class=\"form-row\">",
+                      "type": "id"
+                    },
+                    {
+                      "children": [
+                        {
+                          "lines": [
+                            6746,
+                            6746
+                          ],
+                          "name": "#submitBtnText",
+                          "signature": "<span id=\"submitBtnText\">",
+                          "type": "id"
+                        }
+                      ],
+                      "lines": [
+                        6745,
+                        6748
+                      ],
+                      "name": "#trialSubmitBtn",
+                      "signature": "<button id=\"trialSubmitBtn\" class=\"btn btn-primary form-submit btn-trial\" type=\"submit\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6750,
+                        6753
+                      ],
+                      "name": "#paySubmitBtn",
+                      "signature": "<button id=\"paySubmitBtn\" class=\"btn btn-primary form-submit btn-pay\" type=\"button\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6755,
+                        6755
+                      ],
+                      "name": "#trialNote",
+                      "signature": "<p id=\"trialNote\" class=\"form-note\">",
+                      "type": "id"
+                    },
+                    {
+                      "lines": [
+                        6757,
+                        6760
+                      ],
+                      "name": "#stripeBadge",
+                      "signature": "<div id=\"stripeBadge\" class=\"stripe-badge\">",
+                      "type": "id"
+                    }
+                  ],
+                  "lines": [
+                    6703,
+                    6761
+                  ],
+                  "name": "<form.contact-form>",
+                  "signature": "<form class=\"contact-form\" name=\"trial\" action=\"/thank-you\" method=\"POST\">",
+                  "type": "element"
+                }
+              ],
+              "lines": [
+                6593,
+                6765
+              ],
+              "name": "#contact",
+              "signature": "<section id=\"contact\" class=\"contact\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6768,
+                6776
+              ],
+              "name": "#sticky-cta-bar",
+              "signature": "<div id=\"sticky-cta-bar\" class=\"sticky-cta-bar\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            5513,
+            6777
+          ],
+          "name": "#main-content",
+          "signature": "<main id=\"main-content\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            6788,
+            6838
+          ],
+          "name": "<footer.footer>",
+          "signature": "<footer class=\"footer\">",
+          "type": "element"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                6847,
+                6847
+              ],
+              "name": "#modalTierBadge",
+              "signature": "<span id=\"modalTierBadge\" class=\"modal-badge\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6849,
+                6849
+              ],
+              "name": "#modalSubtitle",
+              "signature": "<p id=\"modalSubtitle\" class=\"modal-subtitle\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6853,
+                6853
+              ],
+              "name": "#modalPrice",
+              "signature": "<span id=\"modalPrice\" class=\"modal-price\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6857,
+                6859
+              ],
+              "name": "#modalSubjectsContainer",
+              "signature": "<div id=\"modalSubjectsContainer\" class=\"modal-subjects\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6861,
+                6861
+              ],
+              "name": "#selectionCount",
+              "signature": "<p id=\"selectionCount\" class=\"modal-selection-count\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6863,
+                6865
+              ],
+              "name": "#modalCta",
+              "signature": "<button id=\"modalCta\" class=\"modal-cta\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            6841,
+            6869
+          ],
+          "name": "#packageModal",
+          "signature": "<div id=\"packageModal\" class=\"package-modal\">",
+          "type": "id"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                6876,
+                6876
+              ],
+              "name": "#policyModalTitle",
+              "signature": "<h2 id=\"policyModalTitle\" class=\"policy-title\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                6877,
+                6879
+              ],
+              "name": "#policyModalContent",
+              "signature": "<div id=\"policyModalContent\" class=\"policy-content\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            6872,
+            6881
+          ],
+          "name": "#policyModal",
+          "signature": "<div id=\"policyModal\" class=\"policy-modal\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            7655,
+            7675
+          ],
+          "name": "#allAccessModal",
+          "signature": "<div id=\"allAccessModal\" class=\"package-modal\">",
+          "type": "id"
+        }
+      ]
+    },
+    "privacy.html": {
+      "hash": "81e86d8570cd",
+      "indexed_at": "2026-01-24T22:36:43.185319+00:00",
+      "language": "html",
+      "lines": 212,
+      "symbols": [
+        {
+          "lines": [
+            133,
+            141
+          ],
+          "name": "<nav.nav>",
+          "signature": "<nav class=\"nav\">",
+          "type": "element"
+        }
+      ]
+    },
+    "refund.html": {
+      "hash": "94d83d56f456",
+      "indexed_at": "2026-01-24T22:36:43.215517+00:00",
+      "language": "html",
+      "lines": 245,
+      "symbols": [
+        {
+          "lines": [
+            169,
+            177
+          ],
+          "name": "<nav.nav>",
+          "signature": "<nav class=\"nav\">",
+          "type": "element"
+        }
+      ]
+    },
+    "terms.html": {
+      "hash": "60f39d48f6f1",
+      "indexed_at": "2026-01-24T22:36:43.241071+00:00",
+      "language": "html",
+      "lines": 221,
+      "symbols": [
+        {
+          "lines": [
+            133,
+            141
+          ],
+          "name": "<nav.nav>",
+          "signature": "<nav class=\"nav\">",
+          "type": "element"
+        }
+      ]
+    },
+    "thank-you.html": {
+      "hash": "f927c6844508",
+      "indexed_at": "2026-01-24T22:36:43.313446+00:00",
+      "language": "html",
+      "lines": 336,
+      "symbols": [
+        {
+          "lines": [
+            266,
+            270
+          ],
+          "name": "#successIcon",
+          "signature": "<div id=\"successIcon\" class=\"success-icon\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            272,
+            272
+          ],
+          "name": "#mainHeading",
+          "signature": "<h1 id=\"mainHeading\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            273,
+            273
+          ],
+          "name": "#mainSubtitle",
+          "signature": "<p id=\"mainSubtitle\" class=\"subtitle\">",
+          "type": "id"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                276,
+                276
+              ],
+              "name": "#noticeEmoji",
+              "signature": "<span id=\"noticeEmoji\">",
+              "type": "id"
+            },
+            {
+              "lines": [
+                278,
+                278
+              ],
+              "name": "#noticeText",
+              "signature": "<p id=\"noticeText\">",
+              "type": "id"
+            }
+          ],
+          "lines": [
+            275,
+            280
+          ],
+          "name": "#noticeBox",
+          "signature": "<div id=\"noticeBox\" class=\"sms-notice\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            287,
+            287
+          ],
+          "name": "#step1Title",
+          "signature": "<h3 id=\"step1Title\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            288,
+            288
+          ],
+          "name": "#step1Desc",
+          "signature": "<p id=\"step1Desc\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            294,
+            294
+          ],
+          "name": "#step2Title",
+          "signature": "<h3 id=\"step2Title\">",
+          "type": "id"
+        },
+        {
+          "lines": [
+            295,
+            295
+          ],
+          "name": "#step2Desc",
+          "signature": "<p id=\"step2Desc\">",
+          "type": "id"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.648127+00:00",
+  "version": "1.0"
+}

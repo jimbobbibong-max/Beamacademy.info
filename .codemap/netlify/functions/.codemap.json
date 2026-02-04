@@ -1,0 +1,50 @@
+{
+  "directory": "netlify\\functions",
+  "files": {
+    "create-checkout.js": {
+      "hash": "f0210d2bb875",
+      "indexed_at": "2026-01-24T22:37:07.602091+00:00",
+      "language": "javascript",
+      "lines": 123,
+      "symbols": [
+        {
+          "lines": [
+            3,
+            123
+          ],
+          "name": "handler",
+          "signature": "(event)",
+          "type": "async_function"
+        }
+      ]
+    },
+    "stripe-webhook.js": {
+      "hash": "3b767f8ecd3e",
+      "indexed_at": "2026-01-24T22:37:07.637776+00:00",
+      "language": "javascript",
+      "lines": 120,
+      "symbols": [
+        {
+          "lines": [
+            3,
+            111
+          ],
+          "name": "handler",
+          "signature": "(event)",
+          "type": "async_function"
+        },
+        {
+          "lines": [
+            113,
+            120
+          ],
+          "name": "getYearLevel",
+          "signature": "(tier)",
+          "type": "function"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.926240+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,900 @@
+{
+  "directory": ".planning\\phases\\04-content-structure",
+  "files": {
+    "04-01-PLAN.md": {
+      "hash": "1e67923411d9",
+      "indexed_at": "2026-01-24T22:37:08.544067+00:00",
+      "language": "markdown",
+      "lines": 154,
+      "symbols": []
+    },
+    "04-01-SUMMARY.md": {
+      "hash": "593d2cd7eb6d",
+      "indexed_at": "2026-01-24T22:37:08.561650+00:00",
+      "language": "markdown",
+      "lines": 91,
+      "symbols": [
+        {
+          "docstring": "Updated the hero section to communicate BEAM's value proposition clearly:",
+          "lines": [
+            35,
+            42
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                45,
+                53
+              ],
+              "name": "Hero Headline (line 4385)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                54,
+                61
+              ],
+              "name": "Hero Testimonial (new component)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- `.hero-testimonial` - purple accent background, inline-flex layout - `.testimonial-star` - purple pill badge for 5.0 rating - Mobile responsive styl",
+              "lines": [
+                62,
+                66
+              ],
+              "name": "CSS Added",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            43,
+            66
+          ],
+          "name": "Key Changes",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Type | Description | |------|------|-------------| | 409a128 | feat | Update hero headline and description | | ec32c80 | feat | Add inline te",
+          "lines": [
+            67,
+            73
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] Hero headline shows \"Expert Tutoring for Years 7-12\" - [x] Description mentions BHHS graduates, 95%+ HSC, small classes, Epping Sydney - [x] Inl",
+          "lines": [
+            74,
+            80
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            81,
+            84
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "Ready for Plan 04-02: Trust Elements",
+          "lines": [
+            85,
+            92
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "04-02-PLAN.md": {
+      "hash": "aef7207270cc",
+      "indexed_at": "2026-01-24T22:37:08.593777+00:00",
+      "language": "markdown",
+      "lines": 277,
+      "symbols": []
+    },
+    "04-02-SUMMARY.md": {
+      "hash": "c910dcdd148b",
+      "indexed_at": "2026-01-24T22:37:08.618309+00:00",
+      "language": "markdown",
+      "lines": 110,
+      "symbols": [
+        {
+          "docstring": "| Metric | Value | |--------|-------| | Tasks completed | 2/2 | | Duration | ~3 minutes | | Commits | 2 |",
+          "lines": [
+            50,
+            57
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Added CSS transforms and JavaScript handlers for a polished mobile menu experience:",
+              "lines": [
+                60,
+                73
+              ],
+              "name": "Task 1: Smooth Hamburger Menu Animation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Added `@media (max-width: 400px)` breakpoint for small screens (iPhone SE at 320px):",
+              "lines": [
+                74,
+                82
+              ],
+              "name": "Task 2: 320px Responsive Pricing Styles",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            58,
+            82
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Message | |------|---------| | 90e5d2f | feat(04-02): add smooth hamburger menu animation | | f9da669 | feat(04-02): add 320px responsive pri",
+          "lines": [
+            83,
+            89
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            90,
+            93
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "All success criteria verified: - [x] Hamburger menu opens/closes with smooth 250ms animation - [x] Hamburger icon transforms to X when open - [x] Menu",
+          "lines": [
+            94,
+            103
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "This plan completes Phase 4: Content Structure. The hamburger menu now provides a professional feel with smooth animations rather than jarring instant",
+          "lines": [
+            104,
+            111
+          ],
+          "name": "Notes",
+          "type": "section"
+        }
+      ]
+    },
+    "04-CONTEXT.md": {
+      "hash": "4c07ad3f76d9",
+      "indexed_at": "2026-01-24T22:37:08.635243+00:00",
+      "language": "markdown",
+      "lines": 57,
+      "symbols": [
+        {
+          "docstring": "Reorder page sections for optimal mobile conversion flow. Hero communicates value prop clearly, pricing displays without horizontal scroll, testimonia",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "User delegated all decisions to Claude \u2014 research best practices and implement optimal mobile conversion patterns.",
+              "lines": [
+                16,
+                40
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            40
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "No specific requirements \u2014 user wants best practices applied. Research mobile landing page conversion patterns for service businesses (tutoring, coach",
+          "lines": [
+            41,
+            47
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope.",
+          "lines": [
+            48,
+            58
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "04-RESEARCH.md": {
+      "hash": "f367c99d32a4",
+      "indexed_at": "2026-01-24T22:37:08.658347+00:00",
+      "language": "markdown",
+      "lines": 552,
+      "symbols": [
+        {
+          "docstring": "This research investigates optimal mobile content structure for a tutoring service landing page. The current site has 10 sections before the form, whi",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Position | Section | Lines | Purpose | Mobile Conversion Impact | |----------|---------|-------|---------|--------------------------| | 1 | Hero | 4",
+              "lines": [
+                17,
+                30
+              ],
+              "name": "Existing Order (Line Numbers from HTML)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                31,
+                46
+              ],
+              "name": "Current Hero Messaging Issue",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            46
+          ],
+          "name": "Current Section Order Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Based on conversion research, the optimal order for mobile is:",
+              "lines": [
+                49,
+                66
+              ],
+              "name": "Mobile-Optimized Flow",
+              "type": "subsection"
+            },
+            {
+              "docstring": "If keeping form at bottom is preferred:",
+              "lines": [
+                67,
+                80
+              ],
+              "name": "Alternative: Keep Form at Bottom",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            47,
+            80
+          ],
+          "name": "Recommended Section Order",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Source: [involve.me](https://www.involve.me/blog/landing-page-structure), [goprimer.com](https://www.goprimer.com/blog/the-winning-hero-section-formul",
+              "lines": [
+                83,
+                101
+              ],
+              "name": "Recommended Hero Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- 70% of website traffic is mobile - Keep headline under 6 words - Subheadline under 20 words - Single primary CTA above fold - Avoid decorative eleme",
+              "lines": [
+                102,
+                108
+              ],
+              "name": "Mobile Hero Optimizations",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                109,
+                122
+              ],
+              "name": "Recommended Hero Copy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            81,
+            122
+          ],
+          "name": "Hero Section Best Practices",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The pricing tiers use `grid-template-columns: repeat(3, 1fr)` which becomes single column at 900px, but may still cause issues on 320px with padding.",
+              "lines": [
+                125,
+                127
+              ],
+              "name": "Current Problem",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Source: [UX Matters](https://www.uxmatters.com/mt/archives/2020/07/designing-mobile-tables.php), [NN/g](https://www.nngroup.com/articles/mobile-tables",
+              "lines": [
+                128,
+                137
+              ],
+              "name": "Recommended Patterns",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Use Card Stack (current approach):** Already implemented at 900px breakpoint 2. **Add 320px-specific rules:**",
+              "lines": [
+                138,
+                155
+              ],
+              "name": "Specific Recommendations for BEAM",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Test on: - iPhone SE (320px width) - Samsung Galaxy (360px width) - iPhone 14 (390px width)",
+              "lines": [
+                156,
+                166
+              ],
+              "name": "Testing Protocol",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            123,
+            166
+          ],
+          "name": "Pricing Display on 320px Screens",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Source: [Landing Page Flow](https://www.landingpageflow.com/post/best-cta-placement-strategies-for-landing-pages), [Trustmary](https://trustmary.com/l",
+              "lines": [
+                169,
+                177
+              ],
+              "name": "Research Findings",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                178,
+                184
+              ],
+              "name": "Current BEAM Testimonials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Hero Inline Testimonial:** Add one short quote below hero buttons",
+              "lines": [
+                185,
+                196
+              ],
+              "name": "Recommended Approach",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                197,
+                216
+              ],
+              "name": "CSS for Hero Testimonial",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            167,
+            216
+          ],
+          "name": "Testimonial Placement",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                219,
+                236
+              ],
+              "name": "Current Implementation Analysis",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "- 200-300ms feels responsive without being distracting - Use `cubic-bezier(0.4, 0, 0.2, 1)` for natural motion - Hamburger-to-X transformation improve",
+                  "lines": [
+                    240,
+                    244
+                  ],
+                  "name": "Animation Timing",
+                  "type": "subsubsection"
+                },
+                {
+                  "lines": [
+                    245,
+                    269
+                  ],
+                  "name": "CSS for Smooth Hamburger Animation",
+                  "type": "subsubsection"
+                },
+                {
+                  "lines": [
+                    270,
+                    294
+                  ],
+                  "name": "Mobile Nav Slide Animation",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- `aria-label=\"Menu\"` on button - `aria-expanded=\"true/false\"` toggled on click - `aria-controls=\"mobile-nav\"` pointing to nav ID - Visible focus stat",
+                  "lines": [
+                    295,
+                    302
+                  ],
+                  "name": "Accessibility Requirements",
+                  "type": "subsubsection"
+                },
+                {
+                  "lines": [
+                    303,
+                    313
+                  ],
+                  "name": "Close on Outside Click",
+                  "type": "subsubsection"
+                },
+                {
+                  "lines": [
+                    314,
+                    324
+                  ],
+                  "name": "Close on Escape Key",
+                  "type": "subsubsection"
+                }
+              ],
+              "docstring": "Source: [Interaction Design Foundation](https://www.interaction-design.org/literature/article/hamburger-menu-ux), [Webstacks](https://www.webstacks.co",
+              "lines": [
+                237,
+                324
+              ],
+              "name": "Recommended Implementation",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            217,
+            324
+          ],
+          "name": "Hamburger Menu Best Practices",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Hamburger animation | Custom keyframes | CSS transforms",
+          "lines": [
+            325,
+            333
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Cramming too much content into hero, creating visual chaos **Why it happens:** Fear of users not scrolling **How to avoid:** One",
+              "lines": [
+                336,
+                341
+              ],
+              "name": "Pitfall 1: Information Overload Above Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Users see prices before understanding value, bounce **Why it happens:** Assuming transparency is always better **How to avoid:**",
+              "lines": [
+                342,
+                347
+              ],
+              "name": "Pitfall 2: Pricing Too Early",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Generic quotes that could apply to any business **Why it happens:** Using whatever testimonials are available **How to avoid:** U",
+              "lines": [
+                348,
+                353
+              ],
+              "name": "Pitfall 3: Testimonials Without Context",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Screen readers can't navigate, keyboard users trapped **Why it happens:** Implementing visual toggle without ARIA **How to avoid:",
+              "lines": [
+                354,
+                359
+              ],
+              "name": "Pitfall 4: Hamburger Menu Accessibility Failures",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Cards overflow viewport, require side scrolling **Why it happens:** Fixed widths, not testing on small screens **How to avoid:**",
+              "lines": [
+                360,
+                365
+              ],
+              "name": "Pitfall 5: Horizontal Scroll on Mobile Pricing",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            334,
+            365
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                368,
+                393
+              ],
+              "name": "Hero with Inline Testimonial",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                394,
+                461
+              ],
+              "name": "Smooth Hamburger Toggle (Full Implementation)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                462,
+                497
+              ],
+              "name": "Responsive Pricing Cards (320px Safe)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            366,
+            497
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "| Old Approach | Current Approach | When Changed | Impact | |--------------|------------------|--------------|--------| | Pricing first | Trust signal",
+          "lines": [
+            498,
+            507
+          ],
+          "name": "State of the Art",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **A/B Testing Strategy:** Should section reorder be tested against current, or implement directly? - Recommendation: Implement directly, current 0%",
+          "lines": [
+            508,
+            519
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [Interaction Design Foundation - Hamburger Menu UX](https://www.interaction-design.org/literature/article/hamburger-menu-ux) - [NN/g - Mobile Tables",
+              "lines": [
+                522,
+                526
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [involve.me - Landing Page Best Practices 2026](https://www.involve.me/blog/landing-page-best-practices) - [Leadfeeder - Landing Page Conversion Gui",
+              "lines": [
+                527,
+                533
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- General web search results for patterns (verified against primary sources)",
+              "lines": [
+                534,
+                536
+              ],
+              "name": "Tertiary (LOW confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            520,
+            536
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Section ordering: HIGH - Multiple authoritative sources agree on pattern - Hero messaging: HIGH - Clear best practices fro",
+          "lines": [
+            537,
+            553
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "04-UAT.md": {
+      "hash": "32309b8e5f4e",
+      "indexed_at": "2026-01-24T22:37:08.676411+00:00",
+      "language": "markdown",
+      "lines": 72,
+      "symbols": [
+        {
+          "docstring": "number: 2 name: Hero Inline Testimonial expected: | A testimonial quote from \"Luke K, Year 8\" is visible in the hero section with a 5.0 rating badge.",
+          "lines": [
+            9,
+            17
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: On page load (mobile), the hero headline clearly says \"Expert Tutoring for Years 7-12\" with supporting description mentioning BHHS graduates",
+              "lines": [
+                20,
+                25
+              ],
+              "name": "1. Hero Value Proposition",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: A testimonial quote from \"Luke K, Year 8\" is visible in the hero section with a 5.0 rating badge. The quote should mention explaining things",
+              "lines": [
+                26,
+                31
+              ],
+              "name": "2. Hero Inline Testimonial",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the hamburger icon slides the menu down smoothly (not instantly). The hamburger icon transforms into an X shape. result: [pending]",
+              "lines": [
+                32,
+                35
+              ],
+              "name": "3. Hamburger Menu Opens Smoothly",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Tapping the X icon, tapping outside the menu, or pressing Escape closes the menu smoothly. Focus returns to the hamburger icon after Escape.",
+              "lines": [
+                36,
+                39
+              ],
+              "name": "4. Hamburger Menu Closes",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: On a very narrow screen (320px like iPhone SE), the pricing section displays without horizontal scroll. Text and cards are readable without",
+              "lines": [
+                40,
+                43
+              ],
+              "name": "5. 320px Pricing Display",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            18,
+            43
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 5 passed: 0 issues: 2 pending: 3 skipped: 0",
+          "lines": [
+            44,
+            51
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "- truth: \"Hero headline says Expert Tutoring for Years 7-12\" status: failed reason: \"User reported: still says shine brighter with beam\" severity: maj",
+          "lines": [
+            52,
+            73
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    },
+    "04-VERIFICATION.md": {
+      "hash": "2c431b12bb9f",
+      "indexed_at": "2026-01-24T22:37:08.700968+00:00",
+      "language": "markdown",
+      "lines": 131,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Hero section communicates tutoring for Years 7-12 value prop clearly | VERIF",
+              "lines": [
+                23,
+                33
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | index.html - Hero headline | Years 7-12 value prop | EXISTS +",
+              "lines": [
+                34,
+                46
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | .mobile-toggle button | .mobile-nav panel | JS toggle + CSS transitio",
+              "lines": [
+                47,
+                55
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "The page sections flow in this order:",
+              "lines": [
+                56,
+                71
+              ],
+              "name": "Section Order Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Blocking Issue | |-------------|--------|----------------| | CONT-01: Hero communicates value prop | SATISFIED | - | | CONT-0",
+              "lines": [
+                72,
+                80
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Patterns checked: - UTF-8 corruption: 0 matches - TODO/FIXME: 0 matches - placeholder stubs: Only legitimate HTML form placeholders - not implemented:",
+              "lines": [
+                81,
+                90
+              ],
+              "name": "Anti-Patterns Scan",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "**Test:** Load page on mobile device **Expected:** User immediately understands this is tutoring for high school students **Why human:** Requires subj",
+                  "lines": [
+                    93,
+                    97
+                  ],
+                  "name": "1. Hero Value Prop Visibility (3-second test)",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Open page in Chrome DevTools at 320px width, scroll to pricing **Expected:** No horizontal scroll, all pricing tiers readable **Why human:**",
+                  "lines": [
+                    98,
+                    102
+                  ],
+                  "name": "2. 320px Pricing Display",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** On mobile, tap hamburger icon, observe animation, tap outside to close **Expected:** Menu slides in/out smoothly (250ms feels responsive) **",
+                  "lines": [
+                    103,
+                    107
+                  ],
+                  "name": "3. Hamburger Menu Animation Feel",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Open mobile menu, observe hamburger icon change **Expected:** Three lines smoothly transform into X shape **Why human:** Visual transformati",
+                  "lines": [
+                    108,
+                    114
+                  ],
+                  "name": "4. Hamburger-to-X Transformation",
+                  "type": "subsubsection"
+                }
+              ],
+              "lines": [
+                91,
+                114
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            21,
+            114
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "All 4 success criteria from ROADMAP.md have been independently verified in the codebase:",
+          "lines": [
+            115,
+            132
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.956254+00:00",
+  "version": "1.0"
+}

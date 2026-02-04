@@ -1,0 +1,436 @@
+{
+  "directory": ".planning",
+  "files": {
+    "MILESTONES.md": {
+      "hash": "834043eb9d40",
+      "indexed_at": "2026-01-24T22:36:43.337200+00:00",
+      "language": "markdown",
+      "lines": 63,
+      "symbols": [
+        {
+          "docstring": "**Delivered:** Rewrote landing page so visitors understand BEAM's differentiator (custom materials based on score tracking) within 3 seconds \u2014 show, d",
+          "lines": [
+            3,
+            32
+          ],
+          "name": "v2 Messaging Overhaul (Shipped: 2026-01-23)",
+          "type": "section"
+        },
+        {
+          "docstring": "**Delivered:** Transformed broken mobile landing page (24 clicks, 0 conversions) into conversion-optimized experience with 0.9s LCP, sticky CTAs, and",
+          "lines": [
+            33,
+            64
+          ],
+          "name": "v1 Mobile Conversion (Shipped: 2026-01-20)",
+          "type": "section"
+        }
+      ]
+    },
+    "PAUSE.md": {
+      "hash": "1138f92c55b3",
+      "indexed_at": "2026-01-24T22:36:43.353245+00:00",
+      "language": "markdown",
+      "lines": 50,
+      "symbols": [
+        {
+          "docstring": "**Stage:** Research phase (just starting) **Action interrupted:** About to spawn 4 parallel researchers",
+          "lines": [
+            6,
+            10
+          ],
+          "name": "Where We Stopped",
+          "type": "section"
+        },
+        {
+          "docstring": "1. \u2713 v3 shipped (Phases 12-13 complete) 2. \u2713 Phase 14 moved to v4 (CSS architecture issues required fresh start) 3. \u2713 HTML reverted to pre-Phase 14 st",
+          "lines": [
+            11,
+            19
+          ],
+          "name": "What's Done",
+          "type": "section"
+        },
+        {
+          "docstring": "1. Run 4 parallel researchers: - Stack (CSS architecture patterns) - Features (pricing/course UX best practices) - Architecture (site integration, pag",
+          "lines": [
+            20,
+            33
+          ],
+          "name": "What's Next",
+          "type": "section"
+        },
+        {
+          "docstring": "- User wants full research \u2014 \"DYOR and think holistically\" - No specific vision for Courses section \u2014 let research guide it - Previous attempt failed",
+          "lines": [
+            34,
+            40
+          ],
+          "name": "Key Context",
+          "type": "section"
+        },
+        {
+          "lines": [
+            41,
+            51
+          ],
+          "name": "Resume Command",
+          "type": "section"
+        }
+      ]
+    },
+    "PROJECT.md": {
+      "hash": "0f26cd233293",
+      "indexed_at": "2026-01-24T22:36:43.371046+00:00",
+      "language": "markdown",
+      "lines": 133,
+      "symbols": [
+        {
+          "docstring": "A conversion-optimized landing page for BEAM Academy tutoring that instantly communicates the core differentiator \u2014 data-driven personalized materials",
+          "lines": [
+            3,
+            6
+          ],
+          "name": "What This Is",
+          "type": "section"
+        },
+        {
+          "docstring": "**Version:** v3 (shipped 2026-01-23) **Status:** Live on beamacademy.info **Codebase:** ~7,500 LOC (HTML/CSS/JS in single index.html)",
+          "lines": [
+            7,
+            18
+          ],
+          "name": "Current State",
+          "type": "section"
+        },
+        {
+          "docstring": "**Goal:** Complete redesign of the Courses/Pricing section with fresh CSS architecture, research-backed UX patterns, and holistic integration with the",
+          "lines": [
+            19,
+            30
+          ],
+          "name": "Current Milestone: v4.0 Courses Section Redesign",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Communicate the differentiator instantly** \u2014 Visitors understand within 3 seconds that BEAM provides custom materials based on their child's trac",
+          "lines": [
+            31,
+            40
+          ],
+          "name": "The Jobs It Does",
+          "type": "section"
+        },
+        {
+          "docstring": "BEAM's differentiator is data-driven personalization: track scores \u2192 identify weak spots \u2192 generate custom materials. No other tutoring company does t",
+          "lines": [
+            41,
+            44
+          ],
+          "name": "Why This Matters",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**v1 Requirements:** (18 requirements \u2014 mobile conversion) - VIEW-01 through VIEW-04: Mobile viewport and touch targets - CTA-01 through CTA-03: Hero",
+              "lines": [
+                47,
+                69
+              ],
+              "name": "Validated (v1 + v2 + v3)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "(To be defined after v4 research \u2014 see `.planning/REQUIREMENTS.md`)",
+              "lines": [
+                70,
+                73
+              ],
+              "name": "Active",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Desktop-only redesign \u2014 mobile-first, desktop follows - New pages \u2014 optimize landing page first - Backend changes \u2014 Netlify Forms works; frontend is",
+              "lines": [
+                74,
+                84
+              ],
+              "name": "Out of Scope",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            45,
+            84
+          ],
+          "name": "Requirements",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Site:** beamacademy.info (static site on Netlify) - **Stack:** Single HTML file (index.html) with inline CSS/JS - **Deployment:** Auto-deploy on p",
+          "lines": [
+            85,
+            93
+          ],
+          "name": "Context",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Tech stack**: Single HTML file with inline styles \u2014 maintain this structure - **Deployment**: Auto-deploy to main, all changes pushed immediately",
+          "lines": [
+            94,
+            101
+          ],
+          "name": "Constraints",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | Outcome | |----------|-----------|---------| | Mobile-first approach | 24 ad clicks likely all mobile | \u2713 Good \u2014 all requirem",
+          "lines": [
+            102,
+            119
+          ],
+          "name": "Key Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "**v1 accessibility issues (still present):** - Skip to main content button positioning (cosmetic) - Form scroll anchor positioning (UX polish) - Some",
+          "lines": [
+            120,
+            134
+          ],
+          "name": "Tech Debt",
+          "type": "section"
+        }
+      ]
+    },
+    "REQUIREMENTS.md": {
+      "hash": "66d27435f95c",
+      "indexed_at": "2026-01-24T22:36:43.388142+00:00",
+      "language": "markdown",
+      "lines": 66,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- [x] **DEL-01**: Remove \"Why Us\" section (6 feature cards) \u2014 all content covered by v2 sections - [x] **DEL-02**: Remove \"Portal\" section \u2014 hero alre",
+              "lines": [
+                8,
+                14
+              ],
+              "name": "Deletion",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **MERGE-01**: Add Taehoon Kim to Trust section tutor profiles (4th tutor) - [x] **MERGE-02**: Add 1-2 student testimonials to Trust section (alo",
+              "lines": [
+                15,
+                23
+              ],
+              "name": "Consolidation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] **QUAL-01**: Trust section renders correctly on mobile (320px-428px) - [x] **QUAL-02**: Page section order makes sense after removals - [x] **QU",
+              "lines": [
+                24,
+                30
+              ],
+              "name": "Quality",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            6,
+            30
+          ],
+          "name": "v3 Requirements",
+          "type": "section"
+        },
+        {
+          "docstring": "| Feature | Reason | |---------|--------| | SEO optimization | Deferred to v4 | | New content creation | This is cleanup, not addition | | About secti",
+          "lines": [
+            31,
+            40
+          ],
+          "name": "Out of Scope",
+          "type": "section"
+        },
+        {
+          "docstring": "| Requirement | Phase | Status | |-------------|-------|--------| | DEL-01 | Phase 12 | Complete | | DEL-02 | Phase 12 | Complete | | DEL-03 | Phase 1",
+          "lines": [
+            41,
+            67
+          ],
+          "name": "Traceability",
+          "type": "section"
+        }
+      ]
+    },
+    "ROADMAP.md": {
+      "hash": "1536c1994ee0",
+      "indexed_at": "2026-01-24T22:36:43.404819+00:00",
+      "language": "markdown",
+      "lines": 132,
+      "symbols": [
+        {
+          "docstring": "- **v1 Mobile Conversion** \u2014 Phases 1-5 (shipped 2026-01-20) | [Archive](milestones/v1-ROADMAP.md) - **v2 Messaging Overhaul** \u2014 Phases 6-11 (shipped",
+          "lines": [
+            3,
+            13
+          ],
+          "name": "Milestones",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- SaaS pricing page conversion patterns - Course platform pricing psychology - Value ladder presentation - Feature comparison tables - Social proof pl",
+              "lines": [
+                18,
+                25
+              ],
+              "name": "Research Areas",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] Phase 17: Courses Section Overhaul \u2014 **3 plans** (3/3 complete) \u2014 VERIFIED 2026-01-24",
+              "lines": [
+                26,
+                53
+              ],
+              "name": "Phases",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "**Goal:** Complete structural overhaul of Courses/Pricing section based on industry best practices for SaaS pricing pages, course platform conversion,",
+          "lines": [
+            14,
+            53
+          ],
+          "name": "v5: Courses Section Overhaul",
+          "type": "section"
+        },
+        {
+          "docstring": "<details> <summary>v1 Mobile Conversion (Phases 1-5) \u2014 SHIPPED 2026-01-20</summary>",
+          "lines": [
+            54,
+            105
+          ],
+          "name": "Completed",
+          "type": "section"
+        },
+        {
+          "docstring": "| Phase | Milestone | Goal | Status | Completed | |-------|-----------|------|--------|-----------| | 1 | v1 | Emergency Viewport | Complete | 2026-01",
+          "lines": [
+            106,
+            133
+          ],
+          "name": "Progress",
+          "type": "section"
+        }
+      ]
+    },
+    "STATE.md": {
+      "hash": "a0e20d114b52",
+      "indexed_at": "2026-01-24T22:36:43.421301+00:00",
+      "language": "markdown",
+      "lines": 106,
+      "symbols": [
+        {
+          "docstring": "See: .planning/PROJECT.md (updated 2026-01-23)",
+          "lines": [
+            3,
+            9
+          ],
+          "name": "Project Reference",
+          "type": "section"
+        },
+        {
+          "docstring": "Milestone: v6 (Content Reduction & Pre-Launch QA) Phase: 19 - Final Pass - Content Reduction & Polish Plan: 02 of 2 - Pre-Launch QA COMPLETE Status: M",
+          "lines": [
+            10,
+            19
+          ],
+          "name": "Current Position",
+          "type": "section"
+        },
+        {
+          "docstring": "| Version | Name | Phases | Status | Date | |---------|------|--------|--------|------| | v1 | Mobile Conversion | 1-5 | SHIPPED | 2026-01-20 | | v2 |",
+          "lines": [
+            20,
+            30
+          ],
+          "name": "Milestone History",
+          "type": "section"
+        },
+        {
+          "docstring": "**Plan 01 - Content Reduction (COMPLETE):** - Applied 5-question test to all sections - Removed Final CTA section (redundant with sticky bar) - Remove",
+          "lines": [
+            31,
+            48
+          ],
+          "name": "Phase 19 Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "| ID | Decision | Rationale | Phase | |----|----------|-----------|-------| | D18-1 | Outcome-focused headline | 8-second rule - visitors need outcome",
+          "lines": [
+            49,
+            63
+          ],
+          "name": "Decisions Log",
+          "type": "section"
+        },
+        {
+          "docstring": "| Metric | Target | Current | |--------|--------|---------| | LCP | < 2.5s | 0.9s | | CLS | < 0.1 | 0.014 | | Performance | - | 88/100 | | SEO | - | 1",
+          "lines": [
+            64,
+            72
+          ],
+          "name": "Performance Baseline",
+          "type": "section"
+        },
+        {
+          "docstring": "**Carried forward:** - Skip button positioning (cosmetic) - Form scroll anchor positioning (UX) - Some aria-hidden with focusable children - Some cont",
+          "lines": [
+            73,
+            84
+          ],
+          "name": "Tech Debt",
+          "type": "section"
+        },
+        {
+          "docstring": "3 todos in \\`.planning/todos/pending/\\`",
+          "lines": [
+            85,
+            88
+          ],
+          "name": "Pending Todos",
+          "type": "section"
+        },
+        {
+          "docstring": "Last session: 2026-01-24 Stopped at: Completed Phase 19 (v6 milestone complete) Resume file: None",
+          "lines": [
+            89,
+            94
+          ],
+          "name": "Session Continuity",
+          "type": "section"
+        },
+        {
+          "docstring": "**v6 MILESTONE COMPLETE - Page is Launch-Ready**",
+          "lines": [
+            95,
+            107
+          ],
+          "name": "Next Up",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.658781+00:00",
+  "version": "1.0"
+}

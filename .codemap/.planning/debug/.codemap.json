@@ -1,0 +1,265 @@
+{
+  "directory": ".planning\\debug",
+  "files": {
+    "css-entire-page-broken.md": {
+      "hash": "be2bd00ce3a9",
+      "indexed_at": "2026-01-24T22:37:07.661718+00:00",
+      "language": "markdown",
+      "lines": 83,
+      "symbols": [
+        {
+          "docstring": "hypothesis: CONFIRMED - Malformed HTML closing tags caused HTML parsing errors test: Verify page renders correctly after fix expecting: Page CSS shoul",
+          "lines": [
+            8,
+            14
+          ],
+          "name": "Current Focus",
+          "type": "section"
+        },
+        {
+          "docstring": "expected: Page renders normally with all sections styled actual: Entire page formatting is broken - CSS seems to be failing errors: HTML parsing error",
+          "lines": [
+            15,
+            22
+          ],
+          "name": "Symptoms",
+          "type": "section"
+        },
+        {
+          "docstring": "- hypothesis: CSS syntax error from incomplete deletion (unclosed brace, missing selector) evidence: Brace count is balanced (799 opening, 799 closing",
+          "lines": [
+            23,
+            32
+          ],
+          "name": "Eliminated",
+          "type": "section"
+        },
+        {
+          "docstring": "- timestamp: 2025-01-23T14:31:00Z checked: CSS brace balance in style block found: 799 opening braces, 799 closing braces - BALANCED implication: CSS",
+          "lines": [
+            33,
+            70
+          ],
+          "name": "Evidence",
+          "type": "section"
+        },
+        {
+          "docstring": "root_cause: 6 malformed HTML closing tags where emoji characters (displayed as `??` due to encoding) consumed the `<` character from the closing tag,",
+          "lines": [
+            71,
+            84
+          ],
+          "name": "Resolution",
+          "type": "section"
+        }
+      ]
+    },
+    "lcp-performance-issue.md": {
+      "hash": "d00e65d8290a",
+      "indexed_at": "2026-01-24T22:37:07.679798+00:00",
+      "language": "markdown",
+      "lines": 62,
+      "symbols": [
+        {
+          "docstring": "hypothesis: CONFIRMED - LCP delay caused by render-blocking Google Fonts stylesheet (no async loading) test: Verified font loading method in index.htm",
+          "lines": [
+            10,
+            16
+          ],
+          "name": "Current Focus",
+          "type": "section"
+        },
+        {
+          "docstring": "expected: LCP should be under 2.5s actual: LCP is 3.1s (600ms over target) errors: Google Fonts render-blocking causing 870ms delay reproduction: Load",
+          "lines": [
+            17,
+            24
+          ],
+          "name": "Symptoms",
+          "type": "section"
+        },
+        {
+          "docstring": "(none - root cause found on first hypothesis)",
+          "lines": [
+            25,
+            28
+          ],
+          "name": "Eliminated",
+          "type": "section"
+        },
+        {
+          "docstring": "- timestamp: 2026-01-20T10:02:00Z checked: Hero image file (images/classroom-teaching.jpg) found: 48KB JPEG, 800x533 pixels, baseline encoding implica",
+          "lines": [
+            29,
+            55
+          ],
+          "name": "Evidence",
+          "type": "section"
+        },
+        {
+          "docstring": "root_cause: Google Fonts loaded via standard render-blocking stylesheet (line 121). The browser must download and parse the font CSS before it can ren",
+          "lines": [
+            56,
+            63
+          ],
+          "name": "Resolution",
+          "type": "section"
+        }
+      ]
+    },
+    "pricing-tier-right-shift.md": {
+      "hash": "e0b8b94aadab",
+      "indexed_at": "2026-01-24T22:37:07.697089+00:00",
+      "language": "markdown",
+      "lines": 77,
+      "symbols": [
+        {
+          "docstring": "hypothesis: CONFIRMED - width: 100% on .pricing-tiers-new was interfering with centering test: Removed width: 100% from .pricing-tiers-new CSS expecti",
+          "lines": [
+            8,
+            14
+          ],
+          "name": "Current Focus",
+          "type": "section"
+        },
+        {
+          "docstring": "expected: 3 pricing tier cards centered horizontally on the page actual: All 3 tiers shifted to the right, Senior tier cut off the right edge of viewp",
+          "lines": [
+            15,
+            22
+          ],
+          "name": "Symptoms",
+          "type": "section"
+        },
+        {
+          "docstring": "- hypothesis: Negative margins causing shift evidence: Only negative margins are on .sr-only (-1px) and .faq-answer (-4px margin-top), neither affects",
+          "lines": [
+            23,
+            40
+          ],
+          "name": "Eliminated",
+          "type": "section"
+        },
+        {
+          "docstring": "- timestamp: 2026-01-23 checked: .pricing-tiers-new CSS (line 1961) found: \"display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 10",
+          "lines": [
+            41,
+            67
+          ],
+          "name": "Evidence",
+          "type": "section"
+        },
+        {
+          "docstring": "root_cause: The `width: 100%` declaration on `.pricing-tiers-new` was forcing the grid to expand to full container width before applying max-width, wh",
+          "lines": [
+            68,
+            78
+          ],
+          "name": "Resolution",
+          "type": "section"
+        }
+      ]
+    },
+    "stats-pdf-wrong-data-auto-template.md": {
+      "hash": "4e0b8897848d",
+      "indexed_at": "2026-01-24T22:37:07.721824+00:00",
+      "language": "markdown",
+      "lines": 112,
+      "symbols": [
+        {
+          "docstring": "hypothesis: THREE DISTINCT ROOT CAUSES CONFIRMED - see Evidence section test: Code analysis complete expecting: N/A - root causes found next_action: R",
+          "lines": [
+            8,
+            14
+          ],
+          "name": "Current Focus",
+          "type": "section"
+        },
+        {
+          "docstring": "expected: 1. Stats PDF: Should show 0% for all topics since student submitted a blank paper (scored 0/100) 2. Worksheet: Should show 4U (Extension 2)",
+          "lines": [
+            15,
+            30
+          ],
+          "name": "Symptoms",
+          "type": "section"
+        },
+        {
+          "docstring": "- Submission ID: PP-1769214446454-3l2ogi - Student: Minseok Kim (BEAM-K8MX-9WNP) - Paper: 2025-hsc-maths-extension-2 (blank submission, 0/100) - The s",
+          "lines": [
+            31,
+            38
+          ],
+          "name": "Key Context",
+          "type": "section"
+        },
+        {
+          "docstring": "(none - all hypotheses confirmed)",
+          "lines": [
+            39,
+            42
+          ],
+          "name": "Eliminated",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- timestamp: 2026-01-24T01:00:00Z - checked: `C:/Users/bskim/beam-portal/netlify/functions/view-maths-paper-stats-pdf.js` lines 1096-1138 - found: The",
+              "lines": [
+                45,
+                54
+              ],
+              "name": "Evidence 1: Stats PDF - Wrong Topic Scores Source",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- timestamp: 2026-01-24T01:00:00Z - checked: `C:/Users/bskim/beam-portal/netlify/functions/view-maths-paper-worksheet-pdf.js` lines 340-395 - found: T",
+              "lines": [
+                55,
+                70
+              ],
+              "name": "Evidence 2: Worksheet - Correct Filter BUT Topic Matching Issue",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- timestamp: 2026-01-24T01:00:00Z - checked: `C:/Users/bskim/beam-portal/netlify/functions/view-paper-answer-key.js` lines 293-335 - found: The answer",
+              "lines": [
+                71,
+                81
+              ],
+              "name": "Evidence 3: Answer Key - Shows Template Answers, Not QuestionBank2 WorkingOut",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- timestamp: 2026-01-24T01:00:00Z - checked: `C:/Users/bskim/beam-portal/netlify/functions/generate-adaptive-worksheet.js` and `notion-helpers.js` lin",
+              "lines": [
+                82,
+                91
+              ],
+              "name": "Evidence 4: Generate-Adaptive-Worksheet Uses Correct QuestionBank2",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            43,
+            91
+          ],
+          "name": "Evidence",
+          "type": "section"
+        },
+        {
+          "docstring": "root_cause: THREE DISTINCT BUGS:",
+          "lines": [
+            92,
+            113
+          ],
+          "name": "Resolution",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.928333+00:00",
+  "version": "1.0"
+}

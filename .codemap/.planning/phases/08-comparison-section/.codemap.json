@@ -1,0 +1,766 @@
+{
+  "directory": ".planning\\phases\\08-comparison-section",
+  "files": {
+    "08-01-PLAN.md": {
+      "hash": "3165fca03a59",
+      "indexed_at": "2026-01-24T22:37:09.291284+00:00",
+      "language": "markdown",
+      "lines": 392,
+      "symbols": [
+        {
+          "lines": [
+            350,
+            371
+          ],
+          "name": "Automated Checks",
+          "type": "section"
+        },
+        {
+          "docstring": "| Requirement | Check | Expected | |-------------|-------|----------| | COMP-01 | comparison-table exists with 2 columns | Table with generic vs BEAM",
+          "lines": [
+            372,
+            393
+          ],
+          "name": "Requirement Verification",
+          "type": "section"
+        }
+      ]
+    },
+    "08-01-SUMMARY.md": {
+      "hash": "b670f29f3e19",
+      "indexed_at": "2026-01-24T22:37:09.308844+00:00",
+      "language": "markdown",
+      "lines": 51,
+      "symbols": [
+        {
+          "docstring": "**Status:** Complete",
+          "lines": [
+            3,
+            7
+          ],
+          "name": "Outcome",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **Desktop:** Two-column table with \"What You Hear\" vs \"What BEAM Shows You\" - **Mobile:** 5 stacked cards (no horizontal scrolling) - **Visual treat",
+              "lines": [
+                10,
+                14
+              ],
+              "name": "Comparison Section (HTML + CSS)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Feedback:** \"Your child is doing fine\" vs \"78% overall - priority: integration by substitution\" 2. **Materials:** Same worksheets for everyone vs",
+              "lines": [
+                15,
+                21
+              ],
+              "name": "5 Contrast Rows",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Hero dashboard: Added MCQ (85%) / Short Answer (68%) split under 78% score - Proof section: Updated to harder questions (integration, differentiatio",
+              "lines": [
+                22,
+                27
+              ],
+              "name": "Additional Updates",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            8,
+            27
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Commit | Description | |--------|-------------| | f0e224c | feat(08-01): add comparison section HTML structure | | 7d1b1f9 | style(08-01): add compa",
+          "lines": [
+            28,
+            39
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` (comparison section HTML + CSS, hero dashboard, proof section)",
+          "lines": [
+            40,
+            42
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- COMP-01: Generic vs BEAM side-by-side comparison table \u2713 - COMP-02: Specific contrasts shown (5 distinct comparisons) \u2713",
+          "lines": [
+            43,
+            46
+          ],
+          "name": "Requirements Satisfied",
+          "type": "section"
+        },
+        {
+          "docstring": "- Desktop table: Visible with 5 rows \u2713 - Mobile cards: 5 stacked cards, no horizontal scroll \u2713 - Tone: Helpful and informative, not aggressive \u2713 - Use",
+          "lines": [
+            47,
+            52
+          ],
+          "name": "Verification",
+          "type": "section"
+        }
+      ]
+    },
+    "08-CONTEXT.md": {
+      "hash": "1a90f5d2824b",
+      "indexed_at": "2026-01-24T22:37:09.326290+00:00",
+      "language": "markdown",
+      "lines": 79,
+      "symbols": [
+        {
+          "docstring": "Crystallize the difference between generic tutoring and BEAM in a single visual scan. Parents can compare and immediately understand why BEAM is diffe",
+          "lines": [
+            7,
+            17
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **Two-column table format** \u2014 Best for \"us vs them\" where the contrast is specificity vs vagueness - **5 rows maximum** \u2014 Cognitive load research sh",
+              "lines": [
+                20,
+                25
+              ],
+              "name": "Comparison structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Row order by impact** (highest contrast first, anchoring effect): 1. Feedback specificity: \"Your child is doing fine\" vs \"78% overall - priority:",
+              "lines": [
+                26,
+                35
+              ],
+              "name": "Contrast messaging",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Generic column:** Neutral gray background (#f5f5f5), muted text (#666), italic for vague statements - **BEAM column:** Light purple tint (#f8f5ff)",
+              "lines": [
+                36,
+                42
+              ],
+              "name": "Visual treatment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Headline:** \"Not All Tutoring is the Same\" - **Subhead:** \"See why specific beats generic\" - **Position:** After Proof section (Phase 7), before T",
+              "lines": [
+                43,
+                48
+              ],
+              "name": "Section context",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Exact spacing and padding (minimum 16px) - Zebra striping vs solid backgrounds - Icon treatment (checkmarks optional) - Animation (probably none \u2014 d",
+              "lines": [
+                49,
+                58
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            18,
+            58
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "- Let specificity speak for itself \u2014 \"78% overall, weak on trig word problems\" vs \"doing well\" IS the entire pitch - Frame around BEAM strengths, not",
+          "lines": [
+            59,
+            69
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            70,
+            80
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "08-UAT.md": {
+      "hash": "b6a6d9a48dab",
+      "indexed_at": "2026-01-24T22:37:09.343059+00:00",
+      "language": "markdown",
+      "lines": 61,
+      "symbols": [
+        {
+          "docstring": "[testing complete]",
+          "lines": [
+            9,
+            12
+          ],
+          "name": "Current Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "expected: On desktop (>768px), comparison section shows two-column table with \"What You Hear\" vs \"What BEAM Shows You\" headers. 5 rows visible with sp",
+              "lines": [
+                15,
+                18
+              ],
+              "name": "1. Desktop Comparison Table",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: On mobile (375px), table is hidden and 5 stacked cards are visible. No horizontal scrolling needed. Each card shows label, generic text, and",
+              "lines": [
+                19,
+                22
+              ],
+              "name": "2. Mobile Comparison Cards",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Generic/left column has gray background, muted text color, and italic styling. result: pass",
+              "lines": [
+                23,
+                26
+              ],
+              "name": "3. Visual Treatment - Generic Column",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: BEAM/right column has light purple tint, purple accents on bold text (78%, YOUR, exactly, 9pm/10am, 4 PDFs). result: pass",
+              "lines": [
+                27,
+                30
+              ],
+              "name": "4. Visual Treatment - BEAM Column",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Hero Performance Dashboard shows 78% Current Score with Multiple Choice (85% green) and Short Answer (68% yellow) breakdown below it. result",
+              "lines": [
+                31,
+                34
+              ],
+              "name": "5. Hero Dashboard MCQ/SA Split",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Diagnostic worksheet in proof section shows integration/differentiation questions (e.g., \"Find \u222b 2x\u00b7e^x\u00b2 dx\", \"Differentiate y = sin(x\u00b2)\").",
+              "lines": [
+                35,
+                38
+              ],
+              "name": "6. Proof Section - Harder Questions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Superscripts render correctly - e^x\u00b2 shows x\u00b2 raised as exponent of e, not on same line. result: pass",
+              "lines": [
+                39,
+                42
+              ],
+              "name": "7. Math Notation Rendering",
+              "type": "subsection"
+            },
+            {
+              "docstring": "expected: Proof section insight text says \"The gap teachers miss:\" (not \"parents miss\"). result: pass",
+              "lines": [
+                43,
+                46
+              ],
+              "name": "8. Teachers Gap Framing",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            13,
+            46
+          ],
+          "name": "Tests",
+          "type": "section"
+        },
+        {
+          "docstring": "total: 8 passed: 8 issues: 0 pending: 0 skipped: 0",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "- User requested: Replace Q4 in diagnostic worksheet with different question",
+          "lines": [
+            55,
+            58
+          ],
+          "name": "Observations (Non-Blocking)",
+          "type": "section"
+        },
+        {
+          "docstring": "[none]",
+          "lines": [
+            59,
+            62
+          ],
+          "name": "Gaps",
+          "type": "section"
+        }
+      ]
+    },
+    "RESEARCH-COMPARISON.md": {
+      "hash": "2036db7ed8e8",
+      "indexed_at": "2026-01-24T22:37:09.368795+00:00",
+      "language": "markdown",
+      "lines": 563,
+      "symbols": [
+        {
+          "docstring": "Comparison sections are high-leverage conversion elements when executed correctly. The key principles:",
+          "lines": [
+            9,
+            22
+          ],
+          "name": "Executive Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Format | Best For | Pros | Cons | |--------|----------|------|------| | **Two-column table** | Direct \"us vs them\" | Easy scanning, clear contrast |",
+              "lines": [
+                25,
+                34
+              ],
+              "name": "Format Options",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Why:** BEAM's differentiator is specificity vs vagueness. A two-column table makes this contrast crystal clear:",
+              "lines": [
+                35,
+                46
+              ],
+              "name": "Recommendation for BEAM: Two-Column Table",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [LogRocket UX Design](https://blog.logrocket.com/ux-design/ui-design-comparison-features/):",
+              "lines": [
+                47,
+                57
+              ],
+              "name": "Table Design Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Tables can become problematic on mobile (horizontal scroll) - Consider **card stack format** on mobile: Each contrast as a standalone card - Or **ac",
+              "lines": [
+                58,
+                65
+              ],
+              "name": "Mobile Considerations",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            23,
+            65
+          ],
+          "name": "1. Comparison Structure Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "From [BestEver AI](https://www.bestever.ai/post/us-vs-them-ads):",
+              "lines": [
+                68,
+                75
+              ],
+              "name": "The Core Principle",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Problematic Approach | Why It Fails | Better Alternative | |---------------------|--------------|-------------------| | Naming competitors directly",
+              "lines": [
+                76,
+                84
+              ],
+              "name": "What to Avoid",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**1. Problem State vs Solution State**",
+              "lines": [
+                85,
+                130
+              ],
+              "name": "Effective Framing Strategies",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [Crayon Competitive Intelligence](https://www.crayon.co/blog/great-competitive-comparison-pages):",
+              "lines": [
+                131,
+                141
+              ],
+              "name": "Good Contrast Framing Examples",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Section headline:** \"Not All Tutoring is the Same\"",
+              "lines": [
+                142,
+                151
+              ],
+              "name": "Recommended BEAM Framing",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            66,
+            151
+          ],
+          "name": "2. \"Us vs Them\" Messaging",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "From [WebStacks](https://www.webstacks.com/blog/product-and-feature-comparison-table-design-examples) and [GoodUI](https://goodui.org/patterns/115/):",
+              "lines": [
+                154,
+                175
+              ],
+              "name": "Signaling the \"Winning\" Option",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                176,
+                202
+              ],
+              "name": "Recommended Visual Treatment for BEAM",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [NinjaTables](https://ninjatables.com/comparison-tables-example/):",
+              "lines": [
+                203,
+                224
+              ],
+              "name": "Checkmark Patterns",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From pricing table research ([Telerik](https://www.telerik.com/blogs/how-to-design-pricing-tables-convert-better)):",
+              "lines": [
+                225,
+                241
+              ],
+              "name": "Badge/Label Usage",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            152,
+            241
+          ],
+          "name": "3. Visual Treatment",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Research from [FasterCapital](https://fastercapital.com/content/Tutoring-differentiation--Marketing-Mastery--Differentiating-Your-Tutoring-Business.ht",
+              "lines": [
+                244,
+                258
+              ],
+              "name": "What Competitors Emphasize",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From existing research in `FEATURES.md`:",
+              "lines": [
+                259,
+                268
+              ],
+              "name": "What Sydney Parents Care About",
+              "type": "subsection"
+            },
+            {
+              "docstring": "BEAM has genuine differentiators that most competitors don't:",
+              "lines": [
+                269,
+                280
+              ],
+              "name": "BEAM's Natural Contrasts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Row 1: Feedback specificity (highest contrast)**",
+              "lines": [
+                281,
+                314
+              ],
+              "name": "Recommended Comparison Points (Ordered by Impact)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            242,
+            314
+          ],
+          "name": "4. Tutoring Industry Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "From [NN/G](https://www.nngroup.com/articles/minimize-cognitive-load/) and [Laws of UX](https://lawsofux.com/cognitive-load/):",
+              "lines": [
+                317,
+                332
+              ],
+              "name": "Cognitive Load Theory",
+              "type": "subsection"
+            },
+            {
+              "docstring": "> \"The more choices you give someone, the longer it'll take them to make a decision.\"",
+              "lines": [
+                333,
+                341
+              ],
+              "name": "Hick's Law (Decision Paralysis)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [Smashing Magazine](https://www.smashingmagazine.com/2024/04/f-shape-pattern-how-users-read/) and [99designs](https://99designs.com/blog/tips/vis",
+              "lines": [
+                342,
+                356
+              ],
+              "name": "Scanning Patterns",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [The Decision Lab](https://thedecisionlab.com/biases/decoy-effect):",
+              "lines": [
+                357,
+                366
+              ],
+              "name": "The Decoy Effect (Use Cautiously)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "From [Simon-Kucher](https://www.simon-kucher.com/en/insights/positioning-decoy-pricing-shape-how-customers-perceive-value):",
+              "lines": [
+                367,
+                377
+              ],
+              "name": "Anchoring",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Parents are loss-averse - they fear their child falling behind more than they desire improvement.",
+              "lines": [
+                378,
+                393
+              ],
+              "name": "Loss Aversion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            315,
+            393
+          ],
+          "name": "5. Psychological Principles",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                396,
+                416
+              ],
+              "name": "Section Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| What You Hear | What BEAM Shows You | |--------------|---------------------| | \"Your child is doing fine\" | \"78% overall - priority: trigonometry wo",
+              "lines": [
+                417,
+                426
+              ],
+              "name": "Recommended Table Content",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Generic column:** - Background: `#f5f5f5` (neutral gray) - Text: `#666666` (muted) - No border emphasis - Italic text for vague statements",
+              "lines": [
+                427,
+                447
+              ],
+              "name": "Visual Design Specs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Option A: Stacked Cards**",
+              "lines": [
+                448,
+                472
+              ],
+              "name": "Mobile Adaptation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Do:** - Use specific numbers (\"78%\", \"15-20 questions\") - Use \"YOUR\" to personalize (\"YOUR child's gaps\") - Keep generic column realistically generi",
+              "lines": [
+                473,
+                488
+              ],
+              "name": "Copy Guidelines",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            394,
+            488
+          ],
+          "name": "6. Implementation Recommendations for BEAM",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Test | Hypothesis | |------|------------| | Table vs cards | Cards may feel less confrontational | | Row order | Leading with feedback specificity m",
+              "lines": [
+                491,
+                500
+              ],
+              "name": "A/B Test Opportunities",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Time on section (engagement) - Scroll depth (do they read it all?) - Click-through to CTA after comparison - Form conversion rate (with/without comp",
+              "lines": [
+                501,
+                510
+              ],
+              "name": "Metrics to Track",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            489,
+            510
+          ],
+          "name": "7. Testing Considerations",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [LogRocket: Feature Comparison Tables UX](https://blog.logrocket.com/ux-design/ui-design-comparison-features/) - [WebStacks: Product Comparison Tabl",
+              "lines": [
+                513,
+                519
+              ],
+              "name": "Comparison Table Design",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [BestEver AI: Us vs Them Ads](https://www.bestever.ai/post/us-vs-them-ads) - [Crayon: Competitive Comparison Pages](https://www.crayon.co/blog/great",
+              "lines": [
+                520,
+                526
+              ],
+              "name": "Us vs Them Messaging",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [NN/G: Minimize Cognitive Load](https://www.nngroup.com/articles/minimize-cognitive-load/) - [Laws of UX: Cognitive Load](https://lawsofux.com/cogni",
+              "lines": [
+                527,
+                533
+              ],
+              "name": "Cognitive Load & Psychology",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [99designs: Visual Hierarchy in Landing Pages](https://99designs.com/blog/tips/visual-hierarchy-landing-page-designs/) - [NN/G: Text Scanning Patter",
+              "lines": [
+                534,
+                537
+              ],
+              "name": "Scanning Patterns",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [FasterCapital: Tutoring Differentiation](https://fastercapital.com/content/Tutoring-differentiation--Marketing-Mastery--Differentiating-Your-Tutori",
+              "lines": [
+                538,
+                542
+              ],
+              "name": "Tutoring Industry",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Unbounce: Landing Page Best Practices](https://unbounce.com/landing-page-articles/landing-page-best-practices/) - [Shopify: High-Converting Landing",
+              "lines": [
+                543,
+                549
+              ],
+              "name": "Landing Page Conversion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            511,
+            549
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**The comparison section's job:** Make BEAM's invisible differentiator visible.",
+          "lines": [
+            550,
+            564
+          ],
+          "name": "Key Takeaway",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.974320+00:00",
+  "version": "1.0"
+}

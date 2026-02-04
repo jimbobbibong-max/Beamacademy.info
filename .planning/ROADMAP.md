@@ -11,6 +11,7 @@
 - **v7 Comprehensive Frontend Redesign** — Phases 20-24 (shipped 2026-01-31)
 - **v8 Google Ads Optimization** — Phase 25 (shipped 2026-01-31)
 - **v9 Additional Pages** — Phases 26-28 (shipped 2026-01-31)
+- **v10 Payment Form Enhancement** — Phase 29 (shipped 2026-01-31)
 
 ---
 
@@ -212,6 +213,24 @@ Plans:
 
 ---
 
+## v10: Payment Form Enhancement
+
+**Goal:** Collect full parent + student details for paying customers while keeping free trial form minimal.
+
+---
+
+- [x] **Phase 29: Enhanced Payment Form** — Add parent/student fields for Pay & Enrol
+
+**Goal:** When user selects "Pay & Enrol", show expanded form with parent + student details. Keep "Free Trial" form minimal (just name + phone).
+
+Delivered:
+- **Free Trial path:** Name, Phone (minimal - unchanged)
+- **Pay & Enrol path:** Student Name*, Parent Name*, Parent Email*, Parent Phone*
+- Form labels dynamically update based on selected path
+- All details sent to Stripe metadata
+
+---
+
 ## Progress
 
 | Phase | Milestone | Goal | Status | Completed |
@@ -232,7 +251,8 @@ Plans:
 | 26 | v9 | Additional Pages | Complete | 2026-01-31 |
 | 27 | v9 | About Page Real Tutor Data | Complete | 2026-01-31 |
 | 28 | v9 | Full Site Audit | Complete | 2026-01-31 |
+| 29 | v10 | Enhanced Payment Form | Complete | 2026-01-31 |
 
 ---
 
-*Last updated: 2026-01-31 — v9 Additional Pages milestone complete*
+*Last updated: 2026-01-31 — v10 Payment Form Enhancement shipped*

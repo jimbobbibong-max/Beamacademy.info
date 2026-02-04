@@ -1,0 +1,488 @@
+{
+  "directory": ".planning\\phases\\15-courses-conversion-optimization",
+  "files": {
+    "15-01-PLAN.md": {
+      "hash": "538b404befb3",
+      "indexed_at": "2026-01-24T22:37:10.323185+00:00",
+      "language": "markdown",
+      "lines": 111,
+      "symbols": []
+    },
+    "15-01-SUMMARY.md": {
+      "hash": "db867e62117f",
+      "indexed_at": "2026-01-24T22:37:10.343595+00:00",
+      "language": "markdown",
+      "lines": 104,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Changes made:** 1. **Headline update:** - OLD: \"Invest in Your Future\" - NEW: \"See Exactly Where Your Child Needs Help\"",
+              "lines": [
+                46,
+                63
+              ],
+              "name": "Task 1: Update Section Headline and Description",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            44,
+            63
+          ],
+          "name": "What Was Done",
+          "type": "section"
+        },
+        {
+          "docstring": "| Criterion | Status | |-----------|--------| | Headline changed to outcome-focused | PASSED | | Risk reversal in bold | PASSED | | Section renders co",
+          "lines": [
+            64,
+            74
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            75,
+            80
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Used `<br>` tag to separate the risk reversal line visually - Used `<strong>` tags for bold emphasis on \"No payment required. No obligation.\" - No C",
+          "lines": [
+            81,
+            88
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Choice | Rationale | |----------|--------|-----------| | Headline wording | \"See Exactly Where Your Child Needs Help\" | Ties directly to",
+          "lines": [
+            89,
+            97
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "**Ready for 15-02:** CTA Consistency - Section header now has proper messaging foundation - Next plan should update CTA buttons throughout courses sec",
+          "lines": [
+            98,
+            105
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "15-02-PLAN.md": {
+      "hash": "c7779c54e060",
+      "indexed_at": "2026-01-24T22:37:10.367136+00:00",
+      "language": "markdown",
+      "lines": 145,
+      "symbols": []
+    },
+    "15-02-SUMMARY.md": {
+      "hash": "9de41da615dd",
+      "indexed_at": "2026-01-24T22:37:10.390443+00:00",
+      "language": "markdown",
+      "lines": 158,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Changes made:** - Replaced all 3 pricing tier CTA buttons - OLD: `<a href=\"#contact\" class=\"tier-cta\">Start Free</a>` - NEW: `<a href=\"#contact\" cla",
+              "lines": [
+                46,
+                61
+              ],
+              "name": "Task 1: Update Pricing Tier CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Changes made:** - Replaced all 22 course card CTA buttons - OLD: `<a href=\"#contact\" class=\"course-btn\">Try Free</a>` - NEW: `<a href=\"#contact\" cla",
+              "lines": [
+                62,
+                75
+              ],
+              "name": "Task 2: Update Course Card CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Changes made:** - Added mobile CSS (768px breakpoint) for `.course-card-footer`: - `flex-direction: column` - stacks price and CTA vertically - `gap",
+              "lines": [
+                76,
+                107
+              ],
+              "name": "Task 3: Mobile Responsive CSS Adjustment",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            44,
+            107
+          ],
+          "name": "What Was Done",
+          "type": "section"
+        },
+        {
+          "docstring": "| Criterion | Status | |-----------|--------| | grep \"Start Free\" returns 0 results | PASSED | | grep \"Try Free\" returns 0 results | PASSED | | All 3",
+          "lines": [
+            108,
+            119
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Found during:** Task 3 planning **Issue:** The 2.5x longer CTA text could cause layout issues on mobile screens **Fix:** Added responsive CSS to sta",
+              "lines": [
+                122,
+                130
+              ],
+              "name": "Auto-added CSS Adjustment (Rule 2 - Missing Critical)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            120,
+            130
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Total CTAs updated: 25 (3 tier + 22 course) - Other instances of \"Get Your Free Diagnostic\" exist in hero section (6 additional occurrences) - The c",
+          "lines": [
+            131,
+            138
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Choice | Rationale | |----------|--------|-----------| | CTA text | \"Get Your Free Diagnostic\" | Matches hero section, reinforces diagnos",
+          "lines": [
+            139,
+            148
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "**Courses section conversion optimization complete:** - 15-01: Header copy updated (outcome-focused headline, risk reversal) - 15-02: CTA consistency",
+          "lines": [
+            149,
+            159
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "15-03-PLAN.md": {
+      "hash": "06c88a14a4bd",
+      "indexed_at": "2026-01-24T22:37:10.412878+00:00",
+      "language": "markdown",
+      "lines": 114,
+      "symbols": []
+    },
+    "15-03-SUMMARY.md": {
+      "hash": "9a9ee42e7270",
+      "indexed_at": "2026-01-24T22:37:10.432116+00:00",
+      "language": "markdown",
+      "lines": 74,
+      "symbols": [
+        {
+          "docstring": "This plan documented the architectural decision about the Courses section's dark theme. No code changes were made - this was purely a documentation up",
+          "lines": [
+            37,
+            48
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Task | Name | Commit | Files | |------|------|--------|-------| | 1 | Update STATE.md - Remove theme blocker, add decision | f2379bf | .planning/STA",
+          "lines": [
+            49,
+            55
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] STATE.md has \"Keep dark theme\" in Recent Decisions - [x] STATE.md Blockers/Concerns says \"None currently\" - [x] ROADMAP.md Phase 15 scope shows",
+          "lines": [
+            56,
+            62
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            63,
+            66
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "This was the final documentation plan in Phase 15. With plans 15-01, 15-02, and 15-03 complete: - Section header updated with outcome-focused headline",
+          "lines": [
+            67,
+            75
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "15-RESEARCH.md": {
+      "hash": "a2fa87bb9f80",
+      "indexed_at": "2026-01-24T22:37:10.451945+00:00",
+      "language": "markdown",
+      "lines": 116,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- **Location:** `<section class=\"courses-pricing\" id=\"courses\">` - **Theme:** Dark (gray-900 background, white text) - **Components:** 1. Section head",
+              "lines": [
+                11,
+                20
+              ],
+              "name": "Section Structure",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "- **Problem:** Generic, could be any tutoring service - **FEATURES.md rec:** Outcome-focused headlines that show BEAM's differentiator - **Better:** \"",
+                  "lines": [
+                    23,
+                    27
+                  ],
+                  "name": "1. Headline (\"Invest in Your Future\")",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- **Problem:** Multiple CTA styles in courses section: - Pricing tiers: \"Start Free\" - Course cards: \"Try Free\" - Rest of site: \"Get Your Free Diagnos",
+                  "lines": [
+                    28,
+                    35
+                  ],
+                  "name": "2. CTA Inconsistency",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- **Current:** \"Your first lesson is always free\" - **Problem:** Doesn't explicitly address parent concerns about commitment - **FEATURES.md rec:** \"N",
+                  "lines": [
+                    36,
+                    41
+                  ],
+                  "name": "3. Weak Risk Reversal",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- **Current:** Dark section (gray-900) on otherwise light site - **Consideration:** Is this intentional visual hierarchy or jarring? - **Decision need",
+                  "lines": [
+                    42,
+                    49
+                  ],
+                  "name": "4. Theme Consistency Question",
+                  "type": "subsubsection"
+                }
+              ],
+              "lines": [
+                21,
+                49
+              ],
+              "name": "Issues Identified",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            9,
+            49
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**From:** \"Invest in Your Future\" **To:** \"See Exactly Where Your Child Needs Help\" (ties to diagnostic value prop)",
+              "lines": [
+                52,
+                63
+              ],
+              "name": "Task 1: Update Section Headline",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Replace all CTAs in courses section: - Pricing tier CTAs: \"Start Free\" \u2192 \"Get Your Free Diagnostic\" - Course card CTAs: \"Try Free\" \u2192 \"Get Your Free Di",
+              "lines": [
+                64,
+                70
+              ],
+              "name": "Task 2: CTA Consistency",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Add explicit reassurance near the pricing tiers:",
+              "lines": [
+                71,
+                78
+              ],
+              "name": "Task 3: Add Risk Reversal Near CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Rationale: - Creates natural visual break before \"decision\" section - Dark backgrounds work well for pricing sections (premium feel) - The contrast he",
+              "lines": [
+                79,
+                89
+              ],
+              "name": "Task 4: Keep Dark Theme (Decision)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            50,
+            89
+          ],
+          "name": "Recommendations for Phase 15",
+          "type": "section"
+        },
+        {
+          "docstring": "1. `C:/Users/bskim/Downloads/beamacademy-index.html` - Section header text (lines ~5780-5784) - Pricing tier CTAs (lines ~5833, 5853, 5873) - Course c",
+          "lines": [
+            90,
+            99
+          ],
+          "name": "Files to Modify",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Headline changed:** Section title is outcome-focused, not generic 2. **CTAs unified:** All buttons in courses section say \"Get Your Free Diagnost",
+          "lines": [
+            100,
+            109
+          ],
+          "name": "Verification Criteria",
+          "type": "section"
+        },
+        {
+          "docstring": "| Risk | Likelihood | Mitigation | |------|------------|------------| | CTA text length breaks layout | Low | Test on all breakpoints | | Tone mismatc",
+          "lines": [
+            110,
+            117
+          ],
+          "name": "Risk Assessment",
+          "type": "section"
+        }
+      ]
+    },
+    "15-VERIFICATION.md": {
+      "hash": "1bb99b5b809b",
+      "indexed_at": "2026-01-24T22:37:10.469856+00:00",
+      "language": "markdown",
+      "lines": 118,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Section headline is outcome-focused, not generic | VERIFIED | Line 5793: `<h",
+              "lines": [
+                18,
+                33
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `C:/Users/bskim/Downloads/beamacademy-index.html` | Updated se",
+              "lines": [
+                34,
+                42
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | Section header | Hero value prop | Consistent diagnostic messaging |",
+              "lines": [
+                43,
+                51
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Notes | |-------------|--------|-------| | Outcome-focused headline | SATISFIED | \"See Exactly Where Your Child Needs Help\" -",
+              "lines": [
+                52,
+                61
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None | - | - | - | - |",
+              "lines": [
+                62,
+                69
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "None required. All truths can be verified programmatically: - Copy changes verified via grep - CTA counts verified (3 tier + 22 course = 25 total) - D",
+              "lines": [
+                70,
+                76
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**All must-haves verified successfully.**",
+              "lines": [
+                77,
+                90
+              ],
+              "name": "Verification Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            90
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "lines": [
+            91,
+            119
+          ],
+          "name": "Verification Commands Used",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.999703+00:00",
+  "version": "1.0"
+}

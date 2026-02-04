@@ -1,0 +1,1555 @@
+{
+  "directory": ".planning\\research",
+  "files": {
+    "ARCHITECTURE.md": {
+      "hash": "fbaff1616eaa",
+      "indexed_at": "2026-01-24T22:37:07.974431+00:00",
+      "language": "markdown",
+      "lines": 304,
+      "symbols": [
+        {
+          "docstring": "**What must land immediately:** The visitor must understand TWO things in 3 seconds: 1. **What this is:** A tutoring service 2. **Why it's different:*",
+          "lines": [
+            9,
+            27
+          ],
+          "name": "The 3-Second Test",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Order | Section | Purpose | BEAM Content | |-------|---------|---------|--------------| | 1 | **Hero** | Hook + Category clarity | \"Custom materials",
+              "lines": [
+                32,
+                42
+              ],
+              "name": "Recommended Section Sequence",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero first** because 57% of viewing time happens above the fold. You have 3 seconds to answer \"What is this?\" and \"Why should I care?\"",
+              "lines": [
+                43,
+                56
+              ],
+              "name": "Why This Order Works",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Based on conversion psychology research, landing pages follow an emotional progression: **Curiosity > Empathy > Safety > Desire > Action**. The recomm",
+          "lines": [
+            28,
+            56
+          ],
+          "name": "Section Order",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Element | Why | BEAM Specific | |---------|-----|---------------| | **Category label** | Answers \"What is this?\" | \"HSC Tutoring\" or \"Years 7-12 Tut",
+              "lines": [
+                61,
+                70
+              ],
+              "name": "Must Be Visible (No Scrolling)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Mobile viewports are approximately 600px or less in height. This severely limits above-fold real estate.",
+              "lines": [
+                71,
+                85
+              ],
+              "name": "Mobile Above-Fold (600px viewport)",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Research shows 57% of viewing time occurs above the fold, and on mobile 75% of users didn't see the main CTA when it was below the fold. The above-fol",
+          "lines": [
+            57,
+            85
+          ],
+          "name": "Above-the-Fold Requirements",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The Z-pattern is ideal for landing page hero sections with minimal text. Eyes move: Top-left > Top-right > Diagonal down > Bottom-left > Bottom-right.",
+              "lines": [
+                90,
+                103
+              ],
+              "name": "Z-Pattern for Hero Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Element | Size Rank | Treatment | |---------|-----------|-----------| | **Main headline** | 1st (largest) | Bold, high contrast, 32-48px mobile / 48",
+              "lines": [
+                104,
+                113
+              ],
+              "name": "Size & Weight Hierarchy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **CTA button:** Highest contrast against background (the \"pop\") 2. **Headline:** High contrast (black on white or vice versa) 3. **Portal screensho",
+              "lines": [
+                114,
+                120
+              ],
+              "name": "Color Contrast Priorities",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Research shows users spend 80% of time viewing the left half of a page. Place: - Headline left-aligned - CTA accessible from left side - Key proof ele",
+              "lines": [
+                121,
+                129
+              ],
+              "name": "The 80/20 Rule for Attention",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Visual hierarchy determines the order visitors notice elements. The pattern follows predictable eye movements.",
+          "lines": [
+            86,
+            129
+          ],
+          "name": "Visual Hierarchy",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Single column:** Stack everything vertically 2. **Thumb-friendly buttons:** At least 44x44px tap targets 3. **Full-width CTAs:** Make buttons spa",
+              "lines": [
+                134,
+                140
+              ],
+              "name": "Mobile-First Layout Principles",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Section | Target Height | Reasoning | |---------|---------------|-----------| | Hero | 90-100vh | Full screen hook, CTA visible | | Proof | 80-120vh",
+              "lines": [
+                141,
+                150
+              ],
+              "name": "Mobile Section Heights (Approximate)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Element | Mobile | Desktop | |---------|--------|---------| | Hero layout | Stacked (text > image > CTA) | Side-by-side (text left, image right) | |",
+              "lines": [
+                151,
+                161
+              ],
+              "name": "Mobile vs Desktop Differences",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Research shows sticky CTAs increase conversions significantly (one study showed 20% increase in sign-ups). For mobile:",
+              "lines": [
+                162,
+                172
+              ],
+              "name": "Sticky CTA Bar Implementation",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Mobile accounts for the majority of Google Ads traffic. The structure must work on phones first, then adapt to desktop.",
+          "lines": [
+            130,
+            172
+          ],
+          "name": "Mobile Structure",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Scroll % | Users Remaining | What to Place | BEAM Content | |----------|-----------------|---------------|--------------| | 0% (top) | 100% | Hook +",
+              "lines": [
+                177,
+                186
+              ],
+              "name": "Content Placement by Scroll Depth",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Users need motivation to scroll. Techniques:",
+              "lines": [
+                187,
+                199
+              ],
+              "name": "Scroll Encouragement Techniques",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Research shows 85% of users scroll past the first viewport, 55% reach halfway, and 45% reach the bottom. Content placement should match these drop-off",
+          "lines": [
+            173,
+            199
+          ],
+          "name": "Scroll Depth Strategy",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                204,
+                243
+              ],
+              "name": "Final Section Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Decision | Choice | Rationale | |----------|--------|-----------| | Hero focus | Category + Differentiator | Solves \"can't tell it's tutoring\" probl",
+              "lines": [
+                244,
+                254
+              ],
+              "name": "Key Architecture Decisions",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                255,
+                268
+              ],
+              "name": "Visual Weight Distribution",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Given BEAM's specific content priorities and constraints, here is the recommended architecture:",
+          "lines": [
+            200,
+            268
+          ],
+          "name": "Recommendations for BEAM",
+          "type": "section"
+        },
+        {
+          "docstring": "**Landing Page Structure & Conversion:** - [Databox - 17 Landing Pages That Convert](https://databox.com/landing-page-examples) - [Shopify - High-Conv",
+          "lines": [
+            269,
+            305
+          ],
+          "name": "Sources",
+          "type": "section"
+        }
+      ]
+    },
+    "FEATURES.md": {
+      "hash": "7186a3491840",
+      "indexed_at": "2026-01-24T22:37:07.999142+00:00",
+      "language": "markdown",
+      "lines": 406,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "BEAM has the core offering (free trial, qualified tutors) but likely undersells these standard elements. The page needs to make these VISIBLE and PROM",
+              "lines": [
+                26,
+                30
+              ],
+              "name": "Table Stakes Summary",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Elements parents EXPECT on any tutoring landing page. Missing = page feels incomplete or unprofessional.",
+          "lines": [
+            9,
+            30
+          ],
+          "name": "Table Stakes",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it is:** Headlines and copy that emphasize transformation, not inputs.",
+              "lines": [
+                35,
+                49
+              ],
+              "name": "1. Outcome-Focused Messaging (Not Feature Lists)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Screenshots, sample reports, actual diagnostic PDFs, dashboard previews.",
+              "lines": [
+                50,
+                62
+              ],
+              "name": "2. Visual Proof (Show, Don't Tell)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Concrete numbers instead of vague promises.",
+              "lines": [
+                63,
+                75
+              ],
+              "name": "3. Specificity in Results Claims",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Different CTAs for different visitor readiness levels.",
+              "lines": [
+                76,
+                90
+              ],
+              "name": "4. Multi-Stage CTAs (Journey-Aware)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Explicit statements that remove perceived risk.",
+              "lines": [
+                91,
+                106
+              ],
+              "name": "5. Risk Reversal",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "What separates high-converting tutoring pages from generic ones. These create preference.",
+          "lines": [
+            31,
+            106
+          ],
+          "name": "Differentiating Elements",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Signal | Why It Works | BEAM Implementation | |--------|--------------|---------------------| | **Tutor credentials with specifics** | \"BHHS grads,",
+              "lines": [
+                111,
+                120
+              ],
+              "name": "Tier 1: Essential Trust Signals",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Signal | Why It Works | BEAM Implementation | |--------|--------------|---------------------| | **Sample deliverables** | \"Show, don't tell\" - let p",
+              "lines": [
+                121,
+                130
+              ],
+              "name": "Tier 2: Differentiating Trust Signals",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Signal | Why It Works | When to Add | |--------|--------------|-------------| | **Media mentions** | Third-party validation | If/when covered by loc",
+              "lines": [
+                131,
+                141
+              ],
+              "name": "Tier 3: Authority Signals (If Available)",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Credibility builders that make parents believe claims.",
+          "lines": [
+            107,
+            141
+          ],
+          "name": "Trust Signals That Work",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it is:** The personalized diagnostic PDF generated from ONE trial session.",
+              "lines": [
+                146,
+                157
+              ],
+              "name": "1. The Diagnostic PDF (BEAM's Secret Weapon)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Visual showing how student's topic mastery changes over time.",
+              "lines": [
+                158,
+                178
+              ],
+              "name": "2. Before/After Topic Breakdown",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Screenshot or short video showing the actual portal interface.",
+              "lines": [
+                179,
+                190
+              ],
+              "name": "3. Student Portal Demo",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Side-by-side comparison of generic tutoring vs BEAM.",
+              "lines": [
+                191,
+                204
+              ],
+              "name": "4. Comparison Graphic",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it is:** Visual list of everything included in the free trial.",
+              "lines": [
+                205,
+                219
+              ],
+              "name": "5. The \"What You Get\" Breakdown",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "How to DEMONSTRATE value visually, not just claim it.",
+          "lines": [
+            142,
+            219
+          ],
+          "name": "Proof Points",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Pattern | Example | Why It Works | |---------|---------|--------------| | **Action + Benefit** | \"Get Your Free Diagnostic\" | Tells them what they'l",
+              "lines": [
+                224,
+                239
+              ],
+              "name": "CTA Copy That Converts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Principle | Implementation | |-----------|----------------| | **Minimal fields** | Name, email, phone, child's year level - that's it | | **Progress",
+              "lines": [
+                240,
+                249
+              ],
+              "name": "Form Design Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Genuine urgency examples for tutoring:** - \"Term 1 intake closing [date]\" (if true) - \"Only X spots remaining in [suburb] sessions\" (if true) - \"HSC",
+              "lines": [
+                250,
+                263
+              ],
+              "name": "Urgency/Scarcity (Use Ethically)",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "What drives form submissions specifically.",
+          "lines": [
+            220,
+            263
+          ],
+          "name": "Call-to-Action Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Current likely state:** Generic \"tutoring for Years 7-12\" messaging",
+              "lines": [
+                268,
+                282
+              ],
+              "name": "Priority 1: Hero Section Overhaul (HIGH IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Create and feature:** 1. Sample diagnostic PDF (anonymized) - downloadable 2. Student portal dashboard screenshot 3. Before/after topic breakdown ex",
+              "lines": [
+                283,
+                292
+              ],
+              "name": "Priority 2: Visual Proof Section (HIGH IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Add/improve:** - Working With Children Check badge (footer + tutor section) - Tutor profiles with real photos, credentials, HSC scores - Google Revi",
+              "lines": [
+                293,
+                302
+              ],
+              "name": "Priority 3: Trust Signal Enhancement (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Add section:** \"Generic Tutoring vs BEAM Academy\"",
+              "lines": [
+                303,
+                315
+              ],
+              "name": "Priority 4: Comparison Positioning (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Changes:** - Primary: \"Get Your Free Diagnostic\" (outcome-focused) - Secondary: \"See Sample Report\" (lower commitment option) - Form: Maximum 4-5 fi",
+              "lines": [
+                316,
+                325
+              ],
+              "name": "Priority 5: CTA Optimization (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Verify:** - Hero loads and displays correctly on mobile - Form is easy to complete on phone - CTA button is thumb-reachable - Page speed is under 3",
+              "lines": [
+                326,
+                335
+              ],
+              "name": "Priority 6: Mobile Optimization (MEDIUM IMPACT)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Asset | Purpose | Effort | |-------|---------|--------| | Sample diagnostic PDF | Lead magnet + proof point | Low (anonymize existing) | | Tutor pro",
+              "lines": [
+                336,
+                348
+              ],
+              "name": "Content Assets to Create",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Prioritized list based on BEAM's actual offerings and competitive landscape.",
+          "lines": [
+            264,
+            348
+          ],
+          "name": "Recommendations for BEAM",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [FasterCapital: Tutoring Landing Page Optimization](https://fastercapital.com/content/Tutoring-landing-page--Optimizing-Your-Tutoring-Landing-Page-f",
+              "lines": [
+                351,
+                356
+              ],
+              "name": "Tutoring Landing Page Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Caffeine Marketing: EdTech Landing Page Designs 2025](https://www.caffeinemarketing.com/blog/top-13-edtech-landing-page-designs) - [GemPages: Educa",
+              "lines": [
+                357,
+                361
+              ],
+              "name": "Education Landing Pages",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Durable: How to Start a Tutoring Business Parents Trust](https://durable.co/guides/how-to-start-a-tutoring-business) - [Wix: Tutoring Website Examp",
+              "lines": [
+                362,
+                366
+              ],
+              "name": "Parent Trust & Decision Making",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Matrix Education](https://www.matrix.edu.au/) - [ACE HSC](https://acehsc.com.au/) - [Dymocks Tutoring](https://www.dymockstutoring.edu.au/) - [HSC",
+              "lines": [
+                367,
+                372
+              ],
+              "name": "Sydney HSC Competitors (Pattern Analysis)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [KlientBoost: Landing Page Testimonials](https://www.klientboost.com/landing-pages/landing-page-testimonials/) - [WiserNotify: Social Proof Landing",
+              "lines": [
+                373,
+                376
+              ],
+              "name": "Social Proof & Testimonials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Unbounce: Free Trial Landing Page Examples](https://unbounce.com/landing-page-examples/8-free-trial-landing-page-examples-with-testing-ideas/) - [U",
+              "lines": [
+                377,
+                381
+              ],
+              "name": "CTA & Form Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Prismic: Hero Section Best Practices](https://prismic.io/blog/website-hero-section) - [Thrive Themes: Hero Section Examples](https://thrivethemes.c",
+              "lines": [
+                382,
+                386
+              ],
+              "name": "Hero Section & Value Proposition",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [SchoolAI: AI Tutors and Personalized Learning](https://schoolai.com/blog/ai-tutors-paving-the-path-to-personalized-learning-in-high-schools) - [MDP",
+              "lines": [
+                387,
+                392
+              ],
+              "name": "Data-Driven Personalization Messaging",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            349,
+            392
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**BEAM's differentiator is real, but invisible.**",
+          "lines": [
+            393,
+            407
+          ],
+          "name": "Key Takeaway for BEAM",
+          "type": "section"
+        }
+      ]
+    },
+    "PITFALLS.md": {
+      "hash": "967b93253b4a",
+      "indexed_at": "2026-01-24T22:37:08.028720+00:00",
+      "language": "markdown",
+      "lines": 586,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**What it looks like:** - \"We help students succeed\" - \"Personalized tutoring for your child\" - \"The best tutoring in Sydney\"",
+              "lines": [
+                12,
+                31
+              ],
+              "name": "Pitfall 1: Vague Value Proposition",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"We use a proprietary learning management system\" - \"Our tutors undergo rigorous training\" - \"Access to our online portal\"",
+              "lines": [
+                32,
+                52
+              ],
+              "name": "Pitfall 2: Feature-Focused Instead of Benefit-Focused",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"Differentiated instruction\" - \"Formative assessment\" - \"Scaffolded learning pathways\" - \"Data-driven pedagogy\"",
+              "lines": [
+                53,
+                73
+              ],
+              "name": "Pitfall 3: Education Jargon",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Hero section talks about company history - Value prop appears after 3 paragraphs of \"why tutoring matters\" - CTA is below th",
+              "lines": [
+                74,
+                96
+              ],
+              "name": "Pitfall 4: Burying the Lead",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"We believe in student-centered learning\" - \"Our mission is to transform education\" - \"Founded in 2020, BEAM Academy...\"",
+              "lines": [
+                97,
+                116
+              ],
+              "name": "Pitfall 5: Talking About Yourself Instead of the Parent's Problem",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"Guaranteed ATAR improvement\" - \"Your child will love learning\" - \"Transform grades in weeks\"",
+              "lines": [
+                117,
+                136
+              ],
+              "name": "Pitfall 6: Overpromising / Unrealistic Claims",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            10,
+            136
+          ],
+          "name": "Content Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it looks like:** - Multiple CTAs competing for attention - Navigation menu with 8+ items - Hero carousel with rotating offers - Pop-up appearin",
+              "lines": [
+                139,
+                160
+              ],
+              "name": "Pitfall 7: Cluttered Above-the-Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Everything looks equally important - Headline same size as body text - CTA blends into background - No clear scanning path",
+              "lines": [
+                161,
+                182
+              ],
+              "name": "Pitfall 8: Poor Visual Hierarchy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Paragraphs of 5+ sentences - No subheadings - No bullet points - Long sentences (25+ words)",
+              "lines": [
+                183,
+                204
+              ],
+              "name": "Pitfall 9: Walls of Text",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Generic smiling students in a classroom - Diverse group of anonymous people with laptops - \"Professional\" staged photos that",
+              "lines": [
+                205,
+                225
+              ],
+              "name": "Pitfall 10: Stock Photo Syndrome",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            137,
+            225
+          ],
+          "name": "Design Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it looks like:** - No testimonials - No reviews/ratings - No logos of schools/associations - No numbers (students helped, years in business)",
+              "lines": [
+                228,
+                249
+              ],
+              "name": "Pitfall 11: Missing Social Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"Great tutoring service!\" - Sarah M. - \"Highly recommend\" - Parent - Multiple testimonials that sound identical - No specifi",
+              "lines": [
+                250,
+                271
+              ],
+              "name": "Pitfall 12: Anonymous or Vague Testimonials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"Expert tutors\" with no proof - No tutor profiles or bios - Credentials buried in footer or separate page",
+              "lines": [
+                272,
+                292
+              ],
+              "name": "Pitfall 13: No Tutor Credentials Visible",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - No pricing information anywhere - \"Contact us for a quote\" - Pricing only revealed after form submission",
+              "lines": [
+                293,
+                312
+              ],
+              "name": "Pitfall 14: Hidden Pricing or Mysterious \"Contact Us\"",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Form asks for address, phone, student's school, year level, subjects, goals, budget, how they heard about you - Required fie",
+              "lines": [
+                313,
+                333
+              ],
+              "name": "Pitfall 15: Asking for Too Much Information Upfront",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            226,
+            333
+          ],
+          "name": "Trust Killers",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it looks like:** - Tiny text on mobile - Horizontal scrolling required - Buttons too small to tap - Form fields too close together",
+              "lines": [
+                336,
+                357
+              ],
+              "name": "Pitfall 16: Desktop-First Design",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Page takes 4+ seconds to load - Large uncompressed images - Render-blocking JavaScript - No lazy loading",
+              "lines": [
+                358,
+                380
+              ],
+              "name": "Pitfall 17: Slow Mobile Load Time",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Dropdowns instead of simple inputs - No autofill enabled - Keyboard doesn't match input type (number pad for phone, etc.) -",
+              "lines": [
+                381,
+                403
+              ],
+              "name": "Pitfall 18: Forms Not Optimized for Mobile",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            334,
+            403
+          ],
+          "name": "Mobile-Specific Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What it looks like:** - \"Submit\" - \"Learn More\" - \"Get Started\" - \"Contact Us\"",
+              "lines": [
+                406,
+                427
+              ],
+              "name": "Pitfall 19: Weak or Generic CTA Copy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Ad says \"Free Trial\" but page says \"Book a Consultation\" - Ad mentions specific subject, page is generic - Ad promises diagn",
+              "lines": [
+                428,
+                448
+              ],
+              "name": "Pitfall 20: CTA Doesn't Match Ad Promise",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - \"Book a Trial\" AND \"Learn More\" AND \"Call Us\" above the fold - Different colored buttons competing for attention - Footer wi",
+              "lines": [
+                449,
+                468
+              ],
+              "name": "Pitfall 21: Multiple Competing CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What it looks like:** - Form floating alone - No reassurances about what happens next - No trust signals near submit button",
+              "lines": [
+                469,
+                489
+              ],
+              "name": "Pitfall 22: No Friction Reducers Near Form",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            404,
+            489
+          ],
+          "name": "Form/CTA Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Current messaging:** \"Data-driven personalization\" **Risk:** Sounds like corporate speak. Parents don't know what this means in practice. **Mitigati",
+              "lines": [
+                494,
+                500
+              ],
+              "name": "Risk 1: \"Data-Driven\" Sounds Like Jargon",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current messaging:** \"4 PDFs from trial\" **Risk:** PDFs sound generic. Parents might think \"great, more documents I won't read.\" **Mitigation:** Nam",
+              "lines": [
+                501,
+                507
+              ],
+              "name": "Risk 2: \"4 PDFs\" May Not Land Without Context",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current messaging:** \"BHHS grads, 95+ HSC, med students\" **Risk:** Every tutoring service claims \"expert tutors.\" Claims without proof are noise. **",
+              "lines": [
+                508,
+                514
+              ],
+              "name": "Risk 3: Credential Claims Need Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current messaging:** Free trial form submission as conversion goal **Risk:** \"Free trial\" can trigger \"what's the catch?\" thinking. **Mitigation:**",
+              "lines": [
+                515,
+                521
+              ],
+              "name": "Risk 4: \"Free Trial\" May Create Skepticism",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Constraint:** Single HTML file with inline CSS/JS **Risk:** Inline assets can bloat page size if not managed. Single file = no CDN for assets. **Mit",
+              "lines": [
+                522,
+                528
+              ],
+              "name": "Risk 5: Single HTML File = Performance Risk",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Traffic source:** Google Ads (parents searching for tutoring) **Risk:** Generic landing page may not match specific ad group messaging. **Mitigation",
+              "lines": [
+                529,
+                535
+              ],
+              "name": "Risk 6: Google Ads Message Match",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Based on the current approach and project context, these are the highest-risk pitfalls:",
+          "lines": [
+            490,
+            535
+          ],
+          "name": "Warnings Specific to BEAM Academy",
+          "type": "section"
+        },
+        {
+          "docstring": "| Pitfall | Severity | Impact if Ignored | Phase to Fix | |---------|----------|-------------------|--------------| | Vague value proposition | CRITIC",
+          "lines": [
+            536,
+            552
+          ],
+          "name": "Pitfall Severity Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [Zoho - 13 common landing page mistakes in 2025](https://www.zoho.com/landingpage/landing-page-mistakes.html) - [Moosend - 10 Landing Page Mistakes",
+              "lines": [
+                555,
+                560
+              ],
+              "name": "Landing Page Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Wharton - Social Proof as Trust Signal](https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-online-insights/the-importance-of-s",
+              "lines": [
+                561,
+                565
+              ],
+              "name": "Trust and Social Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [involve.me - Mobile Landing Page Guide 2026](https://www.involve.me/blog/how-to-create-a-mobile-landing-page) - [Moosend - Landing Page Best Practi",
+              "lines": [
+                566,
+                569
+              ],
+              "name": "Mobile and Forms",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Online Tutor Coach - Tutor Website Guide](https://www.onlinetutorcoach.com/blog/the-ultimate-guide-to-building-a-tutor-website-that-attracts-parent",
+              "lines": [
+                570,
+                574
+              ],
+              "name": "Tutoring-Specific",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Google Ads Help - Quality Score](https://support.google.com/google-ads/answer/6167118) - [Search Engine Land - Landing Page Experience](https://sea",
+              "lines": [
+                575,
+                578
+              ],
+              "name": "Google Ads Quality",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Unbounce - Value Proposition Guide](https://unbounce.com/copywriting/value-proposition/) - [Bitly - Value Props for Landing Pages](https://bitly.co",
+              "lines": [
+                579,
+                582
+              ],
+              "name": "Value Proposition",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Landingi - CTA Examples](https://landingi.com/blog/cta-on-landing-pages-playbook-examples/) - [Unbounce - Call to Action Examples](https://unbounce",
+              "lines": [
+                583,
+                587
+              ],
+              "name": "CTA Best Practices",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            553,
+            587
+          ],
+          "name": "Sources",
+          "type": "section"
+        }
+      ]
+    },
+    "STACK.md": {
+      "hash": "0cdddab67a4b",
+      "indexed_at": "2026-01-24T22:37:08.094900+00:00",
+      "language": "markdown",
+      "lines": 460,
+      "symbols": [
+        {
+          "docstring": "The core problem: visitors can't tell BEAM is a tutoring company, let alone understand the data-driven personalization differentiator, without reading",
+          "lines": [
+            9,
+            18
+          ],
+          "name": "Executive Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What:** Lead with a visual demonstration of the product, not abstract claims.",
+              "lines": [
+                21,
+                56
+              ],
+              "name": "Pattern 1: Show-Don't-Tell Hero (CRITICAL)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Visually demonstrate the journey from problem to solution.",
+              "lines": [
+                57,
+                80
+              ],
+              "name": "Pattern 2: Before/After Transformation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Break complex value propositions into 3 digestible steps with icons.",
+              "lines": [
+                81,
+                103
+              ],
+              "name": "Pattern 3: The 3-Step Process Visual",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Horizontal band of trust signals immediately after hero.",
+              "lines": [
+                104,
+                125
+              ],
+              "name": "Pattern 4: Social Proof Strip",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Present features as a visual stack showing how they build on each other.",
+              "lines": [
+                126,
+                152
+              ],
+              "name": "Pattern 5: Feature Stacking (Not Feature Listing)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            19,
+            152
+          ],
+          "name": "Recommended Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Based on 2025 research, limit to **4 font sizes maximum**. More creates cognitive overload.",
+              "lines": [
+                155,
+                169
+              ],
+              "name": "Font Size Hierarchy (Mobile-First)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Maximum:** 50-75 characters per line (Baymard Institute consensus) - **Headlines:** 6-10 words maximum \u2014 readable at a glance - **Mobile:** Slight",
+              "lines": [
+                170,
+                176
+              ],
+              "name": "Line Length & Readability",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Users scan in **F-pattern** (text-heavy) or **Z-pattern** (visual).",
+              "lines": [
+                177,
+                198
+              ],
+              "name": "Scanning Pattern Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Section padding:** 60-80px vertical on desktop, 40-60px on mobile - **Element spacing:** Use consistent spacing scale (8, 16, 24, 32, 48px) - **Do",
+              "lines": [
+                199,
+                206
+              ],
+              "name": "Whitespace Rules",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            153,
+            206
+          ],
+          "name": "Typography & Scanability",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Problem:** Raw screenshots look cluttered and technical.",
+              "lines": [
+                209,
+                243
+              ],
+              "name": "Portal Screenshots: Make Them Sing",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Do:** - Show materials with handwritten notes (proof of use) - Stack multiple booklets to show volume/variety - Include a hand holding the booklet (",
+              "lines": [
+                244,
+                257
+              ],
+              "name": "Booklet/Materials Photos",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Do:** - Natural, candid teaching moments - Eye contact with camera OR engaged with student - Purple accent in clothing/background (brand consistency",
+              "lines": [
+                258,
+                275
+              ],
+              "name": "Tutor Photos",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            207,
+            275
+          ],
+          "name": "Image Treatments",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **83%** of landing page visits are mobile (2024 Benchmark Report) - **53%** abandon if load time > 3 seconds - Mobile converts at **half the rate**",
+              "lines": [
+                278,
+                283
+              ],
+              "name": "Critical Stats",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Hero must work without scrolling** - Headline + one screenshot + CTA visible immediately - No carousel or complex interactions",
+              "lines": [
+                284,
+                310
+              ],
+              "name": "Mobile-First Hierarchy",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                311,
+                323
+              ],
+              "name": "Mobile CTA Strategy",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            276,
+            323
+          ],
+          "name": "Mobile Considerations",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Bad:** \"Book Trial\" + \"Learn More\" + \"Download Guide\" + \"Call Now\" **Good:** One primary CTA above the fold. Secondary actions below.",
+              "lines": [
+                326,
+                329
+              ],
+              "name": "1. Competing CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Why bad:** Feel inauthentic, reduce trust. Parents can spot stock \"happy student\" photos instantly. **Instead:** Real portal screenshots, real mater",
+              "lines": [
+                330,
+                333
+              ],
+              "name": "2. Generic Stock Photos",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:**",
+              "lines": [
+                334,
+                346
+              ],
+              "name": "3. Feature Walls",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:** \"Better Learning Outcomes\" / \"Excellence in Education\" **Good:** \"Custom Materials for YOUR Kid\" / \"We Track Scores. We Fix Weak Spots.\"",
+              "lines": [
+                347,
+                350
+              ],
+              "name": "4. Vague Headlines",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:** Mentioning data-driven personalization in paragraph 4 of \"About Us\" **Good:** It's the first visual and the headline. Unmissable.",
+              "lines": [
+                351,
+                354
+              ],
+              "name": "5. Burying the Differentiator",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:** 3 paragraphs explaining the methodology **Good:** One headline + one supporting line + screenshot that shows it",
+              "lines": [
+                355,
+                358
+              ],
+              "name": "6. Wall of Text in Hero",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:** 2MB uncompressed photo as hero background **Good:** Compressed, appropriately sized, lazy-loaded below-fold content",
+              "lines": [
+                359,
+                362
+              ],
+              "name": "7. Slow-Loading Hero Images",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Bad:** Full nav with 8 menu items on landing page **Good:** Logo + single CTA button. Maybe \"How it works\" anchor link.",
+              "lines": [
+                363,
+                368
+              ],
+              "name": "8. Navigation Overload",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            324,
+            368
+          ],
+          "name": "Anti-Patterns to Avoid",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Replace hero with portal screenshot** - Show the score tracking in action - Add device mockup frame - Callout annotation on \"weak topics identifi",
+              "lines": [
+                371,
+                391
+              ],
+              "name": "Immediate Wins (High Impact, Low Effort)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "5. **Before/after comparison** - \"Generic tutoring\" vs \"BEAM Academy\" - Visual side-by-side - Can be interactive toggle on desktop",
+              "lines": [
+                392,
+                407
+              ],
+              "name": "Medium Effort (Worth Doing)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "8. **Short demo video (30-60 seconds)** - Show the portal in action - \"Here's how we track Sarah's scores...\" - Landing pages with video convert 86% h",
+              "lines": [
+                408,
+                420
+              ],
+              "name": "Future Consideration",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            369,
+            420
+          ],
+          "name": "Recommendations for BEAM",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [Shopify - High-Converting Landing Pages Best Practices 2025](https://www.shopify.com/blog/high-converting-landing-pages) - [Thrive Themes - 50+ Her",
+              "lines": [
+                423,
+                429
+              ],
+              "name": "Primary (HIGH Confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Zoho - 13 Common Landing Page Mistakes 2025](https://www.zoho.com/landingpage/landing-page-mistakes.html) - [Moosend - 10 Landing Page Mistakes to",
+              "lines": [
+                430,
+                436
+              ],
+              "name": "Secondary (MEDIUM Confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [BrandBird](https://www.brandbird.app/) - Screenshot beautification - [Shots.so](https://shots.so/) - Device mockups - [Mockuuups Studio](https://mo",
+              "lines": [
+                437,
+                444
+              ],
+              "name": "Tools Referenced",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            421,
+            444
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Core visual strategy:** Show the portal, not just talk about it. The differentiator (data-driven personalization) must be VISIBLE in the hero sectio",
+          "lines": [
+            445,
+            461
+          ],
+          "name": "Summary for Roadmap",
+          "type": "section"
+        }
+      ]
+    },
+    "SUMMARY.md": {
+      "hash": "4c5f62d64e8b",
+      "indexed_at": "2026-01-24T22:37:08.115628+00:00",
+      "language": "markdown",
+      "lines": 135,
+      "symbols": [
+        {
+          "docstring": "**The differentiator is invisible.** BEAM's data-driven personalization (track scores \u2192 identify weak spots \u2192 generate custom materials) is real and v",
+          "lines": [
+            8,
+            15
+          ],
+          "name": "The Core Insight",
+          "type": "section"
+        },
+        {
+          "docstring": "| Pattern | Use For | Implementation | |---------|---------|----------------| | **Show-Don't-Tell Hero** | Instant comprehension | Portal screenshot s",
+          "lines": [
+            16,
+            29
+          ],
+          "name": "Stack Recommendations",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Clear value proposition headline - Free trial offer (prominent) - Tutor credentials with photos - Working With Children Check badge - Mobile-respons",
+              "lines": [
+                32,
+                39
+              ],
+              "name": "Must Have (Table Stakes)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **4 PDFs from ONE trial** \u2014 Diagnostic, Custom Worksheets, Personalized Paper, Solutions 2. **Student portal** \u2014 Progress tracking, topic breakdown",
+              "lines": [
+                40,
+                45
+              ],
+              "name": "Differentiators (What BEAM Has That Others Don't)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Real tutor photos with specific credentials (not stock) - Parent testimonials with names, suburbs, specific outcomes - WWCC badge - Google/Trustpilo",
+              "lines": [
+                46,
+                53
+              ],
+              "name": "Trust Signals",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            30,
+            53
+          ],
+          "name": "Feature Priorities",
+          "type": "section"
+        },
+        {
+          "docstring": "Recommended section order based on conversion psychology:",
+          "lines": [
+            54,
+            71
+          ],
+          "name": "Page Structure",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Vague value proposition** \u2014 \"Personalized tutoring\" means nothing. \"4 diagnostic reports showing exactly where your child struggles\" lands instan",
+              "lines": [
+                74,
+                85
+              ],
+              "name": "Top 5 Conversion Killers",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- \"4 PDFs\" needs context \u2014 show what they look like, don't just list them - Tutor credentials need photos \u2014 text alone doesn't build trust - Free tria",
+              "lines": [
+                86,
+                94
+              ],
+              "name": "BEAM-Specific Warnings",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            72,
+            94
+          ],
+          "name": "Pitfalls to Avoid",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- New headline with category + differentiator - Portal screenshot in hero (show don't tell) - Single clear CTA",
+              "lines": [
+                99,
+                103
+              ],
+              "name": "Phase 1: Hero Overhaul",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- 4 documents visualization - Portal dashboard screenshot - \"What you get from ONE trial\" framing",
+              "lines": [
+                104,
+                108
+              ],
+              "name": "Phase 2: Proof Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Generic vs BEAM table - Tutor profiles with photos - Testimonials with specifics - WWCC badge",
+              "lines": [
+                109,
+                114
+              ],
+              "name": "Phase 3: Comparison & Trust",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Reduce to 3-4 fields - \"Get Your Free Diagnostic\" CTA copy - Friction reducers near submit",
+              "lines": [
+                115,
+                119
+              ],
+              "name": "Phase 4: Form & CTA Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Image optimization - Mobile testing - Page speed verification",
+              "lines": [
+                120,
+                126
+              ],
+              "name": "Phase 5: Performance & Polish",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Based on research, suggested phase breakdown:",
+          "lines": [
+            95,
+            126
+          ],
+          "name": "Phase Recommendations",
+          "type": "section"
+        },
+        {
+          "docstring": "- What are the current Google Ads headlines? (Needed for message match) - Do parent testimonials with specific outcomes exist? - Which portal views be",
+          "lines": [
+            127,
+            136
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.936768+00:00",
+  "version": "1.0"
+}

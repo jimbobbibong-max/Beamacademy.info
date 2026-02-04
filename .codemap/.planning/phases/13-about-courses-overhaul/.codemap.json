@@ -1,0 +1,496 @@
+{
+  "directory": ".planning\\phases\\13-about-courses-overhaul",
+  "files": {
+    "13-01-PLAN.md": {
+      "hash": "4028058a9ff1",
+      "indexed_at": "2026-01-24T22:37:10.036931+00:00",
+      "language": "markdown",
+      "lines": 201,
+      "symbols": []
+    },
+    "13-01-SUMMARY.md": {
+      "hash": "a5a77b35c843",
+      "indexed_at": "2026-01-24T22:37:10.061964+00:00",
+      "language": "markdown",
+      "lines": 101,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 5 min - **Started:** 2026-01-23T19:34:00+1100 - **Completed:** 2026-01-23T19:40:00+1100 - **Tasks:** 3/3 - **Files modified:** 1",
+          "lines": [
+            47,
+            54
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Added \"ABOUT US\" section-tag above the About heading - Updated About h2 typography to use responsive clamp sizing - Modernized About badge to v2 pil",
+          "lines": [
+            55,
+            60
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            61,
+            70
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - About section HTML and CSS updated",
+          "lines": [
+            71,
+            74
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Kept scoped selector** - Used `.about-text h2` instead of adding `.section-title` class, since About is a 2-column layout with left-aligned text",
+          "lines": [
+            75,
+            80
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            81,
+            84
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "None.",
+          "lines": [
+            85,
+            88
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            89,
+            92
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- About section now matches v2 visual quality - Ready for 13-02: Courses section modernization (if planned) - Pattern established for applying v2 upda",
+          "lines": [
+            93,
+            102
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "13-RESEARCH.md": {
+      "hash": "95cbd500186f",
+      "indexed_at": "2026-01-24T22:37:10.087617+00:00",
+      "language": "markdown",
+      "lines": 466,
+      "symbols": [
+        {
+          "docstring": "Phase 13 aims to modernize the About (\"Building Education and Mastery\") and Courses (\"Invest in Your Future\") sections to match the v2 design quality",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**HTML Structure:**",
+              "lines": [
+                17,
+                55
+              ],
+              "name": "About Section (Lines 5719-5752)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**HTML Structure:**",
+              "lines": [
+                56,
+                89
+              ],
+              "name": "Courses Section (Lines 5755-5875+)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            89
+          ],
+          "name": "Current State Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "All v2 sections use this standardized header:",
+              "lines": [
+                92,
+                135
+              ],
+              "name": "1. Section Header Pattern",
+              "type": "subsection"
+            },
+            {
+              "docstring": "v2 sections use pill-shaped badges with optional icons:",
+              "lines": [
+                136,
+                162
+              ],
+              "name": "2. Badge Pattern (Pill with Icon)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "v2 cards use consistent hover effects:",
+              "lines": [
+                163,
+                173
+              ],
+              "name": "3. Card Hover Pattern",
+              "type": "subsection"
+            },
+            {
+              "docstring": "v2 uses icon boxes for features:",
+              "lines": [
+                174,
+                205
+              ],
+              "name": "4. Feature List Pattern (Support Section)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "v2 sections use consistent breakpoints:",
+              "lines": [
+                206,
+                214
+              ],
+              "name": "5. Mobile Responsiveness Pattern",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            90,
+            214
+          ],
+          "name": "v2 Design Patterns (Established in Phases 6-11)",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Priority | Change | Effort | Impact | |----------|--------|--------|--------| | HIGH | Add `section-header` wrapper with `section-title` class | Low",
+              "lines": [
+                217,
+                226
+              ],
+              "name": "About Section Changes Needed",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Priority | Change | Effort | Impact | |----------|--------|--------|--------| | LOW | Verify All Access hero consistency | Low | Minor polish | | HI",
+              "lines": [
+                227,
+                234
+              ],
+              "name": "Courses Section Changes Needed",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            215,
+            234
+          ],
+          "name": "Gap Analysis",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Apply v2 patterns to About section only, leave Courses largely as-is since it already uses section-header.",
+              "lines": [
+                237,
+                249
+              ],
+              "name": "Approach 1: Minimal Changes (Recommended)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Apply all v2 patterns including feature icon boxes.",
+              "lines": [
+                250,
+                261
+              ],
+              "name": "Approach 2: Full v2 Alignment",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            235,
+            261
+          ],
+          "name": "Technical Approach Recommendations",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Section headers | Custom h2 styling | `.section-header`,",
+          "lines": [
+            262,
+            270
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Adding section-header can break mobile text centering **Why it happens:** Parent flex/grid contexts override text-align **How to",
+              "lines": [
+                273,
+                278
+              ],
+              "name": "Pitfall 1: Breaking Mobile Layout",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** New styles don't apply because existing selectors are more specific **Why it happens:** About section has its own `.about-text h2",
+              "lines": [
+                279,
+                284
+              ],
+              "name": "Pitfall 2: CSS Specificity Conflicts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Converting `.about-badge` (absolute positioned) to pill style breaks image layout **Why it happens:** Absolute positioning is tie",
+              "lines": [
+                285,
+                290
+              ],
+              "name": "Pitfall 3: Badge Positioning Breakage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** About section is light theme, Courses is dark - must maintain this **Why it happens:** Accidentally applying wrong color variable",
+              "lines": [
+                291,
+                296
+              ],
+              "name": "Pitfall 4: Dark Theme Inconsistency",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            271,
+            296
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Before:**",
+              "lines": [
+                299,
+                352
+              ],
+              "name": "Converting About Header to v2 Pattern",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**New CSS:**",
+              "lines": [
+                353,
+                374
+              ],
+              "name": "Adding Section Tag to About",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Before:**",
+              "lines": [
+                375,
+                408
+              ],
+              "name": "Converting About Badge to Pill Style",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            297,
+            408
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "Both sections should be tested at these breakpoints:",
+          "lines": [
+            409,
+            429
+          ],
+          "name": "Mobile Verification Checklist",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Badge placement decision:** - Keep absolute positioned overlay on image? (current) - Move to header area as pill badge? (v2 pattern) - Recommenda",
+          "lines": [
+            430,
+            441
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Direct codebase analysis of `beamacademy-index.html` - CSS lines 984-1012 (section-header patterns) - CSS lines 1015-1100 (proof section patterns) -",
+              "lines": [
+                444,
+                452
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- v2 ROADMAP showing phases 6-11 established design patterns - Phase 12 consolidation context",
+              "lines": [
+                453,
+                456
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            442,
+            456
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Current state analysis: HIGH - direct codebase inspection - v2 patterns: HIGH - extracted from existing implementation - G",
+          "lines": [
+            457,
+            467
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "13-VERIFICATION.md": {
+      "hash": "65dca8a8c32d",
+      "indexed_at": "2026-01-24T22:37:10.113034+00:00",
+      "language": "markdown",
+      "lines": 140,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | About section matches v2 visual style | VERIFIED | Uses .about-section-tag (",
+              "lines": [
+                17,
+                27
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | About section HTML | id=\"about\" with content | VERIFIED | Line",
+              "lines": [
+                28,
+                37
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | About section | CSS variables | var(--gray-*, --purple-*) | WIRED | A",
+              "lines": [
+                38,
+                46
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**v2 Design Patterns Found:**",
+              "lines": [
+                47,
+                73
+              ],
+              "name": "Design Pattern Consistency Check",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**About Section (line 3417):**",
+              "lines": [
+                74,
+                96
+              ],
+              "name": "Mobile Responsiveness Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None found | - | - | - | - |",
+              "lines": [
+                97,
+                104
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "While all automated checks pass, the following benefit from visual confirmation:",
+              "lines": [
+                105,
+                125
+              ],
+              "name": "Human Verification Recommended",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            125
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "docstring": "Phase 13 goals have been achieved. Both the About and Courses sections:",
+          "lines": [
+            126,
+            141
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.993433+00:00",
+  "version": "1.0"
+}

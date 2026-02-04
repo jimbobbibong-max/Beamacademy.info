@@ -1,0 +1,1052 @@
+{
+  "directory": ".planning\\phases\\17-courses-section-overhaul",
+  "files": {
+    "17-01-PLAN.md": {
+      "hash": "810cd9a804ab",
+      "indexed_at": "2026-01-24T22:37:10.601024+00:00",
+      "language": "markdown",
+      "lines": 177,
+      "symbols": []
+    },
+    "17-01-SUMMARY.md": {
+      "hash": "179d4f2a8665",
+      "indexed_at": "2026-01-24T22:37:10.618415+00:00",
+      "language": "markdown",
+      "lines": 127,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Changes:** - Added prominent box-shadow (`0 8px 32px rgba(124, 58, 237, 0.3)`) for visual weight - Increased padding from `32px 40px` to `36px 44px`",
+              "lines": [
+                43,
+                57
+              ],
+              "name": "Task 1: Enhanced All Access Anchor Pricing Display",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Converted from percentages to actual dollar amounts:**",
+              "lines": [
+                58,
+                74
+              ],
+              "name": "Task 2: Dollar Savings Display",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Badge repositioning for Goldilocks effect:**",
+              "lines": [
+                75,
+                86
+              ],
+              "name": "Task 3: Standardized Best Value Badges",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            41,
+            86
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] All Access banner displays prominently with enhanced visual weight - [x] Prices clearly visible with new box styling and larger fonts - [x] \"Mos",
+          "lines": [
+            87,
+            100
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            101,
+            104
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Edit Tool Issues:** The Claude Edit tool had persistent \"file unexpectedly modified\" errors on the 260KB HTML file. Workaround: Used Python scrip",
+          "lines": [
+            105,
+            112
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "Plan 17-01 complete. Ready for: - **17-02:** Social proof positioning near pricing decisions - **17-03:** CTA and checkout flow optimization",
+          "lines": [
+            113,
+            118
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        },
+        {
+          "docstring": "| File | Changes | |------|---------| | `C:/Users/bskim/Downloads/beamacademy-index.html` | CSS: Enhanced All Access Hero styling. HTML: Added subtext",
+          "lines": [
+            119,
+            128
+          ],
+          "name": "Files Changed",
+          "type": "section"
+        }
+      ]
+    },
+    "17-02-PLAN.md": {
+      "hash": "04cefb35fa9e",
+      "indexed_at": "2026-01-24T22:37:10.637065+00:00",
+      "language": "markdown",
+      "lines": 192,
+      "symbols": []
+    },
+    "17-02-SUMMARY.md": {
+      "hash": "9a724b66ebe8",
+      "indexed_at": "2026-01-24T22:37:10.655045+00:00",
+      "language": "markdown",
+      "lines": 158,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Location:** After `</header>` and before All Access hero banner",
+              "lines": [
+                43,
+                71
+              ],
+              "name": "Task 1: Stats Strip Beneath Section Header",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Location:** After `.pricing-tiers-new` div and before `.course-browser-divider`",
+              "lines": [
+                72,
+                94
+              ],
+              "name": "Task 2: Outcome Testimonial After Pricing Tiers",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Implementation:** Added `<span class=\"tier-risk-reversal\">` after each tier CTA link",
+              "lines": [
+                95,
+                113
+              ],
+              "name": "Task 3: Risk Reversal Near CTAs",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            41,
+            113
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] Stats strip appears between section header and All Access banner - [x] Three stats displayed: 500+ students, 4.9 rating, 95% improve - [x] Styli",
+          "lines": [
+            114,
+            126
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            127,
+            130
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Python scripts used:** The 260KB HTML file causes issues with Claude's Edit tool (file modification conflicts). Used Python regex replacements fo",
+          "lines": [
+            131,
+            138
+          ],
+          "name": "Technical Notes",
+          "type": "section"
+        },
+        {
+          "docstring": "Plan 17-02 complete. Ready for: - **17-03:** CTA and checkout flow optimization",
+          "lines": [
+            139,
+            143
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        },
+        {
+          "docstring": "| File | Changes | |------|---------| | `C:/Users/bskim/Downloads/beamacademy-index.html` | Added: pricing-social-proof stats strip, pricing-testimoni",
+          "lines": [
+            144,
+            149
+          ],
+          "name": "Files Changed",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Message | |------|---------| | f2ce86f | feat(17-02): add social proof positioning at pricing decision points |",
+          "lines": [
+            150,
+            159
+          ],
+          "name": "Commits",
+          "type": "section"
+        }
+      ]
+    },
+    "17-03-PLAN.md": {
+      "hash": "36ee2dbd1e62",
+      "indexed_at": "2026-01-24T22:37:10.682721+00:00",
+      "language": "markdown",
+      "lines": 316,
+      "symbols": []
+    },
+    "17-03-SUMMARY.md": {
+      "hash": "e19142a99020",
+      "indexed_at": "2026-01-24T22:37:10.700507+00:00",
+      "language": "markdown",
+      "lines": 36,
+      "symbols": [
+        {
+          "docstring": "Mobile optimization and course browser UX improvements for the restructured pricing section.",
+          "lines": [
+            8,
+            11
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "| # | Task | Commit | Files | |---|------|--------|-------| | 1 | Collapsible course browser | 4819650 | beamacademy-index.html | | 2 | Sticky mobile",
+          "lines": [
+            12,
+            19
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Collapsible course browser**: Shows first 4 courses by default, \"See All Courses\" button expands to show all 24. Smooth animation, gradient fade o",
+          "lines": [
+            20,
+            28
+          ],
+          "name": "Deliverables",
+          "type": "section"
+        },
+        {
+          "docstring": "- Stats changed from original \"500+ students\" to \"#1 Baulko Ranks Teaching\" per user feedback (more credible for new business) - Testimonial rewritten",
+          "lines": [
+            29,
+            33
+          ],
+          "name": "Deviations",
+          "type": "section"
+        },
+        {
+          "docstring": "Phase 17 verification",
+          "lines": [
+            34,
+            37
+          ],
+          "name": "Next",
+          "type": "section"
+        }
+      ]
+    },
+    "17-CONTEXT.md": {
+      "hash": "acba553f9e02",
+      "indexed_at": "2026-01-24T22:37:10.716873+00:00",
+      "language": "markdown",
+      "lines": 91,
+      "symbols": [
+        {
+          "docstring": "Complete structural overhaul of the Courses/Pricing section based on industry best practices. This includes: - SaaS pricing page conversion patterns -",
+          "lines": [
+            7,
+            21
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "docstring": "- Tier presentation (current: 3 tiers by year level) - Value ladder structure - Anchor pricing strategies - Feature comparison tables - All Access Pas",
+                  "lines": [
+                    33,
+                    39
+                  ],
+                  "name": "Pricing Architecture",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- User journey through section - How visitors move: browse \u2192 select \u2192 convert - Information disclosure timing - Package selection UX",
+                  "lines": [
+                    40,
+                    45
+                  ],
+                  "name": "Decision Flow",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- Where testimonials appear within pricing - Results/outcomes integration - Trust signals for pricing decisions",
+                  "lines": [
+                    46,
+                    50
+                  ],
+                  "name": "Social Proof Placement",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "- Primary conversion action (free diagnostic currently) - CTA prominence and placement - Friction reduction in path to action",
+                  "lines": [
+                    51,
+                    58
+                  ],
+                  "name": "Entry Point & CTA Strategy",
+                  "type": "subsubsection"
+                }
+              ],
+              "docstring": "User has delegated all implementation decisions to Claude, guided by: 1. Research into industry best practices 2. Consistency with the existing site's",
+              "lines": [
+                24,
+                58
+              ],
+              "name": "Claude's Discretion (All Areas)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            22,
+            58
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "**Current implementation context:** - 3-tier structure: Junior (7-8), Intermediate (9-10), Senior (11-12) - All Access Pass hero banner at top - Packa",
+          "lines": [
+            59,
+            81
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            82,
+            92
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "17-RESEARCH.md": {
+      "hash": "6fe8a155913d",
+      "indexed_at": "2026-01-24T22:37:10.748427+00:00",
+      "language": "markdown",
+      "lines": 604,
+      "symbols": [
+        {
+          "docstring": "This research investigates best practices for pricing page design, education course pricing psychology, and conversion optimization patterns. The goal",
+          "lines": [
+            7,
+            16
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Pattern | Description | Why Standard | |---------|-------------|--------------| | 3-Tier Pricing | Good-Better-Best structure | Goldilocks effect dr",
+              "lines": [
+                19,
+                29
+              ],
+              "name": "Pricing Page Design Patterns (Industry Standard 2025-2026)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Pattern | Description | Why It Works | |---------|-------------|--------------| | Free Diagnostic/Assessment | Lead magnet that demonstrates experti",
+              "lines": [
+                30,
+                40
+              ],
+              "name": "Education/Tutoring Specific Patterns",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            17,
+            40
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                43,
+                66
+              ],
+              "name": "Recommended Section Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                67,
+                85
+              ],
+              "name": "User Decision Flow (Recommended)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Price-First Presentation:** Showing lowest price first anchors expectations low - **Too Many Options:** More than 4-5 options causes decision para",
+              "lines": [
+                86,
+                95
+              ],
+              "name": "Anti-Patterns to Avoid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            41,
+            95
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Most customers choose the middle option when presented with three choices: - **Low tier:** Establishes price floor, makes middle seem reasonable - **M",
+              "lines": [
+                98,
+                109
+              ],
+              "name": "The Goldilocks Effect (Three-Tier Model)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Principle:** First price seen establishes reference point for all subsequent prices.",
+              "lines": [
+                110,
+                121
+              ],
+              "name": "Anchor Pricing Implementation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Current BEAM structure: - 1 Subject: Base price - 2 Subjects: 25% off 2nd (good) - 3 Subjects: 50% off 3rd (good) - 4 Subjects: 4th free (excellent) -",
+              "lines": [
+                122,
+                136
+              ],
+              "name": "Multi-Subject Discount Psychology",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Current prices ($80, $100, $120) use round numbers. Charm pricing ($79, $99, $119) can: - Feel more \"calculated\" and data-driven - Trigger \"nine-endin",
+              "lines": [
+                137,
+                146
+              ],
+              "name": "Charm Pricing Consideration",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            96,
+            146
+          ],
+          "name": "Pricing Psychology Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Guideline | Implementation | |-----------|----------------| | Focus on distinctions | Highlight what makes tiers different, not common features | |",
+              "lines": [
+                149,
+                159
+              ],
+              "name": "Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Feature | 1 Subject | 2+ Subjects | All Access | |---------|-----------|-------------|------------| | Weekly lessons | 1x 2hr | Per subject | Unlimi",
+              "lines": [
+                160,
+                173
+              ],
+              "name": "What to Compare (BEAM-Specific)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "On mobile (< 768px): 1. Stack tier cards vertically 2. Use tabs to switch between tiers for comparison 3. Keep CTAs visible (sticky footer option) 4.",
+              "lines": [
+                174,
+                183
+              ],
+              "name": "Mobile Comparison Pattern",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            147,
+            183
+          ],
+          "name": "Feature Comparison Tables",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Location | Purpose | Type of Proof | |----------|---------|---------------| | Near section header | Build initial trust | Aggregate stats (\"500+ stu",
+              "lines": [
+                186,
+                194
+              ],
+              "name": "Optimal Locations for Pricing Sections",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Testimonials increase conversions by up to 34% on sales pages - Video testimonials increase conversion rates by 80% vs text - 3-5 testimonials is op",
+              "lines": [
+                195,
+                201
+              ],
+              "name": "Research Evidence",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Stats Bar:** \"500+ students | 4.9 rating | 8 years experience\" 2. **Result Testimonials:** \"Improved 2 bands in 3 months\" 3. **Parent Testimonial",
+              "lines": [
+                202,
+                209
+              ],
+              "name": "BEAM-Specific Social Proof Options",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                210,
+                227
+              ],
+              "name": "Placement Recommendation",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            184,
+            227
+          ],
+          "name": "Social Proof Placement",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "This is a strong lead magnet for education: - **Low friction:** No payment required - **Demonstrates value:** Shows expertise before purchase - **Pers",
+              "lines": [
+                230,
+                239
+              ],
+              "name": "Primary CTA: \"Get Your Free Diagnostic\"",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Placement | Recommendation | |-----------|----------------| | Above fold | At least one CTA visible without scrolling | | After each tier | CTA in e",
+              "lines": [
+                240,
+                249
+              ],
+              "name": "CTA Placement Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Current: \"Get Your Free Diagnostic\"",
+              "lines": [
+                250,
+                261
+              ],
+              "name": "CTA Copy Refinement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Position near every CTA: - \"No payment required. No obligation.\" - \"Cancel anytime. No questions asked.\" - \"Your free diagnostic is yours to keep.\"",
+              "lines": [
+                262,
+                272
+              ],
+              "name": "Risk Reversal Messaging",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            228,
+            272
+          ],
+          "name": "CTA Strategy",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                275,
+                280
+              ],
+              "name": "Current Flow Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Form anxiety:** Parents may hesitate at form length 2. **Unclear next steps:** What happens after I submit? 3. **No immediate value:** Wait for c",
+              "lines": [
+                281,
+                287
+              ],
+              "name": "Friction Points to Address",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Issue | Solution | |-------|----------| | Long form | Minimal fields: Name, Email, Child's Year Level, Subject(s) of interest | | Unclear next steps",
+              "lines": [
+                288,
+                296
+              ],
+              "name": "Improvements",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Average cart abandonment: 70% (Baymard Institute) - Optimized checkout can improve conversions by 35% - Free trial/assessment flows perform better f",
+              "lines": [
+                297,
+                305
+              ],
+              "name": "Conversion Rate Benchmarks",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            273,
+            305
+          ],
+          "name": "Checkout/Booking Flow Optimization",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | |---------|-------------|-------------| | Toggle switch UI | Custom JS state management | CSS-only toggle or e",
+          "lines": [
+            306,
+            317
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Too many options, sub-options, and edge cases confuse visitors **Why it happens:** Trying to accommodate every possible scenario",
+              "lines": [
+                320,
+                326
+              ],
+              "name": "Pitfall 1: Over-Complicating the Value Ladder",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** If All Access feels impossibly expensive, it doesn't anchor - it alienates **Why it happens:** Assuming higher anchor = better **",
+              "lines": [
+                327,
+                333
+              ],
+              "name": "Pitfall 2: Anchor Price Too Extreme",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Testimonials at top of page don't influence pricing decisions **Why it happens:** \"Social proof is important\" without strategic p",
+              "lines": [
+                334,
+                340
+              ],
+              "name": "Pitfall 3: Social Proof in Wrong Location",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Beautiful desktop pricing table is unusable on mobile **Why it happens:** Desktop-first design, insufficient mobile testing **How",
+              "lines": [
+                341,
+                347
+              ],
+              "name": "Pitfall 4: Mobile Neglect",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Minimalist design leaves parents with unanswered questions **Why it happens:** \"Simple pricing\" interpreted as \"hiding informatio",
+              "lines": [
+                348,
+                356
+              ],
+              "name": "Pitfall 5: Removing Too Much Information",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            318,
+            356
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                359,
+                398
+              ],
+              "name": "Value Ladder Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                399,
+                417
+              ],
+              "name": "Social Proof Strip Pattern",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                418,
+                426
+              ],
+              "name": "Testimonial at Decision Point",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                427,
+                445
+              ],
+              "name": "Mobile-First Pricing Tier",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                446,
+                464
+              ],
+              "name": "Sticky Mobile CTA",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            357,
+            464
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **Real-time social proof:** \"12 students enrolled this week\" (98% conversion lift) - **Interactive demos:** Showing portal/value before pricing - **",
+              "lines": [
+                476,
+                484
+              ],
+              "name": "Emerging Patterns",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "| Old Approach | Current Approach | Impact | |--------------|------------------|--------| | Static pricing tables | Interactive calculators/configurat",
+          "lines": [
+            465,
+            484
+          ],
+          "name": "State of the Art (2025-2026 Trends)",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What we know:** Currently All Access Pass opens a modal for details **What's unclear:** Is this extra click hurting or helping conversions? **Option",
+              "lines": [
+                487,
+                497
+              ],
+              "name": "1. All Access Pass Modal vs Inline",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What we know:** 24 course cards with details exist below pricing **What's unclear:** Do users actually browse courses before converting? **Options:*",
+              "lines": [
+                498,
+                509
+              ],
+              "name": "2. Course Browser Necessity",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What we know:** Currently filtering by year level (7-8, 9-10, 11-12) **What's unclear:** Would subject grouping (Maths, English, Science) work bette",
+              "lines": [
+                510,
+                522
+              ],
+              "name": "3. Year-Level Tabs vs Subject-Type Tabs",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            485,
+            522
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [Smashing Magazine - Designing Effective Pricing Plans UX](https://www.smashingmagazine.com/2022/07/designing-better-pricing-page/) - Comprehensive",
+              "lines": [
+                525,
+                530
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Hyperstack - Psychology Behind Pricing Online Courses](https://thehyperstack.com/blog/the-psychology-behind-pricing-online-courses/) - Charm pricin",
+              "lines": [
+                531,
+                537
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- WebSearch aggregations for conversion benchmarks - General UX pattern compilations",
+              "lines": [
+                538,
+                541
+              ],
+              "name": "Tertiary (LOW confidence - needs validation)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Phase 15 Research: Courses Section Conversion Optimization - Phase 16 Research: Courses Section Visual Polish - Phase 06 Research: Hero Overhaul (st",
+              "lines": [
+                542,
+                549
+              ],
+              "name": "Internal (HIGH confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            523,
+            549
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Pricing psychology patterns: HIGH - Multiple authoritative sources agree - Feature comparison UX: HIGH - Smashing Magazine",
+          "lines": [
+            550,
+            563
+          ],
+          "name": "Metadata",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Value ladder structure works:** 3-4 tier pricing with anchor at top (All Access) drives conversions to middle tiers. BEAM's structure is good but",
+              "lines": [
+                569,
+                582
+              ],
+              "name": "Key Findings",
+              "type": "subsection"
+            },
+            {
+              "docstring": "`C:/Users/bskim/beamacademy-site/.planning/phases/17-courses-section-overhaul/17-RESEARCH.md`",
+              "lines": [
+                583,
+                586
+              ],
+              "name": "File Created",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Area | Level | Reason | |------|-------|--------| | Pricing Psychology | HIGH | Multiple academic and industry sources | | UX Patterns | HIGH | Auth",
+              "lines": [
+                587,
+                595
+              ],
+              "name": "Confidence Assessment",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. All Access modal vs inline presentation 2. Course browser necessity and length 3. Year-level vs subject filtering",
+              "lines": [
+                596,
+                601
+              ],
+              "name": "Open Questions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Research complete. Planner can now create PLAN.md files with specific structural changes to implement the value ladder, anchor pricing, social proof p",
+              "lines": [
+                602,
+                605
+              ],
+              "name": "Ready for Planning",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "**Phase:** 17 - Courses Section Overhaul **Confidence:** HIGH",
+          "lines": [
+            564,
+            605
+          ],
+          "name": "RESEARCH COMPLETE",
+          "type": "section"
+        }
+      ]
+    },
+    "17-VERIFICATION.md": {
+      "hash": "0c4097610ad7",
+      "indexed_at": "2026-01-24T22:37:10.770901+00:00",
+      "language": "markdown",
+      "lines": 128,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | All Access Pass prominently first | VERIFIED | .all-access-hero line 6165 |",
+              "lines": [
+                30,
+                46
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "All artifacts verified: - .all-access-hero: SUBSTANTIVE - .pricing-social-proof: SUBSTANTIVE - .pricing-testimonial: SUBSTANTIVE - .course-browser-con",
+              "lines": [
+                47,
+                58
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- All Access Hero -> Pricing tiers: WIRED - Social proof strip -> Pricing tiers: WIRED - Testimonial -> Course browser: WIRED - Course browser toggle",
+              "lines": [
+                59,
+                67
+              ],
+              "name": "Key Links Verified",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            28,
+            67
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- All Access anchor pricing - Dollar savings (Save X/wk) - Value ladder progression - Best Value badges - 4th FREE! retained",
+              "lines": [
+                70,
+                76
+              ],
+              "name": "17-01: Value Ladder Pricing - ALL VERIFIED",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Stats strip: VERIFIED - Trust metrics: VERIFIED - Testimonial: PARTIAL (engagement not outcome focused) - Risk reversal: VERIFIED",
+              "lines": [
+                77,
+                82
+              ],
+              "name": "17-02: Social Proof - MOSTLY VERIFIED",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Collapsible browser: VERIFIED - Sticky CTA: VERIFIED - No horizontal scroll: NEEDS HUMAN - All elements render: NEEDS HUMAN",
+              "lines": [
+                83,
+                88
+              ],
+              "name": "17-03: Mobile Optimization - PARTIAL",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            68,
+            88
+          ],
+          "name": "Plan-by-Plan Status",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Mobile Horizontal Scroll Test** - Open at 375px width - Expected: No horizontal scrollbar",
+          "lines": [
+            89,
+            106
+          ],
+          "name": "Human Verification Required",
+          "type": "section"
+        },
+        {
+          "docstring": "1. Stats use #1 Baulko Ranks instead of 500+ students - better branding 2. Google Rating 5.0 instead of 4.9 - matches actual 3. Testimonial engagement",
+          "lines": [
+            107,
+            112
+          ],
+          "name": "Observations",
+          "type": "section"
+        },
+        {
+          "docstring": "Phase 17 successfully implemented: - Value ladder pricing with All Access anchor - Dollar savings replacing percentages - Best Value badges on 3 Subje",
+          "lines": [
+            113,
+            129
+          ],
+          "name": "Summary",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:22.005890+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,772 @@
+{
+  "directory": ".planning\\phases\\06-hero-overhaul",
+  "files": {
+    "06-01-PLAN.md": {
+      "hash": "f2db7162cc97",
+      "indexed_at": "2026-01-24T22:37:09.038885+00:00",
+      "language": "markdown",
+      "lines": 233,
+      "symbols": []
+    },
+    "06-01-SUMMARY.md": {
+      "hash": "b41fa3d4393c",
+      "indexed_at": "2026-01-24T22:37:09.061287+00:00",
+      "language": "markdown",
+      "lines": 112,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 8 min - **Started:** 2026-01-22T10:00:00Z - **Completed:** 2026-01-22T10:08:00Z - **Tasks:** 3 - **Files modified:** 1",
+          "lines": [
+            44,
+            51
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Replaced generic \"Epping, Sydney\" badge with \"HSC Tutoring\" category label - Updated headline from \"Expert Tutoring for Years 7-12\" to \"We Show You",
+          "lines": [
+            52,
+            59
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            60,
+            67
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Hero text content (lines 4629-4642) and hero-category CSS (lines 695-708)",
+          "lines": [
+            68,
+            71
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Headline wording:** Chose \"We Show You Exactly Where They're Struggling\" - parent-focused outcome that addresses what parents want to know, with",
+          "lines": [
+            72,
+            81
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            82,
+            85
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "None - hero section was already prepared with portal mockup (from 06-02 execution), making text replacement straightforward.",
+          "lines": [
+            86,
+            89
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            90,
+            93
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "**Ready for verification:** - Hero text content satisfies HERO-01, HERO-03, HERO-04, HERO-05 - HERO-02 (portal visual) was already addressed in 06-02",
+          "lines": [
+            94,
+            113
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "06-02-PLAN.md": {
+      "hash": "04acc7c5b00b",
+      "indexed_at": "2026-01-24T22:37:09.086447+00:00",
+      "language": "markdown",
+      "lines": 411,
+      "symbols": []
+    },
+    "06-02-SUMMARY.md": {
+      "hash": "4c6030375b7f",
+      "indexed_at": "2026-01-24T22:37:09.107955+00:00",
+      "language": "markdown",
+      "lines": 133,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 12 min - **Started:** 2026-01-22 - **Completed:** 2026-01-23 - **Tasks:** 4 (3 auto + 1 checkpoint) - **Files modified:** 1",
+          "lines": [
+            49,
+            56
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Replaced classroom photograph with styled portal mockup in hero section - Created \"Performance Dashboard\" mockup with macOS-style window chrome (red",
+          "lines": [
+            57,
+            66
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            67,
+            74
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- **Hero headline refinement** - `a546635` (fix) - Updated headline and subheadline copy during phase 6 execution",
+          "lines": [
+            75,
+            78
+          ],
+          "name": "Additional Work",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Hero portal mockup HTML (hero-visual section) and CSS styles (both desktop and mobile responsive rules)",
+          "lines": [
+            79,
+            82
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Mockup vs Screenshot:** Chose to build a styled HTML mockup rather than using an actual screenshot - this allows for faster loading, better respo",
+          "lines": [
+            83,
+            94
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            95,
+            98
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "**Type:** human-verify **Status:** APPROVED by user **Verified:** - Portal mockup visible in hero section - Shows Current Score, Topic Breakdown, and",
+          "lines": [
+            99,
+            109
+          ],
+          "name": "Checkpoint",
+          "type": "section"
+        },
+        {
+          "docstring": "None - execution was straightforward.",
+          "lines": [
+            110,
+            113
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            114,
+            117
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "**Phase 6 Complete:** - HERO-01: Headline with category + differentiator (06-01) - HERO-02: Portal screenshot in hero (06-02 - this plan) - HERO-03: C",
+          "lines": [
+            118,
+            134
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "06-CONTEXT.md": {
+      "hash": "54a75cda2386",
+      "indexed_at": "2026-01-24T22:37:09.129470+00:00",
+      "language": "markdown",
+      "lines": 50,
+      "symbols": [
+        {
+          "docstring": "Redesign the hero section so visitors immediately understand what BEAM is (HSC tutoring) and why it's different (custom materials based on score track",
+          "lines": [
+            7,
+            13
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Parent-focused outcome \u2014 speaks to what parents want to know (\"where they're struggling\") - HSC mentioned in category label only, not in headline it",
+              "lines": [
+                16,
+                21
+              ],
+              "name": "Headline tone & wording",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Exact headline wording (within the parent-outcome, medium-length parameters) - Subheadline content \u2014 Claude picks what best complements the headline",
+              "lines": [
+                22,
+                33
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            14,
+            33
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "No specific requirements \u2014 open to standard approaches within the decisions captured above.",
+          "lines": [
+            34,
+            40
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            41,
+            51
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "06-RESEARCH.md": {
+      "hash": "da5798015163",
+      "indexed_at": "2026-01-24T22:37:09.156250+00:00",
+      "language": "markdown",
+      "lines": 436,
+      "symbols": [
+        {
+          "docstring": "This is a static HTML site (not Next.js), with all content in a single `index.html` file. The hero section exists at lines 4489-4525 and uses inline C",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- **Single file:** `C:\\Users\\bskim\\beamacademy-site\\index.html` (226,980 bytes) - **All CSS is inline** in `<style>` tags within the HTML file (lines",
+              "lines": [
+                17,
+                21
+              ],
+              "name": "File Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **HTML:** Lines 4489-4525 (`<section class=\"hero\" id=\"home\">`) - **CSS:** Lines 603-850 (`.hero`, `.hero-*` selectors) - **Mobile CSS:** Lines 3174-",
+              "lines": [
+                22,
+                26
+              ],
+              "name": "Hero Section Location",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Element | Current Content | Class | |---------|----------------|-------| | Badge | \"Epping, Sydney\" | `.hero-badge` | | Headline | \"Expert Tutoring",
+              "lines": [
+                27,
+                40
+              ],
+              "name": "Current Hero Elements",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. Badge says \"Epping, Sydney\" (location, not category) 2. Headline says \"Years 7-12\" (too broad, not HSC-specific) 3. No portal screenshot visible 4.",
+              "lines": [
+                41,
+                46
+              ],
+              "name": "Current Visual Hierarchy Problem",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            15,
+            46
+          ],
+          "name": "Current Implementation",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                49,
+                56
+              ],
+              "name": "Existing Images",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**No real portal screenshot exists.** The portal section (lines 5105-5168) uses a CSS-only mockup:",
+              "lines": [
+                57,
+                89
+              ],
+              "name": "Portal Screenshot Status",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            47,
+            89
+          ],
+          "name": "Assets Available",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Colors (CSS Variables):**",
+              "lines": [
+                92,
+                114
+              ],
+              "name": "CSS Design System",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                115,
+                128
+              ],
+              "name": "Existing Tag/Label Pattern",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                129,
+                142
+              ],
+              "name": "Hero Badge Pattern (currently location-based)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Images are served directly (no optimization pipeline) - Use `loading=\"eager\"` and `fetchpriority=\"high\"` for hero images - Width/height attributes s",
+              "lines": [
+                143,
+                148
+              ],
+              "name": "Image Handling",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                149,
+                161
+              ],
+              "name": "Responsive Breakpoints",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            90,
+            161
+          ],
+          "name": "Technical Patterns",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Requirement | Current State | Change Needed | |-------------|--------------|---------------| | HERO-01 | Generic \"Years 7-12\" | New headline with ca",
+              "lines": [
+                164,
+                173
+              ],
+              "name": "Required Changes for HERO-01 to HERO-05",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                174,
+                213
+              ],
+              "name": "Recommended Structure",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                214,
+                235
+              ],
+              "name": "CSS Additions Needed",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Remove secondary CTA (\"View Courses\") - Change badge from \"Epping, Sydney\" to category label - Replace classroom image with portal visual - Consider",
+              "lines": [
+                236,
+                241
+              ],
+              "name": "Elements to Remove/Change",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            162,
+            241
+          ],
+          "name": "Implementation Approach",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **No real portal screenshot exists** - Impact: HERO-02 requirement - Mitigation: Use CSS mockup initially, replace with real screenshot later - Use",
+              "lines": [
+                244,
+                260
+              ],
+              "name": "Must Address",
+              "type": "subsection"
+            },
+            {
+              "docstring": "4. **Large single HTML file** - 227KB HTML with inline CSS makes editing error-prone - Recommend using search/line numbers carefully - Changes affect",
+              "lines": [
+                261,
+                276
+              ],
+              "name": "Good to Know",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Based on the real Dashboard.jsx, an authentic mockup should show:",
+              "lines": [
+                277,
+                293
+              ],
+              "name": "Portal Mockup Data for HERO-02",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            242,
+            293
+          ],
+          "name": "Risks & Considerations",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | |---------|-------------|-------------| | Responsive layout | Custom JS breakpoint detection | CSS media queri",
+          "lines": [
+            294,
+            302
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Adding new elements that don't stack properly on mobile **Why it happens:** Desktop-first thinking, forgetting the 768px breakpoi",
+              "lines": [
+                305,
+                310
+              ],
+              "name": "Pitfall 1: Breaking the mobile layout",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Hiding \"View Courses\" completely removes a conversion path **Why it happens:** Strict interpretation of \"single CTA\" **How to avo",
+              "lines": [
+                311,
+                316
+              ],
+              "name": "Pitfall 2: Removing CTAs users rely on",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Mockup shows features/data that don't exist in the real product **Why it happens:** Making up impressive-looking data **How to av",
+              "lines": [
+                317,
+                322
+              ],
+              "name": "Pitfall 3: Mismatch between mockup and real portal",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Large screenshot image causes LCP regression **Why it happens:** Using unoptimized screenshot file **How to avoid:** Optimize any",
+              "lines": [
+                323,
+                328
+              ],
+              "name": "Pitfall 4: Forgetting image optimization",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            303,
+            328
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                331,
+                339
+              ],
+              "name": "Current Hero Badge (to be modified for category label)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                340,
+                348
+              ],
+              "name": "Current Hero Headline (to be modified for HERO-01)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                349,
+                362
+              ],
+              "name": "Current Hero Buttons (to be simplified for HERO-04)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                363,
+                380
+              ],
+              "name": "Portal Mockup Pattern (can adapt for hero)",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                381,
+                395
+              ],
+              "name": "Existing Responsive Pattern for Hero Content",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            329,
+            395
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Portal screenshot availability** - What we know: No screenshot exists in codebase; real portal has Dashboard with scores/topics - What's unclear:",
+          "lines": [
+            396,
+            412
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- `C:\\Users\\bskim\\beamacademy-site\\index.html` - Direct file analysis - `C:\\Users\\bskim\\beamacademy-site\\.planning\\phases\\06-hero-overhaul\\06-CONTEXT.",
+              "lines": [
+                415,
+                420
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- `C:\\Users\\bskim\\beam-portal\\src\\pages\\Dashboard.jsx` - Real portal dashboard structure (for mockup authenticity)",
+              "lines": [
+                421,
+                423
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            413,
+            423
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Current implementation: HIGH - Direct file analysis - CSS patterns: HIGH - Existing code review - Portal screenshot needs:",
+          "lines": [
+            424,
+            437
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "06-VERIFICATION.md": {
+      "hash": "29ada7c035b3",
+      "indexed_at": "2026-01-24T22:37:09.174022+00:00",
+      "language": "markdown",
+      "lines": 128,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Visitor sees 'HSC Tutoring' category label without scrolling | VERIFIED | Li",
+              "lines": [
+                28,
+                39
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` (hero-category) | Category label \"HSC Tutoring\" |",
+              "lines": [
+                40,
+                52
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | `.hero-category` | Hero section | Positioned above h1 | WIRED | Line 4",
+              "lines": [
+                53,
+                62
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Verification | |-------------|--------|--------------| | HERO-01: Headline communicates category + differentiator | SATISFIED",
+              "lines": [
+                63,
+                72
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | index.html | 120 | Preload for classroom-teaching.jpg |",
+              "lines": [
+                73,
+                80
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "**Test:** Open page at 375px width in browser dev tools **Expected:** Portal mockup stacks below hero text, no horizontal scroll, all text readable **",
+                  "lines": [
+                    83,
+                    87
+                  ],
+                  "name": "1. Mobile Responsive Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Show hero to someone who hasn't seen it; ask what service is offered **Expected:** They identify \"HSC tutoring\" + \"custom/personalized mater",
+                  "lines": [
+                    88,
+                    92
+                  ],
+                  "name": "2. 3-Second Identification Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** View hero section on desktop and mobile **Expected:** Portal mockup looks professional, colors match site design, visual balance is good **W",
+                  "lines": [
+                    93,
+                    97
+                  ],
+                  "name": "3. Visual Quality Check",
+                  "type": "subsubsection"
+                }
+              ],
+              "lines": [
+                81,
+                97
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [x] \"HSC Tutoring\" category label visible above headline (line 4659) - [x] Headline communicates personalization/custom materials value (line 4660)",
+              "lines": [
+                98,
+                107
+              ],
+              "name": "Success Criteria Checklist",
+              "type": "subsection"
+            },
+            {
+              "docstring": "All 5 requirements (HERO-01 through HERO-05) are satisfied in the codebase:",
+              "lines": [
+                108,
+                129
+              ],
+              "name": "Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            26,
+            129
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.967060+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,705 @@
+{
+  "directory": ".planning\\phases\\14-courses-section-redesign",
+  "files": {
+    "14-01-PLAN.md": {
+      "hash": "eb2ab4289185",
+      "indexed_at": "2026-01-24T22:37:10.134968+00:00",
+      "language": "markdown",
+      "lines": 201,
+      "symbols": []
+    },
+    "14-01-SUMMARY.md": {
+      "hash": "b845d7b0a78e",
+      "indexed_at": "2026-01-24T22:37:10.155320+00:00",
+      "language": "markdown",
+      "lines": 108,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 11 min - **Started:** 2026-01-23T09:30:19Z - **Completed:** 2026-01-23T09:41:49Z - **Tasks:** 3/3 - **Files modified:** 1",
+          "lines": [
+            51,
+            58
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Pricing tier cards updated to v2 visual style (subtle glass effect, 24px radius, hover elevation) - Intermediate tier highlighted as featured with p",
+          "lines": [
+            59,
+            65
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            66,
+            73
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Pricing tier CSS updated to v2 patterns, Intermediate tier given featured-tier class",
+          "lines": [
+            74,
+            77
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Used ::before pseudo-element for badge** - Instead of modifying HTML to add a badge element, used CSS ::before on `.featured-tier` to generate th",
+          "lines": [
+            78,
+            87
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            88,
+            91
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- **File modification conflict**: The HTML file was being actively modified by an external process (likely a browser live-reload or editor auto-save).",
+          "lines": [
+            92,
+            95
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            96,
+            99
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Pricing tier v2 styling complete - Ready for user verification on desktop and mobile - Course browser section redesign can proceed as separate plan",
+          "lines": [
+            100,
+            109
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "14-02-PLAN.md": {
+      "hash": "63e86730e7ee",
+      "indexed_at": "2026-01-24T22:37:10.178553+00:00",
+      "language": "markdown",
+      "lines": 249,
+      "symbols": []
+    },
+    "14-02-SUMMARY.md": {
+      "hash": "6472b6203365",
+      "indexed_at": "2026-01-24T22:37:10.200424+00:00",
+      "language": "markdown",
+      "lines": 141,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 15 min - **Started:** 2026-01-23 - **Completed:** 2026-01-23 - **Tasks:** 3/3 - **Files modified:** 1",
+          "lines": [
+            50,
+            57
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Year tabs updated to v2 pill styling with transparent background, subtle border, and purple active fill - Course cards redesigned for improved scann",
+          "lines": [
+            58,
+            65
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            66,
+            73
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - All course browser CSS updates",
+          "lines": [
+            74,
+            77
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Background: `transparent` (was gray-800) - Border: `1px solid rgba(255, 255, 255, 0.2)` (was gray-700) - Hover: `border-color: var(--purple-400)` -",
+              "lines": [
+                80,
+                86
+              ],
+              "name": "Year Tabs (.year-tab)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Background: `rgba(255, 255, 255, 0.02)` (was gray-800) - Border: `rgba(255, 255, 255, 0.08)` (subtle) - Border-radius: `16px` (was 20px) - Padding:",
+              "lines": [
+                87,
+                94
+              ],
+              "name": "Course Cards (.course-card)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- `.course-icon`: font-size 2rem (was 1.5rem), margin-bottom 8px - `.course-card h3`: font-size 1.1rem, font-weight 600, margin 0 - `.course-card p`:",
+              "lines": [
+                95,
+                103
+              ],
+              "name": "Course Card Children",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Grid: `auto-fit` (was auto-fill) - Gap: `20px` (was 24px) - Mobile (768px): single column, 16px gap",
+              "lines": [
+                104,
+                108
+              ],
+              "name": "Courses Grid (.courses-grid)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            78,
+            108
+          ],
+          "name": "CSS Changes Summary",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Auto-fit vs auto-fill:** Chose auto-fit because it collapses empty tracks, preventing orphan cards at awkward viewport widths",
+          "lines": [
+            109,
+            118
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            119,
+            122
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Edit tool encountered persistent \"file unexpectedly modified\" errors, likely due to file being previewed in browser - Workaround: Used sed commands",
+          "lines": [
+            123,
+            128
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - CSS-only changes, no external service configuration required.",
+          "lines": [
+            129,
+            132
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Course browser modernization complete - Ready for user verification of visual changes - v3 milestone potentially complete after verification",
+          "lines": [
+            133,
+            142
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "14-03-PLAN.md": {
+      "hash": "76f3280f9996",
+      "indexed_at": "2026-01-24T22:37:10.225799+00:00",
+      "language": "markdown",
+      "lines": 218,
+      "symbols": []
+    },
+    "14-03-SUMMARY.md": {
+      "hash": "0debe493fa74",
+      "indexed_at": "2026-01-24T22:37:10.247712+00:00",
+      "language": "markdown",
+      "lines": 102,
+      "symbols": [
+        {
+          "docstring": "Fix the pricing tier cards (Junior, Intermediate, Senior) being biased to the right on desktop, causing the Senior tier to go off-page.",
+          "lines": [
+            38,
+            41
+          ],
+          "name": "Objective",
+          "type": "section"
+        },
+        {
+          "docstring": "| Task | Name | Status | Commit | |------|------|--------|--------| | 1 | Refine All Access hero banner styling | Complete | (prior session) | | 2 | P",
+          "lines": [
+            42,
+            49
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Before:**",
+              "lines": [
+                52,
+                77
+              ],
+              "name": "CSS Fix Applied (`.pricing-tiers-new`)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **`width: 100%`** - Ensures the grid container takes full available width of its parent, which allows `margin: 0 auto` to properly center it 2. **`",
+              "lines": [
+                78,
+                83
+              ],
+              "name": "Why This Fixes the Issue",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            50,
+            83
+          ],
+          "name": "Key Changes",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**1. [Rule 3 - Blocking] File modification concurrency issue** - **Found during:** CSS edit attempts - **Issue:** The Edit tool kept reporting \"file h",
+              "lines": [
+                86,
+                93
+              ],
+              "name": "Auto-fixed Issues",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            84,
+            93
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] CSS changes applied to all relevant `.pricing-tiers-new` rules - [x] Mobile breakpoints (max-width: 400px) preserved for single-column layouts -",
+          "lines": [
+            94,
+            99
+          ],
+          "name": "Verification",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - Updated `.pricing-tiers-new` CSS rules (3 occurrences in different media query contexts)",
+          "lines": [
+            100,
+            103
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        }
+      ]
+    },
+    "14-CONTEXT.md": {
+      "hash": "99adcb8bbe42",
+      "indexed_at": "2026-01-24T22:37:10.270990+00:00",
+      "language": "markdown",
+      "lines": 89,
+      "symbols": [
+        {
+          "docstring": "Full overhaul of \"Invest in Your Future\" (pricing tiers) and \"Browse Our Courses\" (course browser) sections \u2014 visual refresh, layout restructure, and",
+          "lines": [
+            7,
+            24
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "User has delegated visual design decisions to Claude's judgment. Research best practices for:",
+              "lines": [
+                27,
+                58
+              ],
+              "name": "Claude's Discretion \u2014 Full Visual Design Authority",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            25,
+            58
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "**Existing v2 patterns to match:** - Hero section: Modern gradients, bold typography, clear hierarchy - Trust section: Card-based, testimonials, tutor",
+          "lines": [
+            59,
+            79
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            80,
+            90
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "14-RESEARCH.md": {
+      "hash": "20700f9f57de",
+      "indexed_at": "2026-01-24T22:37:10.299811+00:00",
+      "language": "markdown",
+      "lines": 594,
+      "symbols": [
+        {
+          "docstring": "This research investigates best practices for pricing tier layouts and course browser designs in the education/tutoring sector, with specific focus on",
+          "lines": [
+            7,
+            14
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Technology | Version | Purpose | Status | |------------|---------|---------|--------| | Pure CSS | - | Styling, animations | Continue using | | CSS",
+              "lines": [
+                19,
+                25
+              ],
+              "name": "Core (Already in Use)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Token | Value | Purpose | |-------|-------|---------| | `--purple-700` | #7c3aed | Primary brand color | | `--shadow-card` | 0 4px 20px rgba(0,0,0,0",
+              "lines": [
+                26,
+                36
+              ],
+              "name": "Design Tokens to Match",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "This phase is pure HTML/CSS visual redesign - no new libraries needed.",
+          "lines": [
+            15,
+            36
+          ],
+          "name": "Standard Stack",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                39,
+                60
+              ],
+              "name": "Recommended Section Structure",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Display exactly 3 pricing tiers in side-by-side columns, with the middle tier visually emphasized as \"recommended\" or \"most popular.\"",
+              "lines": [
+                61,
+                100
+              ],
+              "name": "Pattern 1: Three-Tier Pricing with Center Highlight",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Each pricing tier as a distinct card with rounded corners, subtle borders, and elevation on hover - matching Trust section tutor cards.",
+              "lines": [
+                101,
+                123
+              ],
+              "name": "Pattern 2: Card-Based Pricing (v2 Style)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Compact course cards optimized for quick scanning - icon, title, and key info visible at a glance.",
+              "lines": [
+                124,
+                172
+              ],
+              "name": "Pattern 3: Scannable Course Cards",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What:** Pricing tiers stack vertically on mobile with featured tier still visually prominent.",
+              "lines": [
+                173,
+                197
+              ],
+              "name": "Pattern 4: Mobile-First Stacking",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Too many plans:** More than 4 pricing options causes decision paralysis - **Horizontal scroll tables:** Never on mobile - use stacked cards instea",
+              "lines": [
+                198,
+                205
+              ],
+              "name": "Anti-Patterns to Avoid",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            37,
+            205
+          ],
+          "name": "Architecture Patterns",
+          "type": "section"
+        },
+        {
+          "docstring": "| Problem | Don't Build | Use Instead | Why | |---------|-------------|-------------|-----| | Price toggle (monthly/annual) | Custom toggle logic | No",
+          "lines": [
+            206,
+            216
+          ],
+          "name": "Don't Hand-Roll",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**What goes wrong:** Restyling pricing tiers disrupts the existing JavaScript that tracks selected packages for the contact form.",
+              "lines": [
+                219,
+                228
+              ],
+              "name": "Pitfall 1: Breaking Package Selection Functionality",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** `transform: scale(1.05)` or overlapping badges look broken when cards stack vertically.",
+              "lines": [
+                229,
+                238
+              ],
+              "name": "Pitfall 2: Featured Tier Not Standing Out on Mobile",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Grid shows orphan cards or uneven rows at tablet widths.",
+              "lines": [
+                239,
+                248
+              ],
+              "name": "Pitfall 3: Course Card Grid Breaking at Awkward Widths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Cards look jarring against dark background due to contrast issues.",
+              "lines": [
+                249,
+                258
+              ],
+              "name": "Pitfall 4: Inconsistent Dark Section Styling",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What goes wrong:** Restyling year tabs breaks active state tracking.",
+              "lines": [
+                259,
+                268
+              ],
+              "name": "Pitfall 5: Tab Navigation Losing State",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            217,
+            268
+          ],
+          "name": "Common Pitfalls",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                271,
+                358
+              ],
+              "name": "Pricing Card with v2 Styling",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                359,
+                464
+              ],
+              "name": "Course Card with Improved Scannability",
+              "type": "subsection"
+            },
+            {
+              "lines": [
+                465,
+                500
+              ],
+              "name": "Year Tabs with v2 Styling",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            269,
+            500
+          ],
+          "name": "Code Examples",
+          "type": "section"
+        },
+        {
+          "docstring": "| Old Approach | Current Approach | When Changed | Impact | |--------------|------------------|--------------|--------| | Feature comparison tables |",
+          "lines": [
+            501,
+            517
+          ],
+          "name": "State of the Art",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Layout:** Keep 3-column structure (matches best practices) 2. **Featured tier:** Intermediate (Years 9-10) - has the most package options and All",
+              "lines": [
+                520,
+                527
+              ],
+              "name": "Pricing Tiers - Specific Decisions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Layout:** Responsive grid (`auto-fit, minmax(300px, 1fr)`) instead of fixed 3-column 2. **Card density:** Reduce padding, truncate descriptions t",
+              "lines": [
+                528,
+                535
+              ],
+              "name": "Course Browser - Specific Decisions",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Section background:** Keep dark (`--gray-900`) - contrasts with white About section 2. **Card backgrounds:** Use `rgba(255,255,255,0.03)` with su",
+              "lines": [
+                536,
+                542
+              ],
+              "name": "Color and Visual Consistency",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            518,
+            542
+          ],
+          "name": "Visual Design Recommendations",
+          "type": "section"
+        },
+        {
+          "docstring": "Things that couldn't be fully resolved:",
+          "lines": [
+            543,
+            561
+          ],
+          "name": "Open Questions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [Smashing Magazine - Designing Better Pricing Page](https://www.smashingmagazine.com/2022/07/designing-better-pricing-page/) - UX patterns, mobile d",
+              "lines": [
+                564,
+                569
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Webstacks - 20 Best SaaS Pricing Page Examples 2025](https://www.webstacks.com/blog/saas-pricing-page-design) - Visual examples - [UXPin - Pricing",
+              "lines": [
+                570,
+                575
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Dribbble - Course Card Designs](https://dribbble.com/tags/course-card) - Visual inspiration - [Stylokit - Top 10 Course Platform Designs 2025](http",
+              "lines": [
+                576,
+                579
+              ],
+              "name": "Tertiary (LOW confidence - for inspiration only)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            562,
+            579
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Standard stack: HIGH - Pure CSS, no dependencies, clear patterns - Architecture: HIGH - Well-documented industry patterns,",
+          "lines": [
+            580,
+            595
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.996280+00:00",
+  "version": "1.0"
+}

@@ -1,0 +1,94 @@
+{
+  "directory": ".planning\\todos\\pending",
+  "files": {
+    "2026-01-20-fix-skip-to-main-content-button.md": {
+      "hash": "2716b8b3604d",
+      "indexed_at": "2026-01-24T22:37:08.132696+00:00",
+      "language": "markdown",
+      "lines": 20,
+      "symbols": [
+        {
+          "docstring": "During UAT for Phases 1-2, user noted the \"Skip to main content\" accessibility button is \"halfway there\" on mobile - appears to be partially visible o",
+          "lines": [
+            9,
+            14
+          ],
+          "name": "Problem",
+          "type": "section"
+        },
+        {
+          "docstring": "TBD - Review the skip link CSS: - Should be positioned off-screen by default - Should become visible on :focus - Check if mobile styles are interferin",
+          "lines": [
+            15,
+            21
+          ],
+          "name": "Solution",
+          "type": "section"
+        }
+      ]
+    },
+    "2026-01-20-improve-form-scroll-anchor-position.md": {
+      "hash": "d9464108bbb5",
+      "indexed_at": "2026-01-24T22:37:08.148477+00:00",
+      "language": "markdown",
+      "lines": 20,
+      "symbols": [
+        {
+          "docstring": "During UAT for Phase 2, when tapping \"Book Free Trial\" in the sticky CTA bar, the page scrolls to the contact form but the positioning is slightly off",
+          "lines": [
+            9,
+            14
+          ],
+          "name": "Problem",
+          "type": "section"
+        },
+        {
+          "docstring": "TBD - Options to consider: - Add scroll-margin-top to #contact section to account for sticky elements - Adjust the anchor target point - Use JavaScrip",
+          "lines": [
+            15,
+            21
+          ],
+          "name": "Solution",
+          "type": "section"
+        }
+      ]
+    },
+    "2026-01-24-onboard-sowon-tutor.md": {
+      "hash": "c0078b7751f1",
+      "indexed_at": "2026-01-24T22:37:08.164749+00:00",
+      "language": "markdown",
+      "lines": 29,
+      "symbols": [
+        {
+          "docstring": "Need to add Sowon to the About/Team section of the landing page. She's a new English tutor with strong credentials that should be showcased.",
+          "lines": [
+            10,
+            13
+          ],
+          "name": "Problem",
+          "type": "section"
+        },
+        {
+          "docstring": "- 96 in English Advanced - Rank 3 in Baulko English Advanced - Mentored 20+ Baulko HSC students (top student achieved 96) - 300+ hours in English tuto",
+          "lines": [
+            14,
+            21
+          ],
+          "name": "Tutor Stats",
+          "type": "section"
+        },
+        {
+          "docstring": "Add to About section tutor cards: 1. Use headshot from Downloads (mmexport1768474269462.jpg - verify this is correct file) 2. Create tutor card matchi",
+          "lines": [
+            22,
+            30
+          ],
+          "name": "Solution",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.943169+00:00",
+  "version": "1.0"
+}

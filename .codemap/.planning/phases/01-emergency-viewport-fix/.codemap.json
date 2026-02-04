@@ -1,0 +1,222 @@
+{
+  "directory": ".planning\\phases\\01-emergency-viewport-fix",
+  "files": {
+    "01-01-PLAN.md": {
+      "hash": "4be5eb64b6f8",
+      "indexed_at": "2026-01-24T22:37:08.183318+00:00",
+      "language": "markdown",
+      "lines": 201,
+      "symbols": []
+    },
+    "01-01-SUMMARY.md": {
+      "hash": "64132ac92026",
+      "indexed_at": "2026-01-24T22:37:08.202145+00:00",
+      "language": "markdown",
+      "lines": 135,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "- Added `-webkit-text-size-adjust: 100%` and `text-size-adjust: 100%` to html element - Added `overflow-x: hidden` and `max-width: 100%` to html, body",
+              "lines": [
+                48,
+                53
+              ],
+              "name": "Task 1: Mobile Viewport CSS Reset",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Added 44px minimum height/width to all interactive elements (a, button, inputs, etc.) - Added explicit `font-size: 16px` to form inputs (prevents iO",
+              "lines": [
+                54,
+                60
+              ],
+              "name": "Task 2: Touch Target Minimum Sizes",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Verified all CSS rules correctly inserted - HTML validation passed (no new errors introduced) - All success criteria verified",
+              "lines": [
+                61,
+                65
+              ],
+              "name": "Task 3: Verification",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            46,
+            65
+          ],
+          "name": "What Was Done",
+          "type": "section"
+        },
+        {
+          "lines": [
+            66,
+            108
+          ],
+          "name": "CSS Rules Added",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] VIEW-01: Page renders correctly on mobile without requiring zoom or pan - [x] VIEW-02: Form inputs have minimum 16px font size (prevents iOS aut",
+          "lines": [
+            109,
+            115
+          ],
+          "name": "Success Criteria Status",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            116,
+            119
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Type | Description | |------|------|-------------| | efd202b | fix | add mobile viewport CSS reset | | 8e80c0f | feat | add touch target mini",
+          "lines": [
+            120,
+            126
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "**Ready for:** Phase 02 (Sticky CTA implementation)",
+          "lines": [
+            127,
+            136
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "01-VERIFICATION.md": {
+      "hash": "46b04d436eca",
+      "indexed_at": "2026-01-24T22:37:08.224421+00:00",
+      "language": "markdown",
+      "lines": 135,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | User can read all text on iPhone without pinching to zoom | VERIFIED | `text",
+              "lines": [
+                47,
+                57
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `index.html` | Contains `overflow-x: hidden` | EXISTS + SUBSTA",
+              "lines": [
+                58,
+                66
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | html, body CSS | mobile viewport behavior | overflow-x: hidden | WIRED",
+              "lines": [
+                67,
+                75
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Evidence | |-------------|--------|----------| | VIEW-01: Page renders correctly on mobile without zoom/pan | SATISFIED | ove",
+              "lines": [
+                76,
+                84
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | - | - | None found | - | - |",
+              "lines": [
+                85,
+                92
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Commit | Type | Description | Verified | |--------|------|-------------|----------| | efd202b | fix | add mobile viewport CSS reset | Yes - changes",
+              "lines": [
+                93,
+                99
+              ],
+              "name": "Git Commit Verification",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "**Test:** Open page in Chrome DevTools device emulation at widths: 320px, 375px, 390px, 428px **Expected:** No horizontal scrollbar visible at any wid",
+                  "lines": [
+                    104,
+                    108
+                  ],
+                  "name": "1. Viewport Scroll Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** On an actual iPhone (or iOS simulator), tap on each form input field **Expected:** Page does NOT auto-zoom when input receives focus; keyboa",
+                  "lines": [
+                    109,
+                    113
+                  ],
+                  "name": "2. iOS Form Zoom Test",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Using a mobile device (or touch simulator), tap on various buttons, links, and form elements **Expected:** All interactive elements are easi",
+                  "lines": [
+                    114,
+                    118
+                  ],
+                  "name": "3. Touch Target Usability Test",
+                  "type": "subsubsection"
+                }
+              ],
+              "docstring": "The following items require human verification (cannot be tested programmatically):",
+              "lines": [
+                100,
+                118
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "All automated verification checks PASSED. The CSS rules specified in the plan have been correctly implemented:",
+              "lines": [
+                119,
+                136
+              ],
+              "name": "Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            45,
+            136
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.945361+00:00",
+  "version": "1.0"
+}

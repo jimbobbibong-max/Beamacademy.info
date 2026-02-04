@@ -1,0 +1,1461 @@
+{
+  "directory": ".planning\\phases\\18-free-trial-conversion-audit",
+  "files": {
+    "18-01-PLAN.md": {
+      "hash": "5556c740f772",
+      "indexed_at": "2026-01-24T22:37:10.794598+00:00",
+      "language": "markdown",
+      "lines": 194,
+      "symbols": []
+    },
+    "18-01-SUMMARY.md": {
+      "hash": "f9a4c75d70e8",
+      "indexed_at": "2026-01-24T22:37:10.815684+00:00",
+      "language": "markdown",
+      "lines": 115,
+      "symbols": [
+        {
+          "docstring": "Produced a 465-line audit document analyzing the BEAM Academy landing page as an integrated conversion funnel. The audit:",
+          "lines": [
+            35,
+            55
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Priority | Finding | Impact | Research Basis | |----------|---------|--------|----------------| | 1 | No CTA after Proof section | HIGH | Peak inter",
+          "lines": [
+            56,
+            66
+          ],
+          "name": "Key Findings",
+          "type": "section"
+        },
+        {
+          "docstring": "**Group 1 (Quick CTA Wins):** 1-2 hours, 15-20% expected lift - Add CTA after Proof section - Add risk reversal text in hero - Move Student Portal to",
+          "lines": [
+            67,
+            83
+          ],
+          "name": "Implementation Groups",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Outcome over Feature:** Recommended headline focus shift from \"Tutoring That Adapts to Their Weak Spots\" to outcome-based messaging 2. **Strategi",
+          "lines": [
+            84,
+            89
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written. The audit was created holistically to ensure integrated analysis.",
+          "lines": [
+            90,
+            93
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- `.planning/phases/18-free-trial-conversion-audit/18-AUDIT.md` (465 lines)",
+          "lines": [
+            94,
+            97
+          ],
+          "name": "Files Created",
+          "type": "section"
+        },
+        {
+          "docstring": "**Blockers:** None",
+          "lines": [
+            98,
+            105
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Message | |------|---------| | 0d5a77e | docs(18-01): add above-the-fold conversion audit |",
+          "lines": [
+            106,
+            116
+          ],
+          "name": "Commit Log",
+          "type": "section"
+        }
+      ]
+    },
+    "18-02-PLAN.md": {
+      "hash": "9d45e0006e8e",
+      "indexed_at": "2026-01-24T22:37:10.840259+00:00",
+      "language": "markdown",
+      "lines": 219,
+      "symbols": []
+    },
+    "18-02-SUMMARY.md": {
+      "hash": "86bbf170894c",
+      "indexed_at": "2026-01-24T22:37:10.869632+00:00",
+      "language": "markdown",
+      "lines": 154,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "**Before:** - Headline: \"Tutoring That Adapts to Their Weak Spots\" (feature-focused) - CTA: \"Get Your Free Diagnostic\" (second-person) - Testimonial:",
+              "lines": [
+                45,
+                58
+              ],
+              "name": "Task 1: Hero Section Optimization",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Added 3 section CTAs at natural decision points:",
+              "lines": [
+                59,
+                70
+              ],
+              "name": "Task 2: Strategic CTA Placement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Before:** About, Courses & Pricing, FAQ, Student Portal, Pay Now, Free Diagnostic **After:** About, Courses & Pricing, FAQ, Pay Now, Free Diagnostic",
+              "lines": [
+                71,
+                80
+              ],
+              "name": "Task 3: Navigation Simplification",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Implemented Group 1 (Quick CTA Wins) from the conversion audit, targeting high-impact/low-effort improvements:",
+          "lines": [
+            41,
+            80
+          ],
+          "name": "What Was Built",
+          "type": "section"
+        },
+        {
+          "docstring": "| Hash | Description | |------|-------------| | 1c9b152 | feat(18-02): optimize hero section for conversion | | 192e688 | feat(18-02): add strategic C",
+          "lines": [
+            81,
+            88
+          ],
+          "name": "Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "| Criteria | Status | |----------|--------| | Hero has outcome-focused headline | PASS | | Risk reversal visible near hero CTA | PASS | | CTAs exist a",
+          "lines": [
+            89,
+            101
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            102,
+            105
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "All changes aligned with 18-AUDIT.md and 18-RESEARCH.md findings:",
+          "lines": [
+            106,
+            117
+          ],
+          "name": "Research Basis",
+          "type": "section"
+        },
+        {
+          "docstring": "Based on research benchmarks: - **Hero optimization:** 10-15% improvement potential - **Section CTAs:** 5-10% improvement potential - **Navigation sim",
+          "lines": [
+            118,
+            126
+          ],
+          "name": "Expected Impact",
+          "type": "section"
+        },
+        {
+          "docstring": "1. `C:/Users/bskim/Downloads/beamacademy-index.html` - Hero section content - Added `.hero-risk-reversal` CSS - Added `.section-cta` component CSS - A",
+          "lines": [
+            127,
+            135
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "Phase 18 Plan 03 (Content Optimization) can proceed. This plan addressed: - [F1] CTA after Proof section - COMPLETE - [F2] Hero risk reversal - COMPLE",
+          "lines": [
+            136,
+            155
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "18-03-PLAN.md": {
+      "hash": "d78170e5c4b1",
+      "indexed_at": "2026-01-24T22:37:10.889690+00:00",
+      "language": "markdown",
+      "lines": 242,
+      "symbols": []
+    },
+    "18-03-SUMMARY.md": {
+      "hash": "95fc170d31fe",
+      "indexed_at": "2026-01-24T22:37:10.913552+00:00",
+      "language": "markdown",
+      "lines": 112,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 12 min - **Started:** 2026-01-24T02:55:52Z - **Completed:** 2026-01-24T03:08:00Z - **Tasks:** 3 - **Files modified:** 1",
+          "lines": [
+            50,
+            57
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- About section simplified from 60+ words to 30 words (same meaning, 2x faster to read) - Social proof trust signal added near form with 5.0 rating, 9",
+          "lines": [
+            58,
+            63
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            64,
+            71
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - Copy simplification, social proof CSS/HTML, form next step messaging",
+          "lines": [
+            72,
+            74
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | |----------|-----------| | Use \"Baulko grads\" vs \"Baulkham Hills High School graduates\" | Shorter, local audience knows the a",
+          "lines": [
+            75,
+            82
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            83,
+            86
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Edit tool had persistent \"file unexpectedly modified\" errors requiring bash sed commands as workaround - Resolved by using sed for all text modifica",
+          "lines": [
+            87,
+            91
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            92,
+            95
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "**Phase 18 Complete.** All three plans have been executed: - 18-01: Comprehensive audit (465-line analysis) - 18-02: Quick CTA Wins (CTAs after Proof/",
+          "lines": [
+            96,
+            113
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "18-AUDIT.md": {
+      "hash": "594005111174",
+      "indexed_at": "2026-01-24T22:37:10.940057+00:00",
+      "language": "markdown",
+      "lines": 465,
+      "symbols": [
+        {
+          "docstring": "The BEAM Academy landing page has strong fundamentals - good social proof, clear pricing, professional design. However, several friction points reduce",
+          "lines": [
+            10,
+            23
+          ],
+          "name": "Executive Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Current State (Lines 5589-5659):** - Hero category: \"HSC Tutoring\" - Headline: \"Tutoring That Adapts to Their Weak Spots\" - Description: \"We track s",
+              "lines": [
+                26,
+                71
+              ],
+              "name": "50ms First Impression Test",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**What must be clear within 8 seconds:** - What is this? (Tutoring service) - CLEAR - Who is it for? (HSC students, Years 7-12) - PARTIALLY CLEAR (cat",
+              "lines": [
+                72,
+                80
+              ],
+              "name": "8-Second Decision Window",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Primary CTA (Line 5599):** - Copy: \"Get Your Free Diagnostic\" - Contrast: Purple (#7c3aed) on light background - GOOD contrast - Size: Appropriate t",
+              "lines": [
+                81,
+                93
+              ],
+              "name": "CTA Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current Nav (Lines 5558-5564):**",
+              "lines": [
+                94,
+                116
+              ],
+              "name": "Navigation Impact",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Issue | Severity | Research Support | |-------|----------|------------------| | Feature-focused headline | HIGH | 8-second rule violation | | No ris",
+              "lines": [
+                117,
+                128
+              ],
+              "name": "Above-Fold Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            24,
+            128
+          ],
+          "name": "Above-the-Fold Audit",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "lines": [
+                131,
+                145
+              ],
+              "name": "Current Section Order",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Research baseline:** CTAs should appear at natural decision points, not just top and bottom. Too many = -266%, but strategic placement increases opp",
+              "lines": [
+                146,
+                173
+              ],
+              "name": "Section-by-Section CTA Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current (Line 6717-6884):** - Form at very bottom of page, in Contact section - Approximately 4000+ pixels from top on desktop - Requires scrolling",
+              "lines": [
+                174,
+                194
+              ],
+              "name": "Form Placement Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Current locations:** 1. Hero (Line 5602-5605): 5.0 rating + Luke K testimonial 2. Trust Section (Lines 5962-6000): 3 testimonials (1 parent, 2 stude",
+              "lines": [
+                195,
+                217
+              ],
+              "name": "Social Proof Positioning",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Research target:** 363 words optimal for education",
+              "lines": [
+                218,
+                236
+              ],
+              "name": "Content Length Estimate",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Near Pricing/Form:** - Stats strip at pricing: \"5.0 Google Rating\", \"95% Improve\" - GOOD - Risk reversal on tier CTAs: \"No payment required\" - GOOD",
+              "lines": [
+                237,
+                248
+              ],
+              "name": "Trust Signals at Decision Points",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Gap | Impact | Evidence | |-----|--------|----------| | No CTA after Proof section | HIGH | Peak interest moment with no capture | | Form buried at",
+              "lines": [
+                249,
+                260
+              ],
+              "name": "Conversion Path Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            129,
+            260
+          ],
+          "name": "Conversion Path Audit",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Impact:** Based on research conversion lift percentages - HIGH = Research shows >25% potential lift - MEDIUM = Research shows 10-25% potential lift",
+              "lines": [
+                263,
+                274
+              ],
+              "name": "Impact/Effort Rating System",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| ID | Finding | Impact | Effort | Priority | |----|---------|--------|--------|----------| | F1 | No CTA after Proof section | HIGH | LOW | 1 | | F2",
+              "lines": [
+                275,
+                293
+              ],
+              "name": "Findings Matrix",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            261,
+            293
+          ],
+          "name": "Priority Matrix",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "These issues have strong research backing showing significant conversion impact.",
+              "lines": [
+                296,
+                317
+              ],
+              "name": "Critical Fixes (Must Do) - Priority 1",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Strong research backing, easy implementation.",
+              "lines": [
+                318,
+                337
+              ],
+              "name": "High-Value Improvements - Priority 2",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Good ROI but requires more effort.",
+              "lines": [
+                338,
+                355
+              ],
+              "name": "Consider Implementing - Priority 3",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Less certain impact or lower ROI.",
+              "lines": [
+                356,
+                373
+              ],
+              "name": "Lower Priority - Priority 4-5",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            294,
+            373
+          ],
+          "name": "Recommendations",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Bundle these changes - all LOW effort, HIGH/MEDIUM impact:",
+              "lines": [
+                376,
+                386
+              ],
+              "name": "Group 1: Quick CTA Wins (1-2 hours)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [F4] Rewrite headline to be outcome-focused - [F5] Swap hero testimonial for parent quote - [F11] Change CTA to first-person - [F12] Replace \"Diagno",
+              "lines": [
+                387,
+                395
+              ],
+              "name": "Group 2: Headline & Proof Optimization (1 hour)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Requires more effort, implement if Group 1-2 don't achieve targets:",
+              "lines": [
+                396,
+                407
+              ],
+              "name": "Group 3: Structural Improvements (4-8 hours)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            374,
+            407
+          ],
+          "name": "Implementation Groupings",
+          "type": "section"
+        },
+        {
+          "docstring": "The page functions as an integrated conversion funnel:",
+          "lines": [
+            408,
+            437
+          ],
+          "name": "Holistic System View",
+          "type": "section"
+        },
+        {
+          "docstring": "All findings reference 18-RESEARCH.md. Key sources:",
+          "lines": [
+            438,
+            453
+          ],
+          "name": "Appendix: Research Citations",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Wave 2 Planning:** Use Group 1 (Quick CTA Wins) as first implementation plan 2. **Wave 3 Planning:** Use Group 2 (Headline & Proof) as second imp",
+          "lines": [
+            454,
+            466
+          ],
+          "name": "Next Steps",
+          "type": "section"
+        }
+      ]
+    },
+    "18-CONTEXT.md": {
+      "hash": "f1f117eadddc",
+      "indexed_at": "2026-01-24T22:37:10.963078+00:00",
+      "language": "markdown",
+      "lines": 72,
+      "symbols": [
+        {
+          "docstring": "Holistic website audit focused on free trial form submissions. Analyze the COMPLETE site as an integrated conversion system \u2014 not section-by-section,",
+          "lines": [
+            7,
+            15
+          ],
+          "name": "Phase Boundary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Free trial form submissions \u2014 every element should ultimately drive toward filling out the trial form - Single clear conversion target (not split ac",
+              "lines": [
+                18,
+                21
+              ],
+              "name": "Primary Conversion Goal",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Full rethink allowed \u2014 major structural changes permitted if research supports it - Not just polish/tune \u2014 can rework or remove elements that hurt c",
+              "lines": [
+                22,
+                26
+              ],
+              "name": "Change Scope",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Brand identity must stay: colors, logo, core messaging tone - Layout, structure, content, flow \u2014 all changeable - No sacred cows except brand",
+              "lines": [
+                27,
+                31
+              ],
+              "name": "Constraints",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Mix of general CRO best practices AND tutoring/EdTech-specific patterns - Sources: conversion optimization experts (CXL, CRO agencies, A/B case stud",
+              "lines": [
+                32,
+                37
+              ],
+              "name": "Research Approach",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Full-site overview analysis, not section-by-section - Evaluate how sections work together as a conversion system - Identify friction points across t",
+              "lines": [
+                38,
+                43
+              ],
+              "name": "Audit Method",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Specific research sources and depth - How to structure the audit findings - Which changes to prioritize based on impact - Implementation sequencing",
+              "lines": [
+                44,
+                52
+              ],
+              "name": "Claude's Discretion",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            52
+          ],
+          "name": "Implementation Decisions",
+          "type": "section"
+        },
+        {
+          "docstring": "- User wants this to be research-heavy \u2014 \"a WHOLE FUCK TON of research\" - Emphasis on holistic view \u2014 how everything meshes together - Forest view, no",
+          "lines": [
+            53,
+            62
+          ],
+          "name": "Specific Ideas",
+          "type": "section"
+        },
+        {
+          "docstring": "None \u2014 discussion stayed within phase scope",
+          "lines": [
+            63,
+            73
+          ],
+          "name": "Deferred Ideas",
+          "type": "section"
+        }
+      ]
+    },
+    "18-RESEARCH.md": {
+      "hash": "cc226ad0c0b1",
+      "indexed_at": "2026-01-24T22:37:10.994346+00:00",
+      "language": "markdown",
+      "lines": 550,
+      "symbols": [
+        {
+          "docstring": "This research synthesizes conversion rate optimization (CRO) best practices from industry leaders (CXL, Unbounce, VWO), EdTech-specific conversion pat",
+          "lines": [
+            7,
+            16
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Visitors form their first impression within **50 milliseconds**. If they don't immediately understand what's being offered and why it matters, they le",
+              "lines": [
+                19,
+                28
+              ],
+              "name": "The 50 Millisecond Rule",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**55% of visitors leave within 8 seconds** if they don't immediately get \"what's in it for me.\"",
+              "lines": [
+                29,
+                38
+              ],
+              "name": "The 8-Second Decision Window",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Best-converting landing pages maintain an attention ratio of 1:1 - one page, one goal.",
+              "lines": [
+                39,
+                48
+              ],
+              "name": "Attention Ratio 1:1",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            17,
+            48
+          ],
+          "name": "Core CRO Principles",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Category | Median Conversion Rate | |----------|------------------------| | Online courses | 18.3% | | General courses | 13.0% | | All education | 8",
+              "lines": [
+                51,
+                65
+              ],
+              "name": "Industry Conversion Rates",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Education landing pages perform best with **363 words or fewer** - the lowest target word count across all industries.",
+              "lines": [
+                66,
+                77
+              ],
+              "name": "Word Count Sweet Spot",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Education pages see **6x more traffic from mobile** - But desktop converts **17.6% higher** - 83% of traffic is mobile, but mobile converts 8% lower",
+              "lines": [
+                78,
+                86
+              ],
+              "name": "Mobile vs Desktop",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Channel | Conversion Rate | |---------|-----------------| | Email | 14.1% | | Paid search | 11.5% | | Social (paid) | 7.8% | | Organic | 4.2% |",
+              "lines": [
+                87,
+                101
+              ],
+              "name": "Traffic Source Performance",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            49,
+            101
+          ],
+          "name": "EdTech & Tutoring-Specific Benchmarks",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Element | Purpose | Priority | |---------|---------|----------| | Clear headline | Communicate value proposition | CRITICAL | | Subheadline | Explai",
+              "lines": [
+                104,
+                118
+              ],
+              "name": "What to Include Above the Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- CTAs placed above the fold outperform below by **304%** in some studies - BUT: For complex/high-commitment offers, below-fold CTAs after explaining",
+              "lines": [
+                119,
+                125
+              ],
+              "name": "CTA Placement Strategy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "A popular solution is showing the CTA above the fold, then moving it to a fixed position when the visitor scrolls. This ensures the conversion opportu",
+              "lines": [
+                126,
+                133
+              ],
+              "name": "Sticky CTA Considerations",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            102,
+            133
+          ],
+          "name": "Above-the-Fold Optimization",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Fields | Conversion Impact | |--------|-------------------| | 11 to 4 | +120% to +160% | | 4 to 3 | +50% | | Each additional field | -5% to -7% |",
+              "lines": [
+                136,
+                147
+              ],
+              "name": "Field Count Impact",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **81%** of users abandon forms after starting - **67%** never return after abandoning - Top abandonment drivers: security concerns (29%), excessive",
+              "lines": [
+                148,
+                156
+              ],
+              "name": "Form Abandonment Statistics",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Fields: Parent name, email, phone, year level (select) **Assessment:** Good field count (4 fields). Consider: - Is phone truly required? (high frictio",
+              "lines": [
+                157,
+                163
+              ],
+              "name": "Current BEAM Form Analysis",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Above-the-fold placement can increase conversions by **94%** - If form can't be above fold, use anchor link from above-fold CTA - Multi-step forms c",
+              "lines": [
+                164,
+                173
+              ],
+              "name": "Form Placement",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Single-column layout for linear path - Large touch targets (44px minimum) - Real-time inline validation - Minimize typing (use dropdowns, auto-compl",
+              "lines": [
+                174,
+                184
+              ],
+              "name": "Mobile Form Best Practices",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            134,
+            184
+          ],
+          "name": "Form Optimization",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Red buttons got **21-34% more clicks** than green in some tests - BUT: There's no universal \"best color\" - **The real rule:** CTA must be in STARK C",
+              "lines": [
+                187,
+                194
+              ],
+              "name": "Color & Contrast",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Instead of | Use | Impact | |------------|-----|--------| | \"Sign up\" | \"Trial for free\" | +104% trial starts | | \"Submit\" | \"Get My Free Diagnostic",
+              "lines": [
+                195,
+                207
+              ],
+              "name": "CTA Copy That Converts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Too many CTAs can decrease conversions by **266%** - Single CTA increased clicks by **371%** and sales **1617%** (email study) - Personalized CTAs c",
+              "lines": [
+                208,
+                216
+              ],
+              "name": "CTA Placement Density",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            185,
+            216
+          ],
+          "name": "CTA Button Optimization",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Type | Impact | Best Placement | |------|--------|----------------| | Customer testimonials | +34% conversions | Near CTA, at friction points | | St",
+              "lines": [
+                219,
+                230
+              ],
+              "name": "Types and Effectiveness",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- **Don't hide at bottom** - use social proof near CTAs and at friction points - Place metrics (student count, success rate) in hero or near pricing -",
+              "lines": [
+                231,
+                242
+              ],
+              "name": "Strategic Placement",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            217,
+            242
+          ],
+          "name": "Social Proof Optimization",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Signal | Impact | |--------|--------| | Payment badges (Visa, etc) | +81% purchase likelihood | | Money-back guarantee | +32% sales (VWO study) | |",
+              "lines": [
+                245,
+                255
+              ],
+              "name": "Trust Signals That Convert",
+              "type": "subsection"
+            },
+            {
+              "docstring": "For tutoring (high commitment, ongoing cost), risk reversal is critical: - \"First lesson free\" = reduces trial friction - \"No payment required today\"",
+              "lines": [
+                256,
+                267
+              ],
+              "name": "Risk Reversal for Service Businesses",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Has: \"Your first lesson is free. No payment required today.\" **Assessment:** Good foundation. Consider: - Is it prominent enough? - Does it appear at",
+              "lines": [
+                268,
+                276
+              ],
+              "name": "Current BEAM Risk Reversal",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            243,
+            276
+          ],
+          "name": "Trust Signals & Risk Reversal",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Removing navigation menu: **+100% conversions** (VWO case study) - Yuppiechef: Navigation removal **doubled** conversions - HubSpot study: **+10%**",
+              "lines": [
+                279,
+                288
+              ],
+              "name": "Navigation Menu Impact",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Sticky navigation that keeps user ON the page (section jumps) - When providing exploration is important for the business model - For returning visit",
+              "lines": [
+                289,
+                298
+              ],
+              "name": "When Navigation is Acceptable",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            277,
+            298
+          ],
+          "name": "Navigation & Distraction Management",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Humans rely heavily on first price seen (anchor) - High anchor makes subsequent prices feel like \"deals\" - Three-tier pricing: users gravitate to mi",
+              "lines": [
+                301,
+                310
+              ],
+              "name": "Price Anchoring",
+              "type": "subsection"
+            },
+            {
+              "docstring": "When three options presented: - Low option: captures price-sensitive - High option: anchors value - Middle option: becomes \"sweet spot\"",
+              "lines": [
+                311,
+                320
+              ],
+              "name": "Decoy Effect",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            299,
+            320
+          ],
+          "name": "Pricing Psychology",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Killer | Impact | Fix | |--------|--------|-----| | Slow load (>3s) | 50%+ bounce | Optimize images, minimize JS | | Unclear value prop | 55% leave",
+              "lines": [
+                323,
+                339
+              ],
+              "name": "The Fatal Mistakes",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            321,
+            339
+          ],
+          "name": "Common Conversion Killers",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- Real constraints (limited spots, seasonal timing) - Special promotions - Product launches",
+              "lines": [
+                342,
+                346
+              ],
+              "name": "When to Use",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Fake countdown timers that reset - False scarcity (\"Only 2 spots left!\" that never changes) - Pressure that creates buyer's remorse",
+              "lines": [
+                347,
+                351
+              ],
+              "name": "What to Avoid",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Appropriate urgency:** \"Term starts [date]\" or \"Limited small class sizes\" **Inappropriate:** Fake deadlines, manipulative scarcity",
+              "lines": [
+                352,
+                359
+              ],
+              "name": "For BEAM",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            340,
+            359
+          ],
+          "name": "Urgency & Scarcity (Use Ethically)",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Research shows parents use decision-making heuristics: 1. **One-reason decision** - Focus on single key factor (price, location, reputation) 2. **Imit",
+              "lines": [
+                362,
+                377
+              ],
+              "name": "How Parents Choose Tutoring",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Cost** - Is this worth the investment? 2. **Commitment** - What if it doesn't work out? 3. **Quality** - Are these tutors actually qualified? 4.",
+              "lines": [
+                378,
+                388
+              ],
+              "name": "Parent Concerns to Address",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            360,
+            388
+          ],
+          "name": "Parent Decision-Making Psychology",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- 70-90%+ scroll depth = users reaching form - High scroll + low conversion = content engaging but CTA weak - Low scroll (<25%) with low bounce = CTA",
+              "lines": [
+                391,
+                402
+              ],
+              "name": "What Scroll Depth Tells You",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            389,
+            402
+          ],
+          "name": "Scroll Depth & Engagement",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Strategy | Impact | |----------|--------| | Remove email confirmation step | Reduces friction | | Don't require credit card (opt-in) | Higher initia",
+              "lines": [
+                405,
+                413
+              ],
+              "name": "Trial Signup Best Practices",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Opt-in (no card required): Lower friction, more signups, 15-25% convert - Opt-out (card required): Higher friction, fewer signups, up to 60% convert",
+              "lines": [
+                414,
+                423
+              ],
+              "name": "Opt-In vs Opt-Out Trials",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            403,
+            423
+          ],
+          "name": "Free Trial Conversion Optimization",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "The page is not a collection of sections but a **conversion funnel**:",
+              "lines": [
+                426,
+                457
+              ],
+              "name": "The Conversion System View",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. Does this move visitor closer to trial signup? 2. Does it build trust or create doubt? 3. Does it reduce friction or add friction? 4. Could visitor",
+              "lines": [
+                458,
+                467
+              ],
+              "name": "Every Section Should Answer",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            424,
+            467
+          ],
+          "name": "Holistic Audit Framework",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [ ] Value proposition clear within 5 seconds? - [ ] CTA visible without scrolling? - [ ] Trust signal present? - [ ] Outcome-focused (not feature-fo",
+              "lines": [
+                470,
+                475
+              ],
+              "name": "Above the Fold",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Primary CTA repeated at decision points? - [ ] CTA contrast high enough? - [ ] CTA copy action-oriented with benefit? - [ ] Risk reversal messag",
+              "lines": [
+                476,
+                481
+              ],
+              "name": "CTAs Throughout",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Minimum fields required? - [ ] Mobile-optimized (single column, large targets)? - [ ] Clear \"what happens next\"? - [ ] Real-time validation?",
+              "lines": [
+                482,
+                487
+              ],
+              "name": "Forms",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Placed at friction points (not just bottom)? - [ ] Photos with testimonials? - [ ] Specific outcomes mentioned? - [ ] Parent testimonials (decis",
+              "lines": [
+                488,
+                493
+              ],
+              "name": "Social Proof",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Tutor credentials prominent? - [ ] \"Free trial, no payment\" messaging clear? - [ ] Professional design consistent?",
+              "lines": [
+                494,
+                498
+              ],
+              "name": "Trust Signals",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Page loads <3 seconds? - [ ] All CTAs thumb-reachable? - [ ] No horizontal scroll? - [ ] Form completable without frustration?",
+              "lines": [
+                499,
+                504
+              ],
+              "name": "Mobile",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Does nav distract from conversion goal? - [ ] Could nav be simplified to page sections only?",
+              "lines": [
+                505,
+                508
+              ],
+              "name": "Navigation",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Copy at 5th-7th grade reading level? - [ ] Total word count reasonable (<500)? - [ ] Jargon eliminated? - [ ] Benefits > Features?",
+              "lines": [
+                509,
+                516
+              ],
+              "name": "Content",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            468,
+            516
+          ],
+          "name": "Audit Checklist",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [CXL - Landing Page Optimization](https://cxl.com/blog/landing-page-optimization/) - [CXL - CRO Case Studies](https://cxl.com/blog/surprising-conver",
+              "lines": [
+                519,
+                526
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Venture Harbour - Form Length](https://ventureharbour.com/how-form-length-impacts-conversion-rates/) - [DemandSage - CRO Statistics 2025](https://w",
+              "lines": [
+                527,
+                533
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Various landing page teardown analyses - Competitor pattern observations - Industry blog posts",
+              "lines": [
+                534,
+                540
+              ],
+              "name": "Tertiary (LOW confidence - patterns only)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            517,
+            540
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Core CRO principles: HIGH - multiple authoritative sources agree - EdTech benchmarks: HIGH - Unbounce data based on 41,000",
+          "lines": [
+            541,
+            551
+          ],
+          "name": "Metadata",
+          "type": "section"
+        }
+      ]
+    },
+    "18-VERIFICATION.md": {
+      "hash": "f5e49e0e63d1",
+      "indexed_at": "2026-01-24T22:37:11.014296+00:00",
+      "language": "markdown",
+      "lines": 152,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Every section evaluated against conversion research benchmarks (audit) | VER",
+              "lines": [
+                28,
+                44
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | 18-AUDIT.md | Comprehensive conversion audit | EXISTS + SUBSTA",
+              "lines": [
+                45,
+                61
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|-----|--------|---------| | Hero CTA | Form | #contact anchor | WIRED | Line 5655 links to #contac",
+              "lines": [
+                62,
+                70
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Blocking Issue | |-------------|--------|----------------| | Audit CTA visibility/placement | SATISFIED | - | | Analyze conve",
+              "lines": [
+                71,
+                79
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None | - | - | - | No anti-patterns detected |",
+              "lines": [
+                80,
+                85
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "children": [
+                {
+                  "docstring": "**Test:** Load page and verify hero content is visible above the fold **Expected:** Headline Watch Their Grades Climb, risk reversal text, and parent",
+                  "lines": [
+                    88,
+                    92
+                  ],
+                  "name": "1. Hero Section Visual Check",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Scroll through Proof, Comparison, and Trust sections **Expected:** CTAs appear as subtle links that do not disrupt reading flow **Why human:",
+                  "lines": [
+                    93,
+                    97
+                  ],
+                  "name": "2. Section CTAs Design Integration",
+                  "type": "subsubsection"
+                },
+                {
+                  "docstring": "**Test:** Scroll to contact form **Expected:** 5.0 rating, 95% of students improve trust signal visible before form fields **Why human:** Need to veri",
+                  "lines": [
+                    98,
+                    102
+                  ],
+                  "name": "3. Form Trust Signal Visibility",
+                  "type": "subsubsection"
+                }
+              ],
+              "lines": [
+                86,
+                102
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "No gaps found. All 10 must-haves verified in codebase.",
+              "lines": [
+                103,
+                106
+              ],
+              "name": "Gaps Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            26,
+            106
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Existence:** 465-line document created **Substantive Check:** - Contains 12 prioritized findings (F1-F12) - Includes specific line numbers for each",
+              "lines": [
+                109,
+                125
+              ],
+              "name": "Audit Deliverable (18-AUDIT.md)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "**Hero Changes (Lines 5645-5662):** - [x] Headline changed from feature to outcome: Watch Their Grades Climb - [x] CTA uses first-person: Get My Free",
+              "lines": [
+                126,
+                153
+              ],
+              "name": "Implementation Verification",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            107,
+            153
+          ],
+          "name": "Detailed Verification",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:22.010699+00:00",
+  "version": "1.0"
+}

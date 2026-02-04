@@ -1,0 +1,446 @@
+{
+  "directory": ".planning\\phases\\12-content-consolidation",
+  "files": {
+    "12-01-PLAN.md": {
+      "hash": "92ba50f3e834",
+      "indexed_at": "2026-01-24T22:37:09.829043+00:00",
+      "language": "markdown",
+      "lines": 255,
+      "symbols": []
+    },
+    "12-01-SUMMARY.md": {
+      "hash": "61194e8aa379",
+      "indexed_at": "2026-01-24T22:37:09.852955+00:00",
+      "language": "markdown",
+      "lines": 114,
+      "symbols": [
+        {
+          "docstring": "| Task | Name | Commit | Key Changes | |------|------|--------|-------------| | 1 | Add Taehoon Kim to Trust section tutors | 467bdb6 | Added 4th tuto",
+          "lines": [
+            45,
+            52
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Added Taehoon as the 4th tutor in Trust section after John Park: - Name: Taehoon Kim - Role: Tutor & Head Admin - Trifecta badges: BHHS Graduate, 95 M",
+              "lines": [
+                55,
+                63
+              ],
+              "name": "Task 1: Add Taehoon Kim",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Converted single parent testimonial to testimonials grid: - Kept existing parent testimonial (68% to 89% improvement) - Added Kane W (BHHS Class of 20",
+              "lines": [
+                64,
+                75
+              ],
+              "name": "Task 2: Add Student Testimonials",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Changed `.trust-tutors` from flexbox to CSS grid: - Desktop: `grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))` - 4 columns - Tablet (768px",
+              "lines": [
+                76,
+                87
+              ],
+              "name": "Task 3: Update Tutors CSS",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            53,
+            87
+          ],
+          "name": "Implementation Details",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            88,
+            91
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "1. Trust section displays 4 tutor cards with correct data - PASS 2. Parent testimonial still visible - PASS 3. Student testimonials (Kane, Lena) visib",
+          "lines": [
+            92,
+            99
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] Trust section has exactly 4 tutors: Chris Kim, Nathan You, John Park, Taehoon Kim - [x] Trust section has 3 testimonials: 1 parent, 2 students -",
+          "lines": [
+            100,
+            107
+          ],
+          "name": "Success Criteria Met",
+          "type": "section"
+        },
+        {
+          "docstring": "**12-02 Delete Redundant** can now proceed: - Team section content (Taehoon) is now duplicated in Trust - safe to delete - Testimonials section conten",
+          "lines": [
+            108,
+            115
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "12-02-PLAN.md": {
+      "hash": "99db2ff0f30d",
+      "indexed_at": "2026-01-24T22:37:09.875406+00:00",
+      "language": "markdown",
+      "lines": 178,
+      "symbols": []
+    },
+    "12-02-SUMMARY.md": {
+      "hash": "5b249f48d724",
+      "indexed_at": "2026-01-24T22:37:09.897859+00:00",
+      "language": "markdown",
+      "lines": 91,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 8 min - **Started:** 2026-01-23 - **Completed:** 2026-01-23 - **Tasks:** 3 - **Files modified:** 1",
+          "lines": [
+            41,
+            48
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Deleted Why Us section (6 feature cards duplicating v2 messaging) - Deleted Student Portal section (hero already has portal mockup) - Deleted Team s",
+          "lines": [
+            49,
+            56
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            57,
+            64
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `index.html` - Removed 4 sections (~218 lines), removed 5 nav links",
+          "lines": [
+            65,
+            67
+          ],
+          "name": "Files Created/Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "- Used Python with error-ignoring encoding for file operations (file has non-UTF8 characters) - Removed sections as single contiguous block from prici",
+          "lines": [
+            68,
+            72
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            73,
+            75
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- File encoding issue (non-UTF8 characters) prevented standard Edit tool usage - resolved by using Python with `errors='ignore'`",
+          "lines": [
+            76,
+            78
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "None - no external service configuration required.",
+          "lines": [
+            79,
+            81
+          ],
+          "name": "User Setup Required",
+          "type": "section"
+        },
+        {
+          "docstring": "- Plan 12-02 complete (Delete Redundant) - HTML streamlined: 4 redundant sections removed - Navigation cleaned: no dead links - Section flow: Hero > P",
+          "lines": [
+            82,
+            92
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "12-03-PLAN.md": {
+      "hash": "1c7d0a3b4178",
+      "indexed_at": "2026-01-24T22:37:09.928831+00:00",
+      "language": "markdown",
+      "lines": 207,
+      "symbols": []
+    },
+    "12-03-SUMMARY.md": {
+      "hash": "566bf3cfc7d8",
+      "indexed_at": "2026-01-24T22:37:09.951030+00:00",
+      "language": "markdown",
+      "lines": 129,
+      "symbols": [
+        {
+          "docstring": "| Task | Name | Commit | Key Changes | |------|------|--------|-------------| | 1 | Remove Why Us CSS | f8f4da2 | Removed 139 lines: .why-us, .feature",
+          "lines": [
+            46,
+            53
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "Removed entire Why Us CSS block: - Main `.why-us` section styles - `.features-grid` 3-column grid layout - `.feature-card` card styles with hover effe",
+              "lines": [
+                56,
+                70
+              ],
+              "name": "Task 1: Remove Why Us CSS",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Removed entire Portal CSS block: - Main `.portal` section styles (purple background) - `.portal-content` 2-column grid layout - `.portal-tag`, `.porta",
+              "lines": [
+                71,
+                85
+              ],
+              "name": "Task 2: Remove Portal CSS",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Removed entire Team CSS block: - Main `.team` section styles - `.team-grid` 4-column grid layout - `.team-card` card styles with hover effects - `.tea",
+              "lines": [
+                86,
+                101
+              ],
+              "name": "Task 3: Remove Team CSS",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            54,
+            101
+          ],
+          "name": "Implementation Details",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            102,
+            105
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "1. `grep \"\\.why-us\" index.html` - No matches (PASS) 2. `grep \"\\.portal\" index.html` - No matches (PASS) 3. `grep \"\\.team\" index.html` - No matches (PA",
+          "lines": [
+            106,
+            114
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "- [x] DEL-03 complete (Why Us CSS removed) - [x] DEL-04 complete (Portal CSS removed) - [x] MERGE-05 complete (Team CSS removed) - [x] QUAL-04 progres",
+          "lines": [
+            115,
+            123
+          ],
+          "name": "Success Criteria Met",
+          "type": "section"
+        },
+        {
+          "docstring": "**12-04 JS Cleanup** can now proceed: - JS observer already simplified in this plan - Any remaining orphaned JS for deleted sections can be cleaned -",
+          "lines": [
+            124,
+            130
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "12-04-PLAN.md": {
+      "hash": "4c2959ad5adb",
+      "indexed_at": "2026-01-24T22:37:09.972596+00:00",
+      "language": "markdown",
+      "lines": 195,
+      "symbols": []
+    },
+    "12-04-SUMMARY.md": {
+      "hash": "b2299f8d4a05",
+      "indexed_at": "2026-01-24T22:37:09.993657+00:00",
+      "language": "markdown",
+      "lines": 37,
+      "symbols": [
+        {
+          "lines": [
+            3,
+            4
+          ],
+          "name": "Status: Complete",
+          "type": "section"
+        },
+        {
+          "docstring": "| Task | Name | Commit | Files | |------|------|--------|-------| | 1 | Remove Testimonials CSS (if orphaned) | 22b1e88 | index.html | | 2 | Verify no",
+          "lines": [
+            5,
+            12
+          ],
+          "name": "Tasks Completed",
+          "type": "section"
+        },
+        {
+          "docstring": "- Removed 46 lines of orphaned `.testimonials` section CSS - Preserved shared testimonial classes used by Trust section - Verified all internal links",
+          "lines": [
+            13,
+            20
+          ],
+          "name": "Key Changes",
+          "type": "section"
+        },
+        {
+          "docstring": "- MERGE-06: Complete - Testimonials CSS cleaned up - QUAL-01: Complete - Mobile layout verified - QUAL-03: Complete - No broken links - QUAL-04: Compl",
+          "lines": [
+            21,
+            27
+          ],
+          "name": "Requirements Addressed",
+          "type": "section"
+        },
+        {
+          "docstring": "- User approved desktop and mobile rendering - No horizontal overflow on mobile - All navigation links functional - Section flow correct: Hero \u2192 Proof",
+          "lines": [
+            28,
+            38
+          ],
+          "name": "Verification Results",
+          "type": "section"
+        }
+      ]
+    },
+    "12-VERIFICATION.md": {
+      "hash": "ae3654e4a479",
+      "indexed_at": "2026-01-24T22:37:10.014399+00:00",
+      "language": "markdown",
+      "lines": 139,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | \"Why Us\" section no longer exists | VERIFIED | grep \"why-us\\|whyus\\|Why Us\"",
+              "lines": [
+                33,
+                46
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | `Downloads/beamacademy-index.html` | Consolidated HTML | VERIF",
+              "lines": [
+                47,
+                52
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|-----|-----|--------|---------| | #about | id=\"about\" | href | WIRED | Line 5718 has id=\"about\" | | #co",
+              "lines": [
+                53,
+                69
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Blocking Issue | |-------------|--------|----------------| | DEL-01: Remove Why Us section | SATISFIED | None | | DEL-02: Rem",
+              "lines": [
+                70,
+                88
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | None | - | - | - | - |",
+              "lines": [
+                89,
+                96
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| CSS Pattern | Expected | Actual | Status | |-------------|----------|--------|--------| | .why-us | Removed | 0 matches | PASS | | .feature-card | R",
+              "lines": [
+                97,
+                115
+              ],
+              "name": "CSS Orphan Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "None required - user already verified mobile and desktop rendering per 12-04-SUMMARY.md: - \"User approved desktop and mobile rendering\" - \"No horizont",
+              "lines": [
+                116,
+                122
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "No gaps found. All success criteria met: 1. \"Why Us\" section deleted - VERIFIED 2. \"Portal\" section deleted - VERIFIED 3. Trust section has 4 tutors (",
+              "lines": [
+                123,
+                140
+              ],
+              "name": "Gaps Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            31,
+            140
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:21.990771+00:00",
+  "version": "1.0"
+}

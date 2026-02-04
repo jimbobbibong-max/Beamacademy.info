@@ -1,0 +1,703 @@
+{
+  "directory": ".planning\\phases\\19-final-pass-content-reduction",
+  "files": {
+    "19-01-PLAN.md": {
+      "hash": "ba92c0b1018b",
+      "indexed_at": "2026-01-24T22:37:11.051488+00:00",
+      "language": "markdown",
+      "lines": 202,
+      "symbols": []
+    },
+    "19-01-SUMMARY.md": {
+      "hash": "9eae8c98c64c",
+      "indexed_at": "2026-01-24T22:37:11.072692+00:00",
+      "language": "markdown",
+      "lines": 115,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 12 min - **Started:** 2026-01-24T15:24:00Z - **Completed:** 2026-01-24T15:36:00Z - **Tasks:** 3/3 - **Files modified:** 1",
+          "lines": [
+            48,
+            55
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Removed Final CTA section (redundant with sticky bar) - 8 lines removed - Removed Features strip from Proof section (generic claims, visual clutter)",
+          "lines": [
+            56,
+            63
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            64,
+            71
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - Landing page with redundant content removed",
+          "lines": [
+            72,
+            75
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | |----------|-----------| | Remove Final CTA section | Sticky bar provides persistent conversion path; section was skippable |",
+          "lines": [
+            76,
+            83
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**1. [Rule 1 - Bug] Fixed extra closing div tag in Support section** - **Found during:** Task 3 (Condense Support section) - **Issue:** Python regex r",
+              "lines": [
+                86,
+                100
+              ],
+              "name": "Auto-fixed Issues",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            84,
+            100
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Edit tool repeatedly reported \"file unexpectedly modified\" - resolved by using Python for complex multi-line replacements - CSS for removed elements",
+          "lines": [
+            101,
+            105
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "- Content reduction complete - Page ready for pre-launch QA (19-02) - All sections pass 5-question test - Remaining sections: Hero, Proof, Comparison,",
+          "lines": [
+            106,
+            116
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "19-02-PLAN.md": {
+      "hash": "5df939e49d25",
+      "indexed_at": "2026-01-24T22:37:11.091676+00:00",
+      "language": "markdown",
+      "lines": 207,
+      "symbols": []
+    },
+    "19-02-SUMMARY.md": {
+      "hash": "5541406ce0ce",
+      "indexed_at": "2026-01-24T22:37:11.109390+00:00",
+      "language": "markdown",
+      "lines": 126,
+      "symbols": [
+        {
+          "docstring": "- **Duration:** 7 min - **Started:** 2026-01-24T04:32:37Z - **Completed:** 2026-01-24T04:39:13Z - **Tasks:** 3/3 - **Files modified:** 1",
+          "lines": [
+            48,
+            55
+          ],
+          "name": "Performance",
+          "type": "section"
+        },
+        {
+          "docstring": "- Removed 78 lines of dead CSS (.support-features, .support-feature-icon, .support-feature-text) - Removed mobile media query overrides for support-fe",
+          "lines": [
+            56,
+            66
+          ],
+          "name": "Accomplishments",
+          "type": "section"
+        },
+        {
+          "docstring": "Each task was committed atomically:",
+          "lines": [
+            67,
+            74
+          ],
+          "name": "Task Commits",
+          "type": "section"
+        },
+        {
+          "docstring": "- `C:/Users/bskim/Downloads/beamacademy-index.html` - Landing page with dead CSS removed and formatting cleaned",
+          "lines": [
+            75,
+            78
+          ],
+          "name": "Files Modified",
+          "type": "section"
+        },
+        {
+          "docstring": "| Check | Result | |-------|--------| | Dead CSS removed | PASS - .support-features and related classes removed | | Navigation links | PASS - All 8 se",
+          "lines": [
+            79,
+            98
+          ],
+          "name": "Technical Verification Results",
+          "type": "section"
+        },
+        {
+          "docstring": "| Decision | Rationale | |----------|-----------| | Remove all support-features CSS | Orphaned after 19-01 content removal - no HTML uses these classe",
+          "lines": [
+            99,
+            106
+          ],
+          "name": "Decisions Made",
+          "type": "section"
+        },
+        {
+          "docstring": "None - plan executed exactly as written.",
+          "lines": [
+            107,
+            110
+          ],
+          "name": "Deviations from Plan",
+          "type": "section"
+        },
+        {
+          "docstring": "- Edit tool repeatedly failed with \"file unexpectedly modified\" error - resolved by using Python for CSS removal - No functional issues - all technica",
+          "lines": [
+            111,
+            115
+          ],
+          "name": "Issues Encountered",
+          "type": "section"
+        },
+        {
+          "docstring": "- Page is launch-ready - All pre-launch QA checks passed - File size: 284,295 bytes (7,716 lines) - No console errors expected - Phase 19 complete",
+          "lines": [
+            116,
+            127
+          ],
+          "name": "Next Phase Readiness",
+          "type": "section"
+        }
+      ]
+    },
+    "19-RESEARCH.md": {
+      "hash": "b491b98a4bd6",
+      "indexed_at": "2026-01-24T22:37:11.135071+00:00",
+      "language": "markdown",
+      "lines": 442,
+      "symbols": [
+        {
+          "docstring": "This research synthesizes content reduction best practices, cognitive load research, and pre-launch optimization guidelines to provide a framework for",
+          "lines": [
+            7,
+            16
+          ],
+          "name": "Summary",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Study/Source | Finding | Improvement | |--------------|---------|-------------| | Meclabs (property disaster recovery) | Reducing copy | +37% conver",
+              "lines": [
+                19,
+                31
+              ],
+              "name": "Why Remove Content Works",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Every element on the page uses mental \"RAM\" - images, text, buttons, animations. When cognitive load exceeds capacity, visitors: - Get frustrated - Ma",
+              "lines": [
+                32,
+                46
+              ],
+              "name": "The Cognitive Load Problem",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            17,
+            46
+          ],
+          "name": "The Case for Content Reduction",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| Study | Action | Result | |-------|--------|--------| | VWO | Remove navigation | +100% conversions | | Yuppiechef | Remove navigation | 2x conversi",
+              "lines": [
+                49,
+                63
+              ],
+              "name": "1. Navigation Links (High Impact)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "\"If you're paying for traffic, experiment with removing anything and everything that could distract users from converting, including your primary navi",
+              "lines": [
+                64,
+                73
+              ],
+              "name": "2. Competing Links and CTAs",
+              "type": "subsection"
+            },
+            {
+              "docstring": "If the same benefit or message appears in multiple sections, consolidate: - Pick the best placement (usually closest to the conversion point) - Remove",
+              "lines": [
+                74,
+                85
+              ],
+              "name": "3. Redundant/Duplicate Messaging",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Change | Conversion Impact | |--------|-------------------| | 11 to 4 fields | +120% to +160% | | 4 to 3 fields | +50% | | Each additional field | -",
+              "lines": [
+                86,
+                99
+              ],
+              "name": "4. Form Fields",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Content that could apply to any business should be cut or replaced: - Generic taglines without specific benefits - Placeholder copy that says nothing",
+              "lines": [
+                100,
+                108
+              ],
+              "name": "5. Generic/Filler Content",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Large unoptimized images (>500KB) - Background videos - Heavy scripts - Animations that don't serve UX",
+              "lines": [
+                109,
+                121
+              ],
+              "name": "6. Heavy Page Elements",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            47,
+            121
+          ],
+          "name": "What to Remove: The Research-Backed List",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "\"Short landing pages work best for simple offers. Long-form landing pages are better for high-ticket items, complex services, or skeptical audiences.\"",
+              "lines": [
+                124,
+                135
+              ],
+              "name": "There's No Universal \"Right\" Length",
+              "type": "subsection"
+            },
+            {
+              "docstring": "Nielsen Norman Group research: 81% of viewing time is spent in the first three screenfuls of information. Beyond that, engagement drops significantly.",
+              "lines": [
+                136,
+                143
+              ],
+              "name": "The \"Three Screenfuls\" Guideline",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- 50% of mobile users start scrolling within 10 seconds - 90% scroll within 14 seconds - Users scroll willingly IF content is engaging",
+              "lines": [
+                144,
+                158
+              ],
+              "name": "Mobile Scroll Behavior",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            122,
+            158
+          ],
+          "name": "Page Length: What Research Actually Says",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "For each section currently on the page, ask:",
+              "lines": [
+                161,
+                179
+              ],
+              "name": "The 5-Question Test for Every Section",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Section Type | Necessity | Why | |--------------|-----------|-----| | Hero + Value Prop | ESSENTIAL | First impression, sets expectations | | Proof",
+              "lines": [
+                180,
+                198
+              ],
+              "name": "Section Necessity Matrix for Tutoring Pages",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            159,
+            198
+          ],
+          "name": "Section Evaluation Framework",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "| # | Section | Current Purpose | Audit Question | |---|---------|-----------------|----------------| | 1 | Hero | Value prop, first CTA | Is messagin",
+              "lines": [
+                201,
+                214
+              ],
+              "name": "Current Sections (9 main + modals):",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Proof + Comparison:** Both demonstrate \"we're different\" - could combine?",
+              "lines": [
+                215,
+                231
+              ],
+              "name": "Potential Consolidations to Evaluate",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            199,
+            231
+          ],
+          "name": "Current BEAM Page: Section-by-Section Audit Framework",
+          "type": "section"
+        },
+        {
+          "docstring": "For each section, apply the 1-1-1 framework to reduce cognitive load:",
+          "lines": [
+            232,
+            245
+          ],
+          "name": "The 1-1-1 Framework",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "**Non-critical CSS:** Styles for below-fold content that could be deferred.",
+              "lines": [
+                248,
+                257
+              ],
+              "name": "What to Look For",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Tool | How to Use | |------|------------| | Chrome DevTools Coverage | Record page, see used vs unused bytes | | PurifyCSS | Scan HTML, identify unu",
+              "lines": [
+                258,
+                273
+              ],
+              "name": "Tools for Identification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "\"Just because a style isn't used on one page doesn't mean that it's not used elsewhere.\"",
+              "lines": [
+                274,
+                285
+              ],
+              "name": "Caution",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            246,
+            285
+          ],
+          "name": "Dead CSS & Technical Cleanup",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [ ] All placeholder content removed - [ ] No duplicate messaging across sections - [ ] Copy at appropriate reading level (5th-7th grade) - [ ] Every",
+              "lines": [
+                288,
+                295
+              ],
+              "name": "Content & Copy",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] All images optimized (<500KB each) - [ ] Page loads in <3 seconds - [ ] No horizontal scroll on any breakpoint - [ ] All links work correctly -",
+              "lines": [
+                296,
+                304
+              ],
+              "name": "Technical",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Critical content in first 3 screens - [ ] CTAs thumb-reachable - [ ] Touch targets 44px minimum - [ ] No tiny text requiring zoom",
+              "lines": [
+                305,
+                311
+              ],
+              "name": "Mobile",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Color contrast meets WCAG standards - [ ] Keyboard navigation works - [ ] Alt text on meaningful images - [ ] Heading structure logical",
+              "lines": [
+                312,
+                318
+              ],
+              "name": "Accessibility",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [ ] Unique title and meta description - [ ] Canonical URL set - [ ] Schema markup valid - [ ] Images have alt text",
+              "lines": [
+                319,
+                329
+              ],
+              "name": "SEO",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            286,
+            329
+          ],
+          "name": "Pre-Launch Checklist",
+          "type": "section"
+        },
+        {
+          "lines": [
+            330,
+            347
+          ],
+          "name": "Decision Framework: Remove vs Keep vs Consolidate",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "1. **Evaluate final CTA section** - If sticky bar is working, this may be redundant 2. **Features strip in Proof section** - 5 badges may add clutter",
+              "lines": [
+                352,
+                358
+              ],
+              "name": "High-Confidence Cuts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Support section (Discord)** - Could be a row in Comparison table or note in Trust section 2. **Multiple testimonials** - 3 testimonials may be en",
+              "lines": [
+                359,
+                363
+              ],
+              "name": "Consolidation Candidates",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. **Tutor cards** - 5 tutors is a lot, but credentials are important; consider 3-4 2. **Pricing tiers** - Essential but verify no redundant informati",
+              "lines": [
+                364,
+                369
+              ],
+              "name": "Keep But Simplify",
+              "type": "subsection"
+            },
+            {
+              "docstring": "1. Run Chrome Coverage on the CSS 2. Identify orphaned styles from previous phases 3. Verify no dead JavaScript",
+              "lines": [
+                370,
+                377
+              ],
+              "name": "Technical Cleanup",
+              "type": "subsection"
+            }
+          ],
+          "docstring": "Based on research, here are initial hypotheses for the audit (to be validated during execution):",
+          "lines": [
+            348,
+            377
+          ],
+          "name": "Specific Recommendations for BEAM",
+          "type": "section"
+        },
+        {
+          "docstring": "Research shows parents use decision-making heuristics:",
+          "lines": [
+            378,
+            398
+          ],
+          "name": "What Parents Actually Use in Decisions",
+          "type": "section"
+        },
+        {
+          "children": [
+            {
+              "docstring": "- [CXL - Reducing Cognitive Load](https://cxl.com/blog/reducing-cognitive-load/) - Cognitive load research - [CXL - Surprising CRO Case Studies](https",
+              "lines": [
+                401,
+                407
+              ],
+              "name": "Primary (HIGH confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- [Framer Blog - Landing Page Best Practices](https://www.framer.com/blog/landing-page-best-practices/) - 2025 best practices - [UX4Sight - Scrolling",
+              "lines": [
+                408,
+                413
+              ],
+              "name": "Secondary (MEDIUM confidence)",
+              "type": "subsection"
+            },
+            {
+              "docstring": "- Industry blog posts on minimalist design - Template analysis from tutoring landing pages - General UX design patterns",
+              "lines": [
+                414,
+                420
+              ],
+              "name": "Tertiary (LOW confidence - patterns only)",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            399,
+            420
+          ],
+          "name": "Sources",
+          "type": "section"
+        },
+        {
+          "docstring": "**Confidence breakdown:** - Content reduction principles: HIGH - multiple case studies with data - Cognitive load theory: HIGH - established UX resear",
+          "lines": [
+            421,
+            433
+          ],
+          "name": "Metadata",
+          "type": "section"
+        },
+        {
+          "docstring": "1. **Every element must earn its place** - Apply 5-question test 2. **Cognitive load is the enemy** - Reduce choices, simplify messaging 3. **First 3",
+          "lines": [
+            434,
+            443
+          ],
+          "name": "Key Takeaways for Planning",
+          "type": "section"
+        }
+      ]
+    },
+    "19-VERIFICATION.md": {
+      "hash": "b4dce44d6c7b",
+      "indexed_at": "2026-01-24T22:37:11.157768+00:00",
+      "language": "markdown",
+      "lines": 81,
+      "symbols": [
+        {
+          "children": [
+            {
+              "docstring": "| # | Truth | Status | Evidence | |---|-------|--------|----------| | 1 | Page has no redundant sections serving the same psychological purpose | VERI",
+              "lines": [
+                18,
+                35
+              ],
+              "name": "Observable Truths",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Artifact | Expected | Status | Details | |----------|----------|--------|---------| | C:/Users/bskim/Downloads/beamacademy-index.html | Streamlined",
+              "lines": [
+                36,
+                41
+              ],
+              "name": "Required Artifacts",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| From | To | Via | Status | Details | |------|----|----|--------|---------| | Navigation links | Page sections | href anchors | WIRED | All 8 section",
+              "lines": [
+                42,
+                50
+              ],
+              "name": "Key Link Verification",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| Requirement | Status | Blocking Issue | |-------------|--------|----------------| | Content reduction via 5-question test | SATISFIED | - | | Redund",
+              "lines": [
+                51,
+                59
+              ],
+              "name": "Requirements Coverage",
+              "type": "subsection"
+            },
+            {
+              "docstring": "| File | Line | Pattern | Severity | Impact | |------|------|---------|----------|--------| | beamacademy-index.html | ~7500s | console.log statements",
+              "lines": [
+                60,
+                65
+              ],
+              "name": "Anti-Patterns Found",
+              "type": "subsection"
+            },
+            {
+              "docstring": "None. All checks verified programmatically.",
+              "lines": [
+                66,
+                69
+              ],
+              "name": "Human Verification Required",
+              "type": "subsection"
+            },
+            {
+              "docstring": "All gaps resolved.",
+              "lines": [
+                70,
+                82
+              ],
+              "name": "Gaps Summary",
+              "type": "subsection"
+            }
+          ],
+          "lines": [
+            16,
+            82
+          ],
+          "name": "Goal Achievement",
+          "type": "section"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-01-24T22:37:22.018126+00:00",
+  "version": "1.0"
+}
