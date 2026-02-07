@@ -2,14 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://beamacademy.info/</loc>
-    <lastmod>2025-01-04</lastmod>
+    <lastmod>2025-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://beamacademy.info/thank-you.html</loc>
-    <lastmod>2025-01-04</lastmod>
+    <loc>https://beamacademy.info/mathematics.html</loc>
+    <lastmod>2025-02-07</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/english.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/physics.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/chemistry.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/hsc-maths-extension.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/hsc-english-advanced.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/year-7-10-foundations.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/hsc-sciences.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/about.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/contact.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/results.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/privacy.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/terms.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/refund.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://beamacademy.info/thank-you.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>
