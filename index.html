@@ -119,11 +119,11 @@
       // 2. Create new conversion: Phone calls > Calls to phone number on website
       // 3. Enter phone number: 0491 791 447
       // 4. Set minimum call duration: 60 seconds
-      // 5. Replace CONVERSION_LABEL below with the label from Google Ads
-      gtag('config', 'AW-17832807956/CONVERSION_LABEL', {
-          'phone_conversion_number': '0491 791 447',
-          'phone_conversion_css_class': 'phone-number'
-      });
+      // TODO: Replace YOUR_CONVERSION_LABEL with real label from Google Ads dashboard
+      // gtag('config', 'AW-17832807956/YOUR_CONVERSION_LABEL', {
+      //     'phone_conversion_number': '0491 791 447',
+      //     'phone_conversion_css_class': 'phone-number'
+      // });
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7313,7 +7313,7 @@
                         <li><a href="contact.html" class="footer-link">Contact</a></li>
                         <li><a href="#courses" class="footer-link">Courses & Pricing</a></li>
                         <li><a href="#contact" class="footer-link" data-action="pay">Pay Now</a></li>
-                        <li><a href="https://beamffef.netlify.app/login" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
+                        <li><a href="https://portal.beamacademy.com.au" class="footer-link" target="_blank" rel="noopener">Student Portal</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -8207,34 +8207,6 @@
                 }
             }
         });
-
-        // Webhook integration for lead tracking (beam-portal Pipeline)
-        (function() {
-            const form = document.querySelector('form[name="trial"]');
-            if (!form) return;
-
-            form.addEventListener('submit', function(e) {
-                // Collect form data
-                const formData = new FormData(form);
-                const data = {};
-                formData.forEach((value, key) => {
-                    data[key] = value;
-                });
-
-                // Fire and forget - don't block form submission
-                fetch('https://beamffef.netlify.app/.netlify/functions/lead-webhook', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                }).catch(() => {
-                    // Silent fail - webhook errors shouldn't affect form UX
-                });
-
-                // Form continues to submit normally (Netlify Forms handles it)
-            });
-        })();
 
         // Scroll reveal animation
         (function() {
