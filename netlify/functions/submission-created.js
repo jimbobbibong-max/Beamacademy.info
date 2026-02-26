@@ -35,14 +35,16 @@ exports.handler = async (event) => {
       // Parent/name fields
       name: data.parentName || data.name || data['parent-name'] || '',
       parentName: data.parentName || data.name || '',
-      // Email fields
+      // Parent email
       email: data.parentEmail || data.email || '',
       parentEmail: data.parentEmail || data.email || '',
-      // Phone fields
+      // Parent phone
       phone: data.parentPhone || data.phone || '',
       parentPhone: data.parentPhone || data.phone || '',
       // Student fields
       studentName: data.studentName || data['student-name'] || data.student_name || data['child-name'] || '',
+      studentEmail: data.studentEmail || data['student-email'] || '',
+      studentPhone: data.studentPhone || data['student-phone'] || '',
       // Year level
       yearLevel: data.yearLevel || data['year-level'] || data.year_level || '',
       'year-level': data.yearLevel || data['year-level'] || data.year_level || '',
