@@ -107,6 +107,29 @@ exports.handler = async (event) => {
     }
   }
 
+  // Dual-write: forward original Stripe event to beam-admin-v2
+  // CRITICAL: forward event.body (raw string) — DO NOT re-serialize
+  // Re-serializing (JSON.stringify(JSON.parse(event.body))) changes whitespace and breaks Stripe HMAC
+  if (process.env.BEAM_ADMIN_WEBHOOK_URL) {
+    try {
+      const fwdResponse = await fetch(process.env.BEAM_ADMIN_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          // Forward original stripe-signature header unchanged — beam-admin-v2 uses constructEvent with same raw body
+          'stripe-signature': event.headers['stripe-signature'],
+        },
+        body: event.body,  // CRITICAL: raw string, not JSON.parse(event.body) or JSON.stringify(...)
+      });
+      if (!fwdResponse.ok) {
+        console.error('beam-admin-v2 webhook forward returned non-2xx:', fwdResponse.status);
+      }
+    } catch (fwdErr) {
+      // Do NOT fail — Notion write may have succeeded; Stripe must still receive 200
+      console.error('beam-admin-v2 webhook forward failed:', fwdErr);
+    }
+  }
+
   return { statusCode: 200, body: JSON.stringify({ received: true }) };
 };
 
