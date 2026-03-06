@@ -96,7 +96,14 @@ exports.handler = async (event) => {
         subjects: subjects.join(', '),
         basePrice: basePrice.toString(),
         gstAmount: gstAmount.toString(),
-        totalPrice: totalPrice.toString()
+        totalPrice: totalPrice.toString(),
+        // Fix: stripe-webhook.js reads these fields but create-checkout.js never set them
+        // originalPrice = pre-discount base price (no discount applied at session creation time)
+        // discountedPrice = total with GST at session creation (actual charged amount may differ
+        //   if user applies a promotion code — Stripe's session.amount_total at webhook time
+        //   reflects the final charged amount, which is more reliable for payment recording)
+        originalPrice: basePrice.toString(),
+        discountedPrice: totalPrice.toString()
       }
     });
 
