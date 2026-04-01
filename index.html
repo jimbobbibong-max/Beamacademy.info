@@ -4858,6 +4858,74 @@
             font-style: italic;
         }
 
+        /* Discount display */
+        .discount-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 16px;
+            background: var(--purple-50);
+            border-radius: 12px;
+            margin-top: 8px;
+            text-align: center;
+        }
+        .discount-price-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .discount-original {
+            text-decoration: line-through;
+            color: var(--gray-500);
+            font-size: 1.1rem;
+        }
+        .discount-arrow {
+            color: var(--gray-400);
+            font-size: 1rem;
+        }
+        .discount-current {
+            font-weight: 700;
+            color: var(--purple-700);
+            font-size: 1.5rem;
+        }
+        .discount-badge {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transform: scale(0);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .discount-badge.visible {
+            transform: scale(1);
+        }
+        .discount-badge.free {
+            background: linear-gradient(135deg, var(--purple-600), var(--purple-700));
+            font-size: 1rem;
+            padding: 8px 20px;
+        }
+        .discount-nudge {
+            color: var(--gray-500);
+            font-size: 0.85rem;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease 0.2s;
+        }
+        .discount-nudge.visible {
+            opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .discount-badge { transition: none; }
+            .discount-nudge { transition: none; }
+        }
+
         /* Hide manual selection when package is chosen */
         .package-selected #manualSelectionRow {
             display: none;
@@ -6356,7 +6424,7 @@
                         <div class="tutor-role">Head of Mathematics & Physics</div>
                         <div class="tutor-trifecta">
                             <span class="trifecta-badge trifecta-school">BHHS Graduate</span>
-                            <span class="trifecta-badge trifecta-hsc">97 Maths Ext1</span>
+                            <span class="trifecta-badge trifecta-hsc">97 Extension 1 Maths</span>
                             <span class="trifecta-badge trifecta-uni">Medicine @ Newcastle</span>
                         </div>
                         <ul class="tutor-credentials">
@@ -7271,6 +7339,17 @@
                                     </label>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- Dynamic discount display -->
+                        <div id="discountDisplay" class="discount-display" style="display: none;">
+                            <div class="discount-price-row">
+                                <span class="discount-original" id="originalPrice"></span>
+                                <span class="discount-arrow">→</span>
+                                <span class="discount-current" id="currentPrice"></span>
+                            </div>
+                            <div class="discount-badge" id="savingsBadge"></div>
+                            <p class="discount-nudge" id="annualNudge"></p>
                         </div>
 
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
@@ -8264,6 +8343,115 @@
                     el.classList.add('revealed');
                 });
             }
+        })();
+
+        // ========== Discount Animation ==========
+        (function() {
+            const priceMap = {
+                junior:       { 1: 80,  2: 140, 3: 200, 4: 240 },
+                intermediate: { 1: 100, 2: 175, 3: 250, 4: 300 },
+                senior:       { 1: 120, 2: 210, 3: 300, 4: 360 }
+            };
+            const basePerSubject = { junior: 80, intermediate: 100, senior: 120 };
+
+            function getTier(yearLevel) {
+                if (yearLevel === 'Year 7' || yearLevel === 'Year 8') return 'junior';
+                if (yearLevel === 'Year 9' || yearLevel === 'Year 10') return 'intermediate';
+                if (yearLevel === 'Year 11' || yearLevel === 'Year 12') return 'senior';
+                return null;
+            }
+
+            let currentAnimationId = null;
+            let lastDisplayedPrice = null;
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function animateCounter(el, from, to, duration) {
+                if (currentAnimationId) cancelAnimationFrame(currentAnimationId);
+                if (reducedMotion || from === null) {
+                    el.textContent = '$' + to + '/wk';
+                    return;
+                }
+                const start = performance.now();
+                function step(timestamp) {
+                    const progress = Math.min((timestamp - start) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(from + (to - from) * eased);
+                    el.textContent = '$' + current + '/wk';
+                    if (progress < 1) {
+                        currentAnimationId = requestAnimationFrame(step);
+                    }
+                }
+                currentAnimationId = requestAnimationFrame(step);
+            }
+
+            function updateDiscountDisplay() {
+                const yearEl = document.getElementById('yearLevel');
+                const numEl = document.getElementById('numSubjects');
+                const display = document.getElementById('discountDisplay');
+                const originalEl = document.getElementById('originalPrice');
+                const currentEl = document.getElementById('currentPrice');
+                const badgeEl = document.getElementById('savingsBadge');
+                const nudgeEl = document.getElementById('annualNudge');
+
+                if (!yearEl || !numEl || !display) return;
+                const yearLevel = yearEl.value;
+                const num = parseInt(numEl.value);
+
+                if (!yearLevel || !num) {
+                    display.style.display = 'none';
+                    return;
+                }
+
+                const tier = getTier(yearLevel);
+                if (!tier) { display.style.display = 'none'; return; }
+
+                const base = basePerSubject[tier];
+                const fullPrice = base * num;
+                const discounted = priceMap[tier][num];
+                const savings = fullPrice - discounted;
+
+                display.style.display = 'flex';
+
+                if (num === 1) {
+                    originalEl.style.display = 'none';
+                    document.querySelector('.discount-arrow').style.display = 'none';
+                } else {
+                    originalEl.style.display = 'inline';
+                    document.querySelector('.discount-arrow').style.display = 'inline';
+                    originalEl.textContent = '$' + fullPrice + '/wk';
+                }
+
+                animateCounter(currentEl, lastDisplayedPrice, discounted, 800);
+                lastDisplayedPrice = discounted;
+
+                // Badge
+                badgeEl.classList.remove('visible', 'free');
+                nudgeEl.classList.remove('visible');
+
+                if (num === 4) {
+                    badgeEl.textContent = '4th Subject FREE';
+                    badgeEl.classList.add('free');
+                    nudgeEl.textContent = "That's over $" + (savings * 52).toLocaleString() + ' across the year';
+                    setTimeout(function() {
+                        badgeEl.classList.add('visible');
+                        nudgeEl.classList.add('visible');
+                    }, reducedMotion ? 0 : 200);
+                } else if (savings > 0) {
+                    badgeEl.textContent = 'Save $' + savings + '/wk';
+                    nudgeEl.textContent = '';
+                    setTimeout(function() {
+                        badgeEl.classList.add('visible');
+                    }, reducedMotion ? 0 : 200);
+                } else {
+                    badgeEl.textContent = '';
+                    nudgeEl.textContent = '';
+                }
+            }
+
+            var yearEl = document.getElementById('yearLevel');
+            var numEl = document.getElementById('numSubjects');
+            if (yearEl) yearEl.addEventListener('change', updateDiscountDisplay);
+            if (numEl) numEl.addEventListener('change', updateDiscountDisplay);
         })();
 
     </script>
