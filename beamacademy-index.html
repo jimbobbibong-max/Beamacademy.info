@@ -6900,8 +6900,8 @@
                                 <input type="text" id="parentName" name="Name" class="form-input" required placeholder="Your full name" autocomplete="name" autocorrect="off">
                             </div>
                             <div class="form-group">
-                                <label for="parentEmail" class="form-label">Email (optional)</label>
-                                <input type="email" id="parentEmail" name="Email" class="form-input" placeholder="your@email.com" autocomplete="email" inputmode="email" autocapitalize="off" autocorrect="off">
+                                <label for="parentEmail" class="form-label">Email *</label>
+                                <input type="email" id="parentEmail" name="Email" class="form-input" required placeholder="your@email.com" autocomplete="email" inputmode="email" autocapitalize="off" autocorrect="off">
                             </div>
                         </div>
                         <div class="form-row">
@@ -6911,12 +6911,25 @@
                             </div>
                             <div class="form-group"></div>
                         </div>
-                        
-                        <!-- Year Level dropdown (shown only when no package selected) -->
+
+                        <div class="form-section-label" style="margin-top: 16px;">Student Details (if different)</div>
+
+                        <div class="form-row" id="studentNameRow">
+                            <div class="form-group">
+                                <label for="studentEmail" class="form-label">Student Email</label>
+                                <input type="email" id="studentEmail" name="Student Email" class="form-input" placeholder="student@email.com" autocomplete="email" inputmode="email" autocapitalize="off" autocorrect="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="studentPhone" class="form-label">Student Phone</label>
+                                <input type="tel" id="studentPhone" name="Student Phone" class="form-input" placeholder="04XX XXX XXX" autocomplete="tel" inputmode="tel">
+                            </div>
+                        </div>
+
+                        <!-- Year Level & Subjects -->
                         <div class="form-row" id="manualSelectionRow">
                             <div class="form-group">
-                                <label for="yearLevel" class="form-label">Year Level (optional)</label>
-                                <select id="yearLevel" name="Year Level" class="form-select">
+                                <label for="yearLevel" class="form-label">Year Level *</label>
+                                <select id="yearLevel" name="Year Level" class="form-select" required>
                                     <option value="">Select year level</option>
                                     <option value="Year 7">Year 7</option>
                                     <option value="Year 8">Year 8</option>
@@ -6926,9 +6939,38 @@
                                     <option value="Year 12">Year 12</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="numSubjects" class="form-label">How many subjects? *</label>
+                                <select id="numSubjects" name="Number of Subjects" class="form-select" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 subject</option>
+                                    <option value="2">2 subjects</option>
+                                    <option value="3">3 subjects</option>
+                                    <option value="4">4 subjects</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" style="width: 100%;">
+                                <label class="form-label">Subjects *</label>
+                                <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px;">
+                                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.95rem;">
+                                        <input type="checkbox" name="Subjects" value="Mathematics" style="width: 18px; height: 18px; accent-color: var(--purple-700);"> Mathematics
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.95rem;">
+                                        <input type="checkbox" name="Subjects" value="English" style="width: 18px; height: 18px; accent-color: var(--purple-700);"> English
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.95rem;">
+                                        <input type="checkbox" name="Subjects" value="Physics" style="width: 18px; height: 18px; accent-color: var(--purple-700);"> Physics
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.95rem;">
+                                        <input type="checkbox" name="Subjects" value="Chemistry" style="width: 18px; height: 18px; accent-color: var(--purple-700);"> Chemistry
+                                    </label>
+                                </div>
+                            </div>
                         </div>
 
-                        
+
                         <button type="submit" class="btn btn-primary form-submit btn-trial" id="trialSubmitBtn" style="display: flex;">
                             <span class="btn-text"><span id="submitBtnText">Get My Free Trial</span> →</span>
                             <span class="btn-loading"><span class="spinner"></span> Processing...</span>
