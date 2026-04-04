@@ -29,27 +29,17 @@ exports.handler = async (event) => {
     }
 
     // Prepare the data for the admin portal
-    // Pass through all field name variants — the webhook handles normalisation
+    // Field names match the form inputs: Name, Email, Phone, Student Email, etc.
     const webhookData = {
       form_name: form_name,
-      // Parent/name fields
-      name: data.parentName || data.name || data['parent-name'] || '',
-      parentName: data.parentName || data.name || '',
-      // Parent email
-      email: data.parentEmail || data.email || '',
-      parentEmail: data.parentEmail || data.email || '',
-      // Parent phone
-      phone: data.parentPhone || data.phone || '',
-      parentPhone: data.parentPhone || data.phone || '',
-      // Student fields
-      studentName: data.studentName || data['student-name'] || data.student_name || data['child-name'] || '',
-      studentEmail: data.studentEmail || data['student-email'] || '',
-      studentPhone: data.studentPhone || data['student-phone'] || '',
-      // Year level
-      yearLevel: data.yearLevel || data['year-level'] || data.year_level || '',
-      'year-level': data.yearLevel || data['year-level'] || data.year_level || '',
-      // Other
-      subjects: data.subjects || [],
+      name: data.Name || data.name || '',
+      email: data.Email || data.email || '',
+      phone: data.Phone || data.phone || '',
+      studentEmail: data['Student Email'] || data.studentEmail || '',
+      studentPhone: data['Student Phone'] || data.studentPhone || '',
+      yearLevel: data['Year Level'] || data.yearLevel || '',
+      numberOfSubjects: data['Number of Subjects'] || '',
+      subjects: data.Subjects || data.subjects || data.subject || [],
       message: data.message || '',
       submission_id: id
     };
